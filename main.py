@@ -18,7 +18,7 @@ source_channels = [
     '@mitivpn', '@iSeqaro', '@configraygan', '@shankamil', '@xsfilternet',
     '@varvpn1', '@iP_CF', '@cooonfig', '@DeamNet', '@anty_filter',
     '@vpnboxiran', '@Merlin_ViP', '@BugFreeNet', '@cicdoVPN', '@Farda_Ai',
-    '@Awlix_ir', '@proSSH', '@vpn_proxy_custom', '@napsternetv', '@Free_HTTPCustom',
+    '@Awlix_ir', '@proSSH', '@vpn_proxy_custom', '@Free_HTTPCustom',
     '@sinavm', '@Amir_Alternative_Official', '@StayconnectedVPN', '@BINNER_IRAN',
     '@IranianMinds', '@vpn11ir', '@NetAccount', '@mitiivpn2', '@isharewin',
     '@v2rays_ha', '@iroproxy', '@ProxyMTProto'

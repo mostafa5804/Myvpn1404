@@ -21,7 +21,7 @@ source_channels = [
     '@Awlix_ir', '@proSSH', '@vpn_proxy_custom', '@napsternetv', '@Free_HTTPCustom',
     '@sinavm', '@Amir_Alternative_Official', '@StayconnectedVPN', '@BINNER_IRAN',
     '@IranianMinds', '@vpn11ir', '@NetAccount', '@mitiivpn2', '@isharewin',
-    '@v2rays_ha', '@ProxyMTProto'
+    '@v2rays_ha', '@iroproxy', '@ProxyMTProto'
 ]
 
 destination_channel = '@myvpn1404'

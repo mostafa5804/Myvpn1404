@@ -12,7 +12,9 @@ api_hash = os.environ['API_HASH']
 session_string = os.environ['SESSION_STRING']
 
 # لیست کانال‌های مبدأ
+# لیست کانال‌های مبدأ
 source_channels = [
+    # لیست اولیه
     '@KioV2ray',
     '@Npvtunnel_vip',
     '@planB_net',
@@ -22,8 +24,37 @@ source_channels = [
     '@iSeqaro',
     '@configraygan',
     '@shankamil',
-    '@xsfilternet'
+    '@xsfilternet',
+    
+    # لیست جدید اضافه شده
+    '@varvpn1',
+    '@iP_CF',
+    '@cooonfig',
+    '@DeamNet',
+    '@anty_filter',
+    '@vpnboxiran',
+    '@Merlin_ViP',
+    '@BugFreeNet',
+    '@cicdoVPN',
+    '@Farda_Ai',
+    '@Awlix_ir',
+    '@proSSH',
+    '@vpn_proxy_custom',
+    '@napsternetv',
+    '@Free_HTTPCustom',
+    '@sinavm',
+    '@Amir_Alternative_Official',
+    '@StayconnectedVPN',
+    '@BINNER_IRAN',
+    '@IranianMinds',
+    '@vpn11ir',
+    '@NetAccount',
+    '@mitiivpn2',
+    '@isharewin',
+    '@v2rays_ha',
+    '@ProxyMTProto'
 ]
+
 
 # کانال مقصد شما
 destination_channel = '@myvpn1404'

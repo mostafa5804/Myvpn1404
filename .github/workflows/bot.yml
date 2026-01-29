@@ -2,8 +2,8 @@ name: V2Ray Collector Bot
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # اجرا هر ۱۵ دقیقه (دقیق)
-  workflow_dispatch:      # دکمه اجرای دستی
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 jobs:
   run-bot:

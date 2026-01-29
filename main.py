@@ -109,12 +109,13 @@ def create_caption(content_type, extra_info, source_name, ping_time=None, countr
     return caption
 
 async def main():
-    # بازه زمانی استاندارد: ۲ ساعت
+    # زمان بررسی: ۲ ساعت اخیر
     time_threshold = datetime.now(timezone.utc) - timedelta(hours=2)
     
+    # الگوی کامل برای پیدا کردن لینک‌ها
     config_regex = r"(?:vmess|vless|trojan|ss|tuic|hysteria|nm|nm-xray-json|nm-vless|nm-vmess)://[^\s\n]+"
     
-    print("--- 1. Syncing History ---")
+    print("--- 1. Loading History (Anti-Duplicate) ---")
     sent_hashes = set()
     try:
         async for msg in client.iter_messages(destination_channel, limit=200):
@@ -124,45 +125,71 @@ async def main():
                 for c in matches: sent_hashes.add(c.strip())
                 proxies = re.findall(r"server=([\w\.-]+)", msg.text)
                 for p in proxies: sent_hashes.add(p)
-    except: pass
+    except Exception as e:
+        print(f"Warning: History check failed: {e}")
 
-    print("--- 2. Checking Sources ---")
+    print(f"--- 2. Scanning Channels (Sent items: {len(sent_hashes)}) ---")
 
     for channel in source_channels:
         try:
             print(f"Checking {channel}...")
+            # بررسی دسترسی به کانال
             try:
                 entity = await client.get_entity(channel)
                 title = entity.title if entity.title else channel
             except: 
-                print(f"Skipping {channel}")
+                print(f"⚠️ Cannot access {channel} (Skipping)")
                 continue
 
             async for message in client.iter_messages(channel, offset_date=time_threshold, reverse=True):
                 
-                # --- A. Text Configs ---
+                # ===========================
+                # بخش ۱: فایل‌ها (اولویت بالا)
+                # ===========================
+                if message.file:
+                    fname = message.file.name if message.file.name else "Config"
+                    if any(fname.lower().endswith(ext) for ext in allowed_extensions):
+                        if fname not in sent_hashes:
+                            try:
+                                file_type = fname.split('.')[-1].upper()
+                                cap = create_caption(f"📂 **File: {file_type}**", fname, title)
+                                await client.send_file(destination_channel, message.media, caption=cap)
+                                sent_hashes.add(fname)
+                                print(f"✅ FILE Sent: {fname}")
+                            except Exception as e:
+                                print(f"❌ File Send Error: {e}")
+
+                # ===========================
+                # بخش ۲: کانفیگ‌های متنی
+                # ===========================
                 if message.text:
                     raw_matches = re.findall(config_regex, message.text)
                     for conf in raw_matches:
                         clean_conf = conf.strip()
                         if clean_conf not in sent_hashes:
                             
+                            # تلاش برای استخراج اطلاعات
                             ip, port = parse_config(clean_conf)
                             ping_val = None
                             country_txt = ""
                             flag = ""
+                            status_icon = "🔴" # پیش‌فرض قرمز
                             
                             if ip and port:
+                                # تست پینگ
                                 ping_val = tcp_ping(ip, port)
                                 cc, c_name = get_ip_info(ip)
                                 flag = get_flag_emoji(cc)
                                 if c_name: country_txt = f"{flag} {c_name}"
+                                
+                                if ping_val:
+                                    status_icon = "🟢" # سبز فقط اگر پینگ داد
 
-                            # منطق: سبز اگه پینگ داد، قرمز اگه نداد (ولی ارسال میشه)
-                            status_icon = "🟢" if ping_val else "🔴"
-                            
+                            # نام پروتکل برای نمایش
                             prot = clean_conf.split("://")[0].upper()
-                            if "NM-" in prot or "XRAY" in prot: prot = "NETMOD / XRAY"
+                            if "NM-" in prot or "XRAY" in prot: 
+                                prot = "NETMOD"
+                                status_icon = "📱" # آیکون موبایل برای نت‌مود
 
                             final_txt = f"🔮 **{prot} Config** {status_icon}\n\n`{clean_conf}`"
                             cap = create_caption(final_txt, f"Protocol: {prot}", title, ping_val, country_txt)
@@ -170,16 +197,13 @@ async def main():
                             try:
                                 await client.send_message(destination_channel, cap, link_preview=False)
                                 sent_hashes.add(clean_conf)
-                                print(f"Sent {prot}")
-                            except: pass
+                                print(f"✅ CONF Sent: {prot}")
+                            except Exception as e:
+                                print(f"❌ Config Send Error: {e}")
 
-                            # NetMod handling
-                            if "nm-" in clean_conf and not ip and clean_conf not in sent_hashes:
-                                cap = create_caption(f"📱 **NetMod Config**\n\n`{clean_conf}`", "App: NetMod", title)
-                                await client.send_message(destination_channel, cap)
-                                sent_hashes.add(clean_conf)
-
-                # --- B. Proxies ---
+                # ===========================
+                # بخش ۳: پروکسی‌ها
+                # ===========================
                 extracted_proxies = []
                 if message.entities:
                     for ent in message.entities:
@@ -201,7 +225,6 @@ async def main():
                                 flag = get_flag_emoji(cc)
                                 final_link = p.replace("https://t.me/", "tg://")
                                 
-                                # منطق: سبز و قرمز (هر دو ارسال میشن)
                                 if ping:
                                     link_text = f"🟢 {flag} Ping: {ping}ms"
                                 else:
@@ -220,20 +243,14 @@ async def main():
                         proxy_body += f"{i}. {link_md}\n"
                     
                     cap = create_caption(proxy_body, f"New Proxies ({len(valid_proxies)}x)", title)
-                    await client.send_message(destination_channel, cap, link_preview=False)
-
-                # --- C. Files ---
-                if message.file:
-                    fname = message.file.name if message.file.name else "Config"
-                    if any(fname.lower().endswith(ext) for ext in allowed_extensions):
-                        if fname not in sent_hashes:
-                            file_type = fname.split('.')[-1].upper()
-                            cap = create_caption(f"📂 **File: {file_type}**", fname, title)
-                            await client.send_file(destination_channel, message.media, caption=cap)
-                            sent_hashes.add(fname)
+                    try:
+                        await client.send_message(destination_channel, cap, link_preview=False)
+                        print(f"✅ PROXY List Sent ({len(valid_proxies)} items)")
+                    except Exception as e:
+                        print(f"❌ Proxy Send Error: {e}")
 
         except Exception as e:
-            print(f"Error on {channel}: {e}")
+            print(f"❌ Critical Error on {channel}: {e}")
 
     print("--- End ---")
 

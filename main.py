@@ -1,18 +1,18 @@
-import os
+mport os
 import re
-import asyncio
+import jdatetime
+import pytz
 from datetime import datetime, timedelta, timezone
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 from telethon.tl.types import MessageEntityTextUrl
-import jdatetime
-import pytz
 
 # --- تنظیمات ---
 api_id = int(os.environ['API_ID'])
 api_hash = os.environ['API_HASH']
 session_string = os.environ['SESSION_STRING']
 
+# لیست کانال‌های مبدأ
 source_channels = [
     '@KioV2ray', '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mypremium98',
     '@mitivpn', '@iSeqaro', '@configraygan', '@shankamil', '@xsfilternet',
@@ -21,8 +21,7 @@ source_channels = [
     '@Awlix_ir', '@proSSH', '@vpn_proxy_custom', '@Free_HTTPCustom',
     '@sinavm', '@Amir_Alternative_Official', '@StayconnectedVPN', '@BINNER_IRAN',
     '@IranianMinds', '@vpn11ir', '@NetAccount', '@mitiivpn2', '@isharewin',
-    '@v2rays_ha', '@iroproxy', '@ProxyMTProto',
-    '@darkproxy', '@configs_freeiran', '@v2rayvpnchannel'
+    '@v2rays_ha', '@iroproxy', '@ProxyMTProto'
 ]
 
 destination_channel = '@myvpn1404'
@@ -31,116 +30,64 @@ iran_tz = pytz.timezone('Asia/Tehran')
 
 client = TelegramClient(StringSession(session_string), api_id, api_hash)
 
-# --- تابع ساخت متن شیک (بدون پینگ/پرچم) ---
-def create_caption(content_type, extra_info, source_name):
+def create_footer(channel_name):
     now_iran = datetime.now(iran_tz)
-    date_str = jdatetime.datetime.fromgregorian(datetime=now_iran).strftime("%Y/%m/%d")
+    j_date = jdatetime.datetime.fromgregorian(datetime=now_iran)
+    date_str = j_date.strftime("%Y/%m/%d")
     time_str = now_iran.strftime("%H:%M")
-    
-    # هشتگ‌گذاری هوشمند بر اساس نوع محتوا
-    hashtags = "#V2Ray #VPN"
-    lower_info = extra_info.lower()
-    
-    if "vmess" in lower_info: hashtags += " #vmess #v2rayng"
-    elif "vless" in lower_info: hashtags += " #vless #v2rayng"
-    elif "trojan" in lower_info: hashtags += " #trojan"
-    elif "reality" in lower_info: hashtags += " #reality"
-    elif "netmod" in lower_info or "nm-" in lower_info: hashtags += " #NetMod #nm"
-    elif "napster" in lower_info or "npv" in lower_info: hashtags += " #NapsternetV #npv4"
-    elif "proxy" in lower_info: hashtags = "#Proxy #MTProto #Telegram"
-
-    caption = (
-        f"{content_type}\n"
-        f"➖➖➖➖➖➖➖\n"
-        f"🏷 {extra_info}\n"
-        f"{hashtags}\n"
-        f"➖➖➖➖➖➖➖\n"
+    return (
+        f"\n\n━━━━━━━━━━━━━━\n"
         f"📅 {date_str} | ⏰ {time_str}\n"
-        f"📢 Source: {source_name}\n"
+        f"📢 منبع: {channel_name}\n"
         f"🆔 {destination_channel}"
     )
-    return caption
 
 async def main():
-    print("--- 🤖 Bot Started (Stable Clean Version) ---")
+    # 1. افزایش زمان اسکن به 2 ساعت برای پوشش دادن تاخیرهای گیت‌هاب
+    time_threshold = datetime.now(timezone.utc) - timedelta(hours=2)
     
-    # بازه زمانی مطمئن (۲۴ ساعت) که چیزی جا نیفتد
-    time_threshold = datetime.now(timezone.utc) - timedelta(hours=24)
+    # الگوها
+    v2ray_pattern = r"(vmess://|vless://|trojan://|ss://|tuic://|hysteria://|ine://|nm://)"
     
-    # الگوی کامل شناسایی (شامل نت‌مود جدید)
-    config_regex = r"(?:vmess|vless|trojan|ss|tuic|hysteria|nm|nm-xray-json|nm-vless|nm-vmess)://[^\s\n]+"
+    print("--- 1. Learning Sent History (Anti-Duplicate) ---")
     
-    sent_hashes = set()
+    # **حافظه موقت:** لیست چیزهایی که قبلا فرستادیم
+    sent_files = set()
+    sent_proxies = set()
     
-    # 1. یادگیری از تاریخچه کانال خودمان (جلوگیری از تکرار)
+    # خواندن ۱۰۰ پیام آخر کانال خودت برای جلوگیری از تکرار
     try:
-        async for msg in client.iter_messages(destination_channel, limit=200):
-            if msg.file and msg.file.name: sent_hashes.add(msg.file.name)
+        async for msg in client.iter_messages(destination_channel, limit=100):
+            if msg.file and msg.file.name:
+                sent_files.add(msg.file.name)
+            
             if msg.text:
-                matches = re.findall(config_regex, msg.text)
-                for c in matches: sent_hashes.add(c.strip())
-                proxies = re.findall(r"server=([\w\.-]+)", msg.text)
-                for p in proxies: sent_hashes.add(p)
+                # استخراج لینک‌های داخل متن‌های قبلی خودمان
+                links = re.findall(r"(tg://proxy\?server=[\w\.-]+|https://t\.me/proxy\?server=[\w\.-]+)", msg.text)
+                for l in links:
+                    # فقط قسمت سرور را نگه میداریم برای مقایسه راحت‌تر
+                    if "server=" in l:
+                        server_val = l.split("server=")[1].split("&")[0]
+                        sent_proxies.add(server_val)
+                        
     except Exception as e:
-        print(f"⚠️ History Error: {e}")
+        print(f"Warning: Could not check history: {e}")
 
-    print(f"ℹ️ History loaded: {len(sent_hashes)} items")
+    print(f"Loaded {len(sent_files)} files and {len(sent_proxies)} proxies from history.")
+    print("--- 2. Start Checking Sources ---")
 
-    # 2. اسکن کانال‌های منبع
     for channel in source_channels:
         try:
-            print(f"🔍 Scanning {channel}...")
+            print(f"Checking {channel}...")
             try:
                 entity = await client.get_entity(channel)
-                title = entity.title if entity.title else channel
-            except: 
-                print(f"❌ Cannot access {channel}")
+                channel_title = entity.title if entity.title else channel
+            except:
                 continue
 
             async for message in client.iter_messages(channel, offset_date=time_threshold, reverse=True):
                 
-                # --- A. پردازش فایل‌ها ---
-                if message.file:
-                    fname = message.file.name if message.file.name else "Config"
-                    if any(fname.lower().endswith(ext) for ext in allowed_extensions):
-                        if fname not in sent_hashes:
-                            file_type = fname.split('.')[-1].upper()
-                            
-                            header = f"📂 **فایل کانفیگ جدید**"
-                            cap = create_caption(header, f"File: {file_type}", title)
-                            
-                            try:
-                                await client.send_file(destination_channel, message.media, caption=cap)
-                                sent_hashes.add(fname)
-                                print(f"✅ Sent File: {fname}")
-                            except Exception as e:
-                                print(f"Error sending file: {e}")
-
-                # --- B. پردازش کانفیگ‌های متنی ---
-                if message.text:
-                    raw_matches = re.findall(config_regex, message.text)
-                    for conf in raw_matches:
-                        clean_conf = conf.strip()
-                        if clean_conf not in sent_hashes:
-                            
-                            # تشخیص نوع پروتکل برای تیتر
-                            prot = clean_conf.split("://")[0].upper()
-                            if "NM-" in prot or "XRAY" in prot: prot = "NETMOD"
-                            
-                            # متن اصلی پیام
-                            final_txt = f"🔮 **کانفیگ {prot}**\n\n`{clean_conf}`"
-                            
-                            # ساخت کپشن با هشتگ
-                            cap = create_caption(final_txt, f"Protocol: {prot}", title)
-                            
-                            try:
-                                await client.send_message(destination_channel, cap, link_preview=False)
-                                sent_hashes.add(clean_conf)
-                                print(f"✅ Sent Config: {prot}")
-                            except Exception as e:
-                                print(f"Error sending config: {e}")
-
-                # --- C. پردازش پروکسی‌ها (لیست زیبا) ---
+                # --- پردازش پروکسی‌ها ---
                 extracted_proxies = []
                 if message.entities:
                     for ent in message.entities:
@@ -149,37 +96,54 @@ async def main():
                 if message.text:
                     extracted_proxies.extend(re.findall(r"(tg://proxy\?server=[\w\.-]+&port=\d+&secret=[\w\.-]+|https://t\.me/proxy\?server=[\w\.-]+&port=\d+&secret=[\w\.-]+)", message.text))
                 
-                # فیلتر تکراری‌ها در همین پیام
-                unique_proxies = list(set(extracted_proxies))
-                valid_proxies = []
-                
-                for p in unique_proxies:
+                # فیلتر کردن پروکسی‌های تکراری
+                new_proxies = []
+                for p in list(set(extracted_proxies)):
+                    # چک میکنیم آیا سرور این پروکسی قبلا ثبت شده؟
                     try:
-                        # استخراج سرور برای چک کردن تکراری بودن
-                        match = re.search(r"server=([\w\.-]+)", p)
-                        if match:
-                            server_val = match.group(1)
-                            if server_val not in sent_hashes:
-                                final_link = p.replace("https://t.me/", "tg://")
-                                valid_proxies.append(final_link)
-                                sent_hashes.add(server_val)
-                    except: pass
+                        server_val = p.split("server=")[1].split("&")[0]
+                        if server_val not in sent_proxies:
+                            new_proxies.append(p)
+                            sent_proxies.add(server_val) # به لیست اضافه کن که در همین اجرا هم تکراری نفرسته
+                    except:
+                        pass
 
-                if valid_proxies:
-                    # ساخت لیست شماره‌گذاری شده
-                    proxy_body = "🔵 **لیست پروکسی‌های جدید**\n\n"
-                    for i, link in enumerate(valid_proxies, 1):
-                        proxy_body += f"{i}. [اتصال سریع (Proxy {i})]({link})\n"
+                if new_proxies:
+                    print(f"Found {len(new_proxies)} NEW proxies")
+                    proxy_text = "🔵 **لیست پروکسی‌های جدید:**\n\n"
+                    for i, proxy in enumerate(new_proxies, 1):
+                        proxy = proxy.replace("https://t.me/", "tg://")
+                        proxy_text += f"{i}. [اتصال سریع]({proxy})\n"
                     
-                    cap = create_caption(proxy_body, f"New Proxies ({len(valid_proxies)}x)", title)
-                    
-                    try:
-                        await client.send_message(destination_channel, cap, link_preview=False)
-                        print(f"✅ Sent {len(valid_proxies)} Proxies")
-                    except: pass
+                    await client.send_message(destination_channel, proxy_text + create_footer(channel_title), link_preview=False)
+
+                # --- پردازش فایل‌ها ---
+                elif message.file:
+                    file_name = message.file.name if message.file.name else ""
+                    # شرط مهم: بررسی تکراری نبودن اسم فایل
+                    if any(file_name.lower().endswith(ext) for ext in allowed_extensions):
+                        if file_name not in sent_files:
+                            caption = (message.text or "") + create_footer(channel_title)
+                            if len(caption) > 1000: caption = caption[:950] + "..."
+                            
+                            await client.send_file(destination_channel, message.media, caption=caption)
+                            print(f"Sent NEW file: {file_name}")
+                            sent_files.add(file_name) # اضافه به حافظه
+                        else:
+                            print(f"Skipped duplicate file: {file_name}")
+
+                # --- پردازش متن V2Ray ---
+                elif message.text and re.search(v2ray_pattern, message.text, re.IGNORECASE):
+                    # برای متن‌های طولانی v2ray تشخیص تکرار سخت است،
+                    # اما می‌توانیم چک کنیم اگر دقیقاً همان متن در ۱۰۰ پیام آخر بوده نفرستیم
+                    # فعلا برای سادگی فرض میکنیم اگر ۲ ساعت گذشته باشد جدید است
+                    # (چون تشخیص تکرار متن v2ray با هدرهای مختلف پیچیده است)
+                     pass 
+                     # اینجا را فعلا غیرفعال کردم تا اسپم نشود یا میتوانید فعال کنید
+                     # معمولا کانال‌ها فایل میگذارند.
 
         except Exception as e:
-            print(f"Error on {channel}: {e}")
+            print(f"Error checking {channel}: {e}")
 
     print("--- End ---")
 

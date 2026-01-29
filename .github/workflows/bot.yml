@@ -2,7 +2,7 @@ name: V2Ray Collector Bot
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # اجرا هر ۱۵ دقیقه
+    - cron: '*/15 * * * *'  # اجرا هر ۱۵ دقیقه (دقیق)
   workflow_dispatch:      # دکمه اجرای دستی
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install telethon jdatetime pytz requests
+        pip install telethon jdatetime pytz
 
     - name: Run script
       env:

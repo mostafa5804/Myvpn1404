@@ -16,7 +16,6 @@ api_id = int(os.environ['API_ID'])
 api_hash = os.environ['API_HASH']
 session_string = os.environ['SESSION_STRING']
 
-# لیست نهایی و آپدیت شده کانال‌ها
 source_channels = [
     '@KioV2ray', '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mypremium98',
     '@mitivpn', '@iSeqaro', '@configraygan', '@shankamil', '@xsfilternet',
@@ -26,8 +25,6 @@ source_channels = [
     '@sinavm', '@Amir_Alternative_Official', '@StayconnectedVPN', '@BINNER_IRAN',
     '@IranianMinds', '@vpn11ir', '@NetAccount', '@mitiivpn2', '@isharewin',
     '@v2rays_ha', '@iroproxy', '@ProxyMTProto',
-    
-    # موارد جدید اضافه شده
     '@darkproxy', '@configs_freeiran', '@v2rayvpnchannel'
 ]
 
@@ -37,26 +34,23 @@ iran_tz = pytz.timezone('Asia/Tehran')
 
 client = TelegramClient(StringSession(session_string), api_id, api_hash)
 
-# --- توابع کمکی (پینگ و پرچم) ---
+# --- توابع کمکی ---
 
 def get_flag_emoji(country_code):
-    """تبدیل کد کشور به ایموجی"""
-    if not country_code: return "🏳️"
+    if not country_code: return ""
     return chr(127397 + ord(country_code[0])) + chr(127397 + ord(country_code[1]))
 
 def get_ip_info(ip):
-    """گرفتن اطلاعات کشور"""
     try:
-        response = requests.get(f"http://ip-api.com/json/{ip}?fields=countryCode,country", timeout=3)
+        # تایم‌اوت کوتاه برای جلوگیری از کندی
+        response = requests.get(f"http://ip-api.com/json/{ip}?fields=countryCode,country", timeout=1.5)
         if response.status_code == 200:
             data = response.json()
-            return data.get("countryCode", "UN"), data.get("country", "Unknown")
-    except:
-        pass
+            return data.get("countryCode", None), data.get("country", None)
+    except: pass
     return None, None
 
-def tcp_ping(host, port, timeout=2):
-    """تست اتصال (Ping)"""
+def tcp_ping(host, port, timeout=1):
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(timeout)
@@ -64,16 +58,13 @@ def tcp_ping(host, port, timeout=2):
         result = sock.connect_ex((host, int(port)))
         end_time = datetime.now()
         sock.close()
-        
         if result == 0:
             duration = (end_time - start_time).microseconds / 1000
             return int(duration)
         return False
-    except:
-        return False
+    except: return False
 
 def parse_config(config_str):
-    """استخراج IP و Port از کانفیگ"""
     try:
         if config_str.startswith("vmess://"):
             b64 = config_str.replace("vmess://", "")
@@ -82,7 +73,6 @@ def parse_config(config_str):
             decoded = base64.b64decode(b64).decode('utf-8')
             data = json.loads(decoded)
             return data.get("add"), data.get("port")
-        
         elif config_str.startswith("vless://") or config_str.startswith("trojan://") or config_str.startswith("ss://"):
             match = re.search(r"@([\w\.-]+):(\d+)", config_str)
             if match: return match.group(1), match.group(2)
@@ -90,24 +80,23 @@ def parse_config(config_str):
     return None, None
 
 def parse_proxy(proxy_link):
-    """استخراج IP و Port از لینک پروکسی"""
     try:
-        # جستجوی server=...&port=...
         match = re.search(r"server=([\w\.-]+)&port=(\d+)", proxy_link)
-        if match:
-            return match.group(1), match.group(2)
+        if match: return match.group(1), match.group(2)
     except: pass
     return None, None
 
-# --- ساخت کپشن ---
 def create_caption(content_type, extra_info, source_name, ping_time=None, country_name=None):
     now_iran = datetime.now(iran_tz)
     date_str = jdatetime.datetime.fromgregorian(datetime=now_iran).strftime("%Y/%m/%d")
     time_str = now_iran.strftime("%H:%M")
     
+    # وضعیت پینگ در کپشن کلی
     status_line = ""
     if ping_time:
         status_line = f"\n⚡️ Ping: {ping_time}ms | {country_name}"
+    elif country_name:
+        status_line = f"\n🏳️ Location: {country_name}"
     
     caption = (
         f"{content_type}\n"
@@ -156,31 +145,38 @@ async def main():
                         clean_conf = conf.strip()
                         if clean_conf not in sent_hashes:
                             ip, port = parse_config(clean_conf)
-                            ping_val = None; country_txt = ""
+                            
+                            ping_val = None
+                            country_txt = ""
+                            flag = ""
                             
                             if ip and port:
                                 ping_val = tcp_ping(ip, port)
-                                if ping_val:
-                                    cc, c_name = get_ip_info(ip)
-                                    flag = get_flag_emoji(cc)
-                                    country_txt = f"{flag} {c_name}"
-                                    
-                                    prot = clean_conf.split("://")[0].upper()
-                                    final_txt = f"🔮 **{prot} Config** {flag}\n\n`{clean_conf}`"
-                                    cap = create_caption(final_txt, f"Protocol: {prot}", title, ping_val, country_txt)
-                                    
-                                    try:
-                                        await client.send_message(destination_channel, cap, link_preview=False)
-                                        sent_hashes.add(clean_conf)
-                                    except: pass
-                                else:
-                                    sent_hashes.add(clean_conf) # Skip dead config
-                            elif "nm-" in clean_conf:
+                                cc, c_name = get_ip_info(ip)
+                                flag = get_flag_emoji(cc)
+                                if c_name: country_txt = f"{flag} {c_name}"
+
+                            # تعیین آیکون وضعیت برای کانفیگ
+                            status_icon = "🟢" if ping_val else "🔴"
+                            
+                            prot = clean_conf.split("://")[0].upper()
+                            final_txt = f"🔮 **{prot} Config** {status_icon}\n\n`{clean_conf}`"
+                            
+                            cap = create_caption(final_txt, f"Protocol: {prot}", title, ping_val, country_txt)
+                            
+                            try:
+                                await client.send_message(destination_channel, cap, link_preview=False)
+                                sent_hashes.add(clean_conf)
+                                print(f"Sent {prot}")
+                            except: pass
+
+                            # NetMod Check
+                            if "nm-" in clean_conf and not ip:
                                 cap = create_caption(f"📱 **NetMod Config**\n\n{clean_conf}", "App: NetMod", title)
                                 await client.send_message(destination_channel, cap)
                                 sent_hashes.add(clean_conf)
 
-                # --- B. بخش پروکسی‌ها (بهبود یافته) ---
+                # --- B. بخش پروکسی‌ها (با قابلیت سبز/قرمز) ---
                 extracted_proxies = []
                 if message.entities:
                     for ent in message.entities:
@@ -190,45 +186,43 @@ async def main():
                     extracted_proxies.extend(re.findall(r"(tg://proxy\?server=[\w\.-]+&port=\d+&secret=[\w\.-]+|https://t\.me/proxy\?server=[\w\.-]+&port=\d+&secret=[\w\.-]+)", message.text))
                 
                 valid_proxies = []
-                
-                # پردازش و تست پروکسی‌ها
                 unique_proxies = list(set(extracted_proxies))
+                
                 if unique_proxies:
-                    print(f"Testing {len(unique_proxies)} proxies...")
-                    
                     for p in unique_proxies:
                         try:
-                            # 1. استخراج سرور و پورت
                             p_ip, p_port = parse_proxy(p)
                             if p_ip and p_port and p_ip not in sent_hashes:
-                                # 2. تست پینگ
+                                # تست پینگ
                                 ping = tcp_ping(p_ip, p_port, timeout=1)
+                                
+                                # گرفتن پرچم (حتی اگر پینگ ندهد)
+                                cc, _ = get_ip_info(p_ip)
+                                flag = get_flag_emoji(cc)
+                                final_link = p.replace("https://t.me/", "tg://")
+                                
+                                # === منطق جدید: سبز و قرمز ===
                                 if ping:
-                                    # 3. گرفتن پرچم
-                                    cc, _ = get_ip_info(p_ip)
-                                    flag = get_flag_emoji(cc)
-                                    
-                                    # استانداردسازی لینک
-                                    final_link = p.replace("https://t.me/", "tg://")
-                                    
-                                    # اضافه کردن به لیست با فرمت جدید
-                                    # فرمت: پرچم - دکمه اتصال - پینگ
-                                    link_text = f"{flag} اتصال (Ping: {ping}ms)"
-                                    valid_proxies.append(f"[{link_text}]({final_link})")
-                                    
-                                    sent_hashes.add(p_ip)
+                                    # سبز: پینگ دارد
+                                    link_text = f"🟢 {flag} Ping: {ping}ms"
+                                else:
+                                    # قرمز: پینگ ندارد (اما شاید برای کاربر کار کند)
+                                    link_text = f"🔴 {flag} Check Manually"
+
+                                valid_proxies.append(f"[{link_text}]({final_link})")
+                                sent_hashes.add(p_ip)
                         except: pass
 
-                # ارسال لیست پروکسی‌های سالم
                 if valid_proxies:
+                    # مرتب‌سازی: اول سبزها، بعد قرمزها
+                    valid_proxies.sort(key=lambda x: "🟢" in x, reverse=True)
+
                     proxy_body = "🔵 **MTProto Proxy List**\n\n"
                     for i, link_md in enumerate(valid_proxies, 1):
                         proxy_body += f"{i}. {link_md}\n"
                     
-                    # محاسبه میانگین پینگ برای کپشن
                     cap = create_caption(proxy_body, f"New Proxies ({len(valid_proxies)}x)", title)
                     await client.send_message(destination_channel, cap, link_preview=False)
-                    print(f"Sent {len(valid_proxies)} verified proxies")
 
                 # --- C. بخش فایل‌ها ---
                 if message.file:

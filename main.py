@@ -24,8 +24,8 @@ session_string = os.environ['SESSION_STRING']
 ENABLE_PING_CHECK = True
 PING_TIMEOUT = 2
 MAX_PING_WAIT = 4
-DATA_FILE = 'data.json'  # نام فایل دیتابیس
-KEEP_HISTORY_HOURS = 24  # مدت زمان نگهداری اطلاعات (ساعت)
+DATA_FILE = 'data.json'
+KEEP_HISTORY_HOURS = 24
 
 # لیست کانال‌ها
 ALL_CHANNELS = [
@@ -49,59 +49,42 @@ client = TelegramClient(StringSession(session_string), api_id, api_hash)
 IRAN_IP_PREFIXES = ['2.144.', '5.22.', '31.2.', '37.9.', '46.18.', '78.38.', '85.9.', '91.98.', '93.88.', '185.']
 
 # -----------------------------------------------------------------------------
-# 2. مدیریت دیتابیس و حافظه (Data Management)
+# 2. مدیریت دیتابیس
 # -----------------------------------------------------------------------------
 def load_data():
-    """لود کردن اطلاعات از فایل جیسون و حذف قدیمی‌ها"""
     if not os.path.exists(DATA_FILE):
         return {'configs': [], 'proxies': [], 'files': []}
-    
     try:
         with open(DATA_FILE, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        
-        # پاکسازی داده‌های قدیمی (بیشتر از 24 ساعت)
         now_ts = time.time()
         limit_ts = now_ts - (KEEP_HISTORY_HOURS * 3600)
-        
         new_data = {
             'configs': [c for c in data.get('configs', []) if c.get('ts', 0) > limit_ts],
             'proxies': [p for p in data.get('proxies', []) if p.get('ts', 0) > limit_ts],
             'files': [f for f in data.get('files', []) if f.get('ts', 0) > limit_ts]
         }
         return new_data
-    except Exception as e:
-        print(f"⚠️ خطای لود دیتابیس: {e}")
-        return {'configs': [], 'proxies': [], 'files': []}
+    except: return {'configs': [], 'proxies': [], 'files': []}
 
 def save_data(data):
-    """ذخیره اطلاعات در فایل جیسون"""
     try:
         with open(DATA_FILE, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-    except Exception as e:
-        print(f"❌ خطا در ذخیره دیتابیس: {e}")
+    except: pass
 
 def merge_data(history, new_items, key_field):
-    """ادغام داده‌های جدید با قدیمی (بدون تکراری)"""
-    # تبدیل لیست قدیمی به دیکشنری برای جستجوی سریع
     existing = {item[key_field]: item for item in history}
-    
-    # افزودن/آپدیت آیتم‌های جدید
     for item in new_items:
-        # اگر آیتم جدید است یا آیتم قبلی قدیمی‌تر است، آپدیت کن
         if item[key_field] not in existing:
              existing[item[key_field]] = item
-    
-    # تبدیل دوباره به لیست و مرتب‌سازی بر اساس زمان (جدیدترین اول)
     merged_list = list(existing.values())
     merged_list.sort(key=lambda x: x.get('ts', 0), reverse=True)
     return merged_list
 
 # -----------------------------------------------------------------------------
-# 3. توابع کمکی (Helper Functions)
+# 3. توابع کمکی
 # -----------------------------------------------------------------------------
-
 def is_iran_ip(ip):
     try:
         for prefix in IRAN_IP_PREFIXES:
@@ -112,10 +95,8 @@ def is_iran_ip(ip):
 def get_channel_batch():
     now = datetime.now(iran_tz)
     batch_index = ((now.hour * 60 + now.minute) // 40) % 2
-    if batch_index == 0:
-        return ALL_CHANNELS[:20], "اول (1-20)"
-    else:
-        return ALL_CHANNELS[20:40], "دوم (21-40)"
+    if batch_index == 0: return ALL_CHANNELS[:20], "اول (1-20)"
+    else: return ALL_CHANNELS[20:40], "دوم (21-40)"
 
 async def measure_tcp_latency(host, port, timeout=2):
     import time
@@ -138,7 +119,6 @@ async def check_and_format_status(host, port, timeout=2):
             ip_address = socket.gethostbyname(host)
             if is_iran_ip(ip_address) and latency is None: is_intranet = True
         except: pass
-        
         if latency is None:
             if is_intranet: return "🔵 اینترانت", None, True
             return "🔴 آفلاین", None, False
@@ -219,9 +199,8 @@ async def main():
         await client.start()
         print("✅ ربات متصل شد")
         
-        # لود کردن اطلاعات قبلی (حافظه)
         history_data = load_data()
-        print(f"📂 حافظه لود شد: {len(history_data['configs'])} کانفیگ، {len(history_data['proxies'])} پروکسی")
+        print(f"📂 حافظه لود شد: {len(history_data['configs'])} کانفیگ")
 
         initial_wait = random.randint(10, 20)
         await asyncio.sleep(initial_wait)
@@ -232,14 +211,9 @@ async def main():
         time_threshold = datetime.now(timezone.utc) - timedelta(hours=1.5)
         config_regex = r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic|hysteria2?|nm(?:-[\w-]+)?)://[^\s\n]+"
         
-        # فقط برای جلوگیری از ارسال تکراری در همین اجرا (تلگرام)
         sent_files = set(); sent_proxies = set(); sent_configs = set()
         
-        # مخازن موقت جدید برای این اجرا (New Items)
-        new_live_configs = []
-        new_proxies_data = []
-        new_files_data = []
-
+        # لود تاریخچه تلگرام
         try:
             async for msg in client.iter_messages(destination_channel, limit=100):
                 if msg.text:
@@ -250,18 +224,23 @@ async def main():
         except: pass
 
         sent_count = 0; MAX_PER_RUN = 40
-        
+        new_live_configs = []; new_proxies_data = []; new_files_data = []
+
         for i, channel_username in enumerate(source_channels):
             if sent_count >= MAX_PER_RUN: break
             try:
                 if i > 0: await asyncio.sleep(random.uniform(5, 8))
                 print(f"\n🔍 کانال {i+1}/20: {channel_username}")
                 
+                # --- رفع باگ اصلی: مدیریت خطا هنگام گرفتن کانال ---
                 try:
                     entity = await client.get_entity(channel_username)
                     ch_title = entity.title if hasattr(entity, 'title') else channel_username
-                except: ch_title = channel_username
-                
+                except Exception as e:
+                    print(f"⚠️ خطا در دریافت کانال {channel_username}: {e}")
+                    # اگر نتوانست کانال را بگیرد، برو بعدی (جلوگیری از کرش)
+                    continue 
+
                 temp_files = []; temp_proxies = []; temp_configs = []
                 
                 async for message in client.iter_messages(entity, offset_date=time_threshold, reverse=True, limit=40):
@@ -289,28 +268,17 @@ async def main():
                             if clean not in sent_configs:
                                 temp_configs.append({'config': clean, 'orig_link': orig_link})
 
-                # 1. فایل‌ها
+                # ارسال‌ها (فایل، پروکسی، کانفیگ)
                 for item in temp_files:
                     if sent_count >= MAX_PER_RUN: break
                     try:
-                        caption = f"📂 **{item['name']}**\n\n"
-                        caption += f"{get_file_hashtags(item['name'])}\n"
-                        caption += create_minimal_footer(ch_title, item['link'])
-                        
+                        caption = f"📂 **{item['name']}**\n\n{get_file_hashtags(item['name'])}\n{create_minimal_footer(ch_title, item['link'])}"
                         sent_msg = await client.send_file(destination_channel, item['media'], caption=caption)
                         my_link = f"https://t.me/{destination_channel[1:]}/{sent_msg.id}"
-                        
-                        # افزودن به لیست جدید برای ذخیره
-                        new_files_data.append({
-                            'name': item['name'], 'channel': ch_title, 'link': my_link, 
-                            'ext': item['name'].split('.')[-1], 'ts': time.time()
-                        })
-                        
-                        sent_files.add(item['name']); sent_count += 1
-                        await asyncio.sleep(3)
-                    except Exception as e: print(f"❌ فایل: {e}")
+                        new_files_data.append({'name': item['name'], 'channel': ch_title, 'link': my_link, 'ext': item['name'].split('.')[-1], 'ts': time.time()})
+                        sent_files.add(item['name']); sent_count += 1; await asyncio.sleep(3)
+                    except: pass
 
-                # 2. پروکسی‌ها
                 valid_proxies = []
                 if temp_proxies:
                     for item in temp_proxies:
@@ -319,10 +287,7 @@ async def main():
                         if status:
                             flag = "🇮🇷" if is_in else "🌍"
                             ping_str = f"{lat}ms" if lat else ""
-                            valid_proxies.append({
-                                'link': item['link'], 'ping': ping_str, 'status': status, 'flag': flag, 
-                                'key': item['key'], 'orig_link': item['orig_link']
-                            })
+                            valid_proxies.append({'link': item['link'], 'ping': ping_str, 'status': status, 'flag': flag, 'key': item['key'], 'orig_link': item['orig_link']})
                             sent_proxies.add(item['key'])
                 
                 if valid_proxies:
@@ -330,439 +295,96 @@ async def main():
                         msg_body = "🔵 **پروکسی‌های جدید**\n\n"
                         for idx, p in enumerate(valid_proxies, 1):
                             msg_body += f"{idx}. [اتصال]({p['link']}) • {p['flag']} {p['status']} {p['ping']}\n"
-                        msg_body += get_proxy_usage_guide()
-                        msg_body += create_minimal_footer(ch_title, valid_proxies[0]['orig_link'])
-                        
+                        msg_body += get_proxy_usage_guide() + create_minimal_footer(ch_title, valid_proxies[0]['orig_link'])
                         sent_msg = await client.send_message(destination_channel, msg_body, link_preview=False)
                         my_link = f"https://t.me/{destination_channel[1:]}/{sent_msg.id}"
-                        
-                        # افزودن به لیست جدید
-                        for p in valid_proxies:
-                            new_proxies_data.append({
-                                'key': p['key'], 'link': p['link'], 'channel': ch_title, 
-                                't_link': my_link, 'ts': time.time()
-                            })
-                            
+                        for p in valid_proxies: new_proxies_data.append({'key': p['key'], 'link': p['link'], 'channel': ch_title, 't_link': my_link, 'ts': time.time()})
                         sent_count += 1; await asyncio.sleep(3)
-                    except Exception as e: print(f"❌ پروکسی: {e}")
+                    except: pass
 
-                # 3. کانفیگ‌ها
                 for item in temp_configs:
                     if sent_count >= MAX_PER_RUN: break
                     try:
                         status, lat, is_in = await safe_check_config(item['config'])
                         if status:
                             prot = item['config'].split("://")[0].upper()
-                            ping_txt = f"{lat}ms" if lat else ""
-                            
-                            txt = f"🔮 **{prot}**\n\n"
-                            txt += f"```{item['config']}```\n"
-                            txt += f"📊 وضعیت: {status} • {ping_txt}\n"
-                            txt += f"{get_config_hashtags(item['config'])}\n"
-                            txt += create_minimal_footer(ch_title, item['orig_link'])
-                            
+                            txt = f"🔮 **{prot}**\n\n```{item['config']}```\n📊 وضعیت: {status} • {lat}ms\n{get_config_hashtags(item['config'])}\n{create_minimal_footer(ch_title, item['orig_link'])}"
                             sent_msg = await client.send_message(destination_channel, txt, link_preview=False)
                             my_link = f"https://t.me/{destination_channel[1:]}/{sent_msg.id}"
-                            
-                            # افزودن به لیست جدید
-                            new_live_configs.append({
-                                'protocol': prot, 'config': item['config'], 'latency': lat or 999, 
-                                'channel': ch_title, 't_link': my_link, 'ts': time.time()
-                            })
-                            
-                            sent_configs.add(item['config']); sent_count += 1
-                            await asyncio.sleep(3)
-                    except Exception as e: print(f"❌ کانفیگ: {e}")
+                            new_live_configs.append({'protocol': prot, 'config': item['config'], 'latency': lat or 999, 'channel': ch_title, 't_link': my_link, 'ts': time.time()})
+                            sent_configs.add(item['config']); sent_count += 1; await asyncio.sleep(3)
+                    except: pass
 
-            except Exception as e: print(f"⚠️ خطا در کانال: {e}"); continue
+            except Exception as e: print(f"⚠️ خطای پردازش {channel_username}: {e}"); continue
 
-        # --- پایان حلقه ---
-        
-        # 4. ادغام داده‌ها و ذخیره در دیتابیس
-        print("\n💾 در حال آپدیت حافظه 24 ساعته...")
+        # ذخیره دیتابیس
+        print("\n💾 ذخیره دیتابیس...")
         final_configs = merge_data(history_data['configs'], new_live_configs, 'config')
         final_proxies = merge_data(history_data['proxies'], new_proxies_data, 'key')
         final_files = merge_data(history_data['files'], new_files_data, 'name')
-        
-        save_data({
-            'configs': final_configs,
-            'proxies': final_proxies,
-            'files': final_files
-        })
-        
-        print(f"📊 آمار نهایی برای سایت: {len(final_configs)} کانفیگ، {len(final_proxies)} پروکسی، {len(final_files)} فایل")
+        save_data({'configs': final_configs, 'proxies': final_proxies, 'files': final_files})
 
-        # 5. ساخت صفحه وب (با استفاده از داده‌های ۲۴ ساعته)
-        # 5. ساخت صفحه وب (با استفاده از داده‌های ۲۴ ساعته)
-        try:
-            print("📄 ساخت صفحه وب...")
-            now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
-            html = f"""<!DOCTYPE html>
+        # ساخت HTML
+        print("📄 ساخت صفحه وب...")
+        now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
+        # توجه: اینجا از {{ و }} برای جلوگیری از تداخل با f-string استفاده شده
+        html = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VPN Hub | {destination_channel}</title>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {{
-            --bg-body: #0f172a;
-            --bg-card: #1e293b;
-            --primary: #38bdf8;
-            --secondary: #64748b;
-            --text-main: #f1f5f9;
-            --text-muted: #94a3b8;
-            --border: #334155;
-            --success: #10b981;
-            --accent: #6366f1;
-        }}
-
-        * {{ box-sizing: border-box; margin: 0; padding: 0; font-family: 'Vazirmatn', sans-serif; -webkit-tap-highlight-color: transparent; }}
-        
-        body {{ background-color: var(--bg-body); color: var(--text-main); padding-bottom: 90px; overflow-x: hidden; }}
-
-        /* --- Header --- */
-        header {{
-            background: rgba(30, 41, 59, 0.95);
-            backdrop-filter: blur(12px);
-            padding: 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid var(--border);
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-        }}
-
-        header h1 {{ font-size: 1.5rem; background: linear-gradient(45deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 5px; }}
-        header p {{ color: var(--text-muted); font-size: 0.85rem; }}
-
-        /* --- Search Bar --- */
-        .search-box {{
-            max-width: 600px;
-            margin: 15px auto 0;
-            position: relative;
-        }}
-        .search-box input {{
-            width: 100%;
-            background: var(--bg-body);
-            border: 1px solid var(--border);
-            padding: 12px 45px 12px 15px;
-            border-radius: 12px;
-            color: var(--text-main);
-            font-size: 0.95rem;
-            transition: all 0.3s;
-        }}
-        .search-box input:focus {{ outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2); }}
-        .search-box i {{ position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }}
-
-        /* --- Container --- */
-        .container {{ max-width: 600px; margin: 20px auto; padding: 0 15px; }}
-
-        /* --- Cards --- */
-        .card {{
-            background: var(--bg-card);
-            border-radius: 16px;
-            padding: 16px;
-            margin-bottom: 16px;
-            border: 1px solid var(--border);
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.2s;
-            animation: fadeIn 0.4s ease-out;
-        }}
-        
-        @keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(10px); }} to {{ opacity: 1; transform: translateY(0); }} }}
-
-        .card::before {{
-            content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
-            background: var(--primary);
-        }}
-
-        .card-header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }}
-        
-        .badge {{
-            padding: 5px 10px;
-            border-radius: 8px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }}
-        .badge-proto {{ background: rgba(56, 189, 248, 0.1); color: var(--primary); }}
-        .badge-ping {{ display: flex; align-items: center; gap: 5px; }}
-
-        .meta-info {{ display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px; }}
-        .meta-info i {{ color: var(--secondary); }}
-
-        .code-block {{
-            background: #0b1120;
-            padding: 12px;
-            border-radius: 10px;
-            border: 1px dashed var(--border);
-            font-family: 'Courier New', monospace;
-            font-size: 0.8rem;
-            color: #a5b4fc;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            margin-bottom: 12px;
-            direction: ltr;
-            text-align: left;
-            cursor: pointer;
-            transition: background 0.2s;
-        }}
-        .code-block:hover {{ background: #111827; }}
-
-        /* --- Buttons --- */
-        .actions {{ display: grid; grid-template-columns: 1fr 1fr auto; gap: 10px; }}
-        
-        .btn {{
-            display: flex; align-items: center; justify-content: center; gap: 8px;
-            padding: 10px; border-radius: 10px; border: none; cursor: pointer;
-            font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: 0.2s;
-        }}
-        
-        .btn-copy {{ background: var(--primary); color: #0f172a; }}
-        .btn-copy:active {{ transform: scale(0.96); }}
-        
-        .btn-link {{ background: transparent; border: 1px solid var(--border); color: var(--text-main); }}
-        .btn-link:hover {{ border-color: var(--text-muted); background: rgba(255,255,255,0.05); }}
-
-        .btn-qr {{ width: 42px; background: rgba(255,255,255,0.1); color: var(--text-main); }}
-
-        /* --- Bottom Nav --- */
-        .bottom-nav {{
-            position: fixed; bottom: 0; left: 0; right: 0;
-            background: rgba(30, 41, 59, 0.95);
-            backdrop-filter: blur(15px);
-            border-top: 1px solid var(--border);
-            display: flex; justify-content: space-around;
-            padding: 10px 0 25px;
-            z-index: 999;
-        }}
-        
-        .nav-item {{
-            display: flex; flex-direction: column; align-items: center; gap: 4px;
-            color: var(--text-muted); font-size: 0.75rem; cursor: pointer;
-            flex: 1; padding: 5px; transition: 0.3s;
-        }}
-        
-        .nav-item i {{ font-size: 1.2rem; margin-bottom: 2px; transition: 0.3s; }}
-        .nav-item.active {{ color: var(--primary); }}
-        .nav-item.active i {{ transform: translateY(-3px); text-shadow: 0 0 10px var(--primary); }}
-
-        /* --- Sections --- */
-        .tab-section {{ display: none; }}
-        .tab-section.active {{ display: block; }}
-
-        /* --- Empty State --- */
-        .empty {{ text-align: center; padding: 40px 20px; color: var(--text-muted); }}
-        .empty i {{ font-size: 3rem; margin-bottom: 15px; opacity: 0.3; }}
-
-        /* --- Modal QR --- */
-        .modal {{
-            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.85); z-index: 2000; align-items: center; justify-content: center;
-            backdrop-filter: blur(5px);
-        }}
-        .modal-content {{
-            background: var(--bg-card); padding: 25px; border-radius: 20px;
-            text-align: center; position: relative; width: 90%; max-width: 350px;
-            border: 1px solid var(--border); animation: zoomIn 0.3s;
-        }}
-        @keyframes zoomIn {{ from {{ transform: scale(0.8); opacity: 0; }} to {{ transform: scale(1); opacity: 1; }} }}
-        
-        .modal img {{ width: 100%; border-radius: 10px; margin-bottom: 15px; border: 4px solid #fff; }}
-        .close-modal {{
-            position: absolute; top: 10px; right: 15px; font-size: 1.5rem;
-            color: var(--text-muted); cursor: pointer;
-        }}
-
+        :root {{ --bg: #0f172a; --card: #1e293b; --primary: #38bdf8; --text: #f1f5f9; --sub: #94a3b8; --border: #334155; }}
+        * {{ margin:0; padding:0; box-sizing:border-box; font-family:'Vazirmatn',sans-serif; }}
+        body {{ background:var(--bg); color:var(--text); padding-bottom:80px; }}
+        .header {{ text-align:center; padding:20px; border-bottom:1px solid var(--border); position:sticky; top:0; background:rgba(15,23,42,0.95); z-index:50; backdrop-filter:blur(10px); }}
+        .container {{ max-width:600px; margin:0 auto; padding:15px; }}
+        .card {{ background:var(--card); border-radius:16px; padding:16px; margin-bottom:16px; border:1px solid var(--border); }}
+        .badge {{ background:rgba(56,189,248,0.1); color:var(--primary); padding:4px 8px; border-radius:6px; font-size:0.75rem; font-weight:bold; }}
+        .code {{ background:#0b1120; padding:12px; border-radius:10px; color:#a5b4fc; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; margin:10px 0; direction:ltr; }}
+        .btns {{ display:flex; gap:10px; }}
+        .btn {{ flex:1; padding:10px; border-radius:10px; border:none; cursor:pointer; font-weight:bold; text-align:center; text-decoration:none; display:flex; align-items:center; justify-content:center; gap:5px; }}
+        .copy {{ background:var(--primary); color:#0f172a; }}
+        .link {{ border:1px solid var(--border); color:var(--text); }}
+        .nav {{ position:fixed; bottom:0; left:0; right:0; background:rgba(30,41,59,0.95); display:flex; padding:10px; border-top:1px solid var(--border); z-index:99; }}
+        .nav-item {{ flex:1; text-align:center; color:var(--sub); cursor:pointer; font-size:0.75rem; }}
+        .nav-item i {{ display:block; font-size:1.2rem; margin-bottom:3px; }}
+        .nav-item.active {{ color:var(--primary); }}
+        .tab {{ display:none; }} .tab.active {{ display:block; }}
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>VPN Config Hub</h1>
-        <p>آخرین بروزرسانی: <span dir="ltr">{now_str}</span></p>
-        
-        <div class="search-box">
-            <i class="fas fa-search"></i>
-            <input type="text" id="searchInput" placeholder="جستجو (مثلاً: vless, آلمان, همراه...)" onkeyup="filterContent()">
-        </div>
-    </header>
-
+    <div class="header"><h3>VPN Hub</h3><p style="font-size:0.8rem;color:var(--sub)">{now_str}</p></div>
     <div class="container">
-        <div id="tab-configs" class="tab-section active">
-            {"".join([f'''
-            <div class="card search-item" data-filter="{c['protocol']} {c['channel']}">
-                <div class="card-header">
-                    <span class="badge badge-proto">{c['protocol']}</span>
-                    <span class="badge badge-ping" style="color:{'#10b981' if c['latency']<200 else '#f59e0b'}">
-                        <i class="fas fa-bolt"></i> {c['latency']}ms
-                    </span>
-                </div>
-                <div class="meta-info">
-                    <i class="fas fa-broadcast-tower"></i> {c['channel']}
-                    <span style="margin:0 5px">•</span>
-                    <i class="far fa-clock"></i> همین الان
-                </div>
-                <div class="code-block" onclick="copyText('conf-{i}', this)">{c['config']}</div>
-                <div class="actions">
-                    <button class="btn btn-copy" onclick="copyText('conf-{i}', this)">
-                        <i class="far fa-copy"></i> کپی
-                    </button>
-                    <a href="{c['t_link']}" class="btn btn-link">
-                        <i class="fab fa-telegram-plane"></i> اتصال
-                    </a>
-                    <button class="btn btn-link btn-qr" onclick="showQR('{c['config']}')">
-                        <i class="fas fa-qrcode"></i>
-                    </button>
-                </div>
-                <div id="conf-{i}" style="display:none">{c['config']}</div>
-            </div>
-            ''' for i, c in enumerate(final_configs)])}
-            
-            {f'<div class="empty"><i class="fas fa-box-open"></i><p>هنوز کانفیگی ثبت نشده است</p></div>' if not final_configs else ''}
+        <div id="t1" class="tab active">
+            {"".join([f'<div class="card"><div><span class="badge">{c["protocol"]}</span> <span style="float:left;font-size:0.8rem">⚡ {c["latency"]}ms</span></div><div style="font-size:0.8rem;color:#94a3b8;margin:10px 0">📡 {c["channel"]}</div><div class="code" id="c{i}">{c["config"]}</div><div class="btns"><button class="btn copy" onclick="cp(\'c{i}\',this)"><i class="far fa-copy"></i> کپی</button><a href="{c["t_link"]}" class="btn link"><i class="fab fa-telegram"></i> اتصال</a></div></div>' for i, c in enumerate(final_configs)])}
+            {f'<div style="text-align:center;padding:20px;color:#64748b">لیست خالی است</div>' if not final_configs else ''}
         </div>
-
-        <div id="tab-proxies" class="tab-section">
-            {"".join([f'''
-            <div class="card search-item" data-filter="proxy mtproto {v['channel']}">
-                <div class="card-header">
-                    <span class="badge badge-proto">MTProto</span>
-                    <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-shield-alt"></i> Proxy</span>
-                </div>
-                <div class="meta-info"><i class="fas fa-broadcast-tower"></i> {v['channel']}</div>
-                <div class="code-block" style="color:var(--text-muted)">{v['key'].split(':')[0]}</div>
-                <div class="actions" style="grid-template-columns: 1fr;">
-                    <a href="{v['link']}" class="btn btn-copy">
-                        <i class="fas fa-power-off"></i> اتصال سریع
-                    </a>
-                </div>
-            </div>
-            ''' for i, v in enumerate(final_proxies)])}
-            {f'<div class="empty"><i class="fas fa-shield-virus"></i><p>پروکسی موجود نیست</p></div>' if not final_proxies else ''}
+        <div id="t2" class="tab">
+            {"".join([f'<div class="card"><div><span class="badge">Proxy</span></div><div style="font-size:0.8rem;color:#94a3b8;margin:5px 0">📡 {v["channel"]}</div><div class="code">{v["key"].split(":")[0]}</div><div class="btns"><a href="{v["link"]}" class="btn copy">اتصال سریع</a></div></div>' for v in final_proxies])}
         </div>
-
-        <div id="tab-files" class="tab-section">
-            {"".join([f'''
-            <div class="card search-item" data-filter="{v['ext']} {v['name']} {v['channel']}">
-                <div class="card-header">
-                    <span class="badge badge-proto">{v['ext'].upper()}</span>
-                    <span class="badge badge-ping"><i class="fas fa-file-download"></i> File</span>
-                </div>
-                <div style="font-weight:bold; margin-bottom:5px; direction:ltr; text-align:right">{v['name']}</div>
-                <div class="meta-info"><i class="fas fa-broadcast-tower"></i> {v['channel']}</div>
-                <div class="actions" style="grid-template-columns: 1fr;">
-                    <a href="{v['link']}" class="btn btn-link" style="border-color:var(--primary); color:var(--primary)">
-                        <i class="fas fa-download"></i> دانلود مستقیم
-                    </a>
-                </div>
-            </div>
-            ''' for i, v in enumerate(final_files)])}
-            {f'<div class="empty"><i class="fas fa-folder-open"></i><p>فایلی موجود نیست</p></div>' if not final_files else ''}
+        <div id="t3" class="tab">
+            {"".join([f'<div class="card"><div><span class="badge">{v["ext"]}</span></div><div style="margin:10px 0">{v["name"]}</div><div style="font-size:0.8rem;color:#94a3b8;margin:5px 0">📡 {v["channel"]}</div><a href="{v["link"]}" class="btn link">دانلود</a></div>' for v in final_files])}
         </div>
     </div>
-
-    <nav class="bottom-nav">
-        <div class="nav-item active" onclick="switchTab('tab-configs', this)">
-            <i class="fas fa-rocket"></i>
-            <span>کانفیگ</span>
-        </div>
-        <div class="nav-item" onclick="switchTab('tab-proxies', this)">
-            <i class="fas fa-shield-alt"></i>
-            <span>پروکسی</span>
-        </div>
-        <div class="nav-item" onclick="switchTab('tab-files', this)">
-            <i class="fas fa-folder"></i>
-            <span>فایل</span>
-        </div>
-    </nav>
-
-    <div id="qrModal" class="modal" onclick="closeQR(event)">
-        <div class="modal-content">
-            <span class="close-modal" onclick="document.getElementById('qrModal').style.display='none'">&times;</span>
-            <h3 style="margin-bottom:15px; color:var(--text-main)">اسکن برای اتصال</h3>
-            <img id="qrImage" src="" alt="QR Code">
-            <p style="font-size:0.8rem; color:var(--text-muted)">با دوربین گوشی اسکن کنید</p>
-        </div>
+    <div class="nav">
+        <div class="nav-item active" onclick="sw('t1',this)"><i class="fas fa-rocket"></i>کانفیگ</div>
+        <div class="nav-item" onclick="sw('t2',this)"><i class="fas fa-shield-alt"></i>پروکسی</div>
+        <div class="nav-item" onclick="sw('t3',this)"><i class="fas fa-folder"></i>فایل</div>
     </div>
-
     <script>
-        // Tab Switching
-        function switchTab(id, el) {{
-            document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
-            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
-            
-            document.getElementById(id).classList.add('active');
-            el.classList.add('active');
-            window.scrollTo(0, 0);
-        }}
-
-        // Copy Function
-        function copyText(elementId, btn) {{
-            const text = document.getElementById(elementId).innerText;
-            navigator.clipboard.writeText(text).then(() => {{
-                const originalHTML = btn.innerHTML;
-                btn.innerHTML = '<i class="fas fa-check"></i> کپی شد';
-                btn.style.background = '#10b981';
-                btn.style.color = '#fff';
-                
-                setTimeout(() => {{
-                    btn.innerHTML = originalHTML;
-                    btn.style.background = ''; // reset to css
-                    btn.style.color = '';
-                }}, 2000);
-            }});
-        }}
-
-        // Search Filter
-        function filterContent() {{
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            document.querySelectorAll('.search-item').forEach(card => {{
-                const text = card.getAttribute('data-filter').toLowerCase();
-                card.style.display = text.includes(query) ? 'block' : 'none';
-            }});
-        }}
-
-        // QR Code Logic
-        function showQR(config) {{
-            const url = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${{encodeURIComponent(config)}}`;
-            document.getElementById('qrImage').src = url;
-            document.getElementById('qrModal').style.display = 'flex';
-        }}
-
-        function closeQR(e) {{
-            if (e.target.id === 'qrModal') {{
-                document.getElementById('qrModal').style.display = 'none';
-            }}
-        }}
+        function sw(id,el){{ document.querySelectorAll('.tab').forEach(e=>e.classList.remove('active')); document.getElementById(id).classList.add('active'); document.querySelectorAll('.nav-item').forEach(e=>e.classList.remove('active')); el.classList.add('active'); window.scrollTo(0,0); }}
+        function cp(id,btn){{ navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{{ btn.innerHTML='<i class="fas fa-check"></i> کپی شد'; setTimeout(()=>{{ btn.innerHTML='<i class="far fa-copy"></i> کپی'; }},2000); }}); }}
     </script>
 </body>
 </html>"""
-            
-            with open('index.html', 'w', encoding='utf-8') as f:
-                f.write(html)
-            
-            print("✅ صفحه وب ساخته شد")
-            print(f"   📊 {len(final_configs)} کانفیگ، {len(final_proxies)} پروکسی، {len(final_files)} فایل")
-            
-        except Exception as e:
-            print(f"❌ خطا HTML: {e}")
-            import traceback
-            traceback.print_exc()
+        with open('index.html', 'w', encoding='utf-8') as f: f.write(html)
+        print("✅ صفحه وب ساخته شد")
 
-        print(f"\n✅ پایان عملیات ({sent_count} ارسال شد)")
-    except Exception as e:
-        print(f"❌ خطای حیاتی: {e}")
-        import traceback
-        traceback.print_exc()
-    finally:
-        await client.disconnect()
+    except Exception as e: print(f"❌ خطای حیاتی: {e}")
+    finally: await client.disconnect()
 
 if __name__ == "__main__":
-    with client:
-        client.loop.run_until_complete(main())
+    with client: client.loop.run_until_complete(main())

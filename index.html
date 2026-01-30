@@ -64,7 +64,7 @@ th,td{padding:10px}
 <div class="header">
 <h1>🔮 VPN Config Hub</h1>
 <div class="subtitle">مرکز جامع کانفیگ‌های رایگان و تست‌شده</div>
-<div class="update">📅 آخرین بروزرسانی: 2026/01/30 - 18:49 | 🔄 هر کانال هر 80 دقیقه بررسی می‌شود</div>
+<div class="update">📅 آخرین بروزرسانی: 2026/01/30 - 19:16 | 🔄 هر کانال هر 80 دقیقه بررسی می‌شود</div>
 </div>
 
 <div class="container">
@@ -79,37 +79,473 @@ th,td{padding:10px}
 </div>
 
 <div class="tabs">
-<button class="tab active" onclick="showTab('configs')">🔮 کانفیگ (0)</button>
-<button class="tab" onclick="showTab('proxies')">🔵 پروکسی (0)</button>
-<button class="tab" onclick="showTab('files')">📂 فایل (0)</button>
+<button class="tab active" onclick="showTab('configs')">🔮 کانفیگ (7)</button>
+<button class="tab" onclick="showTab('proxies')">🔵 پروکسی (27)</button>
+<button class="tab" onclick="showTab('files')">📂 فایل (7)</button>
 <button class="tab" onclick="showTab('channels')">📡 کانال (39)</button>
 </div>
 
 <div class="content">
 <div id="configs" class="tab-content active">
 <div class="stats">
-<div class="stat-card"><h3>0</h3><p>کانفیگ آنلاین</p></div>
+<div class="stat-card"><h3>7</h3><p>کانفیگ آنلاین</p></div>
 
-<div class="stat-card"><h3>-</h3><p>میانگین</p></div>
-<div class="stat-card"><h3>-</h3><p>پروتکل</p></div>
-<div class="stat-card"><h3>-</h3><p>سرعت</p></div>
+<div class="stat-card"><h3>246ms</h3><p>میانگین پینگ</p></div>
+<div class="stat-card"><h3>2</h3><p>نوع پروتکل</p></div>
+<div class="stat-card"><h3>4</h3><p>سرعت عالی</p></div>
 </div>
-<div class="empty-state"><h3>هیچ کانفیگ زنده‌ای موجود نیست</h3><p>لطفاً بعداً بررسی کنید</p></div>
-</div>
+<table>
+<thead><tr><th>ردیف</th><th>پروتکل</th><th>وضعیت</th><th>پینگ</th><th>منبع</th><th>کانفیگ</th><th>عملیات</th></tr></thead>
+<tbody>
+
+<tr>
+<td>1</td>
+<td><span class="protocol-badge vless">VLESS</span></td>
+<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
+<td><strong>2ms</strong></td>
+<td>VPN MARKET</td>
+<td><code id="cfg1">vless://f85f60b1-2b96-49e9-8bde-b656d1516df0@104.1...</code></td>
+<td>
+<button class="copy-btn" onclick='copyText("vless://f85f60b1-2b96-49e9-8bde-b656d1516df0@104.17.165.123:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=gx8rw8fz783ncefn332y7uyfsvb59o820mryrxu1cj19jiuuur.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=gx8rw8fz783ncefn332y7uyfsvb59o820mryrxu1cj19jiuuur.zjde5.de5.net#%40vpnbaz%20%F0%9F%93%80")'>📋 کپی</button>
+<a href="https://t.me/anty_filter/22394" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><span class="protocol-badge vless">VLESS</span></td>
+<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
+<td><strong>2ms</strong></td>
+<td>VPN MARKET</td>
+<td><code id="cfg2">vless://bbdab850-9164-43f3-adf9-26f7c5458e9d@66.81...</code></td>
+<td>
+<button class="copy-btn" onclick='copyText("vless://bbdab850-9164-43f3-adf9-26f7c5458e9d@66.81.247.155:8443?path=%2F%3Fed%3D512&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net#%40vpnbaz%20%F0%9F%A5%8E")'>📋 کپی</button>
+<a href="https://t.me/anty_filter/22394" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><span class="protocol-badge vless">VLESS</span></td>
+<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
+<td><strong>2ms</strong></td>
+<td>VPN MARKET</td>
+<td><code id="cfg3">vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.1...</code></td>
+<td>
+<button class="copy-btn" onclick='copyText("vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.114.96.3:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&type=ws&allowInsecure=0&sni=pages.dev#%40vpnbaz%20%F0%9F%A7%B8```")'>📋 کپی</button>
+<a href="https://t.me/anty_filter/22394" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><span class="protocol-badge vless">VLESS</span></td>
+<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
+<td><strong>32ms</strong></td>
+<td>VPN MARKET</td>
+<td><code id="cfg4">vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@ip.no...</code></td>
+<td>
+<button class="copy-btn" onclick='copyText("vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@ip.notomarosww.com:8443?path=mehrosaboran%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net#%40vpnbaz%20%F0%9F%9A%A6")'>📋 کپی</button>
+<a href="https://t.me/anty_filter/22394" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><span class="protocol-badge vless">VLESS</span></td>
+<td><span style="color:#ffc107;font-weight:bold">🟡 خوب</span></td>
+<td><strong>147ms</strong></td>
+<td>VPN MARKET</td>
+<td><code id="cfg5">vless://e16a35ea-6715-4e75-9845-d20358bd0876@94.23...</code></td>
+<td>
+<button class="copy-btn" onclick='copyText("vless://e16a35ea-6715-4e75-9845-d20358bd0876@94.232.247.168:41360?security=reality&encryption=none&pbk=TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU&headerType=none&type=tcp&sni=yahoo.com&sid=1aab45#%40vpnbaz%20%F0%9F%8D%95")'>📋 کپی</button>
+<a href="https://t.me/anty_filter/22394" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><span class="protocol-badge vmess">VMESS</span></td>
+<td><span style="color:#dc3545;font-weight:bold">🟠 متوسط</span></td>
+<td><strong>256ms</strong></td>
+<td>xsfilternet</td>
+<td><code id="cfg6">vmess://eyJhZGQiOiJuZXdwcnN2cC5vcmciLCJhaWQiOiIwIi...</code></td>
+<td>
+<button class="copy-btn" onclick='copyText("vmess://eyJhZGQiOiJuZXdwcnN2cC5vcmciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InNwZWVkdGVzdC5uZXQiLCJpZCI6IjUyN2Q5YmUyLWFmZDEtNGE0OC04MWYzLWNiMjVjOWNiYjFiMyIsImluc2VjdXJlIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjIwODMiLCJwcyI6IkBLSUFfTkVUIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJodHRwIiwidiI6IjIifQ==```")'>📋 کپی</button>
+<a href="https://t.me/xsfilternet/1871" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><span class="protocol-badge vless">VLESS</span></td>
+<td><span style="color:#dc3545;font-weight:bold">🟠 متوسط</span></td>
+<td><strong>1284ms</strong></td>
+<td>VPN MARKET</td>
+<td><code id="cfg7">vless://d4d031ec-0ba6-486a-aa0c-dce2b7cb8933@212.1...</code></td>
+<td>
+<button class="copy-btn" onclick='copyText("vless://d4d031ec-0ba6-486a-aa0c-dce2b7cb8933@212.111.84.187:8443?security=reality&encryption=none&pbk=Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=m.vk.ru&sid=887c0d72e771a934#%40vpnbaz%20%E2%98%8E%EF%B8%8F")'>📋 کپی</button>
+<a href="https://t.me/anty_filter/22394" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+</tbody></table></div>
 <div id="proxies" class="tab-content">
 <div class="stats">
-<div class="stat-card"><h3>0</h3><p>پروکسی فعال</p></div>
+<div class="stat-card"><h3>27</h3><p>پروکسی فعال</p></div>
 <div class="stat-card"><h3>MTProto</h3><p>نوع پروتکل</p></div>
 <div class="stat-card"><h3>رایگان</h3><p>100%</p></div>
 </div>
-<div class="empty-state"><h3>پروکسی موجود نیست</h3></div></div>
+
+<div style="background:#e7f3ff;padding:20px;border-radius:10px;margin-bottom:20px;border-right:4px solid #667eea">
+<h3 style="color:#667eea;margin-bottom:10px">💡 نحوه استفاده:</h3>
+<ol style="margin-right:20px;line-height:1.8">
+<li>روی دکمه "اتصال" کلیک کنید</li>
+<li>تلگرام خودکار باز می‌شود</li>
+<li>روی "اتصال" در تلگرام کلیک کنید</li>
+<li>✅ متصل شدید!</li>
+</ol>
+</div>
+<table>
+<thead><tr><th>ردیف</th><th>سرور:پورت</th><th>منبع</th><th>عملیات</th></tr></thead>
+<tbody>
+
+<tr>
+<td>1</td>
+<td><code>176.65.128.76:155</code></td>
+<td>xsfilternet</td>
+<td>
+<a href="tg://proxy?server=176.65.128.76&port=155&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/xsfilternet/1870" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><code>78.46.200.15:8443</code></td>
+<td>xsfilternet</td>
+<td>
+<a href="tg://proxy?server=78.46.200.15&port=8443&secret=fgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNng" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/xsfilternet/1870" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><code>78.46.197.232:8443</code></td>
+<td>xsfilternet</td>
+<td>
+<a href="tg://proxy?server=78.46.197.232&port=8443&secret=fgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNng" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/xsfilternet/1870" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><code>185.115.161.254:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.254&port=9443&secret=dd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3add" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><code>185.115.161.240:77777</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.240&port=77777&secret=EERigv" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><code>185.115.161.238:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.238&port=9443&secret=dd104462821249bd7ac519130220c25d09" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><code>185.115.161.242:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.242&port=9443&secret=dd104462821249bd7ac519130220c25d09" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><code>185.115.161.45:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.45&port=9443&secret=dd1603010200010001fc030386e24c3add" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><code>185.115.161.243:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.243&port=9443&secret=dd104462821249bd7ac519130220c25d09" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><code>185.115.161.246:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.246&port=9443&secret=dd1603010200010001fc030386e24c3add" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><code>185.115.161.241:77777</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.241&port=77777&secret=EERigv%2F%2F%2F%2F%2F%2F+AAA%2F%2FgAAA%3D%3D" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><code>185.115.161.239:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.239&port=9443&secret=dd104462821249bd7ac519130220c25d09" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><code>185.115.161.247:7443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.247&port=7443&secret=dd79e70102001e7807f0104386124c0479" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td><code>185.115.161.245:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.245&port=9443&secret=dd104462821249bd7ac519130220c25d09" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td><code>185.115.161.244:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.244&port=9443&secret=dd104462821249bd7ac519130220c25d09" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td><code>185.115.161.248:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.248&port=9443&secret=dd104462821249bd7ac519130220c25d09" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td><code>185.115.161.237:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.237&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>18</td>
+<td><code>185.115.161.249:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.249&port=9443&secret=dd1603010200010001fc030386e24c3add" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>19</td>
+<td><code>185.115.161.250:9443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.115.161.250&port=9443&secret=dd104462821249bd7ac519130220c25d09" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2153" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td><code>172.65.102.115:22</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=172.65.102.115&port=22&secret=dd79e344818749bd7ac519130220c25" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2151" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td><code>185.215.247.14:2053</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.215.247.14&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2151" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>22</td>
+<td><code>185.215.247.22:2053</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.215.247.22&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E63" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2151" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>23</td>
+<td><code>85.133.194.105:8443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=85.133.194.105&port=8443&secret=79e344818749bd7ac519130220c25d" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2151" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>24</td>
+<td><code>95.217.242.133:85</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=95.217.242.133&port=85&secret=FgIBAgABAAH8AwOG4k" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2151" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>25</td>
+<td><code>185.215.247.111:2053</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=185.215.247.111&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2151" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>26</td>
+<td><code>162.55.157.98:443</code></td>
+<td>فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</td>
+<td>
+<a href="tg://proxy?server=162.55.157.98&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/varvpn1/2151" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+
+<tr>
+<td>27</td>
+<td><code>85.133.194.113:8443</code></td>
+<td>VPN | CICDO کانفیگ ملی شکن</td>
+<td>
+<a href="tg://proxy?server=85.133.194.113&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
+<a href="https://t.me/cicdoVPN/880" target="_blank" class="link-btn">📱 منبع</a>
+</td>
+</tr>
+</tbody></table></div>
 <div id="files" class="tab-content">
 <div class="stats">
-<div class="stat-card"><h3>0</h3><p>فایل موجود</p></div>
-<div class="stat-card"><h3>0</h3><p>نوع فایل</p></div>
+<div class="stat-card"><h3>7</h3><p>فایل موجود</p></div>
+<div class="stat-card"><h3>1</h3><p>نوع فایل</p></div>
 <div class="stat-card"><h3>رایگان</h3><p>100%</p></div>
 </div>
-<div class="empty-state"><h3>فایل موجود نیست</h3></div></div>
+
+<table>
+<thead><tr><th>ردیف</th><th>نام فایل</th><th>نوع</th><th>منبع</th><th>عملیات</th></tr></thead>
+<tbody>
+
+<tr>
+<td>1</td>
+<td><code>@shankamilترامپ نزنی الهی فوت شی.npvt</code></td>
+<td><strong>NPVT</strong></td>
+<td>کانفینگ ملی شکن</td>
+<td><a href="https://t.me/shankamil/2765" target="_blank" class="link-btn">📥 دانلود</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><code>@shankamilنوش جون مردم.npvt</code></td>
+<td><strong>NPVT</strong></td>
+<td>کانفینگ ملی شکن</td>
+<td><a href="https://t.me/shankamil/2767" target="_blank" class="link-btn">📥 دانلود</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><code>vip.ping.npvt</code></td>
+<td><strong>NPVT</strong></td>
+<td>xsfilternet</td>
+<td><a href="https://t.me/xsfilternet/1863" target="_blank" class="link-btn">📥 دانلود</a></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><code>موتورسیکلت_گلکسی_جی_دویست_می‌تواند_به_حداکثر_سرعت_100_کیلومتر_بر.npvt</code></td>
+<td><strong>NPVT</strong></td>
+<td>xsfilternet</td>
+<td><a href="https://t.me/xsfilternet/1873" target="_blank" class="link-btn">📥 دانلود</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><code>🇩🇪👾💥.npvt</code></td>
+<td><strong>NPVT</strong></td>
+<td>xsfilternet</td>
+<td><a href="https://t.me/xsfilternet/1874" target="_blank" class="link-btn">📥 دانلود</a></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><code>-🇩🇪.npvt</code></td>
+<td><strong>NPVT</strong></td>
+<td>xsfilternet</td>
+<td><a href="https://t.me/xsfilternet/1875" target="_blank" class="link-btn">📥 دانلود</a></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><code>💙❤️@Cooonfig💙❤️(همه نتا2096موشک).npvt</code></td>
+<td><strong>NPVT</strong></td>
+<td>Cooonfig</td>
+<td><a href="https://t.me/cooonfig/6514" target="_blank" class="link-btn">📥 دانلود</a></td>
+</tr>
+</tbody></table></div>
 <div id="channels" class="tab-content">
 <div class="stats">
 <div class="stat-card"><h3>39</h3><p>کانال منبع</p></div>
@@ -127,7 +563,7 @@ th,td{padding:10px}
 <div class="footer">
 <p style="font-size:1.2em;margin-bottom:15px">🔗 کانال اصلی: <a href="https://t.me/myvpn1404">@myvpn1404</a></p>
 <p>ساخته شده با ❤️ • بروزرسانی خودکار هر 40 دقیقه • رایگان برای همیشه</p>
-<p style="margin-top:10px;font-size:0.9em">آخرین بروزرسانی: 2026/01/30 - 18:49</p>
+<p style="margin-top:10px;font-size:0.9em">آخرین بروزرسانی: 2026/01/30 - 19:16</p>
 </div>
 
 <script>

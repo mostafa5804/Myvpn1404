@@ -1,71 +1,1457 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VPN Config Hub</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Tahoma,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:20px;direction:rtl}
-.header{text-align:center;color:#fff;margin-bottom:30px}
-.header h1{font-size:2.5em;margin-bottom:10px}
-.container{max-width:1400px;margin:0 auto}
-.tabs{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;justify-content:center}
-.tab{background:rgba(255,255,255,0.2);color:#fff;border:2px solid rgba(255,255,255,0.3);padding:12px 30px;border-radius:10px;cursor:pointer;transition:all 0.3s}
-.tab:hover{background:rgba(255,255,255,0.3)}
-.tab.active{background:#fff;color:#667eea}
-.content{background:#fff;border-radius:15px;padding:30px;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
-.tab-content{display:none}
-.tab-content.active{display:block}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px}
-.stat-card{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:25px;border-radius:12px;text-align:center}
-.stat-card h3{font-size:2.5em;margin-bottom:8px}
-table{width:100%;border-collapse:collapse;margin-top:20px}
-th,td{padding:15px;text-align:right;border-bottom:1px solid #eee}
-th{background:#f8f9fa;font-weight:600}
-tr:hover{background:#f8f9fa}
-.protocol-badge{display:inline-block;padding:5px 10px;border-radius:6px;font-size:0.85em;font-weight:600;color:#fff}
-.vmess{background:#667eea}
-.vless{background:#764ba2}
-.trojan{background:#f093fb}
-code{background:#f8f9fa;padding:3px 8px;border-radius:4px;font-size:0.9em;word-break:break-all}
-.copy-btn{background:#667eea;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer}
-.empty-state{text-align:center;padding:60px 20px;color:#999}
-.footer{text-align:center;margin-top:40px;padding:30px;color:#fff}
-.channel-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:15px;margin-top:20px}
-.channel-item{background:#f8f9fa;padding:15px;border-radius:10px;border-right:4px solid #667eea}
-.channel-item a{color:#667eea;text-decoration:none;font-weight:500}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --secondary: #94a3b8;
+            --text-main: #f1f5f9;
+            --accent: #22d3ee;
+            --success: #4ade80;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 10px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        
+        /* Header */
+        header { text-align: center; padding: 40px 0; }
+        header h1 { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
+        header p { color: var(--secondary); font-size: 0.9rem; }
+
+        /* Tabs */
+        .tabs { display: flex; justify-content: center; gap: 8px; margin-bottom: 25px; flex-wrap: wrap; }
+        .tab { background: var(--card-bg); border: 1px solid #334155; color: var(--secondary); padding: 10px 20px; border-radius: 12px; cursor: pointer; transition: 0.3s; font-size: 0.9rem; }
+        .tab.active { background: var(--primary); color: var(--bg-color); border-color: var(--primary); font-weight: bold; }
+
+        /* Content */
+        .tab-content { display: none; animation: fadeIn 0.5s ease; }
+        .tab-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Cards & Tables */
+        .card { background: var(--card-bg); border-radius: 16px; padding: 15px; margin-bottom: 15px; border: 1px solid #334155; position: relative; }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .badge { padding: 4px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: bold; background: #334155; }
+        .badge.ping { color: var(--success); border: 1px solid var(--success); }
+        
+        .config-box { background: #0f172a; padding: 12px; border-radius: 10px; font-family: monospace; font-size: 0.8rem; overflow-x: auto; white-space: nowrap; color: var(--accent); margin: 10px 0; border: 1px dashed #334155; }
+        
+        .btn-group { display: flex; gap: 10px; margin-top: 15px; }
+        .btn { flex: 1; padding: 10px; border-radius: 10px; border: none; cursor: pointer; font-weight: bold; text-align: center; text-decoration: none; font-size: 0.85rem; transition: 0.2s; }
+        .btn-primary { background: var(--primary); color: var(--bg-color); }
+        .btn-outline { background: transparent; border: 1px solid var(--primary); color: var(--primary); }
+        .btn:active { transform: scale(0.98); }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px; color: var(--secondary); font-size: 0.8rem; }
+        a { color: var(--primary); text-decoration: none; }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            .tab { padding: 8px 15px; font-size: 0.8rem; }
+        }
+    </style>
 </head>
 <body>
-<div class="header">
-<h1>🔮 VPN Config Hub</h1>
-<div>📅 2026/01/30 - 14:38</div>
-</div>
+
 <div class="container">
-<div class="tabs">
-<button class="tab active" onclick="showTab('configs')">🔮 کانفیگ (31)</button>
-<button class="tab" onclick="showTab('proxies')">🔵 پروکسی (50)</button>
-<button class="tab" onclick="showTab('files')">📂 فایل (58)</button>
-<button class="tab" onclick="showTab('channels')">📡 کانال (39)</button>
+    <header>
+        <h1>V2Ray Collector</h1>
+        <p>بروزرسانی شده در: 2026/01/30 - 15:17</p>
+    </header>
+
+    <div class="tabs">
+        <div class="tab active" onclick="openTab(event, 'configs')">🚀 کانفیگ‌ها</div>
+        <div class="tab" onclick="openTab(event, 'proxies')">🛡️ پروکسی</div>
+        <div class="tab" onclick="openTab(event, 'files')">📂 فایل‌ها</div>
+    </div>
+
+    <div id="configs" class="tab-content active">
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VMESS</span>
+                <span class="badge ping">203ms</span>
+            </div>
+            <div class="config-box" id="conf_0">vmess://eyJhZGQiOiJ0Z2p1Lm9yZyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoibmFzbmV0LTU3MTI5NjQ5Ny5pcmFucHJlc3MuY28iLCJpZCI6Im5hc25ldCIsIm5ldCI6IndzIiwicGF0aCI6Ii9uYXNuZXQvY2RuP2VkXHUwMDNkMjU2MCIsInBvcnQiOiI4MDgwIiwicHMiOiLimqHvuI9UZWxlZ3JhbSBcdTAwM2QgQGNvbmZpZ3JheWdhbiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_0')">کپی کانفیگ</button>
+                <a href="vmess://eyJhZGQiOiJ0Z2p1Lm9yZyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoibmFzbmV0LTU3MTI5NjQ5Ny5pcmFucHJlc3MuY28iLCJpZCI6Im5hc25ldCIsIm5ldCI6IndzIiwicGF0aCI6Ii9uYXNuZXQvY2RuP2VkXHUwMDNkMjU2MCIsInBvcnQiOiI4MDgwIiwicHMiOiLimqHvuI9UZWxlZ3JhbSBcdTAwM2QgQGNvbmZpZ3JheWdhbiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VMESS</span>
+                <span class="badge ping">32ms</span>
+            </div>
+            <div class="config-box" id="conf_1">vmess://eyJhZGQiOiIxNTQuODMuMi4xNTYiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InYyMDUuMTk3NDA4MjIueHl6IiwiaWQiOiI5MjM3M2VkMS03OGE4LTRjYmUtYWEwNi01NGFmMWVkZDA0NzEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjIwODYiLCJwcyI6IuKaoe+4j1RlbGVncmFtIFx1MDAzZCBAY29uZmlncmF5Z2FuIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiJ9</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_1')">کپی کانفیگ</button>
+                <a href="vmess://eyJhZGQiOiIxNTQuODMuMi4xNTYiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InYyMDUuMTk3NDA4MjIueHl6IiwiaWQiOiI5MjM3M2VkMS03OGE4LTRjYmUtYWEwNi01NGFmMWVkZDA0NzEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjIwODYiLCJwcyI6IuKaoe+4j1RlbGVncmFtIFx1MDAzZCBAY29uZmlncmF5Z2FuIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiJ9" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VLESS</span>
+                <span class="badge ping">33ms</span>
+            </div>
+            <div class="config-box" id="conf_2">vless://bb8c74a1-abc1-4511-b100-9876e30cb65c@172.64.145.38:8443?encryption=none&security=tls&sni=xfjd79v2tjscrm6jqo.zjde5.de5.net&alpn=http%2F1.1&type=ws&host=xfjd79v2tjscrm6jqo.zjde5.de5.net&path=%2F%3Fed%3D%23TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI%3Fed%3D512#⚡Telegram</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_2')">کپی کانفیگ</button>
+                <a href="vless://bb8c74a1-abc1-4511-b100-9876e30cb65c@172.64.145.38:8443?encryption=none&security=tls&sni=xfjd79v2tjscrm6jqo.zjde5.de5.net&alpn=http%2F1.1&type=ws&host=xfjd79v2tjscrm6jqo.zjde5.de5.net&path=%2F%3Fed%3D%23TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI%3Fed%3D512#⚡Telegram" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VLESS</span>
+                <span class="badge ping">398ms</span>
+            </div>
+            <div class="config-box" id="conf_3">vless://494a1419-6fb9-40d1-9860-83aa5fdd0c01@srv15.bestforcast.com:16300?encryption=none&security=none&type=ws#⚡Telegram</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_3')">کپی کانفیگ</button>
+                <a href="vless://494a1419-6fb9-40d1-9860-83aa5fdd0c01@srv15.bestforcast.com:16300?encryption=none&security=none&type=ws#⚡Telegram" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VLESS</span>
+                <span class="badge ping">256ms</span>
+            </div>
+            <div class="config-box" id="conf_4">vless://73130c36-8b0a-4f5a-865c-bf92c182c1a7@nsop.mastermarly.ir:2096?allowInsecure=0&encryption=none&fp=safari&host=francoo.mastermarly.ir&insecure=0&path=%2Fpath&security=tls&sni=francoo.mastermarly.ir&type=ws#⚡Telegram</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_4')">کپی کانفیگ</button>
+                <a href="vless://73130c36-8b0a-4f5a-865c-bf92c182c1a7@nsop.mastermarly.ir:2096?allowInsecure=0&encryption=none&fp=safari&host=francoo.mastermarly.ir&insecure=0&path=%2Fpath&security=tls&sni=francoo.mastermarly.ir&type=ws#⚡Telegram" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VLESS</span>
+                <span class="badge ping">251ms</span>
+            </div>
+            <div class="config-box" id="conf_5">vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@ip.elcump.top:8443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---MiTiVPN%2F---%40MiTiVPN&security=tls&alpn=http%2F1.1&encryption=none&host=hitgram.ir&fp=chrome&type=ws&sni=hitgram.ir#%F0%9F%94%A5%20Telegram%3A%20%40configraygan</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_5')">کپی کانفیگ</button>
+                <a href="vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@ip.elcump.top:8443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---MiTiVPN%2F---%40MiTiVPN&security=tls&alpn=http%2F1.1&encryption=none&host=hitgram.ir&fp=chrome&type=ws&sni=hitgram.ir#%F0%9F%94%A5%20Telegram%3A%20%40configraygan" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VLESS</span>
+                <span class="badge ping">235ms</span>
+            </div>
+            <div class="config-box" id="conf_6">vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@cf.narton.ir:8443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---MiTiVPN%2F---%40MiTiVPN&security=tls&alpn=http%2F1.1&encryption=none&host=hitgram.ir&fp=chrome&type=ws&sni=hitgram.ir#%F0%9F%94%A5%20Telegram%3A%20%40configraygan</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_6')">کپی کانفیگ</button>
+                <a href="vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@cf.narton.ir:8443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---MiTiVPN%2F---%40MiTiVPN&security=tls&alpn=http%2F1.1&encryption=none&host=hitgram.ir&fp=chrome&type=ws&sni=hitgram.ir#%F0%9F%94%A5%20Telegram%3A%20%40configraygan" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VLESS</span>
+                <span class="badge ping">1028ms</span>
+            </div>
+            <div class="config-box" id="conf_7">vless://d6bf6e21-f19c-4aaf-b4a5-c3a9a18a08f2@t.aparat-movies-download.ir:42535?security=none&encryption=none&host=aparat.com&headerType=http&type=tcp#%F0%9F%94%A5%20Telegram%3A%20%40wiki_tajrobe</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_7')">کپی کانفیگ</button>
+                <a href="vless://d6bf6e21-f19c-4aaf-b4a5-c3a9a18a08f2@t.aparat-movies-download.ir:42535?security=none&encryption=none&host=aparat.com&headerType=http&type=tcp#%F0%9F%94%A5%20Telegram%3A%20%40wiki_tajrobe" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VLESS</span>
+                <span class="badge ping">1653ms</span>
+            </div>
+            <div class="config-box" id="conf_8">vless://0e7f8cd2-ac99-4879-bcdc-78b1f836a38a@baby3.nardonga.sbs:54687?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%94%A5%20Telegram%3A%20%40configraygan</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_8')">کپی کانفیگ</button>
+                <a href="vless://0e7f8cd2-ac99-4879-bcdc-78b1f836a38a@baby3.nardonga.sbs:54687?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%94%A5%20Telegram%3A%20%40configraygan" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VLESS</span>
+                <span class="badge ping">1287ms</span>
+            </div>
+            <div class="config-box" id="conf_9">vless://d082b5e0-2435-4599-b935-d2c2b70beb67@cloudflare-ip.mofashi.ltd:443?path=%2F&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&host=purple-mrvpn294x.mrvpnandamir294.workers.dev&fp=chrome&type=ws&sni=purple-mrvpn294x.mrvpnandamir294.workers.dev#%F0%9F%94%A5%20Telegram%3A%20%40configraygan</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_9')">کپی کانفیگ</button>
+                <a href="vless://d082b5e0-2435-4599-b935-d2c2b70beb67@cloudflare-ip.mofashi.ltd:443?path=%2F&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&host=purple-mrvpn294x.mrvpnandamir294.workers.dev&fp=chrome&type=ws&sni=purple-mrvpn294x.mrvpnandamir294.workers.dev#%F0%9F%94%A5%20Telegram%3A%20%40configraygan" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VMESS</span>
+                <span class="badge ping">510ms</span>
+            </div>
+            <div class="config-box" id="conf_10">vmess://eyJhZGQiOiJjYWxsbWV2cG44LmNhbGxtZXNob3AuZnVuIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImIzZjgwYWI3LTlkZTEtNDk5Yi04NzAzLTY4MWZlYzhjYzcxZCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMTIxMjgiLCJwcyI6IvCflKUgVGVsZWdyYW06IEBjb25maWdyYXlnYW4iLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_10')">کپی کانفیگ</button>
+                <a href="vmess://eyJhZGQiOiJjYWxsbWV2cG44LmNhbGxtZXNob3AuZnVuIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImIzZjgwYWI3LTlkZTEtNDk5Yi04NzAzLTY4MWZlYzhjYzcxZCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMTIxMjgiLCJwcyI6IvCflKUgVGVsZWdyYW06IEBjb25maWdyYXlnYW4iLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VLESS</span>
+                <span class="badge ping">691ms</span>
+            </div>
+            <div class="config-box" id="conf_11">vless://38cc3dff-5114-429f-9a45-fed484086c47@fi1.persianhostnet.ir:5121?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%94%A5%20Telegram%3A%20%40configraygan</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_11')">کپی کانفیگ</button>
+                <a href="vless://38cc3dff-5114-429f-9a45-fed484086c47@fi1.persianhostnet.ir:5121?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%94%A5%20Telegram%3A%20%40configraygan" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VMESS</span>
+                <span class="badge ping">13ms</span>
+            </div>
+            <div class="config-box" id="conf_12">vmess://eyJhZGQiOiJ0Z2p1Lm9yZyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoibmFzbmV0LTU3MTI5NjQ5Ny5pcmFucHJlc3MuY28iLCJpZCI6Im5hc25ldCIsIm5ldCI6IndzIiwicGF0aCI6Ii9uYXNuZXQvY2RuP2VkXHUwMDNkMjU2MCIsInBvcnQiOiI4MDgwIiwicHMiOiJAc2hhbmthbWlsINmF2YTbjCDYtNqp2YYg2LPYsdi52KrbjCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_12')">کپی کانفیگ</button>
+                <a href="vmess://eyJhZGQiOiJ0Z2p1Lm9yZyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoibmFzbmV0LTU3MTI5NjQ5Ny5pcmFucHJlc3MuY28iLCJpZCI6Im5hc25ldCIsIm5ldCI6IndzIiwicGF0aCI6Ii9uYXNuZXQvY2RuP2VkXHUwMDNkMjU2MCIsInBvcnQiOiI4MDgwIiwicHMiOiJAc2hhbmthbWlsINmF2YTbjCDYtNqp2YYg2LPYsdi52KrbjCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VMESS</span>
+                <span class="badge ping">464ms</span>
+            </div>
+            <div class="config-box" id="conf_13">vmess://eyJhZGQiOiJhbS5yZWRmbGFnaXIuc2JzIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjE5YjVmODRiLTY1MjEtNGVmMS1hYmU1LWM0MzAzYmZhNGM2ZSIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMjA2MCIsInBzIjoiQHNoYW5rYW1pbCDYp9iu2KrYtdin2LXbjCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_13')">کپی کانفیگ</button>
+                <a href="vmess://eyJhZGQiOiJhbS5yZWRmbGFnaXIuc2JzIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjE5YjVmODRiLTY1MjEtNGVmMS1hYmU1LWM0MzAzYmZhNGM2ZSIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMjA2MCIsInBzIjoiQHNoYW5rYW1pbCDYp9iu2KrYtdin2LXbjCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">VLESS</span>
+                <span class="badge ping">271ms</span>
+            </div>
+            <div class="config-box" id="conf_14">vless://8e4adbd0-ee41-4ea1-a263-6f60e8bc615c@makvaslim.smartphone1.top:443?allowInsecure=0&alpn=h2%2Chttp%2F1.1&encryption=none&fp=chrome&host=ez.smartphone1.top&insecure=0&path=%2Fshop&security=tls&sni=ez.smartphone1.top&type=ws</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_14')">کپی کانفیگ</button>
+                <a href="vless://8e4adbd0-ee41-4ea1-a263-6f60e8bc615c@makvaslim.smartphone1.top:443?allowInsecure=0&alpn=h2%2Chttp%2F1.1&encryption=none&fp=chrome&host=ez.smartphone1.top&insecure=0&path=%2Fshop&security=tls&sni=ez.smartphone1.top&type=ws" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">TROJAN</span>
+                <span class="badge ping">118ms</span>
+            </div>
+            <div class="config-box" id="conf_15">trojan://telegram-id-directvpn@52.47.70.7:22223?alpn=http%2F1.1&headerType=none&security=tls&sni=trojan.burgerip.co.uk&type=tcp</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_15')">کپی کانفیگ</button>
+                <a href="trojan://telegram-id-directvpn@52.47.70.7:22223?alpn=http%2F1.1&headerType=none&security=tls&sni=trojan.burgerip.co.uk&type=tcp" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="proxies" class="tab-content">
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 8.df.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=8.df.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 148.251.31.109</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.246</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 65.109.178.131</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 2.e7.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=2.e7.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: ir.mmd.filmne2t.info</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=ir.mmd.filmne2t.info&port=8888&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 3.e7.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=3.e7.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.245</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 7ir.mmd.filmne2t.info</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=7ir.mmd.filmne2t.info&port=8888&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 85.133.194.107</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.45</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 85.133.194.103</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 1378837.e7.filmne1t.info</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=1378837.e7.filmne1t.info&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 1.e7.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=1.e7.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 1.df.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=1.df.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 7.e7.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=7.e7.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.247</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.241</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 5.e7.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=5.e7.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.242</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.239</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 663.e7.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=663.e7.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 3737371.df.filmne1t.info</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=3737371.df.filmne1t.info&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.249</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 65.109.241.148</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.243</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 85.133.194.7</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 85.133.194.8</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 130.49.155.23</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 136.243.99.163</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 85.133.194.105</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.244</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: bia-vasl-shim.ir.hitwsaloa-ighfs.space</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.240</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 3734771.df.filmne1t.info</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=3734771.df.filmne1t.info&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 85.133.194.5</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=85.133.194.5&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.238</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 2.df.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=2.df.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.248</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 4.df.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=4.df.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 6.e7.ir.filmne1t.store</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=6.e7.ir.filmne1t.store&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 85.133.194.10</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=85.133.194.10&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.250</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 1374737.e7.filmne1t.info</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=1374737.e7.filmne1t.info&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 85.133.194.9</div>
+            <div class="btn-group">
+                <a href="tg://proxy?server=85.133.194.9&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 95.217.216.2</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.254</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: 185.115.161.237</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="files" class="tab-content">
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣7️⃣2️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Configraygan HY1.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: تمامی اپراتور ها عالی 🔥.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Configraygan XOHq.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: همراه اول (1).npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Configraygan GU1.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣8️⃣1️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Z2.ehi</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: •اختصاصی چنلمون موشک •🚀
+@KEN_6_9.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Z1.ehi</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @shankamilنوش جون مردم با اصالتم.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Z8.ehi</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Z6.ehi</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Z5.ehi</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣8️⃣2️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Speedful2.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @v2rays_ha 157.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣7️⃣4️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: NPVTUNNEL 69.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: vip🫂 (1).npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣7️⃣8️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣8️⃣0️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Configraygan LPI1.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: 11780 ناشناس @llFreak.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @Bistodo (6).npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: 🌹@SiNAVM کانال تلگرامی.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣8️⃣3️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Configraygan VLO.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: v2source-430.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Z7.ehi</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @shankamilبرای جوانان وطن.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣7️⃣3️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @shankamilکیان پیر فلک.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @NpvTunnel_vip🚀🔥.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: KurdiVpn-Srv21.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @NpvTunnel_vip 2🚀.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @shankamilایرانسل سرعتی.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Z4.ehi</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @v2rays_ha 150.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: اختصاصی جدید.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: متصل سرعت موشکی-.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Motasel13.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @DarkPrxoy ⚡.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Z3.ehi</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: NTG 25 (1).npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Configraygan PG87.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣7️⃣9️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: قوی فوق پرسرعت تمامی اپراتور.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @farsiproxy (3).npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: FullAllOp.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Configraygan VPI1.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: 🧷🫧.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: اینجام نترس بچه.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Meli 67 ⚡.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣7️⃣5️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Premium Config ⚡.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Configraygan DSI1.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣4️⃣8️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: 🇩🇪@Cooonfig👸🚀(همه نتا2096موشک).npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @ZEDMODEON ALL 30 🚀.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: 🥀 خسته.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣7️⃣1️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: 🇩🇪@Cooonfig🇩🇪👸(همه نتا2095موشک).npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣4️⃣7️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: Configraygan OGU19.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: سوپر جت.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: @PlanB_net 4️⃣7️⃣0️⃣.npvt</p>
+            <div class="btn-group">
+                <a href="https://t.me/myvpn1404" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        طراحی شده برای <a href="https://t.me/myvpn1404">@myvpn1404</a><br>
+        استفاده منصفانه از منابع گیت‌هاب
+    </footer>
 </div>
-<div class="content">
-<div id="configs" class="tab-content active">
-<div class="stats">
-<div class="stat-card"><h3>31</h3><p>کانفیگ آنلاین</p></div>
-<div class='stat-card'><h3>203ms</h3><p>میانگین پینگ</p></div><div class='stat-card'><h3>3</h3><p>نوع پروتکل</p></div></div><table><thead><tr><th>ردیف</th><th>پروتکل</th><th>پینگ</th><th>منبع</th><th>کانفیگ</th></tr></thead><tbody><tr><td>1</td><td><span class='protocol-badge vless'>VLESS</span></td><td>26ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>vless://e9052516-1e37-4665-a0b4-a5c65dd0ab70@104.18.32.47:80...</code></td></tr><tr><td>2</td><td><span class='protocol-badge vless'>VLESS</span></td><td>26ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://17a7bf97-fef5-4101-a5c5-7c730fabeeee@104.16.190.131:...</code></td></tr><tr><td>3</td><td><span class='protocol-badge vless'>VLESS</span></td><td>27ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.17.92.40:80...</code></td></tr><tr><td>4</td><td><span class='protocol-badge vless'>VLESS</span></td><td>27ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://5073081a-a4a6-46e6-a3f5-ff6bb0bbdfab@104.17.163.123:...</code></td></tr><tr><td>5</td><td><span class='protocol-badge vless'>VLESS</span></td><td>28ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.114.96.3:44...</code></td></tr><tr><td>6</td><td><span class='protocol-badge vless'>VLESS</span></td><td>28ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://3200012b-b38b-4184-b503-1bad9a52b2d6@104.17.162.123:...</code></td></tr><tr><td>7</td><td><span class='protocol-badge vless'>VLESS</span></td><td>28ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://4525c260-df3c-4f62-b8f1-f4f5f305694b@66.81.247.155:4...</code></td></tr><tr><td>8</td><td><span class='protocol-badge vless'>VLESS</span></td><td>28ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://1a25f8ad-cad2-4e93-b5bf-34e42bcac02a@172.64.144.133:...</code></td></tr><tr><td>9</td><td><span class='protocol-badge vless'>VLESS</span></td><td>28ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://f85f60b1-2b96-49e9-8bde-b656d1516df0@104.17.165.123:...</code></td></tr><tr><td>10</td><td><span class='protocol-badge vless'>VLESS</span></td><td>46ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>vless://ec77b9ff-ba31-4b1d-8a81-ee9de133bcf0@162.159.152.4:2...</code></td></tr><tr><td>11</td><td><span class='protocol-badge vless'>VLESS</span></td><td>46ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@104.18.32.47:44...</code></td></tr><tr><td>12</td><td><span class='protocol-badge vless'>VLESS</span></td><td>47ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>vless://f929cc78-e2a1-4ce3-8051-3e9538405144@104.17.254.236:...</code></td></tr><tr><td>13</td><td><span class='protocol-badge vless'>VLESS</span></td><td>48ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>vless://ffa11e82-fa9b-4be1-81a9-c1d48a363df8@104.24.206.21:8...</code></td></tr><tr><td>14</td><td><span class='protocol-badge vless'>VLESS</span></td><td>51ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>vless://5eb9b54d-3c4e-4588-97f7-e53fe3e92c90@nodejs.org:80?s...</code></td></tr><tr><td>15</td><td><span class='protocol-badge vless'>VLESS</span></td><td>117ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>vless://aebe5a70-0ca3-46ce-8208-8b5bab1346ce@mybb.com:443?se...</code></td></tr><tr><td>16</td><td><span class='protocol-badge vless'>VLESS</span></td><td>139ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://32b72728-205a-40fe-a280-f75d8226421a@cloud.team-plus...</code></td></tr><tr><td>17</td><td><span class='protocol-badge ss'>SS</span></td><td>142ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzd...</code></td></tr><tr><td>18</td><td><span class='protocol-badge vless'>VLESS</span></td><td>144ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>vless://1679af35-6dd6-4c09-ae3b-18f239217f3e@adf.ly:443?secu...</code></td></tr><tr><td>19</td><td><span class='protocol-badge ss'>SS</span></td><td>151ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzd...</code></td></tr><tr><td>20</td><td><span class='protocol-badge ss'>SS</span></td><td>154ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjdklJODVUclc2bjBPR3lmcEh...</code></td></tr><tr><td>21</td><td><span class='protocol-badge ss'>SS</span></td><td>155ms</td><td>کانفیگ رایگان v2ray</td><td><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5YmZlZTEzODhlOTYwNTM3@51...</code></td></tr><tr><td>22</td><td><span class='protocol-badge ss'>SS</span></td><td>157ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjdklJODVUclc2bjBPR3lmcEh...</code></td></tr><tr><td>23</td><td><span class='protocol-badge vless'>VLESS</span></td><td>175ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://74fdd21a-8f6d-4e7c-a389-b163a5cc4116@chatgpt.com:443...</code></td></tr><tr><td>24</td><td><span class='protocol-badge vless'>VLESS</span></td><td>201ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://3ff10c5b-c1c6-4986-8a28-e005960ebccb@ip.hamrahto.com...</code></td></tr><tr><td>25</td><td><span class='protocol-badge trojan'>TROJAN</span></td><td>290ms</td><td>کانفیگ رایگان v2ray</td><td><code>trojan://humanity@www.gossipglove.com:443?path=%2Fassignment...</code></td></tr><tr><td>26</td><td><span class='protocol-badge vless'>VLESS</span></td><td>308ms</td><td>فیلترشکن کانفیگ ha tunnel npv v2ray</td><td><code>vless://vpn_connects@vpconnect1.pishipishi.pro:80?security=n...</code></td></tr><tr><td>27</td><td><span class='protocol-badge vless'>VLESS</span></td><td>448ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://c6826005-3ae8-48a3-8a4c-55be9b0ebf49@online3.moyanri...</code></td></tr><tr><td>28</td><td><span class='protocol-badge vless'>VLESS</span></td><td>454ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://c9ce3595-5406-4e75-a2a1-7ffa5874d952@tun.atfteam.onl...</code></td></tr><tr><td>29</td><td><span class='protocol-badge vless'>VLESS</span></td><td>864ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://6618b577-b801-4f0c-811a-ac83c70639dc@niimb.aparat-mo...</code></td></tr><tr><td>30</td><td><span class='protocol-badge vless'>VLESS</span></td><td>906ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://fdeecee7-dbed-47f6-bea2-cb0073b5e435@cl6-ndl.privetn...</code></td></tr><tr><td>31</td><td><span class='protocol-badge vless'>VLESS</span></td><td>1031ms</td><td>کانفیگ رایگان v2ray</td><td><code>vless://b9b7b0a9-39ad-4f6b-b2e0-4bac9d01c274@srv24.tak30m.co...</code></td></tr></tbody></table></div><div id='proxies' class='tab-content'><div class='stats'><div class='stat-card'><h3>50</h3><p>پروکسی</p></div></div><table><thead><tr><th>ردیف</th><th>سرور:پورت</th></tr></thead><tbody><tr><td>1</td><td><code>185.115.161.243:9443</code></td></tr><tr><td>2</td><td><code>195.254.165.247:155</code></td></tr><tr><td>3</td><td><code>87.248.134.5:9443</code></td></tr><tr><td>4</td><td><code>185.115.161.247:7443</code></td></tr><tr><td>5</td><td><code>85.133.194.5:8443</code></td></tr><tr><td>6</td><td><code>185.115.161.238:9443</code></td></tr><tr><td>7</td><td><code>195.254.165.246:155</code></td></tr><tr><td>8</td><td><code>178.63.135.158:8443</code></td></tr><tr><td>9</td><td><code>45.120.177.207:8443</code></td></tr><tr><td>10</td><td><code>195.254.165.249:155</code></td></tr><tr><td>11</td><td><code>85.133.194.102:8443</code></td></tr><tr><td>12</td><td><code>185.115.161.240:77777</code></td></tr><tr><td>13</td><td><code>85.133.194.105:8443</code></td></tr><tr><td>14</td><td><code>195.254.165.251:155</code></td></tr><tr><td>15</td><td><code>85.133.194.103:8443</code></td></tr><tr><td>16</td><td><code>130.49.155.23:443</code></td></tr><tr><td>17</td><td><code>178.63.119.91:8443</code></td></tr><tr><td>18</td><td><code>185.115.161.244:9443</code></td></tr><tr><td>19</td><td><code>185.115.161.249:9443</code></td></tr><tr><td>20</td><td><code>148.251.31.109:8443</code></td></tr><tr><td>21</td><td><code>185.115.161.239:9443</code></td></tr><tr><td>22</td><td><code>45.61.173.217:155</code></td></tr><tr><td>23</td><td><code>46.225.11.197:85</code></td></tr><tr><td>24</td><td><code>185.115.161.237:9443</code></td></tr><tr><td>25</td><td><code>185.115.161.254:9443</code></td></tr><tr><td>26</td><td><code>185.115.161.248:9443</code></td></tr><tr><td>27</td><td><code>136.243.99.163:8443</code></td></tr><tr><td>28</td><td><code>1.e7.ir.filmne1t.site:443</code></td></tr><tr><td>29</td><td><code>185.115.161.45:9443</code></td></tr><tr><td>30</td><td><code>185.115.161.241:77777</code></td></tr><tr><td>31</td><td><code>65.109.178.131:300</code></td></tr><tr><td>32</td><td><code>185.115.161.246:9443</code></td></tr><tr><td>33</td><td><code>195.254.165.245:155</code></td></tr><tr><td>34</td><td><code>85.133.194.7:8443</code></td></tr><tr><td>35</td><td><code>195.254.165.254:155</code></td></tr><tr><td>36</td><td><code>87.248.149.183:443</code></td></tr><tr><td>37</td><td><code>bia-vasl-shim.ir.hitwsaloa-ighfs.space:443</code></td></tr><tr><td>38</td><td><code>85.133.194.107:8443</code></td></tr><tr><td>39</td><td><code>195.254.165.252:155</code></td></tr><tr><td>40</td><td><code>87.248.149.184:65535</code></td></tr><tr><td>41</td><td><code>185.115.161.245:9443</code></td></tr><tr><td>42</td><td><code>85.133.194.8:8443</code></td></tr><tr><td>43</td><td><code>195.254.165.250:155</code></td></tr><tr><td>44</td><td><code>195.254.165.248:155</code></td></tr><tr><td>45</td><td><code>85.133.194.114:8443</code></td></tr><tr><td>46</td><td><code>185.115.161.242:9443</code></td></tr><tr><td>47</td><td><code>65.109.241.148:85</code></td></tr><tr><td>48</td><td><code>185.115.161.250:9443</code></td></tr><tr><td>49</td><td><code>95.217.216.2:85</code></td></tr><tr><td>50</td><td><code>212.80.8.22:8443</code></td></tr></tbody></table></div><div id='files' class='tab-content'><div class='stats'><div class='stat-card'><h3>58</h3><p>فایل</p></div></div><table><thead><tr><th>ردیف</th><th>نام فایل</th></tr></thead><tbody><tr><td>1</td><td><code>Configraygan VPI1.npvt</code></td></tr><tr><td>2</td><td><code>Motasel13.npvt</code></td></tr><tr><td>3</td><td><code>@Bistodo (6).npvt</code></td></tr><tr><td>4</td><td><code>Z7.ehi</code></td></tr><tr><td>5</td><td><code>11780 ناشناس @llFreak.npvt</code></td></tr><tr><td>6</td><td><code>Z5.ehi</code></td></tr><tr><td>7</td><td><code>Z3.ehi</code></td></tr><tr><td>8</td><td><code>🇩🇪@Cooonfig🇩🇪👸(همه نتا2095موشک).npvt</code></td></tr><tr><td>9</td><td><code>Z2.ehi</code></td></tr><tr><td>10</td><td><code>🌹@SiNAVM کانال تلگرامی.npvt</code></td></tr><tr><td>11</td><td><code>Configraygan LPI1.npvt</code></td></tr><tr><td>12</td><td><code>NuFast.npvt</code></td></tr><tr><td>13</td><td><code>@NpvTunnel_vip 2🚀.npvt</code></td></tr><tr><td>14</td><td><code>NPVTUNNEL 69.npvt</code></td></tr><tr><td>15</td><td><code>@V2rayTun0⛩️پارت 6.npvt</code></td></tr><tr><td>16</td><td><code>@shankamilبرای جوانان وطن.npvt</code></td></tr><tr><td>17</td><td><code>Configraygan VLO.npvt</code></td></tr><tr><td>18</td><td><code>@farsiproxy (3).npvt</code></td></tr><tr><td>19</td><td><code>iRoProxy-iProxy-1.npvt</code></td></tr><tr><td>20</td><td><code>@PlanB_net 4️⃣7️⃣5️⃣.npvt</code></td></tr><tr><td>21</td><td><code>Premium Config ⚡.npvt</code></td></tr><tr><td>22</td><td><code>@PlanB_net 4️⃣7️⃣1️⃣.npvt</code></td></tr><tr><td>23</td><td><code>Configraygan GU1.npvt</code></td></tr><tr><td>24</td><td><code>Z8.ehi</code></td></tr><tr><td>25</td><td><code>Z1.ehi</code></td></tr><tr><td>26</td><td><code>@shankamilنوش جون مردم با اصالتم.npvt</code></td></tr><tr><td>27</td><td><code>Mci DarkProxy.npvt</code></td></tr><tr><td>28</td><td><code>Merlin Version🌟¹⁸to²².npvt</code></td></tr><tr><td>29</td><td><code>@v2rays_ha 157.npvt</code></td></tr><tr><td>30</td><td><code>@PlanB_net 4️⃣7️⃣3️⃣.npvt</code></td></tr><tr><td>31</td><td><code>👑 joker 👑.npvt</code></td></tr><tr><td>32</td><td><code>@shankamilایرانسل سرعتی.npvt</code></td></tr><tr><td>33</td><td><code>متصل سرعت موشکی-.npvt</code></td></tr><tr><td>34</td><td><code>@PlanB_net 4️⃣4️⃣8️⃣.npvt</code></td></tr><tr><td>35</td><td><code>NTG 25 (1).npvt</code></td></tr><tr><td>36</td><td><code>همراه اول (1).npvt</code></td></tr><tr><td>37</td><td><code>Configraygan_proxypack.txt</code></td></tr><tr><td>38</td><td><code>Configraygan PG87.npvt</code></td></tr><tr><td>39</td><td><code>Z6.ehi</code></td></tr><tr><td>40</td><td><code>@v2rays_ha 149.npvt</code></td></tr><tr><td>41</td><td><code>@v2rays_ha 148.npvt</code></td></tr><tr><td>42</td><td><code>@ZEDMODEON ALL 30 🚀.npvt</code></td></tr><tr><td>43</td><td><code>@PlanB_net 4️⃣7️⃣2️⃣.npvt</code></td></tr><tr><td>44</td><td><code>Configraygan HY1.npvt</code></td></tr><tr><td>45</td><td><code>🔥❄️@Cooonfig👸(همه نتا2077موشکی).npvt</code></td></tr><tr><td>46</td><td><code>@PlanB_net 4️⃣7️⃣4️⃣.npvt</code></td></tr><tr><td>47</td><td><code>@PlanB_net 4️⃣7️⃣0️⃣.npvt</code></td></tr><tr><td>48</td><td><code>Z4.ehi</code></td></tr><tr><td>49</td><td><code>@DarkPrxoy ⚡.npvt</code></td></tr><tr><td>50</td><td><code>@NpvTunnel_vip🚀🔥.npvt</code></td></tr><tr><td>51</td><td><code>@PlanB_net 4️⃣4️⃣7️⃣.npvt</code></td></tr><tr><td>52</td><td><code>🇩🇪@Cooonfig👸🚀(همه نتا2096موشک).npvt</code></td></tr><tr><td>53</td><td><code>Configraygan OGU19.npvt</code></td></tr><tr><td>54</td><td><code>Configraygan DSI1.npvt</code></td></tr><tr><td>55</td><td><code>@shankamilکیان پیر فلک.npvt</code></td></tr><tr><td>56</td><td><code>اختصاصی جدید.npvt</code></td></tr><tr><td>57</td><td><code>@v2rays_ha 150.npvt</code></td></tr><tr><td>58</td><td><code>Configraygan XOHq.npvt</code></td></tr></tbody></table></div><div id='channels' class='tab-content'><div class='stats'><div class='stat-card'><h3>39</h3><p>کانال منبع</p></div></div><div class='channel-list'><div class='channel-item'><a href='https://t.me/KioV2ray' target='_blank'>📢 @KioV2ray</a></div><div class='channel-item'><a href='https://t.me/Npvtunnel_vip' target='_blank'>📢 @Npvtunnel_vip</a></div><div class='channel-item'><a href='https://t.me/planB_net' target='_blank'>📢 @planB_net</a></div><div class='channel-item'><a href='https://t.me/Free_Nettm' target='_blank'>📢 @Free_Nettm</a></div><div class='channel-item'><a href='https://t.me/mypremium98' target='_blank'>📢 @mypremium98</a></div><div class='channel-item'><a href='https://t.me/mitivpn' target='_blank'>📢 @mitivpn</a></div><div class='channel-item'><a href='https://t.me/iSeqaro' target='_blank'>📢 @iSeqaro</a></div><div class='channel-item'><a href='https://t.me/configraygan' target='_blank'>📢 @configraygan</a></div><div class='channel-item'><a href='https://t.me/shankamil' target='_blank'>📢 @shankamil</a></div><div class='channel-item'><a href='https://t.me/xsfilternet' target='_blank'>📢 @xsfilternet</a></div><div class='channel-item'><a href='https://t.me/varvpn1' target='_blank'>📢 @varvpn1</a></div><div class='channel-item'><a href='https://t.me/iP_CF' target='_blank'>📢 @iP_CF</a></div><div class='channel-item'><a href='https://t.me/cooonfig' target='_blank'>📢 @cooonfig</a></div><div class='channel-item'><a href='https://t.me/DeamNet' target='_blank'>📢 @DeamNet</a></div><div class='channel-item'><a href='https://t.me/anty_filter' target='_blank'>📢 @anty_filter</a></div><div class='channel-item'><a href='https://t.me/vpnboxiran' target='_blank'>📢 @vpnboxiran</a></div><div class='channel-item'><a href='https://t.me/Merlin_ViP' target='_blank'>📢 @Merlin_ViP</a></div><div class='channel-item'><a href='https://t.me/BugFreeNet' target='_blank'>📢 @BugFreeNet</a></div><div class='channel-item'><a href='https://t.me/cicdoVPN' target='_blank'>📢 @cicdoVPN</a></div><div class='channel-item'><a href='https://t.me/Farda_Ai' target='_blank'>📢 @Farda_Ai</a></div><div class='channel-item'><a href='https://t.me/Awlix_ir' target='_blank'>📢 @Awlix_ir</a></div><div class='channel-item'><a href='https://t.me/proSSH' target='_blank'>📢 @proSSH</a></div><div class='channel-item'><a href='https://t.me/vpn_proxy_custom' target='_blank'>📢 @vpn_proxy_custom</a></div><div class='channel-item'><a href='https://t.me/Free_HTTPCustom' target='_blank'>📢 @Free_HTTPCustom</a></div><div class='channel-item'><a href='https://t.me/sinavm' target='_blank'>📢 @sinavm</a></div><div class='channel-item'><a href='https://t.me/Amir_Alternative_Official' target='_blank'>📢 @Amir_Alternative_Official</a></div><div class='channel-item'><a href='https://t.me/StayconnectedVPN' target='_blank'>📢 @StayconnectedVPN</a></div><div class='channel-item'><a href='https://t.me/BINNER_IRAN' target='_blank'>📢 @BINNER_IRAN</a></div><div class='channel-item'><a href='https://t.me/IranianMinds' target='_blank'>📢 @IranianMinds</a></div><div class='channel-item'><a href='https://t.me/vpn11ir' target='_blank'>📢 @vpn11ir</a></div><div class='channel-item'><a href='https://t.me/NetAccount' target='_blank'>📢 @NetAccount</a></div><div class='channel-item'><a href='https://t.me/mitiivpn2' target='_blank'>📢 @mitiivpn2</a></div><div class='channel-item'><a href='https://t.me/isharewin' target='_blank'>📢 @isharewin</a></div><div class='channel-item'><a href='https://t.me/v2rays_ha' target='_blank'>📢 @v2rays_ha</a></div><div class='channel-item'><a href='https://t.me/iroproxy' target='_blank'>📢 @iroproxy</a></div><div class='channel-item'><a href='https://t.me/ProxyMTProto' target='_blank'>📢 @ProxyMTProto</a></div><div class='channel-item'><a href='https://t.me/darkproxy' target='_blank'>📢 @darkproxy</a></div><div class='channel-item'><a href='https://t.me/configs_freeiran' target='_blank'>📢 @configs_freeiran</a></div><div class='channel-item'><a href='https://t.me/v2rayvpnchannel' target='_blank'>📢 @v2rayvpnchannel</a></div></div></div>
-</div></div>
-<div class="footer">
-<p>🔗 <a href="https://t.me/myvpn1404">@myvpn1404</a></p>
-<p>آپدیت هر 40 دقیقه • 2026/01/30 - 14:38</p>
-</div>
+
 <script>
-function showTab(n){
-document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
-document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-document.getElementById(n).classList.add('active');
-event.target.classList.add('active');
-}
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) tabcontent[i].style.display = "none";
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < tablinks.length; i++) tablinks[i].className = tablinks[i].className.replace(" active", "");
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    function copyConfig(id) {
+        var text = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert("کانفیگ کپی شد!");
+        });
+    }
 </script>
+
 </body>
 </html>

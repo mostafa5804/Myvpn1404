@@ -53,25 +53,25 @@ def is_iran_ip(ip):
     except:
         return False
 
-
+# -------------------------------------------------------------------------
+# اصلاح بخش اول: تابع زمان‌بندی دقیق (بدون حذف چیزی)
+# -------------------------------------------------------------------------
 def get_channel_batch():
-    """انتخاب 20 کانال بر اساس دقیقه فعلی (هر 40 دقیقه)"""
+    """انتخاب ۲۰ کانال بر اساس چرخه ۸۰ دقیقه‌ای دقیق"""
     now = datetime.now(iran_tz)
-    minute = now.minute
-    hour = now.hour
     
-    # محاسبه: دقیقه 0-39 → دسته 1، دقیقه 40-59 و 0-19 بعدی → دسته 2
-    # ساده‌ترین روش: بر اساس دقیقه فعلی
-    if minute < 40:
-        # دقیقه 0-39: دسته اول
-        selected = ALL_CHANNELS[:20]
-        print(f"📦 دسته 1/2 (کانال 1-20) | {hour:02d}:{minute:02d}")
+    # فرمول ریاضی: (دقیقه کل روز تقسیم بر ۴۰) باقیمانده بر ۲
+    # این فرمول تضمین می‌کند که:
+    # دقیقه ۰ تا ۴۰ -> دسته اول
+    # دقیقه ۴۰ تا ۸۰ -> دسته دوم
+    # دقیقه ۸۰ تا ۱۲۰ -> دسته اول ...
+    batch_index = ((now.hour * 60 + now.minute) // 40) % 2
+    
+    if batch_index == 0:
+        # برگرداندن (لیست کانال‌ها, نام دسته)
+        return ALL_CHANNELS[:20], "اول (1-20)"
     else:
-        # دقیقه 40-59: دسته دوم
-        selected = ALL_CHANNELS[20:40]
-        print(f"📦 دسته 2/2 (کانال 21-40) | {hour:02d}:{minute:02d}")
-    
-    return selected
+        return ALL_CHANNELS[20:40], "دوم (21-40)"
 
 
 async def measure_tcp_latency(host, port, timeout=2):
@@ -265,7 +265,9 @@ def create_footer(channel_name, extra_info=""):
     
     return footer
 
-
+# -------------------------------------------------------------------------
+# اصلاح بخش دوم: تابع main برای رفع تداخل متغیرها (بدون حذف چیزی)
+# -------------------------------------------------------------------------
 async def main():
     """تابع اصلی"""
     
@@ -277,7 +279,10 @@ async def main():
         print(f"⏳ صبر {initial_wait} ثانیه...")
         await asyncio.sleep(initial_wait)
         
-        source_channels = get_channel_batch()
+        # اصلاح مهم: دریافت جداگانه لیست و نام دسته
+        source_channels, batch_name = get_channel_batch()
+        print(f"--- شروع بررسی دسته {batch_name} ---")
+        
         time_threshold = datetime.now(timezone.utc) - timedelta(hours=1)
         config_regex = r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic|hysteria2?|nm(?:-[\w-]+)?)://[^\s\n]+"
         
@@ -314,6 +319,7 @@ async def main():
         all_proxies_data = {}
         
         # حلقه اصلی: هر کانال به ترتیب
+        # توجه: source_channels اکنون فقط لیست کانال‌ها است و مشکلی ندارد
         for i, channel in enumerate(source_channels):
             if sent_count >= MAX_PER_RUN:
                 break
@@ -337,7 +343,10 @@ async def main():
                     'configs': []
                 }
                 
-                async for message in client.iter_messages(channel, offset_date=time_threshold, reverse=True, limit=50):
+                # استفاده از نام کاربری برای دریافت انتیتی کانال
+                entity = await client.get_entity(channel)
+                
+                async for message in client.iter_messages(entity, offset_date=time_threshold, reverse=True, limit=50):
                     if not ch_title and hasattr(message.chat, 'title'):
                         ch_title = message.chat.title
                     

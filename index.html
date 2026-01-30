@@ -1,692 +1,607 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VPN Config Hub - @myvpn1404</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Tahoma,Arial,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:20px;direction:rtl}
-.header{text-align:center;color:#fff;margin-bottom:30px}
-.header h1{font-size:2.5em;margin-bottom:10px;text-shadow:2px 2px 4px rgba(0,0,0,0.3)}
-.header .subtitle{font-size:1.1em;opacity:0.9;margin-bottom:5px}
-.update{font-size:0.9em;opacity:0.8}
-.container{max-width:1400px;margin:0 auto}
-.info-box{background:rgba(255,255,255,0.95);border-radius:15px;padding:25px;margin-bottom:20px;box-shadow:0 10px 30px rgba(0,0,0,0.2)}
-.info-box h3{color:#667eea;margin-bottom:15px;font-size:1.3em}
-.info-box p{line-height:1.8;color:#333;margin-bottom:10px}
-.info-box ul{margin-right:25px;margin-top:10px}
-.info-box li{margin-bottom:8px;line-height:1.6}
-.tabs{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;justify-content:center}
-.tab{background:rgba(255,255,255,0.2);color:#fff;border:2px solid rgba(255,255,255,0.3);padding:12px 30px;border-radius:10px;cursor:pointer;transition:all 0.3s;font-weight:500}
-.tab:hover{background:rgba(255,255,255,0.3);transform:translateY(-2px)}
-.tab.active{background:#fff;color:#667eea;border-color:#fff}
-.content{background:#fff;border-radius:15px;padding:30px;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
-.tab-content{display:none}
-.tab-content.active{display:block}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px}
-.stat-card{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:25px;border-radius:12px;text-align:center;transition:transform 0.3s}
-.stat-card:hover{transform:translateY(-5px)}
-.stat-card h3{font-size:2.5em;margin-bottom:8px}
-.stat-card p{font-size:0.95em}
-table{width:100%;border-collapse:collapse;margin-top:20px}
-th,td{padding:15px;text-align:right;border-bottom:1px solid #eee}
-th{background:#f8f9fa;font-weight:600;color:#333;position:sticky;top:0}
-tr:hover{background:#f8f9fa}
-.protocol-badge{display:inline-block;padding:5px 10px;border-radius:6px;font-size:0.85em;font-weight:600;color:#fff;margin-left:5px}
-.vmess{background:#667eea}
-.vless{background:#764ba2}
-.trojan{background:#f093fb}
-.ss{background:#4facfe}
-code{background:#f8f9fa;padding:3px 8px;border-radius:4px;font-size:0.9em;word-break:break-all;font-family:monospace}
-.copy-btn{background:#667eea;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:0.85em;transition:all 0.3s;margin-left:5px}
-.copy-btn:hover{background:#764ba2;transform:scale(1.05)}
-.link-btn{background:#28a745;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:0.85em;text-decoration:none;display:inline-block}
-.link-btn:hover{background:#218838}
-.empty-state{text-align:center;padding:60px 20px;color:#999}
-.empty-state h3{font-size:1.5em;margin-bottom:10px;color:#666}
-.footer{text-align:center;margin-top:40px;padding:30px;color:#fff}
-.footer a{color:#fff;text-decoration:none;font-weight:500;border-bottom:2px solid rgba(255,255,255,0.5)}
-.footer a:hover{border-bottom-color:#fff}
-.channel-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:15px;margin-top:20px}
-.channel-item{background:#f8f9fa;padding:15px;border-radius:10px;border-right:4px solid #667eea;transition:all 0.3s}
-.channel-item:hover{background:#e9ecef;transform:translateX(-5px)}
-.channel-item a{color:#667eea;text-decoration:none;font-weight:500}
-@media (max-width:768px){
-.header h1{font-size:1.8em}
-.stats{grid-template-columns:1fr}
-table{font-size:0.85em}
-th,td{padding:10px}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VPN Hub - @myvpn1404</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+            --border: #334155;
+            --success: #4ade80;
+            --warning: #facc15;
+            --danger: #ef4444;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; -webkit-tap-highlight-color: transparent; }
+        body { background-color: var(--bg-color); color: var(--text-main); padding-bottom: 80px; }
+        
+        /* Header */
+        .header { text-align: center; padding: 20px 15px; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); }
+        .header h1 { font-size: 1.4rem; color: var(--primary); margin-bottom: 5px; }
+        .header p { font-size: 0.8rem; color: var(--text-sub); }
+        .help-btn { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--primary); }
+
+        /* Container */
+        .container { max-width: 600px; margin: 0 auto; padding: 15px; }
+        
+        /* Cards */
+        .card { background: var(--card-bg); border-radius: 16px; padding: 16px; margin-bottom: 16px; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); animation: fadeIn 0.4s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .protocol-tag { background: #334155; padding: 4px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: bold; color: #e2e8f0; }
+        .ping-tag { font-size: 0.8rem; font-weight: bold; display: flex; align-items: center; gap: 4px; }
+        
+        .channel-info { font-size: 0.75rem; color: var(--text-sub); margin-bottom: 10px; display: flex; align-items: center; gap: 5px; }
+        
+        .code-block { background: #0b1120; border: 1px dashed var(--border); border-radius: 10px; padding: 12px; font-family: monospace; font-size: 0.75rem; color: #22d3ee; overflow-x: auto; white-space: nowrap; margin-bottom: 12px; direction: ltr; }
+        
+        /* Buttons */
+        .action-btns { display: flex; gap: 10px; }
+        .btn { flex: 1; padding: 12px; border-radius: 10px; border: none; font-size: 0.9rem; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.2s; }
+        .btn-copy { background: var(--primary); color: #0f172a; }
+        .btn-connect { background: transparent; border: 1px solid var(--primary); color: var(--primary); }
+        .btn-source { width: 100%; margin-top: 10px; background: #334155; color: #cbd5e1; font-size: 0.8rem; padding: 8px; }
+        
+        /* Bottom Navigation */
+        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(30, 41, 59, 0.95); backdrop-filter: blur(10px); border-top: 1px solid var(--border); display: flex; justify-content: space-around; padding: 10px 0; z-index: 100; padding-bottom: max(10px, env(safe-area-inset-bottom)); }
+        .nav-item { display: flex; flex-direction: column; align-items: center; gap: 4px; color: var(--text-sub); font-size: 0.75rem; cursor: pointer; flex: 1; }
+        .nav-item.active { color: var(--primary); font-weight: bold; }
+        .nav-icon { font-size: 1.2rem; margin-bottom: 2px; }
+
+        /* Sections */
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        
+        /* Modal */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 200; align-items: center; justify-content: center; padding: 20px; }
+        .modal-content { background: var(--card-bg); width: 100%; max-width: 400px; border-radius: 20px; padding: 25px; position: relative; border: 1px solid var(--border); }
+        .close-modal { position: absolute; left: 20px; top: 20px; font-size: 1.5rem; color: var(--danger); cursor: pointer; }
+        .modal h3 { color: var(--primary); margin-bottom: 15px; }
+        .modal p { font-size: 0.9rem; line-height: 1.8; color: var(--text-sub); margin-bottom: 10px; }
+        
+        /* Utilities */
+        .hidden { display: none; }
+    </style>
 </head>
 <body>
-<div class="header">
-<h1>🔮 VPN Config Hub</h1>
-<div class="subtitle">مرکز جامع کانفیگ‌های رایگان و تست‌شده</div>
-<div class="update">📅 آخرین بروزرسانی: 2026/01/30 - 19:35 | 🔄 هر کانال هر 80 دقیقه بررسی می‌شود</div>
-</div>
 
-<div class="container">
+    <div class="header">
+        <button class="help-btn" onclick="openModal()">ℹ️</button>
+        <h1>VPN Config Hub</h1>
+        <p>2026/01/30 - 19:49</p>
+    </div>
 
-<div class="info-box">
-<h3>ℹ️ درباره این سرویس</h3>
-<p><strong>🎯 پینگ و تست خودکار:</strong> تمام کانفیگ‌ها و پروکسی‌ها قبل از نمایش توسط سرورهای ما تست می‌شوند. وضعیت سلامت با رنگ‌های 🟢 سبز (عالی)، 🟡 زرد (خوب) و 🔴 قرمز (ضعیف) مشخص شده است.</p>
-<p><strong>📋 کپی هوشمند:</strong> با کلیک روی دکمه "کپی"، کانفیگ مستقیماً در کلیپ‌بورد شما ذخیره می‌شود. نیازی به انتخاب دستی متن نیست!</p>
-<p><strong>🔗 لینک به منبع:</strong> با کلیک روی "مشاهده در تلگرام"، مستقیماً به پست اصلی در کانال منبع هدایت می‌شوید.</p>
-<p><strong>⏰ بروزرسانی منظم:</strong> هر کانال هر 80 دقیقه یکبار بررسی می‌شود و محتوای جدید به صورت خودکار اضافه می‌گردد.</p>
-<p><strong>📱 طراحی ریسپانسیو:</strong> این صفحه روی تمام دستگاه‌ها (موبایل، تبلت، دسکتاپ) به خوبی کار می‌کند.</p>
-</div>
+    <div class="container">
+        <div id="tab-configs" class="tab-content active">
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 62ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-0">vless://b4c13332-7054-441a-bf2f-61affbbfc212@dns.turboo-server.space:8443?path=%2F&security=tls&encryption=none&insecure=0&host=server1.turboo-server.com.co&type=ws&allowInsecure=0&sni=server1.turboo-server.com.co#NetAccount</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-0')">کپی</button>
+                    <a href="vless://b4c13332-7054-441a-bf2f-61affbbfc212@dns.turboo-server.space:8443?path=%2F&security=tls&encryption=none&insecure=0&host=server1.turboo-server.com.co&type=ws&allowInsecure=0&sni=server1.turboo-server.com.co#NetAccount" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2359" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 3ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-1">vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.18.15.19:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net#NetAccount</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-1')">کپی</button>
+                    <a href="vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.18.15.19:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net#NetAccount" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2360" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 3ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-2">vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.18.15.19:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net#NetAccount</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-2')">کپی</button>
+                    <a href="vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.18.15.19:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net#NetAccount" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2361" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 3ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-3">vless://83f03646-fb28-44cc-9d2c-8853f6c09285@104.17.162.123:8443?path=%2F%3Fed%3D%23TELEGRAM-%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=r4fnviw9jl4i4rx.zjde5.de5.net&fp=random&type=ws&allowInsecure=0&sni=r4fnviw9jl4i4rx.zjde5.de5.net#NetAccount</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-3')">کپی</button>
+                    <a href="vless://83f03646-fb28-44cc-9d2c-8853f6c09285@104.17.162.123:8443?path=%2F%3Fed%3D%23TELEGRAM-%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=r4fnviw9jl4i4rx.zjde5.de5.net&fp=random&type=ws&allowInsecure=0&sni=r4fnviw9jl4i4rx.zjde5.de5.net#NetAccount" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2362" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 3ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-4">vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.114.96.3:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=pages.dev#NetAccount`</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-4')">کپی</button>
+                    <a href="vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.114.96.3:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=pages.dev#NetAccount`" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2363" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 5ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-5">vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodejs.org:80?path=%2F%3Fed%3D512&security=none&encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&type=ws#NetAccount`</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-5')">کپی</button>
+                    <a href="vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodejs.org:80?path=%2F%3Fed%3D512&security=none&encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&type=ws#NetAccount`" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2364" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 167ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-6">vless://11beaf11-726d-4c11-8ce9-27308c1c608c@157.173.127.225:443?security=reality&encryption=none&pbk=v3EwzA9RIIh5Ndxm-gypRY6RCJhOpQ-2WO7KaH8nsC8&headerType=none&fp=random&type=tcp&sni=analytics.google.com&sid=eab26c4a32#NetAccount`</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-6')">کپی</button>
+                    <a href="vless://11beaf11-726d-4c11-8ce9-27308c1c608c@157.173.127.225:443?security=reality&encryption=none&pbk=v3EwzA9RIIh5Ndxm-gypRY6RCJhOpQ-2WO7KaH8nsC8&headerType=none&fp=random&type=tcp&sni=analytics.google.com&sid=eab26c4a32#NetAccount`" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2365" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 149ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-7">vless://d33d0c37-a910-4c38-82e9-327f01e9d5cc@config.parsazix1613.site:443?allowInsecure=1&alpn=h2%2Chttp%2F1.1&encryption=none&fp=firefox&headerType=http&host=google.com&path=%2F&security=tls&sni=film-doon.ir&type=tcp#NetAccount`</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-7')">کپی</button>
+                    <a href="vless://d33d0c37-a910-4c38-82e9-327f01e9d5cc@config.parsazix1613.site:443?allowInsecure=1&alpn=h2%2Chttp%2F1.1&encryption=none&fp=firefox&headerType=http&host=google.com&path=%2F&security=tls&sni=film-doon.ir&type=tcp#NetAccount`" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2366" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 326ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-8">vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-sub.site:8443?security=tls&type=ws&headerType=&path=%2F&host=backup.f-sub.cfd&sni=backup.f-sub.cfd&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-8')">کپی</button>
+                    <a href="vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-sub.site:8443?security=tls&type=ws&headerType=&path=%2F&host=backup.f-sub.cfd&sni=backup.f-sub.cfd&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2367" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 187ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-9">vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-sub.site:8443?security=tls&type=ws&headerType=&path=%2F&host=backup.f-sub.cfd&sni=backup.f-sub.cfd&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-9')">کپی</button>
+                    <a href="vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-sub.site:8443?security=tls&type=ws&headerType=&path=%2F&host=backup.f-sub.cfd&sni=backup.f-sub.cfd&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2368" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 3ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block" id="conf-10">vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@208.103.161.4:8880?security=tls&type=httpupgrade&headerType=&path=%2F&host=whm.linux-panel.com&sni=whm.linux-panel.com&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-10')">کپی</button>
+                    <a href="vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@208.103.161.4:8880?security=tls&type=httpupgrade&headerType=&path=%2F&host=whm.linux-panel.com&sni=whm.linux-panel.com&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2369" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 220ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block" id="conf-11">vless://c659ce22-0a02-4d75-8c89-58d99916b846@cdn.halazzon.ir:2053?path=%2F&security=tls&encryption=none&insecure=0&host=ir6.hnbyme.online&fp=chrome&type=ws&allowInsecure=0&sni=ir6.hnbyme.online#%40v2rays_ha%205406</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-11')">کپی</button>
+                    <a href="vless://c659ce22-0a02-4d75-8c89-58d99916b846@cdn.halazzon.ir:2053?path=%2F&security=tls&encryption=none&insecure=0&host=ir6.hnbyme.online&fp=chrome&type=ws&allowInsecure=0&sni=ir6.hnbyme.online#%40v2rays_ha%205406" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2378" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">TROJAN</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 2ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block" id="conf-12">trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%40v2rays_ha%205407</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-12')">کپی</button>
+                    <a href="trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%40v2rays_ha%205407" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2379" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 48ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block" id="conf-13">vless://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@cf.008500.xyz:443?path=%2F%40%4F%6E%4E%65%74%56%70%6E&security=tls&encryption=none&insecure=0&host=powered-by-surena.configfarsi695fcee895881.workers.dev&fp=firefox&type=ws&allowInsecure=0&sni=powered-by-surena.configfarsi695fcee895881.workers.dev#%40v2rays_ha%205408</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-13')">کپی</button>
+                    <a href="vless://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@cf.008500.xyz:443?path=%2F%40%4F%6E%4E%65%74%56%70%6E&security=tls&encryption=none&insecure=0&host=powered-by-surena.configfarsi695fcee895881.workers.dev&fp=firefox&type=ws&allowInsecure=0&sni=powered-by-surena.configfarsi695fcee895881.workers.dev#%40v2rays_ha%205408" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2380" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 115ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block" id="conf-14">vless://7e58699f-1d5d-4f6b-b181-cb74f0ad9509@ipw.ygdfw.com:443?mode=stream-one&path=%2F&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=Tp0101Rs5K.dOtA2pLaY.iNfO#%40v2rays_ha%205409</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-14')">کپی</button>
+                    <a href="vless://7e58699f-1d5d-4f6b-b181-cb74f0ad9509@ipw.ygdfw.com:443?mode=stream-one&path=%2F&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=Tp0101Rs5K.dOtA2pLaY.iNfO#%40v2rays_ha%205409" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2381" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 156ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block" id="conf-15">vless://e4824193-4f54-453b-d037-88368e85ef0e@all.tellmethetrue.shop:443?encryption=none&security=tls&sni=pqh29v3.carwashipdir.shop&alpn=h2&type=grpc&mode=gun#%40v2rays_ha%205410</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-15')">کپی</button>
+                    <a href="vless://e4824193-4f54-453b-d037-88368e85ef0e@all.tellmethetrue.shop:443?encryption=none&security=tls&sni=pqh29v3.carwashipdir.shop&alpn=h2&type=grpc&mode=gun#%40v2rays_ha%205410" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2382" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 2ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block" id="conf-16">vless://818a98bf-e7d0-45d5-800b-24d4058234c6@104.24.172.153:80?encryption=none&security=none&type=ws&host=still-smoke-881e-ppal03.cabit21569.workers.dev&path=%2F%3Fed%3D2560%2Ftelegram@v2ray_alpha%3Fed%3D2560%2F#%40v2rays_ha%205411</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-16')">کپی</button>
+                    <a href="vless://818a98bf-e7d0-45d5-800b-24d4058234c6@104.24.172.153:80?encryption=none&security=none&type=ws&host=still-smoke-881e-ppal03.cabit21569.workers.dev&path=%2F%3Fed%3D2560%2Ftelegram@v2ray_alpha%3Fed%3D2560%2F#%40v2rays_ha%205411" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2383" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 2ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block" id="conf-17">vless://2ddeb056-17d4-421e-a318-39428733d4a2@172.64.149.99:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=8p3cfl0ripm.zjde5.de5.net&fp=chrome&type=ws&sni=8p3cfl0ripm.zjde5.de5.net#%40v2rays_ha%205412</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-17')">کپی</button>
+                    <a href="vless://2ddeb056-17d4-421e-a318-39428733d4a2@172.64.149.99:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=8p3cfl0ripm.zjde5.de5.net&fp=chrome&type=ws&sni=8p3cfl0ripm.zjde5.de5.net#%40v2rays_ha%205412" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2384" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 6ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block" id="conf-18">vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodejs.org:80?encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&path=%2F%3Fed%3D512&security=none&type=ws#%40v2rays_ha%205413</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-18')">کپی</button>
+                    <a href="vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodejs.org:80?encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&path=%2F%3Fed%3D512&security=none&type=ws#%40v2rays_ha%205413" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2385" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 2ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block" id="conf-19">vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@104.17.166.123:8443?path=%2F%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=1&sni=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net#%40v2rays_ha%205414</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-19')">کپی</button>
+                    <a href="vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@104.17.166.123:8443?path=%2F%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=1&sni=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net#%40v2rays_ha%205414" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2386" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 123ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block" id="conf-20">vless://4e4c6c2c-1f41-4310-b5c8-b35afb17843e@cdn1.mehrdadsadaf.com:2053?path=%2F%3Fed%3D2560&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&host=cert2.mehrdadsadaf.com&fp=chrome&type=ws&allowInsecure=0&sni=cert2.mehrdadsadaf.com#%40v2rays_ha%205415</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-20')">کپی</button>
+                    <a href="vless://4e4c6c2c-1f41-4310-b5c8-b35afb17843e@cdn1.mehrdadsadaf.com:2053?path=%2F%3Fed%3D2560&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&host=cert2.mehrdadsadaf.com&fp=chrome&type=ws&allowInsecure=0&sni=cert2.mehrdadsadaf.com#%40v2rays_ha%205415" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2387" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            
+            
+        </div>
 
-<div class="tabs">
-<button class="tab active" onclick="showTab('configs')">🔮 کانفیگ (31)</button>
-<button class="tab" onclick="showTab('proxies')">🔵 پروکسی (7)</button>
-<button class="tab" onclick="showTab('files')">📂 فایل (6)</button>
-<button class="tab" onclick="showTab('channels')">📡 کانال (39)</button>
-</div>
+        <div id="tab-proxies" class="tab-content">
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block">Server: 185.215.247.110</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=185.215.247.110&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2355" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block">Server: 185.215.247.112</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=185.215.247.112&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2356" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block">Server: 185.215.247.112</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=185.215.247.112&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2357" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
+                <div class="code-block">Server: 185.215.247.111</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=185.215.247.111&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2358" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block">Server: 85.133.194.102</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=85.133.194.102&port=8443&secret=79e344818749bd7ac519130220c25d09" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2370" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block">Server: 85.133.194.9</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=85.133.194.9&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2371" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block">Server: 85.133.194.8</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=85.133.194.8&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAA" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2372" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block">Server: 85.133.194.106</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=85.133.194.106&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2373" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block">Server: 85.133.194.111</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=85.133.194.111&port=8443&secret=79e344818749bd7ac519130220c25d09" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2374" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block">Server: 95.216.177.110</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=95.216.177.110&port=85&secret=FgIBAgABAAH8AwOG4kw63Q" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2375" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block">Server: 85.133.194.10</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=85.133.194.10&port=8443&secret=79e344818749bd7ac519130220c25d09" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2376" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+                <div class="code-block">Server: 87.248.154.205</div>
+                <div class="action-btns">
+                    <a href="tg://proxy?server=87.248.154.205&port=3333&secret=dd72881e9e1e7d1ff9647913616d37aeae" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2377" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+        </div>
 
-<div class="content">
-<div id="configs" class="tab-content active">
-<div class="stats">
-<div class="stat-card"><h3>31</h3><p>کانفیگ آنلاین</p></div>
+        <div id="tab-files" class="tab-content">
+            
+        </div>
+    </div>
 
-<div class="stat-card"><h3>101ms</h3><p>میانگین پینگ</p></div>
-<div class="stat-card"><h3>3</h3><p>نوع پروتکل</p></div>
-<div class="stat-card"><h3>21</h3><p>سرعت عالی</p></div>
-</div>
-<table>
-<thead><tr><th>ردیف</th><th>پروتکل</th><th>وضعیت</th><th>پینگ</th><th>منبع</th><th>کانفیگ</th><th>عملیات</th></tr></thead>
-<tbody>
+    <div class="bottom-nav">
+        <div class="nav-item active" onclick="switchTab('tab-configs', this)">
+            <span class="nav-icon">🚀</span>
+            <span>کانفیگ</span>
+        </div>
+        <div class="nav-item" onclick="switchTab('tab-proxies', this)">
+            <span class="nav-icon">🛡️</span>
+            <span>پروکسی</span>
+        </div>
+        <div class="nav-item" onclick="switchTab('tab-files', this)">
+            <span class="nav-icon">📂</span>
+            <span>فایل</span>
+        </div>
+    </div>
 
-<tr>
-<td>1</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>2ms</strong></td>
-<td>کانفیگ رایگان v2ray</td>
-<td><code id="cfg1">vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.1...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.114.96.3:443?security=tls&allowInsecure=0&encryption=none&type=ws&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&path=/eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D?ed%3D2560&sni=pages.dev&fp=chrome#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran")'>📋 کپی</button>
-<a href="https://t.me/configs_freeiran/19541" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h3>راهنمای استفاده</h3>
+            <p>✅ <b>کپی هوشمند:</b> با زدن دکمه کپی، کد کانفیگ کپی می‌شود.</p>
+            <p>✅ <b>اتصال مستقیم:</b> دکمه اتصال، نرم‌افزار v2rayNG را باز می‌کند.</p>
+            <p>✅ <b>لینک‌ها:</b> تمام لینک‌ها به کانال @myvpn1404 هدایت می‌شوند تا از صحت فایل مطمئن باشید.</p>
+            <p>⚡️ پینگ‌ها به صورت لحظه‌ای توسط سرور تست شده‌اند.</p>
+        </div>
+    </div>
 
-<tr>
-<td>2</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>3ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg2">vless://e31085f9-7f55-4a7d-b00e-ce94149477cb@104.1...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://e31085f9-7f55-4a7d-b00e-ce94149477cb@104.18.32.47:80?path=%2F%3Fed&security=none&encryption=none&host=PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.&type=ws#%40v2rays_ha%205416")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
+    <script>
+        function switchTab(tabId, element) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            // Show selected tab
+            document.getElementById(tabId).classList.add('active');
+            
+            // Update nav items
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            
+            window.scrollTo(0, 0);
+        }
 
-<tr>
-<td>3</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>3ms</strong></td>
-<td>کانفیگ رایگان v2ray</td>
-<td><code id="cfg3">vless://4525c260-df3c-4f62-b8f1-f4f5f305694b@66.81...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://4525c260-df3c-4f62-b8f1-f4f5f305694b@66.81.247.155:443?security=tls&allowInsecure=0&encryption=none&type=ws&host=yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net&path=/?ed%3D2560&sni=yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net&fp=chrome#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran")'>📋 کپی</button>
-<a href="https://t.me/configs_freeiran/19541" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
+        function copyText(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('✅ کپی شد!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
 
-<tr>
-<td>4</td>
-<td><span class="protocol-badge trojan">TROJAN</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>3ms</strong></td>
-<td>کانفیگ رایگان v2ray</td>
-<td><code id="cfg4">trojan://humanity@172.64.152.23:443?path=%2Fassign...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&host=www.calmlunch.com&type=ws&sni=www.calmlunch.com#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran")'>📋 کپی</button>
-<a href="https://t.me/configs_freeiran/19541" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>5</td>
-<td><span class="protocol-badge trojan">TROJAN</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>4ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg5">trojan://humanity@172.64.152.23:443?path=%2Fassign...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%40v2rays_ha%205407")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>6</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>4ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg6">vless://9e685fe3-e0f9-482d-939c-200a3f89b363@172.6...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://9e685fe3-e0f9-482d-939c-200a3f89b363@172.64.145.38:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=vyznthvt7f5fr.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=vyznthvt7f5fr.zjde5.de5.net#%40v2rays_ha%205418```")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>7</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>5ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg7">vless://2ddeb056-17d4-421e-a318-39428733d4a2@172.6...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://2ddeb056-17d4-421e-a318-39428733d4a2@172.64.149.99:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=8p3cfl0ripm.zjde5.de5.net&fp=chrome&type=ws&sni=8p3cfl0ripm.zjde5.de5.net#%40v2rays_ha%205412")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>8</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>6ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg8">vless://60afd0c5-5bd1-4f65-9b21-1b9eb0397949@104.1...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://60afd0c5-5bd1-4f65-9b21-1b9eb0397949@104.17.74.206:8080?security=none&type=ws&headerType=&path=%2Fwp-admin.php%3Fed%3D2052&host=kernal02.ivy-net.ir#%40v2rays_ha%205417")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>9</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>7ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg9">vless://818a98bf-e7d0-45d5-800b-24d4058234c6@104.2...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://818a98bf-e7d0-45d5-800b-24d4058234c6@104.24.172.153:80?encryption=none&security=none&type=ws&host=still-smoke-881e-ppal03.cabit21569.workers.dev&path=%2F%3Fed%3D2560%2Ftelegram@v2ray_alpha%3Fed%3D2560%2F#%40v2rays_ha%205411")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>10</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>8ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg10">vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodej...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodejs.org:80?encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&path=%2F%3Fed%3D512&security=none&type=ws#%40v2rays_ha%205413")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>11</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>8ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg11">vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@104.1...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@104.17.166.123:8443?path=%2F%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=1&sni=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net#%40v2rays_ha%205414")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>12</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>21ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg12">vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.1...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.18.15.19:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net#NetAccount")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13194" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>13</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>21ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg13">vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.1...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.18.15.19:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net#NetAccount")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13194" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>14</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>22ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg14">vless://83f03646-fb28-44cc-9d2c-8853f6c09285@104.1...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://83f03646-fb28-44cc-9d2c-8853f6c09285@104.17.162.123:8443?path=%2F%3Fed%3D%23TELEGRAM-%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=r4fnviw9jl4i4rx.zjde5.de5.net&fp=random&type=ws&allowInsecure=0&sni=r4fnviw9jl4i4rx.zjde5.de5.net#NetAccount")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13194" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>15</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>22ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg15">vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.1...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.114.96.3:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=pages.dev#NetAccount`")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13194" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>16</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>23ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg16">vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@208.1...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@208.103.161.4:8880?security=tls&type=httpupgrade&headerType=&path=%2F&host=whm.linux-panel.com&sni=whm.linux-panel.com&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13201" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>17</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>31ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg17">vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodej...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodejs.org:80?path=%2F%3Fed%3D512&security=none&encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&type=ws#NetAccount`")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13200" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>18</td>
-<td><span class="protocol-badge vmess">VMESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>45ms</strong></td>
-<td>کانفیگ رایگان v2ray</td>
-<td><code id="cfg18">vmess://eyJwcyI6ICLYp9iq2LXYp9mEINm+2KfbjNiv2KfYsS...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vmess://eyJwcyI6ICLYp9iq2LXYp9mEINm+2KfbjNiv2KfYsSB8IGNvbmZpZ3NfZnJlZWlyYW4iLCAiZXh0cmEiOiAiIiwgImRldmljZUlEIjogIiIsICJpZCI6ICJuYXNuZXQiLCAiYWxwbiI6ICIiLCAiaGVhZGVyVHlwZSI6ICIiLCAibW9kZSI6ICIiLCAic2VydmljZU5hbWUiOiAibm9uZSIsICJ2IjogIjIiLCAiYWRkIjogInRnanUub3JnIiwgInNlZWQiOiAiIiwgImFpZCI6ICIwIiwgInRscyI6ICJub25lIiwgInNuaSI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAibmFzbmV0LTU3MTI5NjQ5Ny5pcmFucHJlc3MuY28iLCAidHlwZSI6ICJub25lIiwgImZyYWdtZW50IjogIiIsICJuZXQiOiAid3MiLCAicG9ydCI6ICI4MDgwIiwgInBhdGgiOiAiL25hc25ldC9jZG4/ZWQ9MjU2MCJ9")'>📋 کپی</button>
-<a href="https://t.me/configs_freeiran/19541" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>19</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>58ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg19">vless://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@cf.00...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@cf.008500.xyz:443?path=%2F%40%4F%6E%4E%65%74%56%70%6E&security=tls&encryption=none&insecure=0&host=powered-by-surena.configfarsi695fcee895881.workers.dev&fp=firefox&type=ws&allowInsecure=0&sni=powered-by-surena.configfarsi695fcee895881.workers.dev#%40v2rays_ha%205408")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>20</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>67ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg20">vless://7e58699f-1d5d-4f6b-b181-cb74f0ad9509@ipw.y...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://7e58699f-1d5d-4f6b-b181-cb74f0ad9509@ipw.ygdfw.com:443?mode=stream-one&path=%2F&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=Tp0101Rs5K.dOtA2pLaY.iNfO#%40v2rays_ha%205409")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>21</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#28a745;font-weight:bold">🟢 عالی</span></td>
-<td><strong>84ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg21">vless://b4c13332-7054-441a-bf2f-61affbbfc212@dns.t...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://b4c13332-7054-441a-bf2f-61affbbfc212@dns.turboo-server.space:8443?path=%2F&security=tls&encryption=none&insecure=0&host=server1.turboo-server.com.co&type=ws&allowInsecure=0&sni=server1.turboo-server.com.co#NetAccount")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13194" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>22</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#ffc107;font-weight:bold">🟡 خوب</span></td>
-<td><strong>118ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg22">vless://4e4c6c2c-1f41-4310-b5c8-b35afb17843e@cdn1....</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://4e4c6c2c-1f41-4310-b5c8-b35afb17843e@cdn1.mehrdadsadaf.com:2053?path=%2F%3Fed%3D2560&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&host=cert2.mehrdadsadaf.com&fp=chrome&type=ws&allowInsecure=0&sni=cert2.mehrdadsadaf.com#%40v2rays_ha%205415")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>23</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#ffc107;font-weight:bold">🟡 خوب</span></td>
-<td><strong>177ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg23">vless://d33d0c37-a910-4c38-82e9-327f01e9d5cc@confi...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://d33d0c37-a910-4c38-82e9-327f01e9d5cc@config.parsazix1613.site:443?allowInsecure=1&alpn=h2%2Chttp%2F1.1&encryption=none&fp=firefox&headerType=http&host=google.com&path=%2F&security=tls&sni=film-doon.ir&type=tcp#NetAccount`")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13200" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>24</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#ffc107;font-weight:bold">🟡 خوب</span></td>
-<td><strong>184ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg24">vless://e4824193-4f54-453b-d037-88368e85ef0e@all.t...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://e4824193-4f54-453b-d037-88368e85ef0e@all.tellmethetrue.shop:443?encryption=none&security=tls&sni=pqh29v3.carwashipdir.shop&alpn=h2&type=grpc&mode=gun#%40v2rays_ha%205410")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>25</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#dc3545;font-weight:bold">🟠 متوسط</span></td>
-<td><strong>222ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg25">vless://11beaf11-726d-4c11-8ce9-27308c1c608c@157.1...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://11beaf11-726d-4c11-8ce9-27308c1c608c@157.173.127.225:443?security=reality&encryption=none&pbk=v3EwzA9RIIh5Ndxm-gypRY6RCJhOpQ-2WO7KaH8nsC8&headerType=none&fp=random&type=tcp&sni=analytics.google.com&sid=eab26c4a32#NetAccount`")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13200" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>26</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#dc3545;font-weight:bold">🟠 متوسط</span></td>
-<td><strong>228ms</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><code id="cfg26">vless://c659ce22-0a02-4d75-8c89-58d99916b846@cdn.h...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://c659ce22-0a02-4d75-8c89-58d99916b846@cdn.halazzon.ir:2053?path=%2F&security=tls&encryption=none&insecure=0&host=ir6.hnbyme.online&fp=chrome&type=ws&allowInsecure=0&sni=ir6.hnbyme.online#%40v2rays_ha%205406")'>📋 کپی</button>
-<a href="https://t.me/v2rays_ha/1699" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>27</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#dc3545;font-weight:bold">🟠 متوسط</span></td>
-<td><strong>320ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg27">vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-sub.site:8443?security=tls&type=ws&headerType=&path=%2F&host=backup.f-sub.cfd&sni=backup.f-sub.cfd&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13201" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>28</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#dc3545;font-weight:bold">🟠 متوسط</span></td>
-<td><strong>329ms</strong></td>
-<td>کانفیگ رایگان v2ray</td>
-<td><code id="cfg28">vless://71c89341-559f-46ea-8684-8f06e3a65a39@srv10...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://71c89341-559f-46ea-8684-8f06e3a65a39@srv10.bestforcast.com:11550?security=none&allowInsecure=0&encryption=none&type=ws#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran")'>📋 کپی</button>
-<a href="https://t.me/configs_freeiran/19541" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>29</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#dc3545;font-weight:bold">🟠 متوسط</span></td>
-<td><strong>330ms</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><code id="cfg29">vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-sub.site:8443?security=tls&type=ws&headerType=&path=%2F&host=backup.f-sub.cfd&sni=backup.f-sub.cfd&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`")'>📋 کپی</button>
-<a href="https://t.me/NetAccount/13201" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>30</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#dc3545;font-weight:bold">🟠 متوسط</span></td>
-<td><strong>396ms</strong></td>
-<td>کانفیگ رایگان v2ray</td>
-<td><code id="cfg30">vless://34cc1ffa-3fea-4894-be29-6db4716effc2@a1-gf...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://34cc1ffa-3fea-4894-be29-6db4716effc2@a1-gfawbcw.maxriser.ir:8082?security=none&encryption=none&host=bama.ir&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran")'>📋 کپی</button>
-<a href="https://t.me/configs_freeiran/19541" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>31</td>
-<td><span class="protocol-badge vless">VLESS</span></td>
-<td><span style="color:#dc3545;font-weight:bold">🟠 متوسط</span></td>
-<td><strong>398ms</strong></td>
-<td>کانفیگ رایگان v2ray</td>
-<td><code id="cfg31">vless://8f1a15bf-a352-4c32-aee2-957039a6847b@ipbaz...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("vless://8f1a15bf-a352-4c32-aee2-957039a6847b@ipbaz.ping-box.com:8443?path=%2F%3Fed&security=tls&alpn=http%2F1.1&encryption=none&host=6nwf5rauksz8126xm.zjde5.de5.net&fp=chrome&type=ws&sni=6nwf5rauksz8126xm.zjde5.de5.net#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran")'>📋 کپی</button>
-<a href="https://t.me/configs_freeiran/19541" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-</tbody></table></div>
-<div id="proxies" class="tab-content">
-<div class="stats">
-<div class="stat-card"><h3>7</h3><p>پروکسی فعال</p></div>
-<div class="stat-card"><h3>MTProto</h3><p>نوع پروتکل</p></div>
-<div class="stat-card"><h3>رایگان</h3><p>100%</p></div>
-</div>
-
-<div style="background:#e7f3ff;padding:20px;border-radius:10px;margin-bottom:20px;border-right:4px solid #667eea">
-<h3 style="color:#667eea;margin-bottom:10px">💡 نحوه استفاده:</h3>
-<ol style="margin-right:20px;line-height:1.8">
-<li>روی دکمه "اتصال" کلیک کنید</li>
-<li>تلگرام خودکار باز می‌شود</li>
-<li>روی "اتصال" در تلگرام کلیک کنید</li>
-<li>✅ متصل شدید!</li>
-</ol>
-</div>
-<table>
-<thead><tr><th>ردیف</th><th>سرور:پورت</th><th>منبع</th><th>عملیات</th></tr></thead>
-<tbody>
-
-<tr>
-<td>1</td>
-<td><code>148.251.31.109:8443</code></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td>
-<a href="tg://proxy?server=148.251.31.109&port=8443&secret=eecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQ%3D%3D" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
-<a href="https://t.me/v2rays_ha/1701" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><code>138.199.134.107:443</code></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td>
-<a href="tg://proxy?server=138.199.134.107&port=443&secret=dde9a4f23b1d768c04a8d7f39120ca5b6e&&channel=@baicai_dev" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
-<a href="https://t.me/v2rays_ha/1701" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><code>46.224.177.195:9741</code></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td>
-<a href="tg://proxy?server=46.224.177.195&port=9741&secret=ee5lrPbFdb1vizwd3HGQgCM4eFlnUldQOFpvTHVwZmNpaVI2ZkJFNDJMSXJxUW1yT2s4YzRCaVRaLi11cGRhdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
-<a href="https://t.me/v2rays_ha/1701" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>4</td>
-<td><code>142.132.246.29:443</code></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td>
-<a href="tg://proxy?server=142.132.246.29&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&&channel=@baicai_dev" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
-<a href="https://t.me/v2rays_ha/1701" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>5</td>
-<td><code>ir0-tcpir.santonif.ir:443</code></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td>
-<a href="tg://proxy?server=ir0-tcpir.santonif.ir&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&&channel=@baicai_dev" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
-<a href="https://t.me/v2rays_ha/1701" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>6</td>
-<td><code>78.47.212.145:23</code></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td>
-<a href="tg://proxy?server=78.47.212.145&port=23&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
-<a href="https://t.me/v2rays_ha/1701" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-
-<tr>
-<td>7</td>
-<td><code>185.206.95.53:443</code></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td>
-<a href="tg://proxy?server=185.206.95.53&port=443&secret=dd58c01578d5da09114136043815dff653" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
-<a href="https://t.me/v2rays_ha/1701" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-</tbody></table></div>
-<div id="files" class="tab-content">
-<div class="stats">
-<div class="stat-card"><h3>6</h3><p>فایل موجود</p></div>
-<div class="stat-card"><h3>1</h3><p>نوع فایل</p></div>
-<div class="stat-card"><h3>رایگان</h3><p>100%</p></div>
-</div>
-
-<table>
-<thead><tr><th>ردیف</th><th>نام فایل</th><th>نوع</th><th>منبع</th><th>عملیات</th></tr></thead>
-<tbody>
-
-<tr>
-<td>1</td>
-<td><code>NetAccount461.npvt</code></td>
-<td><strong>NPVT</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><a href="https://t.me/NetAccount/13195" target="_blank" class="link-btn">📥 دانلود</a></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><code>NetAccount462.npvt</code></td>
-<td><strong>NPVT</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><a href="https://t.me/NetAccount/13196" target="_blank" class="link-btn">📥 دانلود</a></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><code>NetAccount463.npvt</code></td>
-<td><strong>NPVT</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><a href="https://t.me/NetAccount/13197" target="_blank" class="link-btn">📥 دانلود</a></td>
-</tr>
-
-<tr>
-<td>4</td>
-<td><code>NetAccount464.npvt</code></td>
-<td><strong>NPVT</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><a href="https://t.me/NetAccount/13198" target="_blank" class="link-btn">📥 دانلود</a></td>
-</tr>
-
-<tr>
-<td>5</td>
-<td><code>NetAccount465.npvt</code></td>
-<td><strong>NPVT</strong></td>
-<td>Net Account | نت اكانت</td>
-<td><a href="https://t.me/NetAccount/13199" target="_blank" class="link-btn">📥 دانلود</a></td>
-</tr>
-
-<tr>
-<td>6</td>
-<td><code>@v2rays_ha 159.npvt</code></td>
-<td><strong>NPVT</strong></td>
-<td>فیلترشکن کانفیگ ha tunnel npv v2ray</td>
-<td><a href="https://t.me/v2rays_ha/1700" target="_blank" class="link-btn">📥 دانلود</a></td>
-</tr>
-</tbody></table></div>
-<div id="channels" class="tab-content">
-<div class="stats">
-<div class="stat-card"><h3>39</h3><p>کانال منبع</p></div>
-<div class="stat-card"><h3>80 دقیقه</h3><p>فاصله بررسی</p></div>
-<div class="stat-card"><h3>خودکار</h3><p>بروزرسانی</p></div>
-</div>
-<h3 style="margin-bottom:15px;color:#667eea">📡 لیست کامل کانال‌های منبع:</h3>
-<div class="channel-list">
-<div class="channel-item"><a href="https://t.me/KioV2ray" target="_blank">📢 @KioV2ray</a></div><div class="channel-item"><a href="https://t.me/Npvtunnel_vip" target="_blank">📢 @Npvtunnel_vip</a></div><div class="channel-item"><a href="https://t.me/planB_net" target="_blank">📢 @planB_net</a></div><div class="channel-item"><a href="https://t.me/Free_Nettm" target="_blank">📢 @Free_Nettm</a></div><div class="channel-item"><a href="https://t.me/mypremium98" target="_blank">📢 @mypremium98</a></div><div class="channel-item"><a href="https://t.me/mitivpn" target="_blank">📢 @mitivpn</a></div><div class="channel-item"><a href="https://t.me/iSeqaro" target="_blank">📢 @iSeqaro</a></div><div class="channel-item"><a href="https://t.me/configraygan" target="_blank">📢 @configraygan</a></div><div class="channel-item"><a href="https://t.me/shankamil" target="_blank">📢 @shankamil</a></div><div class="channel-item"><a href="https://t.me/xsfilternet" target="_blank">📢 @xsfilternet</a></div><div class="channel-item"><a href="https://t.me/varvpn1" target="_blank">📢 @varvpn1</a></div><div class="channel-item"><a href="https://t.me/iP_CF" target="_blank">📢 @iP_CF</a></div><div class="channel-item"><a href="https://t.me/cooonfig" target="_blank">📢 @cooonfig</a></div><div class="channel-item"><a href="https://t.me/DeamNet" target="_blank">📢 @DeamNet</a></div><div class="channel-item"><a href="https://t.me/anty_filter" target="_blank">📢 @anty_filter</a></div><div class="channel-item"><a href="https://t.me/vpnboxiran" target="_blank">📢 @vpnboxiran</a></div><div class="channel-item"><a href="https://t.me/Merlin_ViP" target="_blank">📢 @Merlin_ViP</a></div><div class="channel-item"><a href="https://t.me/BugFreeNet" target="_blank">📢 @BugFreeNet</a></div><div class="channel-item"><a href="https://t.me/cicdoVPN" target="_blank">📢 @cicdoVPN</a></div><div class="channel-item"><a href="https://t.me/Farda_Ai" target="_blank">📢 @Farda_Ai</a></div><div class="channel-item"><a href="https://t.me/Awlix_ir" target="_blank">📢 @Awlix_ir</a></div><div class="channel-item"><a href="https://t.me/proSSH" target="_blank">📢 @proSSH</a></div><div class="channel-item"><a href="https://t.me/vpn_proxy_custom" target="_blank">📢 @vpn_proxy_custom</a></div><div class="channel-item"><a href="https://t.me/Free_HTTPCustom" target="_blank">📢 @Free_HTTPCustom</a></div><div class="channel-item"><a href="https://t.me/sinavm" target="_blank">📢 @sinavm</a></div><div class="channel-item"><a href="https://t.me/Amir_Alternative_Official" target="_blank">📢 @Amir_Alternative_Official</a></div><div class="channel-item"><a href="https://t.me/StayconnectedVPN" target="_blank">📢 @StayconnectedVPN</a></div><div class="channel-item"><a href="https://t.me/BINNER_IRAN" target="_blank">📢 @BINNER_IRAN</a></div><div class="channel-item"><a href="https://t.me/IranianMinds" target="_blank">📢 @IranianMinds</a></div><div class="channel-item"><a href="https://t.me/vpn11ir" target="_blank">📢 @vpn11ir</a></div><div class="channel-item"><a href="https://t.me/NetAccount" target="_blank">📢 @NetAccount</a></div><div class="channel-item"><a href="https://t.me/mitiivpn2" target="_blank">📢 @mitiivpn2</a></div><div class="channel-item"><a href="https://t.me/isharewin" target="_blank">📢 @isharewin</a></div><div class="channel-item"><a href="https://t.me/v2rays_ha" target="_blank">📢 @v2rays_ha</a></div><div class="channel-item"><a href="https://t.me/iroproxy" target="_blank">📢 @iroproxy</a></div><div class="channel-item"><a href="https://t.me/ProxyMTProto" target="_blank">📢 @ProxyMTProto</a></div><div class="channel-item"><a href="https://t.me/darkproxy" target="_blank">📢 @darkproxy</a></div><div class="channel-item"><a href="https://t.me/configs_freeiran" target="_blank">📢 @configs_freeiran</a></div><div class="channel-item"><a href="https://t.me/v2rayvpnchannel" target="_blank">📢 @v2rayvpnchannel</a></div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="footer">
-<p style="font-size:1.2em;margin-bottom:15px">🔗 کانال اصلی: <a href="https://t.me/myvpn1404">@myvpn1404</a></p>
-<p>ساخته شده با ❤️ • بروزرسانی خودکار هر 40 دقیقه • رایگان برای همیشه</p>
-<p style="margin-top:10px;font-size:0.9em">آخرین بروزرسانی: 2026/01/30 - 19:35</p>
-</div>
-
-<script>
-function showTab(n){
-document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
-document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-document.getElementById(n).classList.add('active');
-event.target.classList.add('active');
-}
-function copyText(txt){
-navigator.clipboard.writeText(txt).then(()=>{
-const btn=event.target;
-const old=btn.innerText;
-btn.innerText='✅ کپی شد';
-btn.style.background='#28a745';
-setTimeout(()=>{btn.innerText=old;btn.style.background='#667eea'},2000);
-});
-}
-setTimeout(()=>location.reload(),40*60*1000);
-</script>
+        function openModal() { document.getElementById('helpModal').style.display = 'flex'; }
+        function closeModal() { document.getElementById('helpModal').style.display = 'none'; }
+        
+        // Close modal on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('helpModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

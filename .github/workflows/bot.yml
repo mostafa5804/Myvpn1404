@@ -2,8 +2,9 @@ name: V2Ray Collector Bot
 
 on:
   schedule:
-    - cron: '0 * * * *'
-    - cron: '40 * * * *'
+    - cron: '0 * * * *'   # دقیقه 0 (دسته اول)
+    - cron: '20 * * * *'  # دقیقه 20 (دسته دوم)
+    - cron: '40 * * * *'  # دقیقه 40 (دسته سوم)
   workflow_dispatch:
 
 permissions:
@@ -12,7 +13,7 @@ permissions:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15  # تایم رو بیشتر کردم چون تاخیرها زیاد شده
     
     steps:
     - name: Checkout
@@ -28,7 +29,6 @@ jobs:
     - name: Install deps
       run: pip install telethon jdatetime pytz
 
-    # این مرحله جدید است: اول تغییرات را دریافت می‌کنیم
     - name: Pull latest changes
       run: |
         git config --global user.name "VPN Bot"

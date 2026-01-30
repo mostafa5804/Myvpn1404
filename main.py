@@ -459,151 +459,162 @@ async def main():
                 continue
 
         # ساخت GitHub Pages
+# ساخت GitHub Pages مدرن و رسپانسیو
         try:
-            print("\n📄 ساخت GitHub Pages...")
-            
+            print("\n📄 ساخت GitHub Pages مدرن...")
             now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
-            all_files = list(sent_files)
-            all_proxies = list(sent_proxies)
             
             html = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VPN Config Hub</title>
-<style>
-*{{margin:0;padding:0;box-sizing:border-box}}
-body{{font-family:Tahoma,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:20px;direction:rtl}}
-.header{{text-align:center;color:#fff;margin-bottom:30px}}
-.header h1{{font-size:2.5em;margin-bottom:10px}}
-.container{{max-width:1400px;margin:0 auto}}
-.tabs{{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;justify-content:center}}
-.tab{{background:rgba(255,255,255,0.2);color:#fff;border:2px solid rgba(255,255,255,0.3);padding:12px 30px;border-radius:10px;cursor:pointer;transition:all 0.3s}}
-.tab:hover{{background:rgba(255,255,255,0.3)}}
-.tab.active{{background:#fff;color:#667eea}}
-.content{{background:#fff;border-radius:15px;padding:30px;box-shadow:0 20px 60px rgba(0,0,0,0.3)}}
-.tab-content{{display:none}}
-.tab-content.active{{display:block}}
-.stats{{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px}}
-.stat-card{{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:25px;border-radius:12px;text-align:center}}
-.stat-card h3{{font-size:2.5em;margin-bottom:8px}}
-table{{width:100%;border-collapse:collapse;margin-top:20px}}
-th,td{{padding:15px;text-align:right;border-bottom:1px solid #eee}}
-th{{background:#f8f9fa;font-weight:600}}
-tr:hover{{background:#f8f9fa}}
-.protocol-badge{{display:inline-block;padding:5px 10px;border-radius:6px;font-size:0.85em;font-weight:600;color:#fff}}
-.vmess{{background:#667eea}}
-.vless{{background:#764ba2}}
-.trojan{{background:#f093fb}}
-code{{background:#f8f9fa;padding:3px 8px;border-radius:4px;font-size:0.9em;word-break:break-all}}
-.copy-btn{{background:#667eea;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer}}
-.empty-state{{text-align:center;padding:60px 20px;color:#999}}
-.footer{{text-align:center;margin-top:40px;padding:30px;color:#fff}}
-.channel-list{{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:15px;margin-top:20px}}
-.channel-item{{background:#f8f9fa;padding:15px;border-radius:10px;border-right:4px solid #667eea}}
-.channel-item a{{color:#667eea;text-decoration:none;font-weight:500}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        :root {{
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --secondary: #94a3b8;
+            --text-main: #f1f5f9;
+            --accent: #22d3ee;
+            --success: #4ade80;
+        }}
+        * {{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; }}
+        body {{ background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 10px; }}
+        .container {{ max-width: 1000px; margin: 0 auto; }}
+        
+        /* Header */
+        header {{ text-align: center; padding: 40px 0; }}
+        header h1 {{ font-size: 2rem; color: var(--primary); margin-bottom: 10px; }}
+        header p {{ color: var(--secondary); font-size: 0.9rem; }}
+
+        /* Tabs */
+        .tabs {{ display: flex; justify-content: center; gap: 8px; margin-bottom: 25px; flex-wrap: wrap; }}
+        .tab {{ background: var(--card-bg); border: 1px solid #334155; color: var(--secondary); padding: 10px 20px; border-radius: 12px; cursor: pointer; transition: 0.3s; font-size: 0.9rem; }}
+        .tab.active {{ background: var(--primary); color: var(--bg-color); border-color: var(--primary); font-weight: bold; }}
+
+        /* Content */
+        .tab-content {{ display: none; animation: fadeIn 0.5s ease; }}
+        .tab-content.active {{ display: block; }}
+        @keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(10px); }} to {{ opacity: 1; transform: translateY(0); }} }}
+
+        /* Cards & Tables */
+        .card {{ background: var(--card-bg); border-radius: 16px; padding: 15px; margin-bottom: 15px; border: 1px solid #334155; position: relative; }}
+        .card-header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }}
+        .badge {{ padding: 4px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: bold; background: #334155; }}
+        .badge.ping {{ color: var(--success); border: 1px solid var(--success); }}
+        
+        .config-box {{ background: #0f172a; padding: 12px; border-radius: 10px; font-family: monospace; font-size: 0.8rem; overflow-x: auto; white-space: nowrap; color: var(--accent); margin: 10px 0; border: 1px dashed #334155; }}
+        
+        .btn-group {{ display: flex; gap: 10px; margin-top: 15px; }}
+        .btn {{ flex: 1; padding: 10px; border-radius: 10px; border: none; cursor: pointer; font-weight: bold; text-align: center; text-decoration: none; font-size: 0.85rem; transition: 0.2s; }}
+        .btn-primary {{ background: var(--primary); color: var(--bg-color); }}
+        .btn-outline {{ background: transparent; border: 1px solid var(--primary); color: var(--primary); }}
+        .btn:active {{ transform: scale(0.98); }}
+
+        /* Footer */
+        footer {{ text-align: center; padding: 40px; color: var(--secondary); font-size: 0.8rem; }}
+        a {{ color: var(--primary); text-decoration: none; }}
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {{
+            header h1 {{ font-size: 1.5rem; }}
+            .tab {{ padding: 8px 15px; font-size: 0.8rem; }}
+        }}
+    </style>
 </head>
 <body>
-<div class="header">
-<h1>🔮 VPN Config Hub</h1>
-<div>📅 {now_str}</div>
-</div>
+
 <div class="container">
-<div class="tabs">
-<button class="tab active" onclick="showTab('configs')">🔮 کانفیگ ({len(live_configs)})</button>
-<button class="tab" onclick="showTab('proxies')">🔵 پروکسی ({len(all_proxies)})</button>
-<button class="tab" onclick="showTab('files')">📂 فایل ({len(all_files)})</button>
-<button class="tab" onclick="showTab('channels')">📡 کانال ({len(ALL_CHANNELS)})</button>
+    <header>
+        <h1>V2Ray Collector</h1>
+        <p>بروزرسانی شده در: {now_str}</p>
+    </header>
+
+    <div class="tabs">
+        <div class="tab active" onclick="openTab(event, 'configs')">🚀 کانفیگ‌ها</div>
+        <div class="tab" onclick="openTab(event, 'proxies')">🛡️ پروکسی</div>
+        <div class="tab" onclick="openTab(event, 'files')">📂 فایل‌ها</div>
+    </div>
+
+    <div id="configs" class="tab-content active">
+        {"".join([f'''
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">{c['protocol']}</span>
+                <span class="badge ping">{c['latency']}ms</span>
+            </div>
+            <div class="config-box" id="conf_{i}">{c['config']}</div>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="copyConfig('conf_{i}')">کپی کانفیگ</button>
+                <a href="{c['config']}" class="btn btn-outline">اتصال مستقیم</a>
+            </div>
+        </div>
+        ''' for i, c in enumerate(live_configs)])}
+    </div>
+
+    <div id="proxies" class="tab-content">
+        {"".join([f'''
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">MTProto</span>
+            </div>
+            <div class="config-box">Server: {p.split(':')[0]}</div>
+            <div class="btn-group">
+                <a href="{all_proxies_data.get(p, '#')}" class="btn btn-primary">اتصال به پروکسی</a>
+            </div>
+        </div>
+        ''' for p in list(sent_proxies)])}
+    </div>
+
+    <div id="files" class="tab-content">
+        {"".join([f'''
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">FILE</span>
+            </div>
+            <p style="font-size:0.9rem">فایل: {f}</p>
+            <div class="btn-group">
+                <a href="https://t.me/{destination_channel[1:]}" class="btn btn-outline">دانلود از کانال تلگرام</a>
+            </div>
+        </div>
+        ''' for f in list(sent_files)])}
+    </div>
+
+    <footer>
+        طراحی شده برای <a href="https://t.me/{destination_channel[1:]}">{destination_channel}</a><br>
+        استفاده منصفانه از منابع گیت‌هاب
+    </footer>
 </div>
-<div class="content">
-<div id="configs" class="tab-content active">
-<div class="stats">
-<div class="stat-card"><h3>{len(live_configs)}</h3><p>کانفیگ آنلاین</p></div>
-"""
-            
-            if live_configs:
-                avg = int(sum(c['latency'] for c in live_configs) / len(live_configs))
-                html += f"<div class='stat-card'><h3>{avg}ms</h3><p>میانگین پینگ</p></div>"
-                html += "<div class='stat-card'><h3>" + str(len(set(c['protocol'] for c in live_configs))) + "</h3><p>نوع پروتکل</p></div>"
-                html += "</div><table><thead><tr><th>ردیف</th><th>پروتکل</th><th>پینگ</th><th>منبع</th><th>کانفیگ</th></tr></thead><tbody>"
-                
-                for i, c in enumerate(sorted(live_configs, key=lambda x: x['latency']), 1):
-                    html += f"<tr><td>{i}</td><td><span class='protocol-badge {c['protocol'].lower()}'>{c['protocol']}</span></td>"
-                    html += f"<td>{c['latency']}ms</td><td>{c['channel']}</td>"
-                    html += f"<td><code>{c['config'][:60]}...</code></td></tr>"
-                
-                html += "</tbody></table>"
-            else:
-                html += "<div class='stat-card'><h3>-</h3><p>میانگین</p></div>"
-                html += "<div class='stat-card'><h3>-</h3><p>پروتکل</p></div></div>"
-                html += "<div class='empty-state'><h3>هیچ کانفیگ زنده‌ای موجود نیست</h3></div>"
-            
-            html += "</div>"
-            
-            # پروکسی
-            html += "<div id='proxies' class='tab-content'>"
-            html += f"<div class='stats'><div class='stat-card'><h3>{len(all_proxies)}</h3><p>پروکسی</p></div></div>"
-            
-            if all_proxies:
-                html += "<table><thead><tr><th>ردیف</th><th>سرور:پورت</th></tr></thead><tbody>"
-                for i, p in enumerate(all_proxies, 1):
-                    html += f"<tr><td>{i}</td><td><code>{p}</code></td></tr>"
-                html += "</tbody></table>"
-            else:
-                html += "<div class='empty-state'><h3>پروکسی موجود نیست</h3></div>"
-            
-            html += "</div>"
-            
-            # فایل
-            html += "<div id='files' class='tab-content'>"
-            html += f"<div class='stats'><div class='stat-card'><h3>{len(all_files)}</h3><p>فایل</p></div></div>"
-            
-            if all_files:
-                html += "<table><thead><tr><th>ردیف</th><th>نام فایل</th></tr></thead><tbody>"
-                for i, f in enumerate(all_files, 1):
-                    html += f"<tr><td>{i}</td><td><code>{f}</code></td></tr>"
-                html += "</tbody></table>"
-            else:
-                html += "<div class='empty-state'><h3>فایل موجود نیست</h3></div>"
-            
-            html += "</div>"
-            
-            # کانال‌ها
-            html += "<div id='channels' class='tab-content'>"
-            html += f"<div class='stats'><div class='stat-card'><h3>{len(ALL_CHANNELS)}</h3><p>کانال منبع</p></div></div>"
-            html += "<div class='channel-list'>"
-            
-            for ch in ALL_CHANNELS:
-                ch_clean = ch[1:] if ch.startswith('@') else ch
-                html += f"<div class='channel-item'><a href='https://t.me/{ch_clean}' target='_blank'>📢 {ch}</a></div>"
-            
-            html += "</div></div>"
-            
-            html += f"""
-</div></div>
-<div class="footer">
-<p>🔗 <a href="https://t.me/{destination_channel[1:]}">{destination_channel}</a></p>
-<p>آپدیت هر 40 دقیقه • {now_str}</p>
-</div>
+
 <script>
-function showTab(n){{
-document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
-document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-document.getElementById(n).classList.add('active');
-event.target.classList.add('active');
-}}
+    function openTab(evt, tabName) {{
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) tabcontent[i].style.display = "none";
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < tablinks.length; i++) tablinks[i].className = tablinks[i].className.replace(" active", "");
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }}
+
+    function copyConfig(id) {{
+        var text = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(text).then(() => {{
+            alert("کانفیگ کپی شد!");
+        }});
+    }}
 </script>
+
 </body>
 </html>
 """
-            
             with open('index.html', 'w', encoding='utf-8') as f:
                 f.write(html)
-            
-            print("✅ فایل index.html ساخته شد")
-            
+            print("✅ فایل index.html با ظاهر جدید ساخته شد")
+
         except Exception as e:
             print(f"❌ خطا HTML: {e}")
 

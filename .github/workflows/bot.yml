@@ -2,8 +2,8 @@ name: V2Ray Collector Bot
 
 on:
   schedule:
-    - cron: '0 * * * *'   # دقیقه 0 (هر ساعت)
-    - cron: '40 * * * *'  # دقیقه 40 (هر ساعت)
+    - cron: '0 * * * *'
+    - cron: '40 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -12,7 +12,7 @@ permissions:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 10
     
     steps:
     - name: Checkout
@@ -28,6 +28,13 @@ jobs:
     - name: Install deps
       run: pip install telethon jdatetime pytz
 
+    # این مرحله جدید است: اول تغییرات را دریافت می‌کنیم
+    - name: Pull latest changes
+      run: |
+        git config --global user.name "VPN Bot"
+        git config --global user.email "bot@github.com"
+        git pull origin main --rebase || echo "Nothing to pull"
+
     - name: Run bot
       env:
         API_ID: ${{ secrets.API_ID }}
@@ -37,19 +44,10 @@ jobs:
 
     - name: Commit and Push
       run: |
-        git config --global user.name "VPN Bot"
-        git config --global user.email "bot@github.com"
-        
-        # 1. دریافت آخرین تغییرات مخزن برای جلوگیری از ارور Push
-        git pull origin main --rebase
-        
-        # 2. اضافه کردن فایل html و فایل دیتابیس (data.json)
         if [ -f "index.html" ]; then
           git add index.html data.json
-          
-          # بررسی اینکه آیا تغییری ایجاد شده یا نه
           git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Update $(date +'%Y-%m-%d %H:%M')" && git push)
-          echo "✅ Changes pushed successfully"
+          echo "✅ Done"
         else
-          echo "⚠️ No index.html found"
+          echo "⚠️ No files generated"
         fi

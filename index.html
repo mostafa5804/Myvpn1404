@@ -20,288 +20,407 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; -webkit-tap-highlight-color: transparent; }
         body { background-color: var(--bg-color); color: var(--text-main); padding-bottom: 80px; }
         
-        /* Header */
-        .header { text-align: center; padding: 20px 15px; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); }
+        /* HEADER SECTION */
+        .header { 
+            text-align: center; 
+            padding: 20px 15px; 
+            border-bottom: 1px solid var(--border); 
+            background: rgba(15, 23, 42, 0.95); 
+            position: sticky; 
+            top: 0; 
+            z-index: 50; 
+            backdrop-filter: blur(10px); 
+        }
         .header h1 { font-size: 1.4rem; color: var(--primary); margin-bottom: 5px; }
         .header p { font-size: 0.8rem; color: var(--text-sub); }
-        .help-btn { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--primary); }
+        .help-btn { 
+            position: absolute; 
+            left: 15px; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            background: none; 
+            border: none; 
+            font-size: 1.2rem; 
+            cursor: pointer; 
+            color: var(--primary); 
+        }
 
-        /* Container */
+        /* CONTAINER */
         .container { max-width: 600px; margin: 0 auto; padding: 15px; }
         
-        /* Cards */
-        .card { background: var(--card-bg); border-radius: 16px; padding: 16px; margin-bottom: 16px; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); animation: fadeIn 0.4s ease; }
+        /* CARD STYLES */
+        .card { 
+            background: var(--card-bg); 
+            border-radius: 16px; 
+            padding: 16px; 
+            margin-bottom: 16px; 
+            border: 1px solid var(--border); 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+            animation: fadeIn 0.4s ease; 
+        }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         
         .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-        .protocol-tag { background: #334155; padding: 4px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: bold; color: #e2e8f0; }
+        .protocol-tag { 
+            background: #334155; 
+            padding: 4px 10px; 
+            border-radius: 8px; 
+            font-size: 0.75rem; 
+            font-weight: bold; 
+            color: #e2e8f0; 
+        }
         .ping-tag { font-size: 0.8rem; font-weight: bold; display: flex; align-items: center; gap: 4px; }
         
-        .channel-info { font-size: 0.75rem; color: var(--text-sub); margin-bottom: 10px; display: flex; align-items: center; gap: 5px; }
+        .channel-info { 
+            font-size: 0.75rem; 
+            color: var(--text-sub); 
+            margin-bottom: 10px; 
+            display: flex; 
+            align-items: center; 
+            gap: 5px; 
+        }
         
-        .code-block { background: #0b1120; border: 1px dashed var(--border); border-radius: 10px; padding: 12px; font-family: monospace; font-size: 0.75rem; color: #22d3ee; overflow-x: auto; white-space: nowrap; margin-bottom: 12px; direction: ltr; }
+        .code-block { 
+            background: #0b1120; 
+            border: 1px dashed var(--border); 
+            border-radius: 10px; 
+            padding: 12px; 
+            font-family: monospace; 
+            font-size: 0.75rem; 
+            color: #22d3ee; 
+            overflow-x: auto; 
+            white-space: nowrap; 
+            margin-bottom: 12px; 
+            direction: ltr; 
+        }
         
-        /* Buttons */
+        /* BUTTONS */
         .action-btns { display: flex; gap: 10px; }
-        .btn { flex: 1; padding: 12px; border-radius: 10px; border: none; font-size: 0.9rem; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.2s; }
+        .btn { 
+            flex: 1; 
+            padding: 12px; 
+            border-radius: 10px; 
+            border: none; 
+            font-size: 0.9rem; 
+            font-weight: bold; 
+            cursor: pointer; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-decoration: none; 
+            transition: 0.2s; 
+        }
         .btn-copy { background: var(--primary); color: #0f172a; }
         .btn-connect { background: transparent; border: 1px solid var(--primary); color: var(--primary); }
-        .btn-source { width: 100%; margin-top: 10px; background: #334155; color: #cbd5e1; font-size: 0.8rem; padding: 8px; }
+        .btn-source { 
+            width: 100%; 
+            margin-top: 10px; 
+            background: #334155; 
+            color: #cbd5e1; 
+            font-size: 0.8rem; 
+            padding: 8px; 
+        }
         
-        /* Bottom Navigation */
-        .bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(30, 41, 59, 0.95); backdrop-filter: blur(10px); border-top: 1px solid var(--border); display: flex; justify-content: space-around; padding: 10px 0; z-index: 100; padding-bottom: max(10px, env(safe-area-inset-bottom)); }
-        .nav-item { display: flex; flex-direction: column; align-items: center; gap: 4px; color: var(--text-sub); font-size: 0.75rem; cursor: pointer; flex: 1; }
+        /* BOTTOM NAVIGATION */
+        .bottom-nav { 
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            background: rgba(30, 41, 59, 0.95); 
+            backdrop-filter: blur(10px); 
+            border-top: 1px solid var(--border); 
+            display: flex; 
+            justify-content: space-around; 
+            padding: 10px 0; 
+            z-index: 100; 
+            padding-bottom: max(10px, env(safe-area-inset-bottom)); 
+        }
+        .nav-item { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 4px; 
+            color: var(--text-sub); 
+            font-size: 0.75rem; 
+            cursor: pointer; 
+            flex: 1; 
+        }
         .nav-item.active { color: var(--primary); font-weight: bold; }
         .nav-icon { font-size: 1.2rem; margin-bottom: 2px; }
 
-        /* Sections */
+        /* TABS & MODAL */
         .tab-content { display: none; }
         .tab-content.active { display: block; }
         
-        /* Modal */
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 200; align-items: center; justify-content: center; padding: 20px; }
-        .modal-content { background: var(--card-bg); width: 100%; max-width: 400px; border-radius: 20px; padding: 25px; position: relative; border: 1px solid var(--border); }
-        .close-modal { position: absolute; left: 20px; top: 20px; font-size: 1.5rem; color: var(--danger); cursor: pointer; }
+        .modal { 
+            display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0,0,0,0.8); 
+            z-index: 200; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px; 
+        }
+        .modal-content { 
+            background: var(--card-bg); 
+            width: 100%; 
+            max-width: 400px; 
+            border-radius: 20px; 
+            padding: 25px; 
+            position: relative; 
+            border: 1px solid var(--border); 
+        }
+        .close-modal { 
+            position: absolute; 
+            left: 20px; 
+            top: 20px; 
+            font-size: 1.5rem; 
+            color: var(--danger); 
+            cursor: pointer; 
+        }
         .modal h3 { color: var(--primary); margin-bottom: 15px; }
         .modal p { font-size: 0.9rem; line-height: 1.8; color: var(--text-sub); margin-bottom: 10px; }
-        
-        /* Utilities */
-        .hidden { display: none; }
     </style>
 </head>
 <body>
 
     <div class="header">
         <button class="help-btn" onclick="openModal()">ℹ️</button>
-        <h1>VPN Config Hub</h1>
-        <p>2026/01/30 - 19:49</p>
+        <h1>VPN Hub</h1>
+        <p>2026/01/30 - 20:43</p>
     </div>
 
     <div class="container">
+        
         <div id="tab-configs" class="tab-content active">
             
             <div class="card">
                 <div class="card-header">
                     <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 62ms</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 447ms</span>
                 </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-0">vless://b4c13332-7054-441a-bf2f-61affbbfc212@dns.turboo-server.space:8443?path=%2F&security=tls&encryption=none&insecure=0&host=server1.turboo-server.com.co&type=ws&allowInsecure=0&sni=server1.turboo-server.com.co#NetAccount</div>
+                <div class="channel-info">📡 منبع: کانفیگ رایگان</div>
+                <div class="code-block" id="conf-0">vless://a3a01f35-2735-4ae4-88fa-1d192f25549b@sn1.saedbahari.ir:2082?type=tcp&encryption=none&path=%2F&host=speedtest.net&headerType=http&security=none#configraygan</div>
                 <div class="action-btns">
                     <button class="btn btn-copy" onclick="copyText('conf-0')">کپی</button>
-                    <a href="vless://b4c13332-7054-441a-bf2f-61affbbfc212@dns.turboo-server.space:8443?path=%2F&security=tls&encryption=none&insecure=0&host=server1.turboo-server.com.co&type=ws&allowInsecure=0&sni=server1.turboo-server.com.co#NetAccount" class="btn btn-connect">اتصال</a>
+                    <a href="vless://a3a01f35-2735-4ae4-88fa-1d192f25549b@sn1.saedbahari.ir:2082?type=tcp&encryption=none&path=%2F&host=speedtest.net&headerType=http&security=none#configraygan" class="btn btn-connect">اتصال</a>
                 </div>
-                <a href="https://t.me/myvpn1404/2359" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+                <a href="https://t.me/myvpn1404/2436" class="btn btn-source">🔗 مشاهده در کانال ما</a>
             </div>
             
             <div class="card">
                 <div class="card-header">
                     <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 3ms</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 241ms</span>
                 </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-1">vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.18.15.19:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net#NetAccount</div>
+                <div class="channel-info">📡 منبع: کانفیگ رایگان</div>
+                <div class="code-block" id="conf-1">vless://89708a4d-c1a3-4735-8a96-0c0efa8280e0@netmeli2.iranhostpro.ir:8880?path=%2F%3Fed%3D2080&security=none&encryption=none&host=vaslim2.planet88apk.com&type=ws#⚡Telegram</div>
                 <div class="action-btns">
                     <button class="btn btn-copy" onclick="copyText('conf-1')">کپی</button>
-                    <a href="vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.18.15.19:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net#NetAccount" class="btn btn-connect">اتصال</a>
+                    <a href="vless://89708a4d-c1a3-4735-8a96-0c0efa8280e0@netmeli2.iranhostpro.ir:8880?path=%2F%3Fed%3D2080&security=none&encryption=none&host=vaslim2.planet88apk.com&type=ws#⚡Telegram" class="btn btn-connect">اتصال</a>
                 </div>
-                <a href="https://t.me/myvpn1404/2360" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+                <a href="https://t.me/myvpn1404/2437" class="btn btn-source">🔗 مشاهده در کانال ما</a>
             </div>
             
             <div class="card">
                 <div class="card-header">
                     <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 3ms</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 264ms</span>
                 </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-2">vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.18.15.19:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net#NetAccount</div>
+                <div class="channel-info">📡 منبع: کانفیگ رایگان</div>
+                <div class="code-block" id="conf-2">vless://89708a4d-c1a3-4735-8a96-0c0efa8280e0@melinet2.iranhostpro.ir:8443?security=tls&alpn=http%2F1.1&encryption=none&host=kdgriqztxnbubq60fcvo.vipclubiran.ir&fp=chrome&type=ws&sni=kdgriqztxnbubq60fcvo.vipclubiran.ir#⚡Telegram</div>
                 <div class="action-btns">
                     <button class="btn btn-copy" onclick="copyText('conf-2')">کپی</button>
-                    <a href="vless://0665cf1e-0df8-4981-a8de-a366e37c0866@104.18.15.19:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=xdol7mayq6wu5kil7wjyrni7o8tnydsafcmhfhn7g6rimbw5o2g6mlm.zjde5.de5.net#NetAccount" class="btn btn-connect">اتصال</a>
+                    <a href="vless://89708a4d-c1a3-4735-8a96-0c0efa8280e0@melinet2.iranhostpro.ir:8443?security=tls&alpn=http%2F1.1&encryption=none&host=kdgriqztxnbubq60fcvo.vipclubiran.ir&fp=chrome&type=ws&sni=kdgriqztxnbubq60fcvo.vipclubiran.ir#⚡Telegram" class="btn btn-connect">اتصال</a>
                 </div>
-                <a href="https://t.me/myvpn1404/2361" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+                <a href="https://t.me/myvpn1404/2438" class="btn btn-source">🔗 مشاهده در کانال ما</a>
             </div>
             
             <div class="card">
                 <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 3ms</span>
+                    <span class="protocol-tag">SS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 146ms</span>
                 </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-3">vless://83f03646-fb28-44cc-9d2c-8853f6c09285@104.17.162.123:8443?path=%2F%3Fed%3D%23TELEGRAM-%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=r4fnviw9jl4i4rx.zjde5.de5.net&fp=random&type=ws&allowInsecure=0&sni=r4fnviw9jl4i4rx.zjde5.de5.net#NetAccount</div>
+                <div class="channel-info">📡 منبع: کانفیگ رایگان</div>
+                <div class="code-block" id="conf-3">ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#⚡Telegram</div>
                 <div class="action-btns">
                     <button class="btn btn-copy" onclick="copyText('conf-3')">کپی</button>
-                    <a href="vless://83f03646-fb28-44cc-9d2c-8853f6c09285@104.17.162.123:8443?path=%2F%3Fed%3D%23TELEGRAM-%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=r4fnviw9jl4i4rx.zjde5.de5.net&fp=random&type=ws&allowInsecure=0&sni=r4fnviw9jl4i4rx.zjde5.de5.net#NetAccount" class="btn btn-connect">اتصال</a>
+                    <a href="ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#⚡Telegram" class="btn btn-connect">اتصال</a>
                 </div>
-                <a href="https://t.me/myvpn1404/2362" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 3ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-4">vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.114.96.3:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=pages.dev#NetAccount`</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-4')">کپی</button>
-                    <a href="vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.114.96.3:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=pages.dev#NetAccount`" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2363" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 5ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-5">vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodejs.org:80?path=%2F%3Fed%3D512&security=none&encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&type=ws#NetAccount`</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-5')">کپی</button>
-                    <a href="vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodejs.org:80?path=%2F%3Fed%3D512&security=none&encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&type=ws#NetAccount`" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2364" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 167ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-6">vless://11beaf11-726d-4c11-8ce9-27308c1c608c@157.173.127.225:443?security=reality&encryption=none&pbk=v3EwzA9RIIh5Ndxm-gypRY6RCJhOpQ-2WO7KaH8nsC8&headerType=none&fp=random&type=tcp&sni=analytics.google.com&sid=eab26c4a32#NetAccount`</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-6')">کپی</button>
-                    <a href="vless://11beaf11-726d-4c11-8ce9-27308c1c608c@157.173.127.225:443?security=reality&encryption=none&pbk=v3EwzA9RIIh5Ndxm-gypRY6RCJhOpQ-2WO7KaH8nsC8&headerType=none&fp=random&type=tcp&sni=analytics.google.com&sid=eab26c4a32#NetAccount`" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2365" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 149ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-7">vless://d33d0c37-a910-4c38-82e9-327f01e9d5cc@config.parsazix1613.site:443?allowInsecure=1&alpn=h2%2Chttp%2F1.1&encryption=none&fp=firefox&headerType=http&host=google.com&path=%2F&security=tls&sni=film-doon.ir&type=tcp#NetAccount`</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-7')">کپی</button>
-                    <a href="vless://d33d0c37-a910-4c38-82e9-327f01e9d5cc@config.parsazix1613.site:443?allowInsecure=1&alpn=h2%2Chttp%2F1.1&encryption=none&fp=firefox&headerType=http&host=google.com&path=%2F&security=tls&sni=film-doon.ir&type=tcp#NetAccount`" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2366" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#facc15">⚡ 326ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-8">vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-sub.site:8443?security=tls&type=ws&headerType=&path=%2F&host=backup.f-sub.cfd&sni=backup.f-sub.cfd&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-8')">کپی</button>
-                    <a href="vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-sub.site:8443?security=tls&type=ws&headerType=&path=%2F&host=backup.f-sub.cfd&sni=backup.f-sub.cfd&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2367" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 187ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-9">vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-sub.site:8443?security=tls&type=ws&headerType=&path=%2F&host=backup.f-sub.cfd&sni=backup.f-sub.cfd&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-9')">کپی</button>
-                    <a href="vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@kj.v-sub.site:8443?security=tls&type=ws&headerType=&path=%2F&host=backup.f-sub.cfd&sni=backup.f-sub.cfd&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2368" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 3ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block" id="conf-10">vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@208.103.161.4:8880?security=tls&type=httpupgrade&headerType=&path=%2F&host=whm.linux-panel.com&sni=whm.linux-panel.com&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-10')">کپی</button>
-                    <a href="vless://2ecc87a9-52bd-4e24-86d1-c0be4908e237@208.103.161.4:8880?security=tls&type=httpupgrade&headerType=&path=%2F&host=whm.linux-panel.com&sni=whm.linux-panel.com&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#NetAccount`" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2369" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#facc15">⚡ 220ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block" id="conf-11">vless://c659ce22-0a02-4d75-8c89-58d99916b846@cdn.halazzon.ir:2053?path=%2F&security=tls&encryption=none&insecure=0&host=ir6.hnbyme.online&fp=chrome&type=ws&allowInsecure=0&sni=ir6.hnbyme.online#%40v2rays_ha%205406</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-11')">کپی</button>
-                    <a href="vless://c659ce22-0a02-4d75-8c89-58d99916b846@cdn.halazzon.ir:2053?path=%2F&security=tls&encryption=none&insecure=0&host=ir6.hnbyme.online&fp=chrome&type=ws&allowInsecure=0&sni=ir6.hnbyme.online#%40v2rays_ha%205406" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2378" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+                <a href="https://t.me/myvpn1404/2439" class="btn btn-source">🔗 مشاهده در کانال ما</a>
             </div>
             
             <div class="card">
                 <div class="card-header">
                     <span class="protocol-tag">TROJAN</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 2ms</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 220ms</span>
                 </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block" id="conf-12">trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%40v2rays_ha%205407</div>
+                <div class="channel-info">📡 منبع: کانفیگ رایگان</div>
+                <div class="code-block" id="conf-4">trojan://telegram-id-privatevpns@18.193.240.40:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#⚡Telegram</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-4')">کپی</button>
+                    <a href="trojan://telegram-id-privatevpns@18.193.240.40:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#⚡Telegram" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2440" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">TROJAN</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 187ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: کانفیگ رایگان</div>
+                <div class="code-block" id="conf-5">trojan://telegram-id-directvpn@18.193.240.40:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#⚡Telegram</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-5')">کپی</button>
+                    <a href="trojan://telegram-id-directvpn@18.193.240.40:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#⚡Telegram" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2441" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 999ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: کانفیگ رایگان</div>
+                <div class="code-block" id="conf-6">vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@18.193.240.40:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#⚡Telegram</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-6')">کپی</button>
+                    <a href="vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@18.193.240.40:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#⚡Telegram" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2442" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 694ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: کانفیگ رایگان</div>
+                <div class="code-block" id="conf-7">vless://67bad1be-8510-4703-91f2-b566d7213598@ir2.gitmaker.ir:777?security=&encryption=none&headerType=none&type=tcp#⚡Telegram</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-7')">کپی</button>
+                    <a href="vless://67bad1be-8510-4703-91f2-b566d7213598@ir2.gitmaker.ir:777?security=&encryption=none&headerType=none&type=tcp#⚡Telegram" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2443" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 328ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: کانفیگ رایگان</div>
+                <div class="code-block" id="conf-8">vless://b89696d2-68ec-4812-bd95-a8f017ad8b4b@NEW.CDN.TORPROSPEED.IR:2087?path=%2F&security=tls&encryption=none&host=kxfuftoukfxfuk.xuiprospeed.ir&fp=chrome&type=ws&sni=kxfuftoukfxfuk.xuiprospeed.ir#⚡Telegram</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-8')">کپی</button>
+                    <a href="vless://b89696d2-68ec-4812-bd95-a8f017ad8b4b@NEW.CDN.TORPROSPEED.IR:2087?path=%2F&security=tls&encryption=none&host=kxfuftoukfxfuk.xuiprospeed.ir&fp=chrome&type=ws&sni=kxfuftoukfxfuk.xuiprospeed.ir#⚡Telegram" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2444" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 270ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: کانفیگ رایگان</div>
+                <div class="code-block" id="conf-9">vless://29f89c05-7a9b-49b4-8fa0-59e0b857cbbf@193.228.168.138:8844?security=none&encryption=none&host=p30download.ir&headerType=http&type=tcp#⚡Telegram</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-9')">کپی</button>
+                    <a href="vless://29f89c05-7a9b-49b4-8fa0-59e0b857cbbf@193.228.168.138:8844?security=none&encryption=none&host=p30download.ir&headerType=http&type=tcp#⚡Telegram" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2445" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 15ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: کانفینگ ملی شکن</div>
+                <div class="code-block" id="conf-10">vless://89708a4d-c1a3-4735-8a96-0c0efa8280e0@netmeli1.iranhostpro.ir:8880?path=%2F%3Fed%3D2080&security=none&encryption=none&host=vaslim1.planet88apk.com&type=ws#%E2%9A%A1%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-10')">کپی</button>
+                    <a href="vless://89708a4d-c1a3-4735-8a96-0c0efa8280e0@netmeli1.iranhostpro.ir:8880?path=%2F%3Fed%3D2080&security=none&encryption=none&host=vaslim1.planet88apk.com&type=ws#%E2%9A%A1%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2448" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">VLESS</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 242ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: کانفینگ ملی شکن</div>
+                <div class="code-block" id="conf-11">vless://89708a4d-c1a3-4735-8a96-0c0efa8280e0@netmeli2.iranhostpro.ir:8880?path=%2F%3Fed%3D2080&security=none&encryption=none&host=vaslim2.planet88apk.com&type=ws#%E2%9A%A1%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-11')">کپی</button>
+                    <a href="vless://89708a4d-c1a3-4735-8a96-0c0efa8280e0@netmeli2.iranhostpro.ir:8880?path=%2F%3Fed%3D2080&security=none&encryption=none&host=vaslim2.planet88apk.com&type=ws#%E2%9A%A1%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="https://t.me/myvpn1404/2449" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">SS</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 146ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: کانفینگ ملی شکن</div>
+                <div class="code-block" id="conf-12">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.89:8080#%E2%9A%A1%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil</div>
                 <div class="action-btns">
                     <button class="btn btn-copy" onclick="copyText('conf-12')">کپی</button>
-                    <a href="trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%40v2rays_ha%205407" class="btn btn-connect">اتصال</a>
+                    <a href="ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.89:8080#%E2%9A%A1%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil" class="btn btn-connect">اتصال</a>
                 </div>
-                <a href="https://t.me/myvpn1404/2379" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+                <a href="https://t.me/myvpn1404/2450" class="btn btn-source">🔗 مشاهده در کانال ما</a>
             </div>
             
             <div class="card">
                 <div class="card-header">
                     <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 48ms</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 301ms</span>
                 </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block" id="conf-13">vless://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@cf.008500.xyz:443?path=%2F%40%4F%6E%4E%65%74%56%70%6E&security=tls&encryption=none&insecure=0&host=powered-by-surena.configfarsi695fcee895881.workers.dev&fp=firefox&type=ws&allowInsecure=0&sni=powered-by-surena.configfarsi695fcee895881.workers.dev#%40v2rays_ha%205408</div>
+                <div class="channel-info">📡 منبع: کانفینگ ملی شکن</div>
+                <div class="code-block" id="conf-13">vless://9e685fe3-e0f9-482d-939c-200a3f89b363@cf.narton.ir:8443?path=%2F%3Fed%3D2560fp%3Dchrome&security=tls&alpn=http%2F1.1&encryption=none&host=vyznthvt7f5fr.zjde5.de5.net&fp=chrome&type=ws&sni=vyznthvt7f5fr.zjde5.de5.net#%E2%9A%AB%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil</div>
                 <div class="action-btns">
                     <button class="btn btn-copy" onclick="copyText('conf-13')">کپی</button>
-                    <a href="vless://5dc15e15-f285-4a9d-959b-0e4fbdd77b63@cf.008500.xyz:443?path=%2F%40%4F%6E%4E%65%74%56%70%6E&security=tls&encryption=none&insecure=0&host=powered-by-surena.configfarsi695fcee895881.workers.dev&fp=firefox&type=ws&allowInsecure=0&sni=powered-by-surena.configfarsi695fcee895881.workers.dev#%40v2rays_ha%205408" class="btn btn-connect">اتصال</a>
+                    <a href="vless://9e685fe3-e0f9-482d-939c-200a3f89b363@cf.narton.ir:8443?path=%2F%3Fed%3D2560fp%3Dchrome&security=tls&alpn=http%2F1.1&encryption=none&host=vyznthvt7f5fr.zjde5.de5.net&fp=chrome&type=ws&sni=vyznthvt7f5fr.zjde5.de5.net#%E2%9A%AB%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil" class="btn btn-connect">اتصال</a>
                 </div>
-                <a href="https://t.me/myvpn1404/2380" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+                <a href="https://t.me/myvpn1404/2451" class="btn btn-source">🔗 مشاهده در کانال ما</a>
             </div>
             
             <div class="card">
                 <div class="card-header">
                     <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 115ms</span>
+                    <span class="ping-tag" style="color:#4ade80">⚡ 137ms</span>
                 </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block" id="conf-14">vless://7e58699f-1d5d-4f6b-b181-cb74f0ad9509@ipw.ygdfw.com:443?mode=stream-one&path=%2F&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=Tp0101Rs5K.dOtA2pLaY.iNfO#%40v2rays_ha%205409</div>
+                <div class="channel-info">📡 منبع: کانفینگ ملی شکن</div>
+                <div class="code-block" id="conf-14">vless://85d553d9-f726-4698-a94d-b6af6da817eb@149.248.77.32:443?security=reality&encryption=none&pbk=wVHqooqj-yIgjODhfT2N_HZCbtnSMlnuG2ekfUNFZzY&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=57170fcbdb088c#%E2%9A%AB%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil</div>
                 <div class="action-btns">
                     <button class="btn btn-copy" onclick="copyText('conf-14')">کپی</button>
-                    <a href="vless://7e58699f-1d5d-4f6b-b181-cb74f0ad9509@ipw.ygdfw.com:443?mode=stream-one&path=%2F&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=Tp0101Rs5K.dOtA2pLaY.iNfO#%40v2rays_ha%205409" class="btn btn-connect">اتصال</a>
+                    <a href="vless://85d553d9-f726-4698-a94d-b6af6da817eb@149.248.77.32:443?security=reality&encryption=none&pbk=wVHqooqj-yIgjODhfT2N_HZCbtnSMlnuG2ekfUNFZzY&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=57170fcbdb088c#%E2%9A%AB%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil" class="btn btn-connect">اتصال</a>
                 </div>
-                <a href="https://t.me/myvpn1404/2381" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+                <a href="https://t.me/myvpn1404/2452" class="btn btn-source">🔗 مشاهده در کانال ما</a>
             </div>
             
             <div class="card">
                 <div class="card-header">
                     <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 156ms</span>
+                    <span class="ping-tag" style="color:#facc15">⚡ 999ms</span>
                 </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block" id="conf-15">vless://e4824193-4f54-453b-d037-88368e85ef0e@all.tellmethetrue.shop:443?encryption=none&security=tls&sni=pqh29v3.carwashipdir.shop&alpn=h2&type=grpc&mode=gun#%40v2rays_ha%205410</div>
+                <div class="channel-info">📡 منبع: کانفینگ ملی شکن</div>
+                <div class="code-block" id="conf-15">vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@18.193.240.40:22224?path=%2Ftelegram-channel-vlessconfig&security=tls&encryption=none&type=ws&sni=trojan.burgerip.co.uk#%F0%9F%9F%A3%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil</div>
                 <div class="action-btns">
                     <button class="btn btn-copy" onclick="copyText('conf-15')">کپی</button>
-                    <a href="vless://e4824193-4f54-453b-d037-88368e85ef0e@all.tellmethetrue.shop:443?encryption=none&security=tls&sni=pqh29v3.carwashipdir.shop&alpn=h2&type=grpc&mode=gun#%40v2rays_ha%205410" class="btn btn-connect">اتصال</a>
+                    <a href="vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@18.193.240.40:22224?path=%2Ftelegram-channel-vlessconfig&security=tls&encryption=none&type=ws&sni=trojan.burgerip.co.uk#%F0%9F%9F%A3%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil" class="btn btn-connect">اتصال</a>
                 </div>
-                <a href="https://t.me/myvpn1404/2382" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+                <a href="https://t.me/myvpn1404/2453" class="btn btn-source">🔗 مشاهده در کانال ما</a>
             </div>
             
             <div class="card">
@@ -309,69 +428,13 @@
                     <span class="protocol-tag">VLESS</span>
                     <span class="ping-tag" style="color:#4ade80">⚡ 2ms</span>
                 </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block" id="conf-16">vless://818a98bf-e7d0-45d5-800b-24d4058234c6@104.24.172.153:80?encryption=none&security=none&type=ws&host=still-smoke-881e-ppal03.cabit21569.workers.dev&path=%2F%3Fed%3D2560%2Ftelegram@v2ray_alpha%3Fed%3D2560%2F#%40v2rays_ha%205411</div>
+                <div class="channel-info">📡 منبع: کانفینگ ملی شکن</div>
+                <div class="code-block" id="conf-16">vless://396c904b-4b62-4334-b793-ee25fc0c61cc@162.159.152.4:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&type=ws&sni=pages.dev#%F0%9F%9F%A3%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil</div>
                 <div class="action-btns">
                     <button class="btn btn-copy" onclick="copyText('conf-16')">کپی</button>
-                    <a href="vless://818a98bf-e7d0-45d5-800b-24d4058234c6@104.24.172.153:80?encryption=none&security=none&type=ws&host=still-smoke-881e-ppal03.cabit21569.workers.dev&path=%2F%3Fed%3D2560%2Ftelegram@v2ray_alpha%3Fed%3D2560%2F#%40v2rays_ha%205411" class="btn btn-connect">اتصال</a>
+                    <a href="vless://396c904b-4b62-4334-b793-ee25fc0c61cc@162.159.152.4:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&type=ws&sni=pages.dev#%F0%9F%9F%A3%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil" class="btn btn-connect">اتصال</a>
                 </div>
-                <a href="https://t.me/myvpn1404/2383" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 2ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block" id="conf-17">vless://2ddeb056-17d4-421e-a318-39428733d4a2@172.64.149.99:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=8p3cfl0ripm.zjde5.de5.net&fp=chrome&type=ws&sni=8p3cfl0ripm.zjde5.de5.net#%40v2rays_ha%205412</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-17')">کپی</button>
-                    <a href="vless://2ddeb056-17d4-421e-a318-39428733d4a2@172.64.149.99:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=8p3cfl0ripm.zjde5.de5.net&fp=chrome&type=ws&sni=8p3cfl0ripm.zjde5.de5.net#%40v2rays_ha%205412" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2384" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 6ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block" id="conf-18">vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodejs.org:80?encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&path=%2F%3Fed%3D512&security=none&type=ws#%40v2rays_ha%205413</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-18')">کپی</button>
-                    <a href="vless://546e91b5-c33e-4b04-b20c-c0fc8f6d9d7f@nodejs.org:80?encryption=none&host=bIZARRe-CEntEryZCvddNcfJ.spORtLand.COmPANY.&path=%2F%3Fed%3D512&security=none&type=ws#%40v2rays_ha%205413" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2385" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 2ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block" id="conf-19">vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@104.17.166.123:8443?path=%2F%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=1&sni=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net#%40v2rays_ha%205414</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-19')">کپی</button>
-                    <a href="vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@104.17.166.123:8443?path=%2F%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=1&sni=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net#%40v2rays_ha%205414" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2386" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">VLESS</span>
-                    <span class="ping-tag" style="color:#4ade80">⚡ 123ms</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block" id="conf-20">vless://4e4c6c2c-1f41-4310-b5c8-b35afb17843e@cdn1.mehrdadsadaf.com:2053?path=%2F%3Fed%3D2560&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&host=cert2.mehrdadsadaf.com&fp=chrome&type=ws&allowInsecure=0&sni=cert2.mehrdadsadaf.com#%40v2rays_ha%205415</div>
-                <div class="action-btns">
-                    <button class="btn btn-copy" onclick="copyText('conf-20')">کپی</button>
-                    <a href="vless://4e4c6c2c-1f41-4310-b5c8-b35afb17843e@cdn1.mehrdadsadaf.com:2053?path=%2F%3Fed%3D2560&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&host=cert2.mehrdadsadaf.com&fp=chrome&type=ws&allowInsecure=0&sni=cert2.mehrdadsadaf.com#%40v2rays_ha%205415" class="btn btn-connect">اتصال</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2387" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+                <a href="https://t.me/myvpn1404/2454" class="btn btn-source">🔗 مشاهده در کانال ما</a>
             </div>
             
             
@@ -380,165 +443,239 @@
 
         <div id="tab-proxies" class="tab-content">
             
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block">Server: 185.215.247.110</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=185.215.247.110&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2355" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block">Server: 185.215.247.112</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=185.215.247.112&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2356" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block">Server: 185.215.247.112</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=185.215.247.112&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2357" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: Net Account | نت اكانت</div>
-                <div class="code-block">Server: 185.215.247.111</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=185.215.247.111&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2358" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block">Server: 85.133.194.102</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=85.133.194.102&port=8443&secret=79e344818749bd7ac519130220c25d09" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2370" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block">Server: 85.133.194.9</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=85.133.194.9&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2371" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block">Server: 85.133.194.8</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=85.133.194.8&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAA" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2372" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block">Server: 85.133.194.106</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=85.133.194.106&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2373" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block">Server: 85.133.194.111</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=85.133.194.111&port=8443&secret=79e344818749bd7ac519130220c25d09" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2374" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block">Server: 95.216.177.110</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=95.216.177.110&port=85&secret=FgIBAgABAAH8AwOG4kw63Q" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2375" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block">Server: 85.133.194.10</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=85.133.194.10&port=8443&secret=79e344818749bd7ac519130220c25d09" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2376" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
-            <div class="card">
-                <div class="card-header">
-                    <span class="protocol-tag">MTProto</span>
-                    <span class="ping-tag" style="color:#facc15">Proxy</span>
-                </div>
-                <div class="channel-info">📡 منبع: فیلترشکن کانفیگ ha tunnel npv v2ray</div>
-                <div class="code-block">Server: 87.248.154.205</div>
-                <div class="action-btns">
-                    <a href="tg://proxy?server=87.248.154.205&port=3333&secret=dd72881e9e1e7d1ff9647913616d37aeae" class="btn btn-copy">اتصال سریع</a>
-                </div>
-                <a href="https://t.me/myvpn1404/2377" class="btn btn-source">🔗 مشاهده در کانال ما</a>
-            </div>
-            
         </div>
 
         <div id="tab-files" class="tab-content">
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@NpvTunnel_vip 3🚀.npvt</div>
+                <div class="channel-info">📡 منبع: کانفیگ ملی / config meli</div>
+                <a href="https://t.me/myvpn1404/2423" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣8️⃣8️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2424" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣8️⃣9️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2425" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣9️⃣0️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2426" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣9️⃣1️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2427" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣9️⃣2️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2428" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣9️⃣3️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2429" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣9️⃣4️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2430" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣9️⃣5️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2431" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣9️⃣6️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2432" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣9️⃣7️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2433" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣9️⃣8️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2434" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@PlanB_net 4️⃣9️⃣9️⃣.npvt</div>
+                <div class="channel-info">📡 منبع: پروکسی | کانفیگ | 🅱️plan</div>
+                <a href="https://t.me/myvpn1404/2435" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@shankamilجانم فدای ایران.npvt</div>
+                <div class="channel-info">📡 منبع: کانفینگ ملی شکن</div>
+                <a href="https://t.me/myvpn1404/2446" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">@shankamilملی شکن سرعتی.npvt</div>
+                <div class="channel-info">📡 منبع: کانفینگ ملی شکن</div>
+                <a href="https://t.me/myvpn1404/2447" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">اختصاصی ⚡ (1).npvt</div>
+                <div class="channel-info">📡 منبع: xsfilternet</div>
+                <a href="https://t.me/myvpn1404/2455" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">قوی1 🚀 (1).npvt</div>
+                <div class="channel-info">📡 منبع: xsfilternet</div>
+                <a href="https://t.me/myvpn1404/2456" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">سرور⚡.npvt</div>
+                <div class="channel-info">📡 منبع: xsfilternet</div>
+                <a href="https://t.me/myvpn1404/2457" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">ملی شکن 🔥 (1) (1).npvt</div>
+                <div class="channel-info">📡 منبع: xsfilternet</div>
+                <a href="https://t.me/myvpn1404/2458" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">🦊 Fox_Config1.npvt</div>
+                <div class="channel-info">📡 منبع: xsfilternet</div>
+                <a href="https://t.me/myvpn1404/2459" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">🇳🇱 NX _ FAST.npvt</div>
+                <div class="channel-info">📡 منبع: xsfilternet</div>
+                <a href="https://t.me/myvpn1404/2460" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">همه نتا وصل⚡️ProxySnipe.npvt</div>
+                <div class="channel-info">📡 منبع: xsfilternet</div>
+                <a href="https://t.me/myvpn1404/2461" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">npvt</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">کانفیگ رعدآسا⚡️🚀.npvt</div>
+                <div class="channel-info">📡 منبع: اینترنت آزاد | کانفیگ نپستر رایگان</div>
+                <a href="https://t.me/myvpn1404/2462" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
             
         </div>
     </div>

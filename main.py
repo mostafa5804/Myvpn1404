@@ -13,7 +13,9 @@ from telethon.sessions import StringSession
 from telethon.tl.types import MessageEntityTextUrl
 from telethon.errors.rpcerrorlist import FloodWaitError
 
-# --- تنظیمات ---
+# -----------------------------------------------------------------------------
+# تنظیمات و متغیرهای اصلی
+# -----------------------------------------------------------------------------
 api_id = int(os.environ['API_ID'])
 api_hash = os.environ['API_HASH']
 session_string = os.environ['SESSION_STRING']
@@ -22,7 +24,7 @@ ENABLE_PING_CHECK = True
 PING_TIMEOUT = 2
 MAX_PING_WAIT = 4
 
-# لیست کامل کانال‌ها (40 تا)
+# لیست کامل کانال‌ها (40 عدد)
 ALL_CHANNELS = [
     '@KioV2ray', '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mypremium98',
     '@mitivpn', '@iSeqaro', '@configraygan', '@shankamil', '@xsfilternet',
@@ -43,8 +45,12 @@ client = TelegramClient(StringSession(session_string), api_id, api_hash)
 
 IRAN_IP_PREFIXES = ['2.144.', '5.22.', '31.2.', '37.9.', '46.18.', '78.38.', '85.9.', '91.98.', '93.88.', '185.']
 
+# -----------------------------------------------------------------------------
+# توابع کمکی (Helper Functions)
+# -----------------------------------------------------------------------------
+
 def is_iran_ip(ip):
-    """بررسی IP ایرانی"""
+    """بررسی اینکه آیا IP مربوط به ایران است یا خیر"""
     try:
         for prefix in IRAN_IP_PREFIXES:
             if ip.startswith(prefix):
@@ -53,29 +59,23 @@ def is_iran_ip(ip):
     except:
         return False
 
-# -------------------------------------------------------------------------
-# اصلاح بخش اول: تابع زمان‌بندی دقیق (بدون حذف چیزی)
-# -------------------------------------------------------------------------
 def get_channel_batch():
-    """انتخاب ۲۰ کانال بر اساس چرخه ۸۰ دقیقه‌ای دقیق"""
+    """
+    انتخاب ۲۰ کانال بر اساس چرخه ۸۰ دقیقه‌ای دقیق.
+    دقیقه ۰ تا ۴۰ -> دسته اول
+    دقیقه ۴۰ تا ۸۰ -> دسته دوم
+    """
     now = datetime.now(iran_tz)
-    
-    # فرمول ریاضی: (دقیقه کل روز تقسیم بر ۴۰) باقیمانده بر ۲
-    # این فرمول تضمین می‌کند که:
-    # دقیقه ۰ تا ۴۰ -> دسته اول
-    # دقیقه ۴۰ تا ۸۰ -> دسته دوم
-    # دقیقه ۸۰ تا ۱۲۰ -> دسته اول ...
+    # دقیقه کل روز تقسیم بر ۴۰ -> زوج (دسته اول)، فرد (دسته دوم)
     batch_index = ((now.hour * 60 + now.minute) // 40) % 2
     
     if batch_index == 0:
-        # برگرداندن (لیست کانال‌ها, نام دسته)
         return ALL_CHANNELS[:20], "اول (1-20)"
     else:
         return ALL_CHANNELS[20:40], "دوم (21-40)"
 
-
 async def measure_tcp_latency(host, port, timeout=2):
-    """اندازه‌گیری پینگ"""
+    """اندازه‌گیری پینگ به صورت TCP"""
     import time
     try:
         start = time.time()
@@ -88,9 +88,8 @@ async def measure_tcp_latency(host, port, timeout=2):
     except:
         return None
 
-
 async def check_and_format_status(host, port, timeout=2):
-    """چک وضعیت"""
+    """بررسی وضعیت سرور و بازگرداندن وضعیت، پینگ و نوع شبکه"""
     if not host or not port:
         return None, None, False
     
@@ -121,9 +120,8 @@ async def check_and_format_status(host, port, timeout=2):
     except:
         return None, None, False
 
-
 def extract_server_info(config):
-    """استخراج IP و Port"""
+    """استخراج آدرس سرور و پورت از کانفیگ"""
     try:
         protocol = config.split("://")[0].lower()
         
@@ -141,9 +139,8 @@ def extract_server_info(config):
     except:
         return None, None
 
-
 def extract_proxy_info(proxy_link):
-    """استخراج اطلاعات پروکسی"""
+    """استخراج اطلاعات سرور و پورت از لینک پروکسی"""
     try:
         match = re.search(r"server=([\w\.-]+)&port=(\d+)", proxy_link)
         if match:
@@ -152,9 +149,8 @@ def extract_proxy_info(proxy_link):
     except:
         return None, None
 
-
 async def safe_check_config(config, max_wait=4):
-    """چک امن کانفیگ"""
+    """بررسی امن کانفیگ با مدیریت خطا"""
     try:
         host, port = extract_server_info(config)
         if host and port:
@@ -169,9 +165,8 @@ async def safe_check_config(config, max_wait=4):
     except:
         return None, None, False
 
-
 async def safe_check_proxy(proxy_link, max_wait=4):
-    """چک امن پروکسی"""
+    """بررسی امن پروکسی با مدیریت خطا"""
     try:
         host, port = extract_proxy_info(proxy_link)
         if host and port:
@@ -186,16 +181,14 @@ async def safe_check_proxy(proxy_link, max_wait=4):
     except:
         return None, None, False
 
-
 def generate_qr_url(config):
-    """تولید QR Code URL"""
+    """تولید لینک QR Code"""
     from urllib.parse import quote
     encoded = quote(config)
     return f"https://quickchart.io/qr?text={encoded}&size=300"
 
-
 def get_file_usage_guide(file_name):
-    """راهنمای فایل"""
+    """راهنمای استفاده بر اساس فرمت فایل"""
     ext = file_name.lower().split('.')[-1]
     apps = {
         'npv4': 'NapsternetV • v2rayNG',
@@ -210,9 +203,8 @@ def get_file_usage_guide(file_name):
     app_name = apps.get(ext, 'v2rayNG')
     return f"\n📱 {app_name}\n"
 
-
 def get_config_usage_guide(config_link):
-    """راهنمای کانفیگ"""
+    """راهنمای استفاده بر اساس پروتکل کانفیگ"""
     protocol = config_link.split("://")[0].lower()
     apps = {
         'vmess': 'v2rayNG • Hiddify • V2Box',
@@ -229,70 +221,47 @@ def get_config_usage_guide(config_link):
     app_name = apps.get(protocol, 'v2rayNG • Hiddify')
     return f"\n📱 {app_name}\n"
 
-
 def get_proxy_usage_guide():
-    """راهنمای پروکسی"""
     return "\n💡 روی لینک کلیک کنید، تلگرام خودکار متصل می‌شود\n"
 
-
-def create_footer(channel_name, extra_info=""):
-    """فوتر پیام"""
+def create_fancy_footer(channel_title, message_link):
+    """ساخت فوتر گرافیکی با لینک به کانال خودت و ذکر منبع"""
     now_iran = datetime.now(iran_tz)
-    j_date = jdatetime.datetime.fromgregorian(datetime=now_iran)
-    date_str = j_date.strftime("%Y/%m/%d")
+    date_str = jdatetime.datetime.fromgregorian(datetime=now_iran).strftime("%Y/%m/%d")
     time_str = now_iran.strftime("%H:%M")
     
-    hashtag_map = {
-        "vmess": "#vmess #v2ray",
-        "vless": "#vless #v2ray",
-        "trojan": "#trojan #v2ray",
-        "ss": "#shadowsocks",
-        "proxy": "#MTProto",
-        "npv4": "#netmod",
-        "npvt": "#netmod",
-        "dark": "#darkproxy",
-        "ehi": "#httpinjector",
-        "nm": "#netmod",
-        "intranet": "#اینترانت #نیم_بها"
-    }
-    
-    hashtags = hashtag_map.get(extra_info.lower(), "#VPN")
-    
-    footer = f"\n{hashtags}\n"
-    footer += f"🗓 {date_str} • 🕐 {time_str}\n"
-    footer += f"📡 {channel_name}\n"
+    # ساختار: تاریخ و ساعت | منبع (لینک شده به اصلی) | لینک کانال خودت
+    footer = f"\n🗓 {date_str} • 🕐 {time_str}\n"
+    footer += f"📡 منبع: [{channel_title}]({message_link})\n"
     footer += f"🔗 {destination_channel}"
     
     return footer
 
-# -------------------------------------------------------------------------
-# اصلاح بخش دوم: تابع main برای رفع تداخل متغیرها (بدون حذف چیزی)
-# -------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# تابع اصلی برنامه (Main)
+# -----------------------------------------------------------------------------
 async def main():
-    """تابع اصلی"""
-    
     try:
         await client.start()
-        print("✅ متصل شد")
+        print("✅ ربات متصل شد")
         
+        # تاخیر اولیه تصادفی برای امنیت
         initial_wait = random.randint(10, 20)
         print(f"⏳ صبر {initial_wait} ثانیه...")
         await asyncio.sleep(initial_wait)
         
-        # اصلاح مهم: دریافت جداگانه لیست و نام دسته
+        # ۱. دریافت لیست کانال‌ها و نام دسته (بدون تداخل)
         source_channels, batch_name = get_channel_batch()
         print(f"--- شروع بررسی دسته {batch_name} ---")
         
-        time_threshold = datetime.now(timezone.utc) - timedelta(hours=1)
+        time_threshold = datetime.now(timezone.utc) - timedelta(hours=1.5)
         config_regex = r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic|hysteria2?|nm(?:-[\w-]+)?)://[^\s\n]+"
-        
-        print("--- شروع ---")
         
         sent_files = set()
         sent_proxies = set()
         sent_configs = set()
         
-        # بارگذاری تاریخچه
+        # بارگذاری تاریخچه از کانال مقصد
         try:
             print("بارگذاری تاریخچه...")
             async for msg in client.iter_messages(destination_channel, limit=150):
@@ -306,11 +275,8 @@ async def main():
                     for server, port in proxy_matches:
                         sent_proxies.add(f"{server}:{port}")
             print(f"✅ تاریخچه بارگذاری شد")
-        except FloodWaitError as e:
-            print(f"⚠️ Flood Wait: {e.seconds}s")
-            return
         except Exception as e:
-            print(f"⚠️ خطا: {e}")
+            print(f"⚠️ هشدار تاریخچه: {e}")
 
         sent_count = 0
         MAX_PER_RUN = 40
@@ -318,512 +284,394 @@ async def main():
         all_files_data = {}
         all_proxies_data = {}
         
-        # حلقه اصلی: هر کانال به ترتیب
-        # توجه: source_channels اکنون فقط لیست کانال‌ها است و مشکلی ندارد
-        for i, channel in enumerate(source_channels):
+        # حلقه اصلی: بررسی هر کانال به صورت جداگانه
+        for i, channel_username in enumerate(source_channels):
             if sent_count >= MAX_PER_RUN:
                 break
             
             try:
+                # تاخیر بین بررسی کانال‌ها
                 if i > 0:
-                    delay = random.uniform(5, 10)
+                    delay = random.uniform(5, 8)
                     print(f"⏸️ صبر {delay:.1f} ثانیه...")
                     await asyncio.sleep(delay)
                 
-                print(f"\n{'='*50}")
-                print(f"🔍 کانال {i+1}/20: {channel}")
-                print(f"{'='*50}")
+                print(f"\n🔍 کانال {i+1}/20: {channel_username}")
                 
-                ch_title = None
+                # دریافت انتیتی کانال (برای گرفتن تایتل واقعی)
+                try:
+                    entity = await client.get_entity(channel_username)
+                    ch_title = entity.title if hasattr(entity, 'title') else channel_username
+                except:
+                    ch_title = channel_username
                 
-                # جمع‌آوری محتوا از کانال
+                # لیست موقت برای آیتم‌های هر کانال
                 channel_items = {
                     'files': [],
                     'proxies': [],
                     'configs': []
                 }
                 
-                # استفاده از نام کاربری برای دریافت انتیتی کانال
-                entity = await client.get_entity(channel)
-                
-                async for message in client.iter_messages(entity, offset_date=time_threshold, reverse=True, limit=50):
-                    if not ch_title and hasattr(message.chat, 'title'):
-                        ch_title = message.chat.title
+                # پیمایش پیام‌های اخیر کانال
+                async for message in client.iter_messages(entity, offset_date=time_threshold, reverse=True, limit=40):
+                    # ساخت لینک اصلی پیام در کانال منبع
+                    orig_msg_link = f"https://t.me/{channel_username[1:]}/{message.id}"
                     
-                    # فایل‌ها
+                    # الف) استخراج فایل
                     if message.file:
-                        file_name = message.file.name if message.file.name else ""
-                        if any(file_name.lower().endswith(ext) for ext in allowed_extensions):
-                            if file_name not in sent_files:
+                        fname = message.file.name if message.file.name else ""
+                        if any(fname.lower().endswith(ext) for ext in allowed_extensions):
+                            if fname not in sent_files:
                                 channel_items['files'].append({
-                                    'name': file_name,
+                                    'name': fname,
                                     'media': message.media,
-                                    'message_id': message.id
+                                    'orig_link': orig_msg_link
                                 })
                     
-                    # پروکسی‌ها
-                    if message.entities or message.text:
-                        extracted_proxies = []
-                        if message.entities:
-                            for ent in message.entities:
-                                if isinstance(ent, MessageEntityTextUrl) and "proxy?server=" in ent.url:
-                                    extracted_proxies.append(ent.url)
-                        if message.text:
-                            extracted_proxies.extend(
-                                re.findall(
-                                    r"(tg://proxy\?server=[\w\.-]+&port=\d+&secret=[\w\.-]+|https://t\.me/proxy\?server=[\w\.-]+&port=\d+&secret=[\w\.-]+)", 
-                                    message.text
-                                )
-                            )
-                        for p in list(set(extracted_proxies)):
-                            try:
-                                match = re.search(r"server=([\w\.-]+)&port=(\d+)", p)
-                                if match:
-                                    unique_key = f"{match.group(1)}:{match.group(2)}"
-                                    if unique_key not in sent_proxies:
-                                        channel_items['proxies'].append({
-                                            'link': p.replace("https://t.me/", "tg://"),
-                                            'key': unique_key,
-                                            'message_id': message.id
-                                        })
-                            except: 
-                                pass
-                    
-                    # کانفیگ‌ها
+                    # ب) استخراج پروکسی
+                    if message.text or message.entities:
+                        p_links = re.findall(r"(?:tg|https)://t\.me/proxy\?server=[\w\.-]+&port=\d+&secret=[\w\.-]+", message.text or "")
+                        for p in list(set(p_links)):
+                            host, port = extract_proxy_info(p)
+                            if host:
+                                key = f"{host}:{port}"
+                                if key not in sent_proxies:
+                                    channel_items['proxies'].append({
+                                        'link': p.replace("https://t.me/", "tg://"),
+                                        'key': key,
+                                        'orig_link': orig_msg_link
+                                    })
+
+                    # ج) استخراج کانفیگ
                     if message.text:
-                        raw_matches = re.findall(config_regex, message.text)
-                        for conf in raw_matches:
-                            clean_conf = conf.strip()
-                            if clean_conf not in sent_configs:
+                        confs = re.findall(config_regex, message.text)
+                        for c in confs:
+                            clean = c.strip()
+                            if clean not in sent_configs:
                                 channel_items['configs'].append({
-                                    'config': clean_conf,
-                                    'message_id': message.id
+                                    'config': clean,
+                                    'orig_link': orig_msg_link
                                 })
-                
-                if not ch_title:
-                    ch_title = channel
-                
+
                 print(f"📊 یافت شد: {len(channel_items['files'])} فایل، {len(channel_items['proxies'])} پروکسی، {len(channel_items['configs'])} کانفیگ")
                 
-                # ارسال به ترتیب: فایل → پروکسی → کانفیگ
+                # ---------------------------------------------------------
+                # ارسال آیتم‌ها به کانال مقصد (با استایل جدید گرافیکی)
+                # ---------------------------------------------------------
                 
-                # 1. فایل‌ها (بدون تست)
+                # 1. ارسال فایل‌ها
                 for item in channel_items['files']:
-                    if sent_count >= MAX_PER_RUN:
-                        break
+                    if sent_count >= MAX_PER_RUN: break
                     try:
-                        caption = f"📂 **{item['name']}**"
-                        caption += get_file_usage_guide(item['name'])
-                        caption += create_footer(ch_title, item['name'].lower().split('.')[-1])
+                        # کپشن گرافیکی
+                        caption = f"📂 **{item['name']}**\n"
+                        caption += f"╭──────────────────╮\n"
+                        caption += f"│ 📱 {get_file_usage_guide(item['name']).strip()}\n"
+                        caption += f"╰──────────────────╯\n"
+                        caption += create_fancy_footer(ch_title, item['orig_link'])
                         
-                        await client.send_file(destination_channel, item['media'], caption=caption)
-                        print(f"  ✅ فایل: {item['name']}")
+                        sent_msg = await client.send_file(destination_channel, item['media'], caption=caption)
+                        
+                        # لینک پیام جدید در کانال خودت
+                        my_link = f"https://t.me/{destination_channel[1:]}/{sent_msg.id}"
+                        all_files_data[item['name']] = {'channel': ch_title, 'link': my_link}
+                        
                         sent_files.add(item['name'])
-                        all_files_data[item['name']] = {
-                            'channel': ch_title,
-                            'link': f"https://t.me/{channel[1:]}/{item['message_id']}"
-                        }
                         sent_count += 1
-                        await asyncio.sleep(random.uniform(1.5, 2.5))
-                    except FloodWaitError as e:
-                        print(f"  ⚠️ Flood: {e.seconds}s")
-                        await asyncio.sleep(e.seconds + 5)
+                        print(f"  ✅ فایل ارسال شد: {item['name']}")
+                        await asyncio.sleep(3)
                     except Exception as e:
-                        print(f"  ❌ خطا: {e}")
-                
-                # 2. پروکسی‌ها (با تست)
-                if channel_items['proxies'] and ENABLE_PING_CHECK:
-                    print(f"  🔍 تست {len(channel_items['proxies'])} پروکسی...")
-                    tasks = [safe_check_proxy(item['link'], MAX_PING_WAIT) for item in channel_items['proxies']]
-                    results = await asyncio.gather(*tasks)
-                    
-                    proxy_text = "🔵 **پروکسی‌های جدید:**\n\n"
-                    for idx, (item, (status, latency, is_intranet)) in enumerate(zip(channel_items['proxies'], results), 1):
-                        if is_intranet:
-                            proxy_text += f"{idx}. [اتصال]({item['link']}) • {status} 🇮🇷\n"
-                        elif status and latency:
-                            proxy_text += f"{idx}. [اتصال]({item['link']}) • {status} ({latency}ms)\n"
-                        elif status:
-                            proxy_text += f"{idx}. [اتصال]({item['link']}) • {status}\n"
-                        else:
-                            proxy_text += f"{idx}. [اتصال]({item['link']})\n"
-                        
-                        sent_proxies.add(item['key'])
-                        all_proxies_data[item['key']] = {
-                            'link': item['link'],
-                            'channel': ch_title,
-                            'telegram_link': f"https://t.me/{channel[1:]}/{item['message_id']}"
-                        }
-                    
-                    proxy_text += get_proxy_usage_guide()
-                    proxy_text += create_footer(ch_title, "proxy")
-                    
+                        print(f"  ❌ خطا در ارسال فایل: {e}")
+
+                # 2. ارسال پروکسی‌ها
+                for item in channel_items['proxies']:
+                    if sent_count >= MAX_PER_RUN: break
                     try:
-                        await client.send_message(destination_channel, proxy_text, link_preview=False)
-                        print(f"  ✅ {len(channel_items['proxies'])} پروکسی")
-                        sent_count += 1
-                        await asyncio.sleep(random.uniform(1.5, 2.5))
-                    except FloodWaitError as e:
-                        print(f"  ⚠️ Flood: {e.seconds}s")
-                        await asyncio.sleep(e.seconds + 5)
+                        status, lat, is_in = await safe_check_proxy(item['link'])
+                        if status:
+                            flag = "🇮🇷" if is_in else "🌍"
+                            ping_txt = f"**{lat}ms**" if lat else "---"
+                            
+                            # استایل گرافیکی پروکسی
+                            txt = f"╭── 🛡 **MTProto Proxy** ──╮\n"
+                            txt += f"│ ⚡️ Ping: {ping_txt}\n"
+                            txt += f"│ {flag} Status: {status}\n"
+                            txt += f"╰──────────────────────╯\n"
+                            txt += f"🔗 [برای اتصال کلیک کنید]({item['link']})\n"
+                            txt += create_fancy_footer(ch_title, item['orig_link'])
+                            
+                            sent_msg = await client.send_message(destination_channel, txt, link_preview=False)
+                            
+                            # لینک پیام جدید در کانال خودت
+                            my_link = f"https://t.me/{destination_channel[1:]}/{sent_msg.id}"
+                            all_proxies_data[item['key']] = {'link': item['link'], 'channel': ch_title, 't_link': my_link}
+                            
+                            sent_proxies.add(item['key'])
+                            sent_count += 1
+                            print(f"  ✅ پروکسی ارسال شد")
+                            await asyncio.sleep(3)
                     except Exception as e:
-                        print(f"  ❌ خطا: {e}")
-                
-                # 3. کانفیگ‌ها (با تست)
-                if channel_items['configs'] and ENABLE_PING_CHECK:
-                    print(f"  🔍 تست {len(channel_items['configs'])} کانفیگ...")
-                    tasks = [safe_check_config(item['config'], MAX_PING_WAIT) for item in channel_items['configs']]
-                    results = await asyncio.gather(*tasks)
-                    
-                    for item, (status, latency, is_intranet) in zip(channel_items['configs'], results):
-                        if sent_count >= MAX_PER_RUN:
-                            break
-                        
-                        prot = item['config'].split("://")[0].upper()
-                        if "NM-" in prot: 
-                            prot = "NETMOD"
-                        
-                        qr_url = generate_qr_url(item['config'])
-                        final_txt = f"🔮 **کانفیگ {prot}**\n\n`{item['config']}`\n"
-                        
-                        if is_intranet:
-                            final_txt += f"\n📊 {status} 🇮🇷 (نت ملی/نیم‌بها)\n"
-                        elif status and latency:
-                            final_txt += f"\n📊 {status} • {latency}ms\n"
+                        print(f"  ❌ خطا در ارسال پروکسی: {e}")
+
+                # 3. ارسال کانفیگ‌ها
+                for item in channel_items['configs']:
+                    if sent_count >= MAX_PER_RUN: break
+                    try:
+                        status, lat, is_in = await safe_check_config(item['config'])
+                        if status:
+                            prot = item['config'].split("://")[0].upper()
+                            ping_txt = f"**{lat}ms**" if lat else "---"
+                            
+                            # استایل گرافیکی کانفیگ + Code Block
+                            txt = f"╭── 🔮 **{prot}** ──╮\n"
+                            txt += f"│ ⚡️ Ping: {ping_txt}\n"
+                            txt += f"│ 📊 Status: {status}\n"
+                            txt += f"╰───────────────────╯\n"
+                            txt += f"```{item['config']}```\n" # کادر کپی
+                            txt += get_config_usage_guide(item['config'])
+                            txt += create_fancy_footer(ch_title, item['orig_link'])
+                            
+                            sent_msg = await client.send_message(destination_channel, txt, link_preview=True)
+                            
+                            # لینک پیام جدید در کانال خودت
+                            my_link = f"https://t.me/{destination_channel[1:]}/{sent_msg.id}"
                             live_configs.append({
                                 'protocol': prot,
                                 'config': item['config'],
-                                'latency': latency,
+                                'latency': lat or 999,
                                 'status': status,
                                 'channel': ch_title,
-                                'telegram_link': f"https://t.me/{channel[1:]}/{item['message_id']}"
+                                't_link': my_link
                             })
-                        elif status:
-                            final_txt += f"\n📊 {status}\n"
-                        
-                        final_txt += get_config_usage_guide(item['config'])
-                        final_txt += f"\n[​]({qr_url})"
-                        final_txt += create_footer(ch_title, "intranet" if is_intranet else prot.lower())
-                        
-                        try:
-                            await client.send_message(destination_channel, final_txt, link_preview=True)
-                            print(f"  ✅ {prot} ({latency}ms)" if latency else f"  ✅ {prot}")
+                            
                             sent_configs.add(item['config'])
                             sent_count += 1
-                            await asyncio.sleep(random.uniform(1.5, 2.5))
-                        except FloodWaitError as e:
-                            print(f"  ⚠️ Flood: {e.seconds}s")
-                            await asyncio.sleep(e.seconds + 5)
-                        except Exception as e:
-                            print(f"  ❌ خطا: {e}")
+                            print(f"  ✅ کانفیگ ارسال شد: {prot}")
+                            await asyncio.sleep(3)
+                    except Exception as e:
+                        print(f"  ❌ خطا در ارسال کانفیگ: {e}")
 
-            except FloodWaitError as e:
-                print(f"❌ Flood {channel}: {e.seconds}s")
-                continue
             except Exception as e:
-                print(f"❌ خطا {channel}: {e}")
+                print(f"❌ خطا در پردازش کانال {channel_username}: {e}")
                 continue
 
-        # ساخت GitHub Pages
+        # -----------------------------------------------------------------------------
+        # ساخت صفحه وب (GitHub Pages) - موبایل فرندلی، دارک مود، کارت ویو
+        # -----------------------------------------------------------------------------
         try:
             print("\n📄 ساخت صفحه وب...")
-            
             now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
             
+            # تولید HTML با استایل جدید
             html = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VPN Config Hub - {destination_channel}</title>
-<style>
-*{{margin:0;padding:0;box-sizing:border-box}}
-body{{font-family:Tahoma,Arial,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:20px;direction:rtl}}
-.header{{text-align:center;color:#fff;margin-bottom:30px}}
-.header h1{{font-size:2.5em;margin-bottom:10px;text-shadow:2px 2px 4px rgba(0,0,0,0.3)}}
-.header .subtitle{{font-size:1.1em;opacity:0.9;margin-bottom:5px}}
-.update{{font-size:0.9em;opacity:0.8}}
-.container{{max-width:1400px;margin:0 auto}}
-.info-box{{background:rgba(255,255,255,0.95);border-radius:15px;padding:25px;margin-bottom:20px;box-shadow:0 10px 30px rgba(0,0,0,0.2)}}
-.info-box h3{{color:#667eea;margin-bottom:15px;font-size:1.3em}}
-.info-box p{{line-height:1.8;color:#333;margin-bottom:10px}}
-.info-box ul{{margin-right:25px;margin-top:10px}}
-.info-box li{{margin-bottom:8px;line-height:1.6}}
-.tabs{{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;justify-content:center}}
-.tab{{background:rgba(255,255,255,0.2);color:#fff;border:2px solid rgba(255,255,255,0.3);padding:12px 30px;border-radius:10px;cursor:pointer;transition:all 0.3s;font-weight:500}}
-.tab:hover{{background:rgba(255,255,255,0.3);transform:translateY(-2px)}}
-.tab.active{{background:#fff;color:#667eea;border-color:#fff}}
-.content{{background:#fff;border-radius:15px;padding:30px;box-shadow:0 20px 60px rgba(0,0,0,0.3)}}
-.tab-content{{display:none}}
-.tab-content.active{{display:block}}
-.stats{{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px}}
-.stat-card{{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:25px;border-radius:12px;text-align:center;transition:transform 0.3s}}
-.stat-card:hover{{transform:translateY(-5px)}}
-.stat-card h3{{font-size:2.5em;margin-bottom:8px}}
-.stat-card p{{font-size:0.95em}}
-table{{width:100%;border-collapse:collapse;margin-top:20px}}
-th,td{{padding:15px;text-align:right;border-bottom:1px solid #eee}}
-th{{background:#f8f9fa;font-weight:600;color:#333;position:sticky;top:0}}
-tr:hover{{background:#f8f9fa}}
-.protocol-badge{{display:inline-block;padding:5px 10px;border-radius:6px;font-size:0.85em;font-weight:600;color:#fff;margin-left:5px}}
-.vmess{{background:#667eea}}
-.vless{{background:#764ba2}}
-.trojan{{background:#f093fb}}
-.ss{{background:#4facfe}}
-code{{background:#f8f9fa;padding:3px 8px;border-radius:4px;font-size:0.9em;word-break:break-all;font-family:monospace}}
-.copy-btn{{background:#667eea;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:0.85em;transition:all 0.3s;margin-left:5px}}
-.copy-btn:hover{{background:#764ba2;transform:scale(1.05)}}
-.link-btn{{background:#28a745;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:0.85em;text-decoration:none;display:inline-block}}
-.link-btn:hover{{background:#218838}}
-.empty-state{{text-align:center;padding:60px 20px;color:#999}}
-.empty-state h3{{font-size:1.5em;margin-bottom:10px;color:#666}}
-.footer{{text-align:center;margin-top:40px;padding:30px;color:#fff}}
-.footer a{{color:#fff;text-decoration:none;font-weight:500;border-bottom:2px solid rgba(255,255,255,0.5)}}
-.footer a:hover{{border-bottom-color:#fff}}
-.channel-list{{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:15px;margin-top:20px}}
-.channel-item{{background:#f8f9fa;padding:15px;border-radius:10px;border-right:4px solid #667eea;transition:all 0.3s}}
-.channel-item:hover{{background:#e9ecef;transform:translateX(-5px)}}
-.channel-item a{{color:#667eea;text-decoration:none;font-weight:500}}
-@media (max-width:768px){{
-.header h1{{font-size:1.8em}}
-.stats{{grid-template-columns:1fr}}
-table{{font-size:0.85em}}
-th,td{{padding:10px}}
-}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VPN Hub - {destination_channel}</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <style>
+        :root {{
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+            --border: #334155;
+            --success: #4ade80;
+            --warning: #facc15;
+            --danger: #ef4444;
+        }}
+        * {{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; -webkit-tap-highlight-color: transparent; }}
+        body {{ background-color: var(--bg-color); color: var(--text-main); padding-bottom: 80px; }}
+        
+        /* Header */
+        .header {{ text-align: center; padding: 20px 15px; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); }}
+        .header h1 {{ font-size: 1.4rem; color: var(--primary); margin-bottom: 5px; }}
+        .header p {{ font-size: 0.8rem; color: var(--text-sub); }}
+        .help-btn {{ position: absolute; left: 15px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--primary); }}
+
+        /* Container */
+        .container {{ max-width: 600px; margin: 0 auto; padding: 15px; }}
+        
+        /* Cards */
+        .card {{ background: var(--card-bg); border-radius: 16px; padding: 16px; margin-bottom: 16px; border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); animation: fadeIn 0.4s ease; }}
+        @keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(10px); }} to {{ opacity: 1; transform: translateY(0); }} }}
+        
+        .card-header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }}
+        .protocol-tag {{ background: #334155; padding: 4px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: bold; color: #e2e8f0; }}
+        .ping-tag {{ font-size: 0.8rem; font-weight: bold; display: flex; align-items: center; gap: 4px; }}
+        
+        .channel-info {{ font-size: 0.75rem; color: var(--text-sub); margin-bottom: 10px; display: flex; align-items: center; gap: 5px; }}
+        
+        .code-block {{ background: #0b1120; border: 1px dashed var(--border); border-radius: 10px; padding: 12px; font-family: monospace; font-size: 0.75rem; color: #22d3ee; overflow-x: auto; white-space: nowrap; margin-bottom: 12px; direction: ltr; }}
+        
+        /* Buttons */
+        .action-btns {{ display: flex; gap: 10px; }}
+        .btn {{ flex: 1; padding: 12px; border-radius: 10px; border: none; font-size: 0.9rem; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.2s; }}
+        .btn-copy {{ background: var(--primary); color: #0f172a; }}
+        .btn-connect {{ background: transparent; border: 1px solid var(--primary); color: var(--primary); }}
+        .btn-source {{ width: 100%; margin-top: 10px; background: #334155; color: #cbd5e1; font-size: 0.8rem; padding: 8px; }}
+        
+        /* Bottom Navigation */
+        .bottom-nav {{ position: fixed; bottom: 0; left: 0; right: 0; background: rgba(30, 41, 59, 0.95); backdrop-filter: blur(10px); border-top: 1px solid var(--border); display: flex; justify-content: space-around; padding: 10px 0; z-index: 100; padding-bottom: max(10px, env(safe-area-inset-bottom)); }}
+        .nav-item {{ display: flex; flex-direction: column; align-items: center; gap: 4px; color: var(--text-sub); font-size: 0.75rem; cursor: pointer; flex: 1; }}
+        .nav-item.active {{ color: var(--primary); font-weight: bold; }}
+        .nav-icon {{ font-size: 1.2rem; margin-bottom: 2px; }}
+
+        /* Sections */
+        .tab-content {{ display: none; }}
+        .tab-content.active {{ display: block; }}
+        
+        /* Modal */
+        .modal {{ display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 200; align-items: center; justify-content: center; padding: 20px; }}
+        .modal-content {{ background: var(--card-bg); width: 100%; max-width: 400px; border-radius: 20px; padding: 25px; position: relative; border: 1px solid var(--border); }}
+        .close-modal {{ position: absolute; left: 20px; top: 20px; font-size: 1.5rem; color: var(--danger); cursor: pointer; }}
+        .modal h3 {{ color: var(--primary); margin-bottom: 15px; }}
+        .modal p {{ font-size: 0.9rem; line-height: 1.8; color: var(--text-sub); margin-bottom: 10px; }}
+        
+        /* Utilities */
+        .hidden {{ display: none; }}
+    </style>
 </head>
 <body>
-<div class="header">
-<h1>🔮 VPN Config Hub</h1>
-<div class="subtitle">مرکز جامع کانفیگ‌های رایگان و تست‌شده</div>
-<div class="update">📅 آخرین بروزرسانی: {now_str} | 🔄 هر کانال هر 80 دقیقه بررسی می‌شود</div>
-</div>
 
-<div class="container">
+    <div class="header">
+        <button class="help-btn" onclick="openModal()">ℹ️</button>
+        <h1>VPN Config Hub</h1>
+        <p>{now_str}</p>
+    </div>
 
-<div class="info-box">
-<h3>ℹ️ درباره این سرویس</h3>
-<p><strong>🎯 پینگ و تست خودکار:</strong> تمام کانفیگ‌ها و پروکسی‌ها قبل از نمایش توسط سرورهای ما تست می‌شوند. وضعیت سلامت با رنگ‌های 🟢 سبز (عالی)، 🟡 زرد (خوب) و 🔴 قرمز (ضعیف) مشخص شده است.</p>
-<p><strong>📋 کپی هوشمند:</strong> با کلیک روی دکمه "کپی"، کانفیگ مستقیماً در کلیپ‌بورد شما ذخیره می‌شود. نیازی به انتخاب دستی متن نیست!</p>
-<p><strong>🔗 لینک به منبع:</strong> با کلیک روی "مشاهده در تلگرام"، مستقیماً به پست اصلی در کانال منبع هدایت می‌شوید.</p>
-<p><strong>⏰ بروزرسانی منظم:</strong> هر کانال هر 80 دقیقه یکبار بررسی می‌شود و محتوای جدید به صورت خودکار اضافه می‌گردد.</p>
-<p><strong>📱 طراحی ریسپانسیو:</strong> این صفحه روی تمام دستگاه‌ها (موبایل، تبلت، دسکتاپ) به خوبی کار می‌کند.</p>
-</div>
+    <div class="container">
+        <div id="tab-configs" class="tab-content active">
+            {"".join([f'''
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">{c['protocol']}</span>
+                    <span class="ping-tag" style="color:{'#4ade80' if c['latency']<200 else '#facc15'}">⚡ {c['latency']}ms</span>
+                </div>
+                <div class="channel-info">📡 منبع: {c['channel']}</div>
+                <div class="code-block" id="conf-{i}">{c['config']}</div>
+                <div class="action-btns">
+                    <button class="btn btn-copy" onclick="copyText('conf-{i}')">کپی</button>
+                    <a href="{c['config']}" class="btn btn-connect">اتصال</a>
+                </div>
+                <a href="{c['t_link']}" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            ''' for i, c in enumerate(live_configs)])}
+            
+            {f'<div style="text-align:center;color:#64748b;padding:20px">هنوز کانفیگی یافت نشده...</div>' if not live_configs else ''}
+        </div>
 
-<div class="tabs">
-<button class="tab active" onclick="showTab('configs')">🔮 کانفیگ ({len(live_configs)})</button>
-<button class="tab" onclick="showTab('proxies')">🔵 پروکسی ({len(all_proxies_data)})</button>
-<button class="tab" onclick="showTab('files')">📂 فایل ({len(all_files_data)})</button>
-<button class="tab" onclick="showTab('channels')">📡 کانال ({len(ALL_CHANNELS)})</button>
-</div>
+        <div id="tab-proxies" class="tab-content">
+            {"".join([f'''
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">MTProto</span>
+                    <span class="ping-tag" style="color:#facc15">Proxy</span>
+                </div>
+                <div class="channel-info">📡 منبع: {v['channel']}</div>
+                <div class="code-block">Server: {k.split(':')[0]}</div>
+                <div class="action-btns">
+                    <a href="{v['link']}" class="btn btn-copy">اتصال سریع</a>
+                </div>
+                <a href="{v['t_link']}" class="btn btn-source">🔗 مشاهده در کانال ما</a>
+            </div>
+            ''' for k, v in all_proxies_data.items()])}
+        </div>
 
-<div class="content">
-<div id="configs" class="tab-content active">
-<div class="stats">
-<div class="stat-card"><h3>{len(live_configs)}</h3><p>کانفیگ آنلاین</p></div>
-"""
-            
-            if live_configs:
-                avg = int(sum(c['latency'] for c in live_configs) / len(live_configs))
-                fast = len([c for c in live_configs if c['latency'] < 100])
-                html += f"""
-<div class="stat-card"><h3>{avg}ms</h3><p>میانگین پینگ</p></div>
-<div class="stat-card"><h3>{len(set(c['protocol'] for c in live_configs))}</h3><p>نوع پروتکل</p></div>
-<div class="stat-card"><h3>{fast}</h3><p>سرعت عالی</p></div>
-</div>
-<table>
-<thead><tr><th>ردیف</th><th>پروتکل</th><th>وضعیت</th><th>پینگ</th><th>منبع</th><th>کانفیگ</th><th>عملیات</th></tr></thead>
-<tbody>
-"""
-                
-                for i, c in enumerate(sorted(live_configs, key=lambda x: x['latency']), 1):
-                    if c['latency'] < 100:
-                        badge = '<span style="color:#28a745;font-weight:bold">🟢 عالی</span>'
-                    elif c['latency'] < 200:
-                        badge = '<span style="color:#ffc107;font-weight:bold">🟡 خوب</span>'
-                    else:
-                        badge = '<span style="color:#dc3545;font-weight:bold">🟠 متوسط</span>'
-                    
-                    config_id = f"cfg{i}"
-                    safe_config = c['config'].replace("'", "\\'").replace('"', '\\"')
-                    
-                    html += f"""
-<tr>
-<td>{i}</td>
-<td><span class="protocol-badge {c['protocol'].lower()}">{c['protocol']}</span></td>
-<td>{badge}</td>
-<td><strong>{c['latency']}ms</strong></td>
-<td>{c['channel']}</td>
-<td><code id="{config_id}">{c['config'][:50]}...</code></td>
-<td>
-<button class="copy-btn" onclick='copyText("{safe_config}")'>📋 کپی</button>
-<a href="{c['telegram_link']}" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-"""
-                
-                html += "</tbody></table>"
-            else:
-                html += """
-<div class="stat-card"><h3>-</h3><p>میانگین</p></div>
-<div class="stat-card"><h3>-</h3><p>پروتکل</p></div>
-<div class="stat-card"><h3>-</h3><p>سرعت</p></div>
-</div>
-<div class="empty-state"><h3>هیچ کانفیگ زنده‌ای موجود نیست</h3><p>لطفاً بعداً بررسی کنید</p></div>
-"""
-            
-            html += "</div>"
-            
-            # پروکسی
-            html += f"""
-<div id="proxies" class="tab-content">
-<div class="stats">
-<div class="stat-card"><h3>{len(all_proxies_data)}</h3><p>پروکسی فعال</p></div>
-<div class="stat-card"><h3>MTProto</h3><p>نوع پروتکل</p></div>
-<div class="stat-card"><h3>رایگان</h3><p>100%</p></div>
-</div>
-"""
-            
-            if all_proxies_data:
-                html += """
-<div style="background:#e7f3ff;padding:20px;border-radius:10px;margin-bottom:20px;border-right:4px solid #667eea">
-<h3 style="color:#667eea;margin-bottom:10px">💡 نحوه استفاده:</h3>
-<ol style="margin-right:20px;line-height:1.8">
-<li>روی دکمه "اتصال" کلیک کنید</li>
-<li>تلگرام خودکار باز می‌شود</li>
-<li>روی "اتصال" در تلگرام کلیک کنید</li>
-<li>✅ متصل شدید!</li>
-</ol>
-</div>
-<table>
-<thead><tr><th>ردیف</th><th>سرور:پورت</th><th>منبع</th><th>عملیات</th></tr></thead>
-<tbody>
-"""
-                
-                for i, (key, data) in enumerate(all_proxies_data.items(), 1):
-                    html += f"""
-<tr>
-<td>{i}</td>
-<td><code>{key}</code></td>
-<td>{data['channel']}</td>
-<td>
-<a href="{data['link']}" target="_blank"><button class="copy-btn">🔗 اتصال</button></a>
-<a href="{data['telegram_link']}" target="_blank" class="link-btn">📱 منبع</a>
-</td>
-</tr>
-"""
-                
-                html += "</tbody></table>"
-            else:
-                html += '<div class="empty-state"><h3>پروکسی موجود نیست</h3></div>'
-            
-            html += "</div>"
-            
-            # فایل
-            html += f"""
-<div id="files" class="tab-content">
-<div class="stats">
-<div class="stat-card"><h3>{len(all_files_data)}</h3><p>فایل موجود</p></div>
-<div class="stat-card"><h3>{len(set([f.split('.')[-1] for f in all_files_data.keys()]))}</h3><p>نوع فایل</p></div>
-<div class="stat-card"><h3>رایگان</h3><p>100%</p></div>
-</div>
-"""
-            
-            if all_files_data:
-                html += """
-<table>
-<thead><tr><th>ردیف</th><th>نام فایل</th><th>نوع</th><th>منبع</th><th>عملیات</th></tr></thead>
-<tbody>
-"""
-                
-                for i, (fname, data) in enumerate(all_files_data.items(), 1):
-                    ext = fname.split('.')[-1].upper()
-                    html += f"""
-<tr>
-<td>{i}</td>
-<td><code>{fname}</code></td>
-<td><strong>{ext}</strong></td>
-<td>{data['channel']}</td>
-<td><a href="{data['link']}" target="_blank" class="link-btn">📥 دانلود</a></td>
-</tr>
-"""
-                
-                html += "</tbody></table>"
-            else:
-                html += '<div class="empty-state"><h3>فایل موجود نیست</h3></div>'
-            
-            html += "</div>"
-            
-            # کانال‌ها
-            html += f"""
-<div id="channels" class="tab-content">
-<div class="stats">
-<div class="stat-card"><h3>{len(ALL_CHANNELS)}</h3><p>کانال منبع</p></div>
-<div class="stat-card"><h3>80 دقیقه</h3><p>فاصله بررسی</p></div>
-<div class="stat-card"><h3>خودکار</h3><p>بروزرسانی</p></div>
-</div>
-<h3 style="margin-bottom:15px;color:#667eea">📡 لیست کامل کانال‌های منبع:</h3>
-<div class="channel-list">
-"""
-            
-            for ch in ALL_CHANNELS:
-                ch_clean = ch[1:] if ch.startswith('@') else ch
-                html += f'<div class="channel-item"><a href="https://t.me/{ch_clean}" target="_blank">📢 {ch}</a></div>'
-            
-            html += f"""
-</div>
-</div>
-</div>
-</div>
+        <div id="tab-files" class="tab-content">
+            {"".join([f'''
+            <div class="card">
+                <div class="card-header">
+                    <span class="protocol-tag">FILE</span>
+                    <span class="protocol-tag" style="background:#475569">{name.split('.')[-1]}</span>
+                </div>
+                <div style="margin:15px 0;font-weight:bold;font-size:0.9rem">{name}</div>
+                <div class="channel-info">📡 منبع: {v['channel']}</div>
+                <a href="{v['link']}" class="btn btn-connect" style="width:100%">📥 دانلود از کانال ما</a>
+            </div>
+            ''' for name, v in all_files_data.items()])}
+        </div>
+    </div>
 
-<div class="footer">
-<p style="font-size:1.2em;margin-bottom:15px">🔗 کانال اصلی: <a href="https://t.me/{destination_channel[1:]}">{destination_channel}</a></p>
-<p>ساخته شده با ❤️ • بروزرسانی خودکار هر 40 دقیقه • رایگان برای همیشه</p>
-<p style="margin-top:10px;font-size:0.9em">آخرین بروزرسانی: {now_str}</p>
-</div>
+    <div class="bottom-nav">
+        <div class="nav-item active" onclick="switchTab('tab-configs', this)">
+            <span class="nav-icon">🚀</span>
+            <span>کانفیگ</span>
+        </div>
+        <div class="nav-item" onclick="switchTab('tab-proxies', this)">
+            <span class="nav-icon">🛡️</span>
+            <span>پروکسی</span>
+        </div>
+        <div class="nav-item" onclick="switchTab('tab-files', this)">
+            <span class="nav-icon">📂</span>
+            <span>فایل</span>
+        </div>
+    </div>
 
-<script>
-function showTab(n){{
-document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
-document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-document.getElementById(n).classList.add('active');
-event.target.classList.add('active');
-}}
-function copyText(txt){{
-navigator.clipboard.writeText(txt).then(()=>{{
-const btn=event.target;
-const old=btn.innerText;
-btn.innerText='✅ کپی شد';
-btn.style.background='#28a745';
-setTimeout(()=>{{btn.innerText=old;btn.style.background='#667eea'}},2000);
-}});
-}}
-setTimeout(()=>location.reload(),40*60*1000);
-</script>
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h3>راهنمای استفاده</h3>
+            <p>✅ <b>کپی هوشمند:</b> با زدن دکمه کپی، کد کانفیگ کپی می‌شود.</p>
+            <p>✅ <b>اتصال مستقیم:</b> دکمه اتصال، نرم‌افزار v2rayNG را باز می‌کند.</p>
+            <p>✅ <b>لینک‌ها:</b> تمام لینک‌ها به کانال {destination_channel} هدایت می‌شوند تا از صحت فایل مطمئن باشید.</p>
+            <p>⚡️ پینگ‌ها به صورت لحظه‌ای توسط سرور تست شده‌اند.</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabId, element) {{
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            // Show selected tab
+            document.getElementById(tabId).classList.add('active');
+            
+            // Update nav items
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            
+            window.scrollTo(0, 0);
+        }}
+
+        function copyText(elementId) {{
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(() => {{
+                alert('✅ کپی شد!');
+            }}).catch(err => {{
+                console.error('Failed to copy: ', err);
+            }});
+        }}
+
+        function openModal() {{ document.getElementById('helpModal').style.display = 'flex'; }}
+        function closeModal() {{ document.getElementById('helpModal').style.display = 'none'; }}
+        
+        // Close modal on outside click
+        window.onclick = function(event) {{
+            const modal = document.getElementById('helpModal');
+            if (event.target == modal) {{
+                modal.style.display = "none";
+            }}
+        }}
+    </script>
 </body>
-</html>
-"""
+</html>"""
             
             with open('index.html', 'w', encoding='utf-8') as f:
                 f.write(html)
             
-            print("✅ صفحه وب ساخته شد")
-            print(f"   📊 {len(live_configs)} کانفیگ، {len(all_proxies_data)} پروکسی، {len(all_files_data)} فایل")
+            print("✅ صفحه وب ساخته شد (Mobile First)")
             
         except Exception as e:
-            print(f"❌ خطا HTML: {e}")
-            import traceback
-            traceback.print_exc()
+            print(f"❌ خطا در ساخت HTML: {e}")
 
-        print(f"\n✅ پایان ({sent_count} ارسال شد)")
+        print(f"\n✅ پایان عملیات ({sent_count} مورد پردازش شد)")
 
     except Exception as e:
         print(f"❌ خطای حیاتی: {e}")
-        import traceback
-        traceback.print_exc()
     finally:
         await client.disconnect()
-
 
 if __name__ == "__main__":
     with client:

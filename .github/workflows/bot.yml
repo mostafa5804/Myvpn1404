@@ -2,10 +2,14 @@ name: V2Ray Collector Bot
 
 on:
   schedule:
-    # هر 40 دقیقه: 00, 40, 20, 00, 40, 20, ...
-    - cron: '0,40 * * * *'   # 00 و 40
-    - cron: '20 * * * *'      # 20
+    # طبق محاسبه شما: هر 40 دقیقه می‌چرخد (00, 40, 20...)
+    - cron: '0,40 * * * *'
+    - cron: '20 * * * *'
   workflow_dispatch:
+
+# این خط لازمه تا بتونه فایل HTML رو ذخیره کنه
+permissions:
+  contents: write
 
 jobs:
   run-bot:
@@ -38,7 +42,3 @@ jobs:
         git config --global user.email "bot@github.com"
         git add index.html
         git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Update - $(date +'%Y-%m-%d %H:%M')" && git push)
-```
-
----
-

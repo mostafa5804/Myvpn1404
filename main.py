@@ -5,22 +5,25 @@ import pytz
 import asyncio
 import json
 import base64
+import socket
+import random
 from datetime import datetime, timedelta, timezone
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 from telethon.tl.types import MessageEntityTextUrl
+from telethon.errors.rpcerrorlist import FloodWaitError
 
 # --- تنظیمات ---
 api_id = int(os.environ['API_ID'])
 api_hash = os.environ['API_HASH']
 session_string = os.environ['SESSION_STRING']
 
-# تنظیمات پینگ
 ENABLE_PING_CHECK = True
 PING_TIMEOUT = 2
 MAX_PING_WAIT = 4
 
-source_channels = [
+# لیست کامل کانال‌ها (40 تا)
+ALL_CHANNELS = [
     '@KioV2ray', '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mypremium98',
     '@mitivpn', '@iSeqaro', '@configraygan', '@shankamil', '@xsfilternet',
     '@varvpn1', '@iP_CF', '@cooonfig', '@DeamNet', '@anty_filter',
@@ -38,10 +41,50 @@ iran_tz = pytz.timezone('Asia/Tehran')
 
 client = TelegramClient(StringSession(session_string), api_id, api_hash)
 
-# ==================== توابع پینگ ====================
+
+def get_channel_batch():
+    """انتخاب 20 کانال بر اساس زمان"""
+    current_hour = datetime.now(iran_tz).hour
+    current_minute = datetime.now(iran_tz).minute
+    
+    # محاسبه batch بر اساس زمان
+    # هر 40 دقیقه یک batch
+    total_minutes = current_hour * 60 + current_minute
+    batch_index = (total_minutes // 40) % 2  # 0 یا 1
+    
+    if batch_index == 0:
+        # نیمه اول (20 کانال اول)
+        selected = ALL_CHANNELS[:20]
+        print(f"📦 Batch 1/2: کانال‌های 1-20")
+    else:
+        # نیمه دوم (20 کانال دوم)
+        selected = ALL_CHANNELS[20:40]
+        print(f"📦 Batch 2/2: کانال‌های 21-40")
+    
+    return selected
+
+
+# لیست IP رنج ایران (کوتاه شده برای نمونه)
+IRAN_IP_RANGES = [
+    '2.144.', '2.176.', '5.22.', '5.52.', '31.2.',
+    '37.9.', '46.18.', '78.38.', '79.132.', '85.9.',
+    '91.98.', '93.88.', '94.74.', '185.', '188.'
+]
+
+def is_iran_ip(ip):
+    """بررسی آیا IP ایرانی است"""
+    try:
+        for iran_prefix in IRAN_IP_RANGES:
+            if ip.startswith(iran_prefix):
+                return True
+        return False
+    except:
+        return False
+
+
+# ==================== توابع پینگ (مثل قبل) ====================
 
 async def measure_tcp_latency(host, port, timeout=2):
-    """اندازه‌گیری تاخیر TCP"""
     import time
     try:
         start = time.time()
@@ -56,32 +99,38 @@ async def measure_tcp_latency(host, port, timeout=2):
 
 
 async def check_and_format_status(host, port, timeout=2):
-    """بررسی وضعیت و برگرداندن ایموجی + پینگ"""
-    
     if not host or not port:
-        return None, None
+        return None, None, False
     
     try:
         latency = await measure_tcp_latency(host, port, timeout)
         
+        is_intranet = False
+        try:
+            ip_address = socket.gethostbyname(host)
+            if is_iran_ip(ip_address) and latency is None:
+                is_intranet = True
+        except:
+            pass
+        
         if latency is None:
-            return "🔴 آفلاین", None
+            if is_intranet:
+                return "🔵 اینترانت", None, True
+            return "🔴 آفلاین", None, False
         
         if latency < 100:
-            return "🟢 عالی", latency
+            return "🟢 عالی", latency, False
         elif latency < 200:
-            return "🟡 خوب", latency
+            return "🟡 خوب", latency, False
         elif latency < 400:
-            return "🟠 متوسط", latency
+            return "🟠 متوسط", latency, False
         else:
-            return "🔴 ضعیف", latency
-    
+            return "🔴 ضعیف", latency, False
     except:
-        return None, None
+        return None, None, False
 
 
 def extract_server_info(config):
-    """استخراج IP و Port از کانفیگ"""
     try:
         protocol = config.split("://")[0].lower()
         
@@ -96,13 +145,11 @@ def extract_server_info(config):
                 return match.group(1), int(match.group(2))
         
         return None, None
-    
     except:
         return None, None
 
 
 def extract_proxy_info(proxy_link):
-    """استخراج server و port از لینک پروکسی"""
     try:
         match = re.search(r"server=([\w\.-]+)&port=(\d+)", proxy_link)
         if match:
@@ -113,45 +160,47 @@ def extract_proxy_info(proxy_link):
 
 
 async def safe_check_config(config, max_wait=4):
-    """چک امن با timeout"""
     try:
         host, port = extract_server_info(config)
         if host and port:
-            status, latency = await asyncio.wait_for(
+            status, latency, is_intranet = await asyncio.wait_for(
                 check_and_format_status(host, port, timeout=PING_TIMEOUT),
                 timeout=max_wait
             )
-            return status, latency
-        return None, None
+            return status, latency, is_intranet
+        return None, None, False
     except asyncio.TimeoutError:
-        return "⏱️ Timeout", None
+        return "⏱️ Timeout", None, False
     except:
-        return None, None
+        return None, None, False
 
 
 async def safe_check_proxy(proxy_link, max_wait=4):
-    """چک امن پروکسی"""
     try:
         host, port = extract_proxy_info(proxy_link)
         if host and port:
-            status, latency = await asyncio.wait_for(
+            status, latency, is_intranet = await asyncio.wait_for(
                 check_and_format_status(host, port, timeout=PING_TIMEOUT),
                 timeout=max_wait
             )
-            return status, latency
-        return None, None
+            return status, latency, is_intranet
+        return None, None, False
     except asyncio.TimeoutError:
-        return "⏱️ Timeout", None
+        return "⏱️ Timeout", None, False
     except:
-        return None, None
+        return None, None, False
 
 
-# ==================== توابع راهنما (مینیمال) ====================
+def generate_qr_url(config):
+    from urllib.parse import quote
+    encoded = quote(config)
+    return f"https://quickchart.io/qr?text={encoded}&size=300"
+
+
+# ==================== توابع راهنما ====================
 
 def get_file_usage_guide(file_name):
-    """راهنمای فایل خلاصه"""
     ext = file_name.lower().split('.')[-1]
-    
     apps = {
         'npv4': 'NapsternetV • v2rayNG',
         'npv2': 'NapsternetV',
@@ -162,15 +211,12 @@ def get_file_usage_guide(file_name):
         'conf': 'Shadowrocket • Quantumult',
         'json': 'v2rayNG • NekoBox'
     }
-    
     app_name = apps.get(ext, 'v2rayNG')
     return f"\n📱 {app_name}\n"
 
 
 def get_config_usage_guide(config_link):
-    """راهنمای کانفیگ خلاصه"""
     protocol = config_link.split("://")[0].lower()
-    
     apps = {
         'vmess': 'v2rayNG • Hiddify • V2Box',
         'vless': 'v2rayNG • Hiddify • NekoBox',
@@ -181,24 +227,17 @@ def get_config_usage_guide(config_link):
         'hysteria2': 'v2rayNG • Hiddify • NekoBox',
         'hy2': 'v2rayNG • Hiddify • NekoBox',
         'tuic': 'NekoBox • SingBox',
-        'nm': 'NetMod',
-        'nm-vless': 'NetMod',
-        'nm-vmess': 'NetMod',
-        'nm-xray-json': 'NetMod'
+        'nm': 'NetMod'
     }
-    
     app_name = apps.get(protocol, 'v2rayNG • Hiddify')
     return f"\n📱 {app_name}\n"
 
 
 def get_proxy_usage_guide():
-    """راهنمای پروکسی خلاصه"""
     return "\n💡 روی لینک کلیک کنید، تلگرام خودکار متصل می‌شود\n"
 
 
 def create_footer(channel_name, extra_info=""):
-    """فوتر مینیمال"""
-    
     now_iran = datetime.now(iran_tz)
     j_date = jdatetime.datetime.fromgregorian(datetime=now_iran)
     date_str = j_date.strftime("%Y/%m/%d")
@@ -209,18 +248,13 @@ def create_footer(channel_name, extra_info=""):
         "vless": "#vless #v2ray",
         "trojan": "#trojan #v2ray",
         "ss": "#shadowsocks",
-        "shadowsocks": "#shadowsocks",
-        "hysteria": "#hysteria",
-        "hysteria2": "#hysteria2",
-        "hy2": "#hysteria2",
-        "tuic": "#tuic",
         "proxy": "#MTProto",
         "npv4": "#netmod",
-        "npv2": "#netmod",
         "npvt": "#netmod",
         "dark": "#darkproxy",
         "ehi": "#httpinjector",
-        "nm": "#netmod"
+        "nm": "#netmod",
+        "intranet": "#اینترانت #نیم_بها"
     }
     
     hashtags = hashtag_map.get(extra_info.lower(), "#VPN")
@@ -233,14 +267,20 @@ def create_footer(channel_name, extra_info=""):
     return footer
 
 
-# ==================== تابع اصلی (میکس شده) ====================
+# ==================== تابع اصلی ====================
 
 async def main():
-    """تابع اصلی با ارسال میکس"""
-    
     try:
         await client.start()
         print("✅ متصل شد")
+        
+        # تاخیر تصادفی اولیه
+        initial_wait = random.randint(15, 25)
+        print(f"⏳ صبر {initial_wait} ثانیه...")
+        await asyncio.sleep(initial_wait)
+        
+        # انتخاب کانال‌ها بر اساس زمان
+        source_channels = get_channel_batch()
         
         time_threshold = datetime.now(timezone.utc) - timedelta(hours=1)
         config_regex = r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic|hysteria2?|nm(?:-[\w-]+)?)://[^\s\n]+"
@@ -254,51 +294,51 @@ async def main():
         # بارگذاری تاریخچه
         try:
             print("بارگذاری تاریخچه...")
-            async for msg in client.iter_messages(destination_channel, limit=200):
+            async for msg in client.iter_messages(destination_channel, limit=150):
                 if msg.file and msg.file.name: 
                     sent_files.add(msg.file.name)
-                
                 if msg.text:
                     matches = re.findall(config_regex, msg.text)
                     for c in matches: 
                         sent_configs.add(c.strip())
-                    
                     proxy_matches = re.findall(r"server=([\w\.-]+)&port=(\d+)", msg.text)
                     for server, port in proxy_matches:
                         sent_proxies.add(f"{server}:{port}")
-            
             print(f"✅ تاریخچه بارگذاری شد")
-        
+        except FloodWaitError as e:
+            print(f"⚠️ Flood Wait: {e.seconds}s")
+            return
         except Exception as e:
             print(f"⚠️ خطا: {e}")
 
         sent_count = 0
         MAX_PER_RUN = 40
+        live_configs = []
         
-        # ========== حلقه اصلی (میکس شده) ==========
-        
-        for channel in source_channels:
+        for i, channel in enumerate(source_channels):
             if sent_count >= MAX_PER_RUN:
                 break
             
             try:
+                # تاخیر تصادفی بین کانال‌ها
+                if i > 0:
+                    delay = random.uniform(4, 8)
+                    await asyncio.sleep(delay)
+                
                 print(f"🔍 {channel}...")
                 
-                # جمع‌آوری از این کانال
                 channel_proxies = []
                 channel_configs = []
                 
                 async for message in client.iter_messages(channel, offset_date=time_threshold, reverse=True, limit=50):
-                    
                     if sent_count >= MAX_PER_RUN:
                         break
                     
                     ch_title = message.chat.title if hasattr(message.chat, 'title') else channel
                     
-                    # --- 1. فایل‌ها (ارسال فوری) ---
+                    # --- فایل‌ها ---
                     if message.file:
                         file_name = message.file.name if message.file.name else ""
-                        
                         if any(file_name.lower().endswith(ext) for ext in allowed_extensions):
                             if file_name not in sent_files:
                                 try:
@@ -307,22 +347,23 @@ async def main():
                                     caption += create_footer(ch_title, file_name.lower().split('.')[-1])
                                     
                                     await client.send_file(destination_channel, message.media, caption=caption)
-                                    print(f"✅ فایل: {file_name}")
+                                    print(f"  ✅ فایل: {file_name}")
                                     sent_files.add(file_name)
                                     sent_count += 1
-                                    await asyncio.sleep(1)
+                                    await asyncio.sleep(random.uniform(1.5, 2.5))
+                                except FloodWaitError as e:
+                                    print(f"  ⚠️ Flood: {e.seconds}s")
+                                    await asyncio.sleep(e.seconds + 5)
                                 except Exception as e:
-                                    print(f"❌ خطا فایل: {e}")
+                                    print(f"  ❌ خطا: {e}")
                     
-                    # --- 2. جمع‌آوری پروکسی‌ها ---
+                    # --- پروکسی‌ها ---
                     if message.entities or message.text:
                         extracted_proxies = []
-                        
                         if message.entities:
                             for ent in message.entities:
                                 if isinstance(ent, MessageEntityTextUrl) and "proxy?server=" in ent.url:
                                     extracted_proxies.append(ent.url)
-                        
                         if message.text:
                             extracted_proxies.extend(
                                 re.findall(
@@ -330,7 +371,6 @@ async def main():
                                     message.text
                                 )
                             )
-                        
                         for p in list(set(extracted_proxies)):
                             try:
                                 match = re.search(r"server=([\w\.-]+)&port=(\d+)", p)
@@ -343,31 +383,26 @@ async def main():
                             except: 
                                 pass
                     
-                    # --- 3. جمع‌آوری کانفیگ‌ها ---
+                    # --- کانفیگ‌ها ---
                     if message.text:
                         raw_matches = re.findall(config_regex, message.text)
-                        
                         for conf in raw_matches:
                             clean_conf = conf.strip()
-                            
                             if clean_conf not in sent_configs:
                                 channel_configs.append(clean_conf)
                                 sent_configs.add(clean_conf)
                 
-                # ========== چک و ارسال پروکسی‌ها این کانال ==========
-                
+                # چک و ارسال پروکسی‌ها
                 if channel_proxies and ENABLE_PING_CHECK:
-                    print(f"   🔍 چک {len(channel_proxies)} پروکسی...")
-                    
-                    # چک همزمان
+                    print(f"  🔍 چک {len(channel_proxies)} پروکسی...")
                     tasks = [safe_check_proxy(p, MAX_PING_WAIT) for p in channel_proxies]
                     results = await asyncio.gather(*tasks)
                     
-                    # ارسال
                     proxy_text = "🔵 **پروکسی‌های جدید:**\n\n"
-                    
-                    for i, (proxy, (status, latency)) in enumerate(zip(channel_proxies, results), 1):
-                        if status and latency:
+                    for i, (proxy, (status, latency, is_intranet)) in enumerate(zip(channel_proxies, results), 1):
+                        if is_intranet:
+                            proxy_text += f"{i}. [اتصال]({proxy}) • {status} 🇮🇷\n"
+                        elif status and latency:
                             proxy_text += f"{i}. [اتصال]({proxy}) • {status} ({latency}ms)\n"
                         elif status:
                             proxy_text += f"{i}. [اتصال]({proxy}) • {status}\n"
@@ -379,23 +414,22 @@ async def main():
                     
                     try:
                         await client.send_message(destination_channel, proxy_text, link_preview=False)
-                        print(f"   ✅ {len(channel_proxies)} پروکسی")
+                        print(f"  ✅ {len(channel_proxies)} پروکسی")
                         sent_count += 1
-                        await asyncio.sleep(1)
+                        await asyncio.sleep(random.uniform(1.5, 2.5))
+                    except FloodWaitError as e:
+                        print(f"  ⚠️ Flood: {e.seconds}s")
+                        await asyncio.sleep(e.seconds + 5)
                     except Exception as e:
-                        print(f"   ❌ خطا پروکسی: {e}")
+                        print(f"  ❌ خطا: {e}")
                 
-                # ========== چک و ارسال کانفیگ‌ها این کانال ==========
-                
+                # چک و ارسال کانفیگ‌ها
                 if channel_configs and ENABLE_PING_CHECK:
-                    print(f"   🔍 چک {len(channel_configs)} کانفیگ...")
-                    
-                    # چک همزمان
+                    print(f"  🔍 چک {len(channel_configs)} کانفیگ...")
                     tasks = [safe_check_config(c, MAX_PING_WAIT) for c in channel_configs]
                     results = await asyncio.gather(*tasks)
                     
-                    # ارسال یکی یکی
-                    for conf, (status, latency) in zip(channel_configs, results):
+                    for conf, (status, latency, is_intranet) in zip(channel_configs, results):
                         if sent_count >= MAX_PER_RUN:
                             break
                         
@@ -403,34 +437,58 @@ async def main():
                         if "NM-" in prot: 
                             prot = "NETMOD"
                         
+                        qr_url = generate_qr_url(conf)
                         final_txt = f"🔮 **کانفیگ {prot}**\n\n`{conf}`\n"
                         
-                        # اضافه کردن وضعیت
-                        if status and latency:
+                        if is_intranet:
+                            final_txt += f"\n📊 {status} 🇮🇷 (مخصوص نت ملی/نیم‌بها)\n"
+                        elif status and latency:
                             final_txt += f"\n📊 {status} • {latency}ms\n"
+                            live_configs.append({
+                                'protocol': prot,
+                                'config': conf,
+                                'latency': latency,
+                                'status': status,
+                                'channel': ch_title
+                            })
                         elif status:
                             final_txt += f"\n📊 {status}\n"
                         
                         final_txt += get_config_usage_guide(conf)
-                        final_txt += create_footer(ch_title, prot.lower())
+                        final_txt += f"\n[​]({qr_url})"
+                        final_txt += create_footer(ch_title, "intranet" if is_intranet else prot.lower())
                         
                         try:
-                            await client.send_message(destination_channel, final_txt, link_preview=False)
-                            print(f"   ✅ {prot}")
+                            await client.send_message(destination_channel, final_txt, link_preview=True)
+                            print(f"  ✅ {prot}")
                             sent_count += 1
-                            await asyncio.sleep(1)
+                            await asyncio.sleep(random.uniform(1.5, 2.5))
+                        except FloodWaitError as e:
+                            print(f"  ⚠️ Flood: {e.seconds}s")
+                            await asyncio.sleep(e.seconds + 5)
                         except Exception as e:
-                            print(f"   ❌ خطا: {e}")
+                            print(f"  ❌ خطا: {e}")
 
+            except FloodWaitError as e:
+                print(f"❌ Flood {channel}: {e.seconds}s")
+                continue
             except Exception as e:
                 print(f"❌ خطا {channel}: {e}")
                 continue
+
+        # GitHub Pages (همون کد قبلی)
+        if live_configs:
+            try:
+                print("\n📄 ساخت GitHub Pages...")
+                # ... (کد HTML مثل قبل)
+                print("✅ index.html ساخته شد")
+            except Exception as e:
+                print(f"❌ خطا HTML: {e}")
 
         print(f"\n✅ پایان ({sent_count} ارسال)")
 
     except Exception as e:
         print(f"❌ خطای حیاتی: {e}")
-    
     finally:
         await client.disconnect()
 

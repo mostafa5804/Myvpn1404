@@ -393,6 +393,7 @@ async def main():
         print(f"📊 آمار نهایی برای سایت: {len(final_configs)} کانفیگ، {len(final_proxies)} پروکسی، {len(final_files)} فایل")
 
         # 5. ساخت صفحه وب (با استفاده از داده‌های ۲۴ ساعته)
+        # 5. ساخت صفحه وب (با استفاده از داده‌های ۲۴ ساعته)
         try:
             print("📄 ساخت صفحه وب...")
             now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
@@ -538,7 +539,7 @@ async def main():
             backdrop-filter: blur(15px);
             border-top: 1px solid var(--border);
             display: flex; justify-content: space-around;
-            padding: 10px 0 25px; /* Extra padding for iOS */
+            padding: 10px 0 25px;
             z-index: 999;
         }}
         
@@ -692,63 +693,76 @@ async def main():
 
     <script>
         // Tab Switching
-        function switchTab(id, el) {
+        function switchTab(id, el) {{
             document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
             document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
             
             document.getElementById(id).classList.add('active');
             el.classList.add('active');
             window.scrollTo(0, 0);
-        }
+        }}
 
         // Copy Function
-        function copyText(elementId, btn) {
+        function copyText(elementId, btn) {{
             const text = document.getElementById(elementId).innerText;
-            navigator.clipboard.writeText(text).then(() => {
+            navigator.clipboard.writeText(text).then(() => {{
                 const originalHTML = btn.innerHTML;
                 btn.innerHTML = '<i class="fas fa-check"></i> کپی شد';
                 btn.style.background = '#10b981';
                 btn.style.color = '#fff';
                 
-                setTimeout(() => {
+                setTimeout(() => {{
                     btn.innerHTML = originalHTML;
                     btn.style.background = ''; // reset to css
                     btn.style.color = '';
-                }, 2000);
-            });
-        }
+                }}, 2000);
+            }});
+        }}
 
         // Search Filter
-        function filterContent() {
+        function filterContent() {{
             const query = document.getElementById('searchInput').value.toLowerCase();
-            document.querySelectorAll('.search-item').forEach(card => {
+            document.querySelectorAll('.search-item').forEach(card => {{
                 const text = card.getAttribute('data-filter').toLowerCase();
                 card.style.display = text.includes(query) ? 'block' : 'none';
-            });
-        }
+            }});
+        }}
 
         // QR Code Logic
-        function showQR(config) {
-            const url = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(config)}`;
+        function showQR(config) {{
+            const url = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${{encodeURIComponent(config)}}`;
             document.getElementById('qrImage').src = url;
             document.getElementById('qrModal').style.display = 'flex';
-        }
+        }}
 
-        function closeQR(e) {
-            if (e.target.id === 'qrModal') {
+        function closeQR(e) {{
+            if (e.target.id === 'qrModal') {{
                 document.getElementById('qrModal').style.display = 'none';
-            }
-        }
+            }}
+        }}
     </script>
 </body>
 </html>"""
-            with open('index.html', 'w', encoding='utf-8') as f: f.write(html)
+            
+            with open('index.html', 'w', encoding='utf-8') as f:
+                f.write(html)
+            
             print("✅ صفحه وب ساخته شد")
-        except Exception as e: print(f"❌ خطا HTML: {e}")
+            print(f"   📊 {len(final_configs)} کانفیگ، {len(final_proxies)} پروکسی، {len(final_files)} فایل")
+            
+        except Exception as e:
+            print(f"❌ خطا HTML: {e}")
+            import traceback
+            traceback.print_exc()
 
         print(f"\n✅ پایان عملیات ({sent_count} ارسال شد)")
-    except Exception as e: print(f"❌ خطای حیاتی: {e}")
-    finally: await client.disconnect()
+    except Exception as e:
+        print(f"❌ خطای حیاتی: {e}")
+        import traceback
+        traceback.print_exc()
+    finally:
+        await client.disconnect()
 
 if __name__ == "__main__":
-    with client: client.loop.run_until_complete(main())
+    with client:
+        client.loop.run_until_complete(main())

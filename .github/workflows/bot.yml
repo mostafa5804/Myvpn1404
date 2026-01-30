@@ -2,33 +2,31 @@ name: V2Ray Collector Bot
 
 on:
   schedule:
-    - cron: '0,40 * * * *'
-    - cron: '20 * * * *'
+    - cron: '0 * * * *'   # دقیقه 0 (هر ساعت)
+    - cron: '40 * * * *'  # دقیقه 40 (هر ساعت)
   workflow_dispatch:
 
-# ⬇️ این خط رو اضافه کن
 permissions:
   contents: write
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     
     steps:
-    - name: Checkout code
+    - name: Checkout
       uses: actions/checkout@v3
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}  # ⬅️ این رو اضافه کن
+        token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Set up Python
+    - name: Setup Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
 
-    - name: Install dependencies
-      run: |
-        pip install telethon jdatetime pytz
+    - name: Install deps
+      run: pip install telethon jdatetime pytz
 
     - name: Run bot
       env:
@@ -37,15 +35,14 @@ jobs:
         SESSION_STRING: ${{ secrets.SESSION_STRING }}
       run: python main.py
 
-    - name: Commit GitHub Pages
+    - name: Commit
       run: |
         git config --global user.name "VPN Bot"
         git config --global user.email "bot@github.com"
-        
         if [ -f "index.html" ]; then
           git add index.html
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Update $(date +'%Y-%m-%d %H:%M')" && git push)
-          echo "✅ Updated"
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 $(date +'%Y-%m-%d %H:%M')" && git push)
+          echo "✅ Done"
         else
-          echo "⚠️ No index.html"
+          echo "⚠️ No file"
         fi

@@ -66,7 +66,6 @@ def get_channel_batch():
     - دقیقه ۴۰ تا ۸۰: دسته دوم (۲۰ تای دوم)
     """
     now = datetime.now(iran_tz)
-    # دقیقه کل روز تقسیم بر ۴۰ -> باقیمانده بر ۲ مشخص می‌کند نوبت کیست
     batch_index = ((now.hour * 60 + now.minute) // 40) % 2
     
     if batch_index == 0:
@@ -214,16 +213,25 @@ def get_config_usage_guide(config_link):
 def get_proxy_usage_guide():
     return "💡 برای اتصال روی لینک کلیک کنید"
 
+def clean_title(title):
+    """پاکسازی عنوان کانال از کاراکترهای مخرب مارک‌داون"""
+    if not title: return "Channel"
+    # حذف براکت، پرانتز و کاراکترهای خاص که لینک را خراب می‌کنند
+    return re.sub(r'[\[\]\(\)\*`_]', '', str(title)).strip()
+
 def create_minimal_footer(channel_title, message_link):
-    """ساخت فوتر مینیمال با لینک به منبع و آیدی شما"""
+    """ساخت فوتر مینیمال با لینک سالم به منبع"""
     now_iran = datetime.now(iran_tz)
     date_str = jdatetime.datetime.fromgregorian(datetime=now_iran).strftime("%Y/%m/%d")
     time_str = now_iran.strftime("%H:%M")
     
-    # خط جداکننده ساده و شیک + منبع لینک دار + آیدی کانال شما
+    # پاکسازی نام کانال برای جلوگیری از شکستن لینک
+    safe_title = clean_title(channel_title)
+    
     footer = f"\n━━━━━━━━━━━━━━━━\n"
     footer += f"🗓 {date_str} • 🕐 {time_str}\n"
-    footer += f"📡 منبع: [{channel_title}]({message_link})\n"
+    # فرمت صحیح مارک‌داون: [نام تمیز](لینک)
+    footer += f"📡 منبع: [{safe_title}]({message_link})\n"
     footer += f"🔗 {destination_channel}"
     return footer
 
@@ -239,7 +247,6 @@ async def main():
         print(f"⏳ صبر {initial_wait} ثانیه...")
         await asyncio.sleep(initial_wait)
         
-        # ۱. دریافت دسته کانال‌ها (رفع باگ تداخل لیست)
         source_channels, batch_name = get_channel_batch()
         print(f"--- شروع بررسی دسته {batch_name} ---")
         
@@ -272,27 +279,23 @@ async def main():
         all_files_data = {}
         all_proxies_data = {}
         
-        # حلقه اصلی روی کانال‌ها (رفع باگ enumerate)
+        # حلقه اصلی روی کانال‌ها
         for i, channel_username in enumerate(source_channels):
-            if sent_count >= MAX_PER_RUN:
-                break
+            if sent_count >= MAX_PER_RUN: break
             
             try:
-                # تاخیر بین کانال‌ها برای امنیت
                 if i > 0:
                     delay = random.uniform(5, 8)
                     await asyncio.sleep(delay)
                 
                 print(f"\n🔍 کانال {i+1}/20: {channel_username}")
                 
-                # دریافت نام کانال
                 try:
                     entity = await client.get_entity(channel_username)
                     ch_title = entity.title if hasattr(entity, 'title') else channel_username
                 except:
                     ch_title = channel_username
                 
-                # مخازن موقت برای تجمیع (Grouping)
                 temp_files = []
                 temp_proxies = []
                 temp_configs = []
@@ -300,14 +303,12 @@ async def main():
                 async for message in client.iter_messages(entity, offset_date=time_threshold, reverse=True, limit=40):
                     orig_link = f"https://t.me/{channel_username[1:]}/{message.id}"
                     
-                    # استخراج فایل
                     if message.file:
                         fname = message.file.name if message.file.name else ""
                         if any(fname.lower().endswith(ext) for ext in allowed_extensions):
                             if fname not in sent_files:
                                 temp_files.append({'name': fname, 'media': message.media, 'link': orig_link})
                     
-                    # استخراج پروکسی
                     if message.text or message.entities:
                         p_links = re.findall(r"(?:tg|https)://t\.me/proxy\?server=[\w\.-]+&port=\d+&secret=[\w\.-]+", message.text or "")
                         for p in list(set(p_links)):
@@ -321,7 +322,6 @@ async def main():
                                         'orig_link': orig_link
                                     })
 
-                    # استخراج کانفیگ
                     if message.text:
                         confs = re.findall(config_regex, message.text)
                         for c in confs:
@@ -331,12 +331,13 @@ async def main():
 
                 print(f"📊 یافت شد: {len(temp_files)} فایل، {len(temp_proxies)} پروکسی، {len(temp_configs)} کانفیگ")
 
-                # --- 1. ارسال فایل‌ها (تکی) ---
+                # --- 1. ارسال فایل‌ها ---
                 for item in temp_files:
                     if sent_count >= MAX_PER_RUN: break
                     try:
                         caption = f"📂 **{item['name']}**\n"
                         caption += f"{get_file_usage_guide(item['name'])}\n"
+                        # استفاده از تابع اصلاح شده برای فوتر
                         caption += create_minimal_footer(ch_title, item['link'])
                         
                         sent_msg = await client.send_file(destination_channel, item['media'], caption=caption)
@@ -347,7 +348,7 @@ async def main():
                         await asyncio.sleep(3)
                     except Exception as e: print(f"❌ فایل: {e}")
 
-                # --- 2. ارسال پروکسی‌ها (گروهی در یک پیام) ---
+                # --- 2. ارسال پروکسی‌ها (گروهی) ---
                 valid_proxies_in_channel = []
                 if temp_proxies:
                     print(f"  🔍 تست {len(temp_proxies)} پروکسی...")
@@ -362,11 +363,8 @@ async def main():
                                 'key': item['key'], 'orig_link': item['orig_link']
                             })
                             sent_proxies.add(item['key'])
-                            
-                            # ذخیره برای سایت
                             all_proxies_data[item['key']] = {'link': item['link'], 'channel': ch_title, 't_link': '#'}
                 
-                # ارسال همه پروکسی‌های سالم این کانال در یک پیام واحد
                 if valid_proxies_in_channel:
                     try:
                         msg_body = "🔵 **پروکسی‌های جدید**\n\n"
@@ -374,12 +372,12 @@ async def main():
                             msg_body += f"{i}. [اتصال]({p['link']}) • {p['flag']} {p['status']} {p['ping']}\n"
                         
                         msg_body += get_proxy_usage_guide()
+                        # استفاده از تابع اصلاح شده برای فوتر
                         msg_body += create_minimal_footer(ch_title, valid_proxies_in_channel[0]['orig_link'])
                         
                         sent_msg = await client.send_message(destination_channel, msg_body, link_preview=False)
                         print(f"  ✅ لیست پروکسی ارسال شد ({len(valid_proxies_in_channel)} عدد)")
                         
-                        # آپدیت لینک تلگرام برای سایت
                         my_link = f"https://t.me/{destination_channel[1:]}/{sent_msg.id}"
                         for p in valid_proxies_in_channel:
                             all_proxies_data[p['key']]['t_link'] = my_link
@@ -388,7 +386,7 @@ async def main():
                         await asyncio.sleep(3)
                     except Exception as e: print(f"❌ ارسال گروهی پروکسی: {e}")
 
-                # --- 3. ارسال کانفیگ‌ها (با دکمه کپی کد) ---
+                # --- 3. ارسال کانفیگ‌ها ---
                 for item in temp_configs:
                     if sent_count >= MAX_PER_RUN: break
                     try:
@@ -397,14 +395,13 @@ async def main():
                             prot = item['config'].split("://")[0].upper()
                             ping_txt = f"{lat}ms" if lat else ""
                             
-                            # استایل مینیمال با Code Block برای کپی راحت
                             txt = f"🔮 **{prot}**\n\n"
-                            txt += f"```{item['config']}```\n" # این خط دکمه کپی کد را ایجاد می‌کند
+                            txt += f"```{item['config']}```\n"
                             txt += f"📊 وضعیت: {status} • {ping_txt}\n"
                             txt += f"{get_config_usage_guide(item['config'])}\n"
+                            # استفاده از تابع اصلاح شده برای فوتر
                             txt += create_minimal_footer(ch_title, item['orig_link'])
                             
-                            # link_preview=False برای جلوگیری از بهم ریختگی
                             sent_msg = await client.send_message(destination_channel, txt, link_preview=False)
                             
                             my_link = f"https://t.me/{destination_channel[1:]}/{sent_msg.id}"
@@ -424,7 +421,7 @@ async def main():
                 continue
 
         # -----------------------------------------------------------------------------
-        # 4. ساخت صفحه وب (GitHub Pages) - Mobile First & Responsive
+        # 4. ساخت صفحه وب (GitHub Pages)
         # -----------------------------------------------------------------------------
         try:
             print("\n📄 ساخت صفحه وب...")

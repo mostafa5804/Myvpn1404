@@ -35,7 +35,15 @@ jobs:
         git config --global user.email "bot@github.com"
         git pull origin main --rebase || echo "⚠️ Nothing to pull or rebase failed"
 
-            - name: Check & Push Changes
+    - name: Run bot
+      env:
+        API_ID: ${{ secrets.API_ID }}
+        API_HASH: ${{ secrets.API_HASH }}
+        SESSION_STRING: ${{ secrets.SESSION_STRING }}
+        SESSION_STRING_2: ${{ secrets.SESSION_STRING_2 }}
+      run: python main.py
+
+    - name: Check & Push Changes
       run: |
         # 1. تنظیم هویت گیت
         git config --global user.name "VPN Bot"
@@ -57,8 +65,7 @@ jobs:
           git commit -m "🔄 Auto-Update: $(date +'%Y-%m-%d %H:%M')"
           
           # ==========================================
-          # ✅ بخش حیاتی که فراموش کردید (اضافه شد):
-          # اول تغییرات جدید را می‌گیرد تا ارور ندهد
+          # ✅ خط حیاتی که جا انداخته بودید:
           # ==========================================
           git pull --rebase origin main
           

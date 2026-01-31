@@ -9,6 +9,7 @@ import socket
 import random
 import time
 import sys
+import html  # این ماژول برای درست کردن لینک‌ها حیاتی است
 from datetime import datetime, timedelta, timezone
 from telethon import TelegramClient
 from telethon.sessions import StringSession
@@ -21,7 +22,7 @@ from telethon.errors.rpcerrorlist import FloodWaitError
 api_id = int(os.environ['API_ID'])
 api_hash = os.environ['API_HASH']
 
-# دریافت سشن‌ها
+# دریافت سشن‌ها (اولویت با سشن 2)
 session_1 = os.environ.get('SESSION_STRING')
 session_2 = os.environ.get('SESSION_STRING_2')
 
@@ -86,9 +87,6 @@ def get_batch_info():
         print(f"👤 نوبت نیمه دوم (کانال 21-40)")
         return ALL_CHANNELS[20:], "دوم", target_session
 
-def is_iran_ip(ip):
-    return any(ip.startswith(p) for p in IRAN_IP_PREFIXES)
-
 def clean_title(t):
     if not t: return "Channel"
     return re.sub(r'[\[\]\(\)\*`_]', '', str(t)).strip()
@@ -127,7 +125,7 @@ async def check_status(link, type='config'):
         lat = await check_ping(host, port)
         if lat is None:
             try:
-                if is_iran_ip(socket.gethostbyname(host)): return "🔵 اینترانت", None, True
+                if any(host.startswith(p) for p in IRAN_IP_PREFIXES): return "🔵 اینترانت", None, True
             except: pass
             return "🔴 آفلاین", None, False
         if lat < 100: return "🟢 عالی", lat, False
@@ -141,7 +139,7 @@ def extract_proxy_key(link):
     return str(time.time())
 
 # =============================================================================
-# 4. بدنه اصلی
+# 3. بدنه اصلی ربات
 # =============================================================================
 target_channels, batch_name, active_session = get_batch_info()
 
@@ -158,18 +156,19 @@ async def main():
         
         hist = load_data()
         
+        # لیست هش‌ها برای جلوگیری از تکرار
         sent_hashes = set()
         for c in hist['configs']: sent_hashes.add(c['config'])
         for p in hist['proxies']: sent_hashes.add(p['link'])
         for f in hist['files']: sent_hashes.add(f['name'])
         
-        print(f"🔄 {len(sent_hashes)} آیتم در حافظه.")
-        
+        print(f"🔄 {len(sent_hashes)} آیتم در حافظه موقت.")
         await asyncio.sleep(random.randint(5, 10))
         
         new_conf, new_prox, new_file = [], [], []
         cutoff_time = datetime.now(timezone.utc) - timedelta(minutes=MAX_MESSAGE_AGE_MINUTES)
 
+        # شروع پیمایش کانال‌ها
         for i, channel_str in enumerate(target_channels):
             try:
                 wait_time = random.randint(15, 20)
@@ -190,39 +189,46 @@ async def main():
                 title = getattr(entity, 'title', channel_str)
                 
                 for m in msgs:
+                    # نادیده گرفتن پیام‌های قدیمی
                     if m.date < cutoff_time: continue
-
+                    
                     link = f"https://t.me/{channel_str[1:]}/{m.id}"
                     
                     if m.text:
+                        # استخراج کانفیگ
                         for c in re.findall(r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic)://[^\s\n]+", m.text):
                             if c not in sent_hashes:
                                 temp_c.append({'c': c, 'link': link})
                                 sent_hashes.add(c)
                         
+                        # استخراج پروکسی
                         for p in re.findall(r"https://t.me/proxy\?[^\s\n]+", m.text):
                             clean_p = p.replace('https', 'tg')
                             if clean_p not in sent_hashes:
-                                temp_p.append({'p': clean_p, 'link': link})
+                                temp_p.append({'p': clean_p, 'link': link, 'src': link})
                                 sent_hashes.add(clean_p)
 
+                    # استخراج فایل
                     if m.file and any(m.file.name.endswith(x) for x in allowed_extensions if m.file.name):
                         if m.file.name not in sent_hashes:
                             temp_f.append({'n': m.file.name, 'm': m, 'link': link})
                             sent_hashes.add(m.file.name)
 
+                # ارسال کانفیگ‌ها
                 for item in temp_c:
                     stat, lat, _ = await check_status(item['c'])
                     if stat:
                         prot = item['c'].split('://')[0].upper()
+                        # ارسال به صورت کد بلاک برای کپی راحت
                         txt = f"🔮 **{prot}**\n\n```\n{item['c']}\n```\n📊 {stat} • {lat}ms\n{get_hashtags(item['c'], 'config')}{create_footer(title, item['link'])}"
                         try:
                             sent = await client.send_message(destination_channel, txt, link_preview=False)
                             my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
                             new_conf.append({'protocol': prot, 'config': item['c'], 'latency': lat, 'channel': title, 't_link': my_link, 'ts': time.time()})
                             await asyncio.sleep(3)
-                        except Exception as e: print(f"ارسال ناموفق: {e}")
+                        except Exception as e: print(f"ارسال ناموفق کانفیگ: {e}")
 
+                # ارسال پروکسی‌ها (رفع مشکل لینک با HTML)
                 valid_proxies = []
                 for item in temp_p:
                     stat, lat, _ = await check_status(item['p'], 'proxy')
@@ -232,38 +238,31 @@ async def main():
                         k = extract_proxy_key(item['p'])
                         new_prox.append({'key': k, 'link': item['p'], 'channel': title, 't_link': '#', 'ts': time.time()})
                 
-                
-                # ✅ کد جدید (درست):
-if valid_proxies:
-    # ساخت پیام با لینک‌های MarkdownV2
-    body = "🔵 **پروکسی‌های جدید**\n\n"
-    
-    for idx, p in enumerate(valid_proxies, 1):
-        # استفاده از Markdown برای لینک
-        body += f"{idx}. [اتصال مستقیم]({p['l']}) • {p['s']} {p['pi']}\n"
-    
-    # فوتر با Markdown
-    now = datetime.now(iran_tz)
-    safe_title = clean_title(title)
-    src_link = valid_proxies[0]['src']
-    footer_md = f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: [{safe_title}]({src_link})\n🔗 {destination_channel}"
-    
-    body += "\n💡 برای اتصال روی لینک کلیک کنید" + footer_md
+                if valid_proxies:
+                    # استفاده از HTML برای لینک‌دار کردن کلمه "اتصال"
+                    body = "🔵 <b>پروکسی‌های جدید</b>\n\n"
+                    for idx, p in enumerate(valid_proxies, 1):
+                        safe_link = html.escape(p['l'])
+                        body += f"{idx}. <a href='{safe_link}'>اتصال</a> • {p['s']} {p['pi']}\n"
+                    
+                    # فوتر اختصاصی HTML
+                    now = datetime.now(iran_tz)
+                    safe_title = html.escape(clean_title(title))
+                    src_link = html.escape(valid_proxies[0]['src'])
+                    footer_html = f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: <a href='{src_link}'>{safe_title}</a>\n🔗 {destination_channel}"
+                    
+                    body += "\n💡 برای اتصال روی لینک کلیک کنید" + footer_html
+                    
+                    try:
+                        sent = await client.send_message(destination_channel, body, parse_mode='html', link_preview=False)
+                        my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
+                        for p in new_prox: 
+                            if p['channel'] == title: p['t_link'] = my_link
+                        await asyncio.sleep(3)
+                    except Exception as e:
+                        print(f"ارسال ناموفق پروکسی: {e}")
 
-    try:
-        # ارسال با parse_mode=None (استفاده از Markdown پیش‌فرض)
-        sent = await client.send_message(
-            destination_channel, 
-            body, 
-            link_preview=False
-        )
-        my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
-        for p in new_prox: 
-            if p['channel'] == title: 
-                p['t_link'] = my_link
-        await asyncio.sleep(3)
-    except Exception as e:
-        print(f"ارسال ناموفق پروکسی: {e}")
+                # ارسال فایل‌ها
                 for item in temp_f:
                     cap = f"📂 **{item['n']}**\n\n{get_hashtags(item['n'])}{create_footer(title, item['link'])}"
                     try:
@@ -273,21 +272,20 @@ if valid_proxies:
                         await asyncio.sleep(3)
                     except: pass
 
-            except Exception as e: 
+            except Exception as e:
                 print(f"Err {channel_str}: {e}")
                 continue
-        
-        # -------------------------------------------------------------
-        # ذخیره و ساخت سایت (اصلاح شده)
-        # -------------------------------------------------------------
+
+        # =============================================================================
+        # 4. ذخیره دیتابیس و ساخت سایت (بخش Premium)
+        # =============================================================================
         print("💾 ذخیره دیتابیس...")
-        # ادغام داده‌های جدید با قدیمی
         f_c = merge_data(hist['configs'], new_conf, 'config')
         f_p = merge_data(hist['proxies'], new_prox, 'key')
         f_f = merge_data(hist['files'], new_file, 'name')
         save_data({'configs': f_c, 'proxies': f_p, 'files': f_f})
         
-        # تنظیم متغیرهای مورد نیاز برای قالب HTML جدید
+        # متغیرهای مورد نیاز برای سایت
         live_configs = f_c
         all_proxies_data = {p['key']: p for p in f_p} if f_p else {}
         all_files_data = {f['name']: f for f in f_f} if f_f else {}
@@ -296,14 +294,12 @@ if valid_proxies:
         
         now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
         
-        # HTML کانفیگ
+        # تولید HTML کانفیگ‌ها
         html_configs = ""
         if live_configs:
-            # استفاده از get برای جلوگیری از ارور اگر latency نباشد
             for idx, cfg in enumerate(sorted(live_configs, key=lambda x: x.get('latency', 9999)), 1):
                 lat = cfg.get('latency', 9999)
                 status_class = "excellent" if lat < 100 else "good" if lat < 200 else "medium"
-                # ایمن‌سازی متن برای جاوااسکریپت
                 safe_config = cfg['config'].replace("'", "\\'").replace('"', '\\"').replace('\n', '\\n')
                 t_link = cfg.get('t_link', '#')
                 
@@ -338,7 +334,7 @@ if valid_proxies:
         else:
             html_configs = '<div class="empty"><i class="fas fa-inbox"></i><p>هیچ کانفیگ زنده‌ای موجود نیست</p></div>'
         
-        # HTML پروکسی
+        # تولید HTML پروکسی‌ها
         html_proxies = ""
         if all_proxies_data:
             for idx, (key, data) in enumerate(all_proxies_data.items(), 1):
@@ -365,12 +361,12 @@ if valid_proxies:
         else:
             html_proxies = '<div class="empty"><i class="fas fa-shield-alt"></i><p>پروکسی موجود نیست</p></div>'
         
-        # HTML فایل
+        # تولید HTML فایل‌ها
         html_files = ""
         if all_files_data:
             for idx, (fname, data) in enumerate(all_files_data.items(), 1):
                 ext = fname.split('.')[-1].upper() if '.' in fname else 'FILE'
-                t_link = data.get('link', '#') # برای فایل لینک اصلی همان لینک دانلود است یا لینک تلگرام
+                t_link = data.get('link', '#')
                 html_files += f"""
         <div class="card">
             <div class="card-header">
@@ -390,12 +386,13 @@ if valid_proxies:
         else:
             html_files = '<div class="empty"><i class="fas fa-folder-open"></i><p>فایل موجود نیست</p></div>'
         
-        # آمار
+        # محاسبه آمار
         total_configs = len(live_configs)
         valid_pings = [c.get('latency', 999) for c in live_configs if isinstance(c.get('latency'), int)]
         avg_ping = int(sum(valid_pings) / len(valid_pings)) if valid_pings else 0
         excellent_count = len([p for p in valid_pings if p < 100])
         
+        # ساخت فایل HTML نهایی
         full_html = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>

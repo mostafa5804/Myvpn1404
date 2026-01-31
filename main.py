@@ -15,13 +15,13 @@ from telethon.sessions import StringSession
 from telethon.tl.types import MessageEntityTextUrl
 from telethon.errors.rpcerrorlist import FloodWaitError
 
-# -----------------------------------------------------------------------------
+# =============================================================================
 # 1. تنظیمات و پیکربندی
-# -----------------------------------------------------------------------------
+# =============================================================================
 api_id = int(os.environ['API_ID'])
 api_hash = os.environ['API_HASH']
 
-# دریافت سشن‌ها
+# دریافت سشن‌ها (اولویت با سشن 2 اگر سشن 1 بن شده باشد)
 session_1 = os.environ.get('SESSION_STRING')
 session_2 = os.environ.get('SESSION_STRING_2')
 
@@ -30,6 +30,7 @@ PING_TIMEOUT = 2
 DATA_FILE = 'data.json'
 KEEP_HISTORY_HOURS = 24
 destination_channel = '@myvpn1404'
+MAX_MESSAGE_AGE_MINUTES = 90  # فقط پیام‌های 90 دقیقه اخیر
 
 ALL_CHANNELS = [
     '@KioV2ray', '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mypremium98',
@@ -47,9 +48,9 @@ allowed_extensions = {'.npv4', '.npv2', '.npvt', '.dark', '.ehi', '.txt', '.conf
 iran_tz = pytz.timezone('Asia/Tehran')
 IRAN_IP_PREFIXES = ['2.144.', '5.22.', '31.2.', '37.9.', '46.18.', '78.38.', '85.9.', '91.98.', '93.88.', '185.']
 
-# -----------------------------------------------------------------------------
-# 2. توابع کمکی
-# -----------------------------------------------------------------------------
+# =============================================================================
+# 2. توابع کمکی دیتابیس و شبکه
+# =============================================================================
 def load_data():
     if not os.path.exists(DATA_FILE): return {'configs': [], 'proxies': [], 'files': []}
     try:
@@ -75,21 +76,26 @@ def merge_data(history, new_items, key):
     return res
 
 def get_batch_info():
+    """تعیین نوبت کانال‌ها و انتخاب سشن سالم"""
     minute = datetime.now(iran_tz).minute
-    # استراتژی: همیشه اولویت با سشن 2 (سالم) است
+    
+    # استراتژی: همیشه اولویت با سشن 2 است (چون سشن 1 احتمالا لیمیت است)
+    # اگر سشن 2 ست نشده باشد، مجبوریم از سشن 1 استفاده کنیم
     target_session = session_2 if session_2 else session_1
     
     if minute < 30:
-        print("👤 نوبت نیمه اول (کانال 1-20)")
+        print(f"👤 نوبت نیمه اول (کانال 1-20) - استفاده از سشن {'دوم' if target_session == session_2 else 'اول'}")
         return ALL_CHANNELS[:20], "اول", target_session
     else:
-        print("👤 نوبت نیمه دوم (کانال 21-40)")
+        print(f"👤 نوبت نیمه دوم (کانال 21-40) - استفاده از سشن {'دوم' if target_session == session_2 else 'اول'}")
         return ALL_CHANNELS[20:], "دوم", target_session
 
 def is_iran_ip(ip):
     return any(ip.startswith(p) for p in IRAN_IP_PREFIXES)
 
-def clean_title(t): return re.sub(r'[\[\]\(\)\*`_]', '', str(t)).strip() if t else "Channel"
+def clean_title(t): 
+    # حذف کاراکترهای مخرب Markdown
+    return re.sub(r'[\[\]\(\)\*`_]', '', str(t)).strip() if t else "Channel"
 
 def get_hashtags(name, type='file'):
     if type == 'config': return f"#{name.split('://')[0].lower()} #v2rayNG"
@@ -98,7 +104,8 @@ def get_hashtags(name, type='file'):
 
 def create_footer(title, link):
     now = datetime.now(iran_tz)
-    return f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: [{clean_title(title)}]({link})\n🔗 {destination_channel}"
+    safe_title = clean_title(title)
+    return f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: [{safe_title}]({link})\n🔗 {destination_channel}"
 
 async def check_ping(host, port):
     try:
@@ -137,11 +144,10 @@ def extract_proxy_key(link):
     if m: return f"{m.group(1)}:{m.group(2)}"
     return str(time.time())
 
-# -----------------------------------------------------------------------------
-# 3. تولید کننده HTML
-# -----------------------------------------------------------------------------
+# =============================================================================
+# 3. تولید کننده HTML (سایت)
+# =============================================================================
 def generate_html_parts(configs, proxies, files):
-    # کانفیگ
     c_html = ""
     for i, c in enumerate(configs):
         ping_color = '#10b981' if c['latency'] < 200 else '#f59e0b'
@@ -162,7 +168,6 @@ def generate_html_parts(configs, proxies, files):
         </div>'''
     if not configs: c_html = '<div class="empty"><i class="fas fa-box-open"></i><p>لیست خالی است</p></div>'
 
-    # پروکسی
     p_html = ""
     for v in proxies:
         p_html += f'''
@@ -178,7 +183,6 @@ def generate_html_parts(configs, proxies, files):
         </div>'''
     if not proxies: p_html = '<div class="empty"><i class="fas fa-shield-virus"></i><p>پروکسی موجود نیست</p></div>'
 
-    # فایل
     f_html = ""
     for v in files:
         f_html += f'''
@@ -197,13 +201,13 @@ def generate_html_parts(configs, proxies, files):
     
     return c_html, p_html, f_html
 
-# -----------------------------------------------------------------------------
-# 4. بدنه اصلی
-# -----------------------------------------------------------------------------
+# =============================================================================
+# 4. بدنه اصلی (Main Loop)
+# =============================================================================
 target_channels, batch_name, active_session = get_batch_info()
 
 if not active_session:
-    print("❌ خطای حیاتی: سشن یافت نشد!")
+    print("❌ خطای حیاتی: سشن یافت نشد! لطفا Secrets را چک کنید.")
     sys.exit(1)
 
 client = TelegramClient(StringSession(active_session), api_id, api_hash)
@@ -213,12 +217,21 @@ async def main():
         await client.start()
         print(f"✅ ربات متصل شد ({batch_name})")
         
+        # لود دیتابیس برای جلوگیری از تکرار
         hist = load_data()
+        
+        # ساخت لیست هش‌ها برای چک کردن تکراری‌ها
+        sent_hashes = set()
+        for c in hist['configs']: sent_hashes.add(c['config'])
+        for p in hist['proxies']: sent_hashes.add(p['link'])
+        for f in hist['files']: sent_hashes.add(f['name'])
+        
+        print(f"🔄 {len(sent_hashes)} آیتم در حافظه برای جلوگیری از تکرار.")
         
         await asyncio.sleep(random.randint(5, 10))
         
         new_conf, new_prox, new_file = [], [], []
-        sent_hashes = set()
+        cutoff_time = datetime.now(timezone.utc) - timedelta(minutes=MAX_MESSAGE_AGE_MINUTES)
 
         for i, channel_str in enumerate(target_channels):
             try:
@@ -229,44 +242,57 @@ async def main():
                 try:
                     entity = await client.get_entity(channel_str)
                 except FloodWaitError as e:
-                    print(f"❌ لیمیت تلگرام: {e.seconds}s")
+                    print(f"❌ لیمیت تلگرام برای {channel_str}: {e.seconds} ثانیه. عبور.")
                     continue
                 except:
-                    print("⚠️ کانال یافت نشد")
+                    print("⚠️ کانال در دسترس نیست.")
                     continue
 
-                msgs = await client.get_messages(entity, limit=30)
+                msgs = await client.get_messages(entity, limit=20)
                 temp_c, temp_p, temp_f = [], [], []
                 title = getattr(entity, 'title', channel_str)
                 
                 for m in msgs:
+                    # نادیده گرفتن پیام‌های قدیمی
+                    if m.date < cutoff_time: continue
+
                     link = f"[https://t.me/](https://t.me/){channel_str[1:]}/{m.id}"
+                    
+                    # استخراج کانفیگ
                     if m.text:
                         for c in re.findall(r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic)://[^\s\n]+", m.text):
                             if c not in sent_hashes:
                                 temp_c.append({'c': c, 'link': link})
                                 sent_hashes.add(c)
+                        
+                        # استخراج پروکسی
                         for p in re.findall(r"[https://t.me/proxy](https://t.me/proxy)\?[^\s\n]+", m.text):
-                            temp_p.append({'p': p.replace('https', 'tg'), 'link': link})
-                    if m.file and any(m.file.name.endswith(x) for x in allowed_extensions if m.file.name):
-                        temp_f.append({'n': m.file.name, 'm': m, 'link': link})
+                            clean_p = p.replace('https', 'tg')
+                            if clean_p not in sent_hashes:
+                                temp_p.append({'p': clean_p, 'link': link})
+                                sent_hashes.add(clean_p)
 
-                # ارسال کانفیگ با فرمت کد بلاک (درست شد)
+                    # استخراج فایل
+                    if m.file and any(m.file.name.endswith(x) for x in allowed_extensions if m.file.name):
+                        if m.file.name not in sent_hashes:
+                            temp_f.append({'n': m.file.name, 'm': m, 'link': link})
+                            sent_hashes.add(m.file.name)
+
+                # ارسال کانفیگ (Code Block Style)
                 for item in temp_c:
                     stat, lat, _ = await check_status(item['c'])
                     if stat:
                         prot = item['c'].split('://')[0].upper()
-                        # اینجا تغییر دادم: استفاده از ``` برای کپی راحت
+                        # این فرمت باعث کپی شدن کد می‌شود
                         txt = f"🔮 **{prot}**\n\n```\n{item['c']}\n```\n📊 {stat} • {lat}ms\n{get_hashtags(item['c'], 'config')}{create_footer(title, item['link'])}"
                         try:
                             sent = await client.send_message(destination_channel, txt, link_preview=False)
-                            my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
+                            my_link = f"[https://t.me/](https://t.me/){destination_channel[1:]}/{sent.id}"
                             new_conf.append({'protocol': prot, 'config': item['c'], 'latency': lat, 'channel': title, 't_link': my_link, 'ts': time.time()})
                             await asyncio.sleep(3)
-                        except Exception as e:
-                            print(f"ارسال ناموفق: {e}")
+                        except Exception as e: print(f"ارسال ناموفق: {e}")
 
-                # ارسال پروکسی با لینک قابل کلیک (درست شد)
+                # ارسال پروکسی (Link Style)
                 valid_proxies = []
                 for item in temp_p:
                     stat, lat, _ = await check_status(item['p'], 'proxy')
@@ -279,33 +305,31 @@ async def main():
                 if valid_proxies:
                     body = "🔵 **پروکسی‌های جدید**\n\n"
                     for idx, p in enumerate(valid_proxies, 1):
-                        # فرمت لینک دار: [اتصال](لینک)
                         body += f"{idx}. [اتصال]({p['l']}) • {p['s']} {p['pi']}\n"
                     body += "\n💡 برای اتصال روی لینک کلیک کنید" + create_footer(title, valid_proxies[0]['src'])
                     try:
                         sent = await client.send_message(destination_channel, body, link_preview=False)
-                        my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
+                        my_link = f"[https://t.me/](https://t.me/){destination_channel[1:]}/{sent.id}"
                         for p in new_prox: 
                             if p['channel'] == title: p['t_link'] = my_link
                         await asyncio.sleep(3)
-                    except Exception as e:
-                         print(f"ارسال ناموفق پروکسی: {e}")
+                    except: pass
 
-                # فایل (تغییری نکرد چون اوکی بود)
+                # ارسال فایل
                 for item in temp_f:
                     cap = f"📂 **{item['n']}**\n\n{get_hashtags(item['n'])}{create_footer(title, item['link'])}"
                     try:
                         sent = await client.send_file(destination_channel, item['m'], caption=cap)
-                        my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
+                        my_link = f"[https://t.me/](https://t.me/){destination_channel[1:]}/{sent.id}"
                         new_file.append({'name': item['n'], 'ext': item['n'].split('.')[-1], 'channel': title, 'link': my_link, 'ts': time.time()})
                         await asyncio.sleep(3)
-                    except Exception as e:
-                         print(f"ارسال ناموفق فایل: {e}")
+                    except: pass
 
             except Exception as e: 
                 print(f"Err {channel_str}: {e}")
                 continue
 
+        # ذخیره و ساخت سایت
         print("💾 ذخیره دیتابیس...")
         f_c = merge_data(hist['configs'], new_conf, 'config')
         f_p = merge_data(hist['proxies'], new_prox, 'key')
@@ -314,7 +338,7 @@ async def main():
 
         print(f"📊 آمار نهایی: {len(f_c)} کانفیگ، {len(f_p)} پروکسی")
 
-        # ساخت HTML (بعد از پر شدن لیست‌ها)
+        # تولید HTML
         html_c, html_p, html_f = generate_html_parts(f_c, f_p, f_f)
         now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
         
@@ -323,8 +347,8 @@ async def main():
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VPN Hub | {destination_channel}</title>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="[https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css](https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css)" rel="stylesheet">
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
     <style>
         :root {{ --bg: #0f172a; --card: #1e293b; --primary: #38bdf8; --text: #f1f5f9; --sub: #94a3b8; --border: #334155; }}
         * {{ margin:0; padding:0; box-sizing:border-box; font-family:'Vazirmatn',sans-serif; }}
@@ -391,7 +415,7 @@ async def main():
         }}
         function showQRFrom(id) {{
             const txt = document.getElementById(id).innerText;
-            document.getElementById('qrImg').src = 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=' + encodeURIComponent(txt);
+            document.getElementById('qrImg').src = '[https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=](https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=)' + encodeURIComponent(txt);
             document.getElementById('qrModal').style.display = 'flex';
         }}
     </script>

@@ -377,11 +377,22 @@ async def main():
         
         now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
         
-        # تولید HTML کانفیگ‌ها
+          # تولید HTML کانفیگ‌ها
         html_configs = ""
         if live_configs:
-            for idx, cfg in enumerate(sorted(live_configs, key=lambda x: x.get('latency', 9999)), 1):
-                lat = cfg.get('latency', 9999)
+            # تابع کمکی برای مرتب‌سازی امن (اگر None بود، ۹۹۹۹ شود)
+            def sort_key(x):
+                val = x.get('latency')
+                return val if isinstance(val, int) else 9999
+
+            # استفاده از تابع کمکی در sorted
+            for idx, cfg in enumerate(sorted(live_configs, key=sort_key), 1):
+                lat = cfg.get('latency')
+                
+                # اگر پینگ None بود (آفلاین)، مقدار ۹۹۹۹ بگیرد تا رنگ قرمز شود
+                if not isinstance(lat, int):
+                    lat = 9999
+                
                 status_class = "excellent" if lat < 100 else "good" if lat < 200 else "medium"
                 safe_config = cfg['config'].replace("'", "\\'").replace('"', '\\"').replace('\n', '\\n')
                 t_link = cfg.get('t_link', '#')
@@ -416,7 +427,7 @@ async def main():
         """
         else:
             html_configs = '<div class="empty"><i class="fas fa-inbox"></i><p>هیچ کانفیگ زنده‌ای موجود نیست</p></div>'
-        
+
         # تولید HTML پروکسی‌ها
         html_proxies = ""
         if all_proxies_data:

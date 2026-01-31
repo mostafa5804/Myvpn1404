@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VPN Hub | @myvpn1404</title>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="[https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css](https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css)" rel="stylesheet">
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
     <style>
         :root { --bg: #0f172a; --card: #1e293b; --primary: #38bdf8; --text: #f1f5f9; --sub: #94a3b8; --border: #334155; }
         * { margin:0; padding:0; box-sizing:border-box; font-family:'Vazirmatn',sans-serif; }
@@ -14,7 +14,7 @@
         .card { background:var(--card); border-radius:16px; padding:16px; margin-bottom:16px; border:1px solid var(--border); animation:fadeIn 0.5s; }
         @keyframes fadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
         .badge { background:rgba(56,189,248,0.1); color:var(--primary); padding:4px 8px; border-radius:6px; font-size:0.75rem; font-weight:bold; }
-        .code-block { background:#0b1120; padding:12px; border-radius:10px; color:#a5b4fc; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; margin:12px 0; direction:ltr; cursor:pointer; }
+        .code-block { background:#0b1120; padding:12px; border-radius:10px; color:#a5b4fc; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; margin:12px 0; direction:ltr; cursor:pointer; font-family:monospace; }
         .actions { display:grid; grid-template-columns:1fr 1fr auto; gap:10px; }
         .btn { padding:10px; border-radius:10px; border:none; cursor:pointer; font-weight:bold; display:flex; align-items:center; justify-content:center; gap:5px; text-decoration:none; }
         .btn-copy { background:var(--primary); color:#0f172a; }
@@ -33,11 +33,389 @@
 <body>
     <header>
         <h2>VPN Hub</h2>
-        <p style="font-size:0.8rem;color:var(--sub)">بروزرسانی: <span dir="ltr">2026/01/31 - 11:16</span></p>
+        <p style="font-size:0.8rem;color:var(--sub)">بروزرسانی: <span dir="ltr">2026/01/31 - 12:57</span></p>
     </header>
 
     <div class="container">
-        <div id="t1" class="tab active"><div class="empty"><i class="fas fa-box-open"></i><p>لیست خالی است</p></div></div>
+        <div id="t1" class="tab active">
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 219ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c0', this)">vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@cf.narton.ir:8443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---MiTiVPN%2F---%40MiTiVPN&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=hitgram.ir&fp=chrome&type=ws&allowInsecure=0&sni=hitgram.ir#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c0', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2930" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c0')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c0" style="display:none">vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@cf.narton.ir:8443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---MiTiVPN%2F---%40MiTiVPN&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=hitgram.ir&fp=chrome&type=ws&allowInsecure=0&sni=hitgram.ir#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 228ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c1', this)">vless://83f03646-fb28-44cc-9d2c-8853f6c09285@cf.narton.ir:8443?path=%2F%3Fed&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=r4fnviw9jl4i4rx.zjde5.de5.net&fp=random&type=ws&allowInsecure=0&sni=r4fnviw9jl4i4rx.zjde5.de5.net#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c1', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2929" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c1')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c1" style="display:none">vless://83f03646-fb28-44cc-9d2c-8853f6c09285@cf.narton.ir:8443?path=%2F%3Fed&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=r4fnviw9jl4i4rx.zjde5.de5.net&fp=random&type=ws&allowInsecure=0&sni=r4fnviw9jl4i4rx.zjde5.de5.net#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 160ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c2', this)">vless://ee753ee4-5819-4f12-9345-02701c17301c@er4.v-sub.site:1517?security=none&encryption=none&host=JouRNaloFbIgdATA.SpRinGeropEn.coM.&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran`</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c2', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2928" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c2')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c2" style="display:none">vless://ee753ee4-5819-4f12-9345-02701c17301c@er4.v-sub.site:1517?security=none&encryption=none&host=JouRNaloFbIgdATA.SpRinGeropEn.coM.&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran`</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 254ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c3', this)">vless://ee753ee4-5819-4f12-9345-02701c17301c@er4.v-sub.site:1517?security=none&encryption=none&host=JouRNaloFbIgdATA.SpRinGeropEn.coM.&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c3', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2927" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c3')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c3" style="display:none">vless://ee753ee4-5819-4f12-9345-02701c17301c@er4.v-sub.site:1517?security=none&encryption=none&host=JouRNaloFbIgdATA.SpRinGeropEn.coM.&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 175ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c4', this)">vless://ee753ee4-5819-4f12-9345-02701c17301c@kw.whaletm2.site:1517?security=none&encryption=none&host=JouRNaloFbIgdATA.SpRinGeropEn.coM.&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c4', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2926" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c4')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c4" style="display:none">vless://ee753ee4-5819-4f12-9345-02701c17301c@kw.whaletm2.site:1517?security=none&encryption=none&host=JouRNaloFbIgdATA.SpRinGeropEn.coM.&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 568ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c5', this)">vless://b78127d1-3255-4274-ba2a-fa1820392402@ninja.thegameuhb.ir:1338?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c5', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2925" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c5')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c5" style="display:none">vless://b78127d1-3255-4274-ba2a-fa1820392402@ninja.thegameuhb.ir:1338?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 274ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c6', this)">vless://e1f71b52-fe12-4965-b3f6-ea2c0d243c31@nv5.napsternet5.com:15015?security=none&encryption=none&host=varzesh3.com&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c6', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2924" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c6')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c6" style="display:none">vless://e1f71b52-fe12-4965-b3f6-ea2c0d243c31@nv5.napsternet5.com:15015?security=none&encryption=none&host=varzesh3.com&headerType=http&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 64ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c7', this)">vless://616c9d7b-28db-4251-a0c1-819123902aeb@ip.hamrahto.com:443?path=%2F&security=tls&encryption=none&insecure=0&host=hm333.mutee.com.tr&fp=chrome&type=ws&allowInsecure=0&sni=hm333.mutee.com.tr#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c7', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2923" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c7')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c7" style="display:none">vless://616c9d7b-28db-4251-a0c1-819123902aeb@ip.hamrahto.com:443?path=%2F&security=tls&encryption=none&insecure=0&host=hm333.mutee.com.tr&fp=chrome&type=ws&allowInsecure=0&sni=hm333.mutee.com.tr#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 403ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c8', this)">vless://adf6647f-5c84-4091-ad38-aa77994b627f@server1.kyra-server.ir:16748?security=none&encryption=none&headerType=none&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c8', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2922" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c8')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c8" style="display:none">vless://adf6647f-5c84-4091-ad38-aa77994b627f@server1.kyra-server.ir:16748?security=none&encryption=none&headerType=none&type=tcp#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+        </div>
+        <div class="card search-item" data-filter="VMESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VMESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 288ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c9', this)">vmess://eyJhZGQiOiAiYTEucGVyc3BvbGlzZ2FtZWJvb3N0ZXIuaXIiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAienVsYS5pciIsICJpZCI6ICI5MDEyMjExYy05YmJiLTQ1Y2MtOTkyYy1mZDg3YjcwMGQ5MDkiLCAiaW5zZWN1cmUiOiAiMCIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiLyIsICJwb3J0IjogIjU4MjIzIiwgInBzIjogItin2KrYtdin2YQg2b7Yp9uM2K/Yp9ixIHwgY29uZmlnc19mcmVlaXJhbiIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJodHRwIiwgInYiOiAiMiJ9</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c9', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2921" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c9')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c9" style="display:none">vmess://eyJhZGQiOiAiYTEucGVyc3BvbGlzZ2FtZWJvb3N0ZXIuaXIiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAienVsYS5pciIsICJpZCI6ICI5MDEyMjExYy05YmJiLTQ1Y2MtOTkyYy1mZDg3YjcwMGQ5MDkiLCAiaW5zZWN1cmUiOiAiMCIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiLyIsICJwb3J0IjogIjU4MjIzIiwgInBzIjogItin2KrYtdin2YQg2b7Yp9uM2K/Yp9ixIHwgY29uZmlnc19mcmVlaXJhbiIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJodHRwIiwgInYiOiAiMiJ9</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 12ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c10', this)">vless://396c904b-4b62-4334-b793-ee25fc0c61cc@chat.openai.com:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&type=ws&allowInsecure=0&sni=pages.dev#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c10', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2920" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c10')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c10" style="display:none">vless://396c904b-4b62-4334-b793-ee25fc0c61cc@chat.openai.com:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&type=ws&allowInsecure=0&sni=pages.dev#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 120ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c11', this)">vless://89708a4d-c1a3-4735-8a96-0c0efa8280e0@netmeli2.iranhostpro.ir:8880?path=%2F%3Fed%3D2080&security=none&encryption=none&host=vaslim2.planet88apk.com&type=ws#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c11', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2919" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c11')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c11" style="display:none">vless://89708a4d-c1a3-4735-8a96-0c0efa8280e0@netmeli2.iranhostpro.ir:8880?path=%2F%3Fed%3D2080&security=none&encryption=none&host=vaslim2.planet88apk.com&type=ws#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran</div>
+        </div>
+        <div class="card search-item" data-filter="VMESS کانفیگ رایگان v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VMESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 330ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ رایگان v2ray</div>
+            <div class="code-block" onclick="copyText('c12', this)">vmess://eyJhZGQiOiAibmV3cHJzdnAub3JnIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogInNwZWVkdGVzdC5uZXQiLCAiaWQiOiAiNTI3ZDliZTItYWZkMS00YTQ4LTgxZjMtY2IyNWM5Y2JiMWIzIiwgImluc2VjdXJlIjogIjAiLCAibmV0IjogInRjcCIsICJwYXRoIjogIi8iLCAicG9ydCI6ICIyMDgzIiwgInBzIjogItin2KrYtdin2YQg2b7Yp9uM2K/Yp9ixIHwgY29uZmlnc19mcmVlaXJhbiIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJodHRwIiwgInYiOiAiMiJ9</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c12', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2918" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c12')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c12" style="display:none">vmess://eyJhZGQiOiAibmV3cHJzdnAub3JnIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogInNwZWVkdGVzdC5uZXQiLCAiaWQiOiAiNTI3ZDliZTItYWZkMS00YTQ4LTgxZjMtY2IyNWM5Y2JiMWIzIiwgImluc2VjdXJlIjogIjAiLCAibmV0IjogInRjcCIsICJwYXRoIjogIi8iLCAicG9ydCI6ICIyMDgzIiwgInBzIjogItin2KrYtdin2YQg2b7Yp9uM2K/Yp9ixIHwgY29uZmlnc19mcmVlaXJhbiIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJodHRwIiwgInYiOiAiMiJ9</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 1666ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c13', this)">vless://96863176-edbb-47dd-9b56-1d4582a6f9c0@v2.dabache.top:8443?path=%2FhshsHhdsgj54645sgsSdc&security=tls&encryption=none&insecure=0&host=ir.irannet.shop%2F%3FBIA_TELEGRAM%40YamYamProxy_YamYamProxy_YamYamProxy_YamYamProxy_YamYamProxy&fp=chrome&type=ws&allowInsecure=0&sni=ir.irannet.shop#%40v2rays_ha%205648```</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c13', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2917" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c13')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c13" style="display:none">vless://96863176-edbb-47dd-9b56-1d4582a6f9c0@v2.dabache.top:8443?path=%2FhshsHhdsgj54645sgsSdc&security=tls&encryption=none&insecure=0&host=ir.irannet.shop%2F%3FBIA_TELEGRAM%40YamYamProxy_YamYamProxy_YamYamProxy_YamYamProxy_YamYamProxy&fp=chrome&type=ws&allowInsecure=0&sni=ir.irannet.shop#%40v2rays_ha%205648```</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 226ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c14', this)">vless://cb9dc2fd-023c-4559-b383-22e1bfcb7a52@1.kkcweb.ir:2083?security=tls&type=ws&headerType=&path=%2F&host=&sni=vennltls.amirconfigpaanelllll.com&fp=#%40v2rays_ha%205647</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c14', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2916" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c14')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c14" style="display:none">vless://cb9dc2fd-023c-4559-b383-22e1bfcb7a52@1.kkcweb.ir:2083?security=tls&type=ws&headerType=&path=%2F&host=&sni=vennltls.amirconfigpaanelllll.com&fp=#%40v2rays_ha%205647</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 3ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c15', this)">vless://a5712440-3cec-4a1b-82e8-767c54acd83a@104.18.32.47:80?security=none&type=ws&path=%2F%3Fed&host=authENTIC-cABinEtgqc4XfW2ud.spORTLAND.COmPAny.&encryption=none#%40v2rays_ha%205646</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c15', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2915" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c15')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c15" style="display:none">vless://a5712440-3cec-4a1b-82e8-767c54acd83a@104.18.32.47:80?security=none&type=ws&path=%2F%3Fed&host=authENTIC-cABinEtgqc4XfW2ud.spORTLAND.COmPAny.&encryption=none#%40v2rays_ha%205646</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 3ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c16', this)">vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.114.96.3:443?encryption=none&security=tls&sni=pages.dev&insecure=0&allowInsecure=0&type=ws&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&path=/XIXVPN?ed=2560#%40v2rays_ha%205645</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c16', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2914" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c16')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c16" style="display:none">vless://396c904b-4b62-4334-b793-ee25fc0c61cc@188.114.96.3:443?encryption=none&security=tls&sni=pages.dev&insecure=0&allowInsecure=0&type=ws&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&path=/XIXVPN?ed=2560#%40v2rays_ha%205645</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#f59e0b"><i class="fas fa-bolt"></i> 308ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c17', this)">vless://3d4b62fa-1fd5-459e-86a9-4b0df88736da@ip2-fast.tyryqyserver.ir:80?encryption=none&security=none&type=ws&host=norbertde1.global.ssl.fastly.net&path=/XIXVPN?ed=2560#%40v2rays_ha%205644</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c17', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2913" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c17')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c17" style="display:none">vless://3d4b62fa-1fd5-459e-86a9-4b0df88736da@ip2-fast.tyryqyserver.ir:80?encryption=none&security=none&type=ws&host=norbertde1.global.ssl.fastly.net&path=/XIXVPN?ed=2560#%40v2rays_ha%205644</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 39ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c18', this)">vless://e6913fad-3b6a-469e-8e2e-750616ba9928@aafc2.lizard2shop.com:2083?path=%2F%3Fed&security=tls&encryption=none&host=at0.lizardshop.org&fp=360&type=ws&sni=at0.lizardshop.org#%40v2rays_ha%205643</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c18', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2912" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c18')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c18" style="display:none">vless://e6913fad-3b6a-469e-8e2e-750616ba9928@aafc2.lizard2shop.com:2083?path=%2F%3Fed&security=tls&encryption=none&host=at0.lizardshop.org&fp=360&type=ws&sni=at0.lizardshop.org#%40v2rays_ha%205643</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 37ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c19', this)">vless://3a4ddfac-e7da-48c9-9648-4a366109fc3a@chatgpt.com:443?path=%2FX0PX5Vup1qlVVzhxp6ic50a&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=mtn.vpsmee.ir&fp=chrome&type=ws&allowInsecure=0&sni=cdn.vpsmee.ir#%40v2rays_ha%205642</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c19', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2911" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c19')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c19" style="display:none">vless://3a4ddfac-e7da-48c9-9648-4a366109fc3a@chatgpt.com:443?path=%2FX0PX5Vup1qlVVzhxp6ic50a&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=mtn.vpsmee.ir&fp=chrome&type=ws&allowInsecure=0&sni=cdn.vpsmee.ir#%40v2rays_ha%205642</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 3ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c20', this)">vless://6e16baf3-82cd-4e5e-bfea-5bd4d2253b4f@188.114.97.0:443?encryption=none&security=tls&type=ws&host=telegram.proxie2-tel.workers.dev&path=%2FeyJqdW5rIjoidXYyRXNUTXEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119%3Fed%3D2560&sni=tELEGRAM.prOXIe2-TEL.wOrKErS.DEV&fp=chrome&alpn=http%2F1.1#%40v2rays_ha%205641</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c20', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2910" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c20')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c20" style="display:none">vless://6e16baf3-82cd-4e5e-bfea-5bd4d2253b4f@188.114.97.0:443?encryption=none&security=tls&type=ws&host=telegram.proxie2-tel.workers.dev&path=%2FeyJqdW5rIjoidXYyRXNUTXEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119%3Fed%3D2560&sni=tELEGRAM.prOXIe2-TEL.wOrKErS.DEV&fp=chrome&alpn=http%2F1.1#%40v2rays_ha%205641</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 2ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c21', this)">vless://905892d2-4c4e-4fb4-99ce-bdf9ccebaffc@151.101.169.242:80?path=%2F%64%6F%77%6E%6C%6F%61%64&security=none&encryption=none&host=sAbzEu.glObal.sSl.fasTly.nEt&type=ws#%40v2rays_ha%205640</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c21', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2909" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c21')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c21" style="display:none">vless://905892d2-4c4e-4fb4-99ce-bdf9ccebaffc@151.101.169.242:80?path=%2F%64%6F%77%6E%6C%6F%61%64&security=none&encryption=none&host=sAbzEu.glObal.sSl.fasTly.nEt&type=ws#%40v2rays_ha%205640</div>
+        </div>
+        <div class="card search-item" data-filter="TROJAN فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">TROJAN</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 6ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c22', this)">trojan://bpb-trojan@94.140.0.1:443?path=%2Ftr%3Fed%3D2560&security=tls&insecure=0&host=singbox.lu567890.us.kg&fp=chrome&type=ws&allowInsecure=0&sni=singbox.lu567890.us.kgr%E2%99%A1ya%40V2rayBaaz%E2%97%87%E2%83%9F%F0%9F%92%9C#%40v2rays_ha%205639</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c22', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2908" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c22')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c22" style="display:none">trojan://bpb-trojan@94.140.0.1:443?path=%2Ftr%3Fed%3D2560&security=tls&insecure=0&host=singbox.lu567890.us.kg&fp=chrome&type=ws&allowInsecure=0&sni=singbox.lu567890.us.kgr%E2%99%A1ya%40V2rayBaaz%E2%97%87%E2%83%9F%F0%9F%92%9C#%40v2rays_ha%205639</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 2ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c23', this)">vless://ff5bb51c-9648-4e19-9b05-5e515f852394@188.114.96.144:8880?security=none&allowInsecure=0&encryption=none&type=httpupgrade#%40v2rays_ha%205638</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c23', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2907" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c23')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c23" style="display:none">vless://ff5bb51c-9648-4e19-9b05-5e515f852394@188.114.96.144:8880?security=none&allowInsecure=0&encryption=none&type=httpupgrade#%40v2rays_ha%205638</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 2ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c24', this)">vless://d0dc3e13-4f8a-41d7-8185-511aee4b3864@104.18.32.47:443?encryption=none&type=xhttp&mode=auto&host=cf.elipii-bot.shop&path=/elipii-bot&security=tls&fp=chrome&sni=cf.elipii-bot.shop&alpn=h2,http/1.1#%40v2rays_ha%205637</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c24', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2906" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c24')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c24" style="display:none">vless://d0dc3e13-4f8a-41d7-8185-511aee4b3864@104.18.32.47:443?encryption=none&type=xhttp&mode=auto&host=cf.elipii-bot.shop&path=/elipii-bot&security=tls&fp=chrome&sni=cf.elipii-bot.shop&alpn=h2,http/1.1#%40v2rays_ha%205637</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 2ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c25', this)">vless://83f03646-fb28-44cc-9d2c-8853f6c09285@104.17.162.123:8443?path=%2F%3Fed%3D%23%40v2rays_ha%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&host=r4fnviw9jl4i4rx.zjde5.de5.net&fp=random&type=ws&sni=r4fnviw9jl4i4rx.zjde5.de5.net#%40v2rays_ha%205636</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c25', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2905" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c25')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c25" style="display:none">vless://83f03646-fb28-44cc-9d2c-8853f6c09285@104.17.162.123:8443?path=%2F%3Fed%3D%23%40v2rays_ha%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&host=r4fnviw9jl4i4rx.zjde5.de5.net&fp=random&type=ws&sni=r4fnviw9jl4i4rx.zjde5.de5.net#%40v2rays_ha%205636</div>
+        </div>
+        <div class="card search-item" data-filter="VLESS فیلترشکن کانفیگ ha tunnel npv v2ray">
+            <div class="card-header">
+                <span class="badge badge-proto">VLESS</span>
+                <span class="badge badge-ping" style="color:#10b981"><i class="fas fa-bolt"></i> 190ms</span>
+            </div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلترشکن کانفیگ ha tunnel npv v2ray</div>
+            <div class="code-block" onclick="copyText('c26', this)">vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@ipbaz.ping-box.com:8443?path=%2FMTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net#%40v2rays_ha%205635</div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick="copyText('c26', this)"><i class="far fa-copy"></i> کپی</button>
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2904" class="btn btn-link"><i class="fab fa-telegram-plane"></i> تلگرام</a>
+                <button class="btn btn-link btn-qr" onclick="showQRFrom('c26')"><i class="fas fa-qrcode"></i></button>
+            </div>
+            <div id="c26" style="display:none">vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@ipbaz.ping-box.com:8443?path=%2FMTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN-MTMVPN%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net#%40v2rays_ha%205635</div>
+        </div></div>
         <div id="t2" class="tab">
         <div class="card search-item" data-filter="proxy mtproto VPN | CICDO کانفیگ ملی شکن">
             <div class="card-header">
@@ -45,7 +423,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN | CICDO کانفیگ ملی شکن</div>
-            <div class="code-block" style="color:#94a3b8">85.133.194.112</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=85.133.194.112&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -56,7 +433,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN | CICDO کانفیگ ملی شکن</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.250</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.250&port=9443&secret=dd104462821249bd7ac519130220c25d09" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -67,7 +443,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN | CICDO کانفیگ ملی شکن</div>
-            <div class="code-block" style="color:#94a3b8">85.133.194.113</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=85.133.194.113&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -78,7 +453,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN | CICDO کانفیگ ملی شکن</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.22</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.22&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -89,7 +463,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN | CICDO کانفیگ ملی شکن</div>
-            <div class="code-block" style="color:#94a3b8">85.133.194.8</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=85.133.194.8&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -100,7 +473,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN | CICDO کانفیگ ملی شکن</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.253</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.253&port=9443&secret=dd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3add" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -111,7 +483,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN | CICDO کانفیگ ملی شکن</div>
-            <div class="code-block" style="color:#94a3b8">95.216.177.110</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=95.216.177.110&port=85&secret=FgIBAgABAAH8AwOG4kw63Q" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -122,7 +493,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN | CICDO کانفیگ ملی شکن</div>
-            <div class="code-block" style="color:#94a3b8">78.46.200.15</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=78.46.200.15&port=8443&secret=fgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNng%3D%3D" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -133,7 +503,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN | CICDO کانفیگ ملی شکن</div>
-            <div class="code-block" style="color:#94a3b8">95.216.178.101</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=95.216.178.101&port=443&secret=FgMBAgABAAH8AxOG4kw63Q%3D%3D" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -144,7 +513,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> 🔱BugFreeNet🔱</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.243</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.243&port=9443&secret=dd104462821249bd7ac519130220c25d09)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -155,7 +523,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> 🔱BugFreeNet🔱</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.246</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.246&port=9443&secret=dd1603010200010001fc030386e24c3add)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -166,7 +533,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> 🔱BugFreeNet🔱</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.249</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.249&port=9443&secret=dd1603010200010001fc030386e24c3add)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -177,7 +543,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> 🔱BugFreeNet🔱</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.238</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.238&port=9443&secret=dd104462821249bd7ac519130220c25d09)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -188,7 +553,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.248</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.248&port=9443&secret=dd104462821249bd7ac519130220c25d09)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -199,7 +563,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.247</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.247&port=7443&secret=dd79e70102001e7807f0104386124c0479)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -210,7 +573,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.242</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.242&port=9443&secret=dd104462821249bd7ac519130220c25d09)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -221,7 +583,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.244</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.244&port=9443&secret=dd104462821249bd7ac519130220c25d09)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -232,7 +593,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.245</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.245&port=9443&secret=dd104462821249bd7ac519130220c25d09)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -243,7 +603,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.239</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.239&port=9443&secret=dd104462821249bd7ac519130220c25d09)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -254,7 +613,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.237</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.237&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -265,7 +623,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.254</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.254&port=9443&secret=dd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3add)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -276,7 +633,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.241</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.241&port=77777&secret=EERigv%2F%2F%2F%2F%2F%2F+AAA%2F%2FgAAA%3D%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -287,7 +643,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.240</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.240&port=77777&secret=EERigv%2F%2F%2F%2F%2F%2F+AAA%2F%2FgAAA%3D%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -298,7 +653,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> اینترنت آزاد | کانفیگ نپستر رایگان</div>
-            <div class="code-block" style="color:#94a3b8">mtpx.CyberNigga2.com</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=mtpx.CyberNigga2.com&port=9092&secret=dd4cdb8dbb13af3829a78f44de7bb26fc0)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -309,7 +663,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.104</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.104&port=13&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -320,7 +673,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.103</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.103&port=13&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -331,7 +683,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.131</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.131&port=66666&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -342,7 +693,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.110</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.110&port=66666&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -353,7 +703,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.138</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.138&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -364,7 +713,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.137</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.137&port=9443&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -375,7 +723,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.127</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.127&port=9443&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -386,7 +733,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.4</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.4&port=13&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -397,7 +743,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.10</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.10&port=9443&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -408,7 +753,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.222</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.222&port=9443&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -419,7 +763,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.140</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.140&port=9443&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -430,7 +773,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.165</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.165&port=9443&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -441,7 +783,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.200</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.200&port=13&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -452,7 +793,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">87.248.149.131</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=87.248.149.131&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -463,7 +803,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">87.248.149.72</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=87.248.149.72&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -474,7 +813,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">74.1.1.137</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=74.1.1.137&port=23&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -485,7 +823,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">85.133.194.9</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=85.133.194.9&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -496,7 +833,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">kyc.paradise-gold.space</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=kyc.paradise-gold.space&port=65535&secret=dd1201542440cbd23d7bb8b0d79045f73c" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -507,7 +843,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">87.248.134.122</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=87.248.134.122&port=77777&secret=EERigv//////+AAA//gAAA==)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -518,7 +853,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.177</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.177&port=77777&secret=EERigv//////+AAA//gAAA==)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -529,7 +863,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">87.248.134.152</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=87.248.134.152&port=77777&secret=EERigv//////+AAA//gAAA==)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -540,7 +873,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.189</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.189&port=4455&secret=7hYDAQIAAQAB_AMDhuJMOt1jZG4ueWVrdGFuZXQuY29tRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -551,7 +883,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.74</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.74&port=4455&secret=7hYDAQIAAQAB_AMDhuJMOt1jZG4ueWVrdGFuZXQuY29tRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -562,7 +893,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.158</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.158&port=4455&secret=7hYDAQIAAQAB_AMDhuJMOt1jZG4ueWVrdGFuZXQuY29tRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -573,7 +903,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">87.248.134.120</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=87.248.134.120&port=9443&secret=EERighJJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -584,7 +913,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.159</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.159&port=4455&secret=7hYDAQIAAQAB_AMDhuJMOt1jZG4ueWVrdGFuZXQuY29tRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -595,7 +923,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.176</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.176&port=4455&secret=7hYDAQIAAQAB_AMDhuJMOt1jZG4ueWVrdGFuZXQuY29tRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -606,7 +933,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.75</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.75&port=9443&secret=EERighJJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -617,7 +943,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.17</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.17&port=9443&secret=EERighJJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -628,7 +953,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">87.248.134.189</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=87.248.134.189&port=4455&secret=7hYDAQIAAQAB_AMDhuJMOt1jZG4ueWVrdGFuZXQuY29tRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -639,7 +963,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> VPN BOX فیلترشکن</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.45</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.45&port=9443&secret=dd1603010200010001fc030386e24c3add)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -650,7 +973,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.252</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.252&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -661,7 +983,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.251</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.251&port=9443&secret=dd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3adddd1603010200010001fc030386e24c3add)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -672,7 +993,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.134</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.134&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -683,7 +1003,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.133</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.133&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -694,7 +1013,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.110</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.110&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -705,7 +1023,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.111</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.111&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -716,7 +1033,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.111</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.111&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -727,7 +1043,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.112</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.112&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -738,7 +1053,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.112</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.112&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -749,7 +1063,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.231</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.231&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -760,7 +1073,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.232</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.232&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -771,7 +1083,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.234</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.234&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -782,7 +1093,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.115.161.233</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.115.161.233&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -793,7 +1103,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">michael.jordanair.info</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=michael.jordanair.info&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -804,7 +1113,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">78.47.212.145</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=78.47.212.145&port=23&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -815,7 +1123,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">148.251.32.246</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=148.251.32.246&port=23&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -826,7 +1133,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">172.65.103.110</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=172.65.103.110&port=25565&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -837,7 +1143,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">148.251.26.139</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=148.251.26.139&port=23&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -848,7 +1153,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">148.251.26.138</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=148.251.26.138&port=77777&secret=EERighJJvXrFGRMCIMJdCQ)[" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -859,7 +1163,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">78.47.212.150</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=78.47.212.150&port=77777&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -870,7 +1173,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">iPhone.jordanair.info</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=iPhone.jordanair.info&port=77777&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -881,7 +1183,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.133</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.133&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -892,7 +1193,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">www.x9q.pw</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=www.x9q.pw&port=8443&secret=3XnnAQIAAQAH8AMDhuJMOt0%3D" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -903,7 +1203,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">95.217.242.133</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=95.217.242.133&port=85&secret=FgIBAgABAAH8AwOG4kw63Q)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -914,7 +1213,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">95.216.177.204</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=95.216.177.204&port=85&secret=FgIBAgABAAH8AwOG4kw63Q)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -925,7 +1223,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">95.216.179.50</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=95.216.179.50&port=85&secret=FgIBAgABAAH8AwOG4kw63Q)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -936,7 +1233,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.251</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.251&port=4455&secret=7hYDAQIAAQAB_AMDhuJMOt1jZG4ueWVrdGFuZXQuY29tRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -947,7 +1243,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> پروکسی | کانفیگ | 🅱️plan</div>
-            <div class="code-block" style="color:#94a3b8">85.133.194.111</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=85.133.194.111&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -958,7 +1253,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> پروکسی | کانفیگ | 🅱️plan</div>
-            <div class="code-block" style="color:#94a3b8">85.133.194.114</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=85.133.194.114&port=8443&secret=79e344818749bd7ac519130220c25d09)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -969,7 +1263,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> پروکسی | کانفیگ | 🅱️plan</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.110</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.110&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -980,7 +1273,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کانفیگ ملی / config meli</div>
-            <div class="code-block" style="color:#94a3b8">185.215.247.60</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=185.215.247.60&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -991,7 +1283,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کیو کانفیگ | Kio V2ray</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.20</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.20&port=9443&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -1002,7 +1293,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کیو کانفیگ | Kio V2ray</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.53</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.53&port=2222&secret=eecBAgAeeAfwEEOGEkwEeQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -1013,7 +1303,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کیو کانفیگ | Kio V2ray</div>
-            <div class="code-block" style="color:#94a3b8">195.254.165.22</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=195.254.165.22&port=9443&secret=EERighJJvXrFGRMCIMJdCQ)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -1024,7 +1313,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کیو کانفیگ | Kio V2ray</div>
-            <div class="code-block" style="color:#94a3b8">ams1.tlgfast.com</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=ams1.tlgfast.com&port=443&secret=083fe0c452e2407d835537872f097c54)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -1035,7 +1323,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کیو کانفیگ | Kio V2ray</div>
-            <div class="code-block" style="color:#94a3b8">046.226.162.187</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=046.226.162.187&port=9741&secret=EECLOUDASIzRJlmd4iaQgCM4eFlnUldQOFpvTHVwZmNpaVI2ZkJFNDJMSXJxUW1yT2s4YzRCaVRaLi11cGRhdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%3D%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -1046,7 +1333,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کیو کانفیگ | Kio V2ray</div>
-            <div class="code-block" style="color:#94a3b8">046.226.162.45</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=046.226.162.45&port=9741&secret=eecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQ%3D%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -1057,7 +1343,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کیو کانفیگ | Kio V2ray</div>
-            <div class="code-block" style="color:#94a3b8">85.158.59.4</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=85.158.59.4&port=99&secret=eeeee7010200010007f0030386e24c3add63646e2e79656b74616e65742e636f6d)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -1068,7 +1353,6 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کیو کانفیگ | Kio V2ray</div>
-            <div class="code-block" style="color:#94a3b8">87.248.132.84</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=87.248.132.84&port=155&secret=eecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQ%3D%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
@@ -1079,12 +1363,88 @@
                 <span class="badge badge-ping" style="color:#f59e0b">Proxy</span>
             </div>
             <div class="meta-info"><i class="fas fa-broadcast-tower"></i> کیو کانفیگ | Kio V2ray</div>
-            <div class="code-block" style="color:#94a3b8">046.226.162.44</div>
             <div class="actions" style="grid-template-columns: 1fr;">
                 <a href="tg://t.me/proxy?server=046.226.162.44&port=9741&secret=eecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQeecBAgAeeAfwEEOGEkwEeQ%3D%3D)" class="btn btn-copy"><i class="fas fa-power-off"></i> اتصال سریع</a>
             </div>
         </div></div>
-        <div id="t3" class="tab"><div class="empty"><i class="fas fa-folder-open"></i><p>فایلی موجود نیست</p></div></div>
+        <div id="t3" class="tab">
+        <div class="card search-item" data-filter="npvt iran🖤.npvt i SHARΞ WIN™">
+            <div class="card-header">
+                <span class="badge badge-proto">NPVT</span>
+                <span class="badge badge-ping">FILE</span>
+            </div>
+            <div style="font-weight:bold;margin-bottom:5px;text-align:right;direction:ltr">iran🖤.npvt</div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> i SHARΞ WIN™</div>
+            <div class="actions" style="grid-template-columns: 1fr;">
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2903" class="btn btn-link" style="border-color:#38bdf8;color:#38bdf8"><i class="fas fa-download"></i> دانلود</a>
+            </div>
+        </div>
+        <div class="card search-item" data-filter="npvt iranam.npvt i SHARΞ WIN™">
+            <div class="card-header">
+                <span class="badge badge-proto">NPVT</span>
+                <span class="badge badge-ping">FILE</span>
+            </div>
+            <div style="font-weight:bold;margin-bottom:5px;text-align:right;direction:ltr">iranam.npvt</div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> i SHARΞ WIN™</div>
+            <div class="actions" style="grid-template-columns: 1fr;">
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2902" class="btn btn-link" style="border-color:#38bdf8;color:#38bdf8"><i class="fas fa-download"></i> دانلود</a>
+            </div>
+        </div>
+        <div class="card search-item" data-filter="npvt shekan.npvt i SHARΞ WIN™">
+            <div class="card-header">
+                <span class="badge badge-proto">NPVT</span>
+                <span class="badge badge-ping">FILE</span>
+            </div>
+            <div style="font-weight:bold;margin-bottom:5px;text-align:right;direction:ltr">shekan.npvt</div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> i SHARΞ WIN™</div>
+            <div class="actions" style="grid-template-columns: 1fr;">
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2901" class="btn btn-link" style="border-color:#38bdf8;color:#38bdf8"><i class="fas fa-download"></i> دانلود</a>
+            </div>
+        </div>
+        <div class="card search-item" data-filter="npvt Freedoom.npvt i SHARΞ WIN™">
+            <div class="card-header">
+                <span class="badge badge-proto">NPVT</span>
+                <span class="badge badge-ping">FILE</span>
+            </div>
+            <div style="font-weight:bold;margin-bottom:5px;text-align:right;direction:ltr">Freedoom.npvt</div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> i SHARΞ WIN™</div>
+            <div class="actions" style="grid-template-columns: 1fr;">
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2900" class="btn btn-link" style="border-color:#38bdf8;color:#38bdf8"><i class="fas fa-download"></i> دانلود</a>
+            </div>
+        </div>
+        <div class="card search-item" data-filter="npvt همراه اول پرسرعت.npvt Iranian Minds">
+            <div class="card-header">
+                <span class="badge badge-proto">NPVT</span>
+                <span class="badge badge-ping">FILE</span>
+            </div>
+            <div style="font-weight:bold;margin-bottom:5px;text-align:right;direction:ltr">همراه اول پرسرعت.npvt</div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> Iranian Minds</div>
+            <div class="actions" style="grid-template-columns: 1fr;">
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2899" class="btn btn-link" style="border-color:#38bdf8;color:#38bdf8"><i class="fas fa-download"></i> دانلود</a>
+            </div>
+        </div>
+        <div class="card search-item" data-filter="npvt ایرانسل پرسرعت.npvt Iranian Minds">
+            <div class="card-header">
+                <span class="badge badge-proto">NPVT</span>
+                <span class="badge badge-ping">FILE</span>
+            </div>
+            <div style="font-weight:bold;margin-bottom:5px;text-align:right;direction:ltr">ایرانسل پرسرعت.npvt</div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> Iranian Minds</div>
+            <div class="actions" style="grid-template-columns: 1fr;">
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2898" class="btn btn-link" style="border-color:#38bdf8;color:#38bdf8"><i class="fas fa-download"></i> دانلود</a>
+            </div>
+        </div>
+        <div class="card search-item" data-filter="npvt telegram: @awlix_ir.npvt Awlix | کانفیگ | ملی شکن">
+            <div class="card-header">
+                <span class="badge badge-proto">NPVT</span>
+                <span class="badge badge-ping">FILE</span>
+            </div>
+            <div style="font-weight:bold;margin-bottom:5px;text-align:right;direction:ltr">telegram: @awlix_ir.npvt</div>
+            <div class="meta-info"><i class="fas fa-broadcast-tower"></i> Awlix | کانفیگ | ملی شکن</div>
+            <div class="actions" style="grid-template-columns: 1fr;">
+                <a href="[https://t.me/](https://t.me/)myvpn1404/2897" class="btn btn-link" style="border-color:#38bdf8;color:#38bdf8"><i class="fas fa-download"></i> دانلود</a>
+            </div>
+        </div></div>
     </div>
 
     <nav class="nav">
@@ -1116,7 +1476,7 @@
         }
         function showQRFrom(id) {
             const txt = document.getElementById(id).innerText;
-            document.getElementById('qrImg').src = 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=' + encodeURIComponent(txt);
+            document.getElementById('qrImg').src = '[https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=](https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=)' + encodeURIComponent(txt);
             document.getElementById('qrModal').style.display = 'flex';
         }
     </script>

@@ -232,33 +232,38 @@ async def main():
                         k = extract_proxy_key(item['p'])
                         new_prox.append({'key': k, 'link': item['p'], 'channel': title, 't_link': '#', 'ts': time.time()})
                 
-                # ارسال پروکسی (اصلاح شده با HTML برای لینک‌دار شدن قطعی)
-                if valid_proxies:
-                    # استفاده از تگ HTML برای لینک
-                    body = "🔵 <b>پروکسی‌های جدید</b>\n\n"
-                    for idx, p in enumerate(valid_proxies, 1):
-                        # اینجا لینک رو توی href میذاریم که 100% کار کنه
-                        body += f"{idx}. <a href='{p['l']}'>اتصال</a> • {p['s']} {p['pi']}\n"
-                    
-                    # ساخت فوتر اختصاصی HTML (چون تابع اصلی مارک‌داون میده و با HTML قاطی میشه)
-                    now = datetime.now(iran_tz)
-                    safe_title = clean_title(title)
-                    src_link = valid_proxies[0]['src']
-                    footer_html = f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: <a href='{src_link}'>{safe_title}</a>\n🔗 {destination_channel}"
-                    
-                    body += "\n💡 برای اتصال روی لینک کلیک کنید" + footer_html
-                    
-                    try:
-                        # ارسال با فرمت HTML
-                        sent = await client.send_message(destination_channel, body, parse_mode='html', link_preview=False)
-                        
-                        # ذخیره لینک پیام برای دیتابیس
-                        my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
-                        for p in new_prox: 
-                            if p['channel'] == title: p['t_link'] = my_link
-                        await asyncio.sleep(3)
-                    except Exception as e:
-                        print(f"ارسال ناموفق پروکسی: {e}")
+                
+                # ✅ کد جدید (درست):
+if valid_proxies:
+    # ساخت پیام با لینک‌های MarkdownV2
+    body = "🔵 **پروکسی‌های جدید**\n\n"
+    
+    for idx, p in enumerate(valid_proxies, 1):
+        # استفاده از Markdown برای لینک
+        body += f"{idx}. [اتصال مستقیم]({p['l']}) • {p['s']} {p['pi']}\n"
+    
+    # فوتر با Markdown
+    now = datetime.now(iran_tz)
+    safe_title = clean_title(title)
+    src_link = valid_proxies[0]['src']
+    footer_md = f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: [{safe_title}]({src_link})\n🔗 {destination_channel}"
+    
+    body += "\n💡 برای اتصال روی لینک کلیک کنید" + footer_md
+
+    try:
+        # ارسال با parse_mode=None (استفاده از Markdown پیش‌فرض)
+        sent = await client.send_message(
+            destination_channel, 
+            body, 
+            link_preview=False
+        )
+        my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
+        for p in new_prox: 
+            if p['channel'] == title: 
+                p['t_link'] = my_link
+        await asyncio.sleep(3)
+    except Exception as e:
+        print(f"ارسال ناموفق پروکسی: {e}")
                 for item in temp_f:
                     cap = f"📂 **{item['n']}**\n\n{get_hashtags(item['n'])}{create_footer(title, item['link'])}"
                     try:

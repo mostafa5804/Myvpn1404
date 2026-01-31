@@ -31,13 +31,13 @@ DATA_FILE = 'data.json'
 KEEP_HISTORY_HOURS = 24
 destination_channel = '@myvpn1404'
 
-# لیست کل 39 کانال
+# لیست کل کانال‌ها
 ALL_CHANNELS = [
     '@KioV2ray', '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mypremium98',
     '@mitivpn', '@iSeqaro', '@configraygan', '@shankamil', '@xsfilternet',
     '@varvpn1', '@iP_CF', '@cooonfig', '@DeamNet', '@anty_filter',
     '@vpnboxiran', '@Merlin_ViP', '@BugFreeNet', '@cicdoVPN', '@Farda_Ai',
-    # --- مرز تقسیم (20 تای اول / 19 تای دوم) ---
+    # --- مرز تقسیم ---
     '@Awlix_ir', '@proSSH', '@vpn_proxy_custom', '@Free_HTTPCustom',
     '@sinavm', '@Amir_Alternative_Official', '@StayconnectedVPN', '@BINNER_IRAN',
     '@IranianMinds', '@vpn11ir', '@NetAccount', '@mitiivpn2', '@isharewin',
@@ -48,8 +48,6 @@ ALL_CHANNELS = [
 allowed_extensions = {'.npv4', '.npv2', '.npvt', '.dark', '.ehi', '.txt', '.conf', '.json'}
 iran_tz = pytz.timezone('Asia/Tehran')
 IRAN_IP_PREFIXES = ['2.144.', '5.22.', '31.2.', '37.9.', '46.18.', '78.38.', '85.9.', '91.98.', '93.88.', '185.']
-
-# کلاینت اینجا تعریف نمیشه، داخل main بر اساس نوبت تعریف میشه
 
 # -----------------------------------------------------------------------------
 # 2. مدیریت دیتابیس
@@ -79,29 +77,28 @@ def merge_data(history, new_items, key):
     return res
 
 # -----------------------------------------------------------------------------
-# 3. منطق انتخاب نوبت (Batch & Session Logic)
+# 3. منطق انتخاب نوبت (هوشمند و ضد بن)
 # -----------------------------------------------------------------------------
 def get_batch_info():
-    """
-    تعیین می‌کند الان نوبت کدام اکانت و کدام کانال‌هاست.
-    """
     minute = datetime.now(iran_tz).minute
     
-    # اگر دقیقه بین 0 تا 29 باشد -> نوبت اکانت اول (20 کانال اول)
+    # تغییر استراتژیک: اولویت اول با سشن 2 (اکانت سالم) است
+    # سشن 2 در نیمه اول ساعت (که معمولا زمان اجرای اصلی است) کار می‌کند
     if minute < 30:
-        print("👤 نوبت: اکانت اول (SESSION 1)")
-        return ALL_CHANNELS[:20], "اول (1-20)", session_1
-    
-    # اگر دقیقه بین 30 تا 59 باشد -> نوبت اکانت دوم (19 کانال دوم)
+        target_session = session_2 if session_2 else session_1
+        print(f"👤 نوبت نیمه اول: استفاده از اکانت {'دوم (سالم)' if session_2 else 'اول'}")
+        return ALL_CHANNELS[:20], "اول (1-20)", target_session
     else:
-        print("👤 نوبت: اکانت دوم (SESSION 2)")
-        # اگر سشن دوم ست نشده باشد، از اولی استفاده میکند (Fallback)
-        sess = session_2 if session_2 else session_1
-        if not session_2: print("⚠️ هشدار: SESSION_STRING_2 یافت نشد! استفاده از اکانت اول.")
-        return ALL_CHANNELS[20:], "دوم (21-40)", sess
+        # در نیمه دوم ساعت، نوبت سشن 1 است، اما اگر خراب بود از 2 استفاده میکنیم
+        target_session = session_1 if session_1 else session_2
+        # اگر کاربر فقط سشن 2 را وارد کرده باشد، همیشه از آن استفاده میشود
+        if not target_session: target_session = session_2
+        
+        print(f"👤 نوبت نیمه دوم: استفاده از اکانت {'اول' if target_session == session_1 else 'دوم (جایگزین)'}")
+        return ALL_CHANNELS[20:], "دوم (21-40)", target_session
 
 # -----------------------------------------------------------------------------
-# 4. توابع کمکی و شبکه
+# 4. توابع کمکی
 # -----------------------------------------------------------------------------
 def is_iran_ip(ip):
     return any(ip.startswith(p) for p in IRAN_IP_PREFIXES)
@@ -148,6 +145,11 @@ async def check_status(link, type='config'):
         if lat < 200: return "🟡 خوب", lat, False
         return "🟠 متوسط", lat, False
     except: return None, None, False
+
+def extract_proxy_key(link):
+    m = re.search(r"server=([\w\.-]+)&port=(\d+)", link)
+    if m: return f"{m.group(1)}:{m.group(2)}"
+    return str(time.time())
 
 # -----------------------------------------------------------------------------
 # 5. تولید HTML
@@ -218,23 +220,16 @@ def generate_html_content(configs, proxies, files):
     if not files: files_html = '<div class="empty"><i class="fas fa-folder-open"></i><p>فایلی موجود نیست</p></div>'
     return configs_html, proxies_html, files_html
 
-def extract_proxy_key(link):
-    m = re.search(r"server=([\w\.-]+)&port=(\d+)", link)
-    if m: return f"{m.group(1)}:{m.group(2)}"
-    return str(time.time())
-
 # -----------------------------------------------------------------------------
-# 6. بدنه اصلی (Dual Session Logic)
+# 6. بدنه اصلی
 # -----------------------------------------------------------------------------
 async def main():
-    # 1. تعیین نوبت و سشن
     target_channels, batch_name, active_session = get_batch_info()
     
     if not active_session:
-        print("❌ خطای حیاتی: هیچ سشنی برای اجرا یافت نشد!")
+        print("❌ خطای حیاتی: سشن یافت نشد!")
         return
 
-    # 2. راه‌اندازی کلاینت با سشن فعال
     client = TelegramClient(StringSession(active_session), api_id, api_hash)
 
     try:
@@ -242,33 +237,27 @@ async def main():
         print(f"✅ ربات با {batch_name} متصل شد")
         
         hist = load_data()
-        print(f"📂 لود دیتابیس: {len(hist['configs'])} آیتم")
-
-        # کش کردن کانال‌های عضو شده (ضد لیمیت)
-        print("📥 دریافت لیست عضویت...")
-        subscribed = {}
-        try:
-            async for d in client.iter_dialogs(limit=None):
-                if d.is_channel and d.entity.username:
-                    subscribed[f"@{d.entity.username.lower()}"] = d.entity
-        except: pass
         
+        # تاخیر اولیه
         await asyncio.sleep(random.randint(5, 10))
         
         new_conf, new_prox, new_file = [], [], []
         sent_hashes = set()
 
-        # حلقه روی کانال‌های این دسته
         for i, channel_str in enumerate(target_channels):
             try:
-                wait_time = random.randint(10, 20)
+                wait_time = random.randint(15, 25) # تاخیر ایمن
                 print(f"⏳ ({i+1}/{len(target_channels)}) {channel_str} - صبر: {wait_time}s")
                 await asyncio.sleep(wait_time)
                 
-                # دریافت انتیتی از کش
-                entity = subscribed.get(channel_str.lower())
-                if not entity:
-                    print(f"⚠️ در کانال {channel_str} عضو نیستید! نادیده گرفته شد.")
+                try:
+                    # تلاش برای دریافت کانال بدون عضویت
+                    entity = await client.get_entity(channel_str)
+                except FloodWaitError as e:
+                    print(f"❌ لیمیت تلگرام برای این کانال: {e.seconds} ثانیه. عبور.")
+                    continue
+                except Exception as e:
+                    print(f"⚠️ کانال یافت نشد یا در دسترس نیست: {e}")
                     continue
 
                 msgs = await client.get_messages(entity, limit=30)
@@ -287,7 +276,6 @@ async def main():
                     if m.file and any(m.file.name.endswith(x) for x in allowed_extensions if m.file.name):
                         temp_f.append({'n': m.file.name, 'm': m, 'link': link})
 
-                # پردازش و ارسال (با سرعت بیشتر چون تعداد کانال نصف شده)
                 for item in temp_c:
                     stat, lat, _ = await check_status(item['c'])
                     if stat:
@@ -298,9 +286,8 @@ async def main():
                             my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
                             new_conf.append({'protocol': prot, 'config': item['c'], 'latency': lat, 'channel': title, 't_link': my_link, 'ts': time.time()})
                             await asyncio.sleep(3)
-                        except FloodWaitError as e:
-                            print(f"❌ لیمیت ارسال: {e.seconds} ثانیه")
-                            break
+                        except Exception as e:
+                            print(f"ارسال ناموفق: {e}")
 
                 valid_proxies = []
                 for item in temp_p:
@@ -339,7 +326,6 @@ async def main():
         f_f = merge_data(hist['files'], new_file, 'name')
         save_data({'configs': f_c, 'proxies': f_p, 'files': f_f})
 
-        # تولید HTML
         html_c, html_p, html_f = generate_html_content(f_c, f_p, f_f)
         now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
         
@@ -430,5 +416,4 @@ async def main():
     finally: await client.disconnect()
 
 if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
+    with client: client.loop.run_until_complete(main())

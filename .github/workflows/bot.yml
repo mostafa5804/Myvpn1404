@@ -35,7 +35,7 @@ jobs:
         git config --global user.email "bot@github.com"
         git pull origin main --rebase || echo "⚠️ Nothing to pull or rebase failed"
 
-        - name: Check & Push Changes
+            - name: Check & Push Changes
       run: |
         # 1. تنظیم هویت گیت
         git config --global user.name "VPN Bot"
@@ -58,7 +58,7 @@ jobs:
           
           # ==========================================
           # ✅ بخش حیاتی که فراموش کردید (اضافه شد):
-          # اول تغییرات را می‌گیرد تا ارور ندهد
+          # اول تغییرات جدید را می‌گیرد تا ارور ندهد
           # ==========================================
           git pull --rebase origin main
           

@@ -15,11 +15,14 @@ from telethon.tl.types import MessageEntityTextUrl
 from telethon.errors.rpcerrorlist import FloodWaitError
 
 # -----------------------------------------------------------------------------
-# 1. تنظیمات
+# 1. تنظیمات و پیکربندی
 # -----------------------------------------------------------------------------
 api_id = int(os.environ['API_ID'])
 api_hash = os.environ['API_HASH']
-session_string = os.environ['SESSION_STRING']
+
+# دریافت هر دو سشن
+session_1 = os.environ.get('SESSION_STRING')
+session_2 = os.environ.get('SESSION_STRING_2')
 
 ENABLE_PING_CHECK = True
 PING_TIMEOUT = 2
@@ -28,11 +31,13 @@ DATA_FILE = 'data.json'
 KEEP_HISTORY_HOURS = 24
 destination_channel = '@myvpn1404'
 
+# لیست کل 39 کانال
 ALL_CHANNELS = [
     '@KioV2ray', '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mypremium98',
     '@mitivpn', '@iSeqaro', '@configraygan', '@shankamil', '@xsfilternet',
     '@varvpn1', '@iP_CF', '@cooonfig', '@DeamNet', '@anty_filter',
     '@vpnboxiran', '@Merlin_ViP', '@BugFreeNet', '@cicdoVPN', '@Farda_Ai',
+    # --- مرز تقسیم (20 تای اول / 19 تای دوم) ---
     '@Awlix_ir', '@proSSH', '@vpn_proxy_custom', '@Free_HTTPCustom',
     '@sinavm', '@Amir_Alternative_Official', '@StayconnectedVPN', '@BINNER_IRAN',
     '@IranianMinds', '@vpn11ir', '@NetAccount', '@mitiivpn2', '@isharewin',
@@ -44,7 +49,7 @@ allowed_extensions = {'.npv4', '.npv2', '.npvt', '.dark', '.ehi', '.txt', '.conf
 iran_tz = pytz.timezone('Asia/Tehran')
 IRAN_IP_PREFIXES = ['2.144.', '5.22.', '31.2.', '37.9.', '46.18.', '78.38.', '85.9.', '91.98.', '93.88.', '185.']
 
-client = TelegramClient(StringSession(session_string), api_id, api_hash)
+# کلاینت اینجا تعریف نمیشه، داخل main بر اساس نوبت تعریف میشه
 
 # -----------------------------------------------------------------------------
 # 2. مدیریت دیتابیس
@@ -74,21 +79,32 @@ def merge_data(history, new_items, key):
     return res
 
 # -----------------------------------------------------------------------------
-# 3. توابع کمکی
+# 3. منطق انتخاب نوبت (Batch & Session Logic)
+# -----------------------------------------------------------------------------
+def get_batch_info():
+    """
+    تعیین می‌کند الان نوبت کدام اکانت و کدام کانال‌هاست.
+    """
+    minute = datetime.now(iran_tz).minute
+    
+    # اگر دقیقه بین 0 تا 29 باشد -> نوبت اکانت اول (20 کانال اول)
+    if minute < 30:
+        print("👤 نوبت: اکانت اول (SESSION 1)")
+        return ALL_CHANNELS[:20], "اول (1-20)", session_1
+    
+    # اگر دقیقه بین 30 تا 59 باشد -> نوبت اکانت دوم (19 کانال دوم)
+    else:
+        print("👤 نوبت: اکانت دوم (SESSION 2)")
+        # اگر سشن دوم ست نشده باشد، از اولی استفاده میکند (Fallback)
+        sess = session_2 if session_2 else session_1
+        if not session_2: print("⚠️ هشدار: SESSION_STRING_2 یافت نشد! استفاده از اکانت اول.")
+        return ALL_CHANNELS[20:], "دوم (21-40)", sess
+
+# -----------------------------------------------------------------------------
+# 4. توابع کمکی و شبکه
 # -----------------------------------------------------------------------------
 def is_iran_ip(ip):
     return any(ip.startswith(p) for p in IRAN_IP_PREFIXES)
-
-def get_channel_batch():
-    """تقسیم‌بندی زمانی دقیق: 0-20, 20-40, 40-60"""
-    minute = datetime.now(iran_tz).minute
-    
-    if minute < 15: # بازه اول (دقیقه 0 تا 15 اجرا میشه)
-        return ALL_CHANNELS[:13], "اول (1-13)"
-    elif minute < 35: # بازه دوم (دقیقه 20 تا 35 اجرا میشه)
-        return ALL_CHANNELS[13:26], "دوم (14-26)"
-    else: # بازه سوم (دقیقه 40 به بعد)
-        return ALL_CHANNELS[26:], "سوم (27-40)"
 
 def clean_title(t): return re.sub(r'[\[\]\(\)\*`_]', '', str(t)).strip() if t else "Channel"
 
@@ -101,9 +117,6 @@ def create_footer(title, link):
     now = datetime.now(iran_tz)
     return f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: [{clean_title(title)}]({link})\n🔗 {destination_channel}"
 
-# -----------------------------------------------------------------------------
-# 4. توابع شبکه
-# -----------------------------------------------------------------------------
 async def check_ping(host, port):
     try:
         st = time.time()
@@ -137,7 +150,7 @@ async def check_status(link, type='config'):
     except: return None, None, False
 
 # -----------------------------------------------------------------------------
-# 5. ساخت HTML
+# 5. تولید HTML
 # -----------------------------------------------------------------------------
 def generate_html_content(configs, proxies, files):
     configs_html = ""
@@ -205,42 +218,57 @@ def generate_html_content(configs, proxies, files):
     if not files: files_html = '<div class="empty"><i class="fas fa-folder-open"></i><p>فایلی موجود نیست</p></div>'
     return configs_html, proxies_html, files_html
 
+def extract_proxy_key(link):
+    m = re.search(r"server=([\w\.-]+)&port=(\d+)", link)
+    if m: return f"{m.group(1)}:{m.group(2)}"
+    return str(time.time())
+
 # -----------------------------------------------------------------------------
-# 6. بدنه اصلی (با تاخیرهای طولانی)
+# 6. بدنه اصلی (Dual Session Logic)
 # -----------------------------------------------------------------------------
 async def main():
+    # 1. تعیین نوبت و سشن
+    target_channels, batch_name, active_session = get_batch_info()
+    
+    if not active_session:
+        print("❌ خطای حیاتی: هیچ سشنی برای اجرا یافت نشد!")
+        return
+
+    # 2. راه‌اندازی کلاینت با سشن فعال
+    client = TelegramClient(StringSession(active_session), api_id, api_hash)
+
     try:
         await client.start()
-        print("✅ ربات متصل شد")
+        print(f"✅ ربات با {batch_name} متصل شد")
         
         hist = load_data()
+        print(f"📂 لود دیتابیس: {len(hist['configs'])} آیتم")
+
+        # کش کردن کانال‌های عضو شده (ضد لیمیت)
+        print("📥 دریافت لیست عضویت...")
+        subscribed = {}
+        try:
+            async for d in client.iter_dialogs(limit=None):
+                if d.is_channel and d.entity.username:
+                    subscribed[f"@{d.entity.username.lower()}"] = d.entity
+        except: pass
         
-        channels, batch = get_channel_batch()
-        print(f"--- بررسی دسته {batch} ---")
-        
-        # تاخیر اولیه تصادفی
-        await asyncio.sleep(random.randint(10, 20))
+        await asyncio.sleep(random.randint(5, 10))
         
         new_conf, new_prox, new_file = [], [], []
         sent_hashes = set()
 
-        for i, channel_str in enumerate(channels):
+        # حلقه روی کانال‌های این دسته
+        for i, channel_str in enumerate(target_channels):
             try:
-                # تاخیر طولانی بین کانال‌ها (ضد لیمیت)
-                wait_time = random.randint(15, 25) 
-                print(f"⏳ صبر {wait_time} ثانیه...")
+                wait_time = random.randint(10, 20)
+                print(f"⏳ ({i+1}/{len(target_channels)}) {channel_str} - صبر: {wait_time}s")
                 await asyncio.sleep(wait_time)
                 
-                print(f"🔍 {i+1}/{len(channels)}: {channel_str}")
-                
-                try:
-                    # تلاش برای گرفتن کانال با هندلینگ FloodWait
-                    entity = await client.get_entity(channel_str)
-                except FloodWaitError as e:
-                    print(f"❌ اخطار لیمیت: باید {e.seconds} ثانیه صبر کنید. توقف موقت.")
-                    break # کلا بیخیال این نوبت شو تا بدتر نشه
-                except Exception as e:
-                    print(f"⚠️ کانال یافت نشد: {e}")
+                # دریافت انتیتی از کش
+                entity = subscribed.get(channel_str.lower())
+                if not entity:
+                    print(f"⚠️ در کانال {channel_str} عضو نیستید! نادیده گرفته شد.")
                     continue
 
                 msgs = await client.get_messages(entity, limit=30)
@@ -259,16 +287,20 @@ async def main():
                     if m.file and any(m.file.name.endswith(x) for x in allowed_extensions if m.file.name):
                         temp_f.append({'n': m.file.name, 'm': m, 'link': link})
 
-                # ارسال‌ها با تاخیر کوچک
+                # پردازش و ارسال (با سرعت بیشتر چون تعداد کانال نصف شده)
                 for item in temp_c:
                     stat, lat, _ = await check_status(item['c'])
                     if stat:
                         prot = item['c'].split('://')[0].upper()
                         txt = f"🔮 **{prot}**\n\n`{item['c']}`\n📊 {stat} • {lat}ms\n{get_hashtags(item['c'], 'config')}{create_footer(title, item['link'])}"
-                        sent = await client.send_message(destination_channel, txt, link_preview=False)
-                        my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
-                        new_conf.append({'protocol': prot, 'config': item['c'], 'latency': lat, 'channel': title, 't_link': my_link, 'ts': time.time()})
-                        await asyncio.sleep(4) # تاخیر ارسال
+                        try:
+                            sent = await client.send_message(destination_channel, txt, link_preview=False)
+                            my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
+                            new_conf.append({'protocol': prot, 'config': item['c'], 'latency': lat, 'channel': title, 't_link': my_link, 'ts': time.time()})
+                            await asyncio.sleep(3)
+                        except FloodWaitError as e:
+                            print(f"❌ لیمیت ارسال: {e.seconds} ثانیه")
+                            break
 
                 valid_proxies = []
                 for item in temp_p:
@@ -276,12 +308,8 @@ async def main():
                     if stat:
                         ping = f"{lat}ms" if lat else ""
                         valid_proxies.append({'l': item['p'], 's': stat, 'pi': ping, 'src': item['link']})
-                        k = extract_proxy_info(item['p'])
-                        # استخراج امن
-                        m = re.search(r"server=([\w\.-]+)&port=(\d+)", item['p'])
-                        if m: 
-                            key_val = f"{m.group(1)}:{m.group(2)}"
-                            new_prox.append({'key': key_val, 'link': item['p'], 'channel': title, 't_link': '#', 'ts': time.time()})
+                        k = extract_proxy_key(item['p'])
+                        new_prox.append({'key': k, 'link': item['p'], 'channel': title, 't_link': '#', 'ts': time.time()})
                 
                 if valid_proxies:
                     body = "🔵 **پروکسی‌های جدید**\n\n"
@@ -292,25 +320,26 @@ async def main():
                     my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
                     for p in new_prox: 
                         if p['channel'] == title: p['t_link'] = my_link
-                    await asyncio.sleep(4)
+                    await asyncio.sleep(3)
 
                 for item in temp_f:
                     cap = f"📂 **{item['n']}**\n\n{get_hashtags(item['n'])}{create_footer(title, item['link'])}"
                     sent = await client.send_file(destination_channel, item['m'], caption=cap)
                     my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
                     new_file.append({'name': item['n'], 'ext': item['n'].split('.')[-1], 'channel': title, 'link': my_link, 'ts': time.time()})
-                    await asyncio.sleep(4)
+                    await asyncio.sleep(3)
 
             except Exception as e: 
                 print(f"Err {channel_str}: {e}")
                 continue
 
-        print("💾 ذخیره اطلاعات...")
+        print("💾 آپدیت دیتابیس...")
         f_c = merge_data(hist['configs'], new_conf, 'config')
         f_p = merge_data(hist['proxies'], new_prox, 'key')
         f_f = merge_data(hist['files'], new_file, 'name')
         save_data({'configs': f_c, 'proxies': f_p, 'files': f_f})
 
+        # تولید HTML
         html_c, html_p, html_f = generate_html_content(f_c, f_p, f_f)
         now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
         
@@ -401,4 +430,5 @@ async def main():
     finally: await client.disconnect()
 
 if __name__ == "__main__":
-    with client: client.loop.run_until_complete(main())
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())

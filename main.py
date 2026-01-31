@@ -232,19 +232,33 @@ async def main():
                         k = extract_proxy_key(item['p'])
                         new_prox.append({'key': k, 'link': item['p'], 'channel': title, 't_link': '#', 'ts': time.time()})
                 
+                # ارسال پروکسی (اصلاح شده با HTML برای لینک‌دار شدن قطعی)
                 if valid_proxies:
-                    body = "🔵 **پروکسی‌های جدید**\n\n"
+                    # استفاده از تگ HTML برای لینک
+                    body = "🔵 <b>پروکسی‌های جدید</b>\n\n"
                     for idx, p in enumerate(valid_proxies, 1):
-                        body += f"{idx}. [اتصال]({p['l']}) • {p['s']} {p['pi']}\n"
-                    body += "\n💡 برای اتصال روی لینک کلیک کنید" + create_footer(title, valid_proxies[0]['src'])
+                        # اینجا لینک رو توی href میذاریم که 100% کار کنه
+                        body += f"{idx}. <a href='{p['l']}'>اتصال</a> • {p['s']} {p['pi']}\n"
+                    
+                    # ساخت فوتر اختصاصی HTML (چون تابع اصلی مارک‌داون میده و با HTML قاطی میشه)
+                    now = datetime.now(iran_tz)
+                    safe_title = clean_title(title)
+                    src_link = valid_proxies[0]['src']
+                    footer_html = f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: <a href='{src_link}'>{safe_title}</a>\n🔗 {destination_channel}"
+                    
+                    body += "\n💡 برای اتصال روی لینک کلیک کنید" + footer_html
+                    
                     try:
-                        sent = await client.send_message(destination_channel, body, link_preview=False)
+                        # ارسال با فرمت HTML
+                        sent = await client.send_message(destination_channel, body, parse_mode='html', link_preview=False)
+                        
+                        # ذخیره لینک پیام برای دیتابیس
                         my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
                         for p in new_prox: 
                             if p['channel'] == title: p['t_link'] = my_link
                         await asyncio.sleep(3)
-                    except: pass
-
+                    except Exception as e:
+                        print(f"ارسال ناموفق پروکسی: {e}")
                 for item in temp_f:
                     cap = f"📂 **{item['n']}**\n\n{get_hashtags(item['n'])}{create_footer(title, item['link'])}"
                     try:

@@ -8,6 +8,7 @@ import base64
 import socket
 import random
 import time
+import sys
 from datetime import datetime, timedelta, timezone
 from telethon import TelegramClient
 from telethon.sessions import StringSession
@@ -31,13 +32,11 @@ DATA_FILE = 'data.json'
 KEEP_HISTORY_HOURS = 24
 destination_channel = '@myvpn1404'
 
-# لیست کل کانال‌ها
 ALL_CHANNELS = [
     '@KioV2ray', '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mypremium98',
     '@mitivpn', '@iSeqaro', '@configraygan', '@shankamil', '@xsfilternet',
     '@varvpn1', '@iP_CF', '@cooonfig', '@DeamNet', '@anty_filter',
     '@vpnboxiran', '@Merlin_ViP', '@BugFreeNet', '@cicdoVPN', '@Farda_Ai',
-    # --- مرز تقسیم ---
     '@Awlix_ir', '@proSSH', '@vpn_proxy_custom', '@Free_HTTPCustom',
     '@sinavm', '@Amir_Alternative_Official', '@StayconnectedVPN', '@BINNER_IRAN',
     '@IranianMinds', '@vpn11ir', '@NetAccount', '@mitiivpn2', '@isharewin',
@@ -50,7 +49,7 @@ iran_tz = pytz.timezone('Asia/Tehran')
 IRAN_IP_PREFIXES = ['2.144.', '5.22.', '31.2.', '37.9.', '46.18.', '78.38.', '85.9.', '91.98.', '93.88.', '185.']
 
 # -----------------------------------------------------------------------------
-# 2. مدیریت دیتابیس
+# 2. توابع و لاجیک
 # -----------------------------------------------------------------------------
 def load_data():
     if not os.path.exists(DATA_FILE): return {'configs': [], 'proxies': [], 'files': []}
@@ -76,30 +75,22 @@ def merge_data(history, new_items, key):
     res.sort(key=lambda x: x.get('ts', 0), reverse=True)
     return res
 
-# -----------------------------------------------------------------------------
-# 3. منطق انتخاب نوبت (هوشمند و ضد بن)
-# -----------------------------------------------------------------------------
 def get_batch_info():
+    """تعیین نوبت و سشن قبل از ساخت کلاینت"""
     minute = datetime.now(iran_tz).minute
     
-    # تغییر استراتژیک: اولویت اول با سشن 2 (اکانت سالم) است
-    # سشن 2 در نیمه اول ساعت (که معمولا زمان اجرای اصلی است) کار می‌کند
+    # اولویت با سشن 2 در نیمه اول ساعت
     if minute < 30:
         target_session = session_2 if session_2 else session_1
         print(f"👤 نوبت نیمه اول: استفاده از اکانت {'دوم (سالم)' if session_2 else 'اول'}")
         return ALL_CHANNELS[:20], "اول (1-20)", target_session
     else:
-        # در نیمه دوم ساعت، نوبت سشن 1 است، اما اگر خراب بود از 2 استفاده میکنیم
+        # در نیمه دوم، اولویت با سشن 1 است مگر اینکه نباشد
         target_session = session_1 if session_1 else session_2
-        # اگر کاربر فقط سشن 2 را وارد کرده باشد، همیشه از آن استفاده میشود
         if not target_session: target_session = session_2
-        
         print(f"👤 نوبت نیمه دوم: استفاده از اکانت {'اول' if target_session == session_1 else 'دوم (جایگزین)'}")
         return ALL_CHANNELS[20:], "دوم (21-40)", target_session
 
-# -----------------------------------------------------------------------------
-# 4. توابع کمکی
-# -----------------------------------------------------------------------------
 def is_iran_ip(ip):
     return any(ip.startswith(p) for p in IRAN_IP_PREFIXES)
 
@@ -151,9 +142,6 @@ def extract_proxy_key(link):
     if m: return f"{m.group(1)}:{m.group(2)}"
     return str(time.time())
 
-# -----------------------------------------------------------------------------
-# 5. تولید HTML
-# -----------------------------------------------------------------------------
 def generate_html_content(configs, proxies, files):
     configs_html = ""
     for i, c in enumerate(configs):
@@ -221,17 +209,21 @@ def generate_html_content(configs, proxies, files):
     return configs_html, proxies_html, files_html
 
 # -----------------------------------------------------------------------------
-# 6. بدنه اصلی
+# 3. آماده‌سازی کلاینت (GLOBAL SCOPE FIX)
+# -----------------------------------------------------------------------------
+# اینجا اول نوبت رو مشخص میکنیم، بعد کلاینت رو میسازیم که بیرون از Main شناخته بشه
+target_channels, batch_name, active_session = get_batch_info()
+
+if not active_session:
+    print("❌ خطای حیاتی: سشن یافت نشد! لطفا Secrets را چک کنید.")
+    sys.exit(1)
+
+client = TelegramClient(StringSession(active_session), api_id, api_hash)
+
+# -----------------------------------------------------------------------------
+# 4. بدنه اصلی
 # -----------------------------------------------------------------------------
 async def main():
-    target_channels, batch_name, active_session = get_batch_info()
-    
-    if not active_session:
-        print("❌ خطای حیاتی: سشن یافت نشد!")
-        return
-
-    client = TelegramClient(StringSession(active_session), api_id, api_hash)
-
     try:
         await client.start()
         print(f"✅ ربات با {batch_name} متصل شد")
@@ -246,18 +238,17 @@ async def main():
 
         for i, channel_str in enumerate(target_channels):
             try:
-                wait_time = random.randint(15, 25) # تاخیر ایمن
+                wait_time = random.randint(15, 25)
                 print(f"⏳ ({i+1}/{len(target_channels)}) {channel_str} - صبر: {wait_time}s")
                 await asyncio.sleep(wait_time)
                 
                 try:
-                    # تلاش برای دریافت کانال بدون عضویت
                     entity = await client.get_entity(channel_str)
                 except FloodWaitError as e:
-                    print(f"❌ لیمیت تلگرام برای این کانال: {e.seconds} ثانیه. عبور.")
+                    print(f"❌ لیمیت تلگرام: {e.seconds} ثانیه. عبور.")
                     continue
                 except Exception as e:
-                    print(f"⚠️ کانال یافت نشد یا در دسترس نیست: {e}")
+                    print(f"⚠️ کانال یافت نشد: {e}")
                     continue
 
                 msgs = await client.get_messages(entity, limit=30)
@@ -416,4 +407,5 @@ async def main():
     finally: await client.disconnect()
 
 if __name__ == "__main__":
-    with client: client.loop.run_until_complete(main())
+    with client:
+        client.loop.run_until_complete(main())

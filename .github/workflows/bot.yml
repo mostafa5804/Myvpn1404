@@ -1,10 +1,9 @@
-name: V2Ray Collector Bot
+name: Dual Session VPN Bot
 
 on:
   schedule:
-    - cron: '0 * * * *'   # دقیقه 0 (دسته اول)
-    - cron: '20 * * * *'  # دقیقه 20 (دسته دوم)
-    - cron: '40 * * * *'  # دقیقه 40 (دسته سوم)
+    - cron: '0 * * * *'   # دقیقه 00: اکانت اول
+    - cron: '30 * * * *'  # دقیقه 30: اکانت دوم
   workflow_dispatch:
 
 permissions:
@@ -13,7 +12,7 @@ permissions:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 15  # تایم رو بیشتر کردم چون تاخیرها زیاد شده
+    timeout-minutes: 15
     
     steps:
     - name: Checkout
@@ -40,13 +39,14 @@ jobs:
         API_ID: ${{ secrets.API_ID }}
         API_HASH: ${{ secrets.API_HASH }}
         SESSION_STRING: ${{ secrets.SESSION_STRING }}
+        SESSION_STRING_2: ${{ secrets.SESSION_STRING_2 }} # اضافه شدن سشن دوم
       run: python main.py
 
     - name: Commit and Push
       run: |
         if [ -f "index.html" ]; then
           git add index.html data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Update $(date +'%Y-%m-%d %H:%M')" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Dual Update $(date +'%Y-%m-%d %H:%M')" && git push)
           echo "✅ Done"
         else
           echo "⚠️ No files generated"

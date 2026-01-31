@@ -248,46 +248,100 @@ async def main():
                             'ts': time.time()
                         })
                 
+                # -----------------------------------------------------------------
+                # بخش پردازش و ارسال پروکسی (با پشتیبانی از فرمت‌های مختلف + HTML)
+                # -----------------------------------------------------------------
+                
+                # تابع داخلی برای استانداردسازی لینک پروکسی
+                def build_mtproxy_link(raw):
+                    raw = raw.strip()
+                    # اگر خودش لینک کامل بود، همون رو برگردون
+                    if raw.startswith(("tg://proxy", "https://t.me/proxy")):
+                        return raw
+                    # اگر فرمت ip:port:secret بود، تبدیلش کن
+                    try:
+                        if ":" in raw:
+                            parts = raw.split(":")
+                            if len(parts) == 3:
+                                server, port, secret = parts
+                                return f"https://t.me/proxy?server={server}&port={port}&secret={secret}"
+                    except: pass
+                    return None
+
+                valid_proxies = []
+                # پردازش لیست پروکسی‌های پیدا شده
+                for item in temp_p:
+                    # بررسی سلامت پروکسی
+                    stat, lat, _ = await check_status(item['p'], 'proxy')
+                    if not stat:
+                        continue
+
+                    # ساخت لینک استاندارد
+                    mt_link = build_mtproxy_link(item['p'])
+                    if not mt_link:
+                        continue
+
+                    ping = f"{lat}ms" if lat else ""
+
+                    valid_proxies.append({
+                        'l': mt_link,        # لینک استاندارد برای کلیک
+                        's': stat,
+                        'pi': ping,
+                        'src': item['link']  # لینک منبع
+                    })
+
+                    # ذخیره در لیست برای دیتابیس
+                    k = extract_proxy_key(item['p'])
+                    new_prox.append({
+                        'key': k,
+                        'link': item['p'],
+                        'channel': title,
+                        't_link': '#',
+                        'ts': time.time()
+                    })
+
+                # ارسال پیام اگر پروکسی سالمی پیدا شد
                 if valid_proxies:
-                    # ساخت پیام با Markdown (لینک‌های کلیک‌شدنی)
-                    body = "🔵 **پروکسی‌های جدید**\n\n"
-                    
+                    # هدر پیام (HTML)
+                    body = "🔵 <b>MTProxy‌های جدید</b>\n\n"
+
                     for idx, p in enumerate(valid_proxies, 1):
-                        # لینک کلیک‌شدنی با Markdown
-                        body += f"{idx}. [🔗 اتصال]({p['l']}) • {p['s']} {p['pi']}\n"
-                    
-                    # فوتر
+                        # استفاده از تگ <a> برای لینک‌دهی مطمئن
+                        safe_link = html.escape(p['l'])
+                        body += f"{idx}. <a href='{safe_link}'>🔗 اتصال</a> • {p['s']} {p['pi']}\n"
+
+                    # فوتر پیام (HTML)
                     now = datetime.now(iran_tz)
-                    safe_title = clean_title(title)
-                    src_link = valid_proxies[0]['src']
+                    safe_title = html.escape(clean_title(title)) # ایمن‌سازی اسم کانال
+                    src_link = html.escape(valid_proxies[0]['src'])
                     
-                    footer_md = f"\n━━━━━━━━━━━━━━━━\n"
-                    footer_md += f"🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n"
-                    footer_md += f"📡 منبع: [{safe_title}]({src_link})\n"
-                    footer_md += f"🔗 {destination_channel}"
-                    
-                    body += "\n💡 روی لینک کلیک کنید تا تلگرام باز شود" + footer_md
+                    footer_html = (
+                        "\n━━━━━━━━━━━━━━━━\n"
+                        f"🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n"
+                        f"📡 منبع: <a href='{src_link}'>{safe_title}</a>\n"
+                        f"🔗 {destination_channel}"
+                    )
+
+                    body += "\n💡 برای اتصال روی لینک کلیک کنید" + footer_html
 
                     try:
-                        # ارسال با Markdown پیش‌فرض تلگرام
+                        # ارسال با متد HTML (کلید موفقیت)
                         sent = await client.send_message(
-                            destination_channel, 
-                            body, 
+                            destination_channel,
+                            body,
+                            parse_mode="html",
                             link_preview=False
                         )
-                        my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
-                        
-                        # بروزرسانی لینک تلگرام
-                        for p in new_prox: 
-                            if p['channel'] == title: 
-                                p['t_link'] = my_link
-                        
-                        print(f"  ✅ {len(valid_proxies)} پروکسی ارسال شد")
-                        await asyncio.sleep(3)
-                        
-                    except Exception as e:
-                        print(f"  ❌ خطا در ارسال پروکسی: {e}")
 
+                        # آپدیت لینک پیام در دیتابیس
+                        my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
+                        for p in new_prox:
+                            if p['channel'] == title:
+                                p['t_link'] = my_link
+
+                        await asyncio.sleep(3)
+                    except Exception as e:
+                        print(f"ارسال ناموفق پروکسی: {e}")
                 # ارسال فایل‌ها
                 for item in temp_f:
                     cap = f"📂 **{item['n']}**\n\n{get_hashtags(item['n'])}{create_footer(title, item['link'])}"

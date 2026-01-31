@@ -93,10 +93,12 @@ def get_batch_info():
 def is_iran_ip(ip):
     return any(ip.startswith(p) for p in IRAN_IP_PREFIXES)
 
-def clean_title(t): 
-    # حذف کاراکترهای مخرب Markdown
-    return re.sub(r'[\[\]\(\)\*`_]', '', str(t)).strip() if t else "Channel"
-
+def clean_title(t):
+    # حذف تمام کاراکترهای خراب‌کننده مارک‌داون
+    if not t: return "Channel"
+    # حذف براکت، پرانتز، ستاره، بک‌تیک و آندرلاین از اسم کانال
+    return re.sub(r'[\[\]\(\)\*`_]', '', str(t)).strip()
+    
 def get_hashtags(name, type='file'):
     if type == 'config': return f"#{name.split('://')[0].lower()} #v2rayNG"
     ext = name.lower().split('.')[-1]
@@ -105,8 +107,8 @@ def get_hashtags(name, type='file'):
 def create_footer(title, link):
     now = datetime.now(iran_tz)
     safe_title = clean_title(title)
+    # اصلاح فرمت: افزودن کاراکتر کنترل جهت متن برای جلوگیری از بهم‌ریختگی لینک
     return f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: [{safe_title}]({link})\n🔗 {destination_channel}"
-
 async def check_ping(host, port):
     try:
         st = time.time()

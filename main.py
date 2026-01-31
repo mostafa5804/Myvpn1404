@@ -227,40 +227,66 @@ async def main():
                             new_conf.append({'protocol': prot, 'config': item['c'], 'latency': lat, 'channel': title, 't_link': my_link, 'ts': time.time()})
                             await asyncio.sleep(3)
                         except Exception as e: print(f"ارسال ناموفق کانفیگ: {e}")
-
-                # ارسال پروکسی‌ها (رفع مشکل لینک با HTML)
+# ارسال پروکسی (اصلاح شده)
                 valid_proxies = []
                 for item in temp_p:
                     stat, lat, _ = await check_status(item['p'], 'proxy')
                     if stat:
                         ping = f"{lat}ms" if lat else ""
-                        valid_proxies.append({'l': item['p'], 's': stat, 'pi': ping, 'src': item['link']})
+                        valid_proxies.append({
+                            'l': item['p'], 
+                            's': stat, 
+                            'pi': ping, 
+                            'src': item['link']
+                        })
                         k = extract_proxy_key(item['p'])
-                        new_prox.append({'key': k, 'link': item['p'], 'channel': title, 't_link': '#', 'ts': time.time()})
+                        new_prox.append({
+                            'key': k, 
+                            'link': item['p'], 
+                            'channel': title, 
+                            't_link': '#', 
+                            'ts': time.time()
+                        })
                 
                 if valid_proxies:
-                    # استفاده از HTML برای لینک‌دار کردن کلمه "اتصال"
-                    body = "🔵 <b>پروکسی‌های جدید</b>\n\n"
+                    # ساخت پیام با Markdown (لینک‌های کلیک‌شدنی)
+                    body = "🔵 **پروکسی‌های جدید**\n\n"
+                    
                     for idx, p in enumerate(valid_proxies, 1):
-                        safe_link = html.escape(p['l'])
-                        body += f"{idx}. <a href='{safe_link}'>اتصال</a> • {p['s']} {p['pi']}\n"
+                        # لینک کلیک‌شدنی با Markdown
+                        body += f"{idx}. [🔗 اتصال]({p['l']}) • {p['s']} {p['pi']}\n"
                     
-                    # فوتر اختصاصی HTML
+                    # فوتر
                     now = datetime.now(iran_tz)
-                    safe_title = html.escape(clean_title(title))
-                    src_link = html.escape(valid_proxies[0]['src'])
-                    footer_html = f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: <a href='{src_link}'>{safe_title}</a>\n🔗 {destination_channel}"
+                    safe_title = clean_title(title)
+                    src_link = valid_proxies[0]['src']
                     
-                    body += "\n💡 برای اتصال روی لینک کلیک کنید" + footer_html
+                    footer_md = f"\n━━━━━━━━━━━━━━━━\n"
+                    footer_md += f"🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n"
+                    footer_md += f"📡 منبع: [{safe_title}]({src_link})\n"
+                    footer_md += f"🔗 {destination_channel}"
                     
+                    body += "\n💡 روی لینک کلیک کنید تا تلگرام باز شود" + footer_md
+
                     try:
-                        sent = await client.send_message(destination_channel, body, parse_mode='html', link_preview=False)
+                        # ارسال با Markdown پیش‌فرض تلگرام
+                        sent = await client.send_message(
+                            destination_channel, 
+                            body, 
+                            link_preview=False
+                        )
                         my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
+                        
+                        # بروزرسانی لینک تلگرام
                         for p in new_prox: 
-                            if p['channel'] == title: p['t_link'] = my_link
+                            if p['channel'] == title: 
+                                p['t_link'] = my_link
+                        
+                        print(f"  ✅ {len(valid_proxies)} پروکسی ارسال شد")
                         await asyncio.sleep(3)
+                        
                     except Exception as e:
-                        print(f"ارسال ناموفق پروکسی: {e}")
+                        print(f"  ❌ خطا در ارسال پروکسی: {e}")
 
                 # ارسال فایل‌ها
                 for item in temp_f:

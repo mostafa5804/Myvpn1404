@@ -35,17 +35,9 @@ jobs:
         git config --global user.email "bot@github.com"
         git pull origin main --rebase || echo "⚠️ Nothing to pull or rebase failed"
 
-    - name: Run bot
-      env:
-        API_ID: ${{ secrets.API_ID }}
-        API_HASH: ${{ secrets.API_HASH }}
-        SESSION_STRING: ${{ secrets.SESSION_STRING }}
-        SESSION_STRING_2: ${{ secrets.SESSION_STRING_2 }}
-      run: python main.py
-
-    - name: Check & Push Changes
+        - name: Check & Push Changes
       run: |
-        # 1. تنظیم هویت گیت (دوباره برای اطمینان)
+        # 1. تنظیم هویت گیت
         git config --global user.name "VPN Bot"
         git config --global user.email "bot@github.com"
         
@@ -59,13 +51,18 @@ jobs:
         git add index.html data.json
         
         # 4. بررسی تغییرات و کامیت
-        # اگر تغییری نباشد، کامیت انجام نمی‌شود تا ارور ندهد
         if git diff --staged --quiet; then
           echo "⚠️ No changes detected. Skipping push."
         else
           git commit -m "🔄 Auto-Update: $(date +'%Y-%m-%d %H:%M')"
           
-          # 5. پوش کردن دقیق به برنچ اصلی (نکته کلیدی)
+          # ==========================================
+          # ✅ بخش حیاتی که فراموش کردید (اضافه شد):
+          # اول تغییرات را می‌گیرد تا ارور ندهد
+          # ==========================================
+          git pull --rebase origin main
+          
+          # 5. پوش کردن نهایی
           git push origin HEAD:main
           echo "✅ Changes pushed successfully."
         fi

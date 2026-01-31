@@ -201,12 +201,15 @@ async def main():
                                 temp_c.append({'c': c, 'link': link})
                                 sent_hashes.add(c)
                         
-                        # استخراج پروکسی
+                                                # استخراج پروکسی
                         for p in re.findall(r"https://t.me/proxy\?[^\s\n]+", m.text):
-                            clean_p = p.replace('https', 'tg')
+                            # اصلاح فرمت لینک به tg://proxy برای کارکرد صحیح دکمه‌های اتصال
+                            clean_p = p.replace('https://t.me/proxy', 'tg://proxy')
+                            
                             if clean_p not in sent_hashes:
                                 temp_p.append({'p': clean_p, 'link': link, 'src': link})
                                 sent_hashes.add(clean_p)
+
 
                     # استخراج فایل
                     if m.file and any(m.file.name.endswith(x) for x in allowed_extensions if m.file.name):

@@ -2,6 +2,54 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://83f03646-fb28-44cc-9d2c-8853f6c09285@104.17.162.123:8443?path=%2F%3Fed%3D%23TELEGRAM-%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%40AliXTso%3Fed%3D512&security=tls&alpn=http%2F1.1&encryption=none&host=r4fnviw9jl4i4rx.zjde5.de5.net&fp=random&type=ws&sni=r4fnviw9jl4i4rx.zjde5.de5.net#cicdo%20vpn",
+      "latency": 2,
+      "channel": "VPN | CICDO کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/4042",
+      "ts": 1769954618.29575
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiI0Ny4yMzYuNjQuMjE2IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImU4ZjcwMzE0LTgxYjQtNGVjMi05Yzg4LWU4NTgyOTgwNTg1YyIsImluc2VjdXJlIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjgwODAiLCJwcyI6Itin2q/ZhyDZhduM2K7ZiNin24wg2YLYt9i5INmG2LTbjCDYrNmI24zZhiDYtNmIIDogQGZhcnNpcHJveHkiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
+      "latency": 175,
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/4035",
+      "ts": 1769954449.2930865
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiJkZS0xLXR1bi5oYWNoYW1hbmFzaC5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InRlbGV3ZWJpb24uY29tIiwiaWQiOiJjMmQ4ZmU1YS02ZWMwLTQ0ZjYtOTFkYi04OWJiMjZkZDY5NTAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsInBvcnQiOiI4MDgwIiwicHMiOiLYrNmI24zZhiDYtNuM2K8g2YLYtyDZhti024zYryBAc2hhbmthbWlsIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJodHRwIiwidiI6IjIifQ==",
+      "latency": null,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/4034",
+      "ts": 1769954413.3900833
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@104.18.4.130:443?path=%2F--Telegram---MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=www.hitgram.ir&fp=chrome&type=ws&sni=www.hitgram.ir#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
+      "latency": 1,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/4033",
+      "ts": 1769954409.6718893
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://4525c260-df3c-4f62-b8f1-f4f5f305694b@188.114.98.0:443?path=%2F%3Fed%3D2560&security=tls&encryption=none&host=yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net&fp=chrome&type=ws&sni=yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
+      "latency": 2,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/4032",
+      "ts": 1769954406.3009257
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://bb8c74a1-abc1-4511-b100-9876e30cb65c@172.64.152.23:443?path=%2FTelegram-XV2ry2-Telegram-XV2ry2-Telegram-XV2ry2-Telegram-XV2ry2-Telegram-XV2ry2-Telegram-XV2ry2-Telegram-XV2ry2-Telegram-XV2ry2%3Fed%3D2048&security=tls&alpn=http%2F1.1&encryption=none&host=xfjd79v2tjscrm6jqo.zjde5.de5.net&type=ws&sni=xfjd79v2tjscrm6jqo.zjde5.de5.net#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
+      "latency": 2,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/4031",
+      "ts": 1769954402.9973474
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://396c904b-4b62-4334-b793-ee25fc0c61cc@172.64.152.23:443?path=%2FeyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=pages.dev#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran`",
       "latency": 2,
       "channel": "کانفیگ V2Ray رایگان | Free Config",
@@ -5270,6 +5318,104 @@
     }
   ],
   "files": [
+    {
+      "name": "@BugFreeNet S5🇮🇹.dark",
+      "ext": "dark",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/myvpn1404/4041",
+      "ts": 1769954595.7298384
+    },
+    {
+      "name": "@BugFreeNet S4🇳🇱.dark",
+      "ext": "dark",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/myvpn1404/4040",
+      "ts": 1769954592.4363878
+    },
+    {
+      "name": "@BugFreeNet S3🇬🇧.dark",
+      "ext": "dark",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/myvpn1404/4039",
+      "ts": 1769954589.0735598
+    },
+    {
+      "name": "@BugFreeNet S2🇫🇷.dark",
+      "ext": "dark",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/myvpn1404/4038",
+      "ts": 1769954585.7806413
+    },
+    {
+      "name": "@BugFreeNet S1🇫🇷.dark",
+      "ext": "dark",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/myvpn1404/4037",
+      "ts": 1769954582.42856
+    },
+    {
+      "name": "NetMeliEDGE.npvt",
+      "ext": "npvt",
+      "channel": "VPN MARKET",
+      "link": "https://t.me/myvpn1404/4036",
+      "ts": 1769954527.4540515
+    },
+    {
+      "name": "Configraygan I.npvt",
+      "ext": "npvt",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/myvpn1404/4030",
+      "ts": 1769954382.455595
+    },
+    {
+      "name": "Configraygan II .npvt",
+      "ext": "npvt",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/myvpn1404/4029",
+      "ts": 1769954379.154053
+    },
+    {
+      "name": "Configraygan III.npvt",
+      "ext": "npvt",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/myvpn1404/4028",
+      "ts": 1769954375.8850203
+    },
+    {
+      "name": "Configraygan IV.npvt",
+      "ext": "npvt",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/myvpn1404/4027",
+      "ts": 1769954372.5735369
+    },
+    {
+      "name": "Configraygan V.npvt",
+      "ext": "npvt",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/myvpn1404/4026",
+      "ts": 1769954369.301884
+    },
+    {
+      "name": "Configraygan VI.npvt",
+      "ext": "npvt",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/myvpn1404/4025",
+      "ts": 1769954365.9560423
+    },
+    {
+      "name": "@planB_net 5️⃣8️⃣1️⃣.npvt",
+      "ext": "npvt",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/myvpn1404/4024",
+      "ts": 1769954271.5595012
+    },
+    {
+      "name": "@planB_net 5️⃣8️⃣2️⃣.npvt",
+      "ext": "npvt",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/myvpn1404/4023",
+      "ts": 1769954268.2896261
+    },
     {
       "name": "exclave_backup_1Feb2026.json",
       "ext": "json",

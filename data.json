@@ -3439,25 +3439,23 @@
       "channel": "کانفیگ رایگان",
       "t_link": "https://t.me/myvpn1404/3483",
       "ts": 1769884762.1909907
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://9c42819a-67a6-4742-9c6d-64900ba62160@us-2.bot-iphone.ru:8443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=samsung.com&sid=6ba85179e30d4fc2#%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%20%D9%BE%D8%A7%DB%8C%D8%AF%D8%A7%D8%B1%20%7C%20configs_freeiran`",
-      "latency": 249,
-      "channel": "کانفیگ رایگان v2ray",
-      "t_link": "https://t.me/myvpn1404/3453",
-      "ts": 1769880652.3173294
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiAibmV3cHJzdnAub3JnIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogInNwZWVkdGVzdC5uZXQiLCAiaWQiOiAiNTI3ZDliZTItYWZkMS00YTQ4LTgxZjMtY2IyNWM5Y2JiMWIzIiwgImluc2VjdXJlIjogIjAiLCAibmV0IjogInRjcCIsICJwYXRoIjogIi8iLCAicG9ydCI6ICIyMDgzIiwgInBzIjogItin2KrYtdin2YQg2b7Yp9uM2K/Yp9ixIHwgY29uZmlnc19mcmVlaXJhbiIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJodHRwIiwgInYiOiAiMiJ9`",
-      "latency": 259,
-      "channel": "کانفیگ رایگان v2ray",
-      "t_link": "https://t.me/myvpn1404/3452",
-      "ts": 1769880648.664536
     }
   ],
   "proxies": [
+    {
+      "key": "185.215.247.111:2053",
+      "link": "tg://proxy?server=185.215.247.111&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/4163",
+      "ts": 1769968256.5618398
+    },
+    {
+      "key": "185.215.247.111:4455",
+      "link": "tg://proxy?server=185.215.247.111&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/4163",
+      "ts": 1769968256.4484966
+    },
     {
       "key": "88.198.117.138:85",
       "link": "tg://proxy?server=88.198.117.138&port=85&secret=FgIBAgABAAH8AwOG4kw63Q)",
@@ -4166,20 +4164,6 @@
       "ts": 1769884872.7262256
     },
     {
-      "key": "185.215.247.111:2053",
-      "link": "tg://proxy?server=185.215.247.111&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/3497",
-      "ts": 1769884872.626193
-    },
-    {
-      "key": "185.215.247.111:4455",
-      "link": "tg://proxy?server=185.215.247.111&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/3497",
-      "ts": 1769884872.521461
-    },
-    {
       "key": "185.215.247.112:2053",
       "link": "tg://proxy?server=185.215.247.112&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
       "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
@@ -4195,6 +4179,13 @@
     }
   ],
   "files": [
+    {
+      "name": "@planB_net 5️⃣9️⃣9️⃣.npvt",
+      "ext": "npvt",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/myvpn1404/4162",
+      "ts": 1769968108.6370914
+    },
     {
       "name": "NetAccount481.npvt",
       "ext": "npvt",

@@ -1,6 +1,38 @@
 {
   "configs": [
     {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsanFkYWx1MTMuLg@3.1.195.148:8319#shankamil",
+      "latency": null,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/5328",
+      "ts": 1770152581.5945196
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://79b03434-d2c6-4ab5-9474-acf450eb7ab9@185.126.6.131:3446?security=none&encryption=none&headerType=http&type=tcp#shankamil",
+      "latency": null,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/5327",
+      "ts": 1770152578.054059
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://79b03434-d2c6-4ab5-9474-acf450eb7ab9@185.126.6.131:3445?security=none&encryption=none&headerType=http&type=tcp#shankamil",
+      "latency": null,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/5326",
+      "ts": 1770152572.7318704
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://d027f2eb-3eea-4d84-8c67-73133136cacd@grdt.dtsantoor.com:40786?security=tls&encryption=none&host=skyroom.online&headerType=http&fp=firefox&type=tcp&sni=grdt.dtsantoor.com#shankamil",
+      "latency": 293,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/5325",
+      "ts": 1770152567.4463649
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://955df0a4-b340-4172-af3e-d6eaf8f9c403@cf.gafe-marz.ir:2083?mode=multi&security=tls&encryption=none&authority=Shifo.digishopcenter.ir&type=grpc&serviceName=Love&sni=Shifo.digishopcenter.ir#%40configraygan%F0%9F%8F%B5%EF%B8%8F%F0%9F%8F%B5%EF%B8%8F",
       "latency": 142,
@@ -2875,18 +2907,25 @@
   ],
   "proxies": [
     {
+      "key": "185.3.200.172:2053",
+      "link": "tg://proxy?server=185.3.200.172&port=2053&secret=7hYDAQIAAQAB/AMDhuJMOt1iaXNjb3R0aS55ZWt0YW5ldC5jb20",
+      "channel": "VPN | CICDO کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/5330",
+      "ts": 1770152764.5813398
+    },
+    {
+      "key": "185.84.157.12:443",
+      "link": "tg://proxy?server=185.84.157.12&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==)",
+      "channel": "اینترنت ازاد",
+      "t_link": "https://t.me/myvpn1404/5324",
+      "ts": 1770152508.9437764
+    },
+    {
       "key": "185.3.200.191:2053",
       "link": "tg://proxy?server=185.3.200.191&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
       "channel": "VPN | CICDO کانفیگ ملی شکن",
       "t_link": "https://t.me/myvpn1404/5323",
       "ts": 1770152012.3049607
-    },
-    {
-      "key": "185.84.157.12:443",
-      "link": "tg://proxy?server=185.84.157.12&port=443&secret=FgMBAgABAAH8AxOG4kw63Q%3D%3D",
-      "channel": "VPN | CICDO کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/5323",
-      "ts": 1770152012.2005599
     },
     {
       "key": "85.133.194.117:8443",
@@ -2901,13 +2940,6 @@
       "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
       "t_link": "https://t.me/myvpn1404/5322",
       "ts": 1770151860.2298222
-    },
-    {
-      "key": "185.3.200.172:2053",
-      "link": "tg://proxy?server=185.3.200.172&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/5322",
-      "ts": 1770151859.0622284
     },
     {
       "key": "85.133.194.109:8443",
@@ -3667,6 +3699,13 @@
     }
   ],
   "files": [
+    {
+      "name": "@shankamilابجی ترامپ دنیامه.npvt",
+      "ext": "npvt",
+      "channel": "کانفیگ ملی شکن",
+      "link": "https://t.me/myvpn1404/5329",
+      "ts": 1770152584.8409317
+    },
     {
       "name": "@ZEDMODEON 44 ⚡.npvt",
       "ext": "npvt",

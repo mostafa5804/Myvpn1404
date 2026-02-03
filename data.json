@@ -2463,33 +2463,23 @@
       "channel": "کانفیگ ملی شکن",
       "t_link": "https://t.me/myvpn1404/4736",
       "ts": 1770054395.4956124
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://b540f05e-ee31-490d-9f70-fdb034022bae@72.11.152.180:49981?type=tcp&encryption=none&security=none#%D8%A7%DA%AF%D9%87%20%D9%85%DB%8C%D8%AE%D9%88%D8%A7%DB%8C%20%D9%82%D8%B7%D8%B9%20%D9%86%D8%B4%DB%8C%20%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%D9%88%20%3A%20%40farsiproxy`",
-      "latency": 39,
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/4723",
-      "ts": 1770051264.3752227
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://829658bf-03c4-4c28-81e9-dd6ea141b2d0@ip.notomarosww.com:8443?path=%2FTel-%40V2rayAlpha%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=0&sni=5jq7fvwpqt5owo2fi198sa6qoxznkzfea7en4m3xroeqrt3u3q.zjde5.de5.net#%D8%A7%DA%AF%D9%87%20%D9%85%DB%8C%D8%AE%D9%88%D8%A7%DB%8C%20%D9%82%D8%B7%D8%B9%20%D9%86%D8%B4%DB%8C%20%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%D9%88%20%3A%20%40farsiproxy`",
-      "latency": null,
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/4722",
-      "ts": 1770051260.988243
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://7068cce9-b0e7-4f9b-aa26-3e91e58d66bf@185.143.233.5:443?path=%2F%3Fed%3D443&security=tls&encryption=none&host=anten.ir.oadeflantrogmnl7.iranmapcdn.com&fp=randomized&type=ws&sni=anten.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL-7-NB-MMDLeecher-v",
-      "latency": 131,
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/4721",
-      "ts": 1770051257.4985383
     }
   ],
   "proxies": [
+    {
+      "key": "185.3.200.104:2053",
+      "link": "tg://proxy?server=185.3.200.104&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/5178",
+      "ts": 1770138493.8215082
+    },
+    {
+      "key": "185.3.200.103:2053",
+      "link": "tg://proxy?server=185.3.200.103&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/5178",
+      "ts": 1770138493.7294583
+    },
     {
       "key": "185.84.157.11:443",
       "link": "tg://proxy?server=185.84.157.11&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==)",
@@ -3066,6 +3056,13 @@
     }
   ],
   "files": [
+    {
+      "name": "-NetMeli-Shekan🟢.npvt",
+      "ext": "npvt",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "link": "https://t.me/myvpn1404/5177",
+      "ts": 1770138366.296174
+    },
     {
       "name": "⚡️ Fast.npvt",
       "ext": "npvt",

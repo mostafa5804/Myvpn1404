@@ -2,6 +2,38 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://ad39e228-35a9-4629-a16a-d66a97654225@150.241.230.85:52554?security=reality&encryption=none&pbk=DCnaVqwxfGF3d7LDHqFKYtlyGw2l6LsbxPvphK776Gc&headerType=none&fp=chrome&spx=%2F6b4bdb32&type=tcp&sni=yahoo.com&sid=6b4bdb32#NetAccount`",
+      "latency": 50,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/5221",
+      "ts": 1770145639.8334074
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://8492cdf1-e008-4555-b3b0-5d812c588151@de4.socialup.live:443?security=reality&encryption=none&pbk=pTHa-c6K1yr__V0oqRqSinhNJeX3DXtruIstphk31Do&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=web.max.ru&sid=1b#NetAccount`",
+      "latency": 202,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/5220",
+      "ts": 1770145636.5030074
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.199:8080#NetAccount`",
+      "latency": 125,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/5219",
+      "ts": 1770145632.9682226
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443?path=%2F&security=tls&encryption=none&insecure=0&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#NetAccount`",
+      "latency": 16,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/5218",
+      "ts": 1770145629.561374
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://9e35a3d0-1309-4697-a61c-e898e6312c35@ip.hamrahto.com:8443?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=hm2.mutee.com.tr&fp=chrome&type=ws&sni=hm2.mutee.com.tr#NetAccount`",
       "latency": 70,
       "channel": "Net Account | نت اكانت",
@@ -2403,6 +2435,55 @@
   ],
   "proxies": [
     {
+      "key": "188.40.153.38:155",
+      "link": "tg://proxy?server=188.40.153.38&port=155&secret=eeNEgYdJvXrFGRMCIMJdCQ==)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/5227",
+      "ts": 1770145771.1076562
+    },
+    {
+      "key": "185.3.200.15:2053",
+      "link": "tg://proxy?server=185.3.200.15&port=2053&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/5226",
+      "ts": 1770145732.1699657
+    },
+    {
+      "key": "185.115.161.244:9443",
+      "link": "tg://proxy?server=185.115.161.244&port=9443&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/5226",
+      "ts": 1770145732.053959
+    },
+    {
+      "key": "185.115.161.252:9443",
+      "link": "tg://proxy?server=185.115.161.252&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/5226",
+      "ts": 1770145731.9348207
+    },
+    {
+      "key": "185.3.200.14:2053",
+      "link": "tg://proxy?server=185.3.200.14&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/5226",
+      "ts": 1770145731.8137715
+    },
+    {
+      "key": "185.3.200.112:2053",
+      "link": "tg://proxy?server=185.3.200.112&port=2053&secret=7hYDAQIAAQAB_AMDhuJMOt1iaXNjb3R0aS55ZWt0YW5ldC5jb20%3D)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/5226",
+      "ts": 1770145731.698708
+    },
+    {
+      "key": "185.3.200.112:4455",
+      "link": "tg://proxy?server=185.3.200.112&port=4455&secret=7hYDAQIAAQAB_AMDhuJMOt1iaXNjb3R0aS55ZWt0YW5ldC5jb20%3D)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/5226",
+      "ts": 1770145731.5744588
+    },
+    {
       "key": "185.3.200.185:2053",
       "link": "tg://proxy?server=185.3.200.185&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
       "channel": "i SHARΞ WIN™",
@@ -2429,13 +2510,6 @@
       "channel": "Net Account | نت اكانت",
       "t_link": "https://t.me/myvpn1404/5216",
       "ts": 1770142454.996753
-    },
-    {
-      "key": "188.40.153.38:155",
-      "link": "tg://proxy?server=188.40.153.38&port=155&secret=eeNEgYdJvXrFGRMCIMJdCQ%3D%3D",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/5216",
-      "ts": 1770142454.8637993
     },
     {
       "key": "185.3.200.105:4455",
@@ -2555,13 +2629,6 @@
       "channel": "i SHARΞ WIN™",
       "t_link": "https://t.me/myvpn1404/5185",
       "ts": 1770139827.9116204
-    },
-    {
-      "key": "185.115.161.252:9443",
-      "link": "tg://proxy?server=185.115.161.252&port=9443&secret=1603010200010001fc030386e24c3add",
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/5185",
-      "ts": 1770139827.6649039
     },
     {
       "key": "185.3.200.77:2053",
@@ -3111,6 +3178,34 @@
     }
   ],
   "files": [
+    {
+      "name": "NetAccount503.npvt",
+      "ext": "npvt",
+      "channel": "Net Account | نت اكانت",
+      "link": "https://t.me/myvpn1404/5225",
+      "ts": 1770145653.0715113
+    },
+    {
+      "name": "NetAccount504.npvt",
+      "ext": "npvt",
+      "channel": "Net Account | نت اكانت",
+      "link": "https://t.me/myvpn1404/5224",
+      "ts": 1770145649.779806
+    },
+    {
+      "name": "NetAccount505.npvt",
+      "ext": "npvt",
+      "channel": "Net Account | نت اكانت",
+      "link": "https://t.me/myvpn1404/5223",
+      "ts": 1770145646.4392142
+    },
+    {
+      "name": "NetAccount506.npvt",
+      "ext": "npvt",
+      "channel": "Net Account | نت اكانت",
+      "link": "https://t.me/myvpn1404/5222",
+      "ts": 1770145643.1340222
+    },
     {
       "name": "همراه اختصاصی.npvt",
       "ext": "npvt",

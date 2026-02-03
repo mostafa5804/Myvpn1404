@@ -1,6 +1,30 @@
 {
   "configs": [
     {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.210:8080#NetAccount`",
+      "latency": 97,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/5230",
+      "ts": 1770146865.9137127
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://9e35a3d0-1309-4697-a61c-e898e6312c35@ip.hamrahto.com:8443?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=hm2.mutee.com.tr&fp=chrome&type=ws&allowInsecure=0&sni=hm2.mutee.com.tr#NetAccount`",
+      "latency": 120,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/5229",
+      "ts": 1770146862.5570526
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://48490509-9672-4ddb-b44f-bbfd7560d614@89.149.242.24:1990?security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=pmeli.appleidcenteral.ir#NetAccount`",
+      "latency": 110,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/5228",
+      "ts": 1770146859.1696875
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://ad39e228-35a9-4629-a16a-d66a97654225@150.241.230.85:52554?security=reality&encryption=none&pbk=DCnaVqwxfGF3d7LDHqFKYtlyGw2l6LsbxPvphK776Gc&headerType=none&fp=chrome&spx=%2F6b4bdb32&type=tcp&sni=yahoo.com&sid=6b4bdb32#NetAccount`",
       "latency": 50,
@@ -2436,10 +2460,10 @@
   "proxies": [
     {
       "key": "188.40.153.38:155",
-      "link": "tg://proxy?server=188.40.153.38&port=155&secret=eeNEgYdJvXrFGRMCIMJdCQ==)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/5227",
-      "ts": 1770145771.1076562
+      "link": "tg://proxy?server=188.40.153.38&port=155&secret=eeNEgYdJvXrFGRMCIMJdCQ%3D%3D",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/5231",
+      "ts": 1770146869.1023772
     },
     {
       "key": "185.3.200.15:2053",
@@ -3178,6 +3202,27 @@
     }
   ],
   "files": [
+    {
+      "name": "@v2rays_ha 203.npvt",
+      "ext": "npvt",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "link": "https://t.me/myvpn1404/5234",
+      "ts": 1770146929.502396
+    },
+    {
+      "name": "@v2rays_ha 204.npvt",
+      "ext": "npvt",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "link": "https://t.me/myvpn1404/5233",
+      "ts": 1770146926.2220376
+    },
+    {
+      "name": "@v2rays_ha 205.npvt",
+      "ext": "npvt",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "link": "https://t.me/myvpn1404/5232",
+      "ts": 1770146922.919978
+    },
     {
       "name": "NetAccount503.npvt",
       "ext": "npvt",

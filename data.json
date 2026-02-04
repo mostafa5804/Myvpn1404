@@ -2,6 +2,14 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://bfdc22f1-7e63-43f5-94dd-2befa32a0720@cd4.reata.ir:2053?security=tls&encryption=none&insecure=0&host=api5.diiginet.ir&fp=chrome&type=ws&allowInsecure=0&sni=api5.diiginet.ir#NetAccount`",
+      "latency": 254,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/5768",
+      "ts": 1770228595.1775432
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.93:23576?encryption=none&flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=fuck.rkn&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#shankamil",
       "latency": 104,
       "channel": "کانفیگ ملی شکن",
@@ -2811,6 +2819,27 @@
   ],
   "proxies": [
     {
+      "key": "185.84.157.6:443",
+      "link": "tg://proxy?server=185.84.157.6&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/5770",
+      "ts": 1770228712.226846
+    },
+    {
+      "key": "185.84.157.150:443",
+      "link": "tg://proxy?server=185.84.157.150&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/5770",
+      "ts": 1770228712.098664
+    },
+    {
+      "key": "85.133.194.11:8443",
+      "link": "tg://proxy?server=85.133.194.11&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/5769",
+      "ts": 1770228634.7360911
+    },
+    {
       "key": "85.133.194.105:8443",
       "link": "tg://proxy?server=85.133.194.105&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
       "channel": "VPN | CICDO کانفیگ ملی شکن",
@@ -2937,13 +2966,6 @@
       "ts": 1770224485.8165429
     },
     {
-      "key": "185.84.157.6:443",
-      "link": "tg://proxy?server=185.84.157.6&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/5734",
-      "ts": 1770224485.7047205
-    },
-    {
       "key": "185.84.157.13:443",
       "link": "tg://proxy?server=185.84.157.13&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==)",
       "channel": "دارک پروکسی | Proxy mtproto",
@@ -2977,13 +2999,6 @@
       "channel": "iRo Proxy | پروکسی",
       "t_link": "https://t.me/myvpn1404/5732",
       "ts": 1770221396.08009
-    },
-    {
-      "key": "185.84.157.150:443",
-      "link": "tg://proxy?server=185.84.157.150&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/5729",
-      "ts": 1770221318.1998339
     },
     {
       "key": "178.62.237.58:443",
@@ -3568,6 +3583,13 @@
     }
   ],
   "files": [
+    {
+      "name": "@shankamilبالستیک پناهم ده (2).npvt",
+      "ext": "npvt",
+      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
+      "link": "https://t.me/myvpn1404/5767",
+      "ts": 1770228574.3844986
+    },
     {
       "name": "Speed ⚡️.npvt",
       "ext": "npvt",

@@ -1,6 +1,86 @@
 {
   "configs": [
     {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphYjBiODFhNWJmZjdkZGVh@57.129.129.139:29183#@configraygan`",
+      "latency": 143,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/5597",
+      "ts": 1770206094.683014
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://fafc26d9-7fd9-48e0-8375-5bac0fdb5f55@81.12.33.7:710?security=none&type=tcp&headerType=http&path=%2F&host=igap.net#@configraygan",
+      "latency": null,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/5596",
+      "ts": 1770206091.2498245
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://4b81acdf-9f0e-4a75-9f30-2f0207599d66@172.67.175.120:443?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=x2.tele-shop-too.studio&fp=chrome&type=ws&sni=x2.tele-shop-too.studio#@configraygan",
+      "latency": 2,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/5595",
+      "ts": 1770206085.7377646
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://4b81acdf-9f0e-4a75-9f30-2f0207599d66@172.67.175.120:443?path=%2F&security=tls&encryption=none&alpn=h2,http/1.1&host=x2.tele-shop-too.studio&fp=chrome&type=ws&sni=x2.tele-shop-too.studio#@configraygan",
+      "latency": 2,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/5594",
+      "ts": 1770206082.4672315
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e285684a-1e5d-4293-9cd3-3861131288f8@GR.erush.ir:1155?path=%2F%3Fed%3D2560&security=none&encryption=none&host=vgdl.ir&type=ws#@configraygan",
+      "latency": null,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/5593",
+      "ts": 1770206079.1443455
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@www.calmlunch.com:443?allowInsecure=1&host=www.calmlunch.com&path=%2Fassignment&type=ws#@configraygan",
+      "latency": 27,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/5592",
+      "ts": 1770206073.8492675
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@172.64.152.23:443?allowInsecure=1&host=www.gossipglove.com&path=%2Fassignment&sni=www.gossipglove.com&type=ws#@configraygan",
+      "latency": 3,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/5591",
+      "ts": 1770206070.5307622
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e108f3eb-4d3a-4e20-a09b-7008e333bc23@nl01-gmn02-vlr01.tcp-reset-club.net:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg&security=reality&sid=86e999a2cdc2&sni=hls-svod.itunes.apple.com&type=tcp#@configraygan",
+      "latency": 187,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/5590",
+      "ts": 1770206067.2006376
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://745d8b0e-1bf2-4921-8058-4d67dd3dbc13@91.184.240.121:443?allowInsecure=1&encryption=none&security=tls&sni=secdn13.suio.me&type=tcp#@configraygan",
+      "latency": 170,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/5589",
+      "ts": 1770206063.736854
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiJnb2xkNi5nb2xkc3BlZWQub3JnIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImE3OTE4NTAxLTkyNDUtNDJmNS05MzkzLWY2ZTg0YmRhOTQ5NyIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiNDA5NzMiLCJwcyI6IkBjb25maWdyYXlnYW4iLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9``",
+      "latency": 551,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/5588",
+      "ts": 1770206060.2345102
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.237.154.24:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": null,
@@ -2871,57 +2951,37 @@
       "channel": "کانفیگ ملی شکن",
       "t_link": "https://t.me/myvpn1404/5034",
       "ts": 1770119818.239305
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://36e3bb7e-89bd-4ffd-9a3a-0470beaa71e7@hpx.lol:443?security=reality&encryption=none&pbk=Ymeaa6zIVOp0ZsRPgt1tgWr64N4NjW3vgS6RgumVSys&headerType=none&fp=firefox&spx=%2Fhajpoya&type=tcp&flow=xtls-rprx-vision&sni=hpx.lol&sid=f2f79c0b#%40shankamil%20%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B5%DB%8C",
-      "latency": null,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/5026",
-      "ts": 1770118961.9295964
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiIxNzIuNjcuMjA0Ljg0IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJuYXNuZXQtNTExOTUyNDI0Lm1jaXRlbC5jbyIsImlkIjoibmFzbmV0IiwibmV0Ijoid3MiLCJwYXRoIjoiL25hc25ldC9jZG4iLCJwb3J0IjoiODA4MCIsInBzIjoi2KzZiNuM2YYg2LTbjNivINmC2Lcg2YbYtNuM2K8gQHNoYW5rYW1pbCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==",
-      "latency": 2,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/5025",
-      "ts": 1770118956.5963707
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://humanity@www.gossipglove.com:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.gossipglove.com#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
-      "latency": 89,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/5024",
-      "ts": 1770118953.35963
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://18805ff3-b420-45de-af18-93be14024ae8@47.251.25.74:443?security=reality&encryption=none&pbk=H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.amazon.com#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
-      "latency": 63,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/5023",
-      "ts": 1770118950.031949
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f4e28bf7-c5f6-40de-be3e-b560a4bef575@vpn-de.spend.tg:8443?security=reality&encryption=none&pbk=kt-wshmPVd-J1dlU-tsXUoGag2-oFwYQ5UafScaAfzQ&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=apple.com#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
-      "latency": 357,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/5022",
-      "ts": 1770118946.6209228
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://38715482-05f5-4ea0-aebf-60d3b8c71f30@myserviran.serviran.workers.dev:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=myserviran.serviran.workers.dev&fp=randomized&type=ws&sni=myserviran.serviran.workers.dev#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
-      "latency": 36,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/5021",
-      "ts": 1770118943.0065606
     }
   ],
   "proxies": [
+    {
+      "key": "185.115.161.248:9443",
+      "link": "tg://proxy?server=185.115.161.248&port=9443&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/5599",
+      "ts": 1770206277.2796757
+    },
+    {
+      "key": "172.65.103.110:25565",
+      "link": "tg://proxy?server=172.65.103.110&port=25565&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/5598",
+      "ts": 1770206161.2956464
+    },
+    {
+      "key": "michael.jordanair.info:8443",
+      "link": "tg://proxy?server=michael.jordanair.info&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/5598",
+      "ts": 1770206161.2933304
+    },
+    {
+      "key": "iPhone.jordanair.info:77777",
+      "link": "tg://proxy?server=iPhone.jordanair.info&port=77777&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/5598",
+      "ts": 1770206159.2904456
+    },
     {
       "key": "185.115.161.234:9443",
       "link": "tg://proxy?server=185.115.161.234&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D)",
@@ -3189,13 +3249,6 @@
       "ts": 1770195494.1401477
     },
     {
-      "key": "185.115.161.248:9443",
-      "link": "tg://proxy?server=185.115.161.248&port=9443&secret=dd104462821249bd7ac519130220c25d09)|",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/5453",
-      "ts": 1770195493.1071155
-    },
-    {
       "key": "85.133.194.109:8443",
       "link": "tg://proxy?server=85.133.194.109&port=8443&secret=79e344818749bd7ac519130220c25d09",
       "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
@@ -3425,13 +3478,6 @@
       "channel": "iRo Proxy | پروکسی",
       "t_link": "https://t.me/myvpn1404/5226",
       "ts": 1770145731.5744588
-    },
-    {
-      "key": "172.65.103.110:25565",
-      "link": "tg://proxy?server=172.65.103.110&port=25565&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/5217",
-      "ts": 1770142494.0500855
     },
     {
       "key": "85.133.194.130:8443",
@@ -3719,13 +3765,6 @@
       "channel": "کانفیگ ملی / config meli",
       "t_link": "https://t.me/myvpn1404/5033",
       "ts": 1770119692.2453282
-    },
-    {
-      "key": "web.ir.clawdtv.info.:80",
-      "link": "tg://proxy?server=web.ir.clawdtv.info.&port=80&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/5027",
-      "ts": 1770118998.7683005
     }
   ],
   "files": [
@@ -4764,48 +4803,6 @@
       "channel": "پروکسی رایگان ملی / فیلترشکن",
       "link": "https://t.me/myvpn1404/5040",
       "ts": 1770124668.3051991
-    },
-    {
-      "name": "SuperSpeed متصل همه نت ها🟢🔥.npvt",
-      "ext": "npvt",
-      "channel": "اینترنت آزاد | Merlin ViP",
-      "link": "https://t.me/myvpn1404/5032",
-      "ts": 1770119118.209057
-    },
-    {
-      "name": "🎁FAST🎁.npvt",
-      "ext": "npvt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/myvpn1404/5031",
-      "ts": 1770119012.1094925
-    },
-    {
-      "name": "Neww.npvt",
-      "ext": "npvt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/myvpn1404/5030",
-      "ts": 1770119008.8451622
-    },
-    {
-      "name": "‎⁨ایران💚🤍❤️⁩.npvt",
-      "ext": "npvt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/myvpn1404/5029",
-      "ts": 1770119005.6157193
-    },
-    {
-      "name": "🌹متصل🌹.npvt",
-      "ext": "npvt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/myvpn1404/5028",
-      "ts": 1770119002.37262
-    },
-    {
-      "name": "@planB_net 6️⃣7️⃣8️⃣.npvt",
-      "ext": "npvt",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/myvpn1404/5020",
-      "ts": 1770118839.8850734
     }
   ]
 }

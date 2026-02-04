@@ -2,6 +2,46 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e1ca6485-e97c-4c99-9dbe-20a192654f84@37.152.175.93:2011?security=none&encryption=none&host=parsabr.com&headerType=http&type=tcp#%shankamil",
+      "latency": null,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/5861",
+      "ts": 1770235085.563722
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@172.64.152.23:443?path=%2Fassignment&security=tls&insecure=0&host=www.creationlong.org&type=ws&allowInsecure=0&sni=www.creationlong.org#%shankamil",
+      "latency": 3,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/5860",
+      "ts": 1770235080.2509305
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://ce9a9ca9-dd19-4329-9de8-bf6b6cf1d464@85.133.161.168:8080?path=%2Fv1%2Fstream%2Ftrk&security=none&encryption=none&host=anten.ir&type=ws#%shankamil",
+      "latency": null,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/5859",
+      "ts": 1770235076.8315148
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://9983b901-28a8-4dcf-a8b9-8304bc6dc804@85.133.161.168:2086?path=%2Fv2%2Fstream%2Fturk&security=none&encryption=none&host=anten.ir&type=ws#%shankamil",
+      "latency": null,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/5858",
+      "ts": 1770235071.5421686
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://3321a819-889d-40b3-b8fa-f34208827ef1@57.129.137.56:443?path=%2Fproxyip%3Dsjc.o00o.ooo&security=tls&encryption=none&insecure=0&host=o00o.snip.qzz.io&fp=chrome&type=ws&allowInsecure=0&sni=o00o.snip.qzz.io#shankamil",
+      "latency": null,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/5857",
+      "ts": 1770235066.2211142
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e1ca6485-e97c-4c99-9dbe-20a192654f84@37.152.175.93:2011?encryption=none&type=tcp&headerType=http&host=parsabr.com&path=/api/register/new/name/dav/response/cmV0aXJlZCBoZWxsbyBob3cgYXJlIHlvdSB0aGlzIGlzIG15IG5ldyBoZWFkZXIgd&security=none#Trade_nobody%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%9A%80%20%7C%20DC2",
       "latency": null,
       "channel": "VPN | CICDO کانفیگ ملی شکن",
@@ -3251,6 +3291,20 @@
   ],
   "proxies": [
     {
+      "key": "85.133.194.16:8443",
+      "link": "tg://proxy?server=85.133.194.16&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/5862",
+      "ts": 1770235124.2779622
+    },
+    {
+      "key": "185.115.161.244:9443",
+      "link": "tg://proxy?server=185.115.161.244&port=9443&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/5862",
+      "ts": 1770235124.155111
+    },
+    {
       "key": "185.3.200.136:4455",
       "link": "tg://proxy?server=185.3.200.136&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
       "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
@@ -3270,20 +3324,6 @@
       "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
       "t_link": "https://t.me/myvpn1404/5845",
       "ts": 1770234625.6296
-    },
-    {
-      "key": "185.115.161.244:9443",
-      "link": "tg://proxy?server=185.115.161.244&port=9443&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/5845",
-      "ts": 1770234625.4930472
-    },
-    {
-      "key": "85.133.194.16:8443",
-      "link": "tg://proxy?server=85.133.194.16&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/5845",
-      "ts": 1770234625.3600345
     },
     {
       "key": "85.133.194.17:8443",

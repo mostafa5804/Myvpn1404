@@ -2,6 +2,126 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://20df8c30-c07a-494e-b83d-4af21ee57788@151.101.128.84:80?encryption=none&security=none&type=ws&host=dojman.global.ssl.fastly.net&path=%2Fcontainers%2Ffi#%40v2rays_ha%206776```",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5411",
+      "ts": 1770188816.0502362
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://91ffc858-0f92-4214-831d-2c27a207547f@91.98.43.14:24663?path=%2F&security=none&encryption=none&type=ws#%40v2rays_ha%206775",
+      "latency": 117,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5410",
+      "ts": 1770188812.7884917
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://ed1e3fdf-5063-4088-9800-f2096fcc4343@78.157.49.217:9050?security=none&type=tcp&headerType=http&path=%2F&host=refersion.com#%40v2rays_ha%206774",
+      "latency": 201,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5409",
+      "ts": 1770188809.4338465
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0Y2E1NjViZjFkMTM0NWMyZDIzYjIzMDY5ZGUwY2ZiMw%3D%3D@212.80.24.202:8443#%40v2rays_ha%206773",
+      "latency": 218,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5408",
+      "ts": 1770188805.8496377
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://1c03c39d-ed9c-4747-9d43-42936ea4531b@193.24.120.156:2052?security=&encryption=none&headerType=&type=tcp#%40v2rays_ha%206772",
+      "latency": 275,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5407",
+      "ts": 1770188802.3169413
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://49d97f86-4589-4570-8e4b-794b49556e42@194.113.226.197:55555?security=none&allowInsecure=0&encryption=none&type=tcp&host=uptvs.com&path=/&headerType=http#%40v2rays_ha%206771",
+      "latency": 137,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5406",
+      "ts": 1770188798.7885675
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://fbfb16f8-8332-47e5-ba31-6769029b1d69@172.67.204.84:8443?security=tls&sni=offlinenet-some1274.aminho3ien.ir&type=grpc&serviceName=OfflineNet-vnpr3-u3ervpn&fp=chrome&alpn=h2,http/1.1#%40v2rays_ha%206770",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5405",
+      "ts": 1770188795.3094203
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://20df8c30-c07a-494e-b83d-4af21ee57788@151.101.65.55:80?path=%2Fcontainers%2Ffi&security=none&encryption=none&host=lexeu.global.ssl.fastly.net&type=ws#%40v2rays_ha%206769",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5404",
+      "ts": 1770188792.0496366
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.18.83.85:80?security=none&type=ws&host=us3.rtacg.com&path=/#%40v2rays_ha%206768",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5403",
+      "ts": 1770188788.77592
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://96d9bcb0-9ad2-48be-85a2-a9ab3a005261@8.6.112.0:2083/?type=ws&encryption=none&flow=&host=ds1-mx-fn154-protection.iranlease.com&path=%2F%3Fed%3D2560&security=tls&sni=ds1-mx-fn154-protection.iranlease.com&allowInsecure=1#%40v2rays_ha%206767",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5402",
+      "ts": 1770188785.4891715
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@104.18.32.47:443?path=%2F&security=tls&encryption=none&host=dev.twistsparrow.xyz&type=ws&sni=dev.twistsparrow.xyz#%40v2rays_ha%206766",
+      "latency": 3,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5401",
+      "ts": 1770188782.227648
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://636de463-b509-4631-adc6-400b21733278@172.67.137.47:2086?path=%2F1qrxwiek8tujvr6h&security=none&encryption=none&host=index.harmony510.workers.dev&type=ws#%40v2rays_ha%206765",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5400",
+      "ts": 1770188778.9172947
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://bcce095a-9f98-4e23-a68c-8bbecb785dcd@104.19.141.3:443?path=%2F213.35.100.31%3D47112&security=tls&encryption=none&insecure=1&host=afrcloud1.c01.kr&type=ws&allowInsecure=1&sni=afrcloud1.c01.kr#%40v2rays_ha%206764",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5399",
+      "ts": 1770188775.6003633
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.21.40.34:443?path=%2Fassignment&security=tls&insecure=1&host=www.gossipglove.com&type=ws&allowInsecure=1&sni=www.gossipglove.com#%40v2rays_ha%206763",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5398",
+      "ts": 1770188772.2640493
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://bcce095a-9f98-4e23-a68c-8bbecb785dcd@104.19.141.129:443?path=%2F213.35.100.31%3D47112&security=tls&encryption=none&host=afrcloud1.c01.kr&type=ws&sni=afrcloud1.c01.kr#%40v2rays_ha%206762",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5397",
+      "ts": 1770188768.9492226
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://5d455342-2929-45a0-951a-1b273ec39b7c@104.18.7.36:2086/?type=ws&encryption=none&flow=&host=rayan11-0l5mxs7b-v1.rayan-11.workers.dev&path=%2F#%40v2rays_ha%206761```",
       "latency": 9,
       "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
@@ -2995,6 +3115,69 @@
   ],
   "proxies": [
     {
+      "key": "185.84.157.10:443",
+      "link": "tg://proxy?server=185.84.157.10&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/5413",
+      "ts": 1770188881.076211
+    },
+    {
+      "key": "95.216.179.111:443",
+      "link": "tg://proxy?server=95.216.179.111&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/5413",
+      "ts": 1770188880.9361105
+    },
+    {
+      "key": "85.133.194.15:8443",
+      "link": "tg://proxy?server=85.133.194.15&port=8443&secret=79e344818749bd7ac519130220c25d09)",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5412",
+      "ts": 1770188821.8686318
+    },
+    {
+      "key": "185.3.200.186:5566",
+      "link": "tg://proxy?server=185.3.200.186&port=5566&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5412",
+      "ts": 1770188820.7199714
+    },
+    {
+      "key": "185.3.200.185:4455",
+      "link": "tg://proxy?server=185.3.200.185&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5412",
+      "ts": 1770188820.6149154
+    },
+    {
+      "key": "185.3.200.18:2053",
+      "link": "tg://proxy?server=185.3.200.18&port=2053&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5412",
+      "ts": 1770188820.5097377
+    },
+    {
+      "key": "185.3.200.190:2053",
+      "link": "tg://proxy?server=185.3.200.190&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5412",
+      "ts": 1770188820.394424
+    },
+    {
+      "key": "185.3.200.172:2053",
+      "link": "tg://proxy?server=185.3.200.172&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5412",
+      "ts": 1770188820.1877973
+    },
+    {
+      "key": "185.3.200.136:4455",
+      "link": "tg://proxy?server=185.3.200.136&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/5412",
+      "ts": 1770188820.0637512
+    },
+    {
       "key": "185.84.157.13:443",
       "link": "tg://proxy?server=185.84.157.13&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==)",
       "channel": "دارک پروکسی | Proxy mtproto",
@@ -3049,20 +3232,6 @@
       "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
       "t_link": "https://t.me/myvpn1404/5394",
       "ts": 1770185536.8318915
-    },
-    {
-      "key": "185.3.200.185:4455",
-      "link": "tg://proxy?server=185.3.200.185&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D****)",
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/5394",
-      "ts": 1770185536.6878173
-    },
-    {
-      "key": "85.133.194.15:8443",
-      "link": "tg://proxy?server=85.133.194.15&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&@PASARGAD_V2rayNG)",
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/5394",
-      "ts": 1770185536.5420554
     },
     {
       "key": "185.115.161.248:9443",
@@ -3161,13 +3330,6 @@
       "channel": "Net Account | نت اكانت",
       "t_link": "https://t.me/myvpn1404/5355",
       "ts": 1770174967.0268788
-    },
-    {
-      "key": "185.3.200.172:2053",
-      "link": "tg://proxy?server=185.3.200.172&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/5355",
-      "ts": 1770174966.85149
     },
     {
       "key": "185.3.200.191:2053",
@@ -3513,13 +3675,6 @@
       "ts": 1770135188.480795
     },
     {
-      "key": "185.3.200.18:2053",
-      "link": "tg://proxy?server=185.3.200.18&port=2053&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/5166",
-      "ts": 1770135188.312145
-    },
-    {
       "key": "mmd.Baryc6w.co.uk:443",
       "link": "tg://proxy?server=mmd.Baryc6w.co.uk&port=443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "channel": "Net Account | نت اكانت",
@@ -3532,13 +3687,6 @@
       "channel": "Net Account | نت اكانت",
       "t_link": "https://t.me/myvpn1404/5166",
       "ts": 1770135187.8388605
-    },
-    {
-      "key": "185.3.200.190:2053",
-      "link": "tg://proxy?server=185.3.200.190&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/5166",
-      "ts": 1770135186.6340067
     },
     {
       "key": "hamechigat.co.uk:23",
@@ -3756,23 +3904,16 @@
       "channel": "کانفیگ ملی شکن",
       "t_link": "https://t.me/myvpn1404/4854",
       "ts": 1770105778.1053112
-    },
-    {
-      "key": "95.216.179.111:443",
-      "link": "tg://proxy?server=95.216.179.111&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/4818",
-      "ts": 1770099263.842135
-    },
-    {
-      "key": "95.217.8.111:443",
-      "link": "tg://proxy?server=95.217.8.111&port=443&secret=FgMBAgABAAH8AxOG4kw63Q==)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/4818",
-      "ts": 1770099263.7106292
     }
   ],
   "files": [
+    {
+      "name": "♥️.npvt",
+      "ext": "npvt",
+      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
+      "link": "https://t.me/myvpn1404/5396",
+      "ts": 1770188692.1019003
+    },
     {
       "name": "@ZEDMODEON 45 UP ⚡.npvt",
       "ext": "npvt",
@@ -4906,20 +5047,6 @@
       "channel": "𝗙𝗥𝗘𝗘 𝗩𝗣𝗡 | SiNAVM",
       "link": "https://t.me/myvpn1404/4819",
       "ts": 1770102221.2480807
-    },
-    {
-      "name": "@SeyyedMT F22-RapTor.npvt",
-      "ext": "npvt",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/myvpn1404/4817",
-      "ts": 1770099131.3092256
-    },
-    {
-      "name": "MCI 1 -HAM همراه اول.npvt",
-      "ext": "npvt",
-      "channel": "𓆩𝐕𝐏𝐍[👑]𝐈𝐑𝐀𝐍𓆪",
-      "link": "https://t.me/myvpn1404/4816",
-      "ts": 1770099001.8480408
     }
   ]
 }

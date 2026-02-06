@@ -3887,101 +3887,43 @@
       "channel": "کانفیگ رایگان",
       "t_link": "https://t.me/myvpn1404/6037",
       "ts": 1770292596.758545
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://9d9385e3-433f-45ef-88ba-fdc2fce84141@zfwa.hmteam.sbs:3446?security=none&encryption=none&headerType=http&type=tcp#%40cicdo%20vpn",
-      "latency": 184,
-      "channel": "VPN | CICDO کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/6036",
-      "ts": 1770291992.6340191
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://0bd9ed1f-5685-48a0-ba4b-3ac420e82850@46.38.142.247:26032?security=none&encryption=none&host=bale.ai%2Csoroushplus.com%2Cweb.splus.ir&headerType=http&type=tcp#%40cicdo%20vpn",
-      "latency": null,
-      "channel": "VPN | CICDO کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/6035",
-      "ts": 1770291989.093488
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://1a94fbd9-79d2-4aa7-bf1d-074f678d27ab@104.20.1.252:80?path=%2F&security=none&encryption=none&host=EqUiPPed-phOToZkoA7K5e6P.eCoTOuRiss.Co.uk.&type=ws#%E2%9A%A1%EF%B8%8FFree`",
-      "latency": 6,
-      "channel": "xsfilternet",
-      "t_link": "https://t.me/myvpn1404/6025",
-      "ts": 1770291798.1135108
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://31701b5d-ca95-92f9-d684-dae3706161ea@dd.openaccessnode.com:504?mode=gun&security=reality&encryption=none&pbk=aNLPNNyjIC7QYLe7MpF4nxxHhO421dBSZaQgsDd1szs&fp=chrome&type=grpc&serviceName=JNIR&sni=nobitex.ir&sid=1d64e9805b4f9ae3#%E2%9A%A1Free",
-      "latency": 113,
-      "channel": "xsfilternet",
-      "t_link": "https://t.me/myvpn1404/6024",
-      "ts": 1770291794.8418536
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://094e66a9-8d92-41fe-85ad-8e7bf9b5fcaa@nl-78w-c.southnetworks.cloud:80?path=%2FgetWorkerUpdates&security=none&encryption=none&type=ws#%E2%9A%A1Free",
-      "latency": 614,
-      "channel": "xsfilternet",
-      "t_link": "https://t.me/myvpn1404/6023",
-      "ts": 1770291791.3942246
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://071435dc-6ab9-4502-8441-ed4a4b609092@z1.n1server.org:443?mode=gun&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&fp=chrome&type=grpc&allowInsecure=0&sni=n1.n1server.org#%E2%9A%A1Free",
-      "latency": 240,
-      "channel": "xsfilternet",
-      "t_link": "https://t.me/myvpn1404/6022",
-      "ts": 1770291787.507037
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://0044dfce-62ac-4734-919a-fcbf79e9ec12@100niggavs100.mrpixanos.ir:42542?security=none&encryption=none&host=JouRNaloFbIgdATA.SpRinGeropEn.coM&headerType=http&type=tcp#%E2%9A%A1Free",
-      "latency": null,
-      "channel": "xsfilternet",
-      "t_link": "https://t.me/myvpn1404/6021",
-      "ts": 1770291783.9718072
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://3321a819-889d-40b3-b8fa-f34208827ef1@57.129.137.56:443?path=%2F&security=tls&encryption=none&insecure=1&host=o00o.snip.qzz.io&type=ws&allowInsecure=1&sni=o00o.snip.qzz.io#%E2%9A%A1Free",
-      "latency": 79,
-      "channel": "xsfilternet",
-      "t_link": "https://t.me/myvpn1404/6020",
-      "ts": 1770291778.6668367
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://68c89f56-3a15-46f2-9901-8c00a2546b97@172.64.144.74:443?path=%2FProxyCloud&security=tls&encryption=none&insecure=0&host=rukawa.pages.dev&type=ws&allowInsecure=0&sni=rukawa.pages.dev#%E2%9A%A1Free",
-      "latency": 6,
-      "channel": "xsfilternet",
-      "t_link": "https://t.me/myvpn1404/6019",
-      "ts": 1770291775.284822
     }
   ],
   "proxies": [
+    {
+      "key": "185.3.200.191:2053",
+      "link": "tg://proxy?server=185.3.200.191&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "VPN | CICDO کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/6717",
+      "ts": 1770379066.7933173
+    },
+    {
+      "key": "185.3.200.136:4455",
+      "link": "tg://proxy?server=185.3.200.136&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "VPN | CICDO کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/6717",
+      "ts": 1770379066.699534
+    },
+    {
+      "key": "185.3.200.186:2054",
+      "link": "tg://proxy?server=185.3.200.186&port=2054&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/6715",
+      "ts": 1770378918.741031
+    },
+    {
+      "key": "85.133.194.17:8443",
+      "link": "tg://proxy?server=85.133.194.17&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/6715",
+      "ts": 1770378918.639818
+    },
     {
       "key": "185.115.161.245:9443",
       "link": "tg://proxy?server=185.115.161.245&port=9443&secret=dd104462821249bd7ac519130220c25d09",
       "channel": "VPN | CICDO کانفیگ ملی شکن",
       "t_link": "https://t.me/myvpn1404/6712",
       "ts": 1770378378.481252
-    },
-    {
-      "key": "185.3.200.136:4455",
-      "link": "tg://proxy?server=185.3.200.136&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/6704",
-      "ts": 1770378213.9362488
-    },
-    {
-      "key": "185.3.200.191:2053",
-      "link": "tg://proxy?server=185.3.200.191&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/6704",
-      "ts": 1770378212.782495
     },
     {
       "key": "85.133.194.25:8443",
@@ -4038,13 +3980,6 @@
       "channel": "i SHARΞ WIN™",
       "t_link": "https://t.me/myvpn1404/6686",
       "ts": 1770376254.8381348
-    },
-    {
-      "key": "85.133.194.17:8443",
-      "link": "tg://proxy?server=85.133.194.17&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/6686",
-      "ts": 1770376254.7311592
     },
     {
       "key": "185.3.200.174:4455",
@@ -4710,23 +4645,16 @@
       "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
       "t_link": "https://t.me/myvpn1404/6055",
       "ts": 1770292717.9924405
-    },
-    {
-      "key": "185.3.200.171:4455",
-      "link": "tg://proxy?server=185.3.200.171&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/6026",
-      "ts": 1770291821.980508
-    },
-    {
-      "key": "185.3.200.186:2054",
-      "link": "tg://proxy?server=185.3.200.186&port=2054&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/6026",
-      "ts": 1770291821.6969085
     }
   ],
   "files": [
+    {
+      "name": "Azadi 1 🗽.npvt",
+      "ext": "npvt",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/myvpn1404/6716",
+      "ts": 1770378922.3507905
+    },
     {
       "name": "cicdo vpn _0.ehi",
       "ext": "ehi",
@@ -5748,83 +5676,6 @@
       "channel": "پروکسی رایگان ملی / فیلترشکن",
       "link": "https://t.me/myvpn1404/6056",
       "ts": 1770297555.5405211
-    },
-    {
-      "name": "🇳🇱@BugFreeNet .dark",
-      "ext": "dark",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/myvpn1404/6034",
-      "ts": 1770291968.4435132
-    },
-    {
-      "name": "🇳🇱@BugFreeNet.npvt",
-      "ext": "npvt",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/myvpn1404/6033",
-      "ts": 1770291964.1557705
-    },
-    {
-      "name": "نت ملی (1).npvt",
-      "ext": "npvt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/myvpn1404/6031",
-      "ts": 1770291838.4348416
-    },
-    {
-      "name": "نت ملی (2).npvt",
-      "ext": "npvt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/myvpn1404/6030",
-      "ts": 1770291835.1963022
-    },
-    {
-      "name": "نت ملی (3).npvt",
-      "ext": "npvt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/myvpn1404/6029",
-      "ts": 1770291831.9484122
-    },
-    {
-      "name": "نت ‌ملی (4).npvt",
-      "ext": "npvt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/myvpn1404/6028",
-      "ts": 1770291828.7337675
-    },
-    {
-      "name": "نت ملی (5).npvt",
-      "ext": "npvt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/myvpn1404/6027",
-      "ts": 1770291825.4834778
-    },
-    {
-      "name": "@shankamil ملی شکن ترامپی.npvt",
-      "ext": "npvt",
-      "channel": "کانفیگ ملی شکن",
-      "link": "https://t.me/myvpn1404/6018",
-      "ts": 1770291755.8516102
-    },
-    {
-      "name": "pack 74tayi v.txt",
-      "ext": "txt",
-      "channel": "کانفیگ رایگان",
-      "link": "https://t.me/myvpn1404/6017",
-      "ts": 1770291737.1998777
-    },
-    {
-      "name": "bombi.npvt",
-      "ext": "npvt",
-      "channel": "کانفیگ رایگان",
-      "link": "https://t.me/myvpn1404/6016",
-      "ts": 1770291733.9105759
-    },
-    {
-      "name": "@PlanB_net 7️⃣4️⃣5️⃣.npvt",
-      "ext": "npvt",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/myvpn1404/6015",
-      "ts": 1770291649.9931576
     }
   ]
 }

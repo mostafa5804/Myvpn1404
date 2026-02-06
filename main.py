@@ -165,6 +165,7 @@ def load_data():
     try:
         with open(DATA_FILE, 'r', encoding='utf-8') as f:
             data = json.load(f)
+            # حذف کانفیگ‌های خیلی قدیمی
             limit = time.time() - (KEEP_HISTORY_HOURS * 3600)
             return {'configs': [c for c in data.get('configs', []) if c.get('ts', 0) > limit]}
     except: return {'configs': []}
@@ -176,7 +177,9 @@ def save_data(data):
     except: pass
 
 def merge_data(history, new_items):
-    combined = {c['hash']: c for c in history}
+    # ترکیب بر اساس هش برای حذف تکراری‌ها
+    # نکته: در تابع main لیست history اصلاح شده و حتما هش دارد
+    combined = {c['hash']: c for c in history if 'hash' in c}
     for item in new_items:
         combined[item['hash']] = item
     
@@ -209,7 +212,28 @@ async def main():
         print(f"✅ ربات استارت شد: {batch_name}")
         
         hist = load_data()
-        seen_hashes = {c['hash'] for c in hist['configs']}
+        
+        # ===== FIX: اصلاح دیتابیس قدیمی که هش ندارد =====
+        cleaned_history = []
+        seen_hashes = set()
+        
+        for c in hist['configs']:
+            # اگر هش ندارد، برایش بساز
+            if 'hash' not in c:
+                c['hash'] = generate_config_hash(c['config'])
+            
+            # اگر کیفیت ندارد، صفر بذار
+            if 'quality' not in c:
+                c['quality'] = 0
+                
+            # جلوگیری از تکراری در خود دیتابیس
+            if c['hash'] not in seen_hashes:
+                seen_hashes.add(c['hash'])
+                cleaned_history.append(c)
+        
+        # آپدیت لیست history با داده‌های اصلاح شده
+        hist['configs'] = cleaned_history
+        # =================================================
         
         new_items = []
         cutoff = datetime.now(timezone.utc) - timedelta(minutes=MAX_MESSAGE_AGE_MINUTES)
@@ -292,29 +316,27 @@ async def main():
         await client.disconnect()
 
 async def generate_site(configs, sub_link):
-    # آمار
     total = len(configs)
-    high_quality = len([c for c in configs if c['quality'] >= 80])
-    avg_ping = int(sum(c['latency'] for c in configs)/total) if total else 0
+    high_quality = len([c for c in configs if c.get('quality', 0) >= 80])
+    avg_ping = int(sum(c.get('latency', 0) for c in configs)/total) if total else 0
     update_time = jdatetime.datetime.now().strftime('%Y/%m/%d - %H:%M')
     
-    # تولید HTML کارت‌ها
     cards_html = ""
     for idx, c in enumerate(configs[:60]):
         safe_conf = c['config'].replace("'", "\\'").replace('"', '\\"')
-        q_class = "high" if c['quality'] >= 80 else "mid" if c['quality'] >= 50 else "low"
+        q_class = "high" if c.get('quality', 0) >= 80 else "mid" if c.get('quality', 0) >= 50 else "low"
         
         cards_html += f"""
         <div class="card">
             <div class="card-head">
                 <span class="badge proto">{c['protocol']}</span>
-                <span class="flag">{c['country']}</span>
-                <span class="badge score {q_class}">{c['quality']}</span>
+                <span class="flag">{c.get('country', '🌐')}</span>
+                <span class="badge score {q_class}">{c.get('quality', 0)}</span>
             </div>
             <div class="card-body">
                 <div class="info">
                     <span>📡 {c['channel']}</span>
-                    <span>⚡ {c['latency']}ms</span>
+                    <span>⚡ {c.get('latency', 0)}ms</span>
                 </div>
                 <div class="code-box" onclick="selectText(this)">{c['config'][:50]}...</div>
             </div>
@@ -326,16 +348,16 @@ async def generate_site(configs, sub_link):
         </div>
         """
 
-    # آماده‌سازی بخش اشتراک (جلوگیری از ارور f-string)
     sub_box_html = ""
     if sub_link:
-        sub_box_html = f"""
-        <div class="sub-box">
-            <h3>🚀 لینک اشتراک هوشمند</h3>
-            <p>لینک زیر را در V2RayNG یا Streisand وارد کنید تا لیست آپدیت شود.</p>
-            <a href="{sub_link}" class="sub-btn" onclick="copyTxt('{sub_link}'); return false;">کپی لینک اشتراک</a>
-        </div>
-        """
+        # ساخت بخش اشتراک بدون استفاده از f-string پیچیده برای جلوگیری از ارور
+        sub_box_html = (
+            '<div class="sub-box">'
+            '<h3>🚀 لینک اشتراک هوشمند</h3>'
+            '<p>لینک زیر را در V2RayNG یا Streisand وارد کنید تا لیست آپدیت شود.</p>'
+            f'<a href="{sub_link}" class="sub-btn" onclick="copyTxt(\'{sub_link}\'); return false;">کپی لینک اشتراک</a>'
+            '</div>'
+        )
 
     html_content = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl">
@@ -440,7 +462,6 @@ async def generate_site(configs, sub_link):
             m.style.display = 'flex';
         }}
         
-        // PWA Installer
         let deferredPrompt;
         window.addEventListener('beforeinstallprompt', (e) => {{
             e.preventDefault();

@@ -57,7 +57,7 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="header-left"><h2>🔮 VPN Hub</h2><small>بروزرسانی: 2026/02/06 - 17:58</small></div>
+            <div class="header-left"><h2>🔮 VPN Hub</h2><small>بروزرسانی: 2026/02/06 - 18:23</small></div>
             <div class="header-right">
                 <div class="icon-btn" onclick="toggleTheme()"><i class="fas fa-moon" id="themeIcon"></i></div>
                 <div class="icon-btn" onclick="location.reload()"><i class="fas fa-sync-alt"></i></div>
@@ -65,9 +65,9 @@
         </div>
     </header>
     <div class="stats-bar">
-        <div class="stat-item"><div class="stat-value">15</div><div class="stat-label">کانفیگ آنلاین</div></div>
-        <div class="stat-item"><div class="stat-value">85ms</div><div class="stat-label">میانگین پینگ</div></div>
-        <div class="stat-item"><div class="stat-value">10</div><div class="stat-label">سرعت عالی</div></div>
+        <div class="stat-item"><div class="stat-value">33</div><div class="stat-label">کانفیگ آنلاین</div></div>
+        <div class="stat-item"><div class="stat-value">113ms</div><div class="stat-label">میانگین پینگ</div></div>
+        <div class="stat-item"><div class="stat-value">16</div><div class="stat-label">سرعت عالی</div></div>
     </div>
     <div class="toolbar">
         <div class="search-box"><input type="text" id="searchInput" placeholder="جستجو..." onkeyup="searchItems()"><i class="fas fa-search"></i></div>
@@ -79,6 +79,87 @@
     </div>
     <div class="container">
         <div id="t1" class="tab active">
+        <div class="card" data-protocol="vless" data-ping="12">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge excellent">
+                    🟢 12ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 xsfilternet</div>
+                <div class="code-block" id="cfg1" onclick="selectCode(this)">vless://f6d99088-93d2-4836-b942-2551e2922883@speedtest.net:80?path=%2Fdownload&s...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://f6d99088-93d2-4836-b942-2551e2922883@speedtest.net:80?path=%2Fdownload&security=&encryption=none&host=sabzb2.global.ssl.fastly.net&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20FR-1-%20%E2%9A%A1%20%7C%20%D9%BE%D8%B1%D8%B3%D8%B1%D8%B9%D8%AA", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://f6d99088-93d2-4836-b942-2551e2922883@speedtest.net:80?path=%2Fdownload&security=&encryption=none&host=sabzb2.global.ssl.fastly.net&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20FR-1-%20%E2%9A%A1%20%7C%20%D9%BE%D8%B1%D8%B3%D8%B1%D8%B9%D8%AA")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6757" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://f6d99088-93d2-4836-b942-2551e2922883@speedtest.net:80?path=%2Fdownload&security=&encryption=none&host=sabzb2.global.ssl.fastly.net&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20FR-1-%20%E2%9A%A1%20%7C%20%D9%BE%D8%B1%D8%B3%D8%B1%D8%B9%D8%AA", "config_1.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="12">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge excellent">
+                    🟢 12ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg2" onclick="selectCode(this)">vless://e0e837a4-c4d9-4504-91b6-170800933771@104.18.32.47:2087?path=%2FJeiwoBjOY...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://e0e837a4-c4d9-4504-91b6-170800933771@104.18.32.47:2087?path=%2FJeiwoBjOYwhwoabA&security=tls&alpn=http%2F1.1&encryption=none&host=afranet.aireacondicionadoalicante.eu&fp=chrome&type=ws&sni=afranet1.aireacondicionadoalicante.eu#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://e0e837a4-c4d9-4504-91b6-170800933771@104.18.32.47:2087?path=%2FJeiwoBjOYwhwoabA&security=tls&alpn=http%2F1.1&encryption=none&host=afranet.aireacondicionadoalicante.eu&fp=chrome&type=ws&sni=afranet1.aireacondicionadoalicante.eu#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6744" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://e0e837a4-c4d9-4504-91b6-170800933771@104.18.32.47:2087?path=%2FJeiwoBjOYwhwoabA&security=tls&alpn=http%2F1.1&encryption=none&host=afranet.aireacondicionadoalicante.eu&fp=chrome&type=ws&sni=afranet1.aireacondicionadoalicante.eu#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_2.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="15">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge excellent">
+                    🟢 15ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg3" onclick="selectCode(this)">vless://e0e837a4-c4d9-4504-91b6-170800933771@162.159.136.94:2087?path=%2FJeiwoBj...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://e0e837a4-c4d9-4504-91b6-170800933771@162.159.136.94:2087?path=%2FJeiwoBjOYwhwoabA&security=tls&alpn=http%2F1.1&encryption=none&host=afranet.aireacondicionadoalicante.eu&fp=chrome&type=ws&sni=afranet1.aireacondicionadoalicante.eu#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://e0e837a4-c4d9-4504-91b6-170800933771@162.159.136.94:2087?path=%2FJeiwoBjOYwhwoabA&security=tls&alpn=http%2F1.1&encryption=none&host=afranet.aireacondicionadoalicante.eu&fp=chrome&type=ws&sni=afranet1.aireacondicionadoalicante.eu#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6745" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://e0e837a4-c4d9-4504-91b6-170800933771@162.159.136.94:2087?path=%2FJeiwoBjOYwhwoabA&security=tls&alpn=http%2F1.1&encryption=none&host=afranet.aireacondicionadoalicante.eu&fp=chrome&type=ws&sni=afranet1.aireacondicionadoalicante.eu#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_3.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
         <div class="card" data-protocol="vless" data-ping="18">
             <div class="card-header">
                 <span class="protocol-badge vless">VLESS</span>
@@ -88,7 +169,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg1" onclick="selectCode(this)">vless://3f9c8463-8610-3ed8-86c8-a26713067825@104.26.0.221:443/?encryption=none&s...</div>
+                <div class="code-block" id="cfg4" onclick="selectCode(this)">vless://3f9c8463-8610-3ed8-86c8-a26713067825@104.26.0.221:443/?encryption=none&s...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://3f9c8463-8610-3ed8-86c8-a26713067825@104.26.0.221:443/?encryption=none&security=tls&sni=dabaius2.sylu.net&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=dabaius2.sylu.net&path=/db10240eb751d6ab#%40v2rays_ha%207092", this)'>
@@ -100,7 +181,7 @@
                 <a href="https://t.me/myvpn1404/6736" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://3f9c8463-8610-3ed8-86c8-a26713067825@104.26.0.221:443/?encryption=none&security=tls&sni=dabaius2.sylu.net&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=dabaius2.sylu.net&path=/db10240eb751d6ab#%40v2rays_ha%207092", "config_1.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://3f9c8463-8610-3ed8-86c8-a26713067825@104.26.0.221:443/?encryption=none&security=tls&sni=dabaius2.sylu.net&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=dabaius2.sylu.net&path=/db10240eb751d6ab#%40v2rays_ha%207092", "config_4.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -115,7 +196,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg2" onclick="selectCode(this)">vless://da406588-095f-4683-acc2-a3aa3aab68d6@162.159.152.4:2096/?mode=auto&path=...</div>
+                <div class="code-block" id="cfg5" onclick="selectCode(this)">vless://da406588-095f-4683-acc2-a3aa3aab68d6@162.159.152.4:2096/?mode=auto&path=...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://da406588-095f-4683-acc2-a3aa3aab68d6@162.159.152.4:2096/?mode=auto&path=%2F&security=tls&alpn=h2&encryption=none&host=fr1.itscdn.ir&fp=chrome&type=xhttp&sni=fr1.itscdn.ir#%40v2rays_ha%207090", this)'>
@@ -127,7 +208,7 @@
                 <a href="https://t.me/myvpn1404/6734" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://da406588-095f-4683-acc2-a3aa3aab68d6@162.159.152.4:2096/?mode=auto&path=%2F&security=tls&alpn=h2&encryption=none&host=fr1.itscdn.ir&fp=chrome&type=xhttp&sni=fr1.itscdn.ir#%40v2rays_ha%207090", "config_2.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://da406588-095f-4683-acc2-a3aa3aab68d6@162.159.152.4:2096/?mode=auto&path=%2F&security=tls&alpn=h2&encryption=none&host=fr1.itscdn.ir&fp=chrome&type=xhttp&sni=fr1.itscdn.ir#%40v2rays_ha%207090", "config_5.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -142,7 +223,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg3" onclick="selectCode(this)">vless://513fa0d9-69f5-462f-85a7-cb67fc225326@104.18.32.47:8443/?path=%2Ftest%3Fe...</div>
+                <div class="code-block" id="cfg6" onclick="selectCode(this)">vless://513fa0d9-69f5-462f-85a7-cb67fc225326@104.18.32.47:8443/?path=%2Ftest%3Fe...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://513fa0d9-69f5-462f-85a7-cb67fc225326@104.18.32.47:8443/?path=%2Ftest%3Fed%3D%3F2096&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=s.stepson.ir&fp=chrome&type=ws&sni=ham.stepson.ir#%40v2rays_ha%207088", this)'>
@@ -154,7 +235,7 @@
                 <a href="https://t.me/myvpn1404/6732" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://513fa0d9-69f5-462f-85a7-cb67fc225326@104.18.32.47:8443/?path=%2Ftest%3Fed%3D%3F2096&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=s.stepson.ir&fp=chrome&type=ws&sni=ham.stepson.ir#%40v2rays_ha%207088", "config_3.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://513fa0d9-69f5-462f-85a7-cb67fc225326@104.18.32.47:8443/?path=%2Ftest%3Fed%3D%3F2096&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=s.stepson.ir&fp=chrome&type=ws&sni=ham.stepson.ir#%40v2rays_ha%207088", "config_6.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -169,7 +250,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg4" onclick="selectCode(this)">vless://84f93816-0e7e-4547-9747-e8129d5604b5@31.43.179.0:8443/?mode=gun&security...</div>
+                <div class="code-block" id="cfg7" onclick="selectCode(this)">vless://84f93816-0e7e-4547-9747-e8129d5604b5@31.43.179.0:8443/?mode=gun&security...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://84f93816-0e7e-4547-9747-e8129d5604b5@31.43.179.0:8443/?mode=gun&security=tls&alpn=h2&encryption=none&insecure=0&fp=chrome&type=grpc&serviceName=ZBV5M9W4QmATmmWn9&allowInsecure=0&sni=a9.marandcity.com#%40v2rays_ha%207087", this)'>
@@ -181,7 +262,7 @@
                 <a href="https://t.me/myvpn1404/6731" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://84f93816-0e7e-4547-9747-e8129d5604b5@31.43.179.0:8443/?mode=gun&security=tls&alpn=h2&encryption=none&insecure=0&fp=chrome&type=grpc&serviceName=ZBV5M9W4QmATmmWn9&allowInsecure=0&sni=a9.marandcity.com#%40v2rays_ha%207087", "config_4.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://84f93816-0e7e-4547-9747-e8129d5604b5@31.43.179.0:8443/?mode=gun&security=tls&alpn=h2&encryption=none&insecure=0&fp=chrome&type=grpc&serviceName=ZBV5M9W4QmATmmWn9&allowInsecure=0&sni=a9.marandcity.com#%40v2rays_ha%207087", "config_7.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -196,7 +277,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg5" onclick="selectCode(this)">vless://73f15c26-5545-492f-bb67-a4ef3737a060@94.140.0.1:443/?path=%2FeyJqdW5rIjo...</div>
+                <div class="code-block" id="cfg8" onclick="selectCode(this)">vless://73f15c26-5545-492f-bb67-a4ef3737a060@94.140.0.1:443/?path=%2FeyJqdW5rIjo...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://73f15c26-5545-492f-bb67-a4ef3737a060@94.140.0.1:443/?path=%2FeyJqdW5rIjoiODhWQThCY3U0NEltOVVMIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=zVN6pn2Es0J9d6S0UdbWm5wxLYZp9AK7.973A1F0DD9.wORKErS.DEV&fp=chrome&type=ws&allowInsecure=0&sni=zVN6pn2Es0J9d6S0UdbWm5wxLYZp9AK7.973A1F0DD9.wORKErS.DEV#%40v2rays_ha%207086", this)'>
@@ -208,7 +289,7 @@
                 <a href="https://t.me/myvpn1404/6730" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://73f15c26-5545-492f-bb67-a4ef3737a060@94.140.0.1:443/?path=%2FeyJqdW5rIjoiODhWQThCY3U0NEltOVVMIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=zVN6pn2Es0J9d6S0UdbWm5wxLYZp9AK7.973A1F0DD9.wORKErS.DEV&fp=chrome&type=ws&allowInsecure=0&sni=zVN6pn2Es0J9d6S0UdbWm5wxLYZp9AK7.973A1F0DD9.wORKErS.DEV#%40v2rays_ha%207086", "config_5.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://73f15c26-5545-492f-bb67-a4ef3737a060@94.140.0.1:443/?path=%2FeyJqdW5rIjoiODhWQThCY3U0NEltOVVMIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=zVN6pn2Es0J9d6S0UdbWm5wxLYZp9AK7.973A1F0DD9.wORKErS.DEV&fp=chrome&type=ws&allowInsecure=0&sni=zVN6pn2Es0J9d6S0UdbWm5wxLYZp9AK7.973A1F0DD9.wORKErS.DEV#%40v2rays_ha%207086", "config_8.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -223,7 +304,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg6" onclick="selectCode(this)">vless://636de463-b509-4631-adc6-400b21733278@104.21.89.4:2086/?encryption=none&t...</div>
+                <div class="code-block" id="cfg9" onclick="selectCode(this)">vless://636de463-b509-4631-adc6-400b21733278@104.21.89.4:2086/?encryption=none&t...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://636de463-b509-4631-adc6-400b21733278@104.21.89.4:2086/?encryption=none&type=ws&host=index.harmony610.workers.dev&path=/l5s2vgexcus7b8c4&packetEncoding=xudp#%40v2rays_ha%207085", this)'>
@@ -235,7 +316,7 @@
                 <a href="https://t.me/myvpn1404/6729" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://636de463-b509-4631-adc6-400b21733278@104.21.89.4:2086/?encryption=none&type=ws&host=index.harmony610.workers.dev&path=/l5s2vgexcus7b8c4&packetEncoding=xudp#%40v2rays_ha%207085", "config_6.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://636de463-b509-4631-adc6-400b21733278@104.21.89.4:2086/?encryption=none&type=ws&host=index.harmony610.workers.dev&path=/l5s2vgexcus7b8c4&packetEncoding=xudp#%40v2rays_ha%207085", "config_9.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -250,7 +331,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg7" onclick="selectCode(this)">vless://1a94fbd9-79d2-4aa7-bf1d-074f678d27ab@104.20.1.252:80/?path=%2F%3Fed&secu...</div>
+                <div class="code-block" id="cfg10" onclick="selectCode(this)">vless://1a94fbd9-79d2-4aa7-bf1d-074f678d27ab@104.20.1.252:80/?path=%2F%3Fed&secu...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://1a94fbd9-79d2-4aa7-bf1d-074f678d27ab@104.20.1.252:80/?path=%2F%3Fed&security=none&encryption=none&host=EqUiPPed-phOToZkoA7K5e6P.eCoTOuRiss.Co.uk.&type=ws#%40v2rays_ha%207082", this)'>
@@ -262,7 +343,7 @@
                 <a href="https://t.me/myvpn1404/6726" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://1a94fbd9-79d2-4aa7-bf1d-074f678d27ab@104.20.1.252:80/?path=%2F%3Fed&security=none&encryption=none&host=EqUiPPed-phOToZkoA7K5e6P.eCoTOuRiss.Co.uk.&type=ws#%40v2rays_ha%207082", "config_7.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://1a94fbd9-79d2-4aa7-bf1d-074f678d27ab@104.20.1.252:80/?path=%2F%3Fed&security=none&encryption=none&host=EqUiPPed-phOToZkoA7K5e6P.eCoTOuRiss.Co.uk.&type=ws#%40v2rays_ha%207082", "config_10.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -277,7 +358,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg8" onclick="selectCode(this)">vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443/?path=%2F&security...</div>
+                <div class="code-block" id="cfg11" onclick="selectCode(this)">vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443/?path=%2F&security...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443/?path=%2F&security=tls&encryption=none&insecure=0&host=dev.twistsparrow.xyz&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#%40v2rays_ha%207093", this)'>
@@ -289,7 +370,7 @@
                 <a href="https://t.me/myvpn1404/6737" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443/?path=%2F&security=tls&encryption=none&insecure=0&host=dev.twistsparrow.xyz&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#%40v2rays_ha%207093", "config_8.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://fef4a93d-eb4f-4657-b56b-32a0dc060045@188.114.98.0:443/?path=%2F&security=tls&encryption=none&insecure=0&host=dev.twistsparrow.xyz&type=ws&allowInsecure=0&sni=dev.twistsparrow.xyz#%40v2rays_ha%207093", "config_11.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -304,7 +385,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg9" onclick="selectCode(this)">vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.18.42.145:80/?security=none&typ...</div>
+                <div class="code-block" id="cfg12" onclick="selectCode(this)">vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.18.42.145:80/?security=none&typ...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.18.42.145:80/?security=none&type=ws&host=us3.rtacg.com&path=/XIXVPN#%40v2rays_ha%207091", this)'>
@@ -316,7 +397,7 @@
                 <a href="https://t.me/myvpn1404/6735" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.18.42.145:80/?security=none&type=ws&host=us3.rtacg.com&path=/XIXVPN#%40v2rays_ha%207091", "config_9.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.18.42.145:80/?security=none&type=ws&host=us3.rtacg.com&path=/XIXVPN#%40v2rays_ha%207091", "config_12.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -331,7 +412,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg10" onclick="selectCode(this)">vless://b658a9a6-f8f5-4a86-a438-f912a8509db2@172.64.152.23:2083/?path=%2Fehueueu...</div>
+                <div class="code-block" id="cfg13" onclick="selectCode(this)">vless://b658a9a6-f8f5-4a86-a438-f912a8509db2@172.64.152.23:2083/?path=%2Fehueueu...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://b658a9a6-f8f5-4a86-a438-f912a8509db2@172.64.152.23:2083/?path=%2Fehueueuejs&security=tls&alpn=http%2F1.1&encryption=none&host=native.loveplus.de5.net&fp=chrome&type=ws&sni=native.loveplus.de5.net#%40v2rays_ha%207089", this)'>
@@ -343,7 +424,223 @@
                 <a href="https://t.me/myvpn1404/6733" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://b658a9a6-f8f5-4a86-a438-f912a8509db2@172.64.152.23:2083/?path=%2Fehueueuejs&security=tls&alpn=http%2F1.1&encryption=none&host=native.loveplus.de5.net&fp=chrome&type=ws&sni=native.loveplus.de5.net#%40v2rays_ha%207089", "config_10.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://b658a9a6-f8f5-4a86-a438-f912a8509db2@172.64.152.23:2083/?path=%2Fehueueuejs&security=tls&alpn=http%2F1.1&encryption=none&host=native.loveplus.de5.net&fp=chrome&type=ws&sni=native.loveplus.de5.net#%40v2rays_ha%207089", "config_13.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="33">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge excellent">
+                    🟢 33ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg14" onclick="selectCode(this)">vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.208:8880?mode=gun&securit...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.208:8880?mode=gun&security=none&encryption=none&type=grpc#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.208:8880?mode=gun&security=none&encryption=none&type=grpc#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6752" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.208:8880?mode=gun&security=none&encryption=none&type=grpc#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_14.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="56">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge excellent">
+                    🟢 56ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 xsfilternet</div>
+                <div class="code-block" id="cfg15" onclick="selectCode(this)">vless://f6d99088-93d2-4836-b942-2551e2922883@speedtest.net:80?path=%2Fdownload&s...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://f6d99088-93d2-4836-b942-2551e2922883@speedtest.net:80?path=%2Fdownload&security=&encryption=none&host=sabzb.global.ssl.fastly.net&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20DE-0-%20%F0%9F%9A%80%20%7C%20%D9%BE%D8%B1%D8%B3%D8%B1%D8%B9%D8%AA", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://f6d99088-93d2-4836-b942-2551e2922883@speedtest.net:80?path=%2Fdownload&security=&encryption=none&host=sabzb.global.ssl.fastly.net&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20DE-0-%20%F0%9F%9A%80%20%7C%20%D9%BE%D8%B1%D8%B3%D8%B1%D8%B9%D8%AA")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6756" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://f6d99088-93d2-4836-b942-2551e2922883@speedtest.net:80?path=%2Fdownload&security=&encryption=none&host=sabzb.global.ssl.fastly.net&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20DE-0-%20%F0%9F%9A%80%20%7C%20%D9%BE%D8%B1%D8%B3%D8%B1%D8%B9%D8%AA", "config_15.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="68">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge excellent">
+                    🟢 68ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg16" onclick="selectCode(this)">vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@yesok42v2.ip4exordir.shop:8880?mode...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@yesok42v2.ip4exordir.shop:8880?mode=gun&security=none&encryption=none&type=grpc#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@yesok42v2.ip4exordir.shop:8880?mode=gun&security=none&encryption=none&type=grpc#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6755" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@yesok42v2.ip4exordir.shop:8880?mode=gun&security=none&encryption=none&type=grpc#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_16.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="111">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge good">
+                    🟡 111ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg17" onclick="selectCode(this)">vless://6202b230-417c-4d8e-b624-0f71afa9c75d@188.166.39.239:443?path=%2F%3Fed%3D...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@188.166.39.239:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@188.166.39.239:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6754" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@188.166.39.239:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_17.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="112">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge good">
+                    🟡 112ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg18" onclick="selectCode(this)">vless://6202b230-417c-4d8e-b624-0f71afa9c75d@51.158.146.213:2053?path=%2F%3Fed%3...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@51.158.146.213:2053?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@51.158.146.213:2053?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6747" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@51.158.146.213:2053?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_18.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="116">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge good">
+                    🟡 116ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg19" onclick="selectCode(this)">vless://6202b230-417c-4d8e-b624-0f71afa9c75d@91.84.111.44:8443?path=%2F%3Fed%3D2...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@91.84.111.44:8443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@91.84.111.44:8443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6749" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@91.84.111.44:8443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_19.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="119">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge good">
+                    🟡 119ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg20" onclick="selectCode(this)">vless://6202b230-417c-4d8e-b624-0f71afa9c75d@91.84.103.205:443?path=%2F%3Fed%3D2...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@91.84.103.205:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@91.84.103.205:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6750" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@91.84.103.205:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_20.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="130">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge good">
+                    🟡 130ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg21" onclick="selectCode(this)">vless://6202b230-417c-4d8e-b624-0f71afa9c75d@85.192.60.51:8443?path=%2F%3Fed%3D2...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@85.192.60.51:8443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@85.192.60.51:8443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6751" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@85.192.60.51:8443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_21.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -358,7 +655,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg11" onclick="selectCode(this)">ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@185.193.49.88:989#%40v2rays_ha%20708...</div>
+                <div class="code-block" id="cfg22" onclick="selectCode(this)">ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@185.193.49.88:989#%40v2rays_ha%20708...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@185.193.49.88:989#%40v2rays_ha%207083", this)'>
@@ -370,7 +667,7 @@
                 <a href="https://t.me/myvpn1404/6727" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@185.193.49.88:989#%40v2rays_ha%207083", "config_11.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@185.193.49.88:989#%40v2rays_ha%207083", "config_22.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -385,7 +682,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg12" onclick="selectCode(this)">vless://93100196-7f5a-496e-9b74-2d02f134b2bb@31.129.55.179:8080/?path=%2Fupload&...</div>
+                <div class="code-block" id="cfg23" onclick="selectCode(this)">vless://93100196-7f5a-496e-9b74-2d02f134b2bb@31.129.55.179:8080/?path=%2Fupload&...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://93100196-7f5a-496e-9b74-2d02f134b2bb@31.129.55.179:8080/?path=%2Fupload&security=&encryption=none&type=ws#%40v2rays_ha%207080", this)'>
@@ -397,7 +694,61 @@
                 <a href="https://t.me/myvpn1404/6724" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://93100196-7f5a-496e-9b74-2d02f134b2bb@31.129.55.179:8080/?path=%2Fupload&security=&encryption=none&type=ws#%40v2rays_ha%207080", "config_12.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://93100196-7f5a-496e-9b74-2d02f134b2bb@31.129.55.179:8080/?path=%2Fupload&security=&encryption=none&type=ws#%40v2rays_ha%207080", "config_23.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vmess" data-ping="225">
+            <div class="card-header">
+                <span class="protocol-badge vmess">VMESS</span>
+                <span class="status-badge medium">
+                    🟠 225ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 xsfilternet</div>
+                <div class="code-block" id="cfg24" onclick="selectCode(this)">vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9z...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InBhcnNhYnIuY29tIiwiaWQiOiJmOTkzYjI0YS0wMTVmLTQxMjctOWJiMS1hZDUyNzJmODE5NjEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiL2FwaS9yZWdpc3Rlci9uZXcvbmFtZS9kYXYvcmVzcG9uc2UvY21WMGFYSmxaQ0JvWld4c2J5Qm9iM2NnWVhKbElIbHZkU0IwYUdseklHbHpJRzE1SUc1bGR5Qm9aV0ZrWlhJZ2QiLCJwb3J0IjoiODU5NSIsInBzIjoi4peW8J+Hs/Cfh7Hil5cgTkzwn4y5IHwg24zaqSDYs9mI2YUg2KjZh9inIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=`", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InBhcnNhYnIuY29tIiwiaWQiOiJmOTkzYjI0YS0wMTVmLTQxMjctOWJiMS1hZDUyNzJmODE5NjEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiL2FwaS9yZWdpc3Rlci9uZXcvbmFtZS9kYXYvcmVzcG9uc2UvY21WMGFYSmxaQ0JvWld4c2J5Qm9iM2NnWVhKbElIbHZkU0IwYUdseklHbHpJRzE1SUc1bGR5Qm9aV0ZrWlhJZ2QiLCJwb3J0IjoiODU5NSIsInBzIjoi4peW8J+Hs/Cfh7Hil5cgTkzwn4y5IHwg24zaqSDYs9mI2YUg2KjZh9inIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=`")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6760" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InBhcnNhYnIuY29tIiwiaWQiOiJmOTkzYjI0YS0wMTVmLTQxMjctOWJiMS1hZDUyNzJmODE5NjEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiL2FwaS9yZWdpc3Rlci9uZXcvbmFtZS9kYXYvcmVzcG9uc2UvY21WMGFYSmxaQ0JvWld4c2J5Qm9iM2NnWVhKbElIbHZkU0IwYUdseklHbHpJRzE1SUc1bGR5Qm9aV0ZrWlhJZ2QiLCJwb3J0IjoiODU5NSIsInBzIjoi4peW8J+Hs/Cfh7Hil5cgTkzwn4y5IHwg24zaqSDYs9mI2YUg2KjZh9inIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=`", "config_24.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vmess" data-ping="230">
+            <div class="card-header">
+                <span class="protocol-badge vmess">VMESS</span>
+                <span class="status-badge medium">
+                    🟠 230ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 xsfilternet</div>
+                <div class="code-block" id="cfg25" onclick="selectCode(this)">vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9z...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InBhcnNhYnIuY29tIiwiaWQiOiJmOTkzYjI0YS0wMTVmLTQxMjctOWJiMS1hZDUyNzJmODE5NjEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiL2FwaS9yZWdpc3Rlci9uZXcvbmFtZS9kYXYvcmVzcG9uc2UvY21WMGFYSmxaQ0JvWld4c2J5Qm9iM2NnWVhKbElIbHZkU0IwYUdseklHbHpJRzE1SUc1bGR5Qm9aV0ZrWlhJZ2QiLCJwb3J0IjoiMjAyMiIsInBzIjoi4peW8J+HqfCfh6ril5cgREXwn426IHwg24zaqSDYs9mI2YUg2KjZh9inIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InBhcnNhYnIuY29tIiwiaWQiOiJmOTkzYjI0YS0wMTVmLTQxMjctOWJiMS1hZDUyNzJmODE5NjEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiL2FwaS9yZWdpc3Rlci9uZXcvbmFtZS9kYXYvcmVzcG9uc2UvY21WMGFYSmxaQ0JvWld4c2J5Qm9iM2NnWVhKbElIbHZkU0IwYUdseklHbHpJRzE1SUc1bGR5Qm9aV0ZrWlhJZ2QiLCJwb3J0IjoiMjAyMiIsInBzIjoi4peW8J+HqfCfh6ril5cgREXwn426IHwg24zaqSDYs9mI2YUg2KjZh9inIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6759" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InBhcnNhYnIuY29tIiwiaWQiOiJmOTkzYjI0YS0wMTVmLTQxMjctOWJiMS1hZDUyNzJmODE5NjEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiL2FwaS9yZWdpc3Rlci9uZXcvbmFtZS9kYXYvcmVzcG9uc2UvY21WMGFYSmxaQ0JvWld4c2J5Qm9iM2NnWVhKbElIbHZkU0IwYUdseklHbHpJRzE1SUc1bGR5Qm9aV0ZrWlhJZ2QiLCJwb3J0IjoiMjAyMiIsInBzIjoi4peW8J+HqfCfh6ril5cgREXwn426IHwg24zaqSDYs9mI2YUg2KjZh9inIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=", "config_25.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -412,7 +763,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg13" onclick="selectCode(this)">vless://20df8c30-c07a-494e-b83d-4af21ee57788@85.133.197.236:9828/?security=none&...</div>
+                <div class="code-block" id="cfg26" onclick="selectCode(this)">vless://20df8c30-c07a-494e-b83d-4af21ee57788@85.133.197.236:9828/?security=none&...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://20df8c30-c07a-494e-b83d-4af21ee57788@85.133.197.236:9828/?security=none&encryption=none&host=pro30afzar.com&headerType=http&type=tcp%40V2rayBaaz#%40v2rays_ha%207084", this)'>
@@ -424,7 +775,7 @@
                 <a href="https://t.me/myvpn1404/6728" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://20df8c30-c07a-494e-b83d-4af21ee57788@85.133.197.236:9828/?security=none&encryption=none&host=pro30afzar.com&headerType=http&type=tcp%40V2rayBaaz#%40v2rays_ha%207084", "config_13.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://20df8c30-c07a-494e-b83d-4af21ee57788@85.133.197.236:9828/?security=none&encryption=none&host=pro30afzar.com&headerType=http&type=tcp%40V2rayBaaz#%40v2rays_ha%207084", "config_26.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -439,7 +790,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg14" onclick="selectCode(this)">vless://8736dfd0-2020-4dde-956c-6a3e8f1b3c39@81.12.33.163:10010/?path=%2F&securi...</div>
+                <div class="code-block" id="cfg27" onclick="selectCode(this)">vless://8736dfd0-2020-4dde-956c-6a3e8f1b3c39@81.12.33.163:10010/?path=%2F&securi...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://8736dfd0-2020-4dde-956c-6a3e8f1b3c39@81.12.33.163:10010/?path=%2F&security=none&encryption=none&host=myket.ir&type=ws#%40v2rays_ha%207081", this)'>
@@ -451,7 +802,34 @@
                 <a href="https://t.me/myvpn1404/6725" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://8736dfd0-2020-4dde-956c-6a3e8f1b3c39@81.12.33.163:10010/?path=%2F&security=none&encryption=none&host=myket.ir&type=ws#%40v2rays_ha%207081", "config_14.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://8736dfd0-2020-4dde-956c-6a3e8f1b3c39@81.12.33.163:10010/?path=%2F&security=none&encryption=none&host=myket.ir&type=ws#%40v2rays_ha%207081", "config_27.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vmess" data-ping="236">
+            <div class="card-header">
+                <span class="protocol-badge vmess">VMESS</span>
+                <span class="status-badge medium">
+                    🟠 236ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 xsfilternet</div>
+                <div class="code-block" id="cfg28" onclick="selectCode(this)">vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9z...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InBhcnNhYnIuY29tIiwiaWQiOiJmOTkzYjI0YS0wMTVmLTQxMjctOWJiMS1hZDUyNzJmODE5NjEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiL2FwaS9yZWdpc3Rlci9uZXcvbmFtZS9kYXYvcmVzcG9uc2UvY21WMGFYSmxaQ0JvWld4c2J5Qm9iM2NnWVhKbElIbHZkU0IwYUdseklHbHpJRzE1SUc1bGR5Qm9aV0ZrWlhJZ2QiLCJwb3J0IjoiMjAyOCIsInBzIjoi4peW8J+HqfCfh6ril5cgREXwn426IHwg24zaqSDYs9mI2YUg2KjZh9inIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InBhcnNhYnIuY29tIiwiaWQiOiJmOTkzYjI0YS0wMTVmLTQxMjctOWJiMS1hZDUyNzJmODE5NjEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiL2FwaS9yZWdpc3Rlci9uZXcvbmFtZS9kYXYvcmVzcG9uc2UvY21WMGFYSmxaQ0JvWld4c2J5Qm9iM2NnWVhKbElIbHZkU0IwYUdseklHbHpJRzE1SUc1bGR5Qm9aV0ZrWlhJZ2QiLCJwb3J0IjoiMjAyOCIsInBzIjoi4peW8J+HqfCfh6ril5cgREXwn426IHwg24zaqSDYs9mI2YUg2KjZh9inIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6758" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vmess://eyJhZGQiOiI4MS4xMi4zMy4xODAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InBhcnNhYnIuY29tIiwiaWQiOiJmOTkzYjI0YS0wMTVmLTQxMjctOWJiMS1hZDUyNzJmODE5NjEiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiL2FwaS9yZWdpc3Rlci9uZXcvbmFtZS9kYXYvcmVzcG9uc2UvY21WMGFYSmxaQ0JvWld4c2J5Qm9iM2NnWVhKbElIbHZkU0IwYUdseklHbHpJRzE1SUc1bGR5Qm9aV0ZrWlhJZ2QiLCJwb3J0IjoiMjAyOCIsInBzIjoi4peW8J+HqfCfh6ril5cgREXwn426IHwg24zaqSDYs9mI2YUg2KjZh9inIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=", "config_28.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
@@ -466,7 +844,7 @@
             </div>
             <div class="card-body">
                 <div class="source">📡 فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray</div>
-                <div class="code-block" id="cfg15" onclick="selectCode(this)">vless://37aa544d-c729-4dd8-bebf-376311d3c2cf@cfip2.mamady.ir:8443/?path=%2F&secu...</div>
+                <div class="code-block" id="cfg29" onclick="selectCode(this)">vless://37aa544d-c729-4dd8-bebf-376311d3c2cf@cfip2.mamady.ir:8443/?path=%2F&secu...</div>
             </div>
             <div class="actions">
                 <button class="btn btn-copy" onclick='copyFull("vless://37aa544d-c729-4dd8-bebf-376311d3c2cf@cfip2.mamady.ir:8443/?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=fr1.mamady.ir&fp=random&type=ws&allowInsecure=0&sni=fr1.mamady.ir#%40v2rays_ha%207094```", this)'>
@@ -478,13 +856,337 @@
                 <a href="https://t.me/myvpn1404/6738" target="_blank" class="btn btn-link">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <button class="btn btn-download" onclick='downloadConfig("vless://37aa544d-c729-4dd8-bebf-376311d3c2cf@cfip2.mamady.ir:8443/?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=fr1.mamady.ir&fp=random&type=ws&allowInsecure=0&sni=fr1.mamady.ir#%40v2rays_ha%207094```", "config_15.txt")'>
+                <button class="btn btn-download" onclick='downloadConfig("vless://37aa544d-c729-4dd8-bebf-376311d3c2cf@cfip2.mamady.ir:8443/?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=fr1.mamady.ir&fp=random&type=ws&allowInsecure=0&sni=fr1.mamady.ir#%40v2rays_ha%207094```", "config_29.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="377">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge medium">
+                    🟠 377ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg30" onclick="selectCode(this)">vless://e0e837a4-c4d9-4504-91b6-170800933771@cf.aireacondicionadoalicante.eu:205...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://e0e837a4-c4d9-4504-91b6-170800933771@cf.aireacondicionadoalicante.eu:2052?path=%2F%EC%98%88%EC%81%9C%2B%EC%97%AC%EC%9E%90%EC%B9%9C%EA%B5%AC%EA%B0%80%2B%EC%97%86%EC%96%B4%EC%84%9C%2B%EB%84%88%EB%AC%B4%2B%EC%99%B8%EB%A1%9C%EC%9B%8C%EC%9A%94%3Fed%3D2560&security=none&alpn=http%2F1.1&encryption=none&host=afranet.aireacondicionadoalicante.eu&fp=chrome&type=httpupgrade&sni=afranet1.aireacondicionadoalicante.eu#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://e0e837a4-c4d9-4504-91b6-170800933771@cf.aireacondicionadoalicante.eu:2052?path=%2F%EC%98%88%EC%81%9C%2B%EC%97%AC%EC%9E%90%EC%B9%9C%EA%B5%AC%EA%B0%80%2B%EC%97%86%EC%96%B4%EC%84%9C%2B%EB%84%88%EB%AC%B4%2B%EC%99%B8%EB%A1%9C%EC%9B%8C%EC%9A%94%3Fed%3D2560&security=none&alpn=http%2F1.1&encryption=none&host=afranet.aireacondicionadoalicante.eu&fp=chrome&type=httpupgrade&sni=afranet1.aireacondicionadoalicante.eu#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6746" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://e0e837a4-c4d9-4504-91b6-170800933771@cf.aireacondicionadoalicante.eu:2052?path=%2F%EC%98%88%EC%81%9C%2B%EC%97%AC%EC%9E%90%EC%B9%9C%EA%B5%AC%EA%B0%80%2B%EC%97%86%EC%96%B4%EC%84%9C%2B%EB%84%88%EB%AC%B4%2B%EC%99%B8%EB%A1%9C%EC%9B%8C%EC%9A%94%3Fed%3D2560&security=none&alpn=http%2F1.1&encryption=none&host=afranet.aireacondicionadoalicante.eu&fp=chrome&type=httpupgrade&sni=afranet1.aireacondicionadoalicante.eu#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_30.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="388">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge medium">
+                    🟠 388ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 VPN | CICDO کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg31" onclick="selectCode(this)">vless://6d628a7d-0e69-4c58-af6b-72a185355e56@t.aiteamplus.ir:47062?security=none...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://6d628a7d-0e69-4c58-af6b-72a185355e56@t.aiteamplus.ir:47062?security=none&encryption=none&host=gharar.ir&headerType=http", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://6d628a7d-0e69-4c58-af6b-72a185355e56@t.aiteamplus.ir:47062?security=none&encryption=none&host=gharar.ir&headerType=http")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6764" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://6d628a7d-0e69-4c58-af6b-72a185355e56@t.aiteamplus.ir:47062?security=none&encryption=none&host=gharar.ir&headerType=http", "config_31.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="9999">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge medium">
+                    🟠 9999ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg32" onclick="selectCode(this)">vless://6202b230-417c-4d8e-b624-0f71afa9c75d@195.200.18.248:443?path=%2F%3Fed%3D...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@195.200.18.248:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@195.200.18.248:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6753" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://6202b230-417c-4d8e-b624-0f71afa9c75d@195.200.18.248:443?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_32.txt")'>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card" data-protocol="vless" data-ping="9999">
+            <div class="card-header">
+                <span class="protocol-badge vless">VLESS</span>
+                <span class="status-badge medium">
+                    🟠 9999ms
+                </span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 کانفیگ ملی شکن</div>
+                <div class="code-block" id="cfg33" onclick="selectCode(this)">vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855?path=%2F&security...</div>
+            </div>
+            <div class="actions">
+                <button class="btn btn-copy" onclick='copyFull("vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855?path=%2F&security=none&encryption=none&type=ws#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", this)'>
+                    <i class="far fa-copy"></i> کپی
+                </button>
+                <button class="btn btn-qr" onclick='showQR("vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855?path=%2F&security=none&encryption=none&type=ws#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil")'>
+                    <i class="fas fa-qrcode"></i> QR
+                </button>
+                <a href="https://t.me/myvpn1404/6748" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <button class="btn btn-download" onclick='downloadConfig("vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855?path=%2F&security=none&encryption=none&type=ws#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil", "config_33.txt")'>
                     <i class="fas fa-download"></i>
                 </button>
             </div>
         </div>
         </div>
         <div id="t2" class="tab">
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.3.200.136:4455</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.3.200.136&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.3.200.136:2053</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.3.200.136&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.215.247.111:2053</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.215.247.111&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.215.247.111:4455</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.215.247.111&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.3.200.191:4455</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.3.200.191&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.3.200.191:2053</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.3.200.191&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.3.200.185:4455</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.3.200.185&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.3.200.185:2053</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.3.200.185&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.3.200.186:5566</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.3.200.186&port=5566&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.3.200.186:2054</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.3.200.186&port=2054&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.3.200.172:4455</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.3.200.172&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge proxy">MTProto</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان</div>
+                <div class="code-block">185.3.200.172:2053</div>
+            </div>
+            <div class="actions">
+                <a href="tg://proxy?server=185.3.200.172&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)" class="btn btn-copy" style="flex:2">
+                    <i class="fas fa-link"></i> اتصال مستقیم
+                </a>
+                <a href="https://t.me/myvpn1404/6761" target="_blank" class="btn btn-link">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+        
         <div class="card">
             <div class="card-header">
                 <span class="protocol-badge proxy">MTProto</span>
@@ -1080,6 +1782,126 @@
         </div>
         </div>
         <div id="t3" class="tab">
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge file">NPVT</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 VPN | CICDO کانفیگ ملی شکن</div>
+                <div style="font-weight:bold;margin:10px 0">cicdo vpn _3.npvt</div>
+            </div>
+            <div class="actions">
+                <a href="https://t.me/myvpn1404/6767" target="_blank" class="btn btn-copy" style="flex:1">
+                    <i class="fas fa-download"></i> دانلود
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge file">NPVT</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 VPN | CICDO کانفیگ ملی شکن</div>
+                <div style="font-weight:bold;margin:10px 0">cicdo vpn _S.npvt</div>
+            </div>
+            <div class="actions">
+                <a href="https://t.me/myvpn1404/6766" target="_blank" class="btn btn-copy" style="flex:1">
+                    <i class="fas fa-download"></i> دانلود
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge file">NPVT</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 VPN | CICDO کانفیگ ملی شکن</div>
+                <div style="font-weight:bold;margin:10px 0">cicdo vpn تموچی.npvt</div>
+            </div>
+            <div class="actions">
+                <a href="https://t.me/myvpn1404/6765" target="_blank" class="btn btn-copy" style="flex:1">
+                    <i class="fas fa-download"></i> دانلود
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge file">NPVT</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 اینترنت آزاد | Merlin ViP</div>
+                <div style="font-weight:bold;margin:10px 0">‎⁨کانفیگ اضطرری🔥⁩.npvt</div>
+            </div>
+            <div class="actions">
+                <a href="https://t.me/myvpn1404/6763" target="_blank" class="btn btn-copy" style="flex:1">
+                    <i class="fas fa-download"></i> دانلود
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge file">NPVT</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 VPN MARKET</div>
+                <div style="font-weight:bold;margin:10px 0">NetMeliGLID.npvt</div>
+            </div>
+            <div class="actions">
+                <a href="https://t.me/myvpn1404/6762" target="_blank" class="btn btn-copy" style="flex:1">
+                    <i class="fas fa-download"></i> دانلود
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge file">NPVT</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 پروکسی | کانفیگ | 🅱️plan</div>
+                <div style="font-weight:bold;margin:10px 0">@planB_net 7️⃣7️⃣6️⃣.npvt</div>
+            </div>
+            <div class="actions">
+                <a href="https://t.me/myvpn1404/6743" target="_blank" class="btn btn-copy" style="flex:1">
+                    <i class="fas fa-download"></i> دانلود
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge file">NPVT</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 پروکسی | کانفیگ | 🅱️plan</div>
+                <div style="font-weight:bold;margin:10px 0">@planB_net 7️⃣7️⃣7️⃣.npvt</div>
+            </div>
+            <div class="actions">
+                <a href="https://t.me/myvpn1404/6742" target="_blank" class="btn btn-copy" style="flex:1">
+                    <i class="fas fa-download"></i> دانلود
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="protocol-badge file">NPVT</span>
+            </div>
+            <div class="card-body">
+                <div class="source">📡 پروکسی | کانفیگ | 🅱️plan</div>
+                <div style="font-weight:bold;margin:10px 0">@planB_net 7️⃣7️⃣8️⃣.npvt</div>
+            </div>
+            <div class="actions">
+                <a href="https://t.me/myvpn1404/6741" target="_blank" class="btn btn-copy" style="flex:1">
+                    <i class="fas fa-download"></i> دانلود
+                </a>
+            </div>
+        </div>
+        
         <div class="card">
             <div class="card-header">
                 <span class="protocol-badge file">NPVT</span>

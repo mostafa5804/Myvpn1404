@@ -44,7 +44,8 @@ ALL_CHANNELS = [
     '@darkproxy', '@configs_freeiran', '@v2rayvpnchannel'
 ]
 
-allowed_extensions = {'.npv4', '.npv2', '.npvt', '.dark', '.ehi', '.txt', '.conf', '.json'}
+# لیست پسوندهای مجاز (همه با حروف کوچک)
+ALLOWED_EXTENSIONS = {'.npv4', '.npv2', '.npvt', '.dark', '.ehi', '.txt', '.conf', '.json'}
 iran_tz = pytz.timezone('Asia/Tehran')
 IRAN_IP_PREFIXES = ['2.144.', '5.22.', '31.2.', '37.9.', '46.18.', '78.38.', '85.9.', '91.98.', '93.88.', '185.']
 
@@ -101,7 +102,7 @@ def extract_unique_key(config_str):
         
         match_simple = re.search(r'://([^:/]+):(\d+)', config_str)
         if match_simple:
-            return f"{match_simple.group(1)}:{match.group(2)}"
+            return f"{match_simple.group(1)}:{match_simple.group(2)}"
 
         return config_str
     except:
@@ -156,7 +157,6 @@ def create_footer(source_title):
     now = datetime.now(iran_tz)
     date_str = now.strftime('%Y/%m/%d')
     time_str = now.strftime('%H:%M')
-    # Clean title
     safe_title = re.sub(r'[\[\]\(\)\*`_]', '', str(source_title)).strip()
     
     return (
@@ -238,15 +238,15 @@ async def main():
                 except: continue
 
                 title = getattr(entity, 'title', channel_str)
-                # Channel specific batch for proxies to group them
                 channel_proxies = []
 
                 for m in msgs:
                     if m.date < cutoff_time: continue
                     link = f"https://t.me/{channel_str[1:]}/{m.id}"
 
+                    # --- Section 1: Text Processing (Configs & Proxies) ---
                     if m.text:
-                        # 1. Configs
+                        # 1.1 Configs
                         configs = re.findall(r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic)://[^\s\n]+", m.text)
                         for c in configs:
                             u_key = extract_unique_key(c)
@@ -255,7 +255,6 @@ async def main():
                                 if stat:
                                     prot = c.split('://')[0].upper()
                                     clean_c = c.replace('`', '')
-                                    # New Footer Logic
                                     caption = (
                                         f"{flag} **{prot}** | {country}\n"
                                         f"📶 Ping: {lat}ms\n\n"
@@ -265,7 +264,6 @@ async def main():
                                     try:
                                         sent = await client.send_message(destination_channel, caption, link_preview=False)
                                         t_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
-                                        
                                         new_conf.append({
                                             'protocol': prot, 'config': c, 'latency': lat, 
                                             'channel': title, 't_link': t_link, 
@@ -275,7 +273,7 @@ async def main():
                                         unique_fingerprints.add(u_key)
                                     except: pass
 
-                        # 2. Proxies
+                        # 1.2 Proxies
                         proxies = re.findall(r"https://t.me/proxy\?[^\s\n]+", m.text)
                         for p in proxies:
                             clean_p = p.replace('https://t.me/proxy', 'tg://proxy')
@@ -284,22 +282,34 @@ async def main():
                                 if stat:
                                     m_search = re.search(r"server=([\w\.-]+)&port=(\d+)", clean_p)
                                     key_p = f"{m_search.group(1)}:{m_search.group(2)}" if m_search else str(time.time())
-                                    
-                                    # Add to batch for sending
                                     channel_proxies.append({
-                                        'link': clean_p,
-                                        'flag': flag,
-                                        'stat': stat,
-                                        'lat': lat,
-                                        'key': key_p
+                                        'link': clean_p, 'flag': flag, 'stat': stat, 'lat': lat, 'key': key_p
                                     })
                                     sent_hashes.add(clean_p)
-                
-                # Send Batch Proxies for this channel
+
+                    # --- Section 2: File Processing (NapsternetV, etc) ---
+                    # این بخش الان کاملا مستقل است و حتی اگر متنی نباشد اجرا میشود
+                    if m.file and m.file.name:
+                        # بررسی پسوند (تبدیل به حروف کوچک برای مقایسه)
+                        file_ext = "." + m.file.name.split('.')[-1].lower() if '.' in m.file.name else ""
+                        
+                        if any(m.file.name.lower().endswith(ext) for ext in ALLOWED_EXTENSIONS):
+                            if m.file.name not in sent_hashes:
+                                try:
+                                    print(f"📂 Found File: {m.file.name}")
+                                    await client.send_file(destination_channel, m.file, caption=f"📂 **{m.file.name}**\n{create_footer(title)}")
+                                    new_file.append({
+                                        'name': m.file.name, 'ext': file_ext.replace('.', '').upper(), 
+                                        'channel': title, 'link': link, 'ts': time.time()
+                                    })
+                                    sent_hashes.add(m.file.name)
+                                except Exception as e:
+                                    print(f"❌ Error sending file {m.file.name}: {e}")
+
+                # --- Send Batch Proxies ---
                 if channel_proxies:
                     proxy_msg = "🔵 MTProxy‌های جدید\n\n"
                     for idx, p_data in enumerate(channel_proxies, 1):
-                        # Format: 1. Flag - Link • Status Latency
                         proxy_msg += f"{idx}. {p_data['flag']} - [اتصال]({p_data['link']}) • {p_data['stat']} {p_data['lat']}ms\n"
                     
                     proxy_msg += "\n💡 برای اتصال روی لینک کلیک کنید"
@@ -307,7 +317,6 @@ async def main():
 
                     try:
                         sent = await client.send_message(destination_channel, proxy_msg, link_preview=False)
-                        # Add to database with the sent message link
                         for p_data in channel_proxies:
                             new_prox.append({
                                 'key': p_data['key'], 'link': p_data['link'], 'channel': title, 
@@ -315,19 +324,7 @@ async def main():
                                 'latency': p_data['lat'], 'flag': p_data['flag'], 
                                 'ts': time.time()
                             })
-                    except Exception as e:
-                        print(f"Proxy Send Error: {e}")
-
-                    if m.file and any(m.file.name.endswith(x) for x in allowed_extensions if m.file.name):
-                        if m.file.name not in sent_hashes:
-                            try:
-                                await client.send_file(destination_channel, m.file, caption=f"📂 {m.file.name}\n{create_footer(title)}")
-                                new_file.append({
-                                    'name': m.file.name, 'ext': m.file.name.split('.')[-1], 
-                                    'channel': title, 'link': link, 'ts': time.time()
-                                })
-                                sent_hashes.add(m.file.name)
-                            except: pass
+                    except: pass
 
             except Exception as e: print(f"Error Loop: {e}")
 
@@ -355,7 +352,7 @@ async def main():
         with open(SUB_FILE, 'w', encoding='utf-8') as f:
             f.write(base64.b64encode(sub_content.encode('utf-8')).decode('utf-8'))
 
-        # PWA Manifest & SW
+        # PWA Generation
         with open('manifest.json', 'w') as f:
             json.dump({
                 "name": "VPN Hub Premium",
@@ -370,22 +367,16 @@ async def main():
         with open('sw.js', 'w') as f:
             f.write("self.addEventListener('install',e=>e.waitUntil(caches.open('vpn-v1').then(c=>c.addAll(['index.html','manifest.json']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));")
 
-        # HTML Generation
         now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
         html_cards = ""
         for idx, cfg in enumerate(all_configs, 1):
-            # FIXED: Check if latency is None before comparing
             lat = cfg.get('latency')
-            if lat is None: 
-                lat = 999
-            else:
-                lat = int(lat)
+            if lat is None: lat = 999
+            else: lat = int(lat)
 
             flag = cfg.get('flag', '🏳️')
             country = cfg.get('country', 'Unknown')
             safe_conf = cfg['config'].replace("'", "\\'").replace('"', '\\"').replace('\n', '')
-            
-            # Logic that caused error is now safe
             ping_color = "text-green-400" if lat < 200 else "text-yellow-400" if lat < 500 else "text-red-400"
             
             html_cards += f"""

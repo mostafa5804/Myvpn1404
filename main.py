@@ -18,15 +18,16 @@ from telethon.sessions import StringSession
 from telethon.tl.types import MessageEntityTextUrl
 from telethon.errors.rpcerrorlist import FloodWaitError
 
+# تلاش برای لود کردن ماژول GeoIP
 try:
     import geoip2.database
     GEOIP_AVAILABLE = True
 except:
     GEOIP_AVAILABLE = False
-    print("⚠️ GeoIP غیرفعال (فایل mmdb موجود نیست)")
+    print("⚠️ GeoIP module not found.")
 
 # =============================================================================
-# 1. تنظیمات و پیکربندی
+# 1. تنظیمات
 # =============================================================================
 api_id = int(os.environ['API_ID'])
 api_hash = os.environ['API_HASH']
@@ -34,14 +35,12 @@ session_1 = os.environ.get('SESSION_STRING')
 session_2 = os.environ.get('SESSION_STRING_2')
 
 ENABLE_REAL_TEST = True
-REAL_TEST_TIMEOUT = 5
-REAL_TEST_URL = "https://www.gstatic.com/generate_204"
-
+REAL_TEST_TIMEOUT = 3 # ثانیه
 DATA_FILE = 'data.json'
 KEEP_HISTORY_HOURS = 24
 destination_channel = '@myvpn1404'
-# آدرس گیت‌هاب پیج شما برای لینک اشتراک
-GITHUB_PAGE_URL = "mostafa5804.github.io/Myvpn1404" 
+# آدرس گیت‌هاب پیج تو (برای لینک اشتراک)
+GITHUB_PAGES_DOMAIN = "mostafa5804.github.io/Myvpn1404"
 MAX_MESSAGE_AGE_MINUTES = 90
 
 ALL_CHANNELS = [
@@ -58,175 +57,173 @@ ALL_CHANNELS = [
 allowed_extensions = {'.npv4', '.npv2', '.npvt', '.dark', '.ehi', '.txt', '.conf', '.json'}
 iran_tz = pytz.timezone('Asia/Tehran')
 
-# GeoIP Reader
+# راه اندازی GeoIP
 geoip_reader = None
 if GEOIP_AVAILABLE and os.path.exists('GeoLite2-Country.mmdb'):
     try:
         geoip_reader = geoip2.database.Reader('GeoLite2-Country.mmdb')
-        print("✅ GeoIP فعال شد")
-    except: pass
+        print("✅ GeoIP Loaded Successfully")
+    except Exception as e:
+        print(f"⚠️ GeoIP Error: {e}")
 
 # =============================================================================
-# 2. توابع کمکی
+# 2. توابع کمکی هوشمند
 # =============================================================================
 
 def generate_config_hash(config_str):
+    """ساخت هش یکتا برای جلوگیری از تکرار"""
     try:
-        if config_str.startswith('vmess://'):
-            decoded = json.loads(base64.b64decode(config_str.split('://')[1]))
-            key = f"{decoded.get('add')}:{decoded.get('port')}:{decoded.get('id', '')[:8]}"
-        elif config_str.startswith('vless://') or config_str.startswith('trojan://'):
-            match = re.search(r'@([\w\.-]+):(\d+)', config_str)
-            uuid_match = re.search(r'://([\w-]+)@', config_str)
-            if match and uuid_match:
-                key = f"{match.group(1)}:{match.group(2)}:{uuid_match.group(1)[:8]}"
+        # نرمال سازی برای حذف فاصله‌های اضافی
+        clean_conf = config_str.strip()
+        if clean_conf.startswith('vmess://'):
+            # دیکد کردن برای مقایسه دقیق
+            decoded = json.loads(base64.b64decode(clean_conf.split('://')[1]))
+            # کلید یکتا: آدرس + پورت + آیدی
+            key = f"{decoded.get('add')}:{decoded.get('port')}:{decoded.get('id', '')}"
+        elif '://' in clean_conf:
+            # برای Vless/Trojan: استخراج آدرس و پورت و UUID
+            match = re.search(r'://(.*?)@(.*):(\d+)', clean_conf)
+            if match:
+                key = f"{match.group(2)}:{match.group(3)}:{match.group(1)}"
             else:
-                key = config_str[:50]
+                key = clean_conf
         else:
-            key = config_str[:50]
-        return hashlib.md5(key.encode()).hexdigest()[:12]
+            key = clean_conf
+        
+        return hashlib.md5(key.encode()).hexdigest()
     except:
-        return hashlib.md5(config_str.encode()).hexdigest()[:12]
+        return hashlib.md5(config_str.encode()).hexdigest()
 
-def calculate_quality_score(latency, success_rate=100, protocol='vmess'):
-    if not latency or latency > 500: return 0
-    if latency < 50: ping_score = 100
-    elif latency < 100: ping_score = 90
-    elif latency < 150: ping_score = 75
-    elif latency < 200: ping_score = 60
-    else: ping_score = max(0, 60 - (latency - 200) / 10)
-    protocol_bonus = {'vless': 10, 'reality': 15, 'trojan': 5}.get(protocol.lower(), 0)
-    return int(min(100, ping_score + protocol_bonus))
+def calculate_quality_score(latency, protocol='vmess'):
+    """محاسبه امتیاز کیفیت (0 تا 100)"""
+    if not latency or latency > 2000: return 0
+    
+    # امتیاز پایه پینگ
+    if latency < 200: base = 100
+    elif latency < 500: base = 80
+    elif latency < 1000: base = 60
+    else: base = 40
+    
+    # امتیاز پروتکل
+    proto_bonus = 0
+    p = protocol.lower()
+    if 'reality' in p or 'vless' in p: proto_bonus = 10
+    elif 'trojan' in p: proto_bonus = 5
+    elif 'vmess' in p: proto_bonus = 0
+    
+    return min(100, base + proto_bonus)
 
 def get_country_flag(ip_address):
+    """دریافت پرچم کشور از روی IP"""
     if not geoip_reader: return "🌐"
     try:
         response = geoip_reader.country(ip_address)
-        country_code = response.country.iso_code
-        if country_code: return ''.join(chr(127397 + ord(c)) for c in country_code.upper())
-        return "🌐"
+        iso_code = response.country.iso_code
+        if iso_code:
+            return ''.join(chr(127397 + ord(c)) for c in iso_code.upper())
+        return "🚩" # مشخص نیست
     except: return "🌐"
 
-async def real_connection_test(host, port, protocol='tcp'):
+async def check_connection(host, port):
+    """تست اتصال TCP (پینگ)"""
     try:
         start = time.time()
-        if protocol in ['http', 'https']:
-            async with aiohttp.ClientSession() as session:
-                async with session.get(REAL_TEST_URL, timeout=aiohttp.ClientTimeout(total=REAL_TEST_TIMEOUT)) as resp:
-                    await resp.read()
-                    return int((time.time() - start) * 1000), True
-        _, writer = await asyncio.wait_for(asyncio.open_connection(host, port), timeout=REAL_TEST_TIMEOUT)
+        conn = asyncio.open_connection(host, port)
+        reader, writer = await asyncio.wait_for(conn, timeout=REAL_TEST_TIMEOUT)
+        latency = int((time.time() - start) * 1000)
         writer.close()
-        await writer.wait_closed()
-        return int((time.time() - start) * 1000), True
-    except: return None, False
+        try: await writer.wait_closed()
+        except: pass
+        return latency, True
+    except:
+        return None, False
 
 def extract_server_info(config_str):
+    """استخراج IP و Port"""
     try:
         if config_str.startswith('vmess://'):
-            decoded = json.loads(base64.b64decode(config_str.split('://')[1]))
-            return decoded.get('add'), int(decoded.get('port', 443))
-        elif config_str.startswith(('vless://', 'trojan://', 'ss://')):
-            match = re.search(r'@([\w\.-]+):(\d+)', config_str)
-            if match: return match.group(1), int(match.group(2))
-        return None, None
-    except: return None, None
+            d = json.loads(base64.b64decode(config_str.split('://')[1]))
+            return d.get('add'), int(d.get('port'))
+        # استخراج با Regex برای سایر پروتکل‌ها
+        match = re.search(r'@([\w\.-]+):(\d+)', config_str)
+        if match: return match.group(1), int(match.group(2))
+    except: pass
+    return None, None
 
-async def check_status_advanced(link, type='config'):
-    try:
-        host, port = extract_server_info(link)
-        if not host or not port: return None, None, None, False, "🌐"
-        
-        if ENABLE_REAL_TEST:
-            latency, success = await real_connection_test(host, port)
-        else:
-            try:
-                start = time.time()
-                _, w = await asyncio.wait_for(asyncio.open_connection(host, port), timeout=2)
-                w.close()
-                latency = int((time.time() - start) * 1000)
-                success = True
-            except: latency, success = None, False
-        
-        flag = get_country_flag(host)
-        if not success or latency is None: return "🔴 آفلاین", None, 0, False, flag
-        
-        protocol = link.split('://')[0]
-        quality = calculate_quality_score(latency, 100, protocol)
-        status = "🟢 عالی" if latency < 100 else "🟡 خوب" if latency < 200 else "🟠 متوسط"
-        return status, latency, quality, True, flag
-    except: return None, None, 0, False, "🌐"
+async def check_config_health(config):
+    """بررسی کامل سلامت کانفیگ"""
+    host, port = extract_server_info(config)
+    if not host or not port: return None, None, 0, False, "🌐"
+    
+    lat, success = await check_connection(host, port)
+    flag = get_country_flag(host)
+    
+    if not success: return "🔴 آفلاین", None, 0, False, flag
+    
+    prot = config.split('://')[0]
+    score = calculate_quality_score(lat, prot)
+    
+    status = "🟢 عالی" if lat < 300 else "🟡 خوب" if lat < 800 else "🟠 متوسط"
+    return status, lat, score, True, flag
 
-def generate_subscription_link(configs, domain):
-    """تولید فایل و لینک اشتراک"""
-    if not configs: return None
-    valid_configs = [c['config'] for c in configs if c.get('quality', 0) > 40]
+def generate_subscription(configs):
+    """ساخت فایل اشتراک"""
+    valid_configs = [c['config'] for c in configs if c.get('quality', 0) > 0]
     if not valid_configs: return None
     
-    encoded = base64.b64encode('\n'.join(valid_configs).encode()).decode()
+    # ترکیب و انکود
+    full_text = '\n'.join(valid_configs)
+    encoded = base64.b64encode(full_text.encode()).decode()
     
-    # 🔴 اصلاح مسیر: ذخیره در مسیر جاری
+    # ذخیره فایل
     with open('subscription.txt', 'w', encoding='utf-8') as f:
         f.write(encoded)
-    
-    return f"https://{domain}/subscription.txt"
+        
+    return f"https://{GITHUB_PAGES_DOMAIN}/subscription.txt"
 
+# توابع استاندارد قبلی
 def load_data():
-    if not os.path.exists(DATA_FILE): return {'configs': [], 'proxies': [], 'files': []}
+    if not os.path.exists(DATA_FILE): return {'configs': []}
     try:
-        with open(DATA_FILE, 'r', encoding='utf-8') as f: data = json.load(f)
-        limit = time.time() - (KEEP_HISTORY_HOURS * 3600)
-        return {
-            'configs': [c for c in data.get('configs', []) if c.get('ts', 0) > limit],
-            'proxies': [p for p in data.get('proxies', []) if p.get('ts', 0) > limit],
-            'files': [f for f in data.get('files', []) if f.get('ts', 0) > limit]
-        }
-    except: return {'configs': [], 'proxies': [], 'files': []}
+        with open(DATA_FILE, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            # حذف کانفیگ‌های خیلی قدیمی
+            limit = time.time() - (KEEP_HISTORY_HOURS * 3600)
+            return {'configs': [c for c in data.get('configs', []) if c.get('ts', 0) > limit]}
+    except: return {'configs': []}
 
 def save_data(data):
     try:
-        with open(DATA_FILE, 'w', encoding='utf-8') as f: json.dump(data, f, ensure_ascii=False, indent=2)
+        with open(DATA_FILE, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
     except: pass
 
-def merge_data(history, new_items, key):
-    exist = {i[key]: i for i in history}
-    for i in new_items: exist[i[key]] = i
-    res = list(exist.values())
-    res.sort(key=lambda x: x.get('quality', 0), reverse=True)
-    return res
+def merge_data(history, new_items):
+    # ترکیب بر اساس هش برای حذف تکراری‌ها
+    combined = {c['hash']: c for c in history}
+    for item in new_items:
+        combined[item['hash']] = item
+    
+    # تبدیل به لیست و مرتب‌سازی بر اساس امتیاز
+    final_list = list(combined.values())
+    final_list.sort(key=lambda x: x.get('quality', 0), reverse=True)
+    return final_list
 
-def get_batch_info():
-    minute = datetime.now(iran_tz).minute
-    target_session = session_2 if session_2 else session_1
-    if minute < 30: return ALL_CHANNELS[:20], "اول", target_session
-    else: return ALL_CHANNELS[20:], "دوم", target_session
+def get_batch():
+    m = datetime.now(iran_tz).minute
+    session = session_2 if session_2 else session_1
+    return (ALL_CHANNELS[:20], "پارت ۱") if m < 30 else (ALL_CHANNELS[20:], "پارت ۲"), session
 
-def clean_title(t):
-    if not t: return "Channel"
-    return re.sub(r'[\[\]\(\)\*`_]', '', str(t)).strip()
-
-def get_hashtags(name, type='file'):
-    if type == 'config': return f"#{name.split('://')[0].lower()} #v2rayNG"
-    ext = name.lower().split('.')[-1]
-    return {'npv4': '#napsternetv', 'ehi': '#httpinjector', 'txt': '#v2rayng'}.get(ext, '#vpn')
-
-def create_footer(title, link):
-    now = datetime.now(iran_tz)
-    safe_title = clean_title(title)
-    return f"\n━━━━━━━━━━━━━━━━\n🗓 {now.strftime('%Y/%m/%d')} • 🕐 {now.strftime('%H:%M')}\n📡 منبع: [{safe_title}]({link})\n🔗 {destination_channel}"
-
-def extract_proxy_key(link):
-    m = re.search(r"server=([\w\.-]+)&port=(\d+)", link)
-    if m: return f"{m.group(1)}:{m.group(2)}"
-    return str(time.time())
+def get_hashtags(conf):
+    return f"#{conf.split('://')[0].lower()} #v2rayNG"
 
 # =============================================================================
 # 3. بدنه اصلی
 # =============================================================================
-target_channels, batch_name, active_session = get_batch_info()
+(target_channels, batch_name), active_session = get_batch()
 
 if not active_session:
-    print("❌ خطای حیاتی: سشن یافت نشد!")
+    print("❌ سشن یافت نشد")
     sys.exit(1)
 
 client = TelegramClient(StringSession(active_session), api_id, api_hash)
@@ -234,186 +231,289 @@ client = TelegramClient(StringSession(active_session), api_id, api_hash)
 async def main():
     try:
         await client.start()
-        print(f"✅ ربات متصل شد ({batch_name})")
+        print(f"✅ ربات استارت شد: {batch_name}")
         
         hist = load_data()
-        sent_hashes = set()
-        for c in hist['configs']: sent_hashes.add(generate_config_hash(c['config']))
+        # هش‌های موجود در حافظه برای جلوگیری از پردازش تکراری
+        seen_hashes = {c['hash'] for c in hist['configs']}
         
-        print(f"🔄 {len(sent_hashes)} کانفیگ یکتا در حافظه")
-        await asyncio.sleep(random.randint(5, 10))
+        new_items = []
+        cutoff = datetime.now(timezone.utc) - timedelta(minutes=MAX_MESSAGE_AGE_MINUTES)
         
-        new_conf, new_prox, new_file = [], [], []
-        cutoff_time = datetime.now(timezone.utc) - timedelta(minutes=MAX_MESSAGE_AGE_MINUTES)
-
-        for i, channel_str in enumerate(target_channels):
+        for i, channel in enumerate(target_channels):
             try:
-                wait_time = random.randint(15, 20)
-                print(f"⏳ ({i+1}/{len(target_channels)}) {channel_str} - صبر: {wait_time}s")
-                await asyncio.sleep(wait_time)
+                print(f"📡 در حال بررسی: {channel}")
+                try:
+                    entity = await client.get_entity(channel)
+                except:
+                    print(f"⚠️ کانال {channel} در دسترس نیست")
+                    continue
                 
-                try: entity = await client.get_entity(channel_str)
-                except: continue
-
-                msgs = await client.get_messages(entity, limit=20)
-                temp_c = []
-                title = getattr(entity, 'title', channel_str)
+                msgs = await client.get_messages(entity, limit=15)
+                channel_title = getattr(entity, 'title', channel)
                 
                 for m in msgs:
-                    if m.date < cutoff_time: continue
-                    link = f"https://t.me/{channel_str[1:]}/{m.id}"
+                    if m.date < cutoff or not m.text: continue
                     
-                    if m.text:
-                        for c in re.findall(r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic)://[^\s\n]+", m.text):
-                            config_hash = generate_config_hash(c)
-                            if config_hash not in sent_hashes:
-                                temp_c.append({'c': c, 'link': link, 'hash': config_hash})
-                                sent_hashes.add(config_hash)
-
-                for item in temp_c:
-                    stat, lat, quality, is_online, flag = await check_status_advanced(item['c'])
+                    # استخراج کانفیگ‌ها
+                    configs = re.findall(r'(vmess|vless|trojan|ss|hy2|tuic)://[a-zA-Z0-9\-\_\=\@\:\.\?\&\%\#]+', m.text)
                     
-                    if stat and is_online:
-                        prot = item['c'].split('://')[0].upper()
-                        txt = (f"🔮 **{prot}** {flag}\n\n```\n{item['c']}\n```\n"
-                               f"📊 {stat} • {lat}ms • کیفیت: {quality}/100\n"
-                               f"{get_hashtags(item['c'], 'config')}{create_footer(title, item['link'])}")
-                        try:
-                            sent = await client.send_message(destination_channel, txt, link_preview=False)
-                            my_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
-                            new_conf.append({
-                                'protocol': prot, 'config': item['c'], 'hash': item['hash'],
-                                'latency': lat, 'quality': quality, 'country': flag,
-                                'channel': title, 't_link': my_link, 'ts': time.time()
-                            })
-                            await asyncio.sleep(3)
-                        except: pass
+                    for conf in configs:
+                        # تمیزکاری لینک
+                        conf = conf.strip()
+                        if '...' in conf: continue # لینک ناقص
+                        
+                        conf_hash = generate_config_hash(conf)
+                        if conf_hash in seen_hashes: continue
+                        
+                        # بررسی سلامت
+                        status, lat, score, online, flag = await check_config_health(conf)
+                        
+                        if online and score > 30: # فقط کانفیگ‌های سالم
+                            proto = conf.split('://')[0].upper()
+                            msg_link = f"https://t.me/{channel.replace('@', '')}/{m.id}"
+                            
+                            # ارسال به کانال خودت
+                            caption = (
+                                f"🔮 **{proto}** {flag}\n\n"
+                                f"```\n{conf}\n```\n"
+                                f"📊 وضعیت: {status}\n"
+                                f"⚡️ پینگ: {lat}ms | ⭐ امتیاز: {score}/100\n\n"
+                                f"{get_hashtags(conf)}\n"
+                                f"━━━━━━━━━━━━━━━━\n"
+                                f"📅 {jdatetime.datetime.now().strftime('%Y/%m/%d %H:%M')}\n"
+                                f"📢 منبع: [{channel_title}]({msg_link})\n"
+                                f"🆔 {destination_channel}"
+                            )
+                            
+                            try:
+                                sent = await client.send_message(destination_channel, caption, link_preview=False)
+                                my_link = f"https://t.me/{destination_channel.replace('@', '')}/{sent.id}"
+                                
+                                new_items.append({
+                                    'protocol': proto,
+                                    'config': conf,
+                                    'hash': conf_hash,
+                                    'latency': lat,
+                                    'quality': score,
+                                    'country': flag,
+                                    'channel': channel_title,
+                                    'ts': time.time(),
+                                    't_link': my_link
+                                })
+                                seen_hashes.add(conf_hash)
+                                await asyncio.sleep(2)
+                            except Exception as e:
+                                print(f"❌ خطا در ارسال: {e}")
 
             except Exception as e:
-                print(f"Err {channel_str}: {e}")
-                continue
+                print(f"❌ خطا در کانال {channel}: {e}")
 
-        print("💾 ذخیره دیتابیس...")
-        f_c = merge_data(hist['configs'], new_conf, 'hash')
-        save_data({'configs': f_c, 'proxies': [], 'files': []})
+        # ذخیره سازی
+        print("💾 بروزرسانی دیتابیس...")
+        final_configs = merge_data(hist['configs'], new_items)
+        save_data({'configs': final_configs})
         
-        # تولید لینک اشتراک با دامنه صحیح
-        sub_link = generate_subscription_link(f_c, GITHUB_PAGE_URL)
+        # ساخت اشتراک
+        sub_url = generate_subscription(final_configs)
         
-        print("\n📄 ساخت صفحه Premium PWA...")
-        await generate_advanced_website(f_c, sub_link)
-
+        # ساخت سایت
+        print("🌐 ساخت سایت PWA...")
+        await generate_site(final_configs, sub_url)
+        
     except Exception as e:
-        print(f"❌ خطا: {e}")
-        import traceback
-        traceback.print_exc()
+        print(f"🔥 خطای کلی: {e}")
     finally:
         await client.disconnect()
 
-async def generate_advanced_website(configs, subscription_link):
-    now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
+async def generate_site(configs, sub_link):
+    # آمار
     total = len(configs)
-    excellent = len([c for c in configs if c.get('quality', 0) > 80])
-    avg_ping = int(sum([c.get('latency', 999) for c in configs if c.get('latency')]) / total) if total > 0 else 0
+    high_quality = len([c for c in configs if c['quality'] >= 80])
+    avg_ping = int(sum(c['latency'] for c in configs)/total) if total else 0
+    update_time = jdatetime.datetime.now().strftime('%Y/%m/%d - %H:%M')
     
-    html_configs = ""
-    for idx, cfg in enumerate(configs[:50], 1):
-        quality = cfg.get('quality', 0)
-        badge_class = "excellent" if quality > 80 else "good" if quality > 60 else "medium"
-        safe_config = cfg['config'].replace("'", "\\'").replace('"', '\\"')
+    # تولید کارت‌ها
+    cards_html = ""
+    for idx, c in enumerate(configs[:60]): # نمایش ۶۰ تای برتر
+        safe_conf = c['config'].replace("'", "\\'").replace('"', '\\"')
         
-        html_configs += f"""
-        <div class="card" data-quality="{quality}">
-            <div class="card-header">
-                <span class="protocol-badge">{cfg['protocol']}</span>
-                <span class="country-flag">{cfg.get('country', '🌐')}</span>
-                <span class="quality-badge {badge_class}">{quality}/100</span>
+        # کلاس رنگ‌بندی
+        q_class = "high" if c['quality'] >= 80 else "mid" if c['quality'] >= 50 else "low"
+        
+        cards_html += f"""
+        <div class="card">
+            <div class="card-head">
+                <span class="badge proto">{c['protocol']}</span>
+                <span class="flag">{c['country']}</span>
+                <span class="badge score {q_class}">{c['quality']}</span>
             </div>
             <div class="card-body">
-                <div class="source">📡 {cfg['channel']}</div>
-                <div class="stats"><span>📶 {cfg.get('latency', 'N/A')}ms</span></div>
-                <div class="code-block" onclick="selectCode(this)">{cfg['config'][:60]}...</div>
+                <div class="info">
+                    <span>📡 {c['channel']}</span>
+                    <span>⚡ {c['latency']}ms</span>
+                </div>
+                <div class="code-box" onclick="selectText(this)">{c['config'][:50]}...</div>
             </div>
             <div class="actions">
-                <button class="btn btn-copy" onclick='copyConfig("{safe_config}")'><i class="far fa-copy"></i> کپی</button>
-                <button class="btn btn-qr" onclick='showQR("{safe_config}")'><i class="fas fa-qrcode"></i></button>
-                <a href="{cfg.get('t_link', '#')}" class="btn btn-link" target="_blank"><i class="fab fa-telegram"></i></a>
+                <button class="btn copy" onclick="copyTxt('{safe_conf}')">📋 کپی</button>
+                <button class="btn qr" onclick="showQR('{safe_conf}')">📱 QR</button>
+                <a href="{c.get('t_link', '#')}" target="_blank" class="btn link">🔗 تلگرام</a>
             </div>
-        </div>"""
-    
-    full_html = f"""<!DOCTYPE html>
+        </div>
+        """
+
+    html_content = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0f172a">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Hub Pro</title>
     <link rel="manifest" href="manifest.json">
-    <title>VPN Hub Pro | {destination_channel}</title>
+    <meta name="theme-color" content="#1e293b">
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {{ --bg:#0f172a; --card:#1e293b; --primary:#38bdf8; --success:#10b981; --warning:#f59e0b; --danger:#ef4444; --text:#f1f5f9; --sub:#94a3b8; --border:#334155; }}
-        * {{ margin:0; padding:0; box-sizing:border-box; font-family:'Vazirmatn',sans-serif; }}
-        body {{ background:var(--bg); color:var(--text); padding-bottom:80px; }}
-        header {{ background:rgba(30,41,59,0.95); padding:15px; position:sticky; top:0; z-index:50; backdrop-filter:blur(10px); border-bottom:1px solid var(--border); }}
-        .header-content {{ max-width:600px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }}
-        .stats-bar {{ background:var(--card); padding:20px; margin:15px auto; max-width:600px; border-radius:15px; display:grid; grid-template-columns:repeat(3,1fr); gap:15px; }}
-        .stat-item {{ text-align:center; }} .stat-value {{ font-size:1.8rem; font-weight:bold; color:var(--primary); }} .stat-label {{ font-size:0.75rem; color:var(--sub); margin-top:5px; }}
-        .subscription-box {{ max-width:600px; margin:15px auto; padding:20px; background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius:15px; text-align:center; }}
-        .sub-link {{ background:white; color:#667eea; padding:12px 25px; border-radius:10px; text-decoration:none; display:inline-block; font-weight:bold; margin-top:10px; }}
-        .container {{ max-width:600px; margin:0 auto; padding:0 15px; }}
-        .card {{ background:var(--card); border-radius:16px; padding:16px; margin-bottom:16px; border:1px solid var(--border); animation:slideIn 0.5s; }}
-        @keyframes slideIn {{ from {{ opacity:0; transform:translateY(20px); }} to {{ opacity:1; transform:translateY(0); }} }}
-        .card-header {{ display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }}
-        .protocol-badge {{ padding:6px 12px; border-radius:8px; background:linear-gradient(135deg,#38bdf8,#3b82f6); color:white; font-size:0.75rem; font-weight:bold; }}
-        .quality-badge {{ padding:6px 12px; border-radius:8px; font-size:0.75rem; font-weight:bold; }}
-        .excellent {{ background:rgba(16,185,129,0.2); color:var(--success); }} .good {{ background:rgba(245,158,11,0.2); color:var(--warning); }} .medium {{ background:rgba(239,68,68,0.2); color:var(--danger); }}
-        .source {{ font-size:0.8rem; color:var(--sub); margin-bottom:8px; }}
-        .code-block {{ background:#0b1120; padding:12px; border-radius:10px; color:#a5b4fc; font-family:monospace; cursor:pointer; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }}
-        .actions {{ display:grid; grid-template-columns:2fr 1fr 1fr; gap:8px; margin-top:12px; }}
-        .btn {{ padding:10px; border-radius:10px; border:none; cursor:pointer; font-weight:bold; display:flex; align-items:center; justify-content:center; gap:5px; text-decoration:none; transition:all 0.3s; }}
-        .btn-copy {{ background:var(--primary); color:var(--bg); }} .btn-qr {{ background:#a78bfa; color:white; }} .btn-link {{ background:transparent; border:1px solid var(--border); color:var(--text); }}
-        #toast {{ position:fixed; bottom:100px; left:50%; transform:translateX(-50%); background:var(--success); color:white; padding:15px 25px; border-radius:10px; font-weight:bold; z-index:1000; opacity:0; transition:opacity 0.3s; }}
-        #toast.show {{ opacity:1; }}
-        #installBtn {{ position:fixed; bottom:90px; right:20px; background:var(--primary); color:white; padding:15px 20px; border-radius:50px; border:none; cursor:pointer; box-shadow:0 4px 15px rgba(56,189,248,0.4); display:none; z-index:100; }}
+        :root {{ --bg: #0f172a; --card: #1e293b; --text: #f8fafc; --accent: #38bdf8; --green: #22c55e; --yellow: #eab308; --red: #ef4444; }}
+        * {{ box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; margin: 0; padding: 0; }}
+        body {{ background: var(--bg); color: var(--text); padding-bottom: 80px; }}
+        
+        header {{ background: rgba(30,41,59,0.9); backdrop-filter: blur(10px); padding: 15px; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }}
+        h2 {{ font-size: 1.2rem; background: linear-gradient(45deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }}
+        
+        .stats {{ display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; padding: 15px; max-width: 800px; margin: 0 auto; }}
+        .stat-box {{ background: var(--card); padding: 15px; border-radius: 12px; text-align: center; border: 1px solid #334155; }}
+        .stat-num {{ display: block; font-size: 1.5rem; font-weight: bold; color: var(--accent); }}
+        .stat-label {{ font-size: 0.8rem; color: #94a3b8; }}
+        
+        .sub-box {{ background: linear-gradient(135deg, #4f46e5, #ec4899); margin: 15px; padding: 20px; border-radius: 15px; text-align: center; color: white; max-width: 800px; margin: 15px auto; }}
+        .sub-btn {{ display: inline-block; background: white; color: #4f46e5; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }}
+        
+        .list {{ display: grid; gap: 15px; padding: 15px; max-width: 800px; margin: 0 auto; }}
+        .card {{ background: var(--card); border-radius: 15px; padding: 15px; border: 1px solid #334155; transition: transform 0.2s; }}
+        .card:active {{ transform: scale(0.98); }}
+        
+        .card-head {{ display: flex; justify-content: space-between; margin-bottom: 10px; align-items: center; }}
+        .badge {{ padding: 4px 8px; border-radius: 6px; font-size: 0.75rem; font-weight: bold; }}
+        .proto {{ background: #334155; color: #cbd5e1; }}
+        .score.high {{ background: rgba(34,197,94,0.2); color: var(--green); }}
+        .score.mid {{ background: rgba(234,179,8,0.2); color: var(--yellow); }}
+        .score.low {{ background: rgba(239,68,68,0.2); color: var(--red); }}
+        .flag {{ font-size: 1.2rem; }}
+        
+        .info {{ display: flex; justify-content: space-between; font-size: 0.8rem; color: #94a3b8; margin-bottom: 8px; }}
+        .code-box {{ background: #0b1120; padding: 10px; border-radius: 8px; font-family: monospace; color: #a5b4fc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; direction: ltr; }}
+        
+        .actions {{ display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 8px; margin-top: 12px; }}
+        .btn {{ border: none; padding: 10px; border-radius: 8px; font-weight: bold; cursor: pointer; color: white; }}
+        .copy {{ background: var(--accent); }}
+        .qr {{ background: #6366f1; }}
+        .link {{ background: #334155; text-decoration: none; text-align: center; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; }}
+        
+        /* Modal & Toast */
+        .toast {{ position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--green); color: white; padding: 10px 20px; border-radius: 50px; opacity: 0; transition: 0.3s; pointer-events: none; z-index: 200; }}
+        .toast.show {{ opacity: 1; bottom: 40px; }}
+        
+        .modal {{ display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 300; justify-content: center; align-items: center; }}
+        .modal-content {{ background: var(--card); padding: 20px; border-radius: 20px; text-align: center; max-width: 90%; }}
+        #qrcode {{ margin: 20px auto; background: white; padding: 10px; border-radius: 10px; }}
+        .close-btn {{ background: var(--red); margin-top: 10px; width: 100%; }}
+        
+        #installBtn {{ display: none; position: fixed; bottom: 20px; right: 20px; background: var(--accent); color: #0f172a; border: none; padding: 12px 20px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 15px rgba(56,189,248,0.4); cursor: pointer; z-index: 90; }}
     </style>
 </head>
 <body>
-    <header><div class="header-content"><div><h2>🚀 VPN Hub Pro</h2><small>بروزرسانی: {now_str}</small></div><button class="btn" onclick="location.reload()"><i class="fas fa-sync-alt"></i></button></div></header>
-    <div class="stats-bar">
-        <div class="stat-item"><div class="stat-value">{total}</div><div class="stat-label">کانفیگ آنلاین</div></div>
-        <div class="stat-item"><div class="stat-value">{avg_ping}ms</div><div class="stat-label">میانگین تاخیر</div></div>
-        <div class="stat-item"><div class="stat-value">{excellent}</div><div class="stat-label">کیفیت عالی</div></div>
+    <header>
+        <h2>💎 VPN Hub Pro</h2>
+        <small>{update_time}</small>
+    </header>
+    
+    <div class="stats">
+        <div class="stat-box"><span class="stat-num">{total}</span><span class="stat-label">کل کانفیگ</span></div>
+        <div class="stat-box"><span class="stat-num">{high_quality}</span><span class="stat-label">کیفیت عالی</span></div>
+        <div class="stat-box"><span class="stat-num">{avg_ping}</span><span class="stat-label">پینگ میانگین</span></div>
     </div>
-    {f'<div class="subscription-box"><h3>🔗 لینک اشتراک (Subscription)</h3><p style="color:rgba(255,255,255,0.9);font-size:0.85rem;">لینک زیر را در برنامه V2Ray/Clash کپی کنید:</p><a href="{subscription_link}" class="sub-link" onclick="copyText(\\'{subscription_link}\\')"><i class="fas fa-download"></i> کپی لینک اشتراک</a></div>' if subscription_link else ''}
-    <div class="container">{html_configs}</div>
-    <button id="installBtn" onclick="installPWA()"><i class="fas fa-download"></i> نصب اپلیکیشن</button>
-    <div id="toast"></div>
+    
+    {f'<div class="sub-box"><h3>🚀 لینک اشتراک هوشمند</h3><p>لینک زیر را در V2RayNG یا Streisand وارد کنید تا لیست آپدیت شود.</p><a href="{sub_link}" class="sub-btn" onclick="copyTxt(\\'{sub_link}\\'); return false;">کپی لینک اشتراک</a></div>' if sub_link else ''}
+    
+    <div class="list">
+        {cards_html}
+    </div>
+    
+    <button id="installBtn">📲 نصب اپلیکیشن</button>
+    <div id="toast" class="toast">کپی شد!</div>
+    
+    <div id="qrModal" class="modal">
+        <div class="modal-content">
+            <h3>اسکن کنید</h3>
+            <div id="qrcode"></div>
+            <button class="btn close-btn" onclick="document.getElementById('qrModal').style.display='none'">بستن</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script>
-        function copyConfig(text) {{ navigator.clipboard.writeText(text).then(() => showToast('✅ کانفیگ کپی شد!')); }}
-        function copyText(text) {{ navigator.clipboard.writeText(text); showToast('✅ لینک کپی شد!'); return false; }}
-        function showToast(msg) {{ const t = document.getElementById('toast'); t.innerText = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 3000); }}
-        function selectCode(el) {{ const r = document.createRange(); r.selectNodeContents(el); const s = window.getSelection(); s.removeAllRanges(); s.addRange(r); }}
-        let deferredPrompt; window.addEventListener('beforeinstallprompt', (e) => {{ e.preventDefault(); deferredPrompt = e; document.getElementById('installBtn').style.display = 'block'; }});
-        function installPWA() {{ if(deferredPrompt) {{ deferredPrompt.prompt(); deferredPrompt = null; document.getElementById('installBtn').style.display = 'none'; }} }}
-        if ('serviceWorker' in navigator) {{ navigator.serviceWorker.register('sw.js'); }}
+        function copyTxt(txt) {{
+            navigator.clipboard.writeText(txt).then(() => {{
+                const t = document.getElementById('toast');
+                t.classList.add('show');
+                setTimeout(() => t.classList.remove('show'), 2000);
+            }});
+        }}
+        
+        function selectText(el) {{
+            const range = document.createRange();
+            range.selectNodeContents(el);
+            const sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }}
+        
+        function showQR(txt) {{
+            const m = document.getElementById('qrModal');
+            const q = document.getElementById('qrcode');
+            q.innerHTML = '';
+            new QRCode(q, {{text: txt, width: 200, height: 200}});
+            m.style.display = 'flex';
+        }}
+        
+        // PWA Installer
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {{
+            e.preventDefault();
+            deferredPrompt = e;
+            const btn = document.getElementById('installBtn');
+            btn.style.display = 'block';
+            btn.addEventListener('click', () => {{
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choice) => {{
+                    if(choice.outcome === 'accepted') btn.style.display = 'none';
+                    deferredPrompt = null;
+                }});
+            }});
+        }});
+        
+        if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
     </script>
 </body>
 </html>"""
+
+    # نوشتن فایل‌ها در مسیر جاری (نه مسیر /mnt/...)
+    with open('index.html', 'w', encoding='utf-8') as f: f.write(html_content)
     
-    # 🔴 اصلاح مسیرها: ذخیره در مسیر جاری
-    with open('index.html', 'w', encoding='utf-8') as f: f.write(full_html)
-    
+    # مانیفست PWA
     manifest = {
-        "name": "VPN Hub Pro", "short_name": "VPNHub", "description": "VPN Configs",
-        "start_url": "/", "display": "standalone", "background_color": "#0f172a", "theme_color": "#38bdf8",
-        "icons": [{"src": "https://cdn-icons-png.flaticon.com/512/2099/2099192.png", "sizes": "512x512", "type": "image/png"}]
+        "name": "VPN Hub Pro",
+        "short_name": "VPNHub",
+        "start_url": ".",
+        "display": "standalone",
+        "background_color": "#0f172a",
+        "theme_color": "#38bdf8",
+        "icons": [{"src": "https://img.icons8.com/3d-fluency/94/rocket.png", "sizes": "94x94", "type": "image/png"}]
     }
     with open('manifest.json', 'w') as f: json.dump(manifest, f)
     
-    sw_content = "self.addEventListener('install',e=>{e.waitUntil(caches.open('v1').then(c=>c.addAll(['/'])))})"
-    with open('sw.js', 'w') as f: f.write(sw_content)
-    
-    print("✅ سایت PWA ساخته شد!")
+    # سرویس ورکر PWA
+    with open('sw.js', 'w') as f: f.write("self.addEventListener('install',e=>e.waitUntil(caches.open('v1').then(c=>c.addAll(['./']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));")
 
 if __name__ == "__main__":
     with client: client.loop.run_until_complete(main())

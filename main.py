@@ -14,6 +14,8 @@ import requests
 from datetime import datetime, timedelta, timezone
 from telethon import TelegramClient
 from telethon.sessions import StringSession
+# اضافه شدن ماژول برای خواندن لینک‌های مخفی
+from telethon.tl.types import MessageEntityTextUrl
 
 # ==========================================
 # 1. Configuration
@@ -152,21 +154,21 @@ def get_batch_info():
     else:
         return ALL_CHANNELS[20:], "Second Batch", target_session
 
-# --- اصلاح شده: فوتر با لینک به کانال منبع ---
+# --- اصلاح شده: فوتر جدید طبق درخواست ---
 def create_footer(source_title, source_username):
     now = datetime.now(iran_tz)
     date_str = now.strftime('%Y/%m/%d')
     time_str = now.strftime('%H:%M')
     safe_title = re.sub(r'[\[\]\(\)\*`_]', '', str(source_title)).strip()
     
-    # حذف @ از یوزرنیم برای ساخت لینک
     clean_username = source_username.replace('@', '')
     
     return (
         f"\n━━━━━━━━━━━━━━━━\n"
         f"🗓 {date_str} • 🕐 {time_str}\n"
         f"📡 منبع: [{safe_title}](https://t.me/{clean_username})\n"
-        f"🔗 {destination_channel} | [لینک اشتراک کانفینگ]({SUB_LINK_URL})"
+        f"🖇 [لینک اشتراک]({SUB_LINK_URL})\n"
+        f"💬 {destination_channel}"
     )
 
 async def check_connection(host, port):
@@ -247,9 +249,9 @@ async def main():
                     if m.date < cutoff_time: continue
                     link = f"https://t.me/{channel_str[1:]}/{m.id}"
 
-                    # --- Section 1: Text Processing (Configs & Proxies) ---
+                    # --- Section 1: Text Processing ---
                     if m.text:
-                        # 1.1 Configs
+                        # 1.1 Configs (VLESS/VMess/etc)
                         configs = re.findall(r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic)://[^\s\n]+", m.text)
                         for c in configs:
                             u_key = extract_unique_key(c)
@@ -258,7 +260,6 @@ async def main():
                                 if stat:
                                     prot = c.split('://')[0].upper()
                                     clean_c = c.replace('`', '')
-                                    # پاس دادن channel_str برای لینک‌دهی
                                     caption = (
                                         f"{flag} **{prot}** | {country}\n"
                                         f"📶 Ping: {lat}ms\n\n"
@@ -277,19 +278,38 @@ async def main():
                                         unique_fingerprints.add(u_key)
                                     except: pass
 
-                        # 1.2 Proxies
-                        proxies = re.findall(r"https://t.me/proxy\?[^\s\n]+", m.text)
-                        for p in proxies:
+                        # 1.2 Proxies (Advanced Extraction: Regex + Entities)
+                        found_proxies = set()
+                        
+                        # A) Regex (متن ساده)
+                        regex_matches = re.findall(r"https://t.me/proxy\?[^\s\n]+|tg://proxy\?[^\s\n]+", m.text)
+                        for p in regex_matches:
+                            # تبدیل همه به tg://proxy برای یکسان‌سازی
                             clean_p = p.replace('https://t.me/proxy', 'tg://proxy')
-                            if clean_p not in sent_hashes:
-                                stat, lat, flag, country = await process_item(clean_p, 'proxy')
+                            found_proxies.add(clean_p)
+                        
+                        # B) Entities (هایپرلینک‌های مخفی)
+                        if m.entities:
+                            for ent in m.entities:
+                                if isinstance(ent, MessageEntityTextUrl):
+                                    url = ent.url
+                                    if 'proxy' in url and ('server=' in url or 'secret=' in url):
+                                        clean_url = url.replace('https://t.me/proxy', 'tg://proxy')
+                                        found_proxies.add(clean_url)
+
+                        # پردازش لیست پیدا شده
+                        for p in found_proxies:
+                            if p not in sent_hashes:
+                                stat, lat, flag, country = await process_item(p, 'proxy')
                                 if stat:
-                                    m_search = re.search(r"server=([\w\.-]+)&port=(\d+)", clean_p)
+                                    # استخراج مشخصات برای دیتابیس
+                                    m_search = re.search(r"server=([\w\.-]+)&port=(\d+)", p)
                                     key_p = f"{m_search.group(1)}:{m_search.group(2)}" if m_search else str(time.time())
+                                    
                                     channel_proxies.append({
-                                        'link': clean_p, 'flag': flag, 'stat': stat, 'lat': lat, 'key': key_p
+                                        'link': p, 'flag': flag, 'stat': stat, 'lat': lat, 'key': key_p
                                     })
-                                    sent_hashes.add(clean_p)
+                                    sent_hashes.add(p)
 
                     # --- Section 2: File Processing ---
                     if m.file and m.file.name:
@@ -299,7 +319,6 @@ async def main():
                             if m.file.name not in sent_hashes:
                                 try:
                                     print(f"📂 Found File: {m.file.name}")
-                                    # استفاده از m.media برای ارسال مستقیم
                                     await client.send_file(destination_channel, m.media, caption=f"📂 **{m.file.name}**\n{create_footer(title, channel_str)}")
                                     new_file.append({
                                         'name': m.file.name, 'ext': file_ext.replace('.', '').upper(), 
@@ -400,7 +419,7 @@ async def main():
                 </div>
             </div>"""
 
-        # 2. Proxy Cards (اضافه شد)
+        # 2. Proxy Cards
         for idx, prox in enumerate(all_proxies, 1):
             lat = prox.get('latency')
             if lat is None: lat = 999

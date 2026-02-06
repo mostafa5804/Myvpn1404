@@ -88,7 +88,9 @@ def generate_config_hash(config_str):
         return hashlib.md5(config_str.encode()).hexdigest()
 
 def calculate_quality_score(latency, protocol='vmess'):
-    if not latency or latency > 2000: return 0
+    # اگر پینگ None بود یا خیلی بالا بود، امتیاز 0 بده
+    if latency is None or latency > 2000: return 0
+    
     if latency < 200: base = 100
     elif latency < 500: base = 80
     elif latency < 1000: base = 60
@@ -145,7 +147,10 @@ async def check_config_health(config):
     
     prot = config.split('://')[0]
     score = calculate_quality_score(lat, prot)
-    status = "🟢 عالی" if lat < 300 else "🟡 خوب" if lat < 800 else "🟠 متوسط"
+    # اگر lat نال بود، برای نمایش 9999 بگذاریم اما status آفلاین ندهیم چون success فالس میشه
+    safe_lat = lat if lat is not None else 9999
+    
+    status = "🟢 عالی" if safe_lat < 300 else "🟡 خوب" if safe_lat < 800 else "🟠 متوسط"
     return status, lat, score, True, flag
 
 def generate_subscription(configs):
@@ -165,7 +170,6 @@ def load_data():
     try:
         with open(DATA_FILE, 'r', encoding='utf-8') as f:
             data = json.load(f)
-            # حذف کانفیگ‌های خیلی قدیمی
             limit = time.time() - (KEEP_HISTORY_HOURS * 3600)
             return {'configs': [c for c in data.get('configs', []) if c.get('ts', 0) > limit]}
     except: return {'configs': []}
@@ -177,14 +181,13 @@ def save_data(data):
     except: pass
 
 def merge_data(history, new_items):
-    # ترکیب بر اساس هش برای حذف تکراری‌ها
-    # نکته: در تابع main لیست history اصلاح شده و حتما هش دارد
     combined = {c['hash']: c for c in history if 'hash' in c}
     for item in new_items:
         combined[item['hash']] = item
     
     final_list = list(combined.values())
-    final_list.sort(key=lambda x: x.get('quality', 0), reverse=True)
+    # مرتب‌سازی ایمن (جلوگیری از ارور None)
+    final_list.sort(key=lambda x: x.get('quality') or 0, reverse=True)
     return final_list
 
 def get_batch():
@@ -213,27 +216,27 @@ async def main():
         
         hist = load_data()
         
-        # ===== FIX: اصلاح دیتابیس قدیمی که هش ندارد =====
+        # ===== اصلاح و تمیزکاری دیتابیس قدیمی =====
         cleaned_history = []
         seen_hashes = set()
         
         for c in hist['configs']:
-            # اگر هش ندارد، برایش بساز
+            # 1. ساخت هش اگر وجود ندارد
             if 'hash' not in c:
                 c['hash'] = generate_config_hash(c['config'])
             
-            # اگر کیفیت ندارد، صفر بذار
-            if 'quality' not in c:
-                c['quality'] = 0
+            # 2. اصلاح مقادیر None (حل مشکل ارور + int)
+            if c.get('latency') is None: c['latency'] = 0
+            if c.get('quality') is None: c['quality'] = 0
+            if c.get('country') is None: c['country'] = "🌐"
                 
-            # جلوگیری از تکراری در خود دیتابیس
             if c['hash'] not in seen_hashes:
                 seen_hashes.add(c['hash'])
                 cleaned_history.append(c)
         
-        # آپدیت لیست history با داده‌های اصلاح شده
         hist['configs'] = cleaned_history
-        # =================================================
+        print(f"🧹 دیتابیس پاکسازی شد: {len(cleaned_history)} آیتم معتبر")
+        # ==========================================
         
         new_items = []
         cutoff = datetime.now(timezone.utc) - timedelta(minutes=MAX_MESSAGE_AGE_MINUTES)
@@ -316,27 +319,38 @@ async def main():
         await client.disconnect()
 
 async def generate_site(configs, sub_link):
+    # محاسبه آمار با اطمینان از اینکه latency مقدار عددی دارد (و None نیست)
     total = len(configs)
-    high_quality = len([c for c in configs if c.get('quality', 0) >= 80])
-    avg_ping = int(sum(c.get('latency', 0) for c in configs)/total) if total else 0
+    high_quality = len([c for c in configs if (c.get('quality') or 0) >= 80])
+    
+    # فیکس ارور جمع زدن None
+    pings = [c.get('latency') for c in configs if c.get('latency') is not None]
+    avg_ping = int(sum(pings)/len(pings)) if pings else 0
+    
     update_time = jdatetime.datetime.now().strftime('%Y/%m/%d - %H:%M')
     
     cards_html = ""
     for idx, c in enumerate(configs[:60]):
         safe_conf = c['config'].replace("'", "\\'").replace('"', '\\"')
-        q_class = "high" if c.get('quality', 0) >= 80 else "mid" if c.get('quality', 0) >= 50 else "low"
+        
+        # مقادیر پیش‌فرض برای جلوگیری از ارور
+        quality = c.get('quality') or 0
+        latency = c.get('latency') or 0
+        country = c.get('country') or "🌐"
+        
+        q_class = "high" if quality >= 80 else "mid" if quality >= 50 else "low"
         
         cards_html += f"""
         <div class="card">
             <div class="card-head">
                 <span class="badge proto">{c['protocol']}</span>
-                <span class="flag">{c.get('country', '🌐')}</span>
-                <span class="badge score {q_class}">{c.get('quality', 0)}</span>
+                <span class="flag">{country}</span>
+                <span class="badge score {q_class}">{quality}</span>
             </div>
             <div class="card-body">
                 <div class="info">
                     <span>📡 {c['channel']}</span>
-                    <span>⚡ {c.get('latency', 0)}ms</span>
+                    <span>⚡ {latency}ms</span>
                 </div>
                 <div class="code-box" onclick="selectText(this)">{c['config'][:50]}...</div>
             </div>
@@ -350,7 +364,6 @@ async def generate_site(configs, sub_link):
 
     sub_box_html = ""
     if sub_link:
-        # ساخت بخش اشتراک بدون استفاده از f-string پیچیده برای جلوگیری از ارور
         sub_box_html = (
             '<div class="sub-box">'
             '<h3>🚀 لینک اشتراک هوشمند</h3>'

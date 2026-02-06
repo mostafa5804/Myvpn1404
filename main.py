@@ -35,11 +35,10 @@ session_1 = os.environ.get('SESSION_STRING')
 session_2 = os.environ.get('SESSION_STRING_2')
 
 ENABLE_REAL_TEST = True
-REAL_TEST_TIMEOUT = 3 # ثانیه
+REAL_TEST_TIMEOUT = 3
 DATA_FILE = 'data.json'
 KEEP_HISTORY_HOURS = 24
 destination_channel = '@myvpn1404'
-# آدرس گیت‌هاب پیج تو (برای لینک اشتراک)
 GITHUB_PAGES_DOMAIN = "mostafa5804.github.io/Myvpn1404"
 MAX_MESSAGE_AGE_MINUTES = 90
 
@@ -67,21 +66,16 @@ if GEOIP_AVAILABLE and os.path.exists('GeoLite2-Country.mmdb'):
         print(f"⚠️ GeoIP Error: {e}")
 
 # =============================================================================
-# 2. توابع کمکی هوشمند
+# 2. توابع کمکی
 # =============================================================================
 
 def generate_config_hash(config_str):
-    """ساخت هش یکتا برای جلوگیری از تکرار"""
     try:
-        # نرمال سازی برای حذف فاصله‌های اضافی
         clean_conf = config_str.strip()
         if clean_conf.startswith('vmess://'):
-            # دیکد کردن برای مقایسه دقیق
             decoded = json.loads(base64.b64decode(clean_conf.split('://')[1]))
-            # کلید یکتا: آدرس + پورت + آیدی
             key = f"{decoded.get('add')}:{decoded.get('port')}:{decoded.get('id', '')}"
         elif '://' in clean_conf:
-            # برای Vless/Trojan: استخراج آدرس و پورت و UUID
             match = re.search(r'://(.*?)@(.*):(\d+)', clean_conf)
             if match:
                 key = f"{match.group(2)}:{match.group(3)}:{match.group(1)}"
@@ -89,43 +83,35 @@ def generate_config_hash(config_str):
                 key = clean_conf
         else:
             key = clean_conf
-        
         return hashlib.md5(key.encode()).hexdigest()
     except:
         return hashlib.md5(config_str.encode()).hexdigest()
 
 def calculate_quality_score(latency, protocol='vmess'):
-    """محاسبه امتیاز کیفیت (0 تا 100)"""
     if not latency or latency > 2000: return 0
-    
-    # امتیاز پایه پینگ
     if latency < 200: base = 100
     elif latency < 500: base = 80
     elif latency < 1000: base = 60
     else: base = 40
     
-    # امتیاز پروتکل
     proto_bonus = 0
     p = protocol.lower()
     if 'reality' in p or 'vless' in p: proto_bonus = 10
     elif 'trojan' in p: proto_bonus = 5
-    elif 'vmess' in p: proto_bonus = 0
     
     return min(100, base + proto_bonus)
 
 def get_country_flag(ip_address):
-    """دریافت پرچم کشور از روی IP"""
     if not geoip_reader: return "🌐"
     try:
         response = geoip_reader.country(ip_address)
         iso_code = response.country.iso_code
         if iso_code:
             return ''.join(chr(127397 + ord(c)) for c in iso_code.upper())
-        return "🚩" # مشخص نیست
+        return "🚩"
     except: return "🌐"
 
 async def check_connection(host, port):
-    """تست اتصال TCP (پینگ)"""
     try:
         start = time.time()
         conn = asyncio.open_connection(host, port)
@@ -139,19 +125,16 @@ async def check_connection(host, port):
         return None, False
 
 def extract_server_info(config_str):
-    """استخراج IP و Port"""
     try:
         if config_str.startswith('vmess://'):
             d = json.loads(base64.b64decode(config_str.split('://')[1]))
             return d.get('add'), int(d.get('port'))
-        # استخراج با Regex برای سایر پروتکل‌ها
         match = re.search(r'@([\w\.-]+):(\d+)', config_str)
         if match: return match.group(1), int(match.group(2))
     except: pass
     return None, None
 
 async def check_config_health(config):
-    """بررسی کامل سلامت کانفیگ"""
     host, port = extract_server_info(config)
     if not host or not port: return None, None, 0, False, "🌐"
     
@@ -162,32 +145,26 @@ async def check_config_health(config):
     
     prot = config.split('://')[0]
     score = calculate_quality_score(lat, prot)
-    
     status = "🟢 عالی" if lat < 300 else "🟡 خوب" if lat < 800 else "🟠 متوسط"
     return status, lat, score, True, flag
 
 def generate_subscription(configs):
-    """ساخت فایل اشتراک"""
     valid_configs = [c['config'] for c in configs if c.get('quality', 0) > 0]
     if not valid_configs: return None
     
-    # ترکیب و انکود
     full_text = '\n'.join(valid_configs)
     encoded = base64.b64encode(full_text.encode()).decode()
     
-    # ذخیره فایل
     with open('subscription.txt', 'w', encoding='utf-8') as f:
         f.write(encoded)
         
     return f"https://{GITHUB_PAGES_DOMAIN}/subscription.txt"
 
-# توابع استاندارد قبلی
 def load_data():
     if not os.path.exists(DATA_FILE): return {'configs': []}
     try:
         with open(DATA_FILE, 'r', encoding='utf-8') as f:
             data = json.load(f)
-            # حذف کانفیگ‌های خیلی قدیمی
             limit = time.time() - (KEEP_HISTORY_HOURS * 3600)
             return {'configs': [c for c in data.get('configs', []) if c.get('ts', 0) > limit]}
     except: return {'configs': []}
@@ -199,12 +176,10 @@ def save_data(data):
     except: pass
 
 def merge_data(history, new_items):
-    # ترکیب بر اساس هش برای حذف تکراری‌ها
     combined = {c['hash']: c for c in history}
     for item in new_items:
         combined[item['hash']] = item
     
-    # تبدیل به لیست و مرتب‌سازی بر اساس امتیاز
     final_list = list(combined.values())
     final_list.sort(key=lambda x: x.get('quality', 0), reverse=True)
     return final_list
@@ -234,7 +209,6 @@ async def main():
         print(f"✅ ربات استارت شد: {batch_name}")
         
         hist = load_data()
-        # هش‌های موجود در حافظه برای جلوگیری از پردازش تکراری
         seen_hashes = {c['hash'] for c in hist['configs']}
         
         new_items = []
@@ -243,37 +217,29 @@ async def main():
         for i, channel in enumerate(target_channels):
             try:
                 print(f"📡 در حال بررسی: {channel}")
-                try:
-                    entity = await client.get_entity(channel)
-                except:
-                    print(f"⚠️ کانال {channel} در دسترس نیست")
-                    continue
+                try: entity = await client.get_entity(channel)
+                except: continue
                 
                 msgs = await client.get_messages(entity, limit=15)
                 channel_title = getattr(entity, 'title', channel)
                 
                 for m in msgs:
                     if m.date < cutoff or not m.text: continue
-                    
-                    # استخراج کانفیگ‌ها
                     configs = re.findall(r'(vmess|vless|trojan|ss|hy2|tuic)://[a-zA-Z0-9\-\_\=\@\:\.\?\&\%\#]+', m.text)
                     
                     for conf in configs:
-                        # تمیزکاری لینک
                         conf = conf.strip()
-                        if '...' in conf: continue # لینک ناقص
+                        if '...' in conf: continue
                         
                         conf_hash = generate_config_hash(conf)
                         if conf_hash in seen_hashes: continue
                         
-                        # بررسی سلامت
                         status, lat, score, online, flag = await check_config_health(conf)
                         
-                        if online and score > 30: # فقط کانفیگ‌های سالم
+                        if online and score > 30:
                             proto = conf.split('://')[0].upper()
                             msg_link = f"https://t.me/{channel.replace('@', '')}/{m.id}"
                             
-                            # ارسال به کانال خودت
                             caption = (
                                 f"🔮 **{proto}** {flag}\n\n"
                                 f"```\n{conf}\n```\n"
@@ -309,20 +275,19 @@ async def main():
             except Exception as e:
                 print(f"❌ خطا در کانال {channel}: {e}")
 
-        # ذخیره سازی
         print("💾 بروزرسانی دیتابیس...")
         final_configs = merge_data(hist['configs'], new_items)
         save_data({'configs': final_configs})
         
-        # ساخت اشتراک
         sub_url = generate_subscription(final_configs)
         
-        # ساخت سایت
         print("🌐 ساخت سایت PWA...")
         await generate_site(final_configs, sub_url)
         
     except Exception as e:
         print(f"🔥 خطای کلی: {e}")
+        import traceback
+        traceback.print_exc()
     finally:
         await client.disconnect()
 
@@ -333,12 +298,10 @@ async def generate_site(configs, sub_link):
     avg_ping = int(sum(c['latency'] for c in configs)/total) if total else 0
     update_time = jdatetime.datetime.now().strftime('%Y/%m/%d - %H:%M')
     
-    # تولید کارت‌ها
+    # تولید HTML کارت‌ها
     cards_html = ""
-    for idx, c in enumerate(configs[:60]): # نمایش ۶۰ تای برتر
+    for idx, c in enumerate(configs[:60]):
         safe_conf = c['config'].replace("'", "\\'").replace('"', '\\"')
-        
-        # کلاس رنگ‌بندی
         q_class = "high" if c['quality'] >= 80 else "mid" if c['quality'] >= 50 else "low"
         
         cards_html += f"""
@@ -363,6 +326,17 @@ async def generate_site(configs, sub_link):
         </div>
         """
 
+    # آماده‌سازی بخش اشتراک (جلوگیری از ارور f-string)
+    sub_box_html = ""
+    if sub_link:
+        sub_box_html = f"""
+        <div class="sub-box">
+            <h3>🚀 لینک اشتراک هوشمند</h3>
+            <p>لینک زیر را در V2RayNG یا Streisand وارد کنید تا لیست آپدیت شود.</p>
+            <a href="{sub_link}" class="sub-btn" onclick="copyTxt('{sub_link}'); return false;">کپی لینک اشتراک</a>
+        </div>
+        """
+
     html_content = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -376,22 +350,17 @@ async def generate_site(configs, sub_link):
         :root {{ --bg: #0f172a; --card: #1e293b; --text: #f8fafc; --accent: #38bdf8; --green: #22c55e; --yellow: #eab308; --red: #ef4444; }}
         * {{ box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; margin: 0; padding: 0; }}
         body {{ background: var(--bg); color: var(--text); padding-bottom: 80px; }}
-        
         header {{ background: rgba(30,41,59,0.9); backdrop-filter: blur(10px); padding: 15px; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }}
         h2 {{ font-size: 1.2rem; background: linear-gradient(45deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }}
-        
         .stats {{ display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; padding: 15px; max-width: 800px; margin: 0 auto; }}
         .stat-box {{ background: var(--card); padding: 15px; border-radius: 12px; text-align: center; border: 1px solid #334155; }}
         .stat-num {{ display: block; font-size: 1.5rem; font-weight: bold; color: var(--accent); }}
         .stat-label {{ font-size: 0.8rem; color: #94a3b8; }}
-        
         .sub-box {{ background: linear-gradient(135deg, #4f46e5, #ec4899); margin: 15px; padding: 20px; border-radius: 15px; text-align: center; color: white; max-width: 800px; margin: 15px auto; }}
-        .sub-btn {{ display: inline-block; background: white; color: #4f46e5; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }}
-        
+        .sub-btn {{ display: inline-block; background: white; color: #4f46e5; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer; }}
         .list {{ display: grid; gap: 15px; padding: 15px; max-width: 800px; margin: 0 auto; }}
         .card {{ background: var(--card); border-radius: 15px; padding: 15px; border: 1px solid #334155; transition: transform 0.2s; }}
         .card:active {{ transform: scale(0.98); }}
-        
         .card-head {{ display: flex; justify-content: space-between; margin-bottom: 10px; align-items: center; }}
         .badge {{ padding: 4px 8px; border-radius: 6px; font-size: 0.75rem; font-weight: bold; }}
         .proto {{ background: #334155; color: #cbd5e1; }}
@@ -399,25 +368,19 @@ async def generate_site(configs, sub_link):
         .score.mid {{ background: rgba(234,179,8,0.2); color: var(--yellow); }}
         .score.low {{ background: rgba(239,68,68,0.2); color: var(--red); }}
         .flag {{ font-size: 1.2rem; }}
-        
         .info {{ display: flex; justify-content: space-between; font-size: 0.8rem; color: #94a3b8; margin-bottom: 8px; }}
         .code-box {{ background: #0b1120; padding: 10px; border-radius: 8px; font-family: monospace; color: #a5b4fc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; direction: ltr; }}
-        
         .actions {{ display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 8px; margin-top: 12px; }}
         .btn {{ border: none; padding: 10px; border-radius: 8px; font-weight: bold; cursor: pointer; color: white; }}
         .copy {{ background: var(--accent); }}
         .qr {{ background: #6366f1; }}
         .link {{ background: #334155; text-decoration: none; text-align: center; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; }}
-        
-        /* Modal & Toast */
         .toast {{ position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--green); color: white; padding: 10px 20px; border-radius: 50px; opacity: 0; transition: 0.3s; pointer-events: none; z-index: 200; }}
         .toast.show {{ opacity: 1; bottom: 40px; }}
-        
         .modal {{ display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 300; justify-content: center; align-items: center; }}
         .modal-content {{ background: var(--card); padding: 20px; border-radius: 20px; text-align: center; max-width: 90%; }}
         #qrcode {{ margin: 20px auto; background: white; padding: 10px; border-radius: 10px; }}
         .close-btn {{ background: var(--red); margin-top: 10px; width: 100%; }}
-        
         #installBtn {{ display: none; position: fixed; bottom: 20px; right: 20px; background: var(--accent); color: #0f172a; border: none; padding: 12px 20px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 15px rgba(56,189,248,0.4); cursor: pointer; z-index: 90; }}
     </style>
 </head>
@@ -433,7 +396,7 @@ async def generate_site(configs, sub_link):
         <div class="stat-box"><span class="stat-num">{avg_ping}</span><span class="stat-label">پینگ میانگین</span></div>
     </div>
     
-    {f'<div class="sub-box"><h3>🚀 لینک اشتراک هوشمند</h3><p>لینک زیر را در V2RayNG یا Streisand وارد کنید تا لیست آپدیت شود.</p><a href="{sub_link}" class="sub-btn" onclick="copyTxt(\\'{sub_link}\\'); return false;">کپی لینک اشتراک</a></div>' if sub_link else ''}
+    {sub_box_html}
     
     <div class="list">
         {cards_html}
@@ -455,6 +418,7 @@ async def generate_site(configs, sub_link):
         function copyTxt(txt) {{
             navigator.clipboard.writeText(txt).then(() => {{
                 const t = document.getElementById('toast');
+                t.innerText = 'کپی شد!';
                 t.classList.add('show');
                 setTimeout(() => t.classList.remove('show'), 2000);
             }});
@@ -497,10 +461,8 @@ async def generate_site(configs, sub_link):
 </body>
 </html>"""
 
-    # نوشتن فایل‌ها در مسیر جاری (نه مسیر /mnt/...)
     with open('index.html', 'w', encoding='utf-8') as f: f.write(html_content)
     
-    # مانیفست PWA
     manifest = {
         "name": "VPN Hub Pro",
         "short_name": "VPNHub",
@@ -512,7 +474,6 @@ async def generate_site(configs, sub_link):
     }
     with open('manifest.json', 'w') as f: json.dump(manifest, f)
     
-    # سرویس ورکر PWA
     with open('sw.js', 'w') as f: f.write("self.addEventListener('install',e=>e.waitUntil(caches.open('v1').then(c=>c.addAll(['./']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));")
 
 if __name__ == "__main__":

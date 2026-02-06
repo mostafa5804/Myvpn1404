@@ -12,7 +12,7 @@ permissions:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20  # افزایش تایم‌اوت بخاطر تست‌های دقیق‌تر
     
     steps:
     - name: Checkout
@@ -26,10 +26,10 @@ jobs:
         python-version: '3.10'
 
     - name: Install deps
-      run: pip install telethon jdatetime pytz
+      # اضافه شدن requests برای GeoIP
+      run: pip install telethon jdatetime pytz requests
 
     - name: Pull latest changes
-      # جلوگیری از تداخل نسخه‌ها قبل از اجرا
       run: |
         git config --global user.name "VPN Bot"
         git config --global user.email "bot@github.com"
@@ -45,29 +45,23 @@ jobs:
 
     - name: Check & Push Changes
       run: |
-        # 1. تنظیم هویت
         git config --global user.name "VPN Bot"
         git config --global user.email "bot@github.com"
         
-        # 2. بررسی وجود فایل خروجی
+        # بررسی وجود فایل‌های حیاتی
         if [ ! -f "index.html" ]; then
           echo "❌ Error: index.html was not generated!"
           exit 1
         fi
 
-        # 3. افزودن فایل‌ها
-        git add index.html data.json
+        # افزودن همه فایل‌های تولید شده (شامل اشتراک و PWA)
+        git add index.html data.json sub.txt manifest.json sw.js
         
-        # 4. بررسی تغییرات
         if git diff --staged --quiet; then
           echo "⚠️ No changes detected. Skipping push."
         else
-          git commit -m "🔄 Auto-Update: $(date +'%Y-%m-%d %H:%M')"
-          
-          # 5. دریافت آپدیت‌های جدید سرور (جلوگیری از ارور fetch first)
+          git commit -m "🔄 Auto-Update: $(date +'%Y-%m-%d %H:%M') [GeoIP + Sub]"
           git pull --rebase origin main
-          
-          # 6. آپلود نهایی
           git push origin HEAD:main
           echo "✅ Changes pushed successfully."
         fi

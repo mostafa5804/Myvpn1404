@@ -2,9 +2,9 @@ name: Dual Session VPN Bot
 
 on:
   schedule:
-    - cron: '0 * * * *'
-    - cron: '30 * * * *'
-  workflow_dispatch:
+    - cron: '0 * * * *'   # هر ساعت سر دقیقه 00
+    - cron: '30 * * * *'  # هر ساعت سر دقیقه 30
+  workflow_dispatch:      # قابلیت اجرای دستی
 
 permissions:
   contents: write
@@ -19,28 +19,23 @@ jobs:
       uses: actions/checkout@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        fetch-depth: 0
 
     - name: Setup Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
 
-    - name: Install Dependencies
-      run: |
-        pip install --upgrade pip
-        pip install telethon jdatetime pytz aiohttp geoip2 pycountry
+    - name: Install deps
+      run: pip install telethon jdatetime pytz
 
-    - name: Download GeoIP Database
-      run: |
-        wget -q -O GeoLite2-Country.mmdb https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb
-
-    - name: Configure Git
+    - name: Pull latest changes
+      # جلوگیری از تداخل نسخه‌ها قبل از اجرا
       run: |
         git config --global user.name "VPN Bot"
         git config --global user.email "bot@github.com"
+        git pull origin main --rebase || echo "⚠️ Nothing to pull"
 
-    - name: Run Bot Script
+    - name: Run bot
       env:
         API_ID: ${{ secrets.API_ID }}
         API_HASH: ${{ secrets.API_HASH }}
@@ -48,28 +43,31 @@ jobs:
         SESSION_STRING_2: ${{ secrets.SESSION_STRING_2 }}
       run: python main.py
 
-    - name: Commit and Push Changes
+    - name: Check & Push Changes
       run: |
-        if [ -f "index.html" ]; then
-          
-          # === تغییر مهم اینجاست ===
-          # به جای اسم بردن تک‌تک، میگیم همه تغییرات رو اد کن.
-          # اینجوری اگر subscription.txt نبود، ارور نمیده.
-          git add .
-          
-          # بررسی اینکه آیا تغییری ایجاد شده است؟
-          if ! git diff --staged --quiet; then
-            git commit -m "🔄 Update $(date +'%Y-%m-%d %H:%M')"
-            
-            # دریافت آخرین تغییرات برای جلوگیری از ارور
-            git pull origin main --rebase
-            
-            git push
-            echo "✅ Done!"
-          else
-            echo "⚠️ No changes to commit."
-          fi
-        else
+        # 1. تنظیم هویت
+        git config --global user.name "VPN Bot"
+        git config --global user.email "bot@github.com"
+        
+        # 2. بررسی وجود فایل خروجی
+        if [ ! -f "index.html" ]; then
           echo "❌ Error: index.html was not generated!"
           exit 1
+        fi
+
+        # 3. افزودن فایل‌ها
+        git add index.html data.json
+        
+        # 4. بررسی تغییرات
+        if git diff --staged --quiet; then
+          echo "⚠️ No changes detected. Skipping push."
+        else
+          git commit -m "🔄 Auto-Update: $(date +'%Y-%m-%d %H:%M')"
+          
+          # 5. دریافت آپدیت‌های جدید سرور (جلوگیری از ارور fetch first)
+          git pull --rebase origin main
+          
+          # 6. آپلود نهایی
+          git push origin HEAD:main
+          echo "✅ Changes pushed successfully."
         fi

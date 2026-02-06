@@ -2,9 +2,9 @@ name: Dual Session VPN Bot
 
 on:
   schedule:
-    - cron: '0 * * * *'   # هر ساعت سر دقیقه 00
-    - cron: '30 * * * *'  # هر ساعت سر دقیقه 30
-  workflow_dispatch:      # قابلیت اجرای دستی
+    - cron: '0 * * * *'   # اجرا سر دقیقه 00 هر ساعت
+    - cron: '30 * * * *'  # اجرا سر دقیقه 30 هر ساعت
+  workflow_dispatch:      # قابلیت اجرای دستی از پنل Actions
 
 permissions:
   contents: write
@@ -15,59 +15,69 @@ jobs:
     timeout-minutes: 15
     
     steps:
-    - name: Checkout
+    - name: Checkout Code
       uses: actions/checkout@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0 # دانلود کامل تاریخچه برای جلوگیری از ارورهای Git
 
     - name: Setup Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
 
-    - name: Install deps
-      run: pip install telethon jdatetime pytz
+    - name: Install Dependencies
+      run: |
+        echo "📦 Installing libraries..."
+        pip install --upgrade pip
+        # نصب تمام کتابخانه‌های مورد نیاز کد جدید
+        pip install telethon jdatetime pytz aiohttp geoip2 pycountry
 
-    - name: Pull latest changes
-      # جلوگیری از تداخل نسخه‌ها قبل از اجرا
+    - name: Download GeoIP Database
+      run: |
+        echo "🌍 Downloading GeoIP database..."
+        # دانلود دیتابیس برای نمایش پرچم کشورها
+        wget -q -O GeoLite2-Country.mmdb https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb
+
+    - name: Configure Git
       run: |
         git config --global user.name "VPN Bot"
         git config --global user.email "bot@github.com"
-        git pull origin main --rebase || echo "⚠️ Nothing to pull"
 
-    - name: Run bot
+    - name: Run Bot Script
       env:
         API_ID: ${{ secrets.API_ID }}
         API_HASH: ${{ secrets.API_HASH }}
         SESSION_STRING: ${{ secrets.SESSION_STRING }}
         SESSION_STRING_2: ${{ secrets.SESSION_STRING_2 }}
-      run: python main.py
-
-    - name: Check & Push Changes
       run: |
-        # 1. تنظیم هویت
-        git config --global user.name "VPN Bot"
-        git config --global user.email "bot@github.com"
-        
-        # 2. بررسی وجود فایل خروجی
-        if [ ! -f "index.html" ]; then
+        echo "🚀 Starting the bot..."
+        python main.py
+
+    - name: Commit and Push Changes
+      run: |
+        # بررسی اینکه آیا فایل اصلی سایت ساخته شده است؟
+        if [ -f "index.html" ]; then
+          
+          # اضافه کردن فایل‌های تولید شده به لیست انتظار گیت
+          git add index.html data.json subscription.txt manifest.json sw.js
+          
+          # بررسی اینکه آیا تغییری ایجاد شده است؟
+          if ! git diff --staged --quiet; then
+            echo "📝 Committing changes..."
+            git commit -m "🔄 Update $(date +'%Y-%m-%d %H:%M')"
+            
+            echo "🔄 Pulling latest changes to avoid conflicts..."
+            # دریافت آخرین تغییرات سرور قبل از ارسال (جلوگیری از ارور rejected)
+            git pull origin main --rebase
+            
+            echo "⬆️ Pushing to GitHub..."
+            git push
+            echo "✅ Done!"
+          else
+            echo "⚠️ No changes to commit (Database is up to date)."
+          fi
+        else
           echo "❌ Error: index.html was not generated!"
           exit 1
-        fi
-
-        # 3. افزودن فایل‌ها
-        git add index.html data.json
-        
-        # 4. بررسی تغییرات
-        if git diff --staged --quiet; then
-          echo "⚠️ No changes detected. Skipping push."
-        else
-          git commit -m "🔄 Auto-Update: $(date +'%Y-%m-%d %H:%M')"
-          
-          # 5. دریافت آپدیت‌های جدید سرور (جلوگیری از ارور fetch first)
-          git pull --rebase origin main
-          
-          # 6. آپلود نهایی
-          git push origin HEAD:main
-          echo "✅ Changes pushed successfully."
         fi

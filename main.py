@@ -44,7 +44,6 @@ ALL_CHANNELS = [
     '@darkproxy', '@configs_freeiran', '@v2rayvpnchannel'
 ]
 
-# لیست پسوندهای مجاز (همه با حروف کوچک)
 ALLOWED_EXTENSIONS = {'.npv4', '.npv2', '.npvt', '.dark', '.ehi', '.txt', '.conf', '.json'}
 iran_tz = pytz.timezone('Asia/Tehran')
 IRAN_IP_PREFIXES = ['2.144.', '5.22.', '31.2.', '37.9.', '46.18.', '78.38.', '85.9.', '91.98.', '93.88.', '185.']
@@ -153,17 +152,21 @@ def get_batch_info():
     else:
         return ALL_CHANNELS[20:], "Second Batch", target_session
 
-def create_footer(source_title):
+# --- اصلاح شده: فوتر با لینک به کانال منبع ---
+def create_footer(source_title, source_username):
     now = datetime.now(iran_tz)
     date_str = now.strftime('%Y/%m/%d')
     time_str = now.strftime('%H:%M')
     safe_title = re.sub(r'[\[\]\(\)\*`_]', '', str(source_title)).strip()
     
+    # حذف @ از یوزرنیم برای ساخت لینک
+    clean_username = source_username.replace('@', '')
+    
     return (
         f"\n━━━━━━━━━━━━━━━━\n"
         f"🗓 {date_str} • 🕐 {time_str}\n"
-        f"📡 منبع: {safe_title}\n"
-        f"🔗 {destination_channel} | [لینک اشتراک]({SUB_LINK_URL})"
+        f"📡 منبع: [{safe_title}](https://t.me/{clean_username})\n"
+        f"🔗 {destination_channel} | [لینک اشتراک کانفینگ]({SUB_LINK_URL})"
     )
 
 async def check_connection(host, port):
@@ -255,11 +258,12 @@ async def main():
                                 if stat:
                                     prot = c.split('://')[0].upper()
                                     clean_c = c.replace('`', '')
+                                    # پاس دادن channel_str برای لینک‌دهی
                                     caption = (
                                         f"{flag} **{prot}** | {country}\n"
                                         f"📶 Ping: {lat}ms\n\n"
                                         f"```{clean_c}```\n"
-                                        f"{create_footer(title)}"
+                                        f"{create_footer(title, channel_str)}"
                                     )
                                     try:
                                         sent = await client.send_message(destination_channel, caption, link_preview=False)
@@ -287,7 +291,7 @@ async def main():
                                     })
                                     sent_hashes.add(clean_p)
 
-                    # --- Section 2: File Processing (NapsternetV, etc) ---
+                    # --- Section 2: File Processing ---
                     if m.file and m.file.name:
                         file_ext = "." + m.file.name.split('.')[-1].lower() if '.' in m.file.name else ""
                         
@@ -295,8 +299,8 @@ async def main():
                             if m.file.name not in sent_hashes:
                                 try:
                                     print(f"📂 Found File: {m.file.name}")
-                                    # Fix: Use m.media instead of m.file
-                                    await client.send_file(destination_channel, m.media, caption=f"📂 **{m.file.name}**\n{create_footer(title)}")
+                                    # استفاده از m.media برای ارسال مستقیم
+                                    await client.send_file(destination_channel, m.media, caption=f"📂 **{m.file.name}**\n{create_footer(title, channel_str)}")
                                     new_file.append({
                                         'name': m.file.name, 'ext': file_ext.replace('.', '').upper(), 
                                         'channel': title, 'link': link, 'ts': time.time()
@@ -312,7 +316,7 @@ async def main():
                         proxy_msg += f"{idx}. {p_data['flag']} - [اتصال]({p_data['link']}) • {p_data['stat']} {p_data['lat']}ms\n"
                     
                     proxy_msg += "\n💡 برای اتصال روی لینک کلیک کنید"
-                    proxy_msg += create_footer(title)
+                    proxy_msg += create_footer(title, channel_str)
 
                     try:
                         sent = await client.send_message(destination_channel, proxy_msg, link_preview=False)
@@ -368,6 +372,8 @@ async def main():
 
         now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
         html_cards = ""
+        
+        # 1. Config Cards
         for idx, cfg in enumerate(all_configs, 1):
             lat = cfg.get('latency')
             if lat is None: lat = 999
@@ -394,6 +400,31 @@ async def main():
                 </div>
             </div>"""
 
+        # 2. Proxy Cards (اضافه شد)
+        for idx, prox in enumerate(all_proxies, 1):
+            lat = prox.get('latency')
+            if lat is None: lat = 999
+            else: lat = int(lat)
+            
+            flag = prox.get('flag', '🏳️')
+            ping_color = "text-green-400" if lat < 200 else "text-yellow-400" if lat < 500 else "text-red-400"
+            
+            html_cards += f"""
+            <div class="card bg-slate-800 rounded-xl p-4 border border-slate-700 hover:border-emerald-500 transition-all duration-300">
+                <div class="flex justify-between items-center mb-3">
+                    <div class="flex items-center gap-2">
+                        <span class="text-2xl">{flag}</span>
+                        <span class="font-bold text-emerald-400 uppercase text-sm bg-emerald-900/30 px-2 py-1 rounded">MTProxy</span>
+                    </div>
+                    <div class="text-xs font-mono {ping_color} bg-slate-900 px-2 py-1 rounded">{lat}ms</div>
+                </div>
+                <div class="text-xs text-slate-400 mb-3 truncate">📡 {prox['channel']}</div>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="{prox['link']}" class="bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-lg text-sm font-medium transition-colors flex justify-center items-center gap-2"><i class="fas fa-link"></i> Connect</a>
+                    <a href="{prox.get('t_link', '#')}" target="_blank" class="bg-slate-700 hover:bg-slate-600 text-slate-200 py-2 rounded-lg text-sm font-medium transition-colors flex justify-center items-center"><i class="fab fa-telegram"></i> Channel</a>
+                </div>
+            </div>"""
+
         full_html = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl" class="dark">
 <head>
@@ -415,7 +446,7 @@ async def main():
     <header class="fixed top-0 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-700 z-50">
         <div class="max-w-md mx-auto px-4 h-16 flex justify-between items-center">
             <div><h1 class="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-500">VPN Hub</h1><p class="text-[10px] text-slate-400">{now_str}</p></div>
-            <a href="{SUB_LINK_URL}" class="bg-emerald-600/20 text-emerald-400 border border-emerald-600/50 px-3 py-1 rounded-full text-xs font-bold animate-pulse"><i class="fas fa-rss"></i> SUB LINK</a>
+            <a href="{SUB_LINK_URL}" class="bg-emerald-600/20 text-emerald-400 border border-emerald-600/50 px-3 py-1 rounded-full text-xs font-bold animate-pulse"><i class="fas fa-rss"></i> لینک اشتراک کانفینگ</a>
         </div>
     </header>
     <main class="max-w-md mx-auto pt-20 px-4">
@@ -423,6 +454,7 @@ async def main():
             <button onclick="filter('all')" class="flex-shrink-0 bg-slate-800 text-slate-300 px-4 py-2 rounded-full text-sm border border-slate-700">All</button>
             <button onclick="filter('vless')" class="flex-shrink-0 bg-slate-800 text-slate-300 px-4 py-2 rounded-full text-sm border border-slate-700">VLESS</button>
             <button onclick="filter('vmess')" class="flex-shrink-0 bg-slate-800 text-slate-300 px-4 py-2 rounded-full text-sm border border-slate-700">VMess</button>
+            <button onclick="filter('mtproxy')" class="flex-shrink-0 bg-slate-800 text-slate-300 px-4 py-2 rounded-full text-sm border border-slate-700">MTProxy</button>
         </div>
         <div id="grid" class="grid gap-3">{html_cards}</div>
     </main>

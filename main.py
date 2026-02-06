@@ -41,7 +41,7 @@ ALL_CHANNELS = [
     '@Awlix_ir', '@proSSH', '@vpn_proxy_custom', '@Free_HTTPCustom',
     '@sinavm', '@Amir_Alternative_Official', '@StayconnectedVPN', '@BINNER_IRAN',
     '@IranianMinds', '@vpn11ir', '@NetAccount', '@mitiivpn2', '@isharewin',
-    '@v2rays_ha', '@iroproxy', '@ProxyMTProto',
+    '@iroproxy', '@ProxyMTProto',
     '@darkproxy', '@configs_freeiran', '@v2rayvpnchannel'
 ]
 

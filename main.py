@@ -102,7 +102,7 @@ def extract_unique_key(config_str):
         
         match_simple = re.search(r'://([^:/]+):(\d+)', config_str)
         if match_simple:
-            return f"{match_simple.group(1)}:{match_simple.group(2)}"
+            return f"{match_simple.group(1)}:{match.group(2)}"
 
         return config_str
     except:
@@ -288,16 +288,15 @@ async def main():
                                     sent_hashes.add(clean_p)
 
                     # --- Section 2: File Processing (NapsternetV, etc) ---
-                    # این بخش الان کاملا مستقل است و حتی اگر متنی نباشد اجرا میشود
                     if m.file and m.file.name:
-                        # بررسی پسوند (تبدیل به حروف کوچک برای مقایسه)
                         file_ext = "." + m.file.name.split('.')[-1].lower() if '.' in m.file.name else ""
                         
                         if any(m.file.name.lower().endswith(ext) for ext in ALLOWED_EXTENSIONS):
                             if m.file.name not in sent_hashes:
                                 try:
                                     print(f"📂 Found File: {m.file.name}")
-                                    await client.send_file(destination_channel, m.file, caption=f"📂 **{m.file.name}**\n{create_footer(title)}")
+                                    # Fix: Use m.media instead of m.file
+                                    await client.send_file(destination_channel, m.media, caption=f"📂 **{m.file.name}**\n{create_footer(title)}")
                                     new_file.append({
                                         'name': m.file.name, 'ext': file_ext.replace('.', '').upper(), 
                                         'channel': title, 'link': link, 'ts': time.time()

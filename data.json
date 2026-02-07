@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiI1Ny4xMjkuMTMyLjIyMyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiZ29vZ2xlLmNvbSIsImlkIjoiYTI1Y2JmMTEtMjkwOC00YTFiLWEzYTgtOWE1NzE3NzdkY2EzIiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiL3ZtZXNzLyIsInBvcnQiOiI4MCIsInBzIjoiQHZwbmJheiDwn46zIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9```",
+      "latency": 119,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/7350",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1770500904.7259712
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://28f9da30-cd81-4726-86a9-d2e17b14decc@38.244.215.124:443?security=reality&encryption=none&pbk=teH8elrVppRluj9CeSno57ARzAUKRLCu6X9f8yvxvhQ&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=google.com&sid=0ad4430e2c#%40vpnbaz%20%F0%9F%A7%B6",
+      "latency": 134,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/7349",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1770500904.2282305
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://34b3a7bc-ef17-aceb-9145-7a00bd2873b3@wsmux.jingo.wallett.4b3app.com:9090?path=%2Fws%3Fed%3D80&security=none&encryption=none&host=soft98.ir&type=ws#%40vpnbaz%20%F0%9F%90%8D",
+      "latency": 276,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/7348",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770500903.7269993
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkOThjOWE2Mzk5MDY0MjI3@157.185.130.3:49336#%40vpnbaz%20%F0%9F%8F%93",
+      "latency": 124,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/7347",
+      "flag": "🇮🇹",
+      "country": "Italy",
+      "ts": 1770500903.1044464
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://b5723cdf-f34c-4675-b12d-db43db7283d0@ip2-cloud.tyryqyserver.ir:2052?path=%2F%3Fed%3D2053&security=none&encryption=none&host=norbert-cloud-de.ocean-pro.top&type=ws#shankamil",
       "latency": 1141,
@@ -2009,19 +2049,27 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1770444141.157931
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://a0891e86-ce1f-4e1b-e47c-84c890f1b130@3.67.70.223:443?security=none&allowInsecure=0&encryption=none&type=tcp&headerType=none#@cicdovpn",
-      "latency": 107,
-      "channel": "VPN | CICDO کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/6981",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1770414014.4890099
     }
   ],
   "proxies": [
+    {
+      "key": "185.84.157.150:444",
+      "link": "tg://proxy?server=185.84.157.150&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==)",
+      "channel": "کانفیگ ملی / config meli",
+      "t_link": "https://t.me/myvpn1404/7346",
+      "latency": 186,
+      "flag": "🇮🇷",
+      "ts": 1770500806.8922446
+    },
+    {
+      "key": "185.84.157.3:444",
+      "link": "tg://proxy?server=185.84.157.3&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==",
+      "channel": "کانفیگ ملی / config meli",
+      "t_link": "https://t.me/myvpn1404/7346",
+      "latency": 164,
+      "flag": "🇮🇷",
+      "ts": 1770500806.8922424
+    },
     {
       "key": "185.84.157.12:444",
       "link": "tg://proxy?server=185.84.157.12&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==",
@@ -2903,24 +2951,6 @@
       "latency": 223,
       "flag": "🇮🇷",
       "ts": 1770482359.9431667
-    },
-    {
-      "key": "185.84.157.3:444",
-      "link": "tg://proxy?server=185.84.157.3&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==)",
-      "channel": "اینترنت ازاد",
-      "t_link": "https://t.me/myvpn1404/7195",
-      "latency": 402,
-      "flag": "🇮🇷",
-      "ts": 1770482359.9431658
-    },
-    {
-      "key": "185.84.157.6:444",
-      "link": "tg://proxy?server=185.84.157.6&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==",
-      "channel": "اینترنت ازاد",
-      "t_link": "https://t.me/myvpn1404/7195",
-      "latency": 579,
-      "flag": "🇮🇷",
-      "ts": 1770482359.9431539
     }
   ],
   "files": [

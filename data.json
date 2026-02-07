@@ -1,6 +1,76 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-privatevpns@15.236.88.17:22222/?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%40v2rays_ha%207345```",
+      "latency": 85,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7298",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1770490939.620096
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://42a33e55-64ef-46c2-84c7-334728f3bfd3@151.101.0.223:80/?mode=auto&path=%2F%3Fed%3D2048&security=none&encryption=none&host=ipio.global.ssl.fastly.net&type=xhttp#%40v2rays_ha%207344",
+      "latency": 1,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7297",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770490939.2025673
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e0e837a4-c4d9-4504-91b6-170800933771@104.18.32.47:2087/?encryption=none&security=tls&sni=afranet1.aireacondicionadoalicante.eu&alpn=http%2F1.1&fp=chrome&allowInsecure=1&type=ws&host=afranet.aireacondicionadoalicante.eu&path=%2FJeiwoBjOYwhwoabA#%40v2rays_ha%207339",
+      "latency": 3,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7296",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770490938.894997
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://TELEGRAM-NUFiLTER@199.232.236.1:80/?mode=packet-up&path=%2FTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%3Fed%3D2056&security=none&encryption=none&host=CDN-NUFiLTER.global.ssl.fastly.net&type=xhttp#%40v2rays_ha%207338",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7295",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1770490938.5954957
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://8a66539d-0d3b-4a18-b5ae-8383d1365be9@188.121.124.17:698/?security=none&type=ws&headerType=&path=%2F-wst%3Fed%3D2048&host=telewebion.com%2Cuser.telewebion.com%2Cplus.telewebion.com%2Capi.telewebion.com#%40v2rays_ha%207337",
+      "latency": 163,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7294",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770490938.2986858
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://8a66539d-0d3b-4a18-b5ae-8383d1365be9@fip.lightningdns.ir:443/?security=tls&type=ws&headerType=&path=%2Fwst%3Fed%3D2056&host=parsianmobilebank.ir&sni=default.ssl.fastly.net&fp=chrome&alpn=h2%2Chttp%2F1.1#%40v2rays_ha%207336",
+      "latency": 192,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7293",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1770490937.797183
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=@103.36.91.32:8388#%40v2rays_ha%207331",
+      "latency": 231,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7292",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "ts": 1770490937.306202
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://7423fc0c-a623-4af2-9453-37639db9c715@vipt1.moshtri.xyz:1608?security=none&allowInsecure=0&encryption=none&type=tcp&host=fast.com,%20skyroom.online,%20gharar.ir,%20igap.net&path=/&headerType=http#shankamil",
       "latency": 228,

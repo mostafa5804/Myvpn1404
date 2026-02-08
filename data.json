@@ -2,6 +2,46 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://3d936926-4231-4cb4-8800-4bab3de13a03@172.64.152.23:80?mode=auto&path=%2F&security=none&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%201000000%2C%20%22scMaxConcurrentPosts%22%3A%20100%2C%20%22scMinPostsIntervalMs%22%3A%2030%2C%20%22xPaddingBytes%22%3A%20%22100-1000%22%2C%20%22noGRPCHeader%22%3A%20false%7D&host=manforce.serviceprom.us.ci&type=xhttp#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
+      "latency": 15,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/7438",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770540068.1431715
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://abe303b3-2c60-4b8a-b179-97aab81d912c@185.128.139.68:1612?security=none&encryption=none&host=mci.ir&headerType=http&type=tcp#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
+      "latency": null,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/7437",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770540067.8405719
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://b2ca47b5-d8c1-4303-b2db-701f2ab2db00@support-for-teachers.ir.new19server.ir:80?security=none&encryption=none&headerType=none&type=tcp#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
+      "latency": 475,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/7436",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770540066.0268123
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6a17a495-c6b6-4991-9007-2a7415b14453@pln.euro2nova.com:8880?security=none&encryption=none&host=aparat.com&headerType=http&type=tcp#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
+      "latency": 402,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/7435",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770540065.2389026
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://2a9ed01e-5455-44b4-a66a-76ee8165f0ac@77.73.232.61:19747?security=reality&encryption=none&pbk=ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=2001#🚀CR",
       "latency": 232,
       "channel": "کانفیگ رایگان",
@@ -2494,6 +2534,15 @@
   "proxies": [
     {
       "key": "91.239.192.200:8443",
+      "link": "tg://proxy?server=91.239.192.200&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/7442",
+      "latency": 114,
+      "flag": "🇮🇷",
+      "ts": 1770540132.615455
+    },
+    {
+      "key": "91.239.192.200:8443",
       "link": "tg://proxy?server=91.239.192.200&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
       "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
       "t_link": "https://t.me/myvpn1404/7432",
@@ -3382,18 +3431,30 @@
       "latency": 279,
       "flag": "🇮🇷",
       "ts": 1770496714.0667822
-    },
-    {
-      "key": "185.215.247.111:4455",
-      "link": "tg://proxy?server=185.215.247.111&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/7330",
-      "latency": 152,
-      "flag": "🇮🇷",
-      "ts": 1770496648.9952743
     }
   ],
   "files": [
+    {
+      "name": "نت ملی.npvt",
+      "ext": "NPVT",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/2776",
+      "ts": 1770540085.8350706
+    },
+    {
+      "name": "نت ملی (22).npvt",
+      "ext": "NPVT",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/2777",
+      "ts": 1770540085.5529299
+    },
+    {
+      "name": "نت ملی (26).npvt",
+      "ext": "NPVT",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/2778",
+      "ts": 1770540085.3099115
+    },
     {
       "name": "🇫🇮@Cooonfig👸(همه نتا4202موشکی).npvt",
       "ext": "NPVT",
@@ -3722,27 +3783,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/1390",
       "ts": 1770493350.2106442
-    },
-    {
-      "name": "@PlanB_net 8️⃣2️⃣2️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1392",
-      "ts": 1770493349.9909296
-    },
-    {
-      "name": "@planB_net 8️⃣2️⃣3️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1393",
-      "ts": 1770493349.690734
-    },
-    {
-      "name": "cicdo vpn _ ابولولو.npvt",
-      "ext": "NPVT",
-      "channel": "VPN | CICDO کانفیگ ملی شکن",
-      "link": "https://t.me/cicdoVPN/1598",
-      "ts": 1770490022.198611
     }
   ]
 }

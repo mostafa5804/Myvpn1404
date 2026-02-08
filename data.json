@@ -1,6 +1,76 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.8.71:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 128,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/7515",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1770550288.8232148
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@all.tellmethetrue.shop:443?mode=gun&security=tls&alpn=h2&encryption=none&insecure=0&fp=chrome&type=grpc&allowInsecure=0&sni=pqh30v1.carwashipdir.shop#%40FuckkNet](https://t.me/+6vKJ0zK7NIsxODFk)",
+      "latency": 218,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/7514",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770550288.3738256
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@185.18.250.238:2096/?security=tls&type=ws&path=%2F%3Fed%3D2560&host=sni.jpmj.dev&sni=sni.jpmj.dev&fp=chrome&encryption=none#%40v2rays_ha%207493```",
+      "latency": 18,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7513",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770550245.8493261
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@162.159.12.151:443/?security=tls&type=ws&path=%2F%3Fed%3D2560&host=sni.111000.indevs.in&sni=sni.111000.indevs.in&fp=chrome&encryption=none#%40v2rays_ha%207492",
+      "latency": 18,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7512",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770550245.5316596
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://57ba2ab1-a283-42eb-82ee-dc3561a805b8@172.67.153.156:8443/?security=tls&type=ws&path=%2F57ba2ab1&host=ovhwuxian.pai50288.uk&sni=ovhwuxian.pai50288.uk&fp=chrome&encryption=none#%40v2rays_ha%207488",
+      "latency": 18,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7511",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770550244.9404206
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://5152ff5b-56f7-400c-bc1d-2f1dd1ac1e13@www.speedtest.net:443/?security=tls&type=ws&path=%2FeyJqdW5rIjoiZ2FTSnpWSlFGbENDM0xrIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTI1LjcuMjQuMjUxIl19%3Fed%3D2560&host=010.electrocellco-cf-010.workers.dev&alpn=http%2F1.1&sni=010.elECtROcEllCo-CF-010.woRKerS.DEv&fp=chrome&encryption=none#%40v2rays_ha%207485",
+      "latency": 102,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7510",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770550244.513978
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://4d3b90a9-1b17-4fac-b514-3780d7170b3c@cloud.nexun.ir:443?mode=auto&path=%2FecoHTTP&security=tls&alpn=h2&encryption=none&insecure=0&host=test.tan3.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=test.tan3.ir#NetAccount`",
+      "latency": 180,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/7508",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770550223.1471734
+    },
+    {
       "protocol": "VMESS",
       "config": "vmess://eyJhZGQiOiJzZXJ2ZXJzLnh2b24uaW4iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiNDNhN2M2ZmQtYzUyZC00ZTFhLWJhMmItYjdhNWQzOTNiZWEwIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJwb3J0IjoiMjA4NyIsInBzIjoiQHZwbmJheiDwn5u4Iiwic2N5IjoiYXV0byIsInNuaSI6InNlcnZlcnMueHZvbi5pbiIsInRscyI6InRscyIsInR5cGUiOiJodHRwIiwidiI6IjIifQ==```",
       "latency": 583,
@@ -2623,6 +2693,15 @@
   ],
   "proxies": [
     {
+      "key": "185.84.157.21:444",
+      "link": "tg://proxy?server=185.84.157.21&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==)",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/7509",
+      "latency": 139,
+      "flag": "🇮🇷",
+      "ts": 1770550223.4199777
+    },
+    {
       "key": "185.115.161.248:9443",
       "link": "tg://proxy?server=185.115.161.248&port=9443&secret=dd104462821249bd7ac519130220c25d09)|",
       "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
@@ -3512,18 +3591,44 @@
       "latency": 90,
       "flag": "🇮🇷",
       "ts": 1770534762.3201487
-    },
-    {
-      "key": "91.239.192.224:15",
-      "link": "tg://proxy?server=91.239.192.224&port=15&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d",
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/7412",
-      "latency": 96,
-      "flag": "🇮🇷",
-      "ts": 1770534762.3201478
     }
   ],
   "files": [
+    {
+      "name": "@shankamilالهی ترامپ فوت شه.npvt",
+      "ext": "NPVT",
+      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
+      "link": "https://t.me/vpn11ir/111620",
+      "ts": 1770550213.1571908
+    },
+    {
+      "name": "[_@Hiddify_Nexttt_]1.npvt",
+      "ext": "NPVT",
+      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
+      "link": "https://t.me/vpn11ir/111622",
+      "ts": 1770550212.8733315
+    },
+    {
+      "name": "[_@Hiddify_Nexttt _]2.npvt",
+      "ext": "NPVT",
+      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
+      "link": "https://t.me/vpn11ir/111623",
+      "ts": 1770550212.5549517
+    },
+    {
+      "name": "@ZEDMODEON 59 ⚡.npvt",
+      "ext": "NPVT",
+      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
+      "link": "https://t.me/vpn11ir/111624",
+      "ts": 1770550212.27964
+    },
+    {
+      "name": "AllNetFast.npvt",
+      "ext": "NPVT",
+      "channel": "Iranian Minds",
+      "link": "https://t.me/IranianMinds/13641",
+      "ts": 1770550204.8103006
+    },
     {
       "name": "cicdo vpn _لورنس.npvt",
       "ext": "NPVT",
@@ -3838,41 +3943,6 @@
       "channel": "xsfilternet",
       "link": "https://t.me/xsfilternet/2270",
       "ts": 1770496639.1967444
-    },
-    {
-      "name": "@V2RAYyt2 (2).npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2271",
-      "ts": 1770496638.938289
-    },
-    {
-      "name": "Max SpeeD ⚡.npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2272",
-      "ts": 1770496638.6275518
-    },
-    {
-      "name": "@V2RAYyt2 (1).npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2275",
-      "ts": 1770496638.3398001
-    },
-    {
-      "name": "🇩🇪-.npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2276",
-      "ts": 1770496638.043849
-    },
-    {
-      "name": "@shankamilما اعزاداریم.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ ملی شکن",
-      "link": "https://t.me/shankamil/3810",
-      "ts": 1770496628.549847
     }
   ]
 }

@@ -2,6 +2,56 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://cad46e41-b824-482a-a4ae-ad070f478a0f@94.184.10.32:8080?security=none&encryption=none&host=namava.ir&headerType=http&type=tcp#%D8%AC%D9%88%DB%8C%D9%86%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%40shankamil",
+      "latency": 182,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/7648",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770583812.075225
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://5fb072e0ddd631cf66cf752b09210480@54.95.118.21:3373?security=tls&insecure=1&headerType=none&type=tcp&allowInsecure=1&sni=www.nintendogames.net#%D8%AC%D9%88%DB%8C%D9%86%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%40shankamil",
+      "latency": 146,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/7647",
+      "flag": "🇯🇵",
+      "country": "Japan",
+      "ts": 1770583811.5761316
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://627af99e-6326-430d-8a77-957cb5cc803e@3.124.209.11:26197?mode=gun&security=none&encryption=none&type=grpc#%D8%AC%D9%88%DB%8C%D9%86%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%40shankamil",
+      "latency": 110,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/7646",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1770583811.0014079
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://93d6687f-46d1-48f5-bf97-77128600556f@65.109.253.87:443?mode=auto&path=%2FMirZa%2FIrAnPiNgbest%3Fed%3D2560&security=reality&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%201000000%2C%20%22scMaxConcurrentPosts%22%3A%20100%2C%20%22scMinPostsIntervalMs%22%3A%2030%2C%20%22xPaddingBytes%22%3A%20%22100-1000%22%2C%20%22noGRPCHeader%22%3A%20false%7D&pbk=9PxmdoqWZ1yGffnxot86y07c24AlIoFCcSzHf6epWmM&host=MasterSpEEd&fp=firefox&type=xhttp&sni=play.google.com&sid=c6da5fa7bbc4d0e3#%D8%AC%D9%88%DB%8C%D9%86%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%40shankamil",
+      "latency": 135,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/7645",
+      "flag": "🇫🇮",
+      "country": "Finland",
+      "ts": 1770583810.4859536
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://66aef444-ad65-4000-9c54-981c48fe1373@172.104.249.116:443?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%86%94Telegram%20%3A%20%40planB_net",
+      "latency": 111,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/7644",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1770583761.0553424
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://9d11161c-5123-47f6-ac2f-e439116b05e6@igvt.a1min.ir:2053?mode=auto&path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%201000000%2C%20%22scMaxConcurrentPosts%22%3A%20100%2C%20%22scMinPostsIntervalMs%22%3A%2030%2C%20%22xPaddingBytes%22%3A%20%22100-1000%22%2C%20%22noGRPCHeader%22%3A%20false%7D&host=hgt.linemtf.ir&fp=chrome&type=xhttp&sni=hgt.linemtf.ir#🚀@configraygan",
       "latency": 466,
       "channel": "کانفیگ رایگان",
@@ -1989,36 +2039,6 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1770497397.551687
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiJjaGF0Z3B0LmNvbSIsImFpZCI6IjAiLCJhbHBuIjoiaDIsaHR0cC8xLjEiLCJmcCI6ImNocm9tZSIsImhvc3QiOiJ6Lmxvb2xvb2xvb2xvby5jb20iLCJpZCI6ImM1MzZjZWY1LTA0MjEtNDAyMS1hMmNmLTI5ZTM3NTlhNzQ2MyIsIm5ldCI6IndzIiwicGF0aCI6Ii93cy1zaXRlP2VkXHUwMDNkMjA1NiIsInBvcnQiOiI0NDMiLCJwcyI6Itis2YjbjNmGINi024zYryDZgti3INmG2LTbjNivIEBzaGFua2FtaWwiLCJzY3kiOiJhdXRvIiwic25pIjoiei5sb29sb29sb29sb28uY29tIiwidGxzIjoidGxzIiwidHlwZSI6Ii0tLSIsInYiOiIyIn0=",
-      "latency": 4,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/7323",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770496628.227971
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://508209de-ac9e-437d-b230-569ab55388da@mcnew.dl101movis.ir:80?mode=auto&path=%2F&security=none&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%201000000%2C%20%22scMaxConcurrentPosts%22%3A%20100%2C%20%22scMinPostsIntervalMs%22%3A%2030%2C%20%22xPaddingBytes%22%3A%20%220%22%2C%20%22noGRPCHeader%22%3A%20false%7D&host=speedyfastytuderysmothi.global.ssl.fastly.net&type=xhttp#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
-      "latency": 382,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/7322",
-      "flag": "🇮🇹",
-      "country": "Italy",
-      "ts": 1770496626.330774
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://508209de-ac9e-437d-b230-569ab55388da@45.146.201.166:2083?mode=auto&path=%2Fapi%2Fstream&security=tls&alpn=h2&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%201000000%2C%20%22scMaxConcurrentPosts%22%3A%20100%2C%20%22scMinPostsIntervalMs%22%3A%2030%2C%20%22xPaddingBytes%22%3A%20%2210-20%22%2C%20%22noGRPCHeader%22%3A%20false%7D&host=4dacf4d7df4b7a24.bsazbfrosh.site&fp=chrome&type=xhttp&sni=4dacf4d7df4b7a24.bsazbfrosh.site#%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%20%40shankamil",
-      "latency": 2,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/7321",
-      "flag": "🇨🇼",
-      "country": "Curacao",
-      "ts": 1770496625.5372927
     }
   ],
   "proxies": [
@@ -2925,6 +2945,13 @@
   ],
   "files": [
     {
+      "name": "cicdo vpn _ حسن صباح .npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO",
+      "link": "https://t.me/cicdoVPN/1640",
+      "ts": 1770583891.1315753
+    },
+    {
       "name": "NetMeliEDG.npvt",
       "ext": "NPVT",
       "channel": "VPN MARKET",
@@ -3266,13 +3293,6 @@
       "channel": "xsfilternet",
       "link": "https://t.me/xsfilternet/2285",
       "ts": 1770544314.8821375
-    },
-    {
-      "name": "-AllNet High Speed 🔥.npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2286",
-      "ts": 1770544314.5796883
     }
   ]
 }

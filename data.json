@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://cad46e41-b824-482a-a4ae-ad070f478a0f@94.184.10.32:8080/?security=none&encryption=none&host=namava.ir&headerType=http&type=tcp#%40v2rays_ha%207846",
+      "latency": 164,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7988",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770671025.4626448
+    },
+    {
       "protocol": "SS",
       "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVblVVR1owQTRpaFdGaURqcDhYOE9O@62.133.63.21:65262#%40vpnbaz%20%F0%9F%91%BE",
       "latency": 181,
@@ -2193,6 +2203,24 @@
   ],
   "proxies": [
     {
+      "key": "91.239.192.37:65535",
+      "link": "tg://proxy?server=91.239.192.37&port=65535&secret=10446282fffffffffff80000fff80000",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/7989",
+      "latency": 93,
+      "flag": "🇮🇷",
+      "ts": 1770671034.0165076
+    },
+    {
+      "key": "91.239.192.37:65535",
+      "link": "tg://proxy?server=91.239.192.37&port=65535&secret=10446282fffffffffff80000fff80000)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/7989",
+      "latency": 88,
+      "flag": "🇮🇷",
+      "ts": 1770671034.0165057
+    },
+    {
       "key": "91.239.192.33:7777",
       "link": "tg://proxy?server=91.239.192.33&port=7777&secret=7hYDAQIAAQAB_AMDhuJMOt1jZG4ueWVrdGFuZXQuY29t)‌",
       "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
@@ -3073,27 +3101,30 @@
       "latency": 90,
       "flag": "🇮🇷",
       "ts": 1770659759.8716497
-    },
-    {
-      "key": "91.239.192.18:3443",
-      "link": "tg://proxy?server=91.239.192.18&port=3443&secret=7lLIZ9x1mD-vS7N_kdUWTwkt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/7915",
-      "latency": 92,
-      "flag": "🇮🇷",
-      "ts": 1770659759.8716486
-    },
-    {
-      "key": "wine.limoozin.info:25565",
-      "link": "tg://proxy?server=wine.limoozin.info&port=25565&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/7915",
-      "latency": 29,
-      "flag": "🇨🇦",
-      "ts": 1770659759.8716478
     }
   ],
   "files": [
+    {
+      "name": "@v2rays_ha 6.ehi",
+      "ext": "EHI",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "link": "https://t.me/v2rays_ha/2077",
+      "ts": 1770671024.9703813
+    },
+    {
+      "name": "@v2rays_ha 269.npvt",
+      "ext": "NPVT",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "link": "https://t.me/v2rays_ha/2078",
+      "ts": 1770671024.6709232
+    },
+    {
+      "name": "@v2rays_ha 270.npvt",
+      "ext": "NPVT",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "link": "https://t.me/v2rays_ha/2079",
+      "ts": 1770671024.3680115
+    },
     {
       "name": "cicdo vpn _رادمان پور ماهک.npvt",
       "ext": "NPVT",
@@ -3422,27 +3453,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/1439",
       "ts": 1770645124.5433657
-    },
-    {
-      "name": "@PlanB_net 8️⃣5️⃣7️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1440",
-      "ts": 1770645124.2408023
-    },
-    {
-      "name": "@PlanB_net 8️⃣5️⃣8️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1441",
-      "ts": 1770645123.9398022
-    },
-    {
-      "name": "@PlanB_net 8️⃣5️⃣9️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1442",
-      "ts": 1770645123.6354792
     }
   ]
 }

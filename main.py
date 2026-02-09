@@ -166,7 +166,7 @@ def create_footer(source_title, source_username):
     return (
         f"\n━━━━━━━━━━━━━━━━\n"
         f"🗓 {date_str} • 🕐 {time_str}\n"
-        f"📡 منبع: [{safe_title}](https://t.me/{clean_username})\n"
+        f"📡 source: [{safe_title}](https://t.me/{clean_username})\n"
         f"💬 {destination_channel}"
     )
 

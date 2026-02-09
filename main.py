@@ -390,9 +390,8 @@ async def main():
 
         now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
         html_cards = ""
-
 # 1. Config Cards Generator
-for idx, cfg in enumerate(all_configs, 1):
+        for idx, cfg in enumerate(all_configs, 1):
     lat = cfg.get('latency', 999)
     try: lat = int(lat)
     except: lat = 999

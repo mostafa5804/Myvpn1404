@@ -1,6 +1,126 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.8.196:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 107,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/7844",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1770643549.272263
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@35.181.136.255:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 111,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/7843",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1770643548.8430326
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://c3ffa4ee-fbbe-45e3-f737-db2f381f557e@104.24.196.20:2053/?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=kh2tiyozkxybazdibomyhih.mahdi383ir.website&fp=firefox&type=ws&allowInsecure=0&sni=kh2tiyozkxybazdibomyhih.mahdi383ir.website#%40v2rays_ha%207777```",
+      "latency": 3,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7840",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770643506.058513
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://f16bf19e-6966-44dd-819f-4e4e9dd321b0@diddy.com:8443/?security=tls&sni=franyr.appleseraj.ir&fp=chrome&type=ws&path=/#%40v2rays_ha%207776",
+      "latency": 79,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7839",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770643505.7533178
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://435bda4c-fe5e-42c9-a3ad-15334943b38a@104.18.83.241:80/?security=none&type=ws&host=us3.rtacg.com&path=/#%40v2rays_ha%207775",
+      "latency": 3,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7838",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770643505.3876164
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://f16bf19e-6966-44dd-819f-4e4e9dd321b0@diddy.com:2096/?security=tls&sni=nurenburges.appleseraj.ir&type=ws&path=/#%40v2rays_ha%207774",
+      "latency": 77,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7837",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770643505.1067324
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://9f0d6a8a-4a41-4295-8fa4-32957ccc59fa@georgewashington.elterido.ir:2083/?encryption=none&security=tls&sni=de.elterido.ir&alpn=h2%2Chttp%2F1.1&fp=chrome&type=ws&host=de.elterido.ir&path=%2Fapi03#%40v2rays_ha%207770",
+      "latency": 215,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7836",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1770643504.6817021
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiAiMTA0LjE5LjQ4LjMwIiwgImFpZCI6IDAsICJob3N0IjogImhrMDEubGlua2l0bm93Lm5ldCIsICJpZCI6ICIzOTEzNWEzOS1lNmNhLTQzZGYtYTM2MC1kODU5ZWVhNThkODYiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLyIsICJwb3J0IjogODQ0MywgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIiwgInBzIjogIkB2MnJheXNfaGEgNzc2OCJ9",
+      "latency": 3,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7835",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770643504.1786296
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://160909d1-9d69-4bc2-b15a-33ff13c9b150@s5.fastspeeds.ir:443/?encryption=none&security=tls&sni=craftedrpg.ir&type=ws&host=craftedrpg.ir&path=%2F#%40v2rays_ha%207767",
+      "latency": 551,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7834",
+      "flag": "🇸🇨",
+      "country": "Seychelles",
+      "ts": 1770643503.886808
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://160909d1-9d69-4bc2-b15a-33ff13c9b150@104.18.31.168:443/?encryption=none&security=tls&sni=craftedrpg.ir&type=ws&host=craftedrpg.ir&path=%2F#%40v2rays_ha%207766",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7833",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770643503.0989037
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://160909d1-9d69-4bc2-b15a-33ff13c9b150@45.130.125.160:443/?encryption=none&security=tls&sni=craftedrpg.ir&type=ws&host=craftedrpg.ir&path=%2F#%40v2rays_ha%207765",
+      "latency": 3,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7832",
+      "flag": "🇸🇨",
+      "country": "Seychelles",
+      "ts": 1770643502.7292309
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://73ccfebc-9b7f-4bb2-9685-2c92bca66947@de.v2turbo.com:1521/?path=%2F&security=&encryption=none&host=skyroom.online%2Cgharar.ir%2Cigap.net&type=ws#%40v2rays_ha%207764",
+      "latency": 201,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/7831",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770643502.311112
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://160909d1-9d69-4bc2-b15a-33ff13c9b150@ip.hamrahto.com:443/?encryption=none&security=tls&sni=craftedrpg.ir&type=ws&host=craftedrpg.ir&path=%2F#%40v2rays_ha%207762```",
       "latency": 155,
@@ -1949,16 +2069,6 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "ts": 1770561387.74212
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@35.180.9.127:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 107,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/7537",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1770555978.2527084
     }
   ],
   "proxies": [
@@ -2865,6 +2975,20 @@
   ],
   "files": [
     {
+      "name": "@v2rays_ha 4.ehi",
+      "ext": "EHI",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "link": "https://t.me/v2rays_ha/2062",
+      "ts": 1770643506.5563931
+    },
+    {
+      "name": "@v2rays_ha 263.npvt",
+      "ext": "NPVT",
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "link": "https://t.me/v2rays_ha/2063",
+      "ts": 1770643506.3032131
+    },
+    {
       "name": "Diamond 💎NetMeli.npvt",
       "ext": "NPVT",
       "channel": "پروکسی رایگان ملی / فیلترشکن",
@@ -3199,20 +3323,6 @@
       "channel": "VPN | CICDO",
       "link": "https://t.me/cicdoVPN/1635",
       "ts": 1770579960.0121448
-    },
-    {
-      "name": "NetMeliCROS.npvt",
-      "ext": "NPVT",
-      "channel": "VPN MARKET",
-      "link": "https://t.me/anty_filter/22487",
-      "ts": 1770579163.8866003
-    },
-    {
-      "name": "@planB_net 8️⃣4️⃣5️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1421",
-      "ts": 1770577215.2069085
     }
   ]
 }

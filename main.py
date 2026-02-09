@@ -441,42 +441,40 @@ async def main():
                         <i class="fas fa-qrcode"></i> QR
                     </button>
                 </div>
-            </div>"""
-    # 2. Proxy Cards Generator
-    for idx, prox in enumerate(all_proxies, 1):
-        lat = prox.get('latency', 999)
-        try: lat = int(lat)
-        except: lat = 999
-        
-        flag = prox.get('flag', '🏳️')
-        safe_link = html.escape(prox['link'])
-        
-        if lat < 500: ping_color = "text-emerald-400 border-emerald-500/30 bg-emerald-500/10"
-        elif lat < 1000: ping_color = "text-yellow-400 border-yellow-500/30 bg-yellow-500/10"
-        else: ping_color = "text-rose-400 border-rose-500/30 bg-rose-500/10"
-        
-        html_cards += f"""
-        <div class="card group bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-300" data-type="mtproxy" data-search="mtproxy telegram">
-            <div class="flex justify-between items-start mb-4">
-                <div class="flex items-center gap-3">
-                    <span class="text-3xl filter drop-shadow-md">{flag}</span>
-                    <div>
-                        <span class="font-bold text-emerald-400 text-sm tracking-wide bg-emerald-900/20 px-2 py-0.5 rounded">MTProxy</span>
-                        <div class="text-xs text-slate-400 mt-1">Telegram Proxy</div>
+            </div>"""        # 2. Proxy Cards Generator
+        for idx, prox in enumerate(all_proxies, 1):
+            lat = prox.get('latency', 999)
+            try: lat = int(lat)
+            except: lat = 999
+            
+            flag = prox.get('flag', '🏳️')
+            safe_link = html.escape(prox['link'])
+            
+            if lat < 500: ping_color = "text-emerald-400 border-emerald-500/30 bg-emerald-500/10"
+            elif lat < 1000: ping_color = "text-yellow-400 border-yellow-500/30 bg-yellow-500/10"
+            else: ping_color = "text-rose-400 border-rose-500/30 bg-rose-500/10"
+            
+            html_cards += f"""
+            <div class="card group bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-300" data-type="mtproxy" data-search="mtproxy telegram">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl filter drop-shadow-md">{flag}</span>
+                        <div>
+                            <span class="font-bold text-emerald-400 text-sm tracking-wide bg-emerald-900/20 px-2 py-0.5 rounded">MTProxy</span>
+                            <div class="text-xs text-slate-400 mt-1">Telegram Proxy</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono font-bold {ping_color} border px-2 py-1 rounded-lg flex items-center gap-1">
+                        <i class="fas fa-bolt text-[10px]"></i> {lat}ms
                     </div>
                 </div>
-                <div class="text-xs font-mono font-bold {ping_color} border px-2 py-1 rounded-lg flex items-center gap-1">
-                    <i class="fas fa-bolt text-[10px]"></i> {lat}ms
+                
+                <div class="grid grid-cols-1 gap-2 mt-2">
+                    <a href="{safe_link}" class="bg-emerald-600/90 hover:bg-emerald-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-emerald-900/20">
+                        <i class="fas fa-paper-plane"></i> <span>اتصال سریع</span>
+                    </a>
                 </div>
-            </div>
-            
-            <div class="grid grid-cols-1 gap-2 mt-2">
-                <a href="{safe_link}" class="bg-emerald-600/90 hover:bg-emerald-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-emerald-900/20">
-                    <i class="fas fa-paper-plane"></i> <span>اتصال سریع</span>
-                </a>
-            </div>
-        </div>"""
-
+            </div>"""
 
 full_html = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl" class="dark">

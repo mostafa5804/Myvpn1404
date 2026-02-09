@@ -476,7 +476,7 @@ async def main():
                 </div>
             </div>"""
 
-full_html = f"""<!DOCTYPE html>
+        full_html = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl" class="dark">
 <head>
     <meta charset="UTF-8">

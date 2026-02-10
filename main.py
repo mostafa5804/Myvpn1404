@@ -577,10 +577,10 @@ async def main():
                 </div>
             </a>
 
-            <a href="https://github.com/mostafa5804 class="flex flex-col items-center justify-center text-slate-400 hover:text-white transition-colors">
-                <i class="fab fa-github text-xl mb-1"></i>
-                <span class="text-[10px] font-medium">گیتهاب</span>
-            </a>
+           <a href="https://github.com/mostafa5804" class="flex flex-col items-center justify-center text-slate-400 hover:text-white transition-colors">
+               <i class="fab fa-github text-xl mb-1"></i>
+                    <span class="text-[10px] font-medium">گیتهاب</span>
+          </a>
         </div>
     </nav>
 

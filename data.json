@@ -1,6 +1,76 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@172.64.152.23:443/?sni=www.creationlong.org&allowInsecure=1&type=ws&path=%2Fassignment&fp=chrome#%40v2rays_ha%208238",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/8411",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770804341.1243262
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@136.244.103.193:443/?path=%2F%3Fed%3D2560%26Telegram%40AliXTso&security=tls&encryption=none&insecure=1&host=sni.111000.indevs.in&type=ws&allowInsecure=1&sni=sni.111000.indevs.in#%40v2rays_ha%208235",
+      "latency": 84,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/8410",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1770804340.8126426
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphaVhPMEZuallIZzZaS0pBUG9oQlZX@185.253.116.95:16673#%40v2rays_ha%208233",
+      "latency": 93,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/8409",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770804340.4100125
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://a4ed2e0b-85d9-4a13-884c-eae6bb4f1800@france.alpacalounge.com:2096/?security=reality&encryption=none&pbk=6G6julG6n7bkD8JvdLdGSniDXf9AYV12PGYNPQgg7xQ&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fr.alpacalounge.com&sid=f77d05d1bf4d#%40v2rays_ha%208232",
+      "latency": 753,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/8408",
+      "flag": "🇷🇺",
+      "country": "Russia",
+      "ts": 1770804340.0193067
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://82241d60-2bdf-4de7-9a29-2d57ebc09b76@162.159.9.83:443/?path=%2FeyJqdW5rIjoiSWVocjJHeWRvSGxYaThvIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=h18i2jam-v6htjq-f-vwai0pvgltc6on.hghorbani-mc70.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=h18I2JaM-v6hTJQ-F-vwAI0PvGltC6On.hGhOrBAni-MC70.WoRkErS.dev#%40v2rays_ha%208231",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/8407",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770804339.002394
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://32c5b858-ea45-4bb7-b474-042ea949241c@85.133.195.132:199?security=&encryption=none&headerType=none&type=tcp",
+      "latency": 248,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8403",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1770804320.8142464
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5UmR4dkszMmdjS3E4eHhOZ3V3VTk5@62.60.233.226:62763",
+      "latency": 137,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8402",
+      "flag": "🇹🇷",
+      "country": "Türkiye",
+      "ts": 1770804320.1943166
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://54924f51-98d1-43ea-acfc-97e5cddb2fdc@pol2.creativelife.monster:49873/?security=none&encryption=none&headerType=none&type=tcp#%40v2rays_ha%208227",
       "latency": 348,
@@ -2079,19 +2149,432 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1770718640.9279335
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://e6c7ed63-89db-4ae1-a3f8-7a722921b3b2@chatgpt.com:443/?encryption=none&security=tls&sni=apii.onlineshoppingez.ir&alpn=http%2F1.1&fp=chrome&type=ws&host=apii.onlineshoppingez.ir&path=%2FO1w0n3vYgFKYs7EzNAvLPvOp#%40v2rays_ha%207985",
-      "latency": 57,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/8057",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770715066.7042727
     }
   ],
   "proxies": [
+    {
+      "key": "zilweb.gamesea.info.:61016",
+      "link": "tg://proxy?server=zilweb.gamesea.info.&port=61016&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 96,
+      "flag": "🇩🇪",
+      "ts": 1770804333.567463
+    },
+    {
+      "key": "Ghasam-be-shab.bekhan-mara.info:88",
+      "link": "tg://proxy?server=Ghasam-be-shab.bekhan-mara.info&port=88&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 457,
+      "flag": "🇫🇮",
+      "ts": 1770804333.5674622
+    },
+    {
+      "key": "down.permiumdl.info:42341",
+      "link": "tg://proxy?server=down.permiumdl.info&port=42341&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 129,
+      "flag": "🇫🇮",
+      "ts": 1770804333.5674615
+    },
+    {
+      "key": "85.133.194.17:8443",
+      "link": "tg://proxy?server=85.133.194.17&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 96,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674608
+    },
+    {
+      "key": "85.133.194.11:8443",
+      "link": "tg://proxy?server=85.133.194.11&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 104,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674598
+    },
+    {
+      "key": "down.permiumdl.info:42341",
+      "link": "tg://proxy?server=down.permiumdl.info&port=42341&secret=7nnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 307,
+      "flag": "🇫🇮",
+      "ts": 1770804333.567459
+    },
+    {
+      "key": "big.letstryit1.info:23",
+      "link": "tg://proxy?server=big.letstryit1.info&port=23&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 289,
+      "flag": "🇫🇮",
+      "ts": 1770804333.5674584
+    },
+    {
+      "key": "champagne.limoozin.info:25565",
+      "link": "tg://proxy?server=champagne.limoozin.info&port=25565&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 10,
+      "flag": "🇨🇦",
+      "ts": 1770804333.5674574
+    },
+    {
+      "key": "85.133.194.34:8443",
+      "link": "tg://proxy?server=85.133.194.34&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 99,
+      "flag": "🇮🇷",
+      "ts": 1770804333.567457
+    },
+    {
+      "key": "85.133.194.25:8443",
+      "link": "tg://proxy?server=85.133.194.25&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 89,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674562
+    },
+    {
+      "key": "172.65.102.115:22",
+      "link": "tg://proxy?server=172.65.102.115&port=22&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 2,
+      "flag": "🇨🇦",
+      "ts": 1770804333.5674555
+    },
+    {
+      "key": "ai.gamesea.info.:61016",
+      "link": "tg://proxy?server=ai.gamesea.info.&port=61016&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 255,
+      "flag": "🇳🇱",
+      "ts": 1770804333.567455
+    },
+    {
+      "key": "zilweb.gamesea.info.:61016",
+      "link": "tg://proxy?server=zilweb.gamesea.info.&port=61016&secret=7nnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 114,
+      "flag": "🇩🇪",
+      "ts": 1770804333.567454
+    },
+    {
+      "key": "172.65.96.123:25565",
+      "link": "tg://proxy?server=172.65.96.123&port=25565&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 2,
+      "flag": "🇨🇦",
+      "ts": 1770804333.5674512
+    },
+    {
+      "key": "85.133.194.14:8443",
+      "link": "tg://proxy?server=85.133.194.14&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 100,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674505
+    },
+    {
+      "key": "78.46.217.208:8443",
+      "link": "tg://proxy?server=78.46.217.208&port=8443&secret=fgScoaLSXQYtLCM8VHoNng",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 105,
+      "flag": "🇩🇪",
+      "ts": 1770804333.5674498
+    },
+    {
+      "key": "85.133.194.18:8443",
+      "link": "tg://proxy?server=85.133.194.18&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 99,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674493
+    },
+    {
+      "key": "65.109.217.21:443",
+      "link": "tg://proxy?server=65.109.217.21&port=443&secret=eecBAgABAAfwAwOG4kw63QAAAARueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 119,
+      "flag": "🇫🇮",
+      "ts": 1770804333.5674486
+    },
+    {
+      "key": "wine.limoozin.info:25565",
+      "link": "tg://proxy?server=wine.limoozin.info&port=25565&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 168,
+      "flag": "🇨🇦",
+      "ts": 1770804333.567448
+    },
+    {
+      "key": "champagne.limoozin.info:25565",
+      "link": "tg://proxy?server=champagne.limoozin.info&port=25565&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 342,
+      "flag": "🇨🇦",
+      "ts": 1770804333.567447
+    },
+    {
+      "key": "85.133.194.41:8443",
+      "link": "tg://proxy?server=85.133.194.41&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 96,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674462
+    },
+    {
+      "key": "85.133.194.23:8443",
+      "link": "tg://proxy?server=85.133.194.23&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 95,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674455
+    },
+    {
+      "key": "85.133.194.14:8443",
+      "link": "tg://proxy?server=85.133.194.14&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 88,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674448
+    },
+    {
+      "key": "85.133.194.17:8443",
+      "link": "tg://proxy?server=85.133.194.17&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 97,
+      "flag": "🇮🇷",
+      "ts": 1770804333.567444
+    },
+    {
+      "key": "85.133.194.41:8443",
+      "link": "tg://proxy?server=85.133.194.41&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 90,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674431
+    },
+    {
+      "key": "https-cdn-ddns.itdeveloper.info.:88",
+      "link": "tg://proxy?server=https-cdn-ddns.itdeveloper.info.&port=88&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 265,
+      "flag": "🇩🇪",
+      "ts": 1770804333.5674422
+    },
+    {
+      "key": "Qavi.Baryc6w.co.uk:443",
+      "link": "tg://proxy?server=Qavi.Baryc6w.co.uk&port=443&secret=ProxyQavi____Proxymelg",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 150,
+      "flag": "🇫🇮",
+      "ts": 1770804333.5674376
+    },
+    {
+      "key": "85.133.194.18:8443",
+      "link": "tg://proxy?server=85.133.194.18&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 100,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674362
+    },
+    {
+      "key": "85.133.194.31:8443",
+      "link": "tg://proxy?server=85.133.194.31&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 99,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674355
+    },
+    {
+      "key": "85.133.194.11:8443",
+      "link": "tg://proxy?server=85.133.194.11&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 102,
+      "flag": "🇮🇷",
+      "ts": 1770804333.567435
+    },
+    {
+      "key": "Iphone-android-windows.be-name-allah.info.:88",
+      "link": "tg://proxy?server=Iphone-android-windows.be-name-allah.info.&port=88&secret=7nnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 270,
+      "flag": "🇩🇪",
+      "ts": 1770804333.5674343
+    },
+    {
+      "key": "android.gq.the-bests-servers.info:88",
+      "link": "tg://proxy?server=android.gq.the-bests-servers.info&port=88&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 262,
+      "flag": "🇫🇮",
+      "ts": 1770804333.5674338
+    },
+    {
+      "key": "85.133.194.16:8443",
+      "link": "tg://proxy?server=85.133.194.16&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 95,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674326
+    },
+    {
+      "key": "85.133.194.15:8443",
+      "link": "tg://proxy?server=85.133.194.15&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 1152,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674322
+    },
+    {
+      "key": "ssh-tcp-telnet.gamesea.info.:61016",
+      "link": "tg://proxy?server=ssh-tcp-telnet.gamesea.info.&port=61016&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 211,
+      "flag": "🇫🇮",
+      "ts": 1770804333.5674314
+    },
+    {
+      "key": "85.133.194.31:8443",
+      "link": "tg://proxy?server=85.133.194.31&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 104,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674305
+    },
+    {
+      "key": "185.3.200.172:2053",
+      "link": "tg://proxy?server=185.3.200.172&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 98,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674295
+    },
+    {
+      "key": "85.133.194.25:8443",
+      "link": "tg://proxy?server=85.133.194.25&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 93,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674284
+    },
+    {
+      "key": "85.133.194.16:8443",
+      "link": "tg://proxy?server=85.133.194.16&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 95,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674276
+    },
+    {
+      "key": "Ey-to.ir.omide-hasti.info.:88",
+      "link": "tg://proxy?server=Ey-to.ir.omide-hasti.info.&port=88&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 450,
+      "flag": "🇫🇮",
+      "ts": 1770804333.567427
+    },
+    {
+      "key": "www.lost-packet-chrome.info.:42341",
+      "link": "tg://proxy?server=www.lost-packet-chrome.info.&port=42341&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 1289,
+      "flag": "🇫🇮",
+      "ts": 1770804333.5674257
+    },
+    {
+      "key": "85.133.194.34:8443",
+      "link": "tg://proxy?server=85.133.194.34&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 100,
+      "flag": "🇮🇷",
+      "ts": 1770804333.567425
+    },
+    {
+      "key": "Home.ir.ou-miaiad.info.:88",
+      "link": "tg://proxy?server=Home.ir.ou-miaiad.info.&port=88&secret=7nnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 127,
+      "flag": "🇫🇮",
+      "ts": 1770804333.567424
+    },
+    {
+      "key": "www.hombus.co.uk.:22",
+      "link": "tg://proxy?server=www.hombus.co.uk.&port=22&secret=fgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNng%3D%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 392,
+      "flag": "🇨🇦",
+      "ts": 1770804333.5674233
+    },
+    {
+      "key": "Home.ir.ou-miaiad.info.:88",
+      "link": "tg://proxy?server=Home.ir.ou-miaiad.info.&port=88&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 285,
+      "flag": "🇫🇮",
+      "ts": 1770804333.5674222
+    },
+    {
+      "key": "85.133.194.23:8443",
+      "link": "tg://proxy?server=85.133.194.23&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 96,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674214
+    },
+    {
+      "key": "85.133.194.15:8443",
+      "link": "tg://proxy?server=85.133.194.15&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/8406",
+      "latency": 104,
+      "flag": "🇮🇷",
+      "ts": 1770804333.5674195
+    },
     {
       "key": "91.239.192.18:3443",
       "link": "tg://proxy?server=91.239.192.18&port=3443&secret=7lLIZ9x1mD-vS7N_kdUWTwkt",
@@ -2568,432 +3051,44 @@
       "latency": 143,
       "flag": "🇮🇷",
       "ts": 1770791989.4436538
-    },
-    {
-      "key": "185.3.200.174:4455",
-      "link": "tg://proxy?server=185.3.200.174&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 136,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436529
-    },
-    {
-      "key": "185.115.161.45:9443",
-      "link": "tg://proxy?server=185.115.161.45&port=9443&secret=dd1603010200010001fc030386e24c3add",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 125,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436522
-    },
-    {
-      "key": "185.3.200.176:2053",
-      "link": "tg://proxy?server=185.3.200.176&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 138,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436514
-    },
-    {
-      "key": "185.115.161.234:9443",
-      "link": "tg://proxy?server=185.115.161.234&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 135,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436505
-    },
-    {
-      "key": "185.3.200.18:2053",
-      "link": "tg://proxy?server=185.3.200.18&port=2053&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 139,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436495
-    },
-    {
-      "key": "185.3.200.175:2053",
-      "link": "tg://proxy?server=185.3.200.175&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 130,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436486
-    },
-    {
-      "key": "91.239.192.42:3443",
-      "link": "tg://proxy?server=91.239.192.42&port=3443&secret=7lLIZ9x1mD-vS7N_kdUWTwktLQ%3D%3D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 135,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443648
-    },
-    {
-      "key": "185.3.200.171:4455",
-      "link": "tg://proxy?server=185.3.200.171&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 147,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443647
-    },
-    {
-      "key": "185.3.200.174:4455",
-      "link": "tg://proxy?server=185.3.200.174&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 138,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436462
-    },
-    {
-      "key": "91.239.192.31:3443",
-      "link": "tg://proxy?server=91.239.192.31&port=3443&secret=7lLIZ9x1mD-vS7N_kdUWTwkt)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 137,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436457
-    },
-    {
-      "key": "185.115.161.234:9443",
-      "link": "tg://proxy?server=185.115.161.234&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 136,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443645
-    },
-    {
-      "key": "185.115.161.240:77777",
-      "link": "tg://proxy?server=185.115.161.240&port=77777&secret=EERigv%2F%2F%2F%2F%2F%2F+AAA%2F%2FgAAA%3D%3D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": null,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443644
-    },
-    {
-      "key": "185.115.161.250:9443",
-      "link": "tg://proxy?server=185.115.161.250&port=9443&secret=dd104462821249bd7ac519130220c25d09)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 134,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436433
-    },
-    {
-      "key": "185.115.161.232:9443",
-      "link": "tg://proxy?server=185.115.161.232&port=9443&secret=3RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt03RYDAQIAAQAB_AMDhuJMOt0%3D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 124,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436426
-    },
-    {
-      "key": "185.3.200.173:4455",
-      "link": "tg://proxy?server=185.3.200.173&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 135,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443642
-    },
-    {
-      "key": "185.3.200.176:2053",
-      "link": "tg://proxy?server=185.3.200.176&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 140,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443641
-    },
-    {
-      "key": "185.115.161.45:9443",
-      "link": "tg://proxy?server=185.115.161.45&port=9443&secret=dd1603010200010001fc030386e24c3add)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 129,
-      "flag": "🇮🇷",
-      "ts": 1770791989.44364
-    },
-    {
-      "key": "185.3.200.173:4455",
-      "link": "tg://proxy?server=185.3.200.173&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 137,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443639
-    },
-    {
-      "key": "185.3.200.170:4055",
-      "link": "tg://proxy?server=185.3.200.170&port=4055&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 132,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436383
-    },
-    {
-      "key": "185.3.200.18:2053",
-      "link": "tg://proxy?server=185.3.200.18&port=2053&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 127,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436371
-    },
-    {
-      "key": "91.239.192.52:65535",
-      "link": "tg://proxy?server=91.239.192.52&port=65535&secret=EERigv%2F%2F%2F%2F%2F%2F+AAA%2F%2FgAAA%3D%3D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 124,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436364
-    },
-    {
-      "key": "185.115.161.248:9443",
-      "link": "tg://proxy?server=185.115.161.248&port=9443&secret=dd104462821249bd7ac519130220c25d09)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 127,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436355
-    },
-    {
-      "key": "185.115.161.244:9443",
-      "link": "tg://proxy?server=185.115.161.244&port=9443&secret=dd104462821249bd7ac519130220c25d09)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 135,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436347
-    },
-    {
-      "key": "91.239.192.31:3443",
-      "link": "tg://proxy?server=91.239.192.31&port=3443&secret=7lLIZ9x1mD-vS7N_kdUWTwkt",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 135,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436336
-    },
-    {
-      "key": "www.duhpro.makeup:8443",
-      "link": "tg://proxy?server=www.duhpro.makeup&port=8443&secret=dd79e7010200010007f0030386e24c3add",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 622,
-      "flag": "🇬🇧",
-      "ts": 1770791989.4436328
-    },
-    {
-      "key": "185.3.200.136:4455",
-      "link": "tg://proxy?server=185.3.200.136&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 139,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443632
-    },
-    {
-      "key": "185.3.200.185:4455",
-      "link": "tg://proxy?server=185.3.200.185&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 135,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436312
-    },
-    {
-      "key": "185.3.200.185:4455",
-      "link": "tg://proxy?server=185.3.200.185&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 138,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436302
-    },
-    {
-      "key": "91.239.192.161:65535",
-      "link": "tg://proxy?server=91.239.192.161&port=65535&secret=EERigv%2F%2F%2F%2F%2F%2F+AAA%2F%2FgAAA%3D%3D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 138,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436295
-    },
-    {
-      "key": "185.3.200.186:5566",
-      "link": "tg://proxy?server=185.3.200.186&port=5566&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 138,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436288
-    },
-    {
-      "key": "185.3.200.186:2054",
-      "link": "tg://proxy?server=185.3.200.186&port=2054&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 133,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436278
-    },
-    {
-      "key": "91.239.192.213:15",
-      "link": "tg://proxy?server=91.239.192.213&port=15&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 141,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436266
-    },
-    {
-      "key": "185.3.200.186:2054",
-      "link": "tg://proxy?server=185.3.200.186&port=2054&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 140,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443626
-    },
-    {
-      "key": "185.3.200.136:2053",
-      "link": "tg://proxy?server=185.3.200.136&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 136,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436252
-    },
-    {
-      "key": "185.3.200.136:2053",
-      "link": "tg://proxy?server=185.3.200.136&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 147,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436247
-    },
-    {
-      "key": "185.215.247.60:4455",
-      "link": "tg://proxy?server=185.215.247.60&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 133,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443624
-    },
-    {
-      "key": "185.215.247.111:2053",
-      "link": "tg://proxy?server=185.215.247.111&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 132,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436228
-    },
-    {
-      "key": "185.215.247.60:4455",
-      "link": "tg://proxy?server=185.215.247.60&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 130,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436224
-    },
-    {
-      "key": "91.239.192.213:15",
-      "link": "tg://proxy?server=91.239.192.213&port=15&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 135,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436216
-    },
-    {
-      "key": "185.215.247.111:4455",
-      "link": "tg://proxy?server=185.215.247.111&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 134,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436207
-    },
-    {
-      "key": "185.3.200.191:4455",
-      "link": "tg://proxy?server=185.3.200.191&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 124,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436195
-    },
-    {
-      "key": "185.3.200.185:2053",
-      "link": "tg://proxy?server=185.3.200.185&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 134,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436185
-    },
-    {
-      "key": "185.3.200.185:2053",
-      "link": "tg://proxy?server=185.3.200.185&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 131,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436176
-    },
-    {
-      "key": "185.3.200.191:2053",
-      "link": "tg://proxy?server=185.3.200.191&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 135,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436166
-    },
-    {
-      "key": "185.3.200.136:4455",
-      "link": "tg://proxy?server=185.3.200.136&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 135,
-      "flag": "🇮🇷",
-      "ts": 1770791989.443615
-    },
-    {
-      "key": "185.215.247.60:2053",
-      "link": "tg://proxy?server=185.215.247.60&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 132,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436142
-    },
-    {
-      "key": "185.215.247.111:2053",
-      "link": "tg://proxy?server=185.215.247.111&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
-      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/8371",
-      "latency": 140,
-      "flag": "🇮🇷",
-      "ts": 1770791989.4436133
     }
   ],
   "files": [
+    {
+      "name": "🇨🇦🇩🇪🇮🇹.npvt",
+      "ext": "NPVT",
+      "channel": "i SHARΞ WIN™",
+      "link": "https://t.me/isharewin/20518",
+      "ts": 1770804333.1954155
+    },
+    {
+      "name": "👑💎.npvt",
+      "ext": "NPVT",
+      "channel": "i SHARΞ WIN™",
+      "link": "https://t.me/isharewin/20519",
+      "ts": 1770804332.89267
+    },
+    {
+      "name": "پر سرعت ❤️‍🔥.npvt",
+      "ext": "NPVT",
+      "channel": "i SHARΞ WIN™",
+      "link": "https://t.me/isharewin/20522",
+      "ts": 1770804316.7087219
+    },
+    {
+      "name": "ملی شکن پر سرعت ❤️‍🔥.npvt",
+      "ext": "NPVT",
+      "channel": "i SHARΞ WIN™",
+      "link": "https://t.me/isharewin/20523",
+      "ts": 1770804316.455528
+    },
+    {
+      "name": "malas.npvt",
+      "ext": "NPVT",
+      "channel": "i SHARΞ WIN™",
+      "link": "https://t.me/isharewin/20525",
+      "ts": 1770804316.1905212
+    },
     {
       "name": "@Cooonfig❄️🔥(همه نتا4303موشکی).npvt",
       "ext": "NPVT",
@@ -3308,41 +3403,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/1477",
       "ts": 1770752229.52958
-    },
-    {
-      "name": "@PlanB_net 8️⃣8️⃣9️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1479",
-      "ts": 1770752222.3264208
-    },
-    {
-      "name": "@PlanB_net 8️⃣9️⃣0️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1480",
-      "ts": 1770752221.9354978
-    },
-    {
-      "name": "@PlanB_net 8️⃣9️⃣1️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1481",
-      "ts": 1770752221.6367023
-    },
-    {
-      "name": "@PlanB_net 8️⃣9️⃣2️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1482",
-      "ts": 1770752221.3330977
-    },
-    {
-      "name": "@planB_net 8️⃣9️⃣3️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1483",
-      "ts": 1770752221.0431135
     }
   ]
 }

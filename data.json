@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiAiMTA4LjE2Mi4xOTIuNjMiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiZGwyLjEyNy4wLjAuMS5cdTA0MzJcdTA0M2VcdTA0NDFcdTA0NDJcdTA0MzVcdTA0Mzljb250cm9sLlx1NjNhN1x1NTIzNi5rXHUwNDNlXHUwNDNkXHUwNDQyXHUwNDQwXHUwNDNlXHUwNDNiXHUwNDRjXHU4ZmIyXHU5MDU0XHU2MWYyXHU3ZjcwLmNcdTA0MzJcdTA0M2VcdTA0MzRcdTA0M2FcdTA0MzBoXHUwNDNlLndvbmthY2FwaXRhbm8uYnV6ei4iLCAiaWQiOiAiYjI0MTNhNWEtZDVkMC00NDQ3LWI2ZDctNmRiY2QyOTg5YTM1IiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi92bWVzcyIsICJwb3J0IjogIjgwIiwgInNjeSI6ICJub25lIiwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogIiIsICJ2IjogIjIiLCAicHMiOiAiQHYycmF5c19oYSA4NTM3In0```",
+      "latency": 14,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/9100",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770977251.944983
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiAiMTk4LjQxLjE5My4xODEiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiMTI3LjAuMC4xLm1yYXJzaGEua1x1MDQzZVx1MDQzY1x1MDQzZFx1MDQzMFx1MDQ0Mlx1MDQzMDAuXHU2MjNmXHU5NTkzXHU5YTBlXHU4MWVhXHU4ODRjXHU4ZWNhXHU3Njg0XHU0ZWJhLmJcdTA0MzVcdTA0M2JcdTA0M2VcdTA0NDFcdTA0MzhcdTA0M2ZcdTA0MzVcdTA0MzRcdTA0MzhcdTA0NDFcdTA0NDJcdTA0NGIuYmlrZXJpZGVycy53b25rYWNhcGl0YW5vLmJ1enouIiwgImlkIjogIjkyNzkxNjQyLTE0NzEtNGI5My05ODBhLTgxMDMwOTg1ZjNjZSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvdm1lc3MiLCAicG9ydCI6ICI4MCIsICJzY3kiOiAibm9uZSIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICIiLCAidiI6ICIyIiwgInBzIjogIkB2MnJheXNfaGEgODUzNCJ9",
+      "latency": 17,
+      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/9099",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1770977251.3432524
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@92.53.191.238:2096?path=%2F%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=sni.jpmj.dev&fp=chrome&type=ws&allowInsecure=0&sni=sni.jpmj.dev#%D8%AC%D9%88%DB%8C%D9%86%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%40shankamil",
       "latency": 9,
@@ -2979,26 +2999,6 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1770912052.0868342
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://YWVzLTI1Ni1nY206eVdJeXVxM0hjMndsc3YwaQ==@155.138.158.179:80#configraygan102",
-      "latency": 17,
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/8694",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770912051.6769795
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e07c6a8b-f67d-4297-bc8f-31855eef57a8@www.speedtest.net:8443?path=%2F&security=tls&encryption=none&alpn=h2,http/1.1&fp=chrome&type=ws&sni=Tet.mehspeedtest.com#configraygan140",
-      "latency": 26,
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/8693",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770912048.2291641
     }
   ],
   "proxies": [

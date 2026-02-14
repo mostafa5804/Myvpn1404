@@ -1,6 +1,76 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://991519c1-3680-49b7-bb9f-9029a7a39067@c2.s-sub.org:8443?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=1&host=backup.f-sub.cfd&fp=chrome&type=ws&allowInsecure=1&sni=backup.f-sub.cfd#%40shankamil%20%D8%B9%D8%B6%D9%88%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%85%D8%AA%D8%B5%D9%84%20%D8%A8%D9%85%D9%88%D9%86%DB%8C%D8`%`AF`",
+      "latency": 652,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9469",
+      "flag": "🇸🇨",
+      "country": "Seychelles",
+      "ts": 1771065324.6021101
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://fe430457-84e1-49ec-a21f-4c5505015aea@a6.outbout.shop:8081?security=none&encryption=none&host=anten.ir&headerType=http&type=tcp#%40shankamil%20%D8%B9%D8%B6%D9%88%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%85%D8%AA%D8%B5%D9%84%20%D8%A8%D9%85%D9%88%D9%86%DB%8C%D8%AF",
+      "latency": 1374,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9468",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1771065323.5416677
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiIxNDAuMjQ4LjEyOC4xODYiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImVjaG9wcmVzcy1ib3QuZ2xvYmFsLnNzbC5mYXN0bHkubmV0IiwiaWQiOiIyOWI0YzFkMy1hY2NlLTQ3Y2EtOTJjYi1lYTY5YThiYWMzNzMiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiIvP2VkXHUwMDNkMjA0OCIsInBvcnQiOiI4MCIsInBzIjoiQHNoYW5rYW1pbCDYudi22Ygg2obZhtmEINi024zYryDZhdiq2LXZhCDYqNmF2YjZhtuM2K8iLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Ii0tLSIsInYiOiIyIn0=",
+      "latency": 1,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9467",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1771065320.2560523
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://991519c1-3680-49b7-bb9f-9029a7a39067@c1.s-sub.org:8443?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=1&host=backup.f-sub.cfd&fp=chrome&type=ws&allowInsecure=1&sni=backup.f-sub.cfd#%40shankamil%20%D8%B9%D8%B6%D9%88%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%85%D8%AA%D8%B5%D9%84%20%D8%A8%D9%85%D9%88%D9%86%DB%8C%D8%AF",
+      "latency": 246,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9466",
+      "flag": "🇦🇪",
+      "country": "United Arab Emirates",
+      "ts": 1771065319.8501916
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://3ffb5c28-97b3-4056-c72e-ba0de6272c05@3.79.57.168:443?security=&encryption=none&headerType=&type=tcp#shankamil",
+      "latency": 110,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9465",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1771065317.7155259
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://db27952d-9de6-4a90-d508-0d2ab314d2f4@18.192.42.228:18694?security=&encryption=none&headerType=&type=tcp#shankamil",
+      "latency": 110,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9464",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1771065317.1956968
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://ed48e68e-700c-4e2c-9512-f0b7ebb94661@s4.iranman.shop:9600?security=&encryption=none&headerType=http&type=tcp#shankamil",
+      "latency": 345,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9463",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1771065316.7331007
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@18.194.65.60:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 207,
@@ -1999,86 +2069,6 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "ts": 1770979883.484794
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiAiMTA4LjE2Mi4xOTIuNjMiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiZGwyLjEyNy4wLjAuMS5cdTA0MzJcdTA0M2VcdTA0NDFcdTA0NDJcdTA0MzVcdTA0Mzljb250cm9sLlx1NjNhN1x1NTIzNi5rXHUwNDNlXHUwNDNkXHUwNDQyXHUwNDQwXHUwNDNlXHUwNDNiXHUwNDRjXHU4ZmIyXHU5MDU0XHU2MWYyXHU3ZjcwLmNcdTA0MzJcdTA0M2VcdTA0MzRcdTA0M2FcdTA0MzBoXHUwNDNlLndvbmthY2FwaXRhbm8uYnV6ei4iLCAiaWQiOiAiYjI0MTNhNWEtZDVkMC00NDQ3LWI2ZDctNmRiY2QyOTg5YTM1IiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi92bWVzcyIsICJwb3J0IjogIjgwIiwgInNjeSI6ICJub25lIiwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogIiIsICJ2IjogIjIiLCAicHMiOiAiQHYycmF5c19oYSA4NTM3In0```",
-      "latency": 14,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/9100",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770977251.944983
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiAiMTk4LjQxLjE5My4xODEiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiMTI3LjAuMC4xLm1yYXJzaGEua1x1MDQzZVx1MDQzY1x1MDQzZFx1MDQzMFx1MDQ0Mlx1MDQzMDAuXHU2MjNmXHU5NTkzXHU5YTBlXHU4MWVhXHU4ODRjXHU4ZWNhXHU3Njg0XHU0ZWJhLmJcdTA0MzVcdTA0M2JcdTA0M2VcdTA0NDFcdTA0MzhcdTA0M2ZcdTA0MzVcdTA0MzRcdTA0MzhcdTA0NDFcdTA0NDJcdTA0NGIuYmlrZXJpZGVycy53b25rYWNhcGl0YW5vLmJ1enouIiwgImlkIjogIjkyNzkxNjQyLTE0NzEtNGI5My05ODBhLTgxMDMwOTg1ZjNjZSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvdm1lc3MiLCAicG9ydCI6ICI4MCIsICJzY3kiOiAibm9uZSIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICIiLCAidiI6ICIyIiwgInBzIjogIkB2MnJheXNfaGEgODUzNCJ9",
-      "latency": 17,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/9099",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770977251.3432524
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@92.53.191.238:2096?path=%2F%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=sni.jpmj.dev&fp=chrome&type=ws&allowInsecure=0&sni=sni.jpmj.dev#%D8%AC%D9%88%DB%8C%D9%86%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%40shankamil",
-      "latency": 9,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/9093",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770976517.2989585
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://05dc09d5-5c56-454b-a34e-6ef743d91e1a@94.156.154.88:8443?security=reality&encryption=none&pbk=3JGwSDrfkiCPdU3rvQP5m0z4Ag_UB_2w8Qq3VMXmo28&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=yandex.ru&sid=abc123#%D8%AC%D9%88%DB%8C%D9%86%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%40shankamil",
-      "latency": 174,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/9092",
-      "flag": "🇳🇱",
-      "country": "The Netherlands",
-      "ts": 1770976516.9093602
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@108.162.195.45:2096?path=%2F45.76.183.217%3D49292&security=tls&encryption=none&insecure=1&host=hetz.x-smm.com&type=ws&allowInsecure=1&sni=hetz.x-smm.com#shankamil",
-      "latency": 9,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/9091",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770976516.3894231
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://64b5d863-81d6-48ea-9222-82030616fa63@94.143.231.58:443?security=reality&encryption=none&pbk=qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9eb31eb7572c0882#shankamil",
-      "latency": 156,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/9090",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1770976516.054846
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://1cf63b4c-120e-482e-b097-47c79c3c63ae@dl.i-farm.ir:80?path=%2Fsite&security=none&encryption=none&host=lllllililililliiiliillilililili.global.ssl.fastly.net&type=ws#shankamil",
-      "latency": 916,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/9089",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770976515.559323
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://891300bc-11b2-4b24-8056-b329b098888b@borikted.uk:443?security=reality&encryption=none&pbk=nB_v48IVDHr2iFctMv2nFh_QjoZc4msXmHw362IIiS8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=replit.com&sid=22a0a4382482#shankamil",
-      "latency": 207,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/9088",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1770976514.2025309
     }
   ],
   "proxies": [
@@ -2985,6 +2975,20 @@
   ],
   "files": [
     {
+      "name": "14 Feb 🇩🇪 پرسرعت.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/43101",
+      "ts": 1771065391.0025883
+    },
+    {
+      "name": "@planB_net 9️⃣7️⃣4️⃣.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/1577",
+      "ts": 1771065275.3319058
+    },
+    {
       "name": "💜@Cooonfig👸🚀(همه نتا 4320موشکی).npvt",
       "ext": "NPVT",
       "channel": "Cooonfig",
@@ -3319,20 +3323,6 @@
       "channel": "اینترنت ازاد",
       "link": "https://t.me/mitivpn/15279",
       "ts": 1771009226.9689279
-    },
-    {
-      "name": "VPN-ALL-NETWORK🇹🇷🇩🇪🇨🇵🇳🇱🇯🇵🔥.npvt",
-      "ext": "NPVT",
-      "channel": "My Premium 😎",
-      "link": "https://t.me/mypremium98/4001",
-      "ts": 1771009216.3633366
-    },
-    {
-      "name": "@planB_net 9️⃣6️⃣3️⃣.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1565",
-      "ts": 1771009202.653698
     }
   ]
 }

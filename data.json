@@ -2,6 +2,36 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@brenna.ns.cloudflare.com:2096?path=%2F45.76.183.217%3D49292&security=tls&encryption=none&insecure=0&host=hetz.x-smm.com&fp=chrome&type=ws&allowInsecure=0&sni=hetz.x-smm.com#%D8%AC%D9%88%DB%8C%D9%86%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%40shankamil`",
+      "latency": 69,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9437",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1771052205.9581468
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://dd6af632-e4bb-400a-922f-43f75ec89d64@104.17.148.186:443?mode=auto&path=%2Fv1%2Fapi%2Fsync%2Ff47ac10b58cc4372a5670e02b2c3d479&security=tls&alpn=h2&encryption=none&insecure=0&host=api-ch.nping.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=api-ch.nping.ir#%D8%AC%D9%88%DB%8C%D9%86%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%40shankamil",
+      "latency": 2,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9436",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1771052205.5573564
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e765eb5b-8442-40e3-9532-857ba5ececa7@190.93.245.94:443?mode=gun&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&type=grpc&allowInsecure=0&sni=vbox.ping-box.com#%D8%AC%D9%88%DB%8C%D9%86%20%DA%86%D9%86%D9%84%20%D8%B4%DB%8C%D8%AF%20%D9%82%D8%B7%20%D9%86%D8%B4%DB%8C%D8%AF%40shankamil",
+      "latency": 2,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9435",
+      "flag": "🇨🇷",
+      "country": "Costa Rica",
+      "ts": 1771052205.252709
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://a26bbed7-a286-4840-84bc-dc102c526777@speedtest.net:80/?mode=auto&path=%2Fcategory%2Fmusic&security=none&encryption=none&host=iran.boltboost.gg&type=xhttp#%40v2rays_ha%208710```",
       "latency": 104,
       "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
@@ -2309,86 +2339,6 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1770969287.4251263
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJ2IjogIjIiLCAiYWRkIjogIjEwNC4xNy4xNDcuMjIiLCAicG9ydCI6ICI4MCIsICJpZCI6ICJhNWM0MmUwMi05YTJiLTRlMDAtODcwZi1jMTRiNThhZWZmYjEiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIjMwNDljLm9saWVsaWVsaWUuc3RvcmUuIiwgInBhdGgiOiAiLz9lZD0yMDQ4IiwgInRscyI6ICIiLCAic25pIjogIjMwNDljLm9saWVsaWVsaWUuc3RvcmUiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgInBzIjogIkB2MnJheXNfaGEgODQ5OSJ9```",
-      "latency": 2,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/9024",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770962990.9271996
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiAiOTQuMTU2LjE4MS4xOTAiLCAiYWlkIjogMCwgImZwIjogImNocm9tZSIsICJob3N0IjogImltYWZha2UubG9ja2VyIiwgImlkIjogImIyZGE5OTIwLWIwYTctNDM1NC05ZTI2LTM4MzNhYjhkMDBkMCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvc3BlZWR0ZXN0IiwgInBvcnQiOiA0NjEwMywgInNuaSI6ICJpbWFmYWtlLmxvY2tlciIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAibm9uZSIsICJ2IjogMiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAicHMiOiAiQHYycmF5c19oYSA4NDk4In0",
-      "latency": 135,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/9023",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1770962990.6234505
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiAiOTUuMjE2LjE4My4xMTMiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjAxOGY0NDU5LTA1NmUtNGM0MS05MGNlLTEyY2JjMmM2NzBiMiIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicG9ydCI6ICI0MjE1MiIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiIsICJwcyI6ICJAdjJyYXlzX2hhIDg0OTcifQ",
-      "latency": 131,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/9022",
-      "flag": "🇫🇮",
-      "country": "Finland",
-      "ts": 1770962990.1318316
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiAiNDUuOTUuMjQxLjIzOCIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJob3N0IjogInZpcC5zb2hleWxmcmVlZG9tLnNpdGUiLCAiaWQiOiAiZDRkNWQyNDYtZDkxMy00YzcyLWE2OTMtMjIxN2NjY2NkNWJiIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9uZ2lueDU1MTEvIiwgInBvcnQiOiAiODQ0MyIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAidmlwLnNvaGV5bGZyZWVkb20uc2l0ZSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiIiwgInYiOiAiMiIsICJwcyI6ICJAdjJyYXlzX2hhIDg0OTYifQ",
-      "latency": 3,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/9021",
-      "flag": "🇮🇲",
-      "country": "Isle of Man",
-      "ts": 1770962989.7219925
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiAiMTg4LjExNC45OC4wIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogIm5hc25ldC0xNjIxOTEwOTkuc2hhcmdoZGFpbHkuY28iLCAiaWQiOiAibmFzbmV0IiwgImluc2VjdXJlIjogIjAiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLz9lZD0yNTYwIiwgInBvcnQiOiAiODA4MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICItLS0iLCAidiI6ICIyIiwgInBzIjogIkB2MnJheXNfaGEgODQ5NSJ9",
-      "latency": 3,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/9020",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770962989.4187863
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiAiOTUuMjExLjQ3LjE5MSIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJ0ZWxld2ViaW9uLmNvbSIsICJpZCI6ICJjNjJiOTA0YS1mZTg3LTQzY2ItYWVmYy1hMDI4ZTdmNWQ0ZGQiLCAibmV0IjogInRjcCIsICJwYXRoIjogIi8iLCAicG9ydCI6ICI4MDgwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogImh0dHAiLCAidiI6ICIyIiwgInBzIjogIkB2MnJheXNfaGEgODQ5NCJ9",
-      "latency": 102,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/9019",
-      "flag": "🇳🇱",
-      "country": "The Netherlands",
-      "ts": 1770962989.1218042
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiAiMTkwLjkzLjI0Ny4xOSIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiZDQyZjA3MGYtMzBlMC01NDY1LWE0ZDQtZjU2MWY2YjRmMjFlIiwgIm5ldCI6ICJncnBjIiwgInBhdGgiOiAidm1lc3MtZ3JwYyIsICJwb3J0IjogIjQ0MyIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiZnIyLnZtZXNzLnNpdGUiLCAidGxzIjogInRscyIsICJ0eXBlIjogIiIsICJ2IjogIjIiLCAicHMiOiAiQHYycmF5c19oYSA4NDkzIn0",
-      "latency": 3,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/9018",
-      "flag": "🇨🇷",
-      "country": "Costa Rica",
-      "ts": 1770962988.7130575
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJ2IjogIjIiLCAiYWRkIjogIjE3Mi42Ny4yMDQuODQiLCAicG9ydCI6ICI4MDgwIiwgImlkIjogIm5hc25ldCIsICJhaWQiOiAiMCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAid3MiLCAiaG9zdCI6ICJuYXNuZXQtNTExOTUyNDI0Lm1jaXRlbC5jbyIsICJwYXRoIjogIi9uYXNuZXQvY2RuIiwgInBzIjogIkB2MnJheXNfaGEgODQ5MiJ9",
-      "latency": 3,
-      "channel": "فیلترشکن کانفیگ پروکسی ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/9017",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1770962988.2259805
     }
   ],
   "proxies": [
@@ -3295,6 +3245,13 @@
   ],
   "files": [
     {
+      "name": "14 Feb 🚀 جدید.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/43077",
+      "ts": 1771052271.8630297
+    },
+    {
       "name": "Fu ll.npvt",
       "ext": "NPVT",
       "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
@@ -3636,13 +3593,6 @@
       "channel": "کانفیگ ملی / config meli",
       "link": "https://t.me/Npvtunnel_vip/773",
       "ts": 1771004721.4069803
-    },
-    {
-      "name": "@v2rays_ha 297.npvt",
-      "ext": "NPVT",
-      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
-      "link": "https://t.me/v2rays_ha/2186",
-      "ts": 1771002775.208156
     }
   ]
 }

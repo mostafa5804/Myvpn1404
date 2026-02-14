@@ -2,6 +2,46 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://ff6fb512-147d-419a-9672-e131133f7189@5.199.163.42:8443?security=reality&encryption=none&pbk=L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=tradingview.com&sid=e0ef3d5c0aacb615#shankamil",
+      "latency": 126,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9546",
+      "flag": "🇱🇹",
+      "country": "Lithuania",
+      "ts": 1771087166.907454
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://18f72be7-0651-4037-928b-8a309d685796@game.pineappled.org:443?security=reality&encryption=none&pbk=qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9eb31eb7572c0882#shankamil",
+      "latency": 126,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9545",
+      "flag": "🇫🇮",
+      "country": "Finland",
+      "ts": 1771087166.4182084
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e8b1500b-e9e8-5492-8312-f4eadf7d0767@162.19.10.94:443?security=tls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=nasnet-162191094-direct.sharghdaily.co#shankamil",
+      "latency": 99,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9544",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1771087166.0012875
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://991519c1-3680-49b7-bb9f-9029a7a39067@vip-80.f-sub.cfd:1517?security=none&encryption=none&host=varzesh3.com&headerType=http&type=tcp#shankamil",
+      "latency": 168,
+      "channel": "کانفیگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/9543",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1771087165.6060715
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://526d0c3f-4af4-4728-bbab-d48a856aa064@sul2.vajopw.ir:43968?security=none&encryption=none&host=zula.ir&headerType=http&type=tcp#%40BugFreeNet",
       "latency": 190,
       "channel": "🔱BugFreeNet🔱",
@@ -2089,16 +2129,6 @@
       "flag": "🇨🇷",
       "country": "Costa Rica",
       "ts": 1771001850.962083
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@18.192.246.137:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 165,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/9195",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1770998827.6641908
     }
   ],
   "proxies": [

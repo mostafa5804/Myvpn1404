@@ -2489,49 +2489,27 @@
       "flag": "🇪🇬",
       "country": "Egypt",
       "ts": 1771094715.217841
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://ff6fb512-147d-419a-9672-e131133f7189@5.199.163.42:8443?security=reality&encryption=none&pbk=L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=tradingview.com&sid=e0ef3d5c0aacb615#shankamil",
-      "latency": 126,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/9546",
-      "flag": "🇱🇹",
-      "country": "Lithuania",
-      "ts": 1771087166.907454
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://18f72be7-0651-4037-928b-8a309d685796@game.pineappled.org:443?security=reality&encryption=none&pbk=qFBIVGsvXTMeJcdJz6GiL7DG0XNhCg7rItza7t0qTgU&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9eb31eb7572c0882#shankamil",
-      "latency": 126,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/9545",
-      "flag": "🇫🇮",
-      "country": "Finland",
-      "ts": 1771087166.4182084
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e8b1500b-e9e8-5492-8312-f4eadf7d0767@162.19.10.94:443?security=tls&encryption=none&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=nasnet-162191094-direct.sharghdaily.co#shankamil",
-      "latency": 99,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/9544",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1771087166.0012875
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://991519c1-3680-49b7-bb9f-9029a7a39067@vip-80.f-sub.cfd:1517?security=none&encryption=none&host=varzesh3.com&headerType=http&type=tcp#shankamil",
-      "latency": 168,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/9543",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1771087165.6060715
     }
   ],
   "proxies": [
+    {
+      "key": "cdn.koukicohost1.co.uk:443",
+      "link": "tg://proxy?server=cdn.koukicohost1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/9904",
+      "latency": 132,
+      "flag": "🇮🇷",
+      "ts": 1771174480.9425387
+    },
+    {
+      "key": "cdn.koukicohost1.co.uk:443",
+      "link": "tg://proxy?server=cdn.koukicohost1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
+      "channel": "فیلتر شکن اختصاصی و کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/9904",
+      "latency": 230,
+      "flag": "🇮🇷",
+      "ts": 1771174480.9425364
+    },
     {
       "key": "185.3.200.136:2053",
       "link": "tg://proxy?server=185.3.200.136&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
@@ -3413,27 +3391,16 @@
       "latency": 115,
       "flag": "🇮🇷",
       "ts": 1771167105.820916
-    },
-    {
-      "key": "fast.ir4-tv.info:443",
-      "link": "tg://proxy?server=fast.ir4-tv.info&port=443&secret=ProxyQavi____ProxymelgACM4eFlnUldQOFpvTHVwZmNpaVI2ZkJFNDJMSXJxUW1yT2s4YzRCaVRaLi11cGRhdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&bot=@mtpro_xyz_bot&channel=@mtpro_xyz",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/9884",
-      "latency": 330,
-      "flag": "🇫🇮",
-      "ts": 1771167105.820915
-    },
-    {
-      "key": "172.65.143.46:25565",
-      "link": "tg://proxy?server=172.65.143.46&port=25565&secret=dd79e344818749bd7ac519130220c25d09&bot=@mtpro_xyz_bot&channel=@mtpro_xyz)",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/9884",
-      "latency": 2,
-      "flag": "🇨🇦",
-      "ts": 1771167105.820914
     }
   ],
   "files": [
+    {
+      "name": "Super ⚡.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت ازاد",
+      "link": "https://t.me/mitivpn/15303",
+      "ts": 1771174421.1560078
+    },
     {
       "name": "@shankamil NTMELI.npv.npvt",
       "ext": "NPVT",
@@ -3776,13 +3743,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/1592",
       "ts": 1771131599.2407632
-    },
-    {
-      "name": "@v2rays_ha 314.npvt",
-      "ext": "NPVT",
-      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
-      "link": "https://t.me/v2rays_ha/2230",
-      "ts": 1771126025.2480643
     }
   ]
 }

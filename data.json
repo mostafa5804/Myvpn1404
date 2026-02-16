@@ -2969,39 +2969,18 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1771191160.058543
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://05dc09d5-5c56-454b-a34e-6ef743d91e1a@netherland.boot-lee.ru:8443?security=reality&encryption=none&pbk=3JGwSDrfkiCPdU3rvQP5m0z4Ag_UB_2w8Qq3VMXmo28&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=yandex.ru&sid=abc123#configraygan-46-%F0%9F%87%B3%F0%9F%87%B1",
-      "latency": 109,
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/10013",
-      "flag": "🏳️",
-      "country": "Unknown",
-      "ts": 1771188573.700782
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://05dc09d5-5c56-454b-a34e-6ef743d91e1a@finland.boot-lee.ru:8443?security=reality&encryption=none&pbk=3JGwSDrfkiCPdU3rvQP5m0z4Ag_UB_2w8Qq3VMXmo28&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=sun6-22.userapi.com&sid=abc323#configraygan-45-%F0%9F%87%AB%F0%9F%87%AE",
-      "latency": 138,
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/10012",
-      "flag": "🏳️",
-      "country": "Unknown",
-      "ts": 1771188573.297393
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://05dc09d5-5c56-454b-a34e-6ef743d91e1a@144.31.165.5:8443?security=reality&encryption=none&pbk=3JGwSDrfkiCPdU3rvQP5m0z4Ag_UB_2w8Qq3VMXmo28&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=sun6-22.userapi.com&sid=abc323#configraygan-43-%F0%9F%87%A9%F0%9F%87%AA",
-      "latency": 87,
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/10011",
-      "flag": "🏳️",
-      "country": "Unknown",
-      "ts": 1771188572.7919812
     }
   ],
   "proxies": [
+    {
+      "key": "185.3.200.185:2053",
+      "link": "tg://proxy?server=185.3.200.185&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/10438",
+      "latency": 114,
+      "flag": "🇮🇷",
+      "ts": 1771275237.3004227
+    },
     {
       "key": "16.3pita.com:25565",
       "link": "tg://proxy?server=16.3pita.com&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
@@ -3892,18 +3871,16 @@
       "latency": 28,
       "flag": "🇺🇸",
       "ts": 1771270680.7625866
-    },
-    {
-      "key": "4.3pita.com:25565",
-      "link": "tg://proxy?server=4.3pita.com&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/10386",
-      "latency": 76,
-      "flag": "🇨🇦",
-      "ts": 1771270602.6305614
     }
   ],
   "files": [
+    {
+      "name": "@shankamil.npvچهل روز غمبارایران.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ ملی شکن",
+      "link": "https://t.me/shankamil/4456",
+      "ts": 1771275222.5277164
+    },
     {
       "name": "@PlanB_net #42.npvt",
       "ext": "NPVT",
@@ -4246,13 +4223,6 @@
       "channel": "اینترنت آزاد | Merlin ViP",
       "link": "https://t.me/Merlin_ViP/43195",
       "ts": 1771249524.3243155
-    },
-    {
-      "name": "🔰@PewezaVPN(VIP)3.npvt",
-      "ext": "NPVT",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/varvpn1/3265",
-      "ts": 1771249469.402715
     }
   ]
 }

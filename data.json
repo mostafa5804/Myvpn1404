@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://bdf97c06-ae1f-47e9-b47a-9d9ff47b5820@zone.cn.lopzo.ir:21771/?security=none&encryption=none&host=skyroom.online&headerType=http&type=tcp#%40v2rays_ha%209528",
+      "latency": 516,
+      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/10770",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1771356499.0192108
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.39.91.2:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 162,
@@ -2299,76 +2309,6 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1771270638.869738
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@51.44.195.22:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 156,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/10382",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1771268962.880573
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://686c62d9-17a7-43c9-a40a-f6747df60a9f@172.66.47.45:2096/?path=%2F%3FTELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI%3Fed%3D512&security=tls&encryption=none&insecure=0&host=ca.adobe-connect.top&type=ws&allowInsecure=0&sni=ca.adobe-connect.top#%40v2rays_ha%209254```",
-      "latency": 2,
-      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/10380",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1771268911.7033992
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f8ae018b-b84d-4c9b-b03b-4642c3a25977@172.66.128.70:2052/?type=ws&host=ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.&path=%2F%3Fed#%40v2rays_ha%209247",
-      "latency": 2,
-      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/10379",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1771268911.29835
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5e62ddcf-78c9-4b15-803a-436c8c839ddc@104.18.32.47:2052/?type=ws&host=oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.&path=%2F#%40v2rays_ha%209246",
-      "latency": 1,
-      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/10378",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1771268910.894653
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e31085f9-7f55-4a7d-b00e-ce94149477cb@104.21.227.134:80/?type=ws&host=PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO&path=%2F#%40v2rays_ha%209244",
-      "latency": 19,
-      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/10377",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1771268910.5245755
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5142e523-1b44-4f22-8e51-5b52dd64cf7d@mx1.tehrantolidi.ir:80/?path=%2Fdownload&security=none&encryption=none&host=qeyme.global.ssl.fastly.net&type=ws#%40v2rays_ha%209242",
-      "latency": 309,
-      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/10376",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "ts": 1771268910.185679
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://02ac0623-f6d6-4204-abef-019441ce7529@mx2.tehrantolidi.ir:80/?path=%2Fdownload&security=none&encryption=none&host=moeinipoor.global.ssl.fastly.net&type=ws#%40v2rays_ha%209241",
-      "latency": 253,
-      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
-      "t_link": "https://t.me/myvpn1404/10375",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1771268909.552472
     }
   ],
   "proxies": [

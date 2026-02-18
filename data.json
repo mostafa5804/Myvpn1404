@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@35.156.151.126:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 148,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/11006",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1771409507.6695375
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://e4677c63-8bd8-4ac5-91fe-af6ed7876728@cdn4.superip.ir:2087/?path=%2Fpath&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=exit.primenet4.shop&fp=chrome&type=ws&allowInsecure=0&sni=exit.primenet4.shop#%40v2rays_ha%209725",
       "latency": 276,
@@ -2989,16 +2999,6 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1771325990.9759667
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://b04b9985-25ce-4c33-b2f7-fbd8d1b21347@fans2.mahoshid.ir:45471?security=none&encryption=none&headerType=none&type=tcp#%40vpnbaz%20%F0%9F%8D%AC",
-      "latency": 304,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/10560",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1771325990.596352
     }
   ],
   "proxies": [

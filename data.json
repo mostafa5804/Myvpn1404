@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://260f19e2-41c2-4f0c-870f-ab7e28e72ef6@ip.shakhle.ir:2083?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=ipv4.yasharteam.com&fp=chrome&type=ws&allowInsecure=0&sni=ipv4.yasharteam.com#%40vpnbaz%20%F0%9F%8F%B3%EF%B8%8F```",
+      "latency": 198,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/11014",
+      "flag": "🇸🇨",
+      "country": "Seychelles",
+      "ts": 1771412306.2705598
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpFMTJ5WkJQQzd5OFNubWtTWWpmMFds@62.133.63.167:61377#%40vpnbaz%20%F0%9F%8E%AF",
+      "latency": 144,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/11013",
+      "flag": "🇹🇷",
+      "country": "Türkiye",
+      "ts": 1771412305.7695663
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.184:8080#%40vpnbaz%20%F0%9F%8E%A9",
+      "latency": 110,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/11012",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1771412305.2594955
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@4.158.0.51:443#%40vpnbaz%20%F0%9F%8D%AC",
+      "latency": 112,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/11011",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1771412304.8533585
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@35.156.151.126:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 148,
@@ -2959,49 +2999,18 @@
       "flag": "🇨🇿",
       "country": "Czechia",
       "ts": 1771334409.2294564
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://976cd600-97a1-4c9c-b143-c901dbf175e7@s.ssl.fastly.net:80?security=none&encryption=none&host=usakhidam.global.ssl.fastly.net&type=ws#NetAccount`",
-      "latency": 19,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/10576",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1771334385.4867504
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://1a9b771a-b717-49c8-9e93-f6b3d508d637@93.185.165.50:55211?security=reality&encryption=none&pbk=5D6U_DRxkNF9I6Sa87j6jvHD_HvhZ9j53rAbZE8Y7lQ&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=1885#NetAccount`",
-      "latency": 176,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/10575",
-      "flag": "🇲🇩",
-      "country": "Moldova",
-      "ts": 1771334385.0856762
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.141.151:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 194,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/10563",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1771326786.1872046
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e31085f9-7f55-4a7d-b00e-ce94149477cb@104.18.32.47:80?path=%2F%3Fed&security=none&encryption=none&host=PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.&type=ws#%40vpnbaz%20%F0%9F%8E%A9",
-      "latency": 2,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/10561",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1771325990.9759667
     }
   ],
   "proxies": [
+    {
+      "key": "tnco.tncco.info.:42341",
+      "link": "tg://proxy?server=tnco.tncco.info.&port=42341&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/11010",
+      "latency": 309,
+      "flag": "🇩🇪",
+      "ts": 1771412269.8773904
+    },
     {
       "key": "185.3.200.185:4455",
       "link": "tg://proxy?server=185.3.200.185&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D)",
@@ -3892,18 +3901,30 @@
       "latency": 1116,
       "flag": "🇮🇷",
       "ts": 1771395132.9445214
-    },
-    {
-      "key": "185.84.157.13:444",
-      "link": "tg://proxy?server=185.84.157.13&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/10964",
-      "latency": 131,
-      "flag": "🇮🇷",
-      "ts": 1771395132.9445207
     }
   ],
   "files": [
+    {
+      "name": "ViP🚨.npvt",
+      "ext": "NPVT",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/3408",
+      "ts": 1771412269.6101596
+    },
+    {
+      "name": "Meli.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت ازاد",
+      "link": "https://t.me/mitivpn/15378",
+      "ts": 1771412220.3217716
+    },
+    {
+      "name": "@planB_net #90.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/1720",
+      "ts": 1771412195.6388042
+    },
     {
       "name": "New.npvt",
       "ext": "NPVT",
@@ -4232,27 +4253,6 @@
       "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
       "link": "https://t.me/v2rays_ha/2311",
       "ts": 1771355254.8150673
-    },
-    {
-      "name": "@v2rays_ha 346.npvt",
-      "ext": "NPVT",
-      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
-      "link": "https://t.me/v2rays_ha/2312",
-      "ts": 1771355254.4629436
-    },
-    {
-      "name": "@ultrasurf_12.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/111994",
-      "ts": 1771355222.4779541
-    },
-    {
-      "name": "@iSpeedTopVPN.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/111990",
-      "ts": 1771351991.215237
     }
   ]
 }

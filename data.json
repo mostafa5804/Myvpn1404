@@ -1923,6 +1923,15 @@
   ],
   "proxies": [
     {
+      "key": "https.abr-parvaz.info.:42341",
+      "link": "tg://proxy?server=https.abr-parvaz.info.&port=42341&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/11772",
+      "latency": 371,
+      "flag": "🇫🇮",
+      "ts": 1771584420.9656217
+    },
+    {
       "key": "185.84.157.12:444",
       "link": "tg://proxy?server=185.84.157.12&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==",
       "channel": "دارک پروکسی | Proxy mtproto",
@@ -2812,18 +2821,16 @@
       "latency": 39,
       "flag": "🇨🇦",
       "ts": 1771577512.0479834
-    },
-    {
-      "key": "44.3pita.com:25565",
-      "link": "tg://proxy?server=44.3pita.com&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
-      "channel": "اینترنت ازاد",
-      "t_link": "https://t.me/myvpn1404/11733",
-      "latency": 105,
-      "flag": "🇨🇦",
-      "ts": 1771577512.0479817
     }
   ],
   "files": [
+    {
+      "name": "A7.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO",
+      "link": "https://t.me/cicdoVPN/1928",
+      "ts": 1771584481.902608
+    },
     {
       "name": "telegram: @awlix_ir.npvt",
       "ext": "NPVT",
@@ -3166,13 +3173,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/1794",
       "ts": 1771530284.230696
-    },
-    {
-      "name": "@v2rays_ha 31.ehi",
-      "ext": "EHI",
-      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
-      "link": "https://t.me/v2rays_ha/2375",
-      "ts": 1771528654.882835
     }
   ]
 }

@@ -2603,6 +2603,24 @@
   ],
   "proxies": [
     {
+      "key": "https.spsctr.info.:25565",
+      "link": "tg://proxy?server=https.spsctr.info.&port=25565&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/12224",
+      "latency": 168,
+      "flag": "🇨🇦",
+      "ts": 1771692795.098273
+    },
+    {
+      "key": "full.restreams.info.:42341",
+      "link": "tg://proxy?server=full.restreams.info.&port=42341&secret=7nnnAQIAAQAH8AMDhuJMOt0%3D",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/12224",
+      "latency": 389,
+      "flag": "🇫🇮",
+      "ts": 1771692795.0982704
+    },
+    {
       "key": "wine.limoozin.info:25565",
       "link": "tg://proxy?server=wine.limoozin.info&port=25565&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
       "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
@@ -3483,27 +3501,16 @@
       "latency": 111,
       "flag": "🇮🇷",
       "ts": 1771673441.5485704
-    },
-    {
-      "key": "185.3.200.40:25565",
-      "link": "tg://proxy?server=185.3.200.40&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/12169",
-      "latency": 111,
-      "flag": "🇮🇷",
-      "ts": 1771673441.54857
-    },
-    {
-      "key": "195.254.165.69:65535",
-      "link": "tg://proxy?server=195.254.165.69&port=65535&secret=10446282fffffffffff80000fff80000",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/12169",
-      "latency": 105,
-      "flag": "🇳🇱",
-      "ts": 1771673441.5485685
     }
   ],
   "files": [
+    {
+      "name": "cicdo vpn_B3.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO",
+      "link": "https://t.me/cicdoVPN/1955",
+      "ts": 1771692863.5990272
+    },
     {
       "name": "@planB_net #186.npvt",
       "ext": "NPVT",
@@ -3846,13 +3853,6 @@
       "channel": "i SHARΞ WIN™",
       "link": "https://t.me/isharewin/22746",
       "ts": 1771657560.0551746
-    },
-    {
-      "name": "XV_AMNΞZIA™.conf",
-      "ext": "CONF",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/22747",
-      "ts": 1771657559.7564871
     }
   ]
 }

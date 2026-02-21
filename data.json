@@ -2,6 +2,36 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://21889ffd-54ee-40f9-e9b0-f1838908579a@3.127.98.95:443?security=none&encryption=none&headerType=none&type=tcp#%40vpnbaz%20%F0%9F%8C%B6%EF%B8%8F",
+      "latency": 129,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/12212",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1771682272.4322875
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://nasnet@57.129.64.102:443?security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=nasnet-5712964102-direct.sharghdaily.co#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9```",
+      "latency": 136,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/12211",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1771682268.909107
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://69c3ec92-9c48-44bc-cfbc-a37ee0c4461a@3.123.24.253:443?security=none&encryption=none&headerType=none&type=tcp#%40vpnbaz%20%F0%9F%8C%B6%EF%B8%8F",
+      "latency": 138,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/12210",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1771682268.4290645
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://2271c50f-ac7a-4d7f-8b04-64085b0daa56@c.pabloping.cloud:2052/?mode=auto&path=%2Fpabloping&security=none&encryption=none&host=upnl.pabloping.pro&type=xhttp#%40v2rays_ha%2010471",
       "latency": 41,
       "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
@@ -2659,59 +2689,18 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1771600006.6161175
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5bda6340-7fe2-4234-8c03-d009501333fb@F1.HaMrAhCoNf.Ir:8443?path=%2F&security=tls&encryption=none&insecure=0&host=p3-sync-01.hamrahconfig.ir&fp=chrome&type=ws&allowInsecure=0&sni=sp.hamrahconfig.ir#%40vpnbaz%20%F0%9F%8D%AC",
-      "latency": 229,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/11814",
-      "flag": "🇸🇨",
-      "country": "Seychelles",
-      "ts": 1771594733.0023146
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5bda6340-7fe2-4234-8c03-d009501333fb@F3.HaMrAhCoNf.Ir:2086?path=%2F&security=none&encryption=none&host=32a2eb5bbf71baca.p3.node3.hamrahconfig.ir&type=httpupgrade#%40vpnbaz%20%F0%9F%A5%9D",
-      "latency": 249,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/11813",
-      "flag": "🇸🇨",
-      "country": "Seychelles",
-      "ts": 1771594732.4951973
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://daac11cb-7acd-40fa-ae53-2af2d5993878@151.101.9.67:80?path=%2Fws&security=none&encryption=none&host=arps.global.ssl.fastly.net&type=ws#%40vpnbaz%20%F0%9F%AA%B7",
-      "latency": 115,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/11812",
-      "flag": "🇧🇪",
-      "country": "Belgium",
-      "ts": 1771594731.7918806
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYTjZYZjBacXdEZUZydDM5VFFyYWVu@45.80.231.75:31019#%40vpnbaz%20%E2%98%82%EF%B8%8F",
-      "latency": 142,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/11811",
-      "flag": "🇸🇪",
-      "country": "Sweden",
-      "ts": 1771594731.3438873
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.184.19:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 1106,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/11808",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1771593313.1329894
     }
   ],
   "proxies": [
+    {
+      "key": "4.3pita.com:25565",
+      "link": "tg://proxy?server=4.3pita.com&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "اینترنت ازاد",
+      "t_link": "https://t.me/myvpn1404/12204",
+      "latency": 94,
+      "flag": "🇨🇦",
+      "ts": 1771682194.953026
+    },
     {
       "key": "Full-nets.ir.ou-miaiad.info:88",
       "link": "tg://proxy?server=Full-nets.ir.ou-miaiad.info&port=88&secret=7nnnAQIAAQAH8AMDhuJMOt0",
@@ -3602,18 +3591,79 @@
       "latency": 111,
       "flag": "🇮🇷",
       "ts": 1771673441.5485556
-    },
-    {
-      "key": "91.239.192.109:25565",
-      "link": "tg://proxy?server=91.239.192.109&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/12169",
-      "latency": 111,
-      "flag": "🇮🇷",
-      "ts": 1771673441.5485547
     }
   ],
   "files": [
+    {
+      "name": "3.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/configraygan/3197",
+      "ts": 1771682211.682205
+    },
+    {
+      "name": "2.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/configraygan/3198",
+      "ts": 1771682211.4179814
+    },
+    {
+      "name": "pack1.txt",
+      "ext": "TXT",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/configraygan/3201",
+      "ts": 1771682211.1794016
+    },
+    {
+      "name": "pack1NPV100tayi.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/configraygan/3202",
+      "ts": 1771682210.87953
+    },
+    {
+      "name": "pack2_155tayi.txt",
+      "ext": "TXT",
+      "channel": "کانفیگ رایگان",
+      "link": "https://t.me/configraygan/3203",
+      "ts": 1771682210.5658596
+    },
+    {
+      "name": "Fast ♥️.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت ازاد",
+      "link": "https://t.me/mitivpn/15464",
+      "ts": 1771682194.6064234
+    },
+    {
+      "name": "Plus ⚡.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت ازاد",
+      "link": "https://t.me/mitivpn/15465",
+      "ts": 1771682194.171438
+    },
+    {
+      "name": "@planB_net #181.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/1839",
+      "ts": 1771682170.4248767
+    },
+    {
+      "name": "همه اپراتور23🇩🇪.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/851",
+      "ts": 1771682161.0059874
+    },
+    {
+      "name": "همه اپراتور24🇩🇪.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/852",
+      "ts": 1771682160.730861
+    },
     {
       "name": "💎IRAN AZAD💎.npvt",
       "ext": "NPVT",
@@ -3893,76 +3943,6 @@
       "channel": "اینترنت آزاد | Merlin ViP",
       "link": "https://t.me/Merlin_ViP/43421",
       "ts": 1771623299.175378
-    },
-    {
-      "name": "POPO.txt",
-      "ext": "TXT",
-      "channel": "کانفیگ رایگان",
-      "link": "https://t.me/configraygan/3167",
-      "ts": 1771623177.426959
-    },
-    {
-      "name": "@planB_net #171.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1828",
-      "ts": 1771623136.5982723
-    },
-    {
-      "name": "@planB_net #172.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1829",
-      "ts": 1771623136.3640988
-    },
-    {
-      "name": "@Cooonfig👸(همه نتا4485موشکی).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/6856",
-      "ts": 1771620121.0384789
-    },
-    {
-      "name": "Melinet@shankamil🔋.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ ملی شکن",
-      "link": "https://t.me/shankamil/4631",
-      "ts": 1771620087.778424
-    },
-    {
-      "name": "-All Pro NpV ❤️.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت ازاد",
-      "link": "https://t.me/mitivpn/15456",
-      "ts": 1771620063.1943796
-    },
-    {
-      "name": "@planB_net #169.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1824",
-      "ts": 1771620043.6234083
-    },
-    {
-      "name": "@planB_net #170.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1827",
-      "ts": 1771620043.326412
-    },
-    {
-      "name": "A8.npvt",
-      "ext": "NPVT",
-      "channel": "VPN | CICDO",
-      "link": "https://t.me/cicdoVPN/1936",
-      "ts": 1771616570.2906647
-    },
-    {
-      "name": "A9.npvt",
-      "ext": "NPVT",
-      "channel": "VPN | CICDO",
-      "link": "https://t.me/cicdoVPN/1940",
-      "ts": 1771616568.3800204
     }
   ]
 }

@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://c20adfae-5ae8-4e8b-d34f-d6b425b7e665@3.69.238.71:443?security=none&encryption=none&headerType=none&type=tcp#%40cicdo%20vpn_C3",
+      "latency": 111,
+      "channel": "VPN | CICDO",
+      "t_link": "https://t.me/myvpn1404/12568",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1771793406.6502128
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://8833d369-c1ec-4c1c-e7ad-39c40b520ccd@3.76.99.181:48091?security=none&encryption=none&headerType=none&type=tcp#%40cicdo%20vpn_C2",
+      "latency": 110,
+      "channel": "VPN | CICDO",
+      "t_link": "https://t.me/myvpn1404/12567",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1771793406.1913705
+    },
+    {
       "protocol": "SS",
       "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprYVFIM2hHZGNQODBYRURJ@admin.c2.havij.co:443#%40vpnbaz%20%F0%9F%A7%A8",
       "latency": 177,
@@ -979,26 +999,6 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1771768713.5599415
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://3f47847a-1a7e-40be-932d-2573e9d3a518@new1e.afghanestan.ir:2095?path=%2F%3Fed%3D2560&security=none&encryption=none&type=ws#%F0%9F%86%94%EF%B8%8F+%7C+%40configraygan%E3%80%8E%F0%9F%87%A9%F0%9F%87%AA%C2%B9%E2%81%B0%C2%B3%E3%80%8F",
-      "latency": 194,
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/12431",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1771768713.1510177
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://1c7fcc38-e6be-43c5-875f-b8de2516b9f2@5.182.38.91:17267?security=reality&encryption=none&pbk=SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=4ae260#%F0%9F%86%94%EF%B8%8F+%7C+%40configraygan%E3%80%8E%F0%9F%87%A9%F0%9F%87%AA%C2%B9%E2%81%B0%E2%81%B0%E3%80%8F",
-      "latency": 144,
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/12430",
-      "flag": "🇭🇺",
-      "country": "Hungary",
-      "ts": 1771768709.55778
     }
   ],
   "proxies": [
@@ -1905,6 +1905,13 @@
   ],
   "files": [
     {
+      "name": "cicdo vpn_B6.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO",
+      "link": "https://t.me/cicdoVPN/2006",
+      "ts": 1771793406.9322412
+    },
+    {
       "name": "⭐️جاوید شاه⭐️.npvt",
       "ext": "NPVT",
       "channel": "xsfilternet",
@@ -2232,20 +2239,6 @@
       "channel": "Cooonfig",
       "link": "https://t.me/cooonfig/6868",
       "ts": 1771753174.9199655
-    },
-    {
-      "name": "@Cooonfig(همه نتا4700موشکی).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/6865",
-      "ts": 1771749685.7214026
-    },
-    {
-      "name": "@planB_net #197.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1857",
-      "ts": 1771749614.2800481
     }
   ]
 }

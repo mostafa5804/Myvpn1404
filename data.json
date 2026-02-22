@@ -1,6 +1,66 @@
 {
   "configs": [
     {
+      "protocol": "SS",
+      "config": "ss://56836323-a082-419d-af18-1343f31ea90f@104.17.147.22:443/?path=%2F%3Fed%3D2560&security=tls&alpn=h3&encryption=none&insecure=0&host=q.dioxv004.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=q.dioxv004.workers.dev#%40v2rays_ha%2010591",
+      "latency": 2,
+      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/12315",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1771736610.6657398
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://daac11cb-7acd-40fa-ae53-2af2d5993878@151.101.9.67:80/?security=none&allowInsecure=0&encryption=none&type=ws&host=arps.global.ssl.fastly.net&path=/ws#%40v2rays_ha%2010588",
+      "latency": 84,
+      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/12314",
+      "flag": "🇧🇪",
+      "country": "Belgium",
+      "ts": 1771736610.3632507
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://686c62d9-17a7-43c9-a40a-f6747df60a9f@172.66.47.45:2096/?path=%2F%3F%3Fed%3D512&security=tls&encryption=none&insecure=0&host=ca.adobe-connect.top&type=ws&allowInsecure=0&sni=ca.adobe-connect.top#%40v2rays_ha%2010586",
+      "latency": 1,
+      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/12313",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1771736609.972327
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://2271c50f-ac7a-4d7f-8b04-64085b0daa56@104.18.12.149:2052/?security=none&allowInsecure=0&encryption=none&type=xhttp&path=/pabloping&mode=auto#%40v2rays_ha%2010585",
+      "latency": 1,
+      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/12312",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1771736609.7221043
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://fe387417-4166-47f9-a863-706254f306d8@join-masterserver1-join-masterserver1-join-masterserver1.noxovap698.workers.dev:443/?path=ws&security=tls&encryption=none&host=join-masterserver1-join-masterserver1-join-masterserver1.noxovap698.workers.dev&fp=chrome&type=ws&sni=join-masterserver1-join-masterserver1-join-masterserver1.noxovap698.workers.dev#%40v2rays_ha%2010584",
+      "latency": 16,
+      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/12311",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1771736609.4850519
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6ed59ac7-75a6-43dd-8981-3821a41db86f@grdt.dtsantoor.com:40786/?security=tls&encryption=none&host=skyroom.online&headerType=http&fp=firefox&type=tcp&sni=grdt.dtsantoor.com#%40v2rays_ha%2010583",
+      "latency": 268,
+      "channel": "فیلترشکن کانفیگ پروکسی اینترنت ازاد ha tunnel npv v2ray",
+      "t_link": "https://t.me/myvpn1404/12310",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1771736609.1904619
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://humanity@104.18.32.47:443/?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.calmlunch.com#%40v2rays_ha%2010576",
       "latency": 1,

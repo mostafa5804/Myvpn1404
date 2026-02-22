@@ -29,7 +29,7 @@ session_2 = os.environ.get('SESSION_STRING_2')
 PING_TIMEOUT = 1.5
 DATA_FILE = 'data.json'
 SUB_FILE = 'sub.txt'
-KEEP_HISTORY_HOURS = 24
+KEEP_HISTORY_HOURS = 12
 destination_channel = '@myvpn1404'
 MAX_MESSAGE_AGE_MINUTES = 90
 SUB_LINK_URL = "https://raw.githubusercontent.com/mostafa5804/Myvpn1404/refs/heads/main/sub.txt"
@@ -353,7 +353,7 @@ async def main():
         # Saving & Generation
         all_configs = hist['configs'] + new_conf
         all_configs.sort(key=lambda x: x['ts'], reverse=True)
-        all_configs = all_configs[:300]
+        all_configs = all_configs[:100]
 
         all_proxies = hist['proxies'] + new_prox
         all_proxies.sort(key=lambda x: x['ts'], reverse=True)

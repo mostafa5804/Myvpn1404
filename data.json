@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://6fdd9932-5537-4fe6-86e0-672ae2d95325@104.25.58.58:8443?mode=gun&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&authority=alman.sabz-sitentg-noavaran.com&insecure=0&fp=chrome&type=grpc&allowInsecure=0&sni=alman.sabz-sitentg-noavaran.com#%D8%AA%D9%85%D8%A7%D9%85%DB%8C%20%D8%A7%D9%BE%D8%B1%D8%A7%D8%AA%D9%88%D8%B1%20%D9%87%D8%A7%20%F0%9F%87%A9%F0%9F%87%AA%20%40NTGreen`",
+      "latency": 14,
+      "channel": "NTGreen | اینترنت سبز 👽",
+      "t_link": "https://t.me/myvpn1404/12316",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1771739821.252347
+    },
+    {
       "protocol": "SS",
       "config": "ss://56836323-a082-419d-af18-1343f31ea90f@104.17.147.22:443/?path=%2F%3Fed%3D2560&security=tls&alpn=h3&encryption=none&insecure=0&host=q.dioxv004.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=q.dioxv004.workers.dev#%40v2rays_ha%2010591",
       "latency": 2,
@@ -2545,6 +2555,20 @@
   ],
   "files": [
     {
+      "name": "cicdo vpn_B4.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO",
+      "link": "https://t.me/cicdoVPN/1964",
+      "ts": 1771739943.2560785
+    },
+    {
+      "name": "NTG 39.npvt",
+      "ext": "NPVT",
+      "channel": "NTGreen | اینترنت سبز 👽",
+      "link": "https://t.me/Free_Nettm/12063",
+      "ts": 1771739821.4861794
+    },
+    {
       "name": "@PlanB_net #193.npvt",
       "ext": "NPVT",
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -2879,20 +2903,6 @@
       "channel": "i SHARΞ WIN™",
       "link": "https://t.me/isharewin/22827",
       "ts": 1771679021.5400422
-    },
-    {
-      "name": "Let 🇫🇮.npvt",
-      "ext": "NPVT",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/22830",
-      "ts": 1771679020.647117
-    },
-    {
-      "name": "KurdiVpn- 🕊☀️.npvt",
-      "ext": "NPVT",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/22832",
-      "ts": 1771679013.2412102
     }
   ]
 }

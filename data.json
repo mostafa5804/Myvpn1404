@@ -1613,6 +1613,15 @@
   ],
   "proxies": [
     {
+      "key": "172.65.151.109:3389",
+      "link": "tg://proxy?server=172.65.151.109&port=3389&secret=eed7da2585c0353ee0dd7ba9568deab49663646e2d6170706c652e636f6d",
+      "channel": "VPN | CICDO",
+      "t_link": "https://t.me/myvpn1404/12350",
+      "latency": 20,
+      "flag": "🇨🇦",
+      "ts": 1771746893.0558646
+    },
+    {
       "key": "185.84.157.21:444",
       "link": "tg://proxy?server=185.84.157.21&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==",
       "channel": "دارک پروکسی | Proxy mtproto",
@@ -2502,18 +2511,16 @@
       "latency": 116,
       "flag": "🇮🇷",
       "ts": 1771703082.1240997
-    },
-    {
-      "key": "185.3.200.186:5566",
-      "link": "tg://proxy?server=185.3.200.186&port=5566&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/12241",
-      "latency": 1142,
-      "flag": "🇮🇷",
-      "ts": 1771703082.1240985
     }
   ],
   "files": [
+    {
+      "name": "@planB_net #196.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/1856",
+      "ts": 1771746755.8792913
+    },
     {
       "name": "NetAccount601.npvt",
       "ext": "NPVT",
@@ -2856,13 +2863,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/1843",
       "ts": 1771685380.9411645
-    },
-    {
-      "name": "@planB_net #183.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1841",
-      "ts": 1771684407.5041544
     }
   ]
 }

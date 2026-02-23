@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@35.181.234.50:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 132,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/12740",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1771852912.1769538
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.188.162.245:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 124,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -592,6 +602,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "servergame.golestandata.com:25565",
+      "link": "tg://proxy?server=servergame.golestandata.com&port=25565&secret=dd75004050020600850040500405004050",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/12739",
+      "latency": 6,
+      "flag": "🇨🇦",
+      "ts": 1771852894.329166
+    },
+    {
+      "key": "servergame.golestandata.com:25565",
+      "link": "tg://proxy?server=servergame.golestandata.com&port=25565&secret=dd75004050020600850040500405004050)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/12739",
+      "latency": 59,
+      "flag": "🇨🇦",
+      "ts": 1771852894.3291638
+    },
+    {
+      "key": "91.239.192.128:65535",
+      "link": "tg://proxy?server=91.239.192.128&port=65535&secret=10446282fffffffffff80000fff80000",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/12738",
+      "latency": 93,
+      "flag": "🇮🇷",
+      "ts": 1771852882.7518952
+    },
+    {
+      "key": "91.239.192.128:65535",
+      "link": "tg://proxy?server=91.239.192.128&port=65535&secret=10446282fffffffffff80000fff80000)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/12738",
+      "latency": 97,
+      "flag": "🇮🇷",
+      "ts": 1771852882.751893
+    },
     {
       "key": "wine.limoozin.info:25565",
       "link": "tg://proxy?server=wine.limoozin.info&port=25565&secret=eeNEgYdJvXrFGRMCIMJdCQ",
@@ -1455,42 +1501,6 @@
       "latency": 308,
       "flag": "🇩🇪",
       "ts": 1771837172.960368
-    },
-    {
-      "key": "185.84.157.11:444",
-      "link": "tg://proxy?server=185.84.157.11&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/12697",
-      "latency": 88,
-      "flag": "🇮🇷",
-      "ts": 1771834040.9053016
-    },
-    {
-      "key": "185.84.157.24:444",
-      "link": "tg://proxy?server=185.84.157.24&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/12697",
-      "latency": 100,
-      "flag": "🇮🇷",
-      "ts": 1771834040.9053006
-    },
-    {
-      "key": "185.84.157.13:444",
-      "link": "tg://proxy?server=185.84.157.13&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/12697",
-      "latency": 88,
-      "flag": "🇮🇷",
-      "ts": 1771834040.9052997
-    },
-    {
-      "key": "185.84.157.3:444",
-      "link": "tg://proxy?server=185.84.157.3&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/12697",
-      "latency": 93,
-      "flag": "🇮🇷",
-      "ts": 1771834040.9052987
     }
   ],
   "files": [

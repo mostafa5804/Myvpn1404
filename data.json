@@ -959,77 +959,9 @@
       "flag": "🇮🇹",
       "country": "Italy",
       "ts": 1771972862.1307154
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e8add82d-0a0a-4f3b-a22e-c74f83da73b9@chatgpt.com:443?path=%2F138.2.64.229%3D443&security=tls&encryption=none&insecure=0&host=afrcloud22.mmv.kr&type=ws&allowInsecure=0&sni=afrcloud22.mmv.kr#%40vpnbaz%20%F0%9F%8E%AF```",
-      "latency": 27,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/13244",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1771970252.4889665
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://a1049f7f-6e81-4735-bdb9-c7c5a6d88ba6@vip-78.f-sub.cfd:1517?security=none&encryption=none&host=testspeed-foreign.tci.ir&headerType=http&type=tcp#%40vpnbaz%20%F0%9F%A5%8A",
-      "latency": 165,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/13243",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1771970252.0952334
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.208:8880?mode=gun&security=none&encryption=none&type=grpc#%40vpnbaz%20%F0%9F%9B%A1%EF%B8%8F",
-      "latency": 22,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/13242",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1771970251.4915638
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://89ed95bb-c4cd-09b8-2c39-1a728c58ec16@135.125.168.181:878?security=none&encryption=none&headerType=none&type=tcp#%40vpnbaz%20%F0%9F%8C%B5",
-      "latency": 109,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/13241",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1771970249.6524324
     }
   ],
-  "proxies": [
-    {
-      "key": "77.72.80.77:9443",
-      "link": "tg://proxy?server=77.72.80.77&port=9443&secret=79e344818749bd7ac519130220c25d09)**",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/13240",
-      "latency": 167,
-      "flag": "🇮🇷",
-      "ts": 1771969403.6840434
-    },
-    {
-      "key": "77.72.80.77:9443",
-      "link": "tg://proxy?server=77.72.80.77&port=9443&secret=79e344818749bd7ac519130220c25d09",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/13240",
-      "latency": 161,
-      "flag": "🇮🇷",
-      "ts": 1771969403.6840425
-    },
-    {
-      "key": "77.72.80.25:9443",
-      "link": "tg://proxy?server=77.72.80.25&port=9443&secret=eeNEgYdJvXrFGRMCIMJCdQ)",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/13240",
-      "latency": 163,
-      "flag": "🇮🇷",
-      "ts": 1771969403.6840403
-    }
-  ],
+  "proxies": [],
   "files": [
     {
       "name": "100.txt",
@@ -1037,13 +969,6 @@
       "channel": "کانفیگ رایگان",
       "link": "https://t.me/configraygan/3311",
       "ts": 1771972861.5107381
-    },
-    {
-      "name": "BPB-settings.dat (5).txt",
-      "ext": "TXT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2596",
-      "ts": 1771969397.397345
     }
   ]
 }

@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://2271c50f-ac7a-4d7f-8b04-64085b0daa56@104.18.12.149:2052?mode=auto&path=pabloping&security=none&encryption=none&host=upnl.pabloping.pro&type=xhttp#%40cicdo%20vpn_D9",
+      "latency": 10,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/13481",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1772052281.172653
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://2271c50f-ac7a-4d7f-8b04-64085b0daa56@b.pabloping.cloud:2052?mode=auto&path=%2Fpabloping&security=none&encryption=none&host=upnl.pabloping.pro&type=xhttp#%40cicdo%20vpn_D7",
+      "latency": 90,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/13480",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1772052280.79526
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://c3d8bdd0-777e-47b0-b7d4-28cc1b160ad8@91.242.229.129:4443?security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&headerType=&type=tcp&allowInsecure=0&sni=nl18.fastlanehosting.ru#%40vpnbaz%20%F0%9F%8E%AD",
       "latency": 98,
       "channel": "VPN MARKET",
@@ -852,6 +872,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "77.72.80.103:25565",
+      "link": "tg://proxy?server=77.72.80.103&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/13479",
+      "latency": 1152,
+      "flag": "🇮🇷",
+      "ts": 1772052216.8522398
+    },
+    {
+      "key": "185.3.200.175:2053",
+      "link": "tg://proxy?server=185.3.200.175&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/13479",
+      "latency": 139,
+      "flag": "🇮🇷",
+      "ts": 1772052216.8522387
+    },
+    {
+      "key": "185.3.200.47:77777",
+      "link": "tg://proxy?server=185.3.200.47&port=77777&secret=EERigv%2F%2F%2F%2F%2F%2F+AAA%2F%2FgAAA%3D%3D)",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/13479",
+      "latency": null,
+      "flag": "🇮🇷",
+      "ts": 1772052216.8522375
+    },
+    {
+      "key": "185.3.200.170:4055",
+      "link": "tg://proxy?server=185.3.200.170&port=4055&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/13479",
+      "latency": 139,
+      "flag": "🇮🇷",
+      "ts": 1772052216.8522353
+    },
     {
       "key": "185.3.200.171:4455",
       "link": "tg://proxy?server=185.3.200.171&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D)",
@@ -1715,42 +1771,6 @@
       "latency": 113,
       "flag": "🇮🇷",
       "ts": 1772020045.1125731
-    },
-    {
-      "key": "185.3.200.47:77777",
-      "link": "tg://proxy?server=185.3.200.47&port=77777&secret=EERigv%2F%2F%2F%2F%2F%2F+AAA%2F%2FgAAA%3D%3D",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/13351",
-      "latency": null,
-      "flag": "🇮🇷",
-      "ts": 1772020045.1125727
-    },
-    {
-      "key": "185.3.200.174:4455",
-      "link": "tg://proxy?server=185.3.200.174&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/13351",
-      "latency": 106,
-      "flag": "🇮🇷",
-      "ts": 1772020045.112572
-    },
-    {
-      "key": "91.239.192.42:3443",
-      "link": "tg://proxy?server=91.239.192.42&port=3443&secret=7lLIZ9x1mD-vS7N_kdUWTwktLQ%3D%3D",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/13351",
-      "latency": 111,
-      "flag": "🇮🇷",
-      "ts": 1772020045.1125715
-    },
-    {
-      "key": "91.239.192.78:65535",
-      "link": "tg://proxy?server=91.239.192.78&port=65535&secret=7hBEYoL_______gAAP_4AABiaXNjb3R0aS55ZWt0YW5ldC5jb20%3D",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/13351",
-      "latency": 127,
-      "flag": "🇮🇷",
-      "ts": 1772020045.1125705
     }
   ],
   "files": [

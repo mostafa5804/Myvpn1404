@@ -1,6 +1,66 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://a7b1b295-89c0-4794-bc3b-13af6cf63312@185.162.11.223:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=htJuCzotUMp7MYP7ZEWKWT1iEuAbr5cDKoX32Ego6WE&security=reality&sid=edbc04c389&sni=sun6-21.userapi.com&type=tcp#@vpnbaz%20%F0%9F%92%9A```",
+      "latency": 102,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/13377",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1772027324.0392299
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://8f09e644-7208-4f38-ac2f-db6d23cc647f@80.253.251.122:13686?encryption=none&fp=chrome&pbk=E2rSTxjCs8arrVzkG0htKf5OQt6wyoIsvwnsvkmKanQ&security=reality&sid=fd38dd693669e822&sni=yandex.ru&type=tcp#@vpnbaz%20%F0%9F%A9%B5",
+      "latency": 107,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/13376",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1772027323.6400025
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://b658a9a6-f8f5-4a86-a438-f912a8509db2@5.255.114.61:2083?alpn=http%2F1.1&encryption=none&host=native.loveplus.de5.net&path=%2Fehueueuejs&security=tls&sni=native.loveplus.de5.net&type=ws#@vpnbaz%20%F0%9F%A9%B7",
+      "latency": 104,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/13375",
+      "flag": "🇳🇱",
+      "country": "Netherlands",
+      "ts": 1772027323.2359438
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://aaaaaabb-4ddd-4eee-9fff-ffffffffffff@104.21.48.147:80?encryption=none&host=afrcloud22.mmv.kr&path=%2F64.181.218.67%3D443&security=none&type=ws#@vpnbaz%20%F0%9F%A4%8E",
+      "latency": 2,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/13374",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1772027322.7343724
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@admin.c1.webramz.co:443#@vpnbaz%20%E2%9D%A4%EF%B8%8F",
+      "latency": 97,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/13373",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1772027322.4587402
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@series-a2.samanehha.co:443#@vpnbaz%20%F0%9F%92%9B",
+      "latency": 226,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/13372",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1772027321.9649293
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.224.39.183:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 108,

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.158.58:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 107,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/13644",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1772112218.7736685
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://a384c715-aeb5-45e8-859b-f687ca6c083f@5.180.97.139:443?security=reality&encryption=none&pbk=wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=9f35da6c9412b832#%40vpnbaz%20%F0%9F%8D%AD```",
       "latency": 122,
@@ -492,6 +502,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "77.72.80.115:25565",
+      "link": "tg://proxy?server=77.72.80.115&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/13643",
+      "latency": 108,
+      "flag": "🇮🇷",
+      "ts": 1772112191.66876
+    },
+    {
+      "key": "77.72.80.115:25565",
+      "link": "tg://proxy?server=77.72.80.115&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/13643",
+      "latency": 118,
+      "flag": "🇮🇷",
+      "ts": 1772112191.6687577
+    },
     {
       "key": "77.72.80.80:9443",
       "link": "tg://proxy?server=77.72.80.80&port=9443&secret=79e344818749bd7ac519130220c25d09",
@@ -1373,27 +1401,23 @@
       "latency": 90,
       "flag": "🇮🇷",
       "ts": 1772085944.1325886
-    },
-    {
-      "key": "185.84.157.12:444",
-      "link": "tg://proxy?server=185.84.157.12&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/13611",
-      "latency": 101,
-      "flag": "🇮🇷",
-      "ts": 1772085944.1325872
-    },
-    {
-      "key": "185.84.157.22:444",
-      "link": "tg://proxy?server=185.84.157.22&port=444&secret=FgMBAgABAAH8AxOG4kw63Q==",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/13611",
-      "latency": 100,
-      "flag": "🇮🇷",
-      "ts": 1772085944.132586
     }
   ],
   "files": [
+    {
+      "name": "@ZEDMODEON 82⚡.npvt",
+      "ext": "NPVT",
+      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
+      "link": "https://t.me/vpn11ir/112386",
+      "ts": 1772112160.5103166
+    },
+    {
+      "name": "💎 @Eag1e_YT-(#83).npvt",
+      "ext": "NPVT",
+      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
+      "link": "https://t.me/vpn11ir/112388",
+      "ts": 1772112160.210473
+    },
     {
       "name": "26 Feb.npvt",
       "ext": "NPVT",

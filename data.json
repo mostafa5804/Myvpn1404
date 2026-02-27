@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://66b2d54e-85ae-4664-88a2-90d70808d624@mv2.amydoodles.com:443?security=tls&encryption=none&alpn=h2,http/1.1&fp=firefox&type=xhttp&sni=default.ssl.fastly.net#configraygan_48",
+      "latency": 421,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14087",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1772228967.7513614
+    },
+    {
       "protocol": "VMESS",
       "config": "vmess://eyJhZGQiOiI1Ny4xMjkuNTkuMjAxIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJrYW1wb25nLm9yZyIsImlkIjoiMDNmY2M2MTgtYjkzZC02Nzk2LTZhZWQtOGEzOGM5NzVkNTgxIiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoibGlua3Z3cyIsInBvcnQiOiI0NDMiLCJwcyI6IkB2cG5iYXog8J+ljiIsInNjeSI6ImF1dG8iLCJzbmkiOiJrYW1wb25nLm9yZyIsInRscyI6InRscyIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9```",
       "latency": 157,
@@ -989,16 +999,6 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1772221133.0327418
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e564e363-ba3d-42e3-9da6-acf39344c63f@188.114.98.0:2096?security=tls&encryption=none&type=xhttp&sni=finmk212.data-recive.ir#%5B15340%5D+-+Telegram+%3A+%40configraygan",
-      "latency": 2,
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/13971",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1772221132.6179495
     }
   ],
   "proxies": [

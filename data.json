@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "SS",
+      "config": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6SG56SU4xQ0xHR0VoK21EL3V6YmJ2VFFjL0FscStoa21yQzdQbzNENGs0RT0@46.38.143.236:60633#cicdo%20vpn_F2",
+      "latency": 1224,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/13919",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1772211110.9443483
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://ci49kfwjrc@104.21.17.104:8880?mode=auto&path=%2Fcompass%2Fcdn&security=none&encryption=none&host=ci49kfwjrc-57129121185.hediiigate.com&type=xhttp#cicdo%20vpn_F3",
+      "latency": 2,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/13918",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1772211109.346408
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://ci49kfwjrc@172.67.175.118:8880?mode=auto&path=%2Fcompass%2Fcdn&security=none&encryption=none&host=ci49kfwjrc-57129121185.hediiigate.com&type=xhttp#cicdo%20vpn_F4",
+      "latency": 9,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/13917",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1772211109.0569649
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://e8fb0f43-3497-4ef3-8a89-35bae56549b7@93.94.51.8:13380?security=reality&encryption=none&pbk=JitkQnVQffSjGpth1UKvZP4yLX6HmcshmClfzbC70T4&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=yandex.ru&sid=99de062f46387d3e#Germany%20%F0%9F%87%A9%F0%9F%87%AA%20MTN-TCI`",
       "latency": 106,
@@ -402,6 +432,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "77.72.80.203:9443",
+      "link": "tg://proxy?server=77.72.80.203&port=9443&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/13915",
+      "latency": 105,
+      "flag": "🇮🇷",
+      "ts": 1772211038.324753
+    },
+    {
+      "key": "77.72.80.203:9443",
+      "link": "tg://proxy?server=77.72.80.203&port=9443&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/13915",
+      "latency": 116,
+      "flag": "🇮🇷",
+      "ts": 1772211038.3247514
+    },
     {
       "key": "77.72.80.100:25565",
       "link": "tg://proxy?server=77.72.80.100&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
@@ -1283,27 +1331,23 @@
       "latency": 819,
       "flag": "🇮🇷",
       "ts": 1772190301.7728367
-    },
-    {
-      "key": "85.133.194.43:8443",
-      "link": "tg://proxy?server=85.133.194.43&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/13847",
-      "latency": 118,
-      "flag": "🇮🇷",
-      "ts": 1772190264.7012806
-    },
-    {
-      "key": "85.133.194.44:8443",
-      "link": "tg://proxy?server=85.133.194.44&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/13847",
-      "latency": 114,
-      "flag": "🇮🇷",
-      "ts": 1772190264.7012794
     }
   ],
   "files": [
+    {
+      "name": "cicdo vpn_D9.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "link": "https://t.me/cicdoVPN/2156",
+      "ts": 1772211108.743392
+    },
+    {
+      "name": "NpV Fast speed🚀.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت ازاد",
+      "link": "https://t.me/mitivpn/15607",
+      "ts": 1772210996.0449672
+    },
     {
       "name": "👸@Cooonfig🌱(همه نتا4752موشکی).npvt",
       "ext": "NPVT",
@@ -1639,20 +1683,6 @@
       "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
       "link": "https://t.me/vpn11ir/112414",
       "ts": 1772176033.7100966
-    },
-    {
-      "name": "🇮🇳 بالیوود.dark",
-      "ext": "DARK",
-      "channel": "DeamNet",
-      "link": "https://t.me/DeamNet/26353",
-      "ts": 1772171936.0540068
-    },
-    {
-      "name": "@planB_net #282.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1957",
-      "ts": 1772171854.5386593
     }
   ]
 }

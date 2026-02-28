@@ -359,69 +359,45 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1772284307.465953
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@51.45.44.114:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 114,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/14161",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1772278066.992138
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://a0af2643-a236-463c-8056-3f71d05eed53@104.18.7.36:2086?path=%2F&security=none&encryption=none&host=shomal-g74f3znf-v2.shomal-321.workers.dev&type=ws#NetAccount`",
-      "latency": 15,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/14156",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1772278006.52119
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphYmM0ODRlZGNmMWJlNDNj@163.171.181.49:48852#%F0%9F%86%94%EF%B8%8F%20%7C%20%40BugFreeNet%E3%80%8E%E2%9A%A1%EF%B8%8F%E2%81%B5%E3%80%8F`",
-      "latency": 184,
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/14154",
-      "flag": "🇰🇼",
-      "country": "Kuwait",
-      "ts": 1772275643.1120622
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxa1ZyMEtBVElKSTdtd09G@admin.c1.havij.co:443#%F0%9F%86%94%EF%B8%8F%20%7C%20%40BugFreeNet%E3%80%8E%E2%9A%A1%EF%B8%8F%E2%81%B4%E3%80%8F",
-      "latency": 121,
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/14153",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1772275642.5633936
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.61:8080#%F0%9F%86%94%EF%B8%8F%20%7C%20%40BugFreeNet%E3%80%8E%E2%9A%A1%EF%B8%8F%C2%B3%E3%80%8F",
-      "latency": 107,
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/14152",
-      "flag": "🇳🇱",
-      "country": "The Netherlands",
-      "ts": 1772275642.1100142
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://72adc5b8-146a-4bfe-921b-5c9e1df016e0@217.16.27.217:443?security=reality&encryption=none&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&headerType=none&fp=qq&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=ozon.ru&sid=65ce6cee3941af69#%F0%9F%86%94%EF%B8%8F%20%7C%20%40BugFreeNet%E3%80%8E%E2%9A%A1%EF%B8%8F%C2%B2%E3%80%8F",
-      "latency": 141,
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/14151",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1772275641.6076992
     }
   ],
   "proxies": [
+    {
+      "key": "77.72.80.134:4455",
+      "link": "tg://proxy?server=77.72.80.134&port=4455&secret=7hYDAQIAAQAB/AMDhuJMOt1iaXNjb3R0aS55ZWt0YW5ldC5jb20",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14298",
+      "latency": 118,
+      "flag": "🇮🇷",
+      "ts": 1772321396.9998157
+    },
+    {
+      "key": "142.54.189.107:443",
+      "link": "tg://proxy?server=142.54.189.107&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14298",
+      "latency": 1046,
+      "flag": "🇺🇸",
+      "ts": 1772321396.9998145
+    },
+    {
+      "key": "142.54.189.108:443",
+      "link": "tg://proxy?server=142.54.189.108&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14298",
+      "latency": 1038,
+      "flag": "🇺🇸",
+      "ts": 1772321396.9998128
+    },
+    {
+      "key": "142.54.189.106:443",
+      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14298",
+      "latency": 1039,
+      "flag": "🇺🇸",
+      "ts": 1772321396.99981
+    },
     {
       "key": "142.54.189.109:443",
       "link": "tg://proxy?server=142.54.189.109&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
@@ -1285,42 +1261,6 @@
       "latency": 100,
       "flag": "🇮🇷",
       "ts": 1772299720.1749973
-    },
-    {
-      "key": "185.84.157.15:10",
-      "link": "tg://proxy?server=185.84.157.15&port=10&secret=FgMBAgABAAH8AxOG4kw63Q==)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/14228",
-      "latency": 94,
-      "flag": "🇮🇷",
-      "ts": 1772299720.1749964
-    },
-    {
-      "key": "185.84.157.11:10",
-      "link": "tg://proxy?server=185.84.157.11&port=10&secret=FgMBAgABAAH8AxOG4kw63Q==",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/14228",
-      "latency": 92,
-      "flag": "🇮🇷",
-      "ts": 1772299720.1749952
-    },
-    {
-      "key": "185.84.157.233:9",
-      "link": "tg://proxy?server=185.84.157.233&port=9&secret=FgMBAgABAAH8AxOG4kw63Q==",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/14228",
-      "latency": null,
-      "flag": "🇮🇷",
-      "ts": 1772299720.1749938
-    },
-    {
-      "key": "185.84.157.233:9",
-      "link": "tg://proxy?server=185.84.157.233&port=9&secret=FgMBAgABAAH8AxOG4kw63Q==)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/14228",
-      "latency": null,
-      "flag": "🇮🇷",
-      "ts": 1772299720.1749923
     }
   ],
   "files": [
@@ -1610,34 +1550,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/1999",
       "ts": 1772278759.0112092
-    },
-    {
-      "name": "⚡ 407⚡ @filembad.npvt",
-      "ext": "NPVT",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/24359",
-      "ts": 1772278028.2333193
-    },
-    {
-      "name": "IRAN-Tz-Tz.ehi",
-      "ext": "EHI",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/24361",
-      "ts": 1772278027.853944
-    },
-    {
-      "name": "IRAN-Tz-Tz (1).ehi",
-      "ext": "EHI",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/24362",
-      "ts": 1772278027.334269
-    },
-    {
-      "name": "متصل ویژه.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد | Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/43775",
-      "ts": 1772275626.1561728
     }
   ]
 }

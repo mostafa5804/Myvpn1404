@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphYmM0ODRlZGNmMWJlNDNj@163.171.181.49:48852#%F0%9F%86%94%EF%B8%8F%20%7C%20%40BugFreeNet%E3%80%8E%E2%9A%A1%EF%B8%8F%E2%81%B5%E3%80%8F`",
+      "latency": 184,
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/14154",
+      "flag": "🇰🇼",
+      "country": "Kuwait",
+      "ts": 1772275643.1120622
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxa1ZyMEtBVElKSTdtd09G@admin.c1.havij.co:443#%F0%9F%86%94%EF%B8%8F%20%7C%20%40BugFreeNet%E3%80%8E%E2%9A%A1%EF%B8%8F%E2%81%B4%E3%80%8F",
+      "latency": 121,
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/14153",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1772275642.5633936
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.61:8080#%F0%9F%86%94%EF%B8%8F%20%7C%20%40BugFreeNet%E3%80%8E%E2%9A%A1%EF%B8%8F%C2%B3%E3%80%8F",
+      "latency": 107,
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/14152",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1772275642.1100142
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://72adc5b8-146a-4bfe-921b-5c9e1df016e0@217.16.27.217:443?security=reality&encryption=none&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&headerType=none&fp=qq&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=ozon.ru&sid=65ce6cee3941af69#%F0%9F%86%94%EF%B8%8F%20%7C%20%40BugFreeNet%E3%80%8E%E2%9A%A1%EF%B8%8F%C2%B2%E3%80%8F",
+      "latency": 141,
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/14151",
+      "flag": "🇷🇺",
+      "country": "Russia",
+      "ts": 1772275641.6076992
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://e53a92c7-4a78-49cc-ab01-917661058b9a@172.64.153.22:8443?path=%2F%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=egaxhxw0p031z8iyfgjt9fyhhb1hwj4vr3gn0xoxqu901o8ruij.zjde5.de5.net&type=ws&allowInsecure=0&sni=egaxhxw0p031z8iyfgjt9fyhhb1hwj4vr3gn0xoxqu901o8ruij.zjde5.de5.net#%D8%AF%DA%A9%D8%AA%D8%B1%20%D9%86%DB%8C%DA%A9",
       "latency": 2,
@@ -12,6 +52,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "77.72.80.210:9443",
+      "link": "tg://proxy?server=77.72.80.210&port=9443&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
+      "t_link": "https://t.me/myvpn1404/14155",
+      "latency": 119,
+      "flag": "🇮🇷",
+      "ts": 1772275665.1209867
+    },
+    {
+      "key": "195.254.165.201:4455",
+      "link": "tg://proxy?server=195.254.165.201&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
+      "t_link": "https://t.me/myvpn1404/14155",
+      "latency": 112,
+      "flag": "🇳🇱",
+      "ts": 1772275665.1209848
+    },
     {
       "key": "77.72.80.134:2053",
       "link": "tg://proxy?server=77.72.80.134&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
@@ -893,27 +951,16 @@
       "latency": 290,
       "flag": "🇫🇮",
       "ts": 1772258003.2401946
-    },
-    {
-      "key": "79.175.149.210:443",
-      "link": "tg://proxy?server=79.175.149.210&port=443&secret=dd6321048187495dfac59a030220c25d8e",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/14099",
-      "latency": 277,
-      "flag": "🇮🇷",
-      "ts": 1772258003.2401936
-    },
-    {
-      "key": "Shoting.forwarding-co.site.:44300",
-      "link": "tg://proxy?server=Shoting.forwarding-co.site.&port=44300&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/14099",
-      "latency": 192,
-      "flag": "🇫🇮",
-      "ts": 1772258003.2401927
     }
   ],
   "files": [
+    {
+      "name": "متصل ویژه.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/43775",
+      "ts": 1772275626.1561728
+    },
     {
       "name": "جدید متصل.npvt",
       "ext": "NPVT",

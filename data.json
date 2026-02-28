@@ -293,6 +293,33 @@
   ],
   "proxies": [
     {
+      "key": "ra.3pita.com:25565",
+      "link": "tg://proxy?server=ra.3pita.com&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/14255",
+      "latency": 15,
+      "flag": "🇨🇦",
+      "ts": 1772304870.7661793
+    },
+    {
+      "key": "ra.3pita.com:25565",
+      "link": "tg://proxy?server=ra.3pita.com&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/14255",
+      "latency": 314,
+      "flag": "🇨🇦",
+      "ts": 1772304870.766178
+    },
+    {
+      "key": "77.72.80.94:4455",
+      "link": "tg://proxy?server=77.72.80.94&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14254",
+      "latency": 120,
+      "flag": "🇮🇷",
+      "ts": 1772304840.9050927
+    },
+    {
       "key": "mirza.nimanewspast.cfd:443",
       "link": "tg://proxy?server=mirza.nimanewspast.cfd&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
       "channel": "VPN | CICDO کانفینگ اخبار جنگ",
@@ -1164,33 +1191,6 @@
       "latency": 186,
       "flag": "🇨🇦",
       "ts": 1772293320.768161
-    },
-    {
-      "key": "77.72.80.133:4455",
-      "link": "tg://proxy?server=77.72.80.133&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/14205",
-      "latency": 103,
-      "flag": "🇮🇷",
-      "ts": 1772293320.7681596
-    },
-    {
-      "key": "195.254.165.18:2053",
-      "link": "tg://proxy?server=195.254.165.18&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/14205",
-      "latency": 115,
-      "flag": "🇳🇱",
-      "ts": 1772293320.768158
-    },
-    {
-      "key": "77.72.80.77:4455",
-      "link": "tg://proxy?server=77.72.80.77&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/14205",
-      "latency": 105,
-      "flag": "🇮🇷",
-      "ts": 1772293320.7681568
     }
   ],
   "files": [
@@ -1459,48 +1459,6 @@
       "channel": "کانفیگ ملی شکن",
       "link": "https://t.me/shankamil/4848",
       "ts": 1772262060.7639294
-    },
-    {
-      "name": "🇫🇮.npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2635",
-      "ts": 1772261422.00513
-    },
-    {
-      "name": "🇩🇪 AmyraxVPN _ 3.npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2636",
-      "ts": 1772261421.660267
-    },
-    {
-      "name": "نتانیاهوقلبمی.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ ملی شکن",
-      "link": "https://t.me/shankamil/4830",
-      "ts": 1772261414.2342923
-    },
-    {
-      "name": "موشک قشنگم مرسی ک اومدی.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ ملی شکن",
-      "link": "https://t.me/shankamil/4840",
-      "ts": 1772261413.9379048
-    },
-    {
-      "name": "@planB_net #307.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1984",
-      "ts": 1772261365.9524598
-    },
-    {
-      "name": "@planB_net #308.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/1985",
-      "ts": 1772261365.6527498
     }
   ]
 }

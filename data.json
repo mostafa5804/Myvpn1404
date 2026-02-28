@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@193.29.139.206:8080#NetAccount",
+      "latency": 1117,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14198",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1772289011.4385085
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@51.44.103.139:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 104,
@@ -132,6 +142,33 @@
     }
   ],
   "proxies": [
+    {
+      "key": "185.84.157.100:443",
+      "link": "tg://proxy?server=185.84.157.100&port=443&secret=1603010200010001fc030386e24c3add)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/14200",
+      "latency": 88,
+      "flag": "🇮🇷",
+      "ts": 1772289032.1755946
+    },
+    {
+      "key": "185.84.157.254:444",
+      "link": "tg://proxy?server=185.84.157.254&port=444&secret=FgMBAgABAAH8AxOG4kw63Q",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/14199",
+      "latency": 101,
+      "flag": "🇮🇷",
+      "ts": 1772289024.7573876
+    },
+    {
+      "key": "195.254.165.151:4455",
+      "link": "tg://proxy?server=195.254.165.151&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D&",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/14199",
+      "latency": 106,
+      "flag": "🇳🇱",
+      "ts": 1772289024.7573857
+    },
     {
       "key": "www.porteghall.site.:8443",
       "link": "tg://proxy?server=www.porteghall.site.&port=8443&secret=dd79e7010200010007f0030386e24c3add",
@@ -1004,33 +1041,6 @@
       "latency": 128,
       "flag": "🇳🇱",
       "ts": 1772278008.6706107
-    },
-    {
-      "key": "77.72.80.210:9443",
-      "link": "tg://proxy?server=77.72.80.210&port=9443&secret=EERighJJvXrFGRMCIMJdCQ",
-      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
-      "t_link": "https://t.me/myvpn1404/14155",
-      "latency": 119,
-      "flag": "🇮🇷",
-      "ts": 1772275665.1209867
-    },
-    {
-      "key": "195.254.165.201:4455",
-      "link": "tg://proxy?server=195.254.165.201&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
-      "t_link": "https://t.me/myvpn1404/14155",
-      "latency": 112,
-      "flag": "🇳🇱",
-      "ts": 1772275665.1209848
-    },
-    {
-      "key": "77.72.80.134:2053",
-      "link": "tg://proxy?server=77.72.80.134&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
-      "t_link": "https://t.me/myvpn1404/14149",
-      "latency": 116,
-      "flag": "🇮🇷",
-      "ts": 1772274797.9448924
     }
   ],
   "files": [
@@ -1243,34 +1253,6 @@
       "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
       "link": "https://t.me/vpn11ir/112439",
       "ts": 1772252438.9958696
-    },
-    {
-      "name": "NetAccount624.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/14356",
-      "ts": 1772245660.286164
-    },
-    {
-      "name": "NetAccount625.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/14357",
-      "ts": 1772245660.00736
-    },
-    {
-      "name": "NetAccount626.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/14358",
-      "ts": 1772245659.7617865
-    },
-    {
-      "name": "NetAccount627.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/14359",
-      "ts": 1772245659.4636467
     }
   ]
 }

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://421a5536-c3c8-45ab-aa36-2ff032c6d44e@vpn.nnet.online:443?path=%2Fvless-tls&security=tls&encryption=none&host=nnet.online&type=ws&sni=vpn.nnet.online#%D8%A7%DA%AF%D9%87+%D9%85%DB%8C%D8%AE%D9%88%D8%A7%DB%8C+%D9%82%D8%B7%D8%B9+%D9%86%D8%B4%DB%8C+%D8%AC%D9%88%DB%8C%D9%86+%D8%B4%D9%88+%3A+%40configraygan",
+      "latency": 35,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14415",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1772376458.8771517
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@51.45.25.158:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 153,
@@ -332,6 +342,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "www.mtproto.mtproxy.imtproxy-ir.one:53556",
+      "link": "tg://proxy?server=www.mtproto.mtproxy.imtproxy-ir.one&port=53556&secret=Aishael",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14416",
+      "latency": 241,
+      "flag": "🇫🇮",
+      "ts": 1772376459.1820679
+    },
     {
       "key": "185.84.157.15:10",
       "link": "tg://proxy?server=185.84.157.15&port=10&secret=FgMBAgABAAH8AxOG4kw63Q%3D%3D",
@@ -1222,18 +1241,16 @@
       "latency": 88,
       "flag": "🇮🇷",
       "ts": 1772335661.645894
-    },
-    {
-      "key": "85.133.194.46:6443",
-      "link": "tg://proxy?server=85.133.194.46&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/14322",
-      "latency": 88,
-      "flag": "🇮🇷",
-      "ts": 1772335661.645893
     }
   ],
   "files": [
+    {
+      "name": "1 March ویژه متصل.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/43929",
+      "ts": 1772376526.5678332
+    },
     {
       "name": "1 March Fast.npvt",
       "ext": "NPVT",

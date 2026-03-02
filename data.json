@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiJidWcudG9wc3BlZWRhcmFzaC5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiMDIyYWY4YTItZjJhMC00YzE5LTk5NjItZWRjMTE2YWI4Y2QwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiI0MzYwIiwicHMiOiJAY29uZmlncmF5Z2FuIE82Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
+      "latency": 178,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14616",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1772451418.3952618
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiJidWcudG9wc3BlZWRhcmFzaC5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiMDIyYWY4YTItZjJhMC00YzE5LTk5NjItZWRjMTE2YWI4Y2QwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiI0MzYyIiwicHMiOiJAY29uZmlncmF5Z2FuIE81Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
+      "latency": 133,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14615",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1772451417.893557
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://815dba60-0b12-4be4-9106-33952667e63b@mydigipay.com:443?path=%2F&security=tls&encryption=none&alpn=h2,http/1.1&host=www.link-kon.ir&fp=chrome&type=ws&sni=mydigipay.com#%40configraygan+K1",
+      "latency": 343,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14614",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1772451405.1893706
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@13.38.236.178:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#@cicdovpn",
       "latency": 128,
@@ -72,6 +102,33 @@
     }
   ],
   "proxies": [
+    {
+      "key": "92.246.87.46:25565",
+      "link": "tg://proxy?server=92.246.87.46&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/14620",
+      "latency": 90,
+      "flag": "🇳🇱",
+      "ts": 1772451445.3995407
+    },
+    {
+      "key": "77.72.80.94:4455",
+      "link": "tg://proxy?server=77.72.80.94&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14617",
+      "latency": 84,
+      "flag": "🇮🇷",
+      "ts": 1772451423.2215216
+    },
+    {
+      "key": "92.246.87.46:25565",
+      "link": "tg://proxy?server=92.246.87.46&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14617",
+      "latency": 91,
+      "flag": "🇳🇱",
+      "ts": 1772451423.2215195
+    },
     {
       "key": "87.248.149.36:65535",
       "link": "tg://proxy?server=87.248.149.36&port=65535&secret=10446282fffffffffff80000fff80000",
@@ -723,6 +780,34 @@
   ],
   "files": [
     {
+      "name": "@BugFreeNet.npvt",
+      "ext": "NPVT",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/BugFreeNet/28201",
+      "ts": 1772451492.7150457
+    },
+    {
+      "name": "@BugFreeNet1.npvt",
+      "ext": "NPVT",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/BugFreeNet/28202",
+      "ts": 1772451492.407226
+    },
+    {
+      "name": "ping 484.npvt",
+      "ext": "NPVT",
+      "channel": "xsfilternet",
+      "link": "https://t.me/xsfilternet/2785",
+      "ts": 1772451436.9515777
+    },
+    {
+      "name": "@shankamil.ehi",
+      "ext": "EHI",
+      "channel": "کانفیگ ملی شکن",
+      "link": "https://t.me/shankamil/5513",
+      "ts": 1772451428.6188762
+    },
+    {
       "name": "Irancell⚡️ProxySnipe.ehi",
       "ext": "EHI",
       "channel": "پروکسی رایگان ملی / فیلترشکن",
@@ -994,83 +1079,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/2074",
       "ts": 1772427204.9192839
-    },
-    {
-      "name": "ملی شکن تست🔥🪅🪩.npvt",
-      "ext": "NPVT",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/28180",
-      "ts": 1772408010.7015328
-    },
-    {
-      "name": "‎⁨متصل نت ملی⚡️❤️‍🔥⁩.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد | Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/43971",
-      "ts": 1772408002.2173285
-    },
-    {
-      "name": "🔰 @Eag1e_YT-(#84).npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2755",
-      "ts": 1772407952.4008934
-    },
-    {
-      "name": "ping 944.npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2756",
-      "ts": 1772407952.0434453
-    },
-    {
-      "name": "100gig @FarsiProxy (1) (1).npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2757",
-      "ts": 1772407951.706439
-    },
-    {
-      "name": "دانلود نکن @FarsiProxy.npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2758",
-      "ts": 1772407951.403445
-    },
-    {
-      "name": "سرور آلمان.npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2759",
-      "ts": 1772407951.1374207
-    },
-    {
-      "name": "@FarsiProxy1.npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2760",
-      "ts": 1772407950.838096
-    },
-    {
-      "name": "@AmyraxVPN - کانفیگ.npvt",
-      "ext": "NPVT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/2763",
-      "ts": 1772407950.5352864
-    },
-    {
-      "name": "@shankamil ملی شکن نیک (2).npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ ملی شکن",
-      "link": "https://t.me/shankamil/5405",
-      "ts": 1772407938.9714985
-    },
-    {
-      "name": "@shankamil بیست گیگ نیک.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ ملی شکن",
-      "link": "https://t.me/shankamil/5412",
-      "ts": 1772407938.6679206
     }
   ]
 }

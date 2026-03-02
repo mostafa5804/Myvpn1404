@@ -799,19 +799,54 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1772441757.3406334
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@52.29.89.183:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 159,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/14575",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1772435591.230405
     }
   ],
   "proxies": [
+    {
+      "key": "142.54.189.107:443",
+      "link": "tg://proxy?server=142.54.189.107&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267**",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/14712",
+      "latency": 12,
+      "flag": "🇺🇸",
+      "ts": 1772480653.5033188
+    },
+    {
+      "key": "194.120.230.106:433",
+      "link": "tg://proxy?server=194.120.230.106&port=433&secret=3XnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/14712",
+      "latency": 102,
+      "flag": "🇳🇱",
+      "ts": 1772480653.5033174
+    },
+    {
+      "key": "185.84.157.21:10",
+      "link": "tg://proxy?server=185.84.157.21&port=10&secret=FgMBAgABAAH8AxOG4kw63Q%3D%3D",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/14712",
+      "latency": 99,
+      "flag": "🇮🇷",
+      "ts": 1772480653.5033152
+    },
+    {
+      "key": "77.72.80.25:4455",
+      "link": "tg://proxy?server=77.72.80.25&port=4455&secret=7hYDAQIAAQAB/AMDhuJMOt1iaXNjb3R0aS55ZWt0YW5ldC5jb20",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/14711",
+      "latency": 99,
+      "flag": "🇮🇷",
+      "ts": 1772480645.85132
+    },
+    {
+      "key": "195.254.165.18:2053",
+      "link": "tg://proxy?server=195.254.165.18&port=2053&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14710",
+      "latency": 102,
+      "flag": "🇳🇱",
+      "ts": 1772480614.5635264
+    },
     {
       "key": "85.133.194.46:6443",
       "link": "tg://proxy?server=85.133.194.46&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
@@ -1666,54 +1701,16 @@
       "latency": 101,
       "flag": "🇮🇷",
       "ts": 1772441705.9848063
-    },
-    {
-      "key": "77.72.80.132:4455",
-      "link": "tg://proxy?server=77.72.80.132&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/14580",
-      "latency": 105,
-      "flag": "🇮🇷",
-      "ts": 1772441705.9848056
-    },
-    {
-      "key": "185.84.157.100:443",
-      "link": "tg://proxy?server=185.84.157.100&port=443&secret=1603010200010001fc030386e24c3add",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/14580",
-      "latency": 100,
-      "flag": "🇮🇷",
-      "ts": 1772441705.9848044
-    },
-    {
-      "key": "185.84.157.11:10",
-      "link": "tg://proxy?server=185.84.157.11&port=10&secret=FgMBAgABAAH8AxOG4kw63Q%3D%3D",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/14580",
-      "latency": 105,
-      "flag": "🇮🇷",
-      "ts": 1772441705.9848034
-    },
-    {
-      "key": "195.254.165.208:4455",
-      "link": "tg://proxy?server=195.254.165.208&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/14580",
-      "latency": 103,
-      "flag": "🇳🇱",
-      "ts": 1772441705.984802
-    },
-    {
-      "key": "77.72.80.77:4455",
-      "link": "tg://proxy?server=77.72.80.77&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/14580",
-      "latency": 105,
-      "flag": "🇮🇷",
-      "ts": 1772441705.9848008
     }
   ],
   "files": [
+    {
+      "name": "کیومرث جدید.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت ازاد",
+      "link": "https://t.me/mitivpn/15858",
+      "ts": 1772480583.431351
+    },
     {
       "name": "H100.txt",
       "ext": "TXT",
@@ -1944,83 +1941,6 @@
       "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
       "link": "https://t.me/vpn11ir/112501",
       "ts": 1772438618.5862963
-    },
-    {
-      "name": "2 March.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد | Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/43986",
-      "ts": 1772436746.9330149
-    },
-    {
-      "name": "Kurdivpn⚡️ (1).ehi",
-      "ext": "EHI",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/24675",
-      "ts": 1772435552.3469803
-    },
-    {
-      "name": "ir3 (1).npvt",
-      "ext": "NPVT",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/24678",
-      "ts": 1772435546.1524992
-    },
-    {
-      "name": "@blackRay ایرانسل.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/112489",
-      "ts": 1772435523.2674742
-    },
-    {
-      "name": "@blackRay - Test.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/112490",
-      "ts": 1772435522.9646163
-    },
-    {
-      "name": "@blackRay ❤️‍🔥❤️‍🔥.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/112491",
-      "ts": 1772435522.6638465
-    },
-    {
-      "name": "@blackRay - ❤️‍🔥.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/112492",
-      "ts": 1772435522.3631713
-    },
-    {
-      "name": "25G @blackRay.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/112493",
-      "ts": 1772435522.0670028
-    },
-    {
-      "name": "@blackRay - ایرانسل ⚡.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/112494",
-      "ts": 1772435521.7889733
-    },
-    {
-      "name": "new test.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/112495",
-      "ts": 1772435521.5233095
-    },
-    {
-      "name": "@blackRay - چند ثانیه صبرکنید.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/112496",
-      "ts": 1772435521.2015007
     }
   ]
 }

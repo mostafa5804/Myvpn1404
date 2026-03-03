@@ -189,19 +189,27 @@
       "flag": "🇳🇱",
       "country": "The Netherlands",
       "ts": 1772537985.9091034
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@15.236.135.208:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 146,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/14741",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1772535959.9624972
     }
   ],
   "proxies": [
+    {
+      "key": "85.133.194.95:6443",
+      "link": "tg://proxy?server=85.133.194.95&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/14790",
+      "latency": 148,
+      "flag": "🇮🇷",
+      "ts": 1772580975.071192
+    },
+    {
+      "key": "85.133.194.45:6443",
+      "link": "tg://proxy?server=85.133.194.45&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/14790",
+      "latency": 149,
+      "flag": "🇮🇷",
+      "ts": 1772580975.0711896
+    },
     {
       "key": "85.133.194.97:6443",
       "link": "tg://proxy?server=85.133.194.97&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
@@ -633,54 +641,51 @@
       "latency": null,
       "flag": "🇮🇷",
       "ts": 1772537993.1337345
-    },
-    {
-      "key": "peyk.acharbashi.info:4515",
-      "link": "tg://proxy?server=peyk.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/14740",
-      "latency": 165,
-      "flag": "🇮🇷",
-      "ts": 1772535153.3984108
-    },
-    {
-      "key": "r1.newr1.co.uk:85",
-      "link": "tg://proxy?server=r1.newr1.co.uk&port=85&secret=FgMBAgABAAH8AxOG4kw63Q==",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/14740",
-      "latency": 300,
-      "flag": "🇺🇸",
-      "ts": 1772535153.3984098
-    },
-    {
-      "key": "142.54.189.107:443",
-      "link": "tg://proxy?server=142.54.189.107&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/14740",
-      "latency": 45,
-      "flag": "🇺🇸",
-      "ts": 1772535153.3984082
-    },
-    {
-      "key": "r1.newr1.co.uk:85",
-      "link": "tg://proxy?server=r1.newr1.co.uk&port=85&secret=FgMBAgABAAH8AxOG4kw63Q==)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/14740",
-      "latency": 155,
-      "flag": "🇺🇸",
-      "ts": 1772535153.398406
-    },
-    {
-      "key": "peyk.acharbashi.info:4515",
-      "link": "tg://proxy?server=peyk.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/14739",
-      "latency": 270,
-      "flag": "🇮🇷",
-      "ts": 1772535096.0136385
     }
   ],
   "files": [
+    {
+      "name": "آلمان 1.dark",
+      "ext": "DARK",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/BugFreeNet/28268",
+      "ts": 1772580983.102533
+    },
+    {
+      "name": "آلمان 2.dark",
+      "ext": "DARK",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/BugFreeNet/28269",
+      "ts": 1772580982.7459064
+    },
+    {
+      "name": "آلمان 3.dark",
+      "ext": "DARK",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/BugFreeNet/28270",
+      "ts": 1772580982.421278
+    },
+    {
+      "name": "آلمان 4.dark",
+      "ext": "DARK",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/BugFreeNet/28271",
+      "ts": 1772580982.1362622
+    },
+    {
+      "name": "آلمان 5.dark",
+      "ext": "DARK",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/BugFreeNet/28272",
+      "ts": 1772580981.867645
+    },
+    {
+      "name": "🔰 @BugFreeNet.npvt",
+      "ext": "NPVT",
+      "channel": "🔱BugFreeNet🔱",
+      "link": "https://t.me/BugFreeNet/28276",
+      "ts": 1772580981.588525
+    },
     {
       "name": "slipnet-links.txt",
       "ext": "TXT",

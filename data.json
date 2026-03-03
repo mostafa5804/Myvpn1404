@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://873a8e21-5fed-36a7-b251-734ebc97381c@s1.db-link.in:443?encryption=none&security=tls&sni=s6.oboob.cn&alpn=h3%2Ch2&fp=chrome&insecure=1&type=ws&host=s6.oboob.cn&path=%2Fdb1024c59ce5eab9#NetAccount`",
+      "latency": 265,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14779",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1772561081.283343
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3NjRhNGQ4YzFjNzZlYjUw@194.233.73.51:14453#NetAccount`",
+      "latency": 276,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14778",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "ts": 1772561080.672515
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@52.28.154.195:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 150,
@@ -212,6 +232,33 @@
     }
   ],
   "proxies": [
+    {
+      "key": "185.84.157.227:443",
+      "link": "tg://proxy?server=185.84.157.227&port=443&secret=1603010200010001fc030386e24c3add)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/14781",
+      "latency": 110,
+      "flag": "🇮🇷",
+      "ts": 1772561109.256762
+    },
+    {
+      "key": "185.84.157.100:443",
+      "link": "tg://proxy?server=185.84.157.100&port=443&secret=1603010200010001fc030386e24c3add)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/14781",
+      "latency": 111,
+      "flag": "🇮🇷",
+      "ts": 1772561109.2567596
+    },
+    {
+      "key": "144.31.136.0:59877",
+      "link": "tg://proxy?server=144.31.136.0&port=59877&secret=ddb62d12eb3a9c875d04c730aa81c87f8b)",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/14780",
+      "latency": 128,
+      "flag": "🇩🇪",
+      "ts": 1772561098.5931997
+    },
     {
       "key": "alo.acharbashi.info:4515",
       "link": "tg://proxy?server=alo.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d",

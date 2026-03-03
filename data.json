@@ -199,19 +199,27 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1772521421.0009415
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e271ff6a-2520-4cb1-8993-b43e763ad41c@2.144.5.9:13346?security=none&encryption=none&headerType=none&type=tcp#%40PlanB_net`",
-      "latency": null,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/14719",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1772513524.5161366
     }
   ],
   "proxies": [
+    {
+      "key": "65.109.87.178:8080",
+      "link": "tg://proxy?server=65.109.87.178&port=8080&secret=dd49a70de57a60174f18dfd7fe6ef6aaf5",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/14771",
+      "latency": 130,
+      "flag": "🇫🇮",
+      "ts": 1772557120.5390122
+    },
+    {
+      "key": "85.133.194.49:6443",
+      "link": "tg://proxy?server=85.133.194.49&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14768",
+      "latency": 105,
+      "flag": "🇮🇷",
+      "ts": 1772557100.129537
+    },
     {
       "key": "185.84.157.233:9",
       "link": "tg://proxy?server=185.84.157.233&port=9&secret=1603010200010001fc031386e24c3add",
@@ -853,6 +861,20 @@
     }
   ],
   "files": [
+    {
+      "name": "irdns.txt",
+      "ext": "TXT",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/4732",
+      "ts": 1772557120.2441032
+    },
+    {
+      "name": "@shankamilآزادی ایران.ehi",
+      "ext": "EHI",
+      "channel": "کانفیگ ملی شکن",
+      "link": "https://t.me/shankamil/5736",
+      "ts": 1772557105.5040424
+    },
     {
       "name": "نپستر 20.npvt",
       "ext": "NPVT",

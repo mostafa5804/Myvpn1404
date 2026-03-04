@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://423c14e1-9879-4335-b371-e582ce0dbc14@185.97.119.239:8080?security=none&encryption=none&headerType=none&type=tcp#NetAccount`",
+      "latency": null,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14798",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1772593825.991506
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprRHQ4Y0cxVExnNHVCMG5VTU9BdQ@91.107.144.0:1080#NetAccount`",
+      "latency": 156,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14797",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1772593824.2106285
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://1cf6792c-079e-44f9-a2ce-2c00feae74bf@2.144.6.9:14032?security=none&encryption=none&headerType=none&type=tcp#configraygan",
       "latency": null,
       "channel": "کانفیگ رایگان",
@@ -436,42 +456,6 @@
       "latency": null,
       "flag": "🇮🇷",
       "ts": 1772553324.085793
-    },
-    {
-      "key": "195.254.165.208:4455",
-      "link": "tg://proxy?server=195.254.165.208&port=4455&secret=7hYDAQIAAQAB_AMDhuJMOt1iaXNjb3R0aS55ZWt0YW5ldC5jb20",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/14757",
-      "latency": 143,
-      "flag": "🇳🇱",
-      "ts": 1772549595.2064912
-    },
-    {
-      "key": "ra.3pita.com:25565",
-      "link": "tg://proxy?server=ra.3pita.com&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/14757",
-      "latency": 10,
-      "flag": "🇨🇦",
-      "ts": 1772549595.2064898
-    },
-    {
-      "key": "ra.3pita.com:25565",
-      "link": "tg://proxy?server=ra.3pita.com&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/14757",
-      "latency": 206,
-      "flag": "🇨🇦",
-      "ts": 1772549595.2064886
-    },
-    {
-      "key": "194.120.230.106:433",
-      "link": "tg://proxy?server=194.120.230.106&port=433&secret=3XnnAQIAAQAH8AMDhuJMOt0",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/14757",
-      "latency": 137,
-      "flag": "🇳🇱",
-      "ts": 1772549595.2064862
     }
   ],
   "files": [
@@ -572,13 +556,6 @@
       "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
       "link": "https://t.me/vpn11ir/112522",
       "ts": 1772550654.6349022
-    },
-    {
-      "name": "@planB_net #340.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2142",
-      "ts": 1772549552.4092174
     }
   ]
 }

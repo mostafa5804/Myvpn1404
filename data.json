@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiJ1c2VyNTUwNy5sb2dpbi5rYXJpbTIwMDAuaXIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiYWE4NDU4ZTktMTk4My00OWUyLWE0MmMtMjlmYjllYTQ1M2Y3IiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxMDAzNiIsInBzIjoiQFZDb25maW5nIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==****",
+      "latency": 337,
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/14950",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1772704493.747277
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://0c49f1d8-3d34-473b-bebf-9d9a4811db62@45.141.234.196:51472?security=reality&encryption=none&pbk=hvFQArY-PeMdz4jfKEGZ9HgIJvZbR5Bd9F0GgNLemQI&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=yandex.ru&sid=ab4398ec00fc775d#%40configraygan+10",
       "latency": 81,
@@ -53,6 +63,42 @@
   ],
   "proxies": [
     {
+      "key": "87.248.149.36:65535",
+      "link": "tg://proxy?server=87.248.149.36&port=65535&secret=10446282fffffffffff80000fff80000",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/14951",
+      "latency": 105,
+      "flag": "🇬🇧",
+      "ts": 1772704497.5505168
+    },
+    {
+      "key": "185.84.157.100:443",
+      "link": "tg://proxy?server=185.84.157.100&port=443&secret=1603010200010001fc030386e24c3add",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/14951",
+      "latency": null,
+      "flag": "🇮🇷",
+      "ts": 1772704497.5505154
+    },
+    {
+      "key": "85.133.194.99:6443",
+      "link": "tg://proxy?server=85.133.194.99&port=6443&secret=79e344818749bd7ac519130220c25d09**",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/14951",
+      "latency": 100,
+      "flag": "🇮🇷",
+      "ts": 1772704497.5505145
+    },
+    {
+      "key": "185.84.157.21:10",
+      "link": "tg://proxy?server=185.84.157.21&port=10&secret=FgMBAgABAAH8AxOG4kw63Q%3D%3D",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/14951",
+      "latency": null,
+      "flag": "🇮🇷",
+      "ts": 1772704497.550512
+    },
+    {
       "key": "185.3.200.173:4455",
       "link": "tg://proxy?server=185.3.200.173&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
       "channel": "کانفیگ رایگان",
@@ -96,51 +142,6 @@
       "latency": 25,
       "flag": "🇺🇸",
       "ts": 1772663977.2282274
-    },
-    {
-      "key": "arvancloud.ir:2086",
-      "link": "tg://proxy?server=arvancloud.ir&port=2086&secret=e9e437c2-1ee5-4f0d-ae09-4bfafc835e4",
-      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
-      "t_link": "https://t.me/myvpn1404/14921",
-      "latency": 218,
-      "flag": "🇮🇷",
-      "ts": 1772660602.7302732
-    },
-    {
-      "key": "tg-proxy.greentg.su:443",
-      "link": "tg://proxy?server=tg-proxy.greentg.su&port=443&secret=ab6c6db4ec6814fc0792722cd88b46e",
-      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
-      "t_link": "https://t.me/myvpn1404/14921",
-      "latency": 356,
-      "flag": "🇷🇺",
-      "ts": 1772660602.7302723
-    },
-    {
-      "key": "sni.needhost.ir:443",
-      "link": "tg://proxy?server=sni.needhost.ir&port=443&secret=7nlnZpKACGMvBKgv9kq9q-5zbmkubmVlZGhvc3QuaXI",
-      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
-      "t_link": "https://t.me/myvpn1404/14921",
-      "latency": 243,
-      "flag": "🇩🇪",
-      "ts": 1772660602.7302704
-    },
-    {
-      "key": "tg.watchnow.icu:443",
-      "link": "tg://proxy?server=tg.watchnow.icu&port=443&secret=33949ed9ec94e0afc03af60bfc21cec9",
-      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
-      "t_link": "https://t.me/myvpn1404/14921",
-      "latency": 180,
-      "flag": "🇷🇺",
-      "ts": 1772660602.7302685
-    },
-    {
-      "key": "web.websecc.info:42341",
-      "link": "tg://proxy?server=web.websecc.info&port=42341&secret=7nnnAQIAAQAH8AMDhuJMOt0",
-      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
-      "t_link": "https://t.me/myvpn1404/14921",
-      "latency": 300,
-      "flag": "🇫🇮",
-      "ts": 1772660602.7302656
     }
   ],
   "files": [

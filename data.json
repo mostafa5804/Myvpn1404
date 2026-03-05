@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@www.gossipglove.com:443?path=%2Fassignment%3FTELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.gossipglove.com#NetAccount",
+      "latency": 68,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/15000",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1772734371.297661
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://5774ae61-7402-41db-9388-1db9c43c11c3@84.200.33.52:8080?type=tcp&encryption=none&path=%2F&host=testspeed-foreign.tci.ir&headerType=http&security=none#NetAccount",
+      "latency": 127,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14999",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1772734370.8060005
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://YWVzLTEyOC1nY206bUJsMWZZaFg4OHhrM0szOUllUHJSbm1zUUR2YjFoNGY%3D@51.159.103.137:18290#NetAccount",
+      "latency": 127,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/14998",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1772734370.2699986
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://3f9c8463-8610-3ed8-86c8-a26713067825@188.114.98.0:443?path=%2Fdb10240eb751d6ab&security=tls&encryption=none&insecure=0&host=dabaius2.sylu.net&type=ws&allowInsecure=0&sni=dabaius2.sylu.net#IP_CF`",
       "latency": 2,
@@ -252,6 +282,105 @@
     }
   ],
   "proxies": [
+    {
+      "key": "195.254.165.244:25565",
+      "link": "tg://proxy?server=195.254.165.244&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/15003",
+      "latency": 136,
+      "flag": "🇳🇱",
+      "ts": 1772734410.7426047
+    },
+    {
+      "key": "195.254.165.245:25565",
+      "link": "tg://proxy?server=195.254.165.245&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/15003",
+      "latency": 130,
+      "flag": "🇳🇱",
+      "ts": 1772734410.7426035
+    },
+    {
+      "key": "195.254.165.245:25565",
+      "link": "tg://proxy?server=195.254.165.245&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/15003",
+      "latency": 1189,
+      "flag": "🇳🇱",
+      "ts": 1772734410.7426023
+    },
+    {
+      "key": "195.254.165.244:25565",
+      "link": "tg://proxy?server=195.254.165.244&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/15003",
+      "latency": 1151,
+      "flag": "🇳🇱",
+      "ts": 1772734410.7426007
+    },
+    {
+      "key": "195.254.165.243:25565",
+      "link": "tg://proxy?server=195.254.165.243&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/15003",
+      "latency": 136,
+      "flag": "🇳🇱",
+      "ts": 1772734410.742599
+    },
+    {
+      "key": "195.254.165.241:25565",
+      "link": "tg://proxy?server=195.254.165.241&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/15003",
+      "latency": 123,
+      "flag": "🇳🇱",
+      "ts": 1772734410.7425966
+    },
+    {
+      "key": "195.254.165.241:25565",
+      "link": "tg://proxy?server=195.254.165.241&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/15002",
+      "latency": 123,
+      "flag": "🇳🇱",
+      "ts": 1772734400.6593325
+    },
+    {
+      "key": "195.254.165.151:9443",
+      "link": "tg://proxy?server=195.254.165.151&port=9443&secret=FgMBAgABAAH8AwOG4kw63Q%3D%3D&@vpnbaz",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/15001",
+      "latency": 1128,
+      "flag": "🇳🇱",
+      "ts": 1772734386.9487658
+    },
+    {
+      "key": "195.254.165.138:4455",
+      "link": "tg://proxy?server=195.254.165.138&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D&@vpnbaz",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/15001",
+      "latency": 124,
+      "flag": "🇳🇱",
+      "ts": 1772734386.9487646
+    },
+    {
+      "key": "195.254.165.208:7443",
+      "link": "tg://proxy?server=195.254.165.208&port=7443&secret=eeNEgYdJvXrFGRMCIMJdCQ%3D%3D&@vpnbaz",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/15001",
+      "latency": 124,
+      "flag": "🇳🇱",
+      "ts": 1772734386.9487634
+    },
+    {
+      "key": "195.254.165.243:25565",
+      "link": "tg://proxy?server=195.254.165.243&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/15001",
+      "latency": 136,
+      "flag": "🇳🇱",
+      "ts": 1772734386.948761
+    },
     {
       "key": "195.254.165.208:7443",
       "link": "tg://proxy?server=195.254.165.208&port=7443&secret=eeNEgYdJvXrFGRMCIMJdCQ%3D%3D",
@@ -1034,15 +1163,6 @@
       "latency": 59,
       "flag": "🇺🇸",
       "ts": 1772697578.8143382
-    },
-    {
-      "key": "91.239.192.14:65535",
-      "link": "tg://proxy?server=91.239.192.14&port=65535&secret=10446282fffffffffff80000fff8000",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/14931",
-      "latency": 110,
-      "flag": "🇮🇷",
-      "ts": 1772690118.26412
     }
   ],
   "files": [
@@ -1199,20 +1319,6 @@
       "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
       "link": "https://t.me/vpn11ir/112560",
       "ts": 1772694167.2124612
-    },
-    {
-      "name": "🇮🇷Meli2(NPV).npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/112554",
-      "ts": 1772690796.653254
-    },
-    {
-      "name": "@blackRay - وایفای - ایرانسل.npvt",
-      "ext": "NPVT",
-      "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
-      "link": "https://t.me/vpn11ir/112557",
-      "ts": 1772690796.411216
     }
   ]
 }

@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://0c49f1d8-3d34-473b-bebf-9d9a4811db62@45.141.234.196:51472?security=reality&encryption=none&pbk=hvFQArY-PeMdz4jfKEGZ9HgIJvZbR5Bd9F0GgNLemQI&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=yandex.ru&sid=ab4398ec00fc775d#%40configraygan+10",
+      "latency": 81,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14944",
+      "flag": "🇮🇪",
+      "country": "Ireland",
+      "ts": 1772697578.5542963
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://c19fb567-74a9-454f-9757-e612fc4be371@62.141.32.238:8443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=dropbox.com#%40configraygan+9",
+      "latency": 85,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14943",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1772697578.2073216
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiJuMTc2MTIxNDkxMC43NHF4di50b3AiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Im4xNzYxMjE0OTEwLjc0cXh2LnRvcCIsImlkIjoiMDExYzQ2NzAtY2RkZS00NGZiLWI5YmUtOGExZTI3YWYyNmM5IiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI0NDMiLCJwcyI6IvCfh6jwn4ezIEpvaW4rVGVsZWdyYW06QGNvbmZpZ3JheWdhbiDwn4eo8J+HsyIsInNjeSI6ImF1dG8iLCJzbmkiOiJuMTc2MTIxNDkxMC43NHF4di50b3AiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6IjIifQ==",
+      "latency": 701,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14942",
+      "flag": "🇭🇰",
+      "country": "Hong Kong",
+      "ts": 1772697556.6467676
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://0032ca43-03f8-4d60-8c0e-0c4d3f51e9c3@185.136.135.172:40915?security=none&encryption=none&host=fast.com&headerType=http&type=tcp#%40PlanB_net`",
+      "latency": null,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/14941",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1772697512.6568758
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@63.180.53.233:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 154,
@@ -22,6 +62,33 @@
     }
   ],
   "proxies": [
+    {
+      "key": "185.3.200.173:4455",
+      "link": "tg://proxy?server=185.3.200.173&port=4455&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14945",
+      "latency": null,
+      "flag": "🇮🇷",
+      "ts": 1772697578.8143425
+    },
+    {
+      "key": "172.65.45.163:443",
+      "link": "tg://proxy?server=172.65.45.163&port=443&secret=ee294530df2dda45287682dbc5468b0ffe676f6f676c652e636f6d",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14945",
+      "latency": 2,
+      "flag": "🇨🇦",
+      "ts": 1772697578.8143408
+    },
+    {
+      "key": "23.128.36.30:443",
+      "link": "tg://proxy?server=23.128.36.30&port=443&secret=eea4bd668c4b5445e1550e9e95ab5bfacd6170706c652e636f6d",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14945",
+      "latency": 59,
+      "flag": "🇺🇸",
+      "ts": 1772697578.8143382
+    },
     {
       "key": "91.239.192.14:65535",
       "link": "tg://proxy?server=91.239.192.14&port=65535&secret=10446282fffffffffff80000fff8000",
@@ -93,18 +160,51 @@
       "latency": 673,
       "flag": "🇷🇺",
       "ts": 1772657668.7727933
-    },
-    {
-      "key": "tg-proxy.greentg.su:443",
-      "link": "tg://proxy?server=tg-proxy.greentg.su&port=443&secret=ab6c6db4ec6814fc0792722cd88b46ef",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/14916",
-      "latency": 529,
-      "flag": "🇷🇺",
-      "ts": 1772653659.045784
     }
   ],
   "files": [
+    {
+      "name": "@shankamil🍕.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ ملی شکن",
+      "link": "https://t.me/shankamil/5963",
+      "ts": 1772697587.7035303
+    },
+    {
+      "name": "@shankamilبوس زیاد.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ ملی شکن",
+      "link": "https://t.me/shankamil/5965",
+      "ts": 1772697587.4074605
+    },
+    {
+      "name": "@shankamilنیک تیم (1).npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ ملی شکن",
+      "link": "https://t.me/shankamil/5976",
+      "ts": 1772697587.1830251
+    },
+    {
+      "name": "@PlanB_net #352.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2175",
+      "ts": 1772697510.9297113
+    },
+    {
+      "name": "@PlanB_net #353.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2176",
+      "ts": 1772697510.7055042
+    },
+    {
+      "name": "@planB_net #354.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2177",
+      "ts": 1772697510.4161792
+    },
     {
       "name": "@IraneAzad_News 4.ehi",
       "ext": "EHI",

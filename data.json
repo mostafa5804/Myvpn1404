@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@141.11.203.238:2096?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2&security=tls&encryption=none&host=sni.jpmj.dev&fp=chrome&type=ws&sni=sni.jpmj.dev#``IP_CF`",
+      "latency": 2,
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15010",
+      "flag": "🇭🇺",
+      "country": "Hungary",
+      "ts": 1772740621.7163858
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://humanity@www.gossipglove.com:443?path=%2Fassignment%3FTELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.gossipglove.com#NetAccount",
       "latency": 68,

@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://49855d97-2d13-453b-84b7-1d94af760777@185.141.107.110:11178?security=none&encryption=none&host=fast.com&headerType=http&type=tcp#%E2%9A%A1Telegram+%3D+%40configraygan",
+      "latency": null,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14955",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1772707908.154417
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://3591d9e2-edbf-43f1-98dc-00eb607b8c46@140.248.159.164:80?path=%2Fcontainers%2Ffi&security=none&encryption=none&host=kiram-to-harki-filter-kone.global.ssl.fastly.net&type=ws#%E2%9A%A1Telegram+%3D+%40configraygan",
+      "latency": 8,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14954",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1772707903.397532
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://24d75d1c-4745-4df6-80f9-4a0de7eb4b2f@65.109.221.209:49797?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%94%A5+Telegram%3A+%40configraygan",
+      "latency": 119,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/14953",
+      "flag": "🇫🇮",
+      "country": "Finland",
+      "ts": 1772707901.5840752
+    },
+    {
       "protocol": "VMESS",
       "config": "vmess://eyJhZGQiOiJ1c2VyNTUwNy5sb2dpbi5rYXJpbTIwMDAuaXIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiYWE4NDU4ZTktMTk4My00OWUyLWE0MmMtMjlmYjllYTQ1M2Y3IiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxMDAzNiIsInBzIjoiQFZDb25maW5nIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==****",
       "latency": 337,
@@ -133,18 +163,37 @@
       "latency": 110,
       "flag": "🇮🇷",
       "ts": 1772690118.26412
-    },
-    {
-      "key": "142.54.189.107:443",
-      "link": "tg://proxy?server=142.54.189.107&port=443&secret=",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/14923",
-      "latency": 25,
-      "flag": "🇺🇸",
-      "ts": 1772663977.2282274
     }
   ],
   "files": [
+    {
+      "name": "cicdo vpn_نخرید.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
+      "link": "https://t.me/cicdoVPN/3307",
+      "ts": 1772707999.0462363
+    },
+    {
+      "name": "cicdo vpn کانفینگ نخر.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
+      "link": "https://t.me/cicdoVPN/3308",
+      "ts": 1772707998.7937448
+    },
+    {
+      "name": "cicdo vpn_منطقه ای 22.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO کانفینگ اخبار جنگ",
+      "link": "https://t.me/cicdoVPN/3317",
+      "ts": 1772707996.9957242
+    },
+    {
+      "name": "کیومرث ۹.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت ازاد",
+      "link": "https://t.me/mitivpn/16019",
+      "ts": 1772707873.4393237
+    },
     {
       "name": "@shankamilبوس زیاد (1).npvt",
       "ext": "NPVT",
@@ -277,13 +326,6 @@
       "channel": "My Premium 😎",
       "link": "https://t.me/mypremium98/4033",
       "ts": 1772667448.3579488
-    },
-    {
-      "name": "ViP.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت ازاد",
-      "link": "https://t.me/mitivpn/16002",
-      "ts": 1772663946.111688
     }
   ]
 }

@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://c031d6c7-5132-4d81-8efc-3b13a947984e@81.88.25.20:59029?security=none&encryption=none&headerType=none&type=tcp#%40configraygan+A8",
+      "latency": 127,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15051",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1772808237.512842
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@88.218.78.167:443?path=%2F&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%40configraygan",
       "latency": 116,
       "channel": "کانفیگ رایگان",
@@ -52,6 +62,60 @@
     }
   ],
   "proxies": [
+    {
+      "key": "alo.acharbashi.info:4515",
+      "link": "tg://proxy?server=alo.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/15052",
+      "latency": 296,
+      "flag": "🇮🇷",
+      "ts": 1772808367.2997358
+    },
+    {
+      "key": "108.181.124.150:61016",
+      "link": "tg://proxy?server=108.181.124.150&port=61016&secret=79e7010200010007f0030386e24c3add)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/15052",
+      "latency": 118,
+      "flag": "🇳🇱",
+      "ts": 1772808367.2997344
+    },
+    {
+      "key": "108.181.124.150:61016",
+      "link": "tg://proxy?server=108.181.124.150&port=61016&secret=79e7010200010007f0030386e24c3add",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/15052",
+      "latency": 122,
+      "flag": "🇳🇱",
+      "ts": 1772808367.2997327
+    },
+    {
+      "key": "146.103.124.114:443",
+      "link": "tg://proxy?server=146.103.124.114&port=443&secret=ee65fc7553a1f5ca8b50b71c015b387224766473696e612e7275)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/15052",
+      "latency": 115,
+      "flag": "🇳🇱",
+      "ts": 1772808367.2997313
+    },
+    {
+      "key": "alo.acharbashi.info:4515",
+      "link": "tg://proxy?server=alo.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/15052",
+      "latency": 293,
+      "flag": "🇮🇷",
+      "ts": 1772808367.2997296
+    },
+    {
+      "key": "146.103.124.114:443",
+      "link": "tg://proxy?server=146.103.124.114&port=443&secret=ee65fc7553a1f5ca8b50b71c015b387224766473696e612e7275",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/15052",
+      "latency": 111,
+      "flag": "🇳🇱",
+      "ts": 1772808367.2997274
+    },
     {
       "key": "91.84.97.69:53556",
       "link": "tg://proxy?server=91.84.97.69&port=53556&secret=H____wxV0R23OuE7AMyQgCM4eFlnUldQOFpvTHVwZmNpaVI2ZkJFNDJMSXJxUW1yT2s4YzRCaVRaLi11cGRhdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",

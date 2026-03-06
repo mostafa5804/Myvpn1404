@@ -49,39 +49,36 @@
       "flag": "🇭🇺",
       "country": "Hungary",
       "ts": 1772740621.7163858
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://humanity@www.gossipglove.com:443?path=%2Fassignment%3FTELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.gossipglove.com#NetAccount",
-      "latency": 68,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15000",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1772734371.297661
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5774ae61-7402-41db-9388-1db9c43c11c3@84.200.33.52:8080?type=tcp&encryption=none&path=%2F&host=testspeed-foreign.tci.ir&headerType=http&security=none#NetAccount",
-      "latency": 127,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/14999",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1772734370.8060005
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://YWVzLTEyOC1nY206bUJsMWZZaFg4OHhrM0szOUllUHJSbm1zUUR2YjFoNGY%3D@51.159.103.137:18290#NetAccount",
-      "latency": 127,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/14998",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1772734370.2699986
     }
   ],
   "proxies": [
+    {
+      "key": "195.254.165.245:25565",
+      "link": "tg://proxy?server=195.254.165.245&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15024",
+      "latency": 147,
+      "flag": "🇳🇱",
+      "ts": 1772780457.2671099
+    },
+    {
+      "key": "195.254.165.244:25565",
+      "link": "tg://proxy?server=195.254.165.244&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15024",
+      "latency": 155,
+      "flag": "🇳🇱",
+      "ts": 1772780457.2671084
+    },
+    {
+      "key": "195.254.165.143:4455",
+      "link": "tg://proxy?server=195.254.165.143&port=4455&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15024",
+      "latency": 149,
+      "flag": "🇳🇱",
+      "ts": 1772780457.2670896
+    },
     {
       "key": "195.254.165.251:25565",
       "link": "tg://proxy?server=195.254.165.251&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
@@ -189,105 +186,6 @@
       "latency": 145,
       "flag": "🇳🇱",
       "ts": 1772739660.1698442
-    },
-    {
-      "key": "195.254.165.244:25565",
-      "link": "tg://proxy?server=195.254.165.244&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/15003",
-      "latency": 136,
-      "flag": "🇳🇱",
-      "ts": 1772734410.7426047
-    },
-    {
-      "key": "195.254.165.245:25565",
-      "link": "tg://proxy?server=195.254.165.245&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/15003",
-      "latency": 130,
-      "flag": "🇳🇱",
-      "ts": 1772734410.7426035
-    },
-    {
-      "key": "195.254.165.245:25565",
-      "link": "tg://proxy?server=195.254.165.245&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/15003",
-      "latency": 1189,
-      "flag": "🇳🇱",
-      "ts": 1772734410.7426023
-    },
-    {
-      "key": "195.254.165.244:25565",
-      "link": "tg://proxy?server=195.254.165.244&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/15003",
-      "latency": 1151,
-      "flag": "🇳🇱",
-      "ts": 1772734410.7426007
-    },
-    {
-      "key": "195.254.165.243:25565",
-      "link": "tg://proxy?server=195.254.165.243&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/15003",
-      "latency": 136,
-      "flag": "🇳🇱",
-      "ts": 1772734410.742599
-    },
-    {
-      "key": "195.254.165.241:25565",
-      "link": "tg://proxy?server=195.254.165.241&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/15003",
-      "latency": 123,
-      "flag": "🇳🇱",
-      "ts": 1772734410.7425966
-    },
-    {
-      "key": "195.254.165.241:25565",
-      "link": "tg://proxy?server=195.254.165.241&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/15002",
-      "latency": 123,
-      "flag": "🇳🇱",
-      "ts": 1772734400.6593325
-    },
-    {
-      "key": "195.254.165.151:9443",
-      "link": "tg://proxy?server=195.254.165.151&port=9443&secret=FgMBAgABAAH8AwOG4kw63Q%3D%3D&@vpnbaz",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15001",
-      "latency": 1128,
-      "flag": "🇳🇱",
-      "ts": 1772734386.9487658
-    },
-    {
-      "key": "195.254.165.138:4455",
-      "link": "tg://proxy?server=195.254.165.138&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D&@vpnbaz",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15001",
-      "latency": 124,
-      "flag": "🇳🇱",
-      "ts": 1772734386.9487646
-    },
-    {
-      "key": "195.254.165.208:7443",
-      "link": "tg://proxy?server=195.254.165.208&port=7443&secret=eeNEgYdJvXrFGRMCIMJdCQ%3D%3D&@vpnbaz",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15001",
-      "latency": 124,
-      "flag": "🇳🇱",
-      "ts": 1772734386.9487634
-    },
-    {
-      "key": "195.254.165.243:25565",
-      "link": "tg://proxy?server=195.254.165.243&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15001",
-      "latency": 136,
-      "flag": "🇳🇱",
-      "ts": 1772734386.948761
     }
   ],
   "files": [

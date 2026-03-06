@@ -2,6 +2,46 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@88.218.78.167:443?path=%2F&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%40configraygan",
+      "latency": 116,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15049",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1772804021.1562338
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://bf4c614f-c46d-4db9-b031-62f7e4b85c2c@104.24.39.51:443?path=ws&security=tls&encryption=none&host=hex.1tb.workers.dev&type=ws&sni=hex.1tb.workers.dev#%40configraygan",
+      "latency": 3,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15048",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1772804019.2554805
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@162.159.38.99:2096?path=%2F45.76.183.217%3D49292&security=tls&encryption=none&host=hetz.x-smm.com&type=ws&sni=hetz.x-smm.com#%40configraygan",
+      "latency": 26,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15047",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1772804018.9601798
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@162.159.38.176:2096?path=%2F45.76.183.217%3D49292&security=tls&encryption=none&host=hetz.x-smm.com&type=ws&sni=hetz.x-smm.com#%40configraygan",
+      "latency": 24,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15046",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1772804018.562889
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://425b7d48-b737-4850-aed1-14c763be44ae@irmon.ipng.site:9056?security=none&type=tcp&headerType=http&path=%2F&host=refersion.com%2Cplay.google.com#NetAccount`",
       "latency": 162,
       "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
@@ -12,6 +52,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "91.84.97.69:53556",
+      "link": "tg://proxy?server=91.84.97.69&port=53556&secret=H____wxV0R23OuE7AMyQgCM4eFlnUldQOFpvTHVwZmNpaVI2ZkJFNDJMSXJxUW1yT2s4YzRCaVRaLi11cGRhdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "DeamNet",
+      "t_link": "https://t.me/myvpn1404/15050",
+      "latency": 100,
+      "flag": "🇳🇱",
+      "ts": 1772804096.054883
+    },
+    {
+      "key": "91.84.97.69:53556",
+      "link": "tg://proxy?server=91.84.97.69&port=53556&secret=H____wxV0R23OuE7AMyQgCM4eFlnUldQOFpvTHVwZmNpaVI2ZkJFNDJMSXJxUW1yT2s4YzRCaVRaLi11cGRhdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "DeamNet",
+      "t_link": "https://t.me/myvpn1404/15050",
+      "latency": 103,
+      "flag": "🇳🇱",
+      "ts": 1772804096.0548806
+    },
     {
       "key": "185.84.157.232:443",
       "link": "tg://proxy?server=185.84.157.232&port=443&secret=FgMBAgABAAH8AxOG4kw63Q%3D%3D",

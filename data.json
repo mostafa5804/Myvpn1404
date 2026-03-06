@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://425b7d48-b737-4850-aed1-14c763be44ae@irmon.ipng.site:9056?security=none&type=tcp&headerType=http&path=%2F&host=refersion.com%2Cplay.google.com#NetAccount`",
+      "latency": 162,
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15029",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1772787012.6021578
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@45.82.251.208:8880?mode=gun&security=none&encryption=none&authority=&type=grpc&serviceName=#%40configraygan+H27",
       "latency": 20,
       "channel": "کانفیگ رایگان",
@@ -29,29 +39,90 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1772747013.902184
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://4dc44daf-52e7-4c47-b87f-cbe86c04c74c@185.143.234.200:443?path=%2F%3Fed%3D443&security=tls&encryption=none&host=alef.ir.oadeflantrogm.abrirmahan.com&fp=randomized&type=ws&sni=alef.ir.oadeflantrogm.abrirmahan.com#%40configraygan+2",
-      "latency": 137,
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/15012",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1772743622.2278748
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@141.11.203.238:2096?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2&security=tls&encryption=none&host=sni.jpmj.dev&fp=chrome&type=ws&sni=sni.jpmj.dev#``IP_CF`",
-      "latency": 2,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/15010",
-      "flag": "🇭🇺",
-      "country": "Hungary",
-      "ts": 1772740621.7163858
     }
   ],
   "proxies": [
+    {
+      "key": "185.84.157.102:9443",
+      "link": "tg://proxy?server=185.84.157.102&port=9443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15033",
+      "latency": null,
+      "flag": "🇮🇷",
+      "ts": 1772787023.3140595
+    },
+    {
+      "key": "195.254.165.208:7443",
+      "link": "tg://proxy?server=195.254.165.208&port=7443&secret=eeNEgYdJvXrFGRMCIMJdCQ%3D%3D",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15026",
+      "latency": 116,
+      "flag": "🇳🇱",
+      "ts": 1772786980.0927398
+    },
+    {
+      "key": "195.254.165.253:25565",
+      "link": "tg://proxy?server=195.254.165.253&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15026",
+      "latency": 111,
+      "flag": "🇳🇱",
+      "ts": 1772786980.0927331
+    },
+    {
+      "key": "195.254.165.252:25565",
+      "link": "tg://proxy?server=195.254.165.252&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15026",
+      "latency": 116,
+      "flag": "🇳🇱",
+      "ts": 1772786980.0927322
+    },
+    {
+      "key": "195.254.165.247:25565",
+      "link": "tg://proxy?server=195.254.165.247&port=25565&secret=dd79e344818749bd7ac519130220c25d0",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15026",
+      "latency": 117,
+      "flag": "🇳🇱",
+      "ts": 1772786980.092731
+    },
+    {
+      "key": "195.254.165.138:4455",
+      "link": "tg://proxy?server=195.254.165.138&port=4455&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15026",
+      "latency": 114,
+      "flag": "🇳🇱",
+      "ts": 1772786980.0927298
+    },
+    {
+      "key": "195.254.165.249:25565",
+      "link": "tg://proxy?server=195.254.165.249&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15026",
+      "latency": 114,
+      "flag": "🇳🇱",
+      "ts": 1772786980.0927289
+    },
+    {
+      "key": "195.254.165.143:4455",
+      "link": "tg://proxy?server=195.254.165.143&port=4455&secret=7hYDAQIAAQAB_AMDhuJMOt1jZG4ueWVrdGFuZXQuY29t",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15026",
+      "latency": 117,
+      "flag": "🇳🇱",
+      "ts": 1772786980.092727
+    },
+    {
+      "key": "195.254.165.151:9443",
+      "link": "tg://proxy?server=195.254.165.151&port=9443&secret=FgMBAgABAAH8AwOG4kw63Q%3D%3D",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15026",
+      "latency": 117,
+      "flag": "🇳🇱",
+      "ts": 1772786980.092725
+    },
     {
       "key": "195.254.165.143:4455",
       "link": "tg://proxy?server=195.254.165.143&port=4455&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6)",
@@ -145,6 +216,41 @@
   ],
   "files": [
     {
+      "name": "‎⁨موقت⁩.npvt",
+      "ext": "NPVT",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/5362",
+      "ts": 1772787013.939046
+    },
+    {
+      "name": "‎⁨موقت ۲⁩.npvt",
+      "ext": "NPVT",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/5363",
+      "ts": 1772787013.6364439
+    },
+    {
+      "name": "NET Meli🚀.npvt",
+      "ext": "NPVT",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/5364",
+      "ts": 1772787013.3393629
+    },
+    {
+      "name": "SSH (1).npvt",
+      "ext": "NPVT",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/5368",
+      "ts": 1772787009.151433
+    },
+    {
+      "name": "@shankamil بوس.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ ملی شکن",
+      "link": "https://t.me/shankamil/6056",
+      "ts": 1772786986.49348
+    },
+    {
       "name": "NetAccount725.npvt",
       "ext": "NPVT",
       "channel": "Net Account | نت اكانت",
@@ -178,13 +284,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/2193",
       "ts": 1772746960.8364027
-    },
-    {
-      "name": "کیومرث 15.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت ازاد",
-      "link": "https://t.me/mitivpn/16073",
-      "ts": 1772743599.4743123
     }
   ]
 }

@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@51.44.109.231:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 84,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15062",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1772824176.7370296
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@3.124.229.240:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 110,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -604,33 +614,6 @@
       "latency": 90,
       "flag": "🇳🇱",
       "ts": 1772783356.3674173
-    },
-    {
-      "key": "195.254.165.245:25565",
-      "link": "tg://proxy?server=195.254.165.245&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15024",
-      "latency": 147,
-      "flag": "🇳🇱",
-      "ts": 1772780457.2671099
-    },
-    {
-      "key": "195.254.165.244:25565",
-      "link": "tg://proxy?server=195.254.165.244&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15024",
-      "latency": 155,
-      "flag": "🇳🇱",
-      "ts": 1772780457.2671084
-    },
-    {
-      "key": "195.254.165.143:4455",
-      "link": "tg://proxy?server=195.254.165.143&port=4455&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15024",
-      "latency": 149,
-      "flag": "🇳🇱",
-      "ts": 1772780457.2670896
     }
   ],
   "files": [

@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@15.188.101.85:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 143,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15132",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1772911769.6624796
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@52.29.115.99:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 147,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -89,76 +99,6 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1772882912.3329413
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@18.184.163.171:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 147,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15096",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1772867070.7214565
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5a4abb78-ecd7-4d68-ab2a-c11a3842f261@198.62.62.248:443?path=%2Flove&security=tls&encryption=none&host=tar.alabama-tigr.info&fp=chrome&type=ws&sni=tar.alabama-tigr.info#IP_CF`",
-      "latency": 2,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/15091",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1772866431.700111
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f6c7016b-6f94-4a32-975c-013f2494d312@us1.miyazono-kaori.com:443?security=reality&encryption=none&pbk=MrVc8uqpwhoXwJXD-2rOkZp-gXyIH15mYx0noP7joxM&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=download-porter.hoyoverse.com&sid=014c5bef3f#IP_CF",
-      "latency": 109,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/15090",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1772866431.412076
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f6c7016b-6f94-4a32-975c-013f2494d312@uk1.miyazono-kaori.com:443?security=reality&encryption=none&pbk=_dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.bp.com&sid=d923#IP_CF",
-      "latency": 166,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/15089",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1772866431.04921
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f6c7016b-6f94-4a32-975c-013f2494d312@uk2.miyazono-kaori.com:443?security=reality&encryption=none&pbk=QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.bp.com&sid=20#IP_CF",
-      "latency": 109,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/15088",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1772866430.6335707
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5a4abb78-ecd7-4d68-ab2a-c11a3842f261@198.62.62.124:443?path=%2Flove&security=tls&encryption=none&host=war.connecticut-haloo.info&type=ws&sni=war.connecticut-haloo.info#IP_CF",
-      "latency": 2,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/15087",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1772866430.23314
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@18.184.163.171:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#IP_CF",
-      "latency": 93,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/15086",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1772866425.402753
     }
   ],
   "proxies": [
@@ -555,34 +495,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/2222",
       "ts": 1772869597.024521
-    },
-    {
-      "name": "NetAccount738.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/15722",
-      "ts": 1772867015.8181093
-    },
-    {
-      "name": "NetAccount739.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/15723",
-      "ts": 1772867015.5651233
-    },
-    {
-      "name": "NetAccount740.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/15724",
-      "ts": 1772867015.2617228
-    },
-    {
-      "name": "NetAccount741.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/15725",
-      "ts": 1772867014.9819736
     }
   ]
 }

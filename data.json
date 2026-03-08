@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.36.46.152:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 143,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15161",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1772975068.0525577
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@35.181.15.224:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 122,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -29,16 +39,6 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1772953582.711382
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://70375c7e-1e29-4370-8100-22e37fd52845@185.143.234.200:443?path=%2F%3Fed%3D443&security=tls&encryption=none&host=alef.ir.oadeflantrogm.abrmahanair.com&fp=safari&type=ws&sni=alef.ir.oadeflantrogm.abrmahanair.com#%40configraygan",
-      "latency": 81,
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/15139",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1772926992.3274164
     }
   ],
   "proxies": [

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://ab8543cd-0e65-4b74-f5ad-932cffe0a12a@37.156.145.183:40652?security=none&encryption=none&headerType=none&type=tcp#V2rayng_Fast",
+      "latency": 200,
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15163",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1772978103.160484
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.36.46.152:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 143,
@@ -42,6 +52,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "92.118.234.215:443",
+      "link": "tg://proxy?server=92.118.234.215&port=443&secret=dddb9b51b5ce9a2820ff62d348cb23f1b9",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15162",
+      "latency": 138,
+      "flag": "🇫🇮",
+      "ts": 1772978074.1517277
+    },
     {
       "key": "195.254.165.249:25565",
       "link": "tg://proxy?server=195.254.165.249&port=25565&secret=dd79e344818749bd7ac519130220c25d09@LyricPixelArt",
@@ -233,6 +252,20 @@
     }
   ],
   "files": [
+    {
+      "name": "برای اتصال صبور باشید.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/44719",
+      "ts": 1772978147.1235328
+    },
+    {
+      "name": "@Cooonfigسرعتی_خوبی_نداره_باید_یکم_صبر_کنی_که_تلو_بالا_بیاره.npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/6938",
+      "ts": 1772978120.2313366
+    },
     {
       "name": "NetMeli (2).npvt",
       "ext": "NPVT",

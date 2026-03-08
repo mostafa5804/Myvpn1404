@@ -59,29 +59,45 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1772904606.7059782
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5a4abb78-ecd7-4d68-ab2a-c11a3842f261@198.62.62.235:443?path=%2Flove&security=tls&encryption=none&host=bank.alaska-tigr.info&type=ws&sni=bank.alaska-tigr.info#%40PlanB_net`",
-      "latency": 3,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/15127",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1772901365.3851762
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed@103.81.86.158:443?mode=gun&security=tls&encryption=none&fp=ios&type=grpc&serviceName=ssp&sni=u710297u3374s249.okgfw.top#%40Merlin_ViP`",
-      "latency": 1287,
-      "channel": "اینترنت آزاد | Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/15126",
-      "flag": "🇻🇳",
-      "country": "Vietnam",
-      "ts": 1772898282.6572475
     }
   ],
   "proxies": [
+    {
+      "key": "18.188.7.65:80",
+      "link": "tg://proxy?server=18.188.7.65&port=80&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15140",
+      "latency": 19,
+      "flag": "🇺🇸",
+      "ts": 1772945382.9217577
+    },
+    {
+      "key": "13.220.166.215:80",
+      "link": "tg://proxy?server=13.220.166.215&port=80&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15140",
+      "latency": 6,
+      "flag": "🇺🇸",
+      "ts": 1772945382.9217565
+    },
+    {
+      "key": "44.243.35.229:80",
+      "link": "tg://proxy?server=44.243.35.229&port=80&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15140",
+      "latency": 77,
+      "flag": "🇺🇸",
+      "ts": 1772945382.921755
+    },
+    {
+      "key": "185.73.126.27:8443",
+      "link": "tg://proxy?server=185.73.126.27&port=8443&secret=cc3dd85be1bd44e3d41db989bd3dc53e",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15140",
+      "latency": 121,
+      "flag": "🇮🇷",
+      "ts": 1772945382.9217527
+    },
     {
       "key": "195.3.222.147:47998",
       "link": "tg://proxy?server=195.3.222.147&port=47998&secret=dd833e1ac99cec3eddbf4e817402d7933f)",
@@ -171,60 +187,6 @@
       "latency": 93,
       "flag": "🇳🇱",
       "ts": 1772905428.21773
-    },
-    {
-      "key": "116.203.8.88:42341",
-      "link": "tg://proxy?server=116.203.8.88&port=42341&secret=79e7010200010007f0030386e24c3add)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15128",
-      "latency": 95,
-      "flag": "🇩🇪",
-      "ts": 1772901494.4727778
-    },
-    {
-      "key": "92.118.234.215:443",
-      "link": "tg://proxy?server=92.118.234.215&port=443&secret=dddb9b51b5ce9a2820ff62d348cb23f1b9)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15128",
-      "latency": 123,
-      "flag": "🇫🇮",
-      "ts": 1772901494.4727767
-    },
-    {
-      "key": "195.254.165.252:25565",
-      "link": "tg://proxy?server=195.254.165.252&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15128",
-      "latency": 87,
-      "flag": "🇳🇱",
-      "ts": 1772901494.4727755
-    },
-    {
-      "key": "195.254.165.252:25565",
-      "link": "tg://proxy?server=195.254.165.252&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15128",
-      "latency": 88,
-      "flag": "🇳🇱",
-      "ts": 1772901494.4727738
-    },
-    {
-      "key": "www.spsctr.info:22",
-      "link": "tg://proxy?server=www.spsctr.info&port=22&secret=7nnnAQIAAQAH8AMDhuJMOt0=)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15128",
-      "latency": 124,
-      "flag": "🇨🇦",
-      "ts": 1772901494.4727724
-    },
-    {
-      "key": "95.85.231.6:8443",
-      "link": "tg://proxy?server=95.85.231.6&port=8443&secret=46b107169c2e3968abc49eba40928782)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15128",
-      "latency": 95,
-      "flag": "🇩🇪",
-      "ts": 1772901494.4727697
     }
   ],
   "files": [
@@ -241,13 +203,6 @@
       "channel": "Net Account | نت اكانت",
       "link": "https://t.me/NetAccount/15743",
       "ts": 1772904544.366245
-    },
-    {
-      "name": "موقت.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد | Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/44634",
-      "ts": 1772897534.7561088
     }
   ]
 }

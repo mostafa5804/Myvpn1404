@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@35.181.15.224:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 122,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15157",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1772969364.4891992
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://ee5ac6bd-3709-45d4-83e3-086cb10827ad@89.45.56.83:50156?path=%2F&security=none&encryption=none&host=89.45.56.83&type=ws#Merlin_ViP`",
       "latency": 167,
@@ -32,6 +42,114 @@
     }
   ],
   "proxies": [
+    {
+      "key": "195.254.165.252:25565",
+      "link": "tg://proxy?server=195.254.165.252&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 125,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941245
+    },
+    {
+      "key": "195.254.165.245:25565",
+      "link": "tg://proxy?server=195.254.165.245&port=25565&secret=dd79e344818749bd7ac519130220c25d09)**",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 131,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941238
+    },
+    {
+      "key": "195.254.165.251:25565",
+      "link": "tg://proxy?server=195.254.165.251&port=25565&secret=dd79e344818749bd7ac519130220c25d09)**",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 127,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941228
+    },
+    {
+      "key": "195.254.165.245:25565",
+      "link": "tg://proxy?server=195.254.165.245&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 125,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941216
+    },
+    {
+      "key": "195.254.165.243:25565",
+      "link": "tg://proxy?server=195.254.165.243&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 124,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941205
+    },
+    {
+      "key": "195.254.165.251:25565",
+      "link": "tg://proxy?server=195.254.165.251&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 124,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941195
+    },
+    {
+      "key": "195.254.165.252:25565",
+      "link": "tg://proxy?server=195.254.165.252&port=25565&secret=dd79e344818749bd7ac519130220c25d09)**",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 128,
+      "flag": "🇳🇱",
+      "ts": 1772969290.394118
+    },
+    {
+      "key": "195.254.165.244:25565",
+      "link": "tg://proxy?server=195.254.165.244&port=25565&secret=dd79e344818749bd7ac519130220c25d09)**",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 129,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941169
+    },
+    {
+      "key": "195.254.165.247:25565",
+      "link": "tg://proxy?server=195.254.165.247&port=25565&secret=dd79e344818749bd7ac519130220c25d09)**",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 125,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941114
+    },
+    {
+      "key": "195.254.165.244:25565",
+      "link": "tg://proxy?server=195.254.165.244&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 129,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941104
+    },
+    {
+      "key": "195.254.165.243:25565",
+      "link": "tg://proxy?server=195.254.165.243&port=25565&secret=dd79e344818749bd7ac519130220c25d09)**",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 130,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941088
+    },
+    {
+      "key": "195.254.165.247:25565",
+      "link": "tg://proxy?server=195.254.165.247&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "پروکسی رایگان ملی / فیلترشکن",
+      "t_link": "https://t.me/myvpn1404/15156",
+      "latency": 131,
+      "flag": "🇳🇱",
+      "ts": 1772969290.3941064
+    },
     {
       "key": "18.188.7.65:80",
       "link": "tg://proxy?server=18.188.7.65&port=80&secret=dd104462821249bd7ac519130220c25d09",

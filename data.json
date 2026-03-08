@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://ee5ac6bd-3709-45d4-83e3-086cb10827ad@89.45.56.83:50156?path=%2F&security=none&encryption=none&host=89.45.56.83&type=ws#Merlin_ViP`",
+      "latency": 167,
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/15153",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1772955428.844952
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@18.199.232.208:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 108,
@@ -49,16 +59,6 @@
       "flag": "🇳🇱",
       "country": "The Netherlands",
       "ts": 1772915648.602321
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@15.188.101.85:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 143,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15132",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1772911769.6624796
     }
   ],
   "proxies": [

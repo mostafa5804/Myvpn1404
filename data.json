@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.194:8080#%40Merlin_ViP`",
+      "latency": 151,
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/15293",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1773086256.6545715
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6ca2c654-53b3-4ac1-a2ef-c4b4ee88727a@kzcdn1.suio.me:443?security=tls&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=kzcdn1.suio.me#%40planB_net",
+      "latency": 487,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/15292",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1773086139.447894
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://17f100d3-4b31-47f9-b8df-94d1a723d43e@140.248.155.104:443?path=%2F&security=tls&encryption=none&insecure=0&host=efixshop.global.ssl.fastly.net&type=ws&allowInsecure=0&sni=default.ssl.fastly.net#%40planB_net",
+      "latency": 1,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/15291",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1773086138.639109
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@63.183.124.201:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 119,
@@ -89,16 +119,6 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1773051176.2688339
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://humanity@chat.openai.com:443?path=%2Fassignment&security=tls&alpn=h2%2Chttp%2F1.1&insecure=0&host=www.calmlunch.com&fp=chrome&type=ws&allowInsecure=0&sni=www.calmlunch.com#%40shankamil",
-      "latency": 19,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/15257",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1773041584.7413578
     }
   ],
   "proxies": [
@@ -281,60 +301,6 @@
       "latency": 88,
       "flag": "🇳🇱",
       "ts": 1773046538.4697492
-    },
-    {
-      "key": "13.220.166.215:80",
-      "link": "tg://proxy?server=13.220.166.215&port=80&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15260",
-      "latency": 52,
-      "flag": "🇺🇸",
-      "ts": 1773042897.1496382
-    },
-    {
-      "key": "44.243.35.229:80",
-      "link": "tg://proxy?server=44.243.35.229&port=80&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15260",
-      "latency": 33,
-      "flag": "🇺🇸",
-      "ts": 1773042897.1496356
-    },
-    {
-      "key": "142.54.189.108:443",
-      "link": "tg://proxy?server=142.54.189.108&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
-      "channel": "VPN BOX فیلترشکن",
-      "t_link": "https://t.me/myvpn1404/15258",
-      "latency": 38,
-      "flag": "🇺🇸",
-      "ts": 1773041644.0936656
-    },
-    {
-      "key": "142.54.189.106:443",
-      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
-      "channel": "VPN BOX فیلترشکن",
-      "t_link": "https://t.me/myvpn1404/15258",
-      "latency": 34,
-      "flag": "🇺🇸",
-      "ts": 1773041644.093665
-    },
-    {
-      "key": "142.54.189.107:443",
-      "link": "tg://proxy?server=142.54.189.107&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
-      "channel": "VPN BOX فیلترشکن",
-      "t_link": "https://t.me/myvpn1404/15258",
-      "latency": 39,
-      "flag": "🇺🇸",
-      "ts": 1773041644.0936637
-    },
-    {
-      "key": "142.54.189.109:443",
-      "link": "tg://proxy?server=142.54.189.109&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
-      "channel": "VPN BOX فیلترشکن",
-      "t_link": "https://t.me/myvpn1404/15258",
-      "latency": 34,
-      "flag": "🇺🇸",
-      "ts": 1773041644.0936618
     }
   ],
   "files": [
@@ -442,20 +408,6 @@
       "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
       "link": "https://t.me/varvpn1/5789",
       "ts": 1773046516.5826821
-    },
-    {
-      "name": "dnstt_configs.json",
-      "ext": "JSON",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/28431",
-      "ts": 1773041661.6052186
-    },
-    {
-      "name": "@shankamil ارسالی ممبرا.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ ملی شکن",
-      "link": "https://t.me/shankamil/6336",
-      "ts": 1773041581.3480778
     }
   ]
 }

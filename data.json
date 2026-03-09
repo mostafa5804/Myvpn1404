@@ -83,6 +83,24 @@
   ],
   "proxies": [
     {
+      "key": "91.107.172.155:443",
+      "link": "tg://proxy?server=91.107.172.155&port=443&secret=79e344818749bd7ac519130220c25d09",
+      "channel": "Cooonfig",
+      "t_link": "https://t.me/myvpn1404/15286",
+      "latency": 136,
+      "flag": "🇩🇪",
+      "ts": 1773078782.1844125
+    },
+    {
+      "key": "65.109.51.89:4455",
+      "link": "tg://proxy?server=65.109.51.89&port=4455&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/15285",
+      "latency": 150,
+      "flag": "🇫🇮",
+      "ts": 1773078702.6227767
+    },
+    {
       "key": "195.254.165.244:25565",
       "link": "tg://proxy?server=195.254.165.244&port=25565&secret=dd79e344818749bd7ac51913020c25d09",
       "channel": "کانفیگ رایگان",
@@ -297,15 +315,6 @@
       "latency": 34,
       "flag": "🇺🇸",
       "ts": 1773041644.0936618
-    },
-    {
-      "key": "195.254.165.249:25565",
-      "link": "tg://proxy?server=195.254.165.249&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15255",
-      "latency": 119,
-      "flag": "🇳🇱",
-      "ts": 1773032917.898708
     }
   ],
   "files": [
@@ -413,13 +422,6 @@
       "channel": "کانفیگ ملی شکن",
       "link": "https://t.me/shankamil/6336",
       "ts": 1773041581.3480778
-    },
-    {
-      "name": "@SiNAVM-Tunnel-1.npvt",
-      "ext": "NPVT",
-      "channel": "𝗙𝗥𝗘𝗘 𝗩𝗣𝗡 | SiNAVM",
-      "link": "https://t.me/sinavm/4861",
-      "ts": 1773032875.4749177
     }
   ]
 }

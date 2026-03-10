@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.127.171.45:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 89,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15305",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1773126830.6473053
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://3e0302d2-c45d-440e-b619-ba69faf185f6@USA-ComPany-AlphaOmegA-TeaM.AlphaOmegaVIP.IR:80?security=none&encryption=none&host=google.com.&headerType=none&type=tcp#D190A87",
       "latency": 79,
@@ -49,26 +59,6 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1773086138.639109
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@63.183.124.201:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 119,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15290",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1773083014.1256678
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@15.188.96.111:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 114,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15289",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1773083013.6509602
     }
   ],
   "proxies": [
@@ -151,20 +141,6 @@
       "channel": "Net Account | نت اكانت",
       "link": "https://t.me/NetAccount/15921",
       "ts": 1773122695.9045348
-    },
-    {
-      "name": "NetAccount752.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/15876",
-      "ts": 1773082964.9423115
-    },
-    {
-      "name": "NetAccount753.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/15877",
-      "ts": 1773082964.6423755
     }
   ]
 }

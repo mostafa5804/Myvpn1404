@@ -19,19 +19,18 @@
       "flag": "🇿🇦",
       "country": "South Africa",
       "ts": 1773154718.369098
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@51.44.98.27:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 86,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15310",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1773140841.5503466
     }
   ],
   "proxies": [
+    {
+      "key": "195.254.165.250:25565",
+      "link": "tg://proxy?server=195.254.165.250&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15327",
+      "latency": 93,
+      "flag": "🇳🇱",
+      "ts": 1773185713.566176
+    },
     {
       "key": "77.239.112.86:30534",
       "link": "tg://proxy?server=77.239.112.86&port=30534&secret=ddbee03206cb1a464769f666fc1820b03f",
@@ -463,18 +462,16 @@
       "latency": 412,
       "flag": "🇨🇦",
       "ts": 1773150121.299828
-    },
-    {
-      "key": "195.254.165.250:25565",
-      "link": "tg://proxy?server=195.254.165.250&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/15309",
-      "latency": 93,
-      "flag": "🇳🇱",
-      "ts": 1773139879.323944
     }
   ],
   "files": [
+    {
+      "name": "NetMeliSTEP.npvt",
+      "ext": "NPVT",
+      "channel": "VPN MARKET",
+      "link": "https://t.me/anty_filter/22704",
+      "ts": 1773185738.229083
+    },
     {
       "name": "cicdo vpn_حجم کم.npvt",
       "ext": "NPVT",

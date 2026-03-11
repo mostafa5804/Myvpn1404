@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://86a382d7-2622-4581-a455-599c70679d02@185.206.231.57:36522?security=none&encryption=none&headerType=none&type=tcp#%40Merlin_ViP`",
+      "latency": null,
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/15361",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1773236647.122055
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.36.100.6:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 108,
@@ -393,6 +403,13 @@
     }
   ],
   "files": [
+    {
+      "name": "781DNS-10March-19Esfand.txt",
+      "ext": "TXT",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/45081",
+      "ts": 1773236647.4244688
+    },
     {
       "name": "🥀🥀.npvt",
       "ext": "NPVT",

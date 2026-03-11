@@ -139,19 +139,18 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1773226280.2162762
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://3ebd01e3-763d-45c9-bfcc-fa220e81bd5f@d1.designister.com:443?security=reality&encryption=none&pbk=KT7T2Ny_fZP-oU18D5agZeUfe70tc6TIZ2IrlerKeTA&headerType=none&fp=random&type=tcp&sni=www.figma.com&sid=8784#%E2%9A%A1Telegram%20%3D%20%40prrofile_purple`",
-      "latency": 363,
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15347",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1773222815.0952897
     }
   ],
   "proxies": [
+    {
+      "key": "13.220.166.215:80",
+      "link": "tg://proxy?server=13.220.166.215&port=80&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15373",
+      "latency": 64,
+      "flag": "🇺🇸",
+      "ts": 1773268476.4219854
+    },
     {
       "key": "185.60.137.156:8443",
       "link": "tg://proxy?server=185.60.137.156&port=8443&secret=75f9a8da21406c0db5e92c015368345c",
@@ -394,15 +393,6 @@
       "latency": 92,
       "flag": "🇳🇱",
       "ts": 1773226317.730354
-    },
-    {
-      "key": "195.254.165.241:25565",
-      "link": "tg://proxy?server=195.254.165.241&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "اینترنت آزاد | Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/15348",
-      "latency": 153,
-      "flag": "🇳🇱",
-      "ts": 1773222856.7158217
     }
   ],
   "files": [
@@ -433,27 +423,6 @@
       "channel": "🌍𝐂𝐨𝐧𝐟𝐢𝐠 - 𝐇𝐓𝐓𝐏 𝐂𝐮𝐬𝐭𝐨𝐦 _ 𝐇𝐓𝐓𝐏 𝐈𝐧𝐣𝐞𝐜𝐭𝐨𝐫..🛰️",
       "link": "https://t.me/vpn11ir/112584",
       "ts": 1773227147.5046082
-    },
-    {
-      "name": "‎⁨ملی شکن 🔥🔥⁩.npvt",
-      "ext": "NPVT",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/varvpn1/6053",
-      "ts": 1773222814.3530319
-    },
-    {
-      "name": "‎⁨ملی شکن Vip🔥⁩.npvt",
-      "ext": "NPVT",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/varvpn1/6054",
-      "ts": 1773222814.1043136
-    },
-    {
-      "name": "‎⁨ملی شکن نابی 🔥⁩.npvt",
-      "ext": "NPVT",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/varvpn1/6056",
-      "ts": 1773222813.7944002
     }
   ]
 }

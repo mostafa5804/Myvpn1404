@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "SS",
+      "config": "ss://YWVzLTI1Ni1nY20677%2B9Xg%3D%3D@13.39.53.66:22224#%40Merlin_ViP`",
+      "latency": 146,
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/15371",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1773261740.3953888
+    },
+    {
+      "protocol": "SS",
       "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprRHQ4Y0cxVExnNHVCMG5VTU9BdQ%3D%3D@91.107.144.0:1080#%40Merlin_ViP`",
       "latency": 96,
       "channel": "اینترنت آزاد | Merlin ViP",
@@ -139,26 +149,6 @@
       "flag": "🇿🇦",
       "country": "South Africa",
       "ts": 1773219232.5401034
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://c5e460df-e620-4622-a9c1-353b9ff5b43b@151.101.1.194:80?mode=auto&path=%2FTignaliSWithYou&security=none&encryption=none&host=tignaltofan.global.ssl.fastly.net&type=xhttp#mmli",
-      "latency": 8,
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15339",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1773215997.1666882
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://881344f9-aca1-4849-a658-c4303e66396f@151.101.129.194:80?mode=auto&path=%2FTignaliSWithYou&security=none&encryption=none&host=tignaltofan.global.ssl.fastly.net&type=xhttp#mmdi",
-      "latency": 8,
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15338",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1773215996.8138885
     }
   ],
   "proxies": [
@@ -422,69 +412,6 @@
       "latency": 24,
       "flag": "🇺🇸",
       "ts": 1773219240.3367982
-    },
-    {
-      "key": "142.54.189.106:443",
-      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267)",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15341",
-      "latency": 39,
-      "flag": "🇺🇸",
-      "ts": 1773216000.7812443
-    },
-    {
-      "key": "44.243.35.229:80",
-      "link": "tg://proxy?server=44.243.35.229&port=80&secret=dd104462821249bd7ac519130220c25d09)",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15341",
-      "latency": 33,
-      "flag": "🇺🇸",
-      "ts": 1773216000.7812426
-    },
-    {
-      "key": "142.54.189.108:443",
-      "link": "tg://proxy?server=142.54.189.108&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267)",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15341",
-      "latency": 41,
-      "flag": "🇺🇸",
-      "ts": 1773216000.7812414
-    },
-    {
-      "key": "13.220.166.215:80",
-      "link": "tg://proxy?server=13.220.166.215&port=80&secret=dd104462821249bd7ac519130220c25d09)",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15341",
-      "latency": 58,
-      "flag": "🇺🇸",
-      "ts": 1773216000.7812397
-    },
-    {
-      "key": "142.54.189.107:443",
-      "link": "tg://proxy?server=142.54.189.107&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267)",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15341",
-      "latency": 41,
-      "flag": "🇺🇸",
-      "ts": 1773216000.7812386
-    },
-    {
-      "key": "142.54.189.107:443",
-      "link": "tg://proxy?server=142.54.189.107&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15341",
-      "latency": 1090,
-      "flag": "🇺🇸",
-      "ts": 1773216000.781237
-    },
-    {
-      "key": "44.243.35.229:80",
-      "link": "tg://proxy?server=44.243.35.229&port=80&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15341",
-      "latency": 35,
-      "flag": "🇺🇸",
-      "ts": 1773216000.7812347
     }
   ],
   "files": [
@@ -536,13 +463,6 @@
       "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
       "link": "https://t.me/varvpn1/6056",
       "ts": 1773222813.7944002
-    },
-    {
-      "name": "@Trade_Nobody.npvt",
-      "ext": "NPVT",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/varvpn1/6028",
-      "ts": 1773216000.4775856
     }
   ]
 }

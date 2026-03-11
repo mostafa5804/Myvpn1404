@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiIxNTEuMjQzLjMuNTkiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNDg4ZTg3ZWUtMDc0Yy00ZTUzLTk4ZWEtNjM5MjI4OGJkYzcxIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxNzg1OCIsInBzIjoiQGNvbmZpZ3JheWdhbiDYqtmE2q/Ysdin2YXZhdmI2YYiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
+      "latency": 106,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15365",
+      "flag": "🇳🇱",
+      "country": "Netherlands",
+      "ts": 1773244600.1949492
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://0a63e301-2434-4b7c-8f31-a3c766d9ae8f@185.206.231.59:41057?security=none&encryption=none&headerType=none&type=tcp#%40Merlin_ViP`",
       "latency": null,
@@ -132,6 +142,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "142.54.189.108:443",
+      "link": "tg://proxy?server=142.54.189.108&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15366",
+      "latency": 13,
+      "flag": "🇺🇸",
+      "ts": 1773244617.6599517
+    },
+    {
+      "key": "95.85.231.6:8443",
+      "link": "tg://proxy?server=95.85.231.6&port=8443&secret=46b107169c2e3968abc49eba40928782",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15366",
+      "latency": 108,
+      "flag": "🇩🇪",
+      "ts": 1773244617.6599505
+    },
+    {
+      "key": "5.78.145.136:8080",
+      "link": "tg://proxy?server=5.78.145.136&port=8080&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15366",
+      "latency": 54,
+      "flag": "🇺🇸",
+      "ts": 1773244617.6599495
+    },
+    {
+      "key": "5.78.179.191:4455",
+      "link": "tg://proxy?server=5.78.179.191&port=4455&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15366",
+      "latency": 52,
+      "flag": "🇺🇸",
+      "ts": 1773244617.6599476
+    },
     {
       "key": "85.133.194.99:6443",
       "link": "tg://proxy?server=85.133.194.99&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQ",

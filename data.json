@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://0a63e301-2434-4b7c-8f31-a3c766d9ae8f@185.206.231.59:41057?security=none&encryption=none&headerType=none&type=tcp#%40Merlin_ViP`",
+      "latency": null,
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/15364",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1773240957.7895045
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://86a382d7-2622-4581-a455-599c70679d02@185.206.231.57:36522?security=none&encryption=none&headerType=none&type=tcp#%40Merlin_ViP`",
       "latency": null,
       "channel": "اینترنت آزاد | Merlin ViP",
@@ -122,6 +132,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "85.133.194.99:6443",
+      "link": "tg://proxy?server=85.133.194.99&port=6443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15363",
+      "latency": 105,
+      "flag": "🇮🇷",
+      "ts": 1773240893.6090436
+    },
     {
       "key": "195.254.165.252:25565",
       "link": "tg://proxy?server=195.254.165.252&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",

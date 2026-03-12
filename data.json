@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://7e6b66dc-6dbc-4d01-a13e-13d0be4f38ef@65.109.208.248:21235?security=none&encryption=none&headerType=none&type=tcp#%40Merlin_ViP`",
+      "latency": 119,
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/15390",
+      "flag": "🇫🇮",
+      "country": "Finland",
+      "ts": 1773312691.8906112
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://f91c1cc2-05fe-4efd-ba09-86cb6bec19e3@23.95.113.104:443?path=%2F&security=none&encryption=none&type=ws#%40shankamil%20%DA%86%D9%86%D9%84%20%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%F0%9F%9B%A1",
       "latency": 68,
       "channel": "کانفیگ ملی شکن",
@@ -186,15 +196,6 @@
       "latency": 170,
       "flag": "🇮🇷",
       "ts": 1773305751.2856302
-    },
-    {
-      "key": "13.220.166.215:80",
-      "link": "tg://proxy?server=13.220.166.215&port=80&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15373",
-      "latency": 64,
-      "flag": "🇺🇸",
-      "ts": 1773268476.4219854
     }
   ],
   "files": [

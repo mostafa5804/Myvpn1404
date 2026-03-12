@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://20d983ca-d7fa-4fc6-a3db-c6f7e56c4629@188.114.98.0:2087?path=%2F&security=tls&encryption=none&alpn=h2%2Chttp%2F1.1&host=a4.maxriser.ir&fp=chrome&type=ws&sni=a4.maxriser.ir#منطقه",
+      "latency": 18,
+      "channel": "xsfilternet",
+      "t_link": "https://t.me/myvpn1404/15413",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1773345437.4463437
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://9298fb7d-d257-4b52-b9ac-d1fb279e3032@wsss.beepn.info:2087?type=ws&encryption=none&path=%2Fpath&host=Ws2.beepn.info&security=tls&fp=chrome&alpn=h2%2Chttp%2F1.1&sni=Ws2.beepn.info#Ws-Other",
+      "latency": 406,
+      "channel": "xsfilternet",
+      "t_link": "https://t.me/myvpn1404/15412",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1773345437.1558096
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@35.181.222.188:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 84,
@@ -132,6 +152,33 @@
     }
   ],
   "proxies": [
+    {
+      "key": "195.254.165.249:25565",
+      "link": "tg://proxy?server=195.254.165.249&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "xsfilternet",
+      "t_link": "https://t.me/myvpn1404/15414",
+      "latency": 129,
+      "flag": "🇳🇱",
+      "ts": 1773345439.5986934
+    },
+    {
+      "key": "185.143.233.121:2087",
+      "link": "tg://proxy?server=185.143.233.121&port=2087&secret=e9e437c2-1ee5-4f0d-ae09-4bfafc835e48",
+      "channel": "xsfilternet",
+      "t_link": "https://t.me/myvpn1404/15414",
+      "latency": 124,
+      "flag": "🇮🇷",
+      "ts": 1773345439.5986912
+    },
+    {
+      "key": "185.3.200.175:2053",
+      "link": "tg://proxy?server=185.3.200.175&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15410",
+      "latency": null,
+      "flag": "🇮🇷",
+      "ts": 1773345425.7229192
+    },
     {
       "key": "98.84.109.35:80",
       "link": "tg://proxy?server=98.84.109.35&port=80&secret=dd104462821249bd7ac519130220c25d09",
@@ -377,6 +424,76 @@
     }
   ],
   "files": [
+    {
+      "name": "تلگرام @Merlin_ViP.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/45199",
+      "ts": 1773345503.0829945
+    },
+    {
+      "name": "12 March.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/45200",
+      "ts": 1773345502.7806306
+    },
+    {
+      "name": "12 March (1).npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/45201",
+      "ts": 1773345502.4751046
+    },
+    {
+      "name": "NetAccount776.npvt",
+      "ext": "NPVT",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/6255",
+      "ts": 1773345449.0264404
+    },
+    {
+      "name": "NetAccount777.npvt",
+      "ext": "NPVT",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/6256",
+      "ts": 1773345448.7633424
+    },
+    {
+      "name": "NetAccount778.npvt",
+      "ext": "NPVT",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/6257",
+      "ts": 1773345448.433917
+    },
+    {
+      "name": "NetAccount779.npvt",
+      "ext": "NPVT",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "link": "https://t.me/varvpn1/6258",
+      "ts": 1773345448.1196866
+    },
+    {
+      "name": "@shankamilبوس شبونه.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ ملی شکن",
+      "link": "https://t.me/shankamil/6587",
+      "ts": 1773345431.1723974
+    },
+    {
+      "name": "کیومرث.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت ازاد",
+      "link": "https://t.me/mitivpn/16208",
+      "ts": 1773345410.0139284
+    },
+    {
+      "name": "کیومرث جدید.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت ازاد",
+      "link": "https://t.me/mitivpn/16214",
+      "ts": 1773345409.6194208
+    },
     {
       "name": "NetAccount775.npvt",
       "ext": "NPVT",

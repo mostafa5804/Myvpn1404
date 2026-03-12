@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.127.99.68:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 151,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15379",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1773299401.9764721
+    },
+    {
       "protocol": "VMESS",
       "config": "vmess://eyJhZGQiOiIyMTcuMjE4LjUyLjEiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZjkzZjEzNGYtN2FkYi00OGMzLWJjZDEtMjUzMmVkYjBiNDc4IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxMDQxMCIsInBzIjoiUHNpcGhvbiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=`",
       "latency": 311,
@@ -39,26 +49,6 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1773259035.8014255
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphZHVCOUhHeFFIakEyU0JNUmprSFg2@102.37.156.224:443#🫟`",
-      "latency": 240,
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/15368",
-      "flag": "🇿🇦",
-      "country": "South Africa",
-      "ts": 1773255763.024554
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206Ly9MeURZbTh2akFFcmcxcE1SWldXcXVSODdpekpTRGxoaGNtRUtjTHpZbz06d3hhMlBLYkYwLzFVclJpQm9lV056YUxWRnEzNjZIRzc1SVlTK0ZqVTdPYz0@95.216.238.249:37337#NetAccount`",
-      "latency": 145,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15367",
-      "flag": "🇫🇮",
-      "country": "Finland",
-      "ts": 1773255748.2163217
     }
   ],
   "proxies": [

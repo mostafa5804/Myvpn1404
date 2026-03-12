@@ -149,39 +149,18 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "ts": 1773312691.8906112
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f91c1cc2-05fe-4efd-ba09-86cb6bec19e3@23.95.113.104:443?path=%2F&security=none&encryption=none&type=ws#%40shankamil%20%DA%86%D9%86%D9%84%20%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%F0%9F%9B%A1",
-      "latency": 68,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/15382",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1773305665.4743822
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206QVNNa0N3L1NNQThNelpLOHR2NXZOdz09OkFTTWtDdy9TTUE4TXpaSzh0djV2Tnc9PQ@142.171.65.106:8388#%40shankamil%20%DA%86%D9%86%D9%84%20%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%F0%9F%9B%A1",
-      "latency": 8,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/15381",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1773305665.084172
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphZHVCOUhHeFFIakEyU0JNUmprSFg2@102.37.156.224:443#%40shankamil%20%DA%86%D9%86%D9%84%20%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%F0%9F%9B%A1",
-      "latency": 274,
-      "channel": "کانفیگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/15380",
-      "flag": "🇿🇦",
-      "country": "South Africa",
-      "ts": 1773305663.2740245
     }
   ],
   "proxies": [
+    {
+      "key": "142.54.189.107:443",
+      "link": "tg://proxy?server=142.54.189.107&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15434",
+      "latency": 19,
+      "flag": "🇺🇸",
+      "ts": 1773349140.2975338
+    },
     {
       "key": "5.78.179.191:4455",
       "link": "tg://proxy?server=5.78.179.191&port=4455&secret=dd104462821249bd7ac519130220c25d09",
@@ -487,78 +466,6 @@
       "latency": 119,
       "flag": "🇳🇱",
       "ts": 1773309220.4671214
-    },
-    {
-      "key": "alo.acharbashi.info:4515",
-      "link": "tg://proxy?server=alo.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15387",
-      "latency": 161,
-      "flag": "🇮🇷",
-      "ts": 1773305751.2856388
-    },
-    {
-      "key": "turbo.vpnproxy.cc:443",
-      "link": "tg://proxy?server=turbo.vpnproxy.cc&port=443&secret=ee027b0c5d5de5705398f60424db3332d6747572626f2e76706e70726f78792e6363",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15387",
-      "latency": 195,
-      "flag": "🇳🇱",
-      "ts": 1773305751.2856379
-    },
-    {
-      "key": "79.137.204.12:443",
-      "link": "tg://proxy?server=79.137.204.12&port=443&secret=30a73b76219133b7ce1697f43d3a74a8",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15387",
-      "latency": 159,
-      "flag": "🇳🇱",
-      "ts": 1773305751.285637
-    },
-    {
-      "key": "turbo.vpnproxy.cc:443",
-      "link": "tg://proxy?server=turbo.vpnproxy.cc&port=443&secret=ee027b0c5d5de5705398f60424db3332d6747572626f2e76706e70726f78792e6363)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15387",
-      "latency": 231,
-      "flag": "🇳🇱",
-      "ts": 1773305751.285636
-    },
-    {
-      "key": "peyk.acharbashi.info:4515",
-      "link": "tg://proxy?server=peyk.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15387",
-      "latency": 186,
-      "flag": "🇮🇷",
-      "ts": 1773305751.2856345
-    },
-    {
-      "key": "alo.acharbashi.info:4515",
-      "link": "tg://proxy?server=alo.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15387",
-      "latency": 160,
-      "flag": "🇮🇷",
-      "ts": 1773305751.2856338
-    },
-    {
-      "key": "79.137.204.12:443",
-      "link": "tg://proxy?server=79.137.204.12&port=443&secret=30a73b76219133b7ce1697f43d3a74a8)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15387",
-      "latency": 154,
-      "flag": "🇳🇱",
-      "ts": 1773305751.2856324
-    },
-    {
-      "key": "peyk.acharbashi.info:4515",
-      "link": "tg://proxy?server=peyk.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15387",
-      "latency": 170,
-      "flag": "🇮🇷",
-      "ts": 1773305751.2856302
     }
   ],
   "files": [
@@ -729,34 +636,6 @@
       "channel": "Net Account | نت اكانت",
       "link": "https://t.me/NetAccount/16084",
       "ts": 1773306393.9687686
-    },
-    {
-      "name": "🇩🇪@Shh_Proxy-All.npvt",
-      "ext": "NPVT",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/varvpn1/6166",
-      "ts": 1773305687.5739157
-    },
-    {
-      "name": "‎⁨منطقه ای 💚⁩.npvt",
-      "ext": "NPVT",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/varvpn1/6167",
-      "ts": 1773305687.3152986
-    },
-    {
-      "name": "‎⁨ملی شکن قوی⚡️⁩.npvt",
-      "ext": "NPVT",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/varvpn1/6168",
-      "ts": 1773305687.0498435
-    },
-    {
-      "name": "🦊 @𝗙𝗼𝘅_𝗖𝗼𝗻𝗳𝗶𝗴𝟭.npvt",
-      "ext": "NPVT",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "link": "https://t.me/varvpn1/6169",
-      "ts": 1773305686.73957
     }
   ]
 }

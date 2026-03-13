@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://686c62d9-17a7-43c9-a40a-f6747df60a9f@chatgpt.com:2096?path=%2F&security=tls&alpn=http%2F1.1&encryption=none&host=ca.adobe-connect.top&fp=chrome&type=ws&sni=ca.adobe-connect.top#%40PlanB_net",
+      "latency": 48,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/15454",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1773420637.804262
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@188.114.98.0:80?host=tt.andishehparenting.com&path=%2F&security=none&type=ws#V2rayng_Fast",
       "latency": 2,
       "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
@@ -62,6 +72,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "5.78.145.136:8080",
+      "link": "tg://proxy?server=5.78.145.136&port=8080&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/15455",
+      "latency": 73,
+      "flag": "🇺🇸",
+      "ts": 1773420746.0591292
+    },
     {
       "key": "92.118.234.215:443",
       "link": "tg://proxy?server=92.118.234.215&port=443&secret=dddb9b51b5ce9a2820ff62d348cb23f1b9",

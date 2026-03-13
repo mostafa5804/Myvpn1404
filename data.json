@@ -63,6 +63,15 @@
   ],
   "proxies": [
     {
+      "key": "98.84.109.35:80",
+      "link": "tg://proxy?server=98.84.109.35&port=80&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/15438",
+      "latency": 6,
+      "flag": "🇺🇸",
+      "ts": 1773385489.6849968
+    },
+    {
       "key": "2.144.7.98:40207",
       "link": "tg://proxy?server=2.144.7.98&port=40207&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
       "channel": "Net Account | نت اكانت",
@@ -214,15 +223,6 @@
       "latency": null,
       "flag": "🇮🇷",
       "ts": 1773345425.7229192
-    },
-    {
-      "key": "98.84.109.35:80",
-      "link": "tg://proxy?server=98.84.109.35&port=80&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15406",
-      "latency": 27,
-      "flag": "🇺🇸",
-      "ts": 1773338898.1269305
     }
   ],
   "files": [
@@ -365,13 +365,6 @@
       "channel": "اینترنت ازاد",
       "link": "https://t.me/mitivpn/16214",
       "ts": 1773345409.6194208
-    },
-    {
-      "name": "NetAccount775.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/16094",
-      "ts": 1773338897.8311949
     }
   ]
 }

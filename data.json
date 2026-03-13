@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@15.188.253.9:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 86,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15463",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1773428867.5929573
+    },
+    {
       "protocol": "SS",
       "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxNWIwNTczODMwMDgxZDAx@51.89.119.213:11201#%40Merlin_ViP%204`",
       "latency": 148,
@@ -355,15 +365,6 @@
       "latency": 180,
       "flag": "🇮🇷",
       "ts": 1773395474.7534325
-    },
-    {
-      "key": "98.84.109.35:80",
-      "link": "tg://proxy?server=98.84.109.35&port=80&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15438",
-      "latency": 6,
-      "flag": "🇺🇸",
-      "ts": 1773385489.6849968
     }
   ],
   "files": [

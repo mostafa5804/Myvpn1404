@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://cea9739e-50d9-4fbb-87e3-73e52e91d567@77.42.67.4:443?security=reality&encryption=mlkem768x25519plus.native.0rtt.2Do-Va1SMMHGLqftB61-zvPgdxfeTgFu_DomYu6G4Sg&pbk=c_JfmGPZlvpdm22tfPSVaVA97Qd7pYXR3JII2Gsp708&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=aws.amazon.com&sid=0944bdbc711210#%40configraygan%F0%9F%95%8A",
+      "latency": 120,
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15464",
+      "flag": "🇫🇮",
+      "country": "Finland",
+      "ts": 1773430629.4792283
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.188.253.9:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 86,

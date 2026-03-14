@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@18.193.206.143:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 133,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15471",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1773472268.4894557
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://be2557f7-a0df-4393-b71b-28013847059f@fastly3.hamrahflow.ir:443?path=%2F&security=tls&encryption=none&insecure=0&host=Valsiin.com&type=ws&allowInsecure=0&sni=default.ssl.fastly.net#%E2%9A%A1Telegram%20%3D%20%40prrofile_purple`",
       "latency": 160,
@@ -19,19 +29,36 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "ts": 1773430629.4792283
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@15.188.253.9:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 86,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15463",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1773428867.5929573
     }
   ],
   "proxies": [
+    {
+      "key": "r1.newr1.co.uk:85",
+      "link": "tg://proxy?server=r1.newr1.co.uk&port=85&secret=FgMBAgABAAH8AxOG4kw63Q==",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/15470",
+      "latency": 404,
+      "flag": "🇫🇮",
+      "ts": 1773472208.7987604
+    },
+    {
+      "key": "free-mtproto.flexiblenet.org:443",
+      "link": "tg://proxy?server=free-mtproto.flexiblenet.org&port=443&secret=4da47f00c2291d55696fa3ae954ffd78",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/15470",
+      "latency": 349,
+      "flag": "🇷🇺",
+      "ts": 1773472208.7987592
+    },
+    {
+      "key": "92.118.234.215:443",
+      "link": "tg://proxy?server=92.118.234.215&port=443&secret=dddb9b51b5ce9a2820ff62d348cb23f1b9",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/15470",
+      "latency": 150,
+      "flag": "🇫🇮",
+      "ts": 1773472208.798757
+    },
     {
       "key": "185.3.200.175:2053",
       "link": "tg://proxy?server=185.3.200.175&port=2053&secret=ee1603010200010001fc030386e24c3ad3626973636F7474692E79656B74616E65742E636F6D",

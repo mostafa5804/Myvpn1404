@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1@104.21.17.104:8880?mode=auto&path=%2Fcompass%2Fcdn%2F%3FI&security=none&encryption=none&host=ci49kfwjrc-57129121185.hediiigate.com&type=xhttp#%E2%9A%A1Telegram%20%3D%20%40prrofile_purple",
+      "latency": 6,
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15503",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1773520652.7416239
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.39.7.170:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 139,
@@ -102,6 +112,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "142.54.189.110:443",
+      "link": "tg://proxy?server=142.54.189.110&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15504",
+      "latency": 44,
+      "flag": "🇺🇸",
+      "ts": 1773520656.047018
+    },
     {
       "key": "2.144.23.51:6677",
       "link": "tg://proxy?server=2.144.23.51&port=6677&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
@@ -263,15 +282,6 @@
       "latency": 117,
       "flag": "🇳🇱",
       "ts": 1773481266.9884634
-    },
-    {
-      "key": "33.3pita.com:25565",
-      "link": "tg://proxy?server=33.3pita.com&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15473",
-      "latency": 242,
-      "flag": "🇨🇦",
-      "ts": 1773474837.75515
     }
   ],
   "files": [

@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://c558328b-eb46-424c-b9e0-574770f0b072@dvgt.zem.indevs.in:80?encryption=none&security=none&sni=dvgt.zem.indevs.in&type=ws&host=dvgt.zem.indevs.in&path=%2Fv8clafFSnPXNC0BXGtJ#`",
+      "latency": 258,
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15604",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1773607131.9055834
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://c558328b-eb46-424c-b9e0-574770f0b072@rtg.ae1autumn.cc.cd:80?encryption=none&security=none&sni=rtg.ae1autumn.cc.cd&fp=chrome&type=ws&host=rtg.ae1autumn.cc.cd&path=%2Fv8clafFSnPXNC0BXGtJ#https://t.me/ConfigX2ray",
+      "latency": 376,
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15603",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1773607131.3324232
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@chatgpt.com:2096?path=%2F45.76.183.217%3D49292&security=tls&encryption=none&insecure=1&host=hetz.x-smm.com&fp=chrome&type=ws&allowInsecure=1&sni=hetz.x-smm.com#",
+      "latency": 22,
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15602",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1773607130.5441465
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://bf710ad2-4a43-4379-aa73-e684f00b6240@broad-sky-9360.k7uztejf9ief.workers.dev:443?encryption=none&security=tls&sni=broad-sky-9360.k7uztejf9ief.workers.dev&fp=chrome&insecure=1&allowInsecure=1&type=ws&host=broad-sky-9360.k7uztejf9ief.workers.dev&path=%2F#",
+      "latency": 14,
+      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15601",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1773607130.1809669
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.236.174.14:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 104,

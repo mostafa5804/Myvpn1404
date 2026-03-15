@@ -679,27 +679,35 @@
       "flag": "🇪🇸",
       "country": "Spain",
       "ts": 1773527656.354857
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f8d4581a-6dd4-5f4d-b37d-b994c5ae81b1@104.21.17.104:8880?mode=auto&path=%2Fcompass%2Fcdn%2F%3FI&security=none&encryption=none&host=ci49kfwjrc-57129121185.hediiigate.com&type=xhttp#%E2%9A%A1Telegram%20%3D%20%40prrofile_purple",
-      "latency": 6,
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15503",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1773520652.7416239
     }
   ],
   "proxies": [
     {
-      "key": "142.54.189.110:443",
-      "link": "tg://proxy?server=142.54.189.110&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
-      "channel": "اخبار فوری و فیلتر شکن اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15504",
-      "latency": 44,
-      "flag": "🇺🇸",
-      "ts": 1773520656.047018
+      "key": "195.254.165.244:25565",
+      "link": "tg://proxy?server=195.254.165.244&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15581",
+      "latency": 126,
+      "flag": "🇳🇱",
+      "ts": 1773564458.0502741
+    },
+    {
+      "key": "195.254.165.252:25565",
+      "link": "tg://proxy?server=195.254.165.252&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15581",
+      "latency": 132,
+      "flag": "🇳🇱",
+      "ts": 1773564458.0502727
+    },
+    {
+      "key": "185.60.137.156:8443",
+      "link": "tg://proxy?server=185.60.137.156&port=8443&secret=75f9a8da21406c0db5e92c015368345c",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15581",
+      "latency": null,
+      "flag": "🇮🇷",
+      "ts": 1773564458.050271
     }
   ],
   "files": [

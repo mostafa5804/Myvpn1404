@@ -9,18 +9,45 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1773774846.4947371
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@3.120.82.109:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 156,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15641",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1773767563.7280297
     }
   ],
-  "proxies": [],
+  "proxies": [
+    {
+      "key": "37.139.42.140:443",
+      "link": "tg://proxy?server=37.139.42.140&port=443&secret=f5199e949c0f23bc887581218ad8c1e6",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15643",
+      "latency": 142,
+      "flag": "🇷🇺",
+      "ts": 1773815929.4886944
+    },
+    {
+      "key": "89.167.115.229:443",
+      "link": "tg://proxy?server=89.167.115.229&port=443&secret=ddbe3f0adb4ae53a594fd5fec4dd00287f)",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15643",
+      "latency": 130,
+      "flag": "🇫🇮",
+      "ts": 1773815929.4886932
+    },
+    {
+      "key": "dedicated.love-internet.xyz:4515",
+      "link": "tg://proxy?server=dedicated.love-internet.xyz&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15643",
+      "latency": 144,
+      "flag": "🇳🇱",
+      "ts": 1773815929.4886923
+    },
+    {
+      "key": "peyk.acharbashi.info:4515",
+      "link": "tg://proxy?server=peyk.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15643",
+      "latency": 298,
+      "flag": "🇳🇱",
+      "ts": 1773815929.4886894
+    }
+  ],
   "files": []
 }

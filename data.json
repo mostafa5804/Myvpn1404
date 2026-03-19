@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://af33a49d-e9ff-486b-ba6c-5ee9e8ded6f5@185.143.233.5:80?path=%2Fgraphql%3Fed%3D30&security=&encryption=none&host=dulphin111-90331252af-viv.apps.ir-central1.arvancaas.ir&type=#V2rayng_Fast`",
+      "latency": 128,
+      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15669",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1773950333.1812353
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.188.155.30:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 84,

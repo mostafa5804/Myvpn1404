@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://a49131a1-fbb1-4e7b-8d8b-7441cdf622b8@185.143.233.5:80?path=%2Fgraphql%3Fed%3D30&security=none&encryption=none&host=dulphin111-90331252af-viv.apps.ir-central1.arvancaas.ir&type=ws#%40Hacknashidvpnbot%20%D8%B9%D8%B6%D9%88%20%D8%B4%D9%88%20%D9%82%D8%B7%D8%B9%20%D9%86%D8%B4%DB%8C",
+      "latency": 112,
+      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15706",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1774125376.6220186
+    },
+    {
       "protocol": "VMESS",
       "config": "vmess://eyJhZGQiOiIxODUuMTgxLjE4My4xMjQiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiYTY0NDA3MjktMTA0Ni00YTljLWJjMTktN2MwZWRlNGJmNGQ0IiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiIyODA5NCIsInBzIjoi8J+UsCBAUGV3ZXphVlBOICjYqtmE2q/Ysdin2YUpIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9`",
       "latency": null,
@@ -79,29 +89,18 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1774082550.4537325
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://3f0f36f5-f091-45c5-88c9-4bcc545b922c@www.speedtest.net:2096?path=%2F45.76.183.217%3D49292&security=tls&encryption=none&insecure=0&host=hetz.x-smm.com&type=ws&allowInsecure=0&sni=hetz.x-smm.com#%40V2rayng_Fast",
-      "latency": 79,
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15693",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1774079469.0676584
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://56a210bb-8c6b-4148-80bc-2fec5099cb98@c27.prodnsspeed10.ir:2083?mode=multi&security=tls&encryption=none&insecure=0&fp=chrome&type=grpc&serviceName=Love&allowInsecure=0&sni=so.sodogodping.ir#%40VpnPinks",
-      "latency": 182,
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15692",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1774079468.6698773
     }
   ],
   "proxies": [
+    {
+      "key": "av.extravpn.info:443",
+      "link": "tg://proxy?server=av.extravpn.info&port=443&secret=fd29b8a449151cc37f8c27ebcdd0d43d",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/15707",
+      "latency": 354,
+      "flag": "🇷🇺",
+      "ts": 1774125386.4621937
+    },
     {
       "key": "5.78.190.71:4455",
       "link": "tg://proxy?server=5.78.190.71&port=4455&secret=ddbe3f0adb4ae53a594fd5fec4dd00287f",

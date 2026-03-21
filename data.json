@@ -59,39 +59,18 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1774092666.6279356
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@162.159.36.5:80/?type=ws&encryption=none&flow=&host=tt.andishehparenting.com&path=%2F#V2rayng_Fast",
-      "latency": 2,
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15696",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1774082551.0566769
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@172.64.146.68:80/?type=ws&encryption=none&flow=&host=tt.andishehparenting.com&path=%2F#V2rayng_Fast",
-      "latency": 2,
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15695",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1774082550.7635229
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@172.64.146.163:80/?type=ws&encryption=none&flow=&host=tt.andishehparenting.com&path=%2F#V2rayng_Fast",
-      "latency": 2,
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15694",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1774082550.4537325
     }
   ],
   "proxies": [
+    {
+      "key": "193.58.122.56:11443",
+      "link": "tg://proxy?server=193.58.122.56&port=11443&secret=02e4244221ce5b63ab3ba63af30cdf51",
+      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15708",
+      "latency": 145,
+      "flag": "🇩🇪",
+      "ts": 1774126106.9112275
+    },
     {
       "key": "av.extravpn.info:443",
       "link": "tg://proxy?server=av.extravpn.info&port=443&secret=fd29b8a449151cc37f8c27ebcdd0d43d",

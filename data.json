@@ -9,19 +9,27 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1774076917.4136071
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.186.179:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 104,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15688",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1774033891.412051
     }
   ],
   "proxies": [
+    {
+      "key": "89.125.98.143:4514",
+      "link": "tg://proxy?server=89.125.98.143&port=4514&secret=ee0a638f4a7bd9db9e94449c652ea963066e616e6f2e6861707076706e2e6363",
+      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15691",
+      "latency": 147,
+      "flag": "🇳🇱",
+      "ts": 1774078704.9619484
+    },
+    {
+      "key": "av.extravpn.info:443",
+      "link": "tg://proxy?server=av.extravpn.info&port=443&secret=fd29b8a449151cc37f8c27ebcdd0d43d",
+      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15691",
+      "latency": 210,
+      "flag": "🇷🇺",
+      "ts": 1774078704.9619462
+    },
     {
       "key": "195.254.165.252:25565",
       "link": "tg://proxy?server=195.254.165.252&port=25565&secret=dd79e344818749bd7ac519130220c25d09",

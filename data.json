@@ -23,6 +23,33 @@
   ],
   "proxies": [
     {
+      "key": "connect.solutions.solutions:443",
+      "link": "tg://proxy?server=connect.solutions.solutions&port=443&secret=dd2ae5891b2b9b9b811b212050843193aa",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15720",
+      "latency": 259,
+      "flag": "🇷🇺",
+      "ts": 1774205296.4205358
+    },
+    {
+      "key": "142.54.189.106:443",
+      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15720",
+      "latency": 31,
+      "flag": "🇺🇸",
+      "ts": 1774205296.4205346
+    },
+    {
+      "key": "109.122.196.48:443",
+      "link": "tg://proxy?server=109.122.196.48&port=443&secret=ed103e361e8f98572ec11071e45a5e8e",
+      "channel": "کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/15720",
+      "latency": 109,
+      "flag": "🇩🇪",
+      "ts": 1774205296.420532
+    },
+    {
       "key": "5.78.190.71:4455",
       "link": "tg://proxy?server=5.78.190.71&port=4455&secret=ddbe3f0adb4ae53a594fd5fec4dd00287f",
       "channel": "اینترنت آزاد | Merlin ViP",
@@ -221,5 +248,13 @@
       "ts": 1774169012.564734
     }
   ],
-  "files": []
+  "files": [
+    {
+      "name": "Russia 🇷🇺 GepardVPN.npvt",
+      "ext": "NPVT",
+      "channel": "xsfilternet",
+      "link": "https://t.me/xsfilternet/2969",
+      "ts": 1774205312.0879674
+    }
+  ]
 }

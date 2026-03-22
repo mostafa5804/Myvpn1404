@@ -9,19 +9,18 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1774163633.0545826
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://a49131a1-fbb1-4e7b-8d8b-7441cdf622b8@185.143.233.5:80?path=%2Fgraphql%3Fed%3D30&security=none&encryption=none&host=dulphin111-90331252af-viv.apps.ir-central1.arvancaas.ir&type=ws#%40Hacknashidvpnbot%20%D8%B9%D8%B6%D9%88%20%D8%B4%D9%88%20%D9%82%D8%B7%D8%B9%20%D9%86%D8%B4%DB%8C",
-      "latency": 112,
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15706",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1774125376.6220186
     }
   ],
   "proxies": [
+    {
+      "key": "5.101.87.222:7878",
+      "link": "tg://proxy?server=5.101.87.222&port=7878&secret=48f739d003f42d13dd318bcbd5757d4b",
+      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15712",
+      "latency": 187,
+      "flag": "🇲🇩",
+      "ts": 1774169012.564734
+    },
     {
       "key": "195.254.165.247:25565",
       "link": "tg://proxy?server=195.254.165.247&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
@@ -48,15 +47,6 @@
       "latency": 145,
       "flag": "🇩🇪",
       "ts": 1774126106.9112275
-    },
-    {
-      "key": "av.extravpn.info:443",
-      "link": "tg://proxy?server=av.extravpn.info&port=443&secret=fd29b8a449151cc37f8c27ebcdd0d43d",
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/15707",
-      "latency": 354,
-      "flag": "🇷🇺",
-      "ts": 1774125386.4621937
     }
   ],
   "files": []

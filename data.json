@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.73.207.163:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 151,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15711",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1774163633.0545826
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://a49131a1-fbb1-4e7b-8d8b-7441cdf622b8@185.143.233.5:80?path=%2Fgraphql%3Fed%3D30&security=none&encryption=none&host=dulphin111-90331252af-viv.apps.ir-central1.arvancaas.ir&type=ws#%40Hacknashidvpnbot%20%D8%B9%D8%B6%D9%88%20%D8%B4%D9%88%20%D9%82%D8%B7%D8%B9%20%D9%86%D8%B4%DB%8C",
       "latency": 112,
@@ -47,15 +57,6 @@
       "latency": 354,
       "flag": "🇷🇺",
       "ts": 1774125386.4621937
-    },
-    {
-      "key": "5.78.190.71:4455",
-      "link": "tg://proxy?server=5.78.190.71&port=4455&secret=ddbe3f0adb4ae53a594fd5fec4dd00287f",
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15705",
-      "latency": 73,
-      "flag": "🇺🇸",
-      "ts": 1774118812.2033315
     }
   ],
   "files": []

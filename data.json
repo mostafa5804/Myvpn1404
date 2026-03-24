@@ -1,17 +1,33 @@
 {
-  "configs": [
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@51.44.137.34:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 114,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15733",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1774292729.8597777
-    }
-  ],
+  "configs": [],
   "proxies": [
+    {
+      "key": "142.54.189.108:443",
+      "link": "tg://proxy?server=142.54.189.108&port=443&secret=7gnbgVptgqMf2nb4ciMMaddwa2didWlsZC5vcmc",
+      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15737",
+      "latency": 40,
+      "flag": "🇺🇸",
+      "ts": 1774339120.8265924
+    },
+    {
+      "key": "65.109.215.115:8443",
+      "link": "tg://proxy?server=65.109.215.115&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15737",
+      "latency": 167,
+      "flag": "🇫🇮",
+      "ts": 1774339120.8265915
+    },
+    {
+      "key": "142.54.189.106:443",
+      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267#sorena_can",
+      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15737",
+      "latency": 35,
+      "flag": "🇺🇸",
+      "ts": 1774339120.826589
+    },
     {
       "key": "185.209.42.69:8443",
       "link": "tg://proxy?server=185.209.42.69&port=8443&secret=20f39711247d6cd5983510336d9b827f",

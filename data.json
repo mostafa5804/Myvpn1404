@@ -1,17 +1,15 @@
 {
-  "configs": [
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@51.44.2.160:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 88,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15744",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1774379730.7995882
-    }
-  ],
+  "configs": [],
   "proxies": [
+    {
+      "key": "142.54.189.106:443",
+      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/15749",
+      "latency": 34,
+      "flag": "🇺🇸",
+      "ts": 1774425546.906852
+    },
     {
       "key": "195.254.165.251:25565",
       "link": "tg://proxy?server=195.254.165.251&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
@@ -83,33 +81,6 @@
       "latency": null,
       "flag": "🇮🇷",
       "ts": 1774385514.9651608
-    },
-    {
-      "key": "saturnlink.space:443",
-      "link": "tg://proxy?server=saturnlink.space&port=443&secret=eea85f2776cc83dbff66b440fb03050cf773617475726e6c696e6b2e7370616365",
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15745",
-      "latency": 255,
-      "flag": "🇳🇱",
-      "ts": 1774380863.8063767
-    },
-    {
-      "key": "bosnia.capture.misdeem.offcast.washerwoman.pinoyteleseryehd.net:8500",
-      "link": "tg://proxy?server=bosnia.capture.misdeem.offcast.washerwoman.pinoyteleseryehd.net&port=8500&secret=82bb272c25579297178d08fff7dbb0d6",
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15745",
-      "latency": 229,
-      "flag": "🇫🇮",
-      "ts": 1774380863.8063753
-    },
-    {
-      "key": "45.90.13.34:443",
-      "link": "tg://proxy?server=45.90.13.34&port=443&secret=dda85f2776cc83dbff66b440fb03050cf7",
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/15745",
-      "latency": 96,
-      "flag": "🇳🇱",
-      "ts": 1774380863.806373
     }
   ],
   "files": []

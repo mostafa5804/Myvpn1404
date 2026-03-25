@@ -369,19 +369,18 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1774437154.631488
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@18.195.152.136:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 119,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15750",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1774426012.3450105
     }
   ],
   "proxies": [
+    {
+      "key": "92.118.234.215:443",
+      "link": "tg://proxy?server=92.118.234.215&port=443&secret=dddb9b51b5ce9a2820ff62d348cb23f1b9&Hiddify_nexttt**",
+      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/15789",
+      "latency": 170,
+      "flag": "🇫🇮",
+      "ts": 1774471808.9714613
+    },
     {
       "key": "195.254.165.243:25565",
       "link": "tg://proxy?server=195.254.165.243&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
@@ -399,15 +398,6 @@
       "latency": 137,
       "flag": "🇩🇪",
       "ts": 1774460074.0079844
-    },
-    {
-      "key": "142.54.189.106:443",
-      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
-      "channel": "اینترنت آزاد | Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/15749",
-      "latency": 34,
-      "flag": "🇺🇸",
-      "ts": 1774425546.906852
     }
   ],
   "files": []

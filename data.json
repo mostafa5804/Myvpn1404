@@ -1,16 +1,5 @@
 {
-  "configs": [
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.25.182:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 102,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15797",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1774552736.0936484
-    }
-  ],
+  "configs": [],
   "proxies": [
     {
       "key": "195.254.165.241:25565",
@@ -56,96 +45,6 @@
       "latency": 380,
       "flag": "🇷🇺",
       "ts": 1774558643.9697878
-    },
-    {
-      "key": "142.54.189.106:443",
-      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15798",
-      "latency": 44,
-      "flag": "🇺🇸",
-      "ts": 1774553860.0619924
-    },
-    {
-      "key": "dedicated.love-internet.xyz:4515",
-      "link": "tg://proxy?server=dedicated.love-internet.xyz&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15798",
-      "latency": 159,
-      "flag": "🇳🇱",
-      "ts": 1774553860.0619912
-    },
-    {
-      "key": "dedicated.love-internet.xyz:4515",
-      "link": "tg://proxy?server=dedicated.love-internet.xyz&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15798",
-      "latency": 273,
-      "flag": "🇳🇱",
-      "ts": 1774553860.0619898
-    },
-    {
-      "key": "195.254.165.241:25565",
-      "link": "tg://proxy?server=195.254.165.241&port=25565&secret=dd79e344818749bd7ac519130220c25d09)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15798",
-      "latency": 151,
-      "flag": "🇳🇱",
-      "ts": 1774553860.0619888
-    },
-    {
-      "key": "5.39.250.20:443",
-      "link": "tg://proxy?server=5.39.250.20&port=443&secret=6356ebb33a57b6deda8a1c3cf2aee557",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15798",
-      "latency": 172,
-      "flag": "🇱🇻",
-      "ts": 1774553860.0619876
-    },
-    {
-      "key": "5.78.190.71:4455",
-      "link": "tg://proxy?server=5.78.190.71&port=4455&secret=ddbe3f0adb4ae53a594fd5fec4dd00287f",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15798",
-      "latency": 15,
-      "flag": "🇺🇸",
-      "ts": 1774553860.061986
-    },
-    {
-      "key": "5.39.250.20:443",
-      "link": "tg://proxy?server=5.39.250.20&port=443&secret=6356ebb33a57b6deda8a1c3cf2aee557)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15798",
-      "latency": 1180,
-      "flag": "🇱🇻",
-      "ts": 1774553860.0619848
-    },
-    {
-      "key": "142.54.189.106:443",
-      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15798",
-      "latency": 44,
-      "flag": "🇺🇸",
-      "ts": 1774553860.0619786
-    },
-    {
-      "key": "5.78.190.71:4455",
-      "link": "tg://proxy?server=5.78.190.71&port=4455&secret=ddbe3f0adb4ae53a594fd5fec4dd00287f)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15798",
-      "latency": 15,
-      "flag": "🇺🇸",
-      "ts": 1774553860.061977
-    },
-    {
-      "key": "195.254.165.241:25565",
-      "link": "tg://proxy?server=195.254.165.241&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/15798",
-      "latency": 150,
-      "flag": "🇳🇱",
-      "ts": 1774553860.0619738
     }
   ],
   "files": []

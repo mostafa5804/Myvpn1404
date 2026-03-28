@@ -14,7 +14,6 @@ import requests
 from datetime import datetime, timedelta, timezone
 from telethon import TelegramClient
 from telethon.sessions import StringSession
-# اضافه شدن ماژول برای خواندن لینک‌های مخفی
 from telethon.tl.types import MessageEntityTextUrl
 
 # ==========================================
@@ -35,17 +34,18 @@ MAX_MESSAGE_AGE_MINUTES = 90
 SUB_LINK_URL = "https://raw.githubusercontent.com/mostafa5804/Myvpn1404/refs/heads/main/sub.txt"
 
 ALL_CHANNELS = [
-    '@KioV2ray', '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mypremium98',
-    '@mitivpn', '@iSeqaro', '@configraygan', '@shankamil', '@xsfilternet',
-    '@varvpn1', '@iP_CF', '@cooonfig', '@DeamNet', '@anty_filter',
+    # --- کانال‌های جدید اضافه شده ---
+    '@net_melli1', '@xixv2ray', '@filtershekan_channel', '@ghalagyann', '@Proxymelimon',
+    '@isor1n', '@slipnet_chat', '@Lizard_Vpn', '@KalbodTeam', '@TirexNet',
+    
+    # --- کانال‌های فعال و قدیمی (سبز و زرد) ---
+    '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mitivpn', '@configraygan', 
+    '@xsfilternet', '@varvpn1', '@iP_CF', '@cooonfig', '@anty_filter',
     '@vpnboxiran', '@Merlin_ViP', '@BugFreeNet', '@cicdoVPN', '@Farda_Ai',
-    '@Awlix_ir', '@proSSH', '@vpn_proxy_custom', '@Free_HTTPCustom',
-    '@sinavm', '@Amir_Alternative_Official', '@StayconnectedVPN', '@BINNER_IRAN',
-    '@IranianMinds', '@vpn11ir', '@NetAccount', '@mitiivpn2', '@isharewin',
-    '@iroproxy', '@ProxyMTProto',
-    '@darkproxy', '@configs_freeiran', '@v2rayvpnchannel'
+    '@Awlix_ir', '@proSSH', '@vpn_proxy_custom', '@Free_HTTPCustom', '@sinavm', 
+    '@Amir_Alternative_Official', '@IranianMinds', '@NetAccount', '@isharewin', 
+    '@iroproxy', '@ProxyMTProto', '@darkproxy', '@v2rayvpnchannel'
 ]
-
 ALLOWED_EXTENSIONS = {'.npv4', '.npv2', '.npvt', '.dark', '.ehi', '.txt', '.conf', '.json'}
 iran_tz = pytz.timezone('Asia/Tehran')
 IRAN_IP_PREFIXES = ['2.144.', '5.22.', '31.2.', '37.9.', '46.18.', '78.38.', '85.9.', '91.98.', '93.88.', '185.']
@@ -96,6 +96,10 @@ def extract_unique_key(config_str):
                 return f"{data.get('add')}:{data.get('port')}"
             except:
                 return config_str
+        
+        # هندل کردن SlipNet (چون محتوایش رمزنگاری شده است، خود متن به عنوان کلید استفاده می‌شود)
+        elif config_str.startswith('slipnet-enc://'):
+            return config_str[:50] # 50 کاراکتر اول برای یکتایی کافی است
 
         match = re.search(r'://.*?@([^:/]+):(\d+)', config_str)
         if match:
@@ -120,6 +124,9 @@ def get_host_port(link, type='config'):
                 padded = b64 + '=' * (-len(b64) % 4)
                 d = json.loads(base64.b64decode(padded).decode('utf-8'))
                 return d['add'], int(d['port'])
+            elif link.startswith('slipnet-enc://'):
+                # SlipNet قابل استخراج IP/Port برای پینگ نیست
+                return 'slipnet', 0 
             else:
                 m = re.search(r"@([\w\.-]+):(\d+)", link)
                 if m: return m.group(1), int(m.group(2))
@@ -154,15 +161,12 @@ def get_batch_info():
     else:
         return ALL_CHANNELS[20:], "Second Batch", target_session
 
-# --- اصلاح شده: فوتر جدید طبق درخواست ---
 def create_footer(source_title, source_username):
     now = datetime.now(iran_tz)
     date_str = now.strftime('%Y/%m/%d')
     time_str = now.strftime('%H:%M')
     safe_title = re.sub(r'[\[\]\(\)\*`_]', '', str(source_title)).strip()
-    
     clean_username = source_username.replace('@', '')
-    
     return (
         f"\n━━━━━━━━━━━━━━━━\n"
         f"🗓 {date_str} • 🕐 {time_str}\n"
@@ -171,7 +175,37 @@ def create_footer(source_title, source_username):
         f"🤖 Bot: [@Feechecker_bot](https://t.me/Feechecker_bot)" 
     )
 
+# --- تابع جدید: استخراج رمز از متن کپشن ---
+def extract_password_from_text(text):
+    if not text:
+        return ""
+    
+    text = str(text)
+    # کلمات کلیدی برای جستجو
+    keywords = ['رمز', 'پسورد', 'password', 'pass']
+    
+    # 1. اگر کلمه کلیدی وجود داشت
+    for kw in keywords:
+        if kw in text.lower():
+            # استخراج خطی که شامل کلمه کلیدی است
+            lines = text.split('\n')
+            for line in lines:
+                if kw in line.lower():
+                    return f"\n🔑 {line.strip()}"
+    
+    # 2. اگر کلمه کلیدی نبود، اما یک آیدی تلگرام بود (مثل @lizard_vpn)
+    # فقط در صورتی که متن کوتاه باشد (کمتر از 150 کاراکتر) تا کل کپشن شلوغ نیاید
+    match = re.search(r'@\w+', text)
+    if match and len(text) < 150:
+        return f"\n🔑 رمز احتمالی/توضیحات: {text.strip()}"
+        
+    return ""
+
 async def check_connection(host, port):
+    if host == 'slipnet':
+        # برای slipnet چون رمز شده است، پینگ نمی‌گیریم و فرض می‌کنیم سالم است
+        return 50 # یک پینگ فرضی می‌دهیم تا به عنوان کانفیگ عالی دسته‌بندی شود
+
     try:
         start_time = time.perf_counter()
         reader, writer = await asyncio.wait_for(
@@ -191,7 +225,7 @@ async def check_connection(host, port):
 
 async def process_item(link, type='config'):
     host, port = get_host_port(link, type)
-    if not host or not port:
+    if not host or port is None:
         return None, None, None, None
 
     latency = await check_connection(host, port)
@@ -202,6 +236,9 @@ async def process_item(link, type='config'):
                 return "🔵 اینترانت", None, "🇮🇷", "Iran"
         except: pass
         return None, None, None, None
+
+    if host == 'slipnet':
+        return "🟢 عالی", latency, "🏴‍☠️", "SlipNet"
 
     flag, country = get_ip_info(host)
     status = "🟢 عالی" if latency < 200 else "🟡 خوب" if latency < 500 else "🟠 متوسط"
@@ -251,14 +288,16 @@ async def main():
 
                     # --- Section 1: Text Processing ---
                     if m.text:
-                        # 1.1 Configs (VLESS/VMess/etc)
-                        configs = re.findall(r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic)://[^\s\n]+", m.text)
+                        # 1.1 Configs (VLESS/VMess/SlipNet/etc)
+                        # اضافه شدن slipnet-enc به لیست
+                        configs = re.findall(r"(?:vmess|vless|trojan|ss|shadowsocks|hy2|tuic|slipnet-enc):\/\/[^\s\n]+", m.text)
                         for c in configs:
                             u_key = extract_unique_key(c)
                             if u_key not in unique_fingerprints:
                                 stat, lat, flag, country = await process_item(c, 'config')
                                 if stat:
-                                    prot = c.split('://')[0].upper()
+                                    # برای slipnet چون - دارد اسپلیت اولش فرق میکنه
+                                    prot = c.split('://')[0].upper().replace('-', '_')
                                     clean_c = c.replace('`', '')
                                     caption = (
                                         f"{flag} **{prot}** | {country}\n"
@@ -278,17 +317,13 @@ async def main():
                                         unique_fingerprints.add(u_key)
                                     except: pass
 
-                        # 1.2 Proxies (Advanced Extraction: Regex + Entities)
+                        # 1.2 Proxies
                         found_proxies = set()
-                        
-                        # A) Regex (متن ساده)
                         regex_matches = re.findall(r"https://t.me/proxy\?[^\s\n]+|tg://proxy\?[^\s\n]+", m.text)
                         for p in regex_matches:
-                            # تبدیل همه به tg://proxy برای یکسان‌سازی
                             clean_p = p.replace('https://t.me/proxy', 'tg://proxy')
                             found_proxies.add(clean_p)
                         
-                        # B) Entities (هایپرلینک‌های مخفی)
                         if m.entities:
                             for ent in m.entities:
                                 if isinstance(ent, MessageEntityTextUrl):
@@ -297,21 +332,18 @@ async def main():
                                         clean_url = url.replace('https://t.me/proxy', 'tg://proxy')
                                         found_proxies.add(clean_url)
 
-                        # پردازش لیست پیدا شده
                         for p in found_proxies:
                             if p not in sent_hashes:
                                 stat, lat, flag, country = await process_item(p, 'proxy')
                                 if stat:
-                                    # استخراج مشخصات برای دیتابیس
                                     m_search = re.search(r"server=([\w\.-]+)&port=(\d+)", p)
                                     key_p = f"{m_search.group(1)}:{m_search.group(2)}" if m_search else str(time.time())
-                                    
                                     channel_proxies.append({
                                         'link': p, 'flag': flag, 'stat': stat, 'lat': lat, 'key': key_p
                                     })
                                     sent_hashes.add(p)
 
-                    # --- Section 2: File Processing ---
+                    # --- Section 2: File Processing (با استخراج رمز) ---
                     if m.file and m.file.name:
                         file_ext = "." + m.file.name.split('.')[-1].lower() if '.' in m.file.name else ""
                         
@@ -319,7 +351,18 @@ async def main():
                             if m.file.name not in sent_hashes:
                                 try:
                                     print(f"📂 Found File: {m.file.name}")
-                                    await client.send_file(destination_channel, m.media, caption=f"📂 **{m.file.name}**\n{create_footer(title, channel_str)}")
+                                    
+                                    # ساخت کپشن فایل
+                                    file_caption = f"📂 **{m.file.name}**"
+                                    
+                                    # استخراج رمز احتمالی از کپشن پیام اصلی
+                                    pwd_text = extract_password_from_text(m.text)
+                                    if pwd_text:
+                                        file_caption += f"\n{pwd_text}"
+                                        
+                                    file_caption += f"\n{create_footer(title, channel_str)}"
+
+                                    await client.send_file(destination_channel, m.media, caption=file_caption)
                                     new_file.append({
                                         'name': m.file.name, 'ext': file_ext.replace('.', '').upper(), 
                                         'channel': title, 'link': link, 'ts': time.time()
@@ -365,10 +408,10 @@ async def main():
 
         save_data({'configs': all_configs, 'proxies': all_proxies, 'files': all_files})
         
-        # Subscription Link
+        # Subscription Link (اضافه شدن slipnet به ساب لینک)
         sub_content = ""
         for c in all_configs:
-            if c['config'].startswith(('vmess', 'vless', 'trojan', 'ss', 'hy2', 'tuic')):
+            if c['config'].startswith(('vmess', 'vless', 'trojan', 'ss', 'hy2', 'tuic', 'slipnet-enc')):
                 sub_content += c['config'] + "\n"
         
         with open(SUB_FILE, 'w', encoding='utf-8') as f:
@@ -408,7 +451,6 @@ async def main():
 
             protocol = cfg['protocol'].upper()
 
-            # تعیین رنگ پینگ
             if lat < 500:
                 ping_color = "text-emerald-400 border-emerald-500/30 bg-emerald-500/10"
             elif lat < 1000:
@@ -442,7 +484,9 @@ async def main():
                         <i class="fas fa-qrcode"></i> QR
                     </button>
                 </div>
-            </div>"""        # 2. Proxy Cards Generator
+            </div>"""        
+            
+        # 2. Proxy Cards Generator
         for idx, prox in enumerate(all_proxies, 1):
             lat = prox.get('latency', 999)
             try: lat = int(lat)
@@ -484,12 +528,9 @@ async def main():
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>VPN Hub Premium</title>
     <meta name="theme-color" content="#0f172a">
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fonts & Icons -->
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- QR Code Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     
     <style>
@@ -510,7 +551,6 @@ async def main():
 </head>
 <body class="min-h-screen flex flex-col pb-24">
     
-    <!-- Header -->
     <header class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-lg border-b border-slate-700/50 z-40 transition-all duration-300" id="header">
         <div class="max-w-xl mx-auto px-4 h-16 flex justify-between items-center">
             <div>
@@ -526,39 +566,33 @@ async def main():
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="max-w-xl mx-auto w-full pt-24 px-4 flex-grow">
         
-        <!-- Search & Filter Container -->
         <div class="sticky top-16 bg-slate-900/90 backdrop-blur-md z-30 py-4 -mx-4 px-4 border-b border-slate-800/50 mb-4 space-y-3">
-            <!-- Search -->
             <div class="relative">
                 <i class="fas fa-search absolute right-3 top-1/2 -translate-y-1/2 text-slate-500"></i>
                 <input type="text" id="searchInput" placeholder="جستجو (کشور، پروتکل...)" class="w-full bg-slate-800 text-white text-sm rounded-xl pl-4 pr-10 py-3 border border-slate-700 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 outline-none transition-all placeholder-slate-500">
             </div>
             
-            <!-- Filters -->
             <div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
                 <button onclick="filterItems('all', this)" class="filter-btn active flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">همه</button>
                 <button onclick="filterItems('vless', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">VLESS</button>
                 <button onclick="filterItems('vmess', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">VMess</button>
                 <button onclick="filterItems('mtproxy', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">MTProxy</button>
+                <button onclick="filterItems('slipnet_enc', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">SlipNet</button>
             </div>
         </div>
 
-        <!-- Grid -->
         <div id="grid" class="grid gap-4 card-enter">
             {html_cards}
         </div>
         
-        <!-- Empty State -->
         <div id="emptyState" class="hidden flex-col items-center justify-center py-12 text-slate-500">
             <i class="fas fa-ghost text-4xl mb-3 opacity-50"></i>
             <p class="text-sm">موردی یافت نشد</p>
         </div>
     </main>
 
-    <!-- Bottom Nav -->
     <nav class="fixed bottom-0 w-full bg-slate-900/80 backdrop-blur-xl border-t border-slate-700/50 pb-safe z-50">
         <div class="max-w-xl mx-auto grid grid-cols-3 h-16 relative">
             <div class="absolute -top-12 right-4">
@@ -585,7 +619,6 @@ async def main():
         </div>
     </nav>
 
-    <!-- QR Modal -->
     <div id="qrModal" class="fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
         <div class="bg-slate-800 p-6 rounded-2xl max-w-xs w-full mx-4 transform scale-95 transition-transform duration-300 shadow-2xl border border-slate-700">
             <div class="flex justify-between items-center mb-4">
@@ -597,7 +630,6 @@ async def main():
         </div>
     </div>
 
-    <!-- Toast Notification -->
     <div id="toast" class="fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-slate-800 border border-slate-700 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 translate-y-10 opacity-0 transition-all duration-300 z-[60]">
         <div class="bg-emerald-500/20 text-emerald-400 rounded-full p-1"><i class="fas fa-check-circle"></i></div>
         <span class="text-sm font-medium">کپی شد!</span>
@@ -665,7 +697,7 @@ async def main():
                 }}
             }});
             
-            document.getElementById('emptyState').classList.toggle('hidden', hasVisible);
+            document.getElementById('emptyState').classList.toggle('hidden', !hasVisible);
         }}
 
         // QR Code Logic

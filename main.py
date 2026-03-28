@@ -25,7 +25,7 @@ api_hash = os.environ['API_HASH']
 session_1 = os.environ.get('SESSION_STRING')
 session_2 = os.environ.get('SESSION_STRING_2')
 
-PING_TIMEOUT = 1.5
+PING_TIMEOUT = 5
 DATA_FILE = 'data.json'
 SUB_FILE = 'sub.txt'
 KEEP_HISTORY_HOURS = 12

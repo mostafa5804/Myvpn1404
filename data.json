@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.36.242.117:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 146,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15900",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1774703424.0278926
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AV63AFJ/0gkAXMimfNaKGBRYmqOieWvchlAIkkHPdk80BRZ/gKMUkqgOwpY0eGi/IPHv7DqBSyXkFOu3B6z3apYMRk5YgjVAMV/vWG00/Ca726l2PKm4eBAbVAoikoU9wVUwQui63cBCEjToNcZu/TG7GQCxQphOb0PpM0Pvb1bcAItCHVTUQMJznJ8DRQRR34tDnOFE5JCrF66m8CQgoQNZCd8oOpw7WGHolt6jAmTGUcfAcJGZVAxbJmMIbAZWCLUU4hbiLroXVkMsJyxKAi4bM+Dmd92cfB8N3YmEUrY7HyS+v0oFHw1NJSFegrdsg0ajhM3DXZWN+oxpoNqkXkczyhI5A+3/k+MsnYQT/NhAtwcQJ4Gs7Pq3uuS2NQabAkhGuzwaLzUZHdNZkebpVviF5goBbJbr/+DcJNidoy4Yu+wSW7MOV03JZySFYFLfKW7M15nt9VLuZZ3le76z2cQPwie6gJ7+oPxBZzp7reKnbCquVw5oM3ijeVMdVJ04Zjsd4dwihLQhIZ2c8WjbrkL8eZmCGy9564saiVZLZJCfXy7z4PQxfsuThng/tBfh5j6lVOAEHWAZrnac+eDAGfkH630w+B4R7+7KwGCJuRRIN4ZZ",
       "latency": 50,

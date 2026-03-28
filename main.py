@@ -176,28 +176,42 @@ def create_footer(source_title, source_username):
     )
 
 # --- تابع جدید: استخراج رمز از متن کپشن ---
+# --- تابع جدید و هوشمند استخراج رمز از متن کپشن ---
 def extract_password_from_text(text):
     if not text:
         return ""
     
     text = str(text)
-    # کلمات کلیدی برای جستجو
     keywords = ['رمز', 'پسورد', 'password', 'pass']
     
-    # 1. اگر کلمه کلیدی وجود داشت
-    for kw in keywords:
-        if kw in text.lower():
-            # استخراج خطی که شامل کلمه کلیدی است
-            lines = text.split('\n')
-            for line in lines:
-                if kw in line.lower():
-                    return f"\n🔑 {line.strip()}"
+    # جدا کردن خطوط و حذف فاصله‌های خالی
+    lines = [line.strip() for line in text.split('\n')]
     
-    # 2. اگر کلمه کلیدی نبود، اما یک آیدی تلگرام بود (مثل @lizard_vpn)
-    # فقط در صورتی که متن کوتاه باشد (کمتر از 150 کاراکتر) تا کل کپشن شلوغ نیاید
+    for i, line in enumerate(lines):
+        line_lower = line.lower()
+        # اگر کلمه کلیدی در این خط بود
+        if any(kw in line_lower for kw in keywords):
+            
+            # بررسی اینکه آیا رمز در همین خط است یا خط بعدی؟
+            clean_line = line_lower
+            for kw in keywords:
+                clean_line = clean_line.replace(kw, '')
+            # حذف کاراکترهای اضافی مثل دو نقطه یا فاصله
+            clean_line = clean_line.replace(':', '').replace('=', '').replace('-', '').strip()
+            
+            if clean_line:
+                # رمز در همین خط نوشته شده (مثلاً: پسورد: 1234)
+                return f"\n🔑 {line}"
+            else:
+                # جلوی کلمه پسورد خالی است. باید خطوط بعدی را بگردیم
+                for j in range(i + 1, len(lines)):
+                    if lines[j]: # اولین خطی که خالی نیست را پیدا کن
+                        return f"\n🔑 {line} {lines[j]}"
+    
+    # اگر کلمه کلیدی نبود، اما یک آیدی تلگرام بود (مثل @lizard_vpn)
     match = re.search(r'@\w+', text)
     if match and len(text) < 150:
-        return f"\n🔑 رمز احتمالی/توضیحات: {text.strip()}"
+        return f"\n🔑 آیدی/رمز احتمالی: {match.group(0)}"
         
     return ""
 

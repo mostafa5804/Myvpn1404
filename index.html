@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>VPN Hub Premium</title>
     <meta name="theme-color" content="#0f172a">
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fonts & Icons -->
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- QR Code Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     
     <style>
@@ -31,14 +28,13 @@
 </head>
 <body class="min-h-screen flex flex-col pb-24">
     
-    <!-- Header -->
     <header class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-lg border-b border-slate-700/50 z-40 transition-all duration-300" id="header">
         <div class="max-w-xl mx-auto px-4 h-16 flex justify-between items-center">
             <div>
                 <h1 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 tracking-tighter">VPN Hub</h1>
                 <div class="flex items-center gap-2 text-[10px] text-slate-400 font-mono">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    2026/03/28 - 08:31
+                    2026/03/28 - 08:38
                 </div>
             </div>
             <a href="https://raw.githubusercontent.com/mostafa5804/Myvpn1404/refs/heads/main/sub.txt" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg shadow-emerald-900/30 transition-all active:scale-95 flex items-center gap-2">
@@ -47,27 +43,23 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="max-w-xl mx-auto w-full pt-24 px-4 flex-grow">
         
-        <!-- Search & Filter Container -->
         <div class="sticky top-16 bg-slate-900/90 backdrop-blur-md z-30 py-4 -mx-4 px-4 border-b border-slate-800/50 mb-4 space-y-3">
-            <!-- Search -->
             <div class="relative">
                 <i class="fas fa-search absolute right-3 top-1/2 -translate-y-1/2 text-slate-500"></i>
                 <input type="text" id="searchInput" placeholder="جستجو (کشور، پروتکل...)" class="w-full bg-slate-800 text-white text-sm rounded-xl pl-4 pr-10 py-3 border border-slate-700 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 outline-none transition-all placeholder-slate-500">
             </div>
             
-            <!-- Filters -->
             <div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
                 <button onclick="filterItems('all', this)" class="filter-btn active flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">همه</button>
                 <button onclick="filterItems('vless', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">VLESS</button>
                 <button onclick="filterItems('vmess', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">VMess</button>
                 <button onclick="filterItems('mtproxy', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">MTProxy</button>
+                <button onclick="filterItems('slipnet_enc', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">SlipNet</button>
             </div>
         </div>
 
-        <!-- Grid -->
         <div id="grid" class="grid gap-4 card-enter">
             
             <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="trojan" data-search="france trojan">
@@ -724,14 +716,12 @@
             </div>
         </div>
         
-        <!-- Empty State -->
         <div id="emptyState" class="hidden flex-col items-center justify-center py-12 text-slate-500">
             <i class="fas fa-ghost text-4xl mb-3 opacity-50"></i>
             <p class="text-sm">موردی یافت نشد</p>
         </div>
     </main>
 
-    <!-- Bottom Nav -->
     <nav class="fixed bottom-0 w-full bg-slate-900/80 backdrop-blur-xl border-t border-slate-700/50 pb-safe z-50">
         <div class="max-w-xl mx-auto grid grid-cols-3 h-16 relative">
             <div class="absolute -top-12 right-4">
@@ -758,7 +748,6 @@
         </div>
     </nav>
 
-    <!-- QR Modal -->
     <div id="qrModal" class="fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
         <div class="bg-slate-800 p-6 rounded-2xl max-w-xs w-full mx-4 transform scale-95 transition-transform duration-300 shadow-2xl border border-slate-700">
             <div class="flex justify-between items-center mb-4">
@@ -770,7 +759,6 @@
         </div>
     </div>
 
-    <!-- Toast Notification -->
     <div id="toast" class="fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-slate-800 border border-slate-700 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 translate-y-10 opacity-0 transition-all duration-300 z-[60]">
         <div class="bg-emerald-500/20 text-emerald-400 rounded-full p-1"><i class="fas fa-check-circle"></i></div>
         <span class="text-sm font-medium">کپی شد!</span>
@@ -838,7 +826,7 @@
                 }
             });
             
-            document.getElementById('emptyState').classList.toggle('hidden', hasVisible);
+            document.getElementById('emptyState').classList.toggle('hidden', !hasVisible);
         }
 
         // QR Code Logic

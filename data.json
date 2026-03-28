@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.210.125:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 142,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15925",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1774724802.0854392
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AZ81H41txP8yrELZFjPX5VyKukb718gSiZNxOG9w43k7Ub1JJY/rGCC1mfE6s+zBdMB4ZeReXAUm6yf/qjdQhDq09Uw++8v3rJlP1uetP6LtQvTEt82BA6139IP2OAC/GIS2qhisLtpqbHDYEW3ezY+g6b/Apawa0DLXcbHBfVAF4BkBsRXLC+mhllD4t1zHd4LOpJYzR9acAylwkZFk/Fsg21Rk7kpEH/xO7urTzvGKatxwYzAN9zoU3GcQeenP0vsgcgNe9UP8mij6nuAd0NjDd1cBTxtW97iMp+SQuchi5aRV3eBLW5ESIq03h68mF4sAAElzp7XdSKPrMkPaGPhFYPYw5RgD4gRjfRJ1DTu2VSOnszEkesZAVzP1jXrHsQLvIn+4LJkm5mibS6i1YO9jSIMORV3n05/I3znMgcoE1i/IoHrN0jCv9Z9UyBWP/NQ4xsmPEgePxEUhDzjxlPkjO7VqnbZDJ2BDwzecnHRQTR06tICs+QxwEV16bbkcYppqItUruZX9OBNJYUqnG33XCDW0cXJ6ZRAYML508r+MlOgwnxQquSk9klO5FNbxC/YNr/MG2NPL1z1lCsT/rgZUPREL9w2ZG3X9klm3e6VGwE2mvph7KytAwUWAYhNJ7+DVtcGtv9nLteSDoA1jyDIIbJof``",
       "latency": 50,
@@ -842,6 +852,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "46.225.29.180:443",
+      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/15924",
+      "latency": 143,
+      "flag": "🇩🇪",
+      "ts": 1774724793.4787278
+    },
+    {
+      "key": "46.225.29.180:443",
+      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/15924",
+      "latency": 148,
+      "flag": "🇩🇪",
+      "ts": 1774724793.478725
+    },
     {
       "key": "45.90.13.34:443",
       "link": "tg://proxy?server=45.90.13.34&port=443&secret=dda85f2776cc83dbff66b440fb03050cf7",

@@ -36,7 +36,7 @@ SUB_LINK_URL = "https://raw.githubusercontent.com/mostafa5804/Myvpn1404/refs/hea
 ALL_CHANNELS = [
     # --- کانال‌های جدید اضافه شده ---
     '@net_melli1', '@xixv2ray', '@filtershekan_channel', '@ghalagyann', '@Proxymelimon',
-    '@isor1n', '@slipnet_chat', '@Lizard_Vpn', '@KalbodTeam', '@TirexNet',
+    '@isor1n', '@Lizard_Vpn', '@KalbodTeam', '@TirexNet',
     
     # --- کانال‌های فعال و قدیمی (سبز و زرد) ---
     '@Npvtunnel_vip', '@planB_net', '@Free_Nettm', '@mitivpn', '@configraygan', 

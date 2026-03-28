@@ -16,13 +16,13 @@ jobs:
     
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4 # 🟢 آپدیت شد به نسخه ۴
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0 # دریافت کامل تاریخچه برای جلوگیری از مشکلات مرج
 
     - name: Setup Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5 # 🟢 آپدیت شد به نسخه ۵
       with:
         python-version: '3.10'
 

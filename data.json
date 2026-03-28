@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://9da0953c-9ae1-44d9-8482-68d4dac8e6d9@185.143.234.120:443?encryption=none&security=tls&sni=alef.ir.oadeflantrogm.mahanmapcdn.com&fp=chrome&type=ws=-@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann&host=alef.ir.oadeflantrogm.mahanmapcdn.com&path=%2F#%F0%9F%87%AE%F0%9F%87%B7%20Iran%20%F0%9F%8D%93%20%40ghalagyann",
+      "latency": 125,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/15915",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1774712288.784745
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.36.242.117:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 146,
@@ -1152,24 +1162,6 @@
       "latency": 153,
       "flag": "🇩🇪",
       "ts": 1774674065.1137362
-    },
-    {
-      "key": "144.31.230.217:443",
-      "link": "tg://proxy?server=144.31.230.217&port=443&secret=33d73370103ea05acd9418eb9dca989e",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15808",
-      "latency": 101,
-      "flag": "🇩🇪",
-      "ts": 1774668096.6747804
-    },
-    {
-      "key": "2.144.7.247:8443",
-      "link": "tg://proxy?server=2.144.7.247&port=8443&secret=7gnbgVptgqMf2nb4ciMMaddwa2didWlsZC5vcmc",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/15808",
-      "latency": null,
-      "flag": "🇮🇷",
-      "ts": 1774668096.6747782
     }
   ],
   "files": [

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.120.57.119:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 145,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/15945",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1774768501.5157003
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AVuNeTYbpmD4HRHw7m7SdllOYX1VMRdKwGUTqOE4BHqozxa6NXMZQT6uTyB6JjFklKcdeGYp4XIGcNX5zoiXc48RQXCSXYaoHjFnbRzVZkKe3BJyHRj2JkU+cwsBKkR5uGbZQYRXIf2cnkbUKs+rVsKJy6JkaNeSWgROcaY3gvnNLomfkyM7oEC68+MKkAH/y6reTmyKe2wfBVJFHWcffJra/m3vw7ZD8JmGv3LYHKvQlGr3FzIqZQkXmx6hz5faDv+BDdJsD2Lt9VjzX6TKsDo0JW+8tk5pw4C1bhwuHG9ZuTQUGEqzHcH8mWqY1hhrVQtg84wCmDxHKrbbSBciyEhJq5eMt+hC7yJEAGMZnAJLeu0Id4z6r+US/4oUtXlSJ7aBEWlvCAEENo07hsDSRmWDuRhLw+x8bW7JB1Hk30z5hBBFV7uHPYADaQeRrr/dK0/xeHlSJp0to1CqM525aGF5/p8irJJyw+UlzfjfxmpzyYqPOQIImE//IK1aWqWU3/qOb4HCDknyKG8jbSEe/pMettW6vfz3uZkjSZZpJhW2HpSzKC9GvnyiQR3+cKRognFifG24Tsor9HK7zAVO14Prm1+9gQI9D/bTe80B/B8G5CTpavspc9eGGzjW+a/G4w==`",
       "latency": 50,
@@ -149,48 +159,9 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1774726535.1532466
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.210.125:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 142,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/15925",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1774724802.0854392
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AZ81H41txP8yrELZFjPX5VyKukb718gSiZNxOG9w43k7Ub1JJY/rGCC1mfE6s+zBdMB4ZeReXAUm6yf/qjdQhDq09Uw++8v3rJlP1uetP6LtQvTEt82BA6139IP2OAC/GIS2qhisLtpqbHDYEW3ezY+g6b/Apawa0DLXcbHBfVAF4BkBsRXLC+mhllD4t1zHd4LOpJYzR9acAylwkZFk/Fsg21Rk7kpEH/xO7urTzvGKatxwYzAN9zoU3GcQeenP0vsgcgNe9UP8mij6nuAd0NjDd1cBTxtW97iMp+SQuchi5aRV3eBLW5ESIq03h68mF4sAAElzp7XdSKPrMkPaGPhFYPYw5RgD4gRjfRJ1DTu2VSOnszEkesZAVzP1jXrHsQLvIn+4LJkm5mibS6i1YO9jSIMORV3n05/I3znMgcoE1i/IoHrN0jCv9Z9UyBWP/NQ4xsmPEgePxEUhDzjxlPkjO7VqnbZDJ2BDwzecnHRQTR06tICs+QxwEV16bbkcYppqItUruZX9OBNJYUqnG33XCDW0cXJ6ZRAYML508r+MlOgwnxQquSk9klO5FNbxC/YNr/MG2NPL1z1lCsT/rgZUPREL9w2ZG3X9klm3e6VGwE2mvph7KytAwUWAYhNJ7+DVtcGtv9nLteSDoA1jyDIIbJof``",
-      "latency": 50,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/15923",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1774723928.7703106
     }
   ],
-  "proxies": [
-    {
-      "key": "46.225.29.180:443",
-      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/15924",
-      "latency": 143,
-      "flag": "🇩🇪",
-      "ts": 1774724793.4787278
-    },
-    {
-      "key": "46.225.29.180:443",
-      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/15924",
-      "latency": 148,
-      "flag": "🇩🇪",
-      "ts": 1774724793.478725
-    }
-  ],
+  "proxies": [],
   "files": [
     {
       "name": "4_5929041492717871130.npvt",

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@51.44.121.226:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 85,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16082",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1774811327.5061872
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AQRw5ASLFAbegqDIJWg87+0ISOR/N1oaXAkMO3Lqbz9cs/1qmBbhgb88os36SqNKW5DjPhdhPh4EsDWpRGYt7mYQRqKPx807ElYZoJyOj/RSBCsqYBrPrhBrrMCu5QZk2FnmDWuyYXvV+cn+4JAkrTv+C6OlbbI46vXofAL2+b27hSEirh16nfpjtaxmei5HbCup630pMnbQS7zc5nCVyVo0VvaeUMRINXjYuAcCg4YhRh7H8DeB4EIm5z/18ichCAWZv6+F55JiybWiV6sSrMQQ6ck6OZtUAPca8FmRRGjwPPMbsBkcTin8D2so2Vs1YoSXvfpFgirQ+HCCpgWW42pSmhVkHbGA6NNhRHdYaCVEPqjE5TxydR95sbyFsFbWjp5c6W32Yaq0xWUh6oxp5WMiEtltFJWAqJRxFdTBtcdSblMw2owUPKfKLYi2zRGBO014DG7BvREyF7pKdJa74TDNO95qn0HyEUfv+6X5v6NDJJLqAvJ3ncWHx1zbVLPyudeGTUHWs2eHOZmd8WLgRZM2DIOrrJWR8QOPTwHmI9LAEISHtDdpkazllLLRe/O6JCzilxbEf5T4UDpc1Kzmb6e+iH9jHH5PyZk4W70iqLJuITtBFBAw/gh5rXr6ElT9eUPWUViGiI+AsCjFzjetmTIF/fj89fs=`",
       "latency": 50,
@@ -989,16 +999,6 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1774784192.998285
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AS/ZumHqIkB4s3trVk6WgAYg/gn74SrvbU3kXYSSYnMmVHt9MUp1dt9cfv6TydVsuFYELDpqyBXh+cfUi/oHrelmJYaF1PlK0fASmOJeNAh7V1uNr3ZxLEHEJs0sl7ywifM0l4+VQO5Odhx6cdXpi6VeXwxxR9s3CLDHDF+jJyP3/aQNDkiszOd6T64Yuajto7FOkyOJaCg/6CLa/kH3+TiPuQgTOFmTJJZUMwWpDTCkFUoKZh/zNof2Ezlq6/Y3jcopr2GUGoVz0N2dwS9BYiE1RVQtzd+N4lhNm03j5U1q/rFY58d0CopuqzA09mJJsdz/9Ooe2CeXJELUH+Sgflz5fWt8eCsAph5FgpFqwYndnDKmVIiLmAOMYhF9YLFYKCo2+DZYi3BLNZ/JLhpvVS6Qpi7hwwiXfuo1GKctQtpoMuAX4LX3A/KGeH9YWPazcGTCq3jxuSX36vna9GpvtPcp5/8=",
-      "latency": 50,
-      "channel": "Kalbod",
-      "t_link": "https://t.me/myvpn1404/15975",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1774784192.6849618
     }
   ],
   "proxies": [

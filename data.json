@@ -133,6 +133,15 @@
   ],
   "proxies": [
     {
+      "key": "185.209.42.69:8443",
+      "link": "tg://proxy?server=185.209.42.69&port=8443&secret=20f39711247d6cd5983510336d9b827f",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/15948",
+      "latency": null,
+      "flag": "🇮🇷",
+      "ts": 1774774933.3497543
+    },
+    {
       "key": "5.78.93.16:4415",
       "link": "tg://proxy?server=5.78.93.16&port=4415&secret=dd104462821249bd7ac519130220c25d09",
       "channel": "کانفیگ رایگان",
@@ -192,13 +201,6 @@
       "channel": "پروکسی | Lizard Vpn |فیلتر شکن نت ملی",
       "link": "https://t.me/Lizard_Vpn/440",
       "ts": 1774737412.8531706
-    },
-    {
-      "name": "open dns ranges.txt",
-      "ext": "TXT",
-      "channel": "xsfilternet",
-      "link": "https://t.me/xsfilternet/3047",
-      "ts": 1774731290.6110792
     }
   ]
 }

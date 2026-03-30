@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@52.47.95.160:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 107,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16123",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1774897850.672187
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@3.77.5.184:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 112,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -202,6 +212,33 @@
     }
   ],
   "proxies": [
+    {
+      "key": "204.168.176.214:443",
+      "link": "tg://proxy?server=204.168.176.214&port=443&secret=dd104462821249bd7ac519130220c25d09****",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/16122",
+      "latency": 135,
+      "flag": "🇫🇮",
+      "ts": 1774897731.7328873
+    },
+    {
+      "key": "98.84.109.35:80",
+      "link": "tg://proxy?server=98.84.109.35&port=80&secret=dd104462821249bd7ac519130220c25d09****",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/16122",
+      "latency": 22,
+      "flag": "🇺🇸",
+      "ts": 1774897731.7328858
+    },
+    {
+      "key": "44.223.90.89:80",
+      "link": "tg://proxy?server=44.223.90.89&port=80&secret=dd104462821249bd7ac519130220c25d09****",
+      "channel": "اینترنت آزاد | Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/16122",
+      "latency": 18,
+      "flag": "🇺🇸",
+      "ts": 1774897731.7328825
+    },
     {
       "key": "45.66.163.218:8443",
       "link": "tg://proxy?server=45.66.163.218&port=8443&secret=7hwTm6yHDz4jzm79x1e3x5l3d3cuZ29vZ2xlLmNvbQ",

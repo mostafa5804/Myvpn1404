@@ -1,17 +1,15 @@
 {
-  "configs": [
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AdjUl/rcSGLj21lSgEl/cN8L6b4weDw1Zz9qDcf6u+mGuPs1oM552vMCtnkVgMhIoGWj1mjFK827EHBDBpXqL8idMs8I1I3Ku0aovXLnhzH7H/8Cxf72yYS6GqTwN70sITE/K5BBROeYp/7ZYn/1iwtFjezEoa84mj47pTpAS2bpZMEI73OqlfEABlf9W2pp7qhA+uHc3em8CSZct84MyHcyRWN3ZyyskTuImhvupen7i5sHRHPPIzphCBEcNl6ASyav3gOZ0HkgO9NE7e7yI5k0dDMBSn0TLjZYGsP5UF3vd28RxFGwlxqKLXSgoGa6HncWFATZY00WgvhxwNERfcnfZfSoBTLKVKsFo8lZicldGuE8yjTWPLUlI2gzvwm/OJemSKiIFSFqfvAzbhlWahgU18WqBTc2suATiwvnTI/iPW3JFi8/xfLENDBFESrUlZLbl3xoI/iPXxIGkQYFkuLfnP9Tg9X6/gS6S2Sg/dGWwtXEr0ep0Da1NExqTMFTPEK8lf6YslMf8J/vx+vh+DyIJP9up0z9aRlr/h/KG/zK3uaeCKbZIR6QmKmd9qaQLeDTXHIu5FCIh7Q3pQueZloEuDdLmPqOhCTZdN98VbkPah6HlmhYhKBJMJqqPQe2I3oopoA6eL/oor6NdR8WDT6t4JgVFBEtpR2TMtdfp8/pCttkyBtjTJ+S```",
-      "latency": 50,
-      "channel": "𝖳𝖨𝖱𝖤𝖷𝖭𝖤𝖳",
-      "t_link": "https://t.me/myvpn1404/16087",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1774816888.4441292
-    }
-  ],
+  "configs": [],
   "proxies": [
+    {
+      "key": "mtp.vsemvpn.cc:443",
+      "link": "tg://proxy?server=mtp.vsemvpn.cc&port=443&secret=dd15992ff6e054e6b06faab3689633355c",
+      "channel": "اینترنت ملی 🪽",
+      "t_link": "https://t.me/myvpn1404/16097",
+      "latency": 3187,
+      "flag": "🇳🇱",
+      "ts": 1774864329.797276
+    },
     {
       "key": "116.203.134.165:443",
       "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6",
@@ -65,49 +63,15 @@
       "latency": 153,
       "flag": "🇩🇪",
       "ts": 1774858094.9424388
-    },
-    {
-      "key": "142.54.189.106:443",
-      "link": "tg://proxy?server=142.54.189.106&port=443&secret=7gnbgVptgqMf2nb4ciMMaddwa2didWlsZC5vcmc",
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16088",
-      "latency": 25,
-      "flag": "🇺🇸",
-      "ts": 1774817780.9440844
-    },
-    {
-      "key": "142.54.189.109:443",
-      "link": "tg://proxy?server=142.54.189.109&port=443&secret=7gnbgVptgqMf2nb4ciMMaddwa2didWlsZC5vcmc",
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16088",
-      "latency": 25,
-      "flag": "🇺🇸",
-      "ts": 1774817780.9440832
-    },
-    {
-      "key": "138.201.54.122:443",
-      "link": "tg://proxy?server=138.201.54.122&port=443&secret=7gnbgVptgqMf2nb4ciMMaddwa2didWlsZC5vcmc",
-      "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16088",
-      "latency": 126,
-      "flag": "🇩🇪",
-      "ts": 1774817780.9440813
     }
   ],
   "files": [
     {
-      "name": "@isor1n New.npvt",
+      "name": "مخابرات.npvt",
       "ext": "NPVT",
-      "channel": "منبع ضد اختلال | SORiN",
-      "link": "https://t.me/isor1n/4102",
-      "ts": 1774816865.6791396
-    },
-    {
-      "name": "@isor1n Fast.npvt",
-      "ext": "NPVT",
-      "channel": "منبع ضد اختلال | SORiN",
-      "link": "https://t.me/isor1n/4105",
-      "ts": 1774816865.414807
+      "channel": "اینترنت ملی 🪽",
+      "link": "https://t.me/net_melli1/1711",
+      "ts": 1774864326.3289058
     }
   ]
 }

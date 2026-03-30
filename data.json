@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AXK0lEGlWfhJa1iux4GQTh/H6VdJUGBoBUvj/UReCF90bKM22cjeD6PrJdJ2NU8Xx8QsaOSZparpXDg88x8I4zwSU13uEC+zCWs4F1smXgJTqh4I9PWF6CFATKQ7G1gzXWO5U2Grky7ugNNQMGJftAcGarwzVTvTn2F9jtWjx7ETERNBka5FD8cKqX3fouAFxDhVRQ01yPCBh7DanPa1IRhs2fNpTCiyjNao+MSbVtJnji1ELA10BpnWDYDnaYOVL1wI2akZCg7tEO7eL1oW3fKq3blVpjuVVAGA15Jq/2BQPRknghQJQVXCh0Ci0FnZFKxAn732s167TkdlcBPByo378bSYUm022+66NdARNfVb35pAMvIvE91Fl3pwgP7ovmtE64Sv4OpjkwYfU1bj8MpCZrykfb4Wl12cz3bCO3tETZ44nWZnD8/S59HzFDijWFO+YYJ/QXKdanMk3rCbLTXdsv5xKt313g3vglAjCx8hpwRCJ8ZyzPSTjzJhpu+gQ/AYSIkayY9TUnZtfCckj7kIB4lzYu15eAv9/XNkepaxwTx1rIbD4THl9d92q5Hgy9R7bHJxsS4OS0L9LTcf7G5I4sz6u0YDlu0u146ZPo0QE62V7uZoNpnFuqbsPjq6eu3DGh5MFjXdA2dY7KY5RXEIPwGqBg==",
+      "latency": 50,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/16118",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1774879526.7744424
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-directvpn@15.188.43.202:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%40azadnet04",
+      "latency": 139,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/16117",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1774879526.2762477
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@15.188.43.202:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#%40azadnet04`",
+      "latency": 139,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/16116",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1774879525.8639205
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://80a4cead-eef6-41b7-bfdb-cad1564fbcc8@jll.az99x.info:8880?path=%2F&security=&encryption=none&type=ws#https://t.me/Config`",
       "latency": 549,

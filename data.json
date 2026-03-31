@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@15.236.83.234:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 146,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16198",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1774966064.9557188
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@63.179.68.209:22224?path=%2Ftelegram-channel-vlessconfig&security=tls&encryption=none&insecure=0&type=ws&allowInsecure=0&sni=trojan.burgerip.co.uk#Telegram%20%3DcicdoVPN`",
+      "latency": 164,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/16197",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1774965949.0168645
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://80a4cead-eef6-41b7-bfdb-cad1564fbcc8@jll.az99x.info:8880?path=%2F&security=none&encryption=none&type=ws#Telegram%20%3D%20%40cicdoVPN`",
+      "latency": 483,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/16195",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1774965943.16385
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AStzOmCkDR1/tN8brqI92S7PT40sGSdbvnTGY5LjfbRVyNRuQEFUX1Km9MbxrSvdtx6qPEGJb7kLTri9YU7Ejvqkxpge+4E33JYg1Cny9aRcFL36WPuvH9vlkaT3mvb3kyd/Fjr/9VxUjqmMkqfDqy8pR1w55A9bZpdNNSZBNtOU28nwv2RPmWO8V4uASl3MotXjag+t8HHeHFdHiZ+r+HOnWk9N49DlLGNPFuHdVQpnsZcQ7eyz4pVVPTU+PDOhvOZg2aEsIO9P422cAcMSVmFoDDyl+9UE65028Y/XbmnIQkBL7v4FGlFAwtDaZ0eSnldYsOtbqKRJVsswnOqrcY2Qpe64MI97/bF6XJSqKiNfcVHnJPefJMY3XSu6l5dZbDgpra9NhfqJSIoZg5Dbcu/DBTJo53tqIJ1JB86Z9Jha2Z907oUZQkHj1MgufnrOiWQoJRlplF2SeCYBpRbEk/aAlhPDkhGdL58MZ/sXIGfV4gQWTwS+EaQSr3HfU7XLzum/gJ+dYQTGzSqT2kBqR5u4blbsl4yxCc4qnBekw1p5OnOt1T6UMnvz2B7equdxHKQ9kMxmuNX9DE/2Miqqdo+A4y78YSx+oNkgV5H3ck6cfgnR4DW7jiIGhBSO8VW9flMj6oujmBXDlSTZs17iN5WLzCzbBQ==```",
       "latency": 50,
@@ -630,6 +660,13 @@
     }
   ],
   "files": [
+    {
+      "name": "saministamm.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "link": "https://t.me/cicdoVPN/3528",
+      "ts": 1774965943.515031
+    },
     {
       "name": "👉@ghalagyann👈کانال تلگرام.npvt",
       "ext": "NPVT",

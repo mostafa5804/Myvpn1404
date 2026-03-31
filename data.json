@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://ATJgTCRALilI4l0um6w1NKeSgRnZGd9uFNSG1ylsQtdpo3zFbSdV1lBBfsyqAKWgMezoDPHDckES60iJZOCkMXjtVrs6c4BtgxqYt0MwPO6KB4Sqb7cjS9pEHN0sTnVCYeT0ShZQCHmusmTNHY6H/0Yof2t776ZLhycX74whM6kMs47RA3XsubJ5Xpe6OBFxsbLG+zsnAzYGLBTyDzJsgfVI+BuX27HLzw3eC6oqeQ1faKR50fRUTnuMbvuEWeBG0tm7Crw4JvI/cq3qJYfgkzUb+oxW8FJSPH8WrnYXmdXEqCEwHL+Io8jZgVbJ3hAvKVcPn4K0tDOPodgGSYjJ2PffvlAqxyC4heD0kUcPecxOgwD6yZ/2aD1SCL9v/USW9Lg18ykqU48N8CmMhW6kwQRJge3YnoelZlnvgq2X1M5vqf7fjNdnz/DExLnZvcljB3+wrTDCWSUOd2WZFFhi/WnMXZNb4FP3xICJQ0w0OybUrs2yCHRtzQCgJnFazjGGOCW+yCkKlg3NM3GrXyPXGTFKGLXap4aMFdqwcWvgSzsJ6fu5IHPWeoC538nlQqGGQ0WN4USBO+uy1VBFWTzdKt18+AJqIjBDQe4XoqYgbamvzJ40jgP5Xy9PR9QtQymo8KtvKIHaw3OsQ2i0PHvN+kt68r6/X7FFnx+dgyXFyHMmnlRhdTb/W2yCCdLtpGXr4r+sP/q33yo=`",
+      "latency": 50,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/16205",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1774985540.355433
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.224.22.33:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 86,
@@ -119,16 +129,6 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1774954960.7171984
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@63.179.68.209:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 90,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/16184",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1774942074.2732284
     }
   ],
   "proxies": [
@@ -608,63 +608,23 @@
       "latency": 14,
       "flag": "🇺🇸",
       "ts": 1774943403.7150574
-    },
-    {
-      "key": "116.203.134.165:443",
-      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/16183",
-      "latency": 95,
-      "flag": "🇩🇪",
-      "ts": 1774942067.735574
-    },
-    {
-      "key": "46.225.29.180:443",
-      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/16183",
-      "latency": 96,
-      "flag": "🇩🇪",
-      "ts": 1774942067.735573
-    },
-    {
-      "key": "178.104.98.160:443",
-      "link": "tg://proxy?server=178.104.98.160&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/16183",
-      "latency": 96,
-      "flag": "🇩🇪",
-      "ts": 1774942067.7355723
-    },
-    {
-      "key": "178.104.98.160:443",
-      "link": "tg://proxy?server=178.104.98.160&port=443&secret=ee636c6f7564666c6172652e636f6db6",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/16183",
-      "latency": 96,
-      "flag": "🇩🇪",
-      "ts": 1774942067.7355711
-    },
-    {
-      "key": "46.225.29.180:443",
-      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/16183",
-      "latency": 100,
-      "flag": "🇩🇪",
-      "ts": 1774942067.73557
-    },
-    {
-      "key": "116.203.134.165:443",
-      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/16183",
-      "latency": 98,
-      "flag": "🇩🇪",
-      "ts": 1774942067.7355676
     }
   ],
   "files": [
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/19866",
+      "ts": 1774985545.5839663
+    },
+    {
+      "name": "🍓@ xixv2ray قلاب ماهیگیری.npvt",
+      "ext": "NPVT",
+      "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
+      "link": "https://t.me/xixv2ray/5598",
+      "ts": 1774985522.741073
+    },
     {
       "name": "saministamm.npvt",
       "ext": "NPVT",

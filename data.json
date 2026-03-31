@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@63.179.40.43:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 123,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16202",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1774976929.3044934
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://67a2738a-9928-4106-a814-a5ac8497a4a5@snapp.ir:80?path=%2F&security=none&encryption=none&host=ar.liarashop.ir&type=ws#Chanel%3A%40cicdovpn`",
+      "latency": 402,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/16201",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1774976795.3525379
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://ASg1JVexLHITCnMylRSw7TF7/uAkjNOzp+gpiR2LMRkRPB59vyVFHOtTPb9NOp2P1xIY13XDdtb3Qd3eUEJGwAG3QtiidjRX8psYsZyuhypd88Kg7hJB7ygPN8yycbLNb4G8pkbGwIT5RrIgLFXhC2F7xfzk0IHs2Dkd/wcU/a4drAw2tFWEfe6QZc47SL7h+3MO77DvioITI5ckk8HqjNjbys8sxtxW3hVu98GzhOYAODUfgOEjdtY8prLbE0EGz36wdbHzaulvJyrOZCTC/2I4gTGLwttHrsgR//aDLy5Z52HbYRbN9Pe6oQR71/0jljMxAcnRbkRK/BZt1FU3w9kO12qxjgW7I16PED/h6gH7+AXmZzJl04mzXYAs8RV3iIk40eioP2jwPQUO84DpaF47WeltYRrNIfIdbDXJmxVbVapUkZFnRIMXQNWcePJfDN29kb4FEdiDxU3DcG8zS4kXT4dosRG07OOEgRBTORvVtCf4/d8u4iL3NHqUffnLYNLzM6CHM3/2uzyPMmkQ/jiLAIwCIw66H3rt2R2gvAKb+ZLcQe+1+xjbR+U4ZwURbHUmzCXNQH7dkLc7mxDw7qfarJzv8Uco7HO7TZ2nr7IMCMwM2LJeNOSW5Z2w4XYiG4lcIhMirg+qB19XWxVzOmawf9aEvA==`",
       "latency": 50,

@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@63.183.56.27:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 92,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16255",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1775114670.19351
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AeyEqSDOpPApc7k3GQSHtkpPpNZMUhCp4lNGD4S/uZfT4AmSN/p1BVpgRVYhRrAPkD4SuKc9Twc5UFytIgmnjj6e9Lg09s1mFE5fp4fEbyovOyIbru5Rh4xu0tRryqEephcYyi10kN7631ccQG07HE44udp2liYeOh8AZik7avswCBbAEeyvQPeifmIuAcwvZMHc7EDIDp4FhJSWWQNwUWBlu6p/Oe8wezSKDj23Bx6GS2GjoYEFobbFCKQlPNpPqbQ2WC9RK13Im5iGWiaFbNhrVFIN4pNUvzmL2ywHLLX3xOplbdoaDPO/8WliwIuDvUpHTqOZz6InhFEQwl6HamcX38u8W+ONi4+XFhWm/4aJwhnh2NRPBVSUv0s/89WCDkEaD7DJGVBkGZVYrX+HgQSwHpMfgRcyoHJ5YtPQwnbHY5MC+dxJVOU99+ZLEXniR17DA5XD1O48P10HZhFgT1uR+9ufwB8YDm8iCjCNf6PixDdNcBWcL48yUVIhz5ODyvc=`",
+      "latency": 50,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16253",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1775114626.2682621
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AXKnGdJZnsYEA/0aL/x13yUZaoC/Q347rw1ZHNcQC/D0eML6mB/GqqiyUtb5W+BrmI3Cj7C1/MxB/ONU/BamgxdYAZGh0FZxcBiE9o/CDeQlBaHQ4CefBsMuNm49I6t1Hfh+Z8Dn4aoLaVUZi5aaP8tjP1Qon8k/UM/43aeOn97I2AA6CAauzI/+wdoMbTEvrFM2jEWr1qz3MVo+WohZEDeZxXHSGPUiAaGmzpmLuuhWyr3aJO1CDPI4tqX/D01yjogyl13ttftnB4x2GU5+5phXFIox3KVn/4J3CoAjtTevK1Fyd6h8WuLOSCjNrhb8UWyR9qKVMh/LUutRI86FkOQ4ygVa6kKVKcP8yoISFRbGlsCJNmNGFAVMKd9Cra7bF4/5LbQE9nMzcQaoqq2w4/qAcdKC8ksZTd6cM+6wi7Gs9amMthxC5twFBWrMsAPCte1nv/Nfc/H3IfBhU4uFFHzVml45qWUBzZwmLB1zFgDeLPd8JLY10E5mN+fqoNNGAk/oJ2/DH92eBm97s9FiJeKDlO1iD8WB6IfZvtwYb+dDs5m1nSo2hfLn8Q8DFw8OLuDqbjrhc8i0TrVHKPF99B9Q1KBxYR0NXg==`",
       "latency": 50,
@@ -99,19 +119,63 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1775072112.1358259
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.39.95.237:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 84,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/16238",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1775070864.9787354
     }
   ],
   "proxies": [
+    {
+      "key": "116.203.134.165:443",
+      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16254",
+      "latency": 100,
+      "flag": "🇩🇪",
+      "ts": 1775114660.6585848
+    },
+    {
+      "key": "178.104.98.160:443",
+      "link": "tg://proxy?server=178.104.98.160&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16254",
+      "latency": 95,
+      "flag": "🇩🇪",
+      "ts": 1775114660.6585839
+    },
+    {
+      "key": "46.225.29.180:443",
+      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16254",
+      "latency": 95,
+      "flag": "🇩🇪",
+      "ts": 1775114660.6585827
+    },
+    {
+      "key": "46.225.29.180:443",
+      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16254",
+      "latency": 95,
+      "flag": "🇩🇪",
+      "ts": 1775114660.6585815
+    },
+    {
+      "key": "116.203.134.165:443",
+      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16254",
+      "latency": 93,
+      "flag": "🇩🇪",
+      "ts": 1775114660.6585803
+    },
+    {
+      "key": "178.104.98.160:443",
+      "link": "tg://proxy?server=178.104.98.160&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16254",
+      "latency": 95,
+      "flag": "🇩🇪",
+      "ts": 1775114660.6585774
+    },
     {
       "key": "107.150.34.100:443",
       "link": "tg://proxy?server=107.150.34.100&port=443&secret=7gnbgVptgqMf2nb4ciMMaddwa2didWlsZC5vcmc",

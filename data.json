@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://Ae5dddw8lsk6uo3DAbVh1U0FIHnUKdkrlukZHeMpuvK1UyitGlxGU1HtGAa/GXZT8a/AXRgY1y3PW2gl6nw9d6wRQgRcZfZMtUScKq7rGxkW3Y7pYuUTpfqCKEwPK1rwg8B+wT4TRnbjq3zX1L6I7muWMq+KHDkfojRuz7/PtO3nTYsUaMkyKl7bBxhTokI4h/dAlcTKR4Eg6ZxRKL4svW85rvaWu1sdMAFrJODLzskD/hcAlRq+45E/xIwybwHoJg+sZC1DZoijgo9APZ6LwwB7bInjWs0uLIsQehvoeTalrRjPQVJyuEKP8cNYSCm72ITO8rZ5Awaizg0Hhb5wOhenpxMhtXduvvdDglUJrNJ5TG2U7bqywSQtKdtefdQp8Yyd6ZgWqXll8wciLNQ1ghkRMovYom3ODy8eUBwnqyz7iYDFygTT7s21enk0RF4stWBCGm3S3BUzqJFz",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/16352",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1775169558.2420008
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AYDY4j0r0Q7SgP8NAIVZKywsF7LpqBWFJ0VSQgWkOl/zLW4Mktjhc+LcwR3wWcvpHEeCc4yK5pZ8AS8G7XFXl5DYkjxRy7HfMbD+iDnv/oSz4NXLUe5SjAcjYy+z4+QyIvTSwH/X0zSE6mWybvbNoR+/uad3cJAn0eYlkCGs+a/oCWvmcamlofBYLvpSGWhtxJzgKVNylFXdbTqk+lRKju8dBmvgz3w2hG59MEx6iwcTrJ8MEsprLF0eWiMBNLkczjIY7/MfRNsjcaJwBcAey3b0VJ0U0sH10VE+KPjWzw8IDisw/R7N6RkKcLYb3cyTP+LxiFieLr4D7DODp5y0cipkcVMj8jD8EQeePStwPuJup8lCrqLk",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/16351",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1775169557.9384832
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://64d55326-fb18-4a17-8b96-d88fc091db42@185.143.233.5:80?path=%2Fapi%2Fv2&security=none&encryption=none=-@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann&host=t.afaghqi.ir&type=ws#%F0%9F%94%B0%20%40ghalagyann%20%28%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%29`",
       "latency": 85,
@@ -803,6 +823,15 @@
   ],
   "proxies": [
     {
+      "key": "proxyonline.online:443",
+      "link": "tg://proxy?server=proxyonline.online&port=443&secret=7b52009b64fd0a2a49e6d8a939753077`",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/16353",
+      "latency": 278,
+      "flag": "🇩🇪",
+      "ts": 1775169692.7596765
+    },
+    {
       "key": "95.216.178.41:8443",
       "link": "tg://proxy?server=95.216.178.41&port=8443&secret=dd104462821249bd7ac519130220c25d09",
       "channel": "اخبار فوری و اختصاصی، کانفینگ و پروکسی رایگان",
@@ -909,33 +938,6 @@
       "latency": 142,
       "flag": "🇬🇧",
       "ts": 1775127625.193235
-    },
-    {
-      "key": "157.180.27.180:443",
-      "link": "tg://proxy?server=157.180.27.180&port=443&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/16260",
-      "latency": 133,
-      "flag": "🇫🇮",
-      "ts": 1775125822.963994
-    },
-    {
-      "key": "proxyonline.online:443",
-      "link": "tg://proxy?server=proxyonline.online&port=443&secret=7b52009b64fd0a2a49e6d8a939753077",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/16259",
-      "latency": 194,
-      "flag": "🇺🇸",
-      "ts": 1775125743.1641214
-    },
-    {
-      "key": "prx.today:443",
-      "link": "tg://proxy?server=prx.today&port=443&secret=b3f0c7f6af7dc2dc2e9c80d0d80e8162",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/16259",
-      "latency": 198,
-      "flag": "🇷🇺",
-      "ts": 1775125743.1641185
     }
   ],
   "files": [

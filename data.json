@@ -129,29 +129,18 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1775169557.9384832
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://64d55326-fb18-4a17-8b96-d88fc091db42@185.143.233.5:80?path=%2Fapi%2Fv2&security=none&encryption=none=-@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann&host=t.afaghqi.ir&type=ws#%F0%9F%94%B0%20%40ghalagyann%20%28%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%29`",
-      "latency": 85,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/16350",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1775166338.3541484
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://7d4f9ad9-060e-4f12-b957-f4bdee8ed62f@new.sordo.store:443?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0=-@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann&host=new.sordo.store&fp=chrome&type=ws&allowInsecure=0&sni=new.sordo.store#%F0%9F%94%B0%20%40ghalagyann%20%28%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%29`",
-      "latency": 286,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/16349",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1775166333.0028615
     }
   ],
   "proxies": [
+    {
+      "key": "65.21.58.190:443",
+      "link": "tg://proxy?server=65.21.58.190&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16370",
+      "latency": 176,
+      "flag": "🇫🇮",
+      "ts": 1775210913.1266694
+    },
     {
       "key": "FAST.tgsecurity.online:443",
       "link": "tg://proxy?server=FAST.tgsecurity.online&port=443&secret=ee7c5d4e1f2a3b9c8d7e6f5a4b3c2d1e0f766b2e636f6d)",

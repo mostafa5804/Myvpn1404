@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.36.185.49:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 127,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16377",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1775214564.5432925
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://00c2d153-ab37-4725-a465-7e1960aecef9@185.143.234.235:80?type=ws&host=vix.idcenter.top`",
+      "latency": 127,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16374",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1775214516.6443613
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AfFusJoUrdnCol6gKr3c38JJkw9DVm43NVXayh0FhVYks73XpgPF3zhUzA+MqLGZ9rF3TtJ8HPxMCeCQ4CHcYXKfBakr96B7VNvMQIvl3r/Ou3fDqjcNzSOC2ZvjDV/PJedxFHa+ULCmoTAFv0xvdTxS64POpE23Zo4esFDYXNGLAuqK2SlQBZN3s6xX99LormDtvuePE5hKDxSPf2KHPN2iSG2Rq765pQlgZRS3pMvLmXVZzTdNM8Ya6Zseu666UrWAnNkHAJp7j12U6SLA+yKSPbIYmgkoKslWbEdHvkYTzBlBSF7le8s18rYAlU6sXxvhUUQQsSbHy+mR+6meeeL9jtvbIxE4agg1pG0GdN74d7qgq5egORiZ3dSFFwu/rOWmjhA8gJkTOotDMQgiE9D2mBqTLYOKm77x1zIjaQAAoy5d7eOAEpD7oYdeIn7FitziXwInf+1OH8H9b+xBCHLxxVi/Jx6QnfFH0OnVwGAM2EWLPnZR+DlXGGiEidLOv6HVIeya2AaIXdDWE/wHQm5F7WIwdedFi9ffZfd5NowVUDNJnzWHCzjA/qzCUuqyg3lzBDciZg2FuHuii1e0PdcEBBTRv7K7VZHW4pvZrAVbtbImw3W038rmyCH4ZmQSFijx6+WfoTqL7qlo7U/JdnLO9ToXKtRWa40h6wgc4ui/mlZsW8JybbcMATgmIboNbfrzY7GyjhsJmkowgj1vwJ4=```",
       "latency": 50,
@@ -109,19 +129,36 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1775184819.8589618
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://Ae9c6RdUfXu35NzNYGON7ZZ++FF6tJw4JpLFHryojS+H3nlNoxkfgB+JcFKf/gPiCPL45eNGW+nSOlk7/mHHltP5z4xMrf5FBAWzsFGt5YVWoG/uzyA0xsJp0nGNjqtNPOVKJK0sDYzeOBhBs7CnkharxO1MFEeB4mMUn1F2W74kWzU7zQPXRgxUvtu7VWW5XK2crogVGTtLPyVDS3G8aS0+De5seZglcsUmmyRXhCml+88orlviaPCxYY8c/rwOTo8xKneKuckhK5+94y3B29iTJAH4N47DZ41HWGnWoscgXg4fAN/0p1wN0roSXTjctkYATLNN7AwGBUNEKG8Bwzw01K1U1KKrku0Z9hpQXJwT9byvwfvQ00hDSHw8oOz6L/ccqWkVFcAgBhdl1XoF4g3airlKut6XCiI8EG1DJaLDx7V9C9U40DcQkcpd5HUCNINN7AljlvnYDL/8wA6h+snN04sZW3nuT86Uc0gO7ai47mD163aagFYLVZHoIVczfv3B+bdto/TfsZ4bDYgoo5X6lmwGNmPdEpFmTJYZpjAV/1Shv28+Y0vRXxIdpSzvozRL6Jadf3TLjhHABVK4zHq0bO3E//IOeSTBOzvsX/0yq+YQ1tZaSsPkdgnTutFHsNrP2ZYW9cW+dC/0RfO8AIQ3+dK0xXZvg/+7okGgj13QzkRtd1FWxX2YKkV55S09fhkAodimXnwitd7KjM+WGx/3n61YfD+ek9KCb67DEXzp/yU18Q==```",
-      "latency": 50,
-      "channel": "𝖳𝖨𝖱𝖤𝖷𝖭𝖤𝖳",
-      "t_link": "https://t.me/myvpn1404/16354",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1775170632.0894566
     }
   ],
   "proxies": [
+    {
+      "key": "65.109.245.159:443",
+      "link": "tg://proxy?server=65.109.245.159&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16376",
+      "latency": 158,
+      "flag": "🇫🇮",
+      "ts": 1775214522.2525957
+    },
+    {
+      "key": "95.216.178.41:8443",
+      "link": "tg://proxy?server=95.216.178.41&port=8443&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/16373",
+      "latency": 158,
+      "flag": "🇫🇮",
+      "ts": 1775214449.5523467
+    },
+    {
+      "key": "65.109.245.159:443",
+      "link": "tg://proxy?server=65.109.245.159&port=443&secret=dd104462821249bd7ac519130220c25d09FreeConffning",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/16373",
+      "latency": 155,
+      "flag": "🇫🇮",
+      "ts": 1775214449.5523407
+    },
     {
       "key": "65.21.58.190:443",
       "link": "tg://proxy?server=65.21.58.190&port=443&secret=dd104462821249bd7ac519130220c25d09",
@@ -277,6 +314,13 @@
     }
   ],
   "files": [
+    {
+      "name": "NetAccount781.npvt",
+      "ext": "NPVT",
+      "channel": "Net Account | نت اكانت",
+      "link": "https://t.me/NetAccount/16794",
+      "ts": 1775214521.9535177
+    },
     {
       "name": "lizard_free.npvt",
       "ext": "NPVT",

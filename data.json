@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@18.193.170.62:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 139,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16361",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1775200857.2413807
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AWulIdJsDyO+5PZoeBezSzZJEgpxbJuqZuk8ZQa8QW5ZdMP5nZFS2XYcU4Cmrk6Qmsc/0kNk0J/anHU2nqkdUvCSog+gKgkY3L8OTDGG7uY0ykphaq0xElI0J7p+gh3Vex67QdEhZPvB8p19L+g2+eajFkTQ79PqS7ydV6uTnPWNtZw7UfWer/3wvwCipMXhgmfKMhCxaHcgXCzJcRZmWUvjQNHacIBqBmY3xu65yerZKIIyjcOvBGM3ZHNGnm/nGQM/ptYF9HXL8v7cL9C8FeYhDY4eCbFcd8Ws+gkxih0zAZEhbij3e+aazR1HsfbiORY/LX2DN6ESAB6BbALlopCuJOpQuDl6e0fw6xkyoOVPt2hRNLnhWkIDPZ4GNXuF/cpd4XRfjPLBPJtti+QZ4GHWG/lJaG5X5VgTLDO01o6174BwURo/qE8Mqn267wj6invjlvwgWwXLbK5zPIpGljyyKjk=```",
       "latency": 50,
@@ -109,26 +119,6 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1775166333.0028615
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.38.154.88:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 107,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/16344",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1775156813.1134584
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://784ab76c-c03f-490c-bbbf-4bf679a16e06@link2x05342_5.temp.veraspeed.ir:80?mode=stream-one&path=%2Ffilimo-video%2F177430809054030600%2F1774365690%2Fcb857b0770767a2b38b3ebc9d4c44d7fc5630fdd%2F196328x264new1-1080p.mp4%2Fs-20-v1-a1.ts&security=none&encryption=mlkem768x25519plus.native.0rtt.0oApr9cw-SWX56oDiCnJDTuHHCGSswtvx6Fz5ClR8WsLnCTG89VWLVnEzjwe1uwu1wAsNJI8WVKZnwN0w2HOEVB8Jkxd9rM5crBsfZGOdkmjyCqM0xRX8_czw5Cy8Pm5w8pedEwn5dBcDvZvpUGZOVyzIUQOUGkRoVZYmKdqLCYGYJG6FPE1FeRQ_gxe1VwxbFEGKcFKE-XCSRSAU8HN6lcABCh9bTOJAlcaOxjN5JkIRxgSany3AIWW9owZ-OCKYUwBhAmcwQsnPoiAJYV74ZqgCmrA_YdLp5BiRLlf4-gc8ECNWRe65GIZIBrGzECVz5qD8jatFmhfqQuJRFit2EYikQtleTtnXpuAILGi4UOfMEWXTzALVrSPzmtu0YunLDN0idYu8Ew75uWcf4WHDzWbxbon1vmWqWQQavsgbeJBWSLCgjkHjXxka4OAjNsZ74hgnxDPcpmdW0mZWfZee-lH4riOzHKogmdN82pEwdVpJLyYSzBmgXReBzg9VVa2GQFDI4ZGfPh-NJkWNgkVeHF0JYgrdpTOLJy-hwwqilFtyGB7gdAmjPXLZHt26Cw5KZbDpsSETJFT9Eed0aKvBekf7xc5UpkkeaFbscobPJZubohHu-aJWZqiZoaZcfNsRjqlf4hZiUtLv9C5mNIfE_tfxkch1QIAOnwAjrsam-APPHWax5Fg-fQHtyeNpUbBAoJeQPc3eFm8xKVvjPYZr_RV_6KphCs5bvVS3Dh2n3LKFAwbbth7jHNSQps4uldBdLCXc8RZg5OeeeRo1ja7RVQYYEcF4WdGtBZxBhtiSItjbisDfTmHKyWHo1Y36DTCtjmG3da3G-iVWwPLIXumgnFt1okroVgeAkAGf-hA5icEnHobSIMc7_K7uqynA8aKishXKwGdQgmG6ktRHnIxSsR5TnYYITGaVbtSZGeooiGU78W2BcBBpVB3whZJI0Q1pjlDA7u1zOgTWOW0vambwcKpj4ksMPU90BUllJpow9JDuHgHp7YoSGrFe0OEPjcIo6MBd0k0SMQGuXPIGohxIlB7vdgTJwau-Yl-mROpRzwpzhMYQusLC7A0_OKbyiTEkWzJKHVwDAW8iGiaaOuMdORaIhskLEVq0GN3usp_zci1Y8c1LmQhKwhhk_Zm8Cuh_6O4bnpnrlWnpFWomOWOGElx7iCbzPg0pjeQJ3k4QYwI51DJsfcRnEpbFslzTZReOaHGzviF6sG_w7Ijz5oIa0c9BkUbt8lwJ5rHUNcW-IYqe-mLcpmwg2eUPyNgukF03ORbFjhumTqJw1hSL4ZwinYvByc4CwO8_quFu5CnGyYmBOOInTJZiGJ4zQqi0EG2rFlAcmaPIKSLgty7v9obAMOruLOCHGDAipYe6mcgW4iPCgO2faNTYamXXolhJ3cVnQs30XBC0jkhjpoYfRlaimt5uCoYinu8pWYZMjzL_qkrqSCXzepDWHkKuVdiE4J49NJRUlk8nVKaVlEDpAmpxKcnyTl10QVm04yecYQ_DCOq1eBWWpsNFPlfC2Sk6xcng5b1lvsmqEf42ECTWZl5u0qxQuUQ6mSXFBjr_o_V5-o&extra=%7B%22headers%22%3A%7B%22User-Agent%22%3A%22grpc-dotnet%2F2.41.0%28.NET6.0.0-rc.1.21380.1%3BCLR6.0.0%3Bnet6.0%3Blinux%3Barm64%29%22%7D%7D&host=alijon.11.avenflow.ir&type=xhttp#NetAccount`",
-      "latency": 756,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/16342",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1775153274.0508778
     }
   ],
   "proxies": [
@@ -203,15 +193,6 @@
       "latency": 132,
       "flag": "🇩🇪",
       "ts": 1775158218.1357117
-    },
-    {
-      "key": "158.220.115.76:443",
-      "link": "tg://proxy?server=158.220.115.76&port=443&secret=ee5ca225658ba14e61d864b4ea5e07bcda636c6f7564666c6172652e636f6d",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/16343",
-      "latency": 1123,
-      "flag": "🇫🇷",
-      "ts": 1775156781.9758606
     }
   ],
   "files": [

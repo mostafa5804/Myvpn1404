@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AfFusJoUrdnCol6gKr3c38JJkw9DVm43NVXayh0FhVYks73XpgPF3zhUzA+MqLGZ9rF3TtJ8HPxMCeCQ4CHcYXKfBakr96B7VNvMQIvl3r/Ou3fDqjcNzSOC2ZvjDV/PJedxFHa+ULCmoTAFv0xvdTxS64POpE23Zo4esFDYXNGLAuqK2SlQBZN3s6xX99LormDtvuePE5hKDxSPf2KHPN2iSG2Rq765pQlgZRS3pMvLmXVZzTdNM8Ya6Zseu666UrWAnNkHAJp7j12U6SLA+yKSPbIYmgkoKslWbEdHvkYTzBlBSF7le8s18rYAlU6sXxvhUUQQsSbHy+mR+6meeeL9jtvbIxE4agg1pG0GdN74d7qgq5egORiZ3dSFFwu/rOWmjhA8gJkTOotDMQgiE9D2mBqTLYOKm77x1zIjaQAAoy5d7eOAEpD7oYdeIn7FitziXwInf+1OH8H9b+xBCHLxxVi/Jx6QnfFH0OnVwGAM2EWLPnZR+DlXGGiEidLOv6HVIeya2AaIXdDWE/wHQm5F7WIwdedFi9ffZfd5NowVUDNJnzWHCzjA/qzCUuqyg3lzBDciZg2FuHuii1e0PdcEBBTRv7K7VZHW4pvZrAVbtbImw3W038rmyCH4ZmQSFijx6+WfoTqL7qlo7U/JdnLO9ToXKtRWa40h6wgc4ui/mlZsW8JybbcMATgmIboNbfrzY7GyjhsJmkowgj1vwJ4=```",
+      "latency": 50,
+      "channel": "𝖳𝖨𝖱𝖤𝖷𝖭𝖤𝖳",
+      "t_link": "https://t.me/myvpn1404/16372",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1775213529.341606
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://d3c170c2-6cb3-426b-9a41-ff3e48d07179@23.137.249.110:443?path=%2Fws&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=23.137.249.110&fp=chrome&type=ws&allowInsecure=0&sni=23.137.249.110#NetAccount",
       "latency": 177,
@@ -109,26 +119,6 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1775170632.0894566
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://Ae5dddw8lsk6uo3DAbVh1U0FIHnUKdkrlukZHeMpuvK1UyitGlxGU1HtGAa/GXZT8a/AXRgY1y3PW2gl6nw9d6wRQgRcZfZMtUScKq7rGxkW3Y7pYuUTpfqCKEwPK1rwg8B+wT4TRnbjq3zX1L6I7muWMq+KHDkfojRuz7/PtO3nTYsUaMkyKl7bBxhTokI4h/dAlcTKR4Eg6ZxRKL4svW85rvaWu1sdMAFrJODLzskD/hcAlRq+45E/xIwybwHoJg+sZC1DZoijgo9APZ6LwwB7bInjWs0uLIsQehvoeTalrRjPQVJyuEKP8cNYSCm72ITO8rZ5Awaizg0Hhb5wOhenpxMhtXduvvdDglUJrNJ5TG2U7bqywSQtKdtefdQp8Yyd6ZgWqXll8wciLNQ1ghkRMovYom3ODy8eUBwnqyz7iYDFygTT7s21enk0RF4stWBCGm3S3BUzqJFz",
-      "latency": 50,
-      "channel": "پروکسی | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/16352",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1775169558.2420008
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AYDY4j0r0Q7SgP8NAIVZKywsF7LpqBWFJ0VSQgWkOl/zLW4Mktjhc+LcwR3wWcvpHEeCc4yK5pZ8AS8G7XFXl5DYkjxRy7HfMbD+iDnv/oSz4NXLUe5SjAcjYy+z4+QyIvTSwH/X0zSE6mWybvbNoR+/uad3cJAn0eYlkCGs+a/oCWvmcamlofBYLvpSGWhtxJzgKVNylFXdbTqk+lRKju8dBmvgz3w2hG59MEx6iwcTrJ8MEsprLF0eWiMBNLkczjIY7/MfRNsjcaJwBcAey3b0VJ0U0sH10VE+KPjWzw8IDisw/R7N6RkKcLYb3cyTP+LxiFieLr4D7DODp5y0cipkcVMj8jD8EQeePStwPuJup8lCrqLk",
-      "latency": 50,
-      "channel": "پروکسی | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/16351",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1775169557.9384832
     }
   ],
   "proxies": [
@@ -284,16 +274,15 @@
       "latency": 4203,
       "flag": "🇫🇮",
       "ts": 1775202142.2209647
-    },
-    {
-      "key": "proxyonline.online:443",
-      "link": "tg://proxy?server=proxyonline.online&port=443&secret=7b52009b64fd0a2a49e6d8a939753077`",
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/16353",
-      "latency": 278,
-      "flag": "🇩🇪",
-      "ts": 1775169692.7596765
     }
   ],
-  "files": []
+  "files": [
+    {
+      "name": "lizard_free.npvt",
+      "ext": "NPVT",
+      "channel": "[ Lizard Vpn ]",
+      "link": "https://t.me/Lizard_Vpn/600",
+      "ts": 1775213513.8215015
+    }
+  ]
 }

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AeHvH0QcryLGg1AhDKyZ0vcfBSTU/bH6KOsp1ea/Zk2gVT5GYMU9SMsrJ+HOpdR+gUmUeE+AtHvaYqopPVPcvgOnI4Oo5WgZDbvLmx797VlmlSsN1dBPo4aMOYwD0Op0+iqo4md9qcML1al+dTTV4CnWhsyjrIVVZTqET5L9KkfgvDv5r5F9bb4IbdUubJ6UbtqkAII7Y7mTrTyCg7dskJTF5/aHlVJQGLht16EQrM2lkzJFwlqzCKxZCjRSQAaC67k9hgy0Bnk0JT+1CpMz8wjjSGUUCGNlOWgxayFawxOa0GGaSZC/B2okzT++e54eFJvKmVifOKv4IdkcshEdokfUB4gAPThfKj2Pigzp3BOw2tZCBndl98HgnABOIyclafZsvqF3Q9VfD4QpLve9UamwDTNxRVdDcyg3trs8QZOxPLwokKMozmJOSCgYZKF+wQurtfFWjkJEV11lVjzseVg=`",
+      "latency": 50,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16454",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1775272865.0661764
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.224.68.36:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 88,
@@ -599,16 +609,6 @@
       "flag": "🇨🇭",
       "country": "Switzerland",
       "ts": 1775231919.4841547
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AXAL27gDBNKCjRRe+JGSnmnkLtLE5orcPLBiUafH02onEozPFtms9VamQVqlPaWpEXk3w9weKABJyvGle0Qkc6FnCOL3Sy0fKW+pLoczwvc3qEO4rXz4Mi8XfY1BhaEMVVA6kgKiPGMy4WGtQYL+of0KLR5/n5FAPSuEDc3SDXPtxtl6bVA7eNh8vCd4w90fvJ7z+CIj4XbwvyKavrBFYHjKowKdKlPIHZe1dO8O8LdqsfCMlJNCyyVbwwJ7vMcrBdcI9WPYL+bHHAafZvRzjNfqAh6NxFtE4VP2jkb6RyY2L9Wx71F0w+rx/8aHYjVzpAyr323XlK+IeHXMtn5oF3j8EPKf5b/Z76OEHL/Pl4rvQg8Xsuu1tgqN7afBTT7DjKgaDISvJx7u22x+gtfWH75LlToblmfufl9rBLUDy+BdUbO7oaQFgG2Zc8mUn/mqQeC4sIEj1N+AB0zvxUU2wBbEWZGP6SjNKSzO2Aa+WhjGrZJyLOZTAy7bN2lFqs38e/8v0auFZB8jbWE=`",
-      "latency": 50,
-      "channel": "پروکسی | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/16382",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1775227910.192423
     }
   ],
   "proxies": [
@@ -773,24 +773,6 @@
       "latency": 13,
       "flag": "🇺🇸",
       "ts": 1775231164.6239834
-    },
-    {
-      "key": "vavan.xyz:443",
-      "link": "tg://proxy?server=vavan.xyz&port=443&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/16386",
-      "latency": 169,
-      "flag": "🇫🇮",
-      "ts": 1775228784.9347823
-    },
-    {
-      "key": "proxium.rest:443",
-      "link": "tg://proxy?server=proxium.rest&port=443&secret=a665a45920422f9d417e4867efdc4fb8",
-      "channel": "اینترنت آزاد | Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/16385",
-      "latency": 262,
-      "flag": "🇩🇪",
-      "ts": 1775228763.1199179
     }
   ],
   "files": [
@@ -800,20 +782,6 @@
       "channel": "༼ᴀᴍɪʀᴀʟᴛᴇʀ ᴏғғɪᴄɪᴀʟ༽‌",
       "link": "https://t.me/Amir_Alternative_Official/917",
       "ts": 1775235739.908949
-    },
-    {
-      "name": "👉@ghalagyann👈کانال تلگرام.npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/19937",
-      "ts": 1775227915.8583481
-    },
-    {
-      "name": "👉@ghalagyann👈کانال تلگرام..npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/19938",
-      "ts": 1775227915.552736
     }
   ]
 }

@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@51.44.53.220:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 84,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16464",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1775308298.0787425
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AZ8RYI6dAEQ38ot8+MP3omKOlhQzgHXPka5IudSfyrUu9GqHZQF7d8B6C6zfLhRWBb949OxmzoVchcrDvHvl/Yq4K/EBVeIuiVM4zMEmmvhZQWJ47gBOzVu9cJWNqXIlkROMGXarDunUj/QKj/0OmyLYYAnvPq8GJRO09gG8Xy98TzmEkPlQ5gsuUYqeK8ek6IXi05cLmQYz07x0jNPANdlyro/spBgcy1lCKQcG3HD6YTKSaM8vLsL3LwGhGVnYM44fkQnWTHM5Y77HVAA4SwvyBFN5uqYm7Zd/PO/Y8nYRkd/mSSWl3qnY23mf3Fh1JWuvY5V9fX72sWocSXbNREHdXW0Mr3qr/7gDMmVDk4hcJPpCz6K/paiK6CeLnonlF/HD7xfmtRSYEFclt1bN8g9S4UbG+BBmmyOD5Hm3LExpTM6zdeabzrdNILaFiZ+eQNKa4S1oiwE3IozrZdoC8qB0qtRTgvzHrqQritgIQCaAqukyE7T3PzCeUF6yQSol0Te4DiJENv55ICgLLnqtIZVrkUAMq80KycFQjHXZtd6YnIjvx7TK8pFBt+GsNH1puRJDvSeXv8RpKnwq5FZE0Fz8htg=`",
+      "latency": 50,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16462",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1775308251.7224483
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@3.72.189.223:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 112,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -22,6 +42,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "44.223.90.89:80",
+      "link": "tg://proxy?server=44.223.90.89&port=80&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16463",
+      "latency": 16,
+      "flag": "🇺🇸",
+      "ts": 1775308257.0028944
+    },
+    {
+      "key": "proxlet.site:443",
+      "link": "tg://proxy?server=proxlet.site&port=443&secret=8d969eef6ecad3c29a3a629280e686cf",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16463",
+      "latency": 292,
+      "flag": "🇷🇺",
+      "ts": 1775308257.0028923
+    },
     {
       "key": "52.56.135.13:80",
       "link": "tg://proxy?server=52.56.135.13&port=80&secret=dd104462821249bd7ac519130220c25d09**",

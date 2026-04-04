@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://263552aa-5a5e-4703-a42d-374bda1566f6@snapp.ir:8080?path=%2F&security=none&encryption=none&host=titus.trmas-gs.ir&type=ws#%40proxymelon``",
+      "latency": 369,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16527",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1775335224.9875705
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.237.155.59:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 146,
@@ -489,19 +499,18 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1775308251.7224483
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@3.72.189.223:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 112,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/16458",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1775289749.3872802
     }
   ],
   "proxies": [
+    {
+      "key": "rkn.tg:1337",
+      "link": "tg://proxy?server=rkn.tg&port=1337&secret=dda2d3fa639a6ddcf8d6d1c5913d001531",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16528",
+      "latency": 624,
+      "flag": "🇷🇺",
+      "ts": 1775335225.9013507
+    },
     {
       "key": "vavan.xyz:443",
       "link": "tg://proxy?server=vavan.xyz&port=443&secret=dd104462821249bd7ac519130220c25d09**",
@@ -727,13 +736,6 @@
       "channel": "اینترنت آزاد",
       "link": "https://t.me/mitivpn/16453",
       "ts": 1775300298.6633124
-    },
-    {
-      "name": "👉@ghalagyann👈کانال تلگرام.npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/19963",
-      "ts": 1775289105.5310743
     }
   ]
 }

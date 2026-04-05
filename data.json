@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e53a92c7-4a78-49cc-ab01-917661058b9a@172.64.153.22:8443?path=%2F%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=egaxhxw0p031z8iyfgjt9fyhhb1hwj4vr3gn0xoxqu901o8ruij.zjde5.de5.net&type=ws&allowInsecure=0&sni=egaxhxw0p031z8iyfgjt9fyhhb1hwj4vr3gn0xoxqu901o8ruij.zjde5.de5.net#proxymelimon``",
+      "latency": 6,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16560",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1775410707.448819
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://43488128-319e-f480-64ea-0acdc712e2a8@51.68.155.153:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=_xzl59bcUYD9QUSKFyboqCC_9eUnaXUUKWA19oQWFHU&security=reality&sid=8d17b7ebab7b99d7&sni=www.allegro.pl&type=tcp#proxymelimon`",
       "latency": 102,
       "channel": "کانفیگ و پروکسی رایگان",
@@ -132,6 +142,33 @@
     }
   ],
   "proxies": [
+    {
+      "key": "44.223.90.89:80",
+      "link": "tg://proxy?server=44.223.90.89&port=80&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16561",
+      "latency": 15,
+      "flag": "🇺🇸",
+      "ts": 1775410717.7479377
+    },
+    {
+      "key": "167.86.111.159:443",
+      "link": "tg://proxy?server=167.86.111.159&port=443&secret=eedfcbaf8e3e3a24457729288b43bb3d3a636c6f7564666c6172652e636f6d",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16561",
+      "latency": 105,
+      "flag": "🇫🇷",
+      "ts": 1775410717.7479367
+    },
+    {
+      "key": "207.180.223.156:443",
+      "link": "tg://proxy?server=207.180.223.156&port=443&secret=eea27824b872cdf72860d959f174de5c63636c6f7564666c6172652e636f6d",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16561",
+      "latency": 197,
+      "flag": "🇫🇷",
+      "ts": 1775410717.7479346
+    },
     {
       "key": "proxyobhod.online:443",
       "link": "tg://proxy?server=proxyobhod.online&port=443&secret=71c30cc28759e0a10b6de5b471d69751",
@@ -269,6 +306,13 @@
     }
   ],
   "files": [
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20006",
+      "ts": 1775410691.5500615
+    },
     {
       "name": "کیومرث.npvt",
       "ext": "NPVT",

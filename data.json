@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://43488128-319e-f480-64ea-0acdc712e2a8@51.68.155.153:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=_xzl59bcUYD9QUSKFyboqCC_9eUnaXUUKWA19oQWFHU&security=reality&sid=8d17b7ebab7b99d7&sni=www.allegro.pl&type=tcp#proxymelimon`",
+      "latency": 102,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16557",
+      "flag": "🇵🇱",
+      "country": "Poland",
+      "ts": 1775408403.2821589
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://ad609b0c-606a-49b7-89e3-b54c1544a1fc@ww.gooldiran.ir:8880?path=%2F&security=none&encryption=none&type=ws#proxymelimon`",
+      "latency": 190,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16555",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1775408402.480789
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AdiZs+FkSoziBuSgAocnDUnwkekzKn0rja6ei0kJfrEdJFJtqVYeeudsJE15hX/w+MdKJJUZVaXd2I0uzmiDzopcJpU+IwyhCEEr+peReYPRTJzl1hpNJit0R90mtpnCD6Scr5qYA2gh5NOnaXqHx97WqMKklCgrvAjKWmeaNo0+wGqvUYa6qyLR8Sp8lw3w9fmtcV7thKuOW1KCR8tU23+PCZjOju7xjX8Lb/y4W3vH5ZScVtArHKTZwztywQICgQzc5s+8t0y/RI2WeakhSsWnCLtS5TnGYgyToJWio1PNVnJsnpeJlocD21XGhXf3ka1lx9R3HH7eg3+LPGInJIfaHLKY9LSALMCOTXgsqjB0Etthz7J0grT1UDWChBhIHYJeTEEAT6eo+DRSiEiNL1FtNbOPiRis1xs+49xZeqJXPk92Erg29XnBD3LawcSaipT6vfN/Bn6Fl3udkeeRa2lA7zXT6tOXsWhXa2N9TBFOsvahA/UAvOZ0SzQzuaeZcCAI9kGjsiNaslWCsYnwYMhnS0GWbUAHkmgsBoLAjvdrF02TYXc/2t9HIcYjBQVDWfl7IEw2hCRVJuH3zfVHXErNMyfvB+17jdrzCK3ZZksoyewlh8iCkW5TqhMDpTx0IbZrlsI6lb3A3vnv```",
       "latency": 50,
@@ -112,6 +132,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "proxyobhod.online:443",
+      "link": "tg://proxy?server=proxyobhod.online&port=443&secret=71c30cc28759e0a10b6de5b471d69751",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16558",
+      "latency": 1265,
+      "flag": "🇷🇺",
+      "ts": 1775408414.8515842
+    },
     {
       "key": "95.217.28.246:443",
       "link": "tg://proxy?server=95.217.28.246&port=443&secret=dd104462821249bd7ac519130220c25d09",
@@ -240,6 +269,13 @@
     }
   ],
   "files": [
+    {
+      "name": "کیومرث.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "link": "https://t.me/Proxymelimon/5754",
+      "ts": 1775408402.883363
+    },
     {
       "name": "ایرانسل تست.npvt",
       "ext": "NPVT",

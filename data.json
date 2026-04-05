@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://b41ce518-dee4-4590-a42d-bed6185f1f30@snapp.ir:80?path=%2F&security=none&encryption=none&host=arc.liarashop.ir&type=ws#Join%20us%20%3A%20%40proxymelimon`",
+      "latency": 650,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16544",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1775382499.879303
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AboX90vrN33EJjxtKjfC55l5Jsl3U+3M7sptPl1Bmp9T3u+CUJX5jk4AISECO0aQA6E/a3w/VSbNfSTKoIhuGTKDocOpASFme/7jcVvrlUenHWtRuxdBLV8VZ/NAGUgS2MImNFR364oUlbiVQOCUSco7Eb7g1mLp+ZJZaDkzo5kr4Q1jAoUVGO9Sq706IhmCWy+w3V2fhQr9DGwGfaKGa1EDaEuTsL+7nG9PDoHI4ceIL2BshVBt5CiNXGseS4okK0OiAV3Rmwt/aO2+JJQuWa8Ew87rZ+WQEbVsIS2LqMxTf63WTLvUgyBSKfx5hNwFh7cLz3CQ7Ibg5lPFiuY49TaruE5L84m0RAiJm0O/dwLFwNTXf7EgosNe1WLW9hSCXqowvtdbw0wMNzlpJMFZfhzRzmqpKyVeaqhFH5EFoGZi0ndM8GU3NDogYprru7R9Q6D6sMygjZ+XjCDJUqnJbLuxITVnL49R5wUdtGYt5FFxbsz5YNotzrZUeeykwpkYEwedf9Z+Lry56wu68IQYr8HBFBhads3Jcy1JddSaVPHVhmC4LhAXcB/AjzSjd9lM0YpnzcdYyNhUNQEP0MoJMI30rDU2bS/VbEtmGdZXMFky6kaghCqTDWWoOxOy0LUn+C2dAbgpGx9z1nu901ehPT8DRzpJgU8VVpc=```",
       "latency": 50,
@@ -143,99 +153,16 @@
       "latency": 93,
       "flag": "🇩🇪",
       "ts": 1775373502.747173
-    },
-    {
-      "key": "13.63.160.17:80",
-      "link": "tg://proxy?server=13.63.160.17&port=80&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/16529",
-      "latency": 105,
-      "flag": "🇸🇪",
-      "ts": 1775338823.7159736
-    },
-    {
-      "key": "vavan.xyz:443",
-      "link": "tg://proxy?server=vavan.xyz&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/16529",
-      "latency": 137,
-      "flag": "🇫🇮",
-      "ts": 1775338823.715973
-    },
-    {
-      "key": "65.109.16.146:443",
-      "link": "tg://proxy?server=65.109.16.146&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/16529",
-      "latency": 117,
-      "flag": "🇫🇮",
-      "ts": 1775338823.7159715
-    },
-    {
-      "key": "proxlet.site:443",
-      "link": "tg://proxy?server=proxlet.site&port=443&secret=8d969eef6ecad3c29a3a629280e686cf&@vpnbaz",
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/16529",
-      "latency": 230,
-      "flag": "🇷🇺",
-      "ts": 1775338823.7159708
-    },
-    {
-      "key": "www.hombus.co.uk.:22",
-      "link": "tg://proxy?server=www.hombus.co.uk.&port=22&secret=fgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNngfgScoaLSXQYtLCM8VHoNng%3D%3D&@vpnbaz",
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/16529",
-      "latency": 336,
-      "flag": "🇨🇦",
-      "ts": 1775338823.7159696
-    },
-    {
-      "key": "vavan.online:443",
-      "link": "tg://proxy?server=vavan.online&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/16529",
-      "latency": 195,
-      "flag": "🇫🇮",
-      "ts": 1775338823.715968
-    },
-    {
-      "key": "prx.today:443",
-      "link": "tg://proxy?server=prx.today&port=443&secret=b3f0c7f6af7dc2dc2e9c80d0d80e8162&@vpnbaz",
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/16529",
-      "latency": 568,
-      "flag": "🇷🇺",
-      "ts": 1775338823.715963
-    },
-    {
-      "key": "178.104.72.162:443",
-      "link": "tg://proxy?server=178.104.72.162&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/16529",
-      "latency": 91,
-      "flag": "🇩🇪",
-      "ts": 1775338823.7159617
-    },
-    {
-      "key": "95.217.28.246:443",
-      "link": "tg://proxy?server=95.217.28.246&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/16529",
-      "latency": 119,
-      "flag": "🇫🇮",
-      "ts": 1775338823.7159605
-    },
-    {
-      "key": "prxyhub.click:443",
-      "link": "tg://proxy?server=prxyhub.click&port=443&secret=9f27410725ab8ab84ed17daf14723236&@vpnbaz",
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/16529",
-      "latency": 268,
-      "flag": "🇷🇺",
-      "ts": 1775338823.715958
     }
   ],
   "files": [
+    {
+      "name": "50 V2ray‌ (@vpnbaz) (6).txt",
+      "ext": "TXT",
+      "channel": "VPN MARKET",
+      "link": "https://t.me/anty_filter/22787",
+      "ts": 1775382598.9891157
+    },
     {
       "name": "S-NPV40.npvt",
       "ext": "NPVT",

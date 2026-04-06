@@ -109,29 +109,90 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1775468804.517451
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphZHVCOUhHeFFIakEyU0JNUmprSFg2@102.37.156.224:443#%40Merlin_ViP`",
-      "latency": 277,
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/16576",
-      "flag": "🇿🇦",
-      "country": "South Africa",
-      "ts": 1775463871.6921885
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@18.156.97.29:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 112,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/16575",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1775462999.5076118
     }
   ],
   "proxies": [
+    {
+      "key": "13.63.160.17:80",
+      "link": "tg://proxy?server=13.63.160.17&port=80&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16603",
+      "latency": 132,
+      "flag": "🇸🇪",
+      "ts": 1775508357.9634998
+    },
+    {
+      "key": "65.109.16.146:443",
+      "link": "tg://proxy?server=65.109.16.146&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16603",
+      "latency": 133,
+      "flag": "🇫🇮",
+      "ts": 1775508357.9634988
+    },
+    {
+      "key": "49.12.116.16:443",
+      "link": "tg://proxy?server=49.12.116.16&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16603",
+      "latency": 122,
+      "flag": "🇩🇪",
+      "ts": 1775508357.9634974
+    },
+    {
+      "key": "5.78.149.0:443",
+      "link": "tg://proxy?server=5.78.149.0&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16603",
+      "latency": 51,
+      "flag": "🇺🇸",
+      "ts": 1775508357.9634962
+    },
+    {
+      "key": "95.217.28.246:443",
+      "link": "tg://proxy?server=95.217.28.246&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16603",
+      "latency": 134,
+      "flag": "🇫🇮",
+      "ts": 1775508357.9634945
+    },
+    {
+      "key": "49.12.117.37:443",
+      "link": "tg://proxy?server=49.12.117.37&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16603",
+      "latency": 111,
+      "flag": "🇩🇪",
+      "ts": 1775508357.9634933
+    },
+    {
+      "key": "65.21.58.190:443",
+      "link": "tg://proxy?server=65.21.58.190&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16603",
+      "latency": 130,
+      "flag": "🇫🇮",
+      "ts": 1775508357.963491
+    },
+    {
+      "key": "167.86.81.232:443",
+      "link": "tg://proxy?server=167.86.81.232&port=443&secret=ee225f29b78fa2a218d8bd70158e9ecc2c636c6f7564666c6172652e636f6d",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16601",
+      "latency": 107,
+      "flag": "🇩🇪",
+      "ts": 1775508251.946278
+    },
+    {
+      "key": "rkn.tg:1337",
+      "link": "tg://proxy?server=rkn.tg&port=1337&secret=dda2d3fa639a6ddcf8d6d1c5913d001531",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16601",
+      "latency": 420,
+      "flag": "🇩🇪",
+      "ts": 1775508251.9462762
+    },
     {
       "key": "65.109.16.139:443",
       "link": "tg://proxy?server=65.109.16.139&port=443&secret=dd104462821249bd7ac519130220c25d09",
@@ -347,18 +408,16 @@
       "latency": 108,
       "flag": "🇩🇪",
       "ts": 1775470530.0046694
-    },
-    {
-      "key": "204.168.238.0:443",
-      "link": "tg://proxy?server=204.168.238.0&port=443&secret=b3f0c7f6af7dc2dc2e9c80d0d80e8162",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/16574",
-      "latency": 136,
-      "flag": "🇫🇮",
-      "ts": 1775462877.846481
     }
   ],
   "files": [
+    {
+      "name": "😐.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد",
+      "link": "https://t.me/mitivpn/16477",
+      "ts": 1775508313.2599914
+    },
     {
       "name": "lizard_vpn.npvt",
       "ext": "NPVT",

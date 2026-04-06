@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-privatevpns@18.156.97.29:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#NetAccount2",
+      "latency": 113,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16585",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1775470631.2779555
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6fb4c229-6f9a-449a-a533-9f2a8040c71c@185.238.140.212:443?security=reality&encryption=none&pbk=gMpp8SHZ5tGcxwaUEZ4e-ZHa8J0qIV7S5C0iO-qkEEE&headerType=none&fp=chrome&type=tcp&sni=www.microsoft.com&sid=6ba85179e30d4fc2#NetAccount6",
+      "latency": null,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16584",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1775470620.7908347
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://8fc836e4-f72f-40d7-8a55-8677324a2079@185.143.234.122:80?path=%2F&security=none&encryption=none&host=S4.koremusic.ir&type=ws#https://t.me/PlanB_net`",
       "latency": 134,
@@ -42,6 +62,87 @@
     }
   ],
   "proxies": [
+    {
+      "key": "proxytelega.store:443",
+      "link": "tg://proxy?server=proxytelega.store&port=443&secret=5d41402abc4b2a76b9719d911017c592)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16583",
+      "latency": 171,
+      "flag": "🇷🇺",
+      "ts": 1775470530.004684
+    },
+    {
+      "key": "av.1.mtproto.ru:443",
+      "link": "tg://proxy?server=av.1.mtproto.ru&port=443&secret=7iERIiIzM0REVVVmZnd3iIhicm93c2VyLnlhbmRleC5jb20)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16583",
+      "latency": 173,
+      "flag": "🇲🇩",
+      "ts": 1775470530.0046828
+    },
+    {
+      "key": "64.188.64.189:443",
+      "link": "tg://proxy?server=64.188.64.189&port=443&secret=b0834f5c52129b3de4fed01625bb8567)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16583",
+      "latency": 115,
+      "flag": "🇩🇪",
+      "ts": 1775470530.0046816
+    },
+    {
+      "key": "proxytelega.store:443",
+      "link": "tg://proxy?server=proxytelega.store&port=443&secret=5d41402abc4b2a76b9719d911017c592",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16583",
+      "latency": 213,
+      "flag": "🇷🇺",
+      "ts": 1775470530.0046804
+    },
+    {
+      "key": "cdn.skippnet.com:443",
+      "link": "tg://proxy?server=cdn.skippnet.com&port=443&secret=ee0193f50c1645c3631c2b5dea79828fa563646e2e736b6970706e65742e636f6d",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16583",
+      "latency": 2312,
+      "flag": "🇷🇺",
+      "ts": 1775470530.004679
+    },
+    {
+      "key": "37.139.43.127:443",
+      "link": "tg://proxy?server=37.139.43.127&port=443&secret=eeb285acf6a421f66307553c586aadd6ad6d61782e7275)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16583",
+      "latency": 172,
+      "flag": "🇷🇺",
+      "ts": 1775470530.0046747
+    },
+    {
+      "key": "37.139.43.127:443",
+      "link": "tg://proxy?server=37.139.43.127&port=443&secret=eeb285acf6a421f66307553c586aadd6ad6d61782e7275",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16583",
+      "latency": 185,
+      "flag": "🇷🇺",
+      "ts": 1775470530.0046732
+    },
+    {
+      "key": "av.1.mtproto.ru:443",
+      "link": "tg://proxy?server=av.1.mtproto.ru&port=443&secret=7iERIiIzM0REVVVmZnd3iIhicm93c2VyLnlhbmRleC5jb20",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16583",
+      "latency": 175,
+      "flag": "🇲🇩",
+      "ts": 1775470530.004672
+    },
+    {
+      "key": "64.188.64.189:443",
+      "link": "tg://proxy?server=64.188.64.189&port=443&secret=b0834f5c52129b3de4fed01625bb8567",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16583",
+      "latency": 108,
+      "flag": "🇩🇪",
+      "ts": 1775470530.0046694
+    },
     {
       "key": "204.168.238.0:443",
       "link": "tg://proxy?server=204.168.238.0&port=443&secret=b3f0c7f6af7dc2dc2e9c80d0d80e8162",

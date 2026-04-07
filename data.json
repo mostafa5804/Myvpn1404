@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.36.197.1:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 84,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16627",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1775559950.1810043
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://0e2a6061-ee47-4a3c-a005-4d5680abb70f@185.143.234.122:80?path=%2F&security=none&encryption=none=-@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann&host=S2.koremusic.ir&type=ws#%40ghalagyann%D9%85%D8%AA%D9%88%D8%AF%D8%B3%D8%A7%DB%8C%D9%81%D9%88%D9%86%E2%81%B4",
       "latency": 85,
@@ -250,15 +260,6 @@
       "latency": 128,
       "flag": "🇩🇪",
       "ts": 1775541665.614438
-    },
-    {
-      "key": "45.90.13.34:443",
-      "link": "tg://proxy?server=45.90.13.34&port=443&secret=dda85f2776cc83dbff66b440fb03050cf7",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16606",
-      "latency": 143,
-      "flag": "🇳🇱",
-      "ts": 1775511820.9458692
     }
   ],
   "files": [
@@ -275,41 +276,6 @@
       "channel": "NTGreen | اینترنت سبز 👽",
       "link": "https://t.me/Free_Nettm/12144",
       "ts": 1775547744.9007483
-    },
-    {
-      "name": "Lizard_vpn.npvt",
-      "ext": "NPVT",
-      "channel": "Lizard Vpn 🚀",
-      "link": "https://t.me/Lizard_Vpn/674",
-      "ts": 1775515437.3762465
-    },
-    {
-      "name": "👉@ghalagyann👈کانال تلگرام.npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20065",
-      "ts": 1775512571.8895383
-    },
-    {
-      "name": "👉@ghalagyann👈کانال تلگرام..npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20066",
-      "ts": 1775512571.5986936
-    },
-    {
-      "name": "👉@ghalagyann👈کانال تلگرام...npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20067",
-      "ts": 1775512571.3399925
-    },
-    {
-      "name": "👉@ghalagyann👈کانال تلگرام....npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20068",
-      "ts": 1775512571.0269618
     }
   ]
 }

@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://8a30cf48-9fa2-46c5-8815-2822b12852e0@188.114.98.0:443?path=%2F&security=tls&encryption=none&insecure=1&host=xqkxw.ccwu.cc&type=ws&allowInsecure=1&sni=xqkxw.ccwu.cc#%40PlanB_net`",
+      "latency": 3,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/16691",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1775681687.757962
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://3f58cc47-94f6-40d3-8797-1ce66cb0555e@188.114.98.0:2087?encryption=none&type=ws&host=nl4.maxriser.ir&path=/?ed%3D2048&security=tls&fp=chrome&sni=nl4.maxriser.ir&alpn=h2,http/1.1#@proxymelimon``",
+      "latency": 3,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16689",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1775681638.2565963
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AZZltogybieTGjTxEwdfyrfmqa84HhHp60dV706nAawHPGXEYfnIhQ1R1Y8cPOwi0ruE0Ew+SuYzNtYeAch1Hv8pMoOPoig1YD/YjrLZduoUlgUVD1gL4rXBsixM02x85gjMXANYqL9m8JbQH2qBjHOdCrcMM9KYx2v/krkDhTdsrL3j4nBUAbCLN1gG5wfZ8I3MZZdBtCogUbbb7qYnC1gd9m3k9C84uIIkCa1DFanmJOnRBC+of5E7gFYBx/t4a2SXnOTgncnjngiXEvRs70R/ZFRwFRIS8kmG3IiZTYlG3L1tDc5zFUbB+a3TF/LPbdWNtccugagKgaguaA4poASj+Uc44cOyjnXCbHT8r+00cmcE+QIaHSbbmrno4Gj2A5oIFijv7PzTwLSCaO+H9XGkCwNETGt7imY5QFO8vsYDx4Vg+q43iMBoSBd5Rx1n6eEjgopB3uMSC2YLq5F1O/A5mHQ0SxwvYnnAgWFk8ZLaLv552VbTG/ypRb99NXcuL39AgdWdH5YZw2HuuaL5xFK0KStHAkHONWkTGwm/zMXIXdKPbx2ZjKu9WwRqMJXaQOrTtEOU+nMk21M3fEG+IyNb9F+ol75IEWY9xBwhJFqYVyq4FWNi4cVKvg==```",
       "latency": 50,
@@ -189,39 +209,18 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1775641292.9540448
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AWIvdm8cuP/Qm+PUTmrcOs/iGBWbVxtUcC+tnucqC6WVXwQ+5LPqYgXqocVIPGT8XgNWUI0qDYDN5SbdQcNV/WUGtoZO3bod72ZRR70Hl5qGPAQS5AXgLrbyVXeqm2P6YIxGMvX5BInaKfpn+RRLeU3cGhHZRIrWY5JfUhDWG5NCS6D8RZa3yPMY0mwvEGRRVpLZ5D/eqVFtyYdsNM2/Xn8t1ydarfDrYupNIuXnmnRsZlKkHr0d7fzu+Pd4J3BzNiTMuCj5PLz6qG+HIUpf/xo+M7HBLIKSqFi+JWgM8+beRXKJv9EbQzpKIkq+H17cgyWPZevtLe1xVMyVpID6YojyjexPCRi3IUYnYrMzGCSrWqSSeq6I2hQUJDRPWLQHxJsNzXxMVblCEevd0Xo0Wp9JNCN04RKBmyEh8qv9470iVfSZsw75AxD8BMmOL+PS3lYAtWs6xvd5bRp98DxIwnxdXBAoR9uY/XN9UBvLHls1rpXFyHG5lFrgdU9nYLvEP7phApQzLRH6rWPR3btj7K1k2GO74peqFDflRw3zmLKrQwHPin0m9lsBukBrNhUujUQ4Uiu3GidNTyE3eyGayzNxn2d5O5CBowQuWA5dpAIgFfNCod3Zvf42/RpnlUQaCjVdlz4fpJ/NkPNWyCVysXd+PvKSQSKp9KCxIdqF0pE2saCEYlDzaXOX+cEGDMf5ckQ=`",
-      "latency": 50,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/16650",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1775634310.3711262
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AVCSHWCLQDC6gypcgHtwZo9mt3mHrZFohh2+tnKQYB4VnYdNfnS66IPWVQ/uPUE89K09euGwdKcHgFeEL9uZqs0nF5jiCqUaJZYRYrC9JXsOJyh0RdrsvOVz3BwlX6bgIICM9Tietvfad5mPcEUVFgNUhBQPFX3uZVsOrof3AqLrVAkc2DdTAhkHL8KZe0Velq753ZJaPrLIoRz6N8hNSHy/H1MaoVYyySSxA7A91Z2iuN0hWOVk4MWkWRhpZ0FZHNmnNTaGQ6/ALG403O/Yv672SvKffDMmD1Fq5+cI+Jk9bVmnKUine8w6qDHK+rfMVS8ZoyefVbh/BOV7yUQgMQIpJj03odIoxtbd416HzeIXURz/oU6qG3O5aC+M/tLaT0+pmN0KSjJf8nLZI+HLnPXkfLKqOK35fa7q5UumXr5jebd7XWs/dbefEeLvPzXLyZfrJyKY9iMyACbbDDRtf5f5NWdDwRm2NTOs6xIUTJoX5/VENQ6bkGjO87nvTSXWzKTtF9j4RCGM5Yeid2eJeShMTwazjvkwERtQocPGBGrcIhkPEE/kOcoLxgzw8IH2iStFz5g/Medw9IULkI0L8pp1TxOUFQ3pkk7wypM1OxkVXqtg8Jv/8rq8nbwO8hgCbmzL3fxfQEslrmZ9KPm6XDd/uGanUZsWR4uSes3dQ8GzbrL9UA23pCH4jClvWaPso+U4v7Yb5JtTcnrYqD6W`",
-      "latency": 50,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/16649",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1775634310.082975
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AYBpAqUjItpwhm/hGaVMAZR0GX9/HFIGFay9b565qfLN3NTkVtO64b8ys/a+ehZWPHOFHZShLNkT2XzSZPMqDGucJGlAnIG550zejvMDG/dXdbkQgWPGatz5AfKH7iYNHqKD0/3mfpMTJezvSY2bZMCQnK6DnNMSvliwhw0kFvByvUkm8dmNDOWUG7s/wFz2VaOA8dwRqh2zZR3YU6akHCzpM+cMS++vKDQ3UV7RdOcrq9RncSPmsiym/obTRLgk6vrZqoD7VsgR225fve/oU8CHyM2JjjA9tjgDdUyyJfAtNrsPky8041fO4lK9/tWYm+dXovlRhCH7X+JlrjVLcbRAywHEUqylnk1mgwr8IrIV84dWdUcSrM363+tF98Z9h6OYuFGTHOa6qs3rKdUitmtd4rb18Z/uL3Uh9W/3TJ1NC3jJSAEMM105MbRp8EMTzM/evSp8w0Pwi9vNCWPNqCg7qLNmVj2Bf6TKmBwqdvWVwnbQEhVrcRSyn9g4JcX6yed17jY3w9/0chqBD63J4lfk9YW+SxBclSHZTkbVcr7tllolHmYpH5WvSysfii+4kLbhJIIr34I0o6snpSXfwBhKar4hHthZR5NOFHefnNMCsj+2KxaOORVCy0b4JB4QYHtnxkZF1DY+QpHko72qd8H5MN/UpFE7V7nqMM1/zh4/mK4DFOSmc5ouXogd`",
-      "latency": 50,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/16648",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1775634309.7702858
     }
   ],
   "proxies": [
+    {
+      "key": "proxium.rest:443",
+      "link": "tg://proxy?server=proxium.rest&port=443&secret=a665a45920422f9d417e4867efdc4fb8",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16690",
+      "latency": 225,
+      "flag": "🇷🇺",
+      "ts": 1775681638.5613635
+    },
     {
       "key": "178.104.72.162:443",
       "link": "tg://proxy?server=178.104.72.162&port=443&secret=dd104462821249bd7ac519130220c25d09",
@@ -392,36 +391,16 @@
       "latency": 142,
       "flag": "🇫🇷",
       "ts": 1775639521.5514586
-    },
-    {
-      "key": "138.124.241.86:443",
-      "link": "tg://proxy?server=138.124.241.86&port=443&secret=7ijYr7v/s62j2/lxOUHAtx1tYWlsLnJ1",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16651",
-      "latency": 1163,
-      "flag": "🇫🇮",
-      "ts": 1775634328.6089008
-    },
-    {
-      "key": "155.133.26.82:443",
-      "link": "tg://proxy?server=155.133.26.82&port=443&secret=ee6bb5d5b77515b3ec4fe6d1c558aa47a9636c6f7564666c6172652e636f6d",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16651",
-      "latency": 2223,
-      "flag": "🇫🇷",
-      "ts": 1775634328.6088998
-    },
-    {
-      "key": "tumanpro.krotmonstr.online:443",
-      "link": "tg://proxy?server=tumanpro.krotmonstr.online&port=443&secret=eeddffec89f799a1ab3cf8b40806c74d927777772e676f6f676c652e636f6d",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16651",
-      "latency": 235,
-      "flag": "🇷🇺",
-      "ts": 1775634328.6088984
     }
   ],
   "files": [
+    {
+      "name": "@RegaPlus.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "link": "https://t.me/Proxymelimon/6056",
+      "ts": 1775681637.866902
+    },
     {
       "name": "-NetMeli⚡.npvt",
       "ext": "NPVT",

@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AcM+TRmeGxMVOvakEBgN+d5ph9cL+CO/YdoMCBhCgUuVyrW31GXiy6r8noo2fhbEQPI4OsY3W3+ATa0xUYji52kO+As/Ajmu5hrk/3mPwiA6fGy8dwNnjrdeyIjkC4IkHBkkcrpc1gcv8TtJlthfojIqY85rsEeg3hYlp9ggP+6M7ypQ9p3N/ITnDp4J7N8dZ/umYoTvvwRdvTQ0a/YrPvKoWwQg5AJpuzk85vq0bMYDfLSYyPI7kgJaPTn7tWaNIp5nLBi9slCHx5G4mQnJ2yQBLTfJmqtA3YsvgQY0xNuGrUNDND31Tb//L/kYRy4+475Zfeg1P9zcZeRgB0/+8KmXxlx8j6kHAhndiFKPb7cdYAyB48sbtcauJ9QE7DryOFU+no/mqYkoDku+qLVTP4jXWcjSqrf96/CRIZ27BlpB43EqtnjCSoz/E5aKD2rYUJv1txlWCW2exhJCKVunn8hD0dnR4Ho8pTnjR92WpLbFpoDp5bw3Cs7Y2dQMeoWxbicCoL7cHZ63uDAcbaJVcFBD+/I32s5GAFDnmNkW66wYJp1mRhcxn0QjCrGbBeVTf35VpQFu7Ch9jpfjVRhKLJP48JRyKAdYOonuJepuq+EWj+orzmVep8M94HAsFQjU3StmMigpglJ+1r+cSXbGix5nQ1w2LPRb4pWh```",
+      "latency": 50,
+      "channel": "𝖳𝖨𝖱𝖤𝖷𝖭𝖤𝖳",
+      "t_link": "https://t.me/myvpn1404/16738",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1775763890.766828
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://Afi77NiIrFEOXuRTxxq0xpm+KD7nWkrLjaA8R3n/fR0bCDLZxmrwSAZ1FlJVgzoF4N9tR5vBsBGGC50oqaz6tOBnGdo7nBByDKrvl0T3sGmdGE//VNvcmcqSqCMHEmwqLpd3mPLq/Wyz6asGdtbBuNHADXF3t0XFMLySyKGyQRIaa1gQpzcOEf6PYSA2PPDWMW1bZeOxgA0isu6PKUiNFpuKcFPbct+yiLr8+L4d4lJSuROIKiJlgF2dErC1ycpR1nJRX5oD+07+DsvjGqU/UoqLRPRdhJ2fb9h+KobrI9sdoxzjV732ap7aQkljHXxNdNtNfL+w6nF28nuM+XkfVGsti068ujqT+4++YH4stAF7r6/Df/rzro/4A6uogVFWO4aD8hPS1l1bam7/O39fl1wWyGEhqA+SXnQhMhW0gixM5dgnod7aGdvoVhdaQBSFP0bbQHlOJUIo7HgfJL/LPFy7zKNV52z97BPJWw7eH67DQ5u8pAoyGeKz0NBYTQfBVb8Mg0jBAAJ8ucUaJYC9rxJCmPozsKbKfer5qqn7j4M1AFKClfHnMf3PmtdwMHpcXX5iRGtZkIV51zBs5DWaevlcu+rElAR2swZ4jGprpxifwdVZCPRaOW1Ex8JkqYHRlwwjBnFGHwBAkxX3IGB7SiHJEz86gl6em9xNNg4R440feTxCq6ZB8x+o8THxQ9R8FiIiKM8J0EQn65QXtMFq++0f8HI=",
+      "latency": 50,
+      "channel": "𝖳𝖨𝖱𝖤𝖷𝖭𝖤𝖳",
+      "t_link": "https://t.me/myvpn1404/16737",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1775763890.4760566
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://d443ec3d-51d5-4da5-adba-067592be331f@185.143.234.235:80?type=ws&host=vixon.portab.org#proxymelimon``",
+      "latency": 103,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16735",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1775763858.3751493
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://8a30cf48-9fa2-46c5-8815-2822b12852e0@188.114.98.0:443?path=%2F&security=tls&encryption=none&insecure=1&host=xqkxw.ccwu.cc&type=ws&allowInsecure=1&sni=xqkxw.ccwu.cc#proxymelimon``",
+      "latency": 3,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16734",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1775763857.9645517
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@52.58.102.35:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 93,
@@ -152,6 +192,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "89.167.25.170:443",
+      "link": "tg://proxy?server=89.167.25.170&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16736",
+      "latency": 133,
+      "flag": "🇫🇮",
+      "ts": 1775763858.6723697
+    },
     {
       "key": "95.216.182.70:443",
       "link": "tg://proxy?server=95.216.182.70&port=443&secret=dd104462821249bd7ac519130220c25d09",
@@ -361,6 +410,27 @@
     }
   ],
   "files": [
+    {
+      "name": "S-NPV42.npvt",
+      "ext": "NPVT",
+      "channel": "VPN MARKET",
+      "link": "https://t.me/anty_filter/22815",
+      "ts": 1775763957.5588913
+    },
+    {
+      "name": "کمکی پرسرعت 🚀⚡.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد",
+      "link": "https://t.me/mitivpn/16531",
+      "ts": 1775763922.5822873
+    },
+    {
+      "name": "War 11 - BlueShekan.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "link": "https://t.me/Proxymelimon/6122",
+      "ts": 1775763857.5836084
+    },
     {
       "name": "👉@ghalagyann👈کانال تلگرام.npvt",
       "ext": "NPVT",

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://8e00b493-d5a7-499b-a778-8d6cdd67700c@bmi.ir:80?path=%2F&security=none&encryption=none&host=bip-07b3ffd0cc-redo.apps.ir-central1.arvancaas.ir&type=ws#proxymelimon``",
+      "latency": 749,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16741",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1775768341.1782258
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AcM+TRmeGxMVOvakEBgN+d5ph9cL+CO/YdoMCBhCgUuVyrW31GXiy6r8noo2fhbEQPI4OsY3W3+ATa0xUYji52kO+As/Ajmu5hrk/3mPwiA6fGy8dwNnjrdeyIjkC4IkHBkkcrpc1gcv8TtJlthfojIqY85rsEeg3hYlp9ggP+6M7ypQ9p3N/ITnDp4J7N8dZ/umYoTvvwRdvTQ0a/YrPvKoWwQg5AJpuzk85vq0bMYDfLSYyPI7kgJaPTn7tWaNIp5nLBi9slCHx5G4mQnJ2yQBLTfJmqtA3YsvgQY0xNuGrUNDND31Tb//L/kYRy4+475Zfeg1P9zcZeRgB0/+8KmXxlx8j6kHAhndiFKPb7cdYAyB48sbtcauJ9QE7DryOFU+no/mqYkoDku+qLVTP4jXWcjSqrf96/CRIZ27BlpB43EqtnjCSoz/E5aKD2rYUJv1txlWCW2exhJCKVunn8hD0dnR4Ho8pTnjR92WpLbFpoDp5bw3Cs7Y2dQMeoWxbicCoL7cHZ63uDAcbaJVcFBD+/I32s5GAFDnmNkW66wYJp1mRhcxn0QjCrGbBeVTf35VpQFu7Ch9jpfjVRhKLJP48JRyKAdYOonuJepuq+EWj+orzmVep8M94HAsFQjU3StmMigpglJ+1r+cSXbGix5nQ1w2LPRb4pWh```",
       "latency": 50,
@@ -193,6 +203,15 @@
   ],
   "proxies": [
     {
+      "key": "95.217.25.41:35432",
+      "link": "tg://proxy?server=95.217.25.41&port=35432&secret=ee104462821249bd7ac519130220c25d096d61782e7275",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16742",
+      "latency": 178,
+      "flag": "🇫🇮",
+      "ts": 1775768341.4942791
+    },
+    {
       "key": "89.167.25.170:443",
       "link": "tg://proxy?server=89.167.25.170&port=443&secret=dd104462821249bd7ac519130220c25d09",
       "channel": "کانفیگ و پروکسی رایگان",
@@ -353,60 +372,6 @@
       "latency": 209,
       "flag": "🇳🇱",
       "ts": 1775726267.7850988
-    },
-    {
-      "key": "65.21.58.190:443",
-      "link": "tg://proxy?server=65.21.58.190&port=443&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/16710",
-      "latency": 134,
-      "flag": "🇫🇮",
-      "ts": 1775720999.253873
-    },
-    {
-      "key": "94.130.190.170:443",
-      "link": "tg://proxy?server=94.130.190.170&port=443&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16708",
-      "latency": 108,
-      "flag": "🇩🇪",
-      "ts": 1775720870.2860148
-    },
-    {
-      "key": "proxytop.space:443",
-      "link": "tg://proxy?server=proxytop.space&port=443&secret=7d793037a0760186574b0282f2f435e7",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16708",
-      "latency": 220,
-      "flag": "🇷🇺",
-      "ts": 1775720870.286013
-    },
-    {
-      "key": "FAST.tgsecurity.online:443",
-      "link": "tg://proxy?server=FAST.tgsecurity.online&port=443&secret=dd7c5d4e1f2a3b9c8d7e6f5a4b3c2d1e0f",
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/16706",
-      "latency": 276,
-      "flag": "🇷🇺",
-      "ts": 1775720861.202573
-    },
-    {
-      "key": "212.80.7.139:443",
-      "link": "tg://proxy?server=212.80.7.139&port=443&secret=ee3f354f86e59e2c166c83031772d92d6379612e7275",
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/16706",
-      "latency": 112,
-      "flag": "🇩🇪",
-      "ts": 1775720861.2025712
-    },
-    {
-      "key": "51.250.38.88:443",
-      "link": "tg://proxy?server=51.250.38.88&port=443&secret=ddc8d206c7720ee8d02b932e14a3714d88",
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/16706",
-      "latency": 138,
-      "flag": "🇷🇺",
-      "ts": 1775720861.2025685
     }
   ],
   "files": [
@@ -458,20 +423,6 @@
       "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
       "link": "https://t.me/xixv2ray/5759",
       "ts": 1775727889.949205
-    },
-    {
-      "name": "@isor1n 🗼.npvt",
-      "ext": "NPVT",
-      "channel": "منبع ضد اختلال | SORiN",
-      "link": "https://t.me/isor1n/4239",
-      "ts": 1775720883.6636748
-    },
-    {
-      "name": "‎⁨اختصاصی رایگان⁩ 33.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "link": "https://t.me/Proxymelimon/6094",
-      "ts": 1775720869.5866072
     }
   ]
 }

@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.214.83:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 129,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16715",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1775732836.1529665
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AeOm909pTjX/ZoexsV6mtt4lA5FkKAAxKmAq7O5Rdo8m46cw/SsdFceLUruuVPO6PoSI8oDvlX4okHtG77AgiQSvCqFQs0CcoImBkxhh3du5r6aPqi/47cRbGdyHtATq+xodEey5bKsRvAiePkXF0IzwxG1WrhRZkrM8attMG9X0Z2xIBQ0zG7U/8Vt4YWojGAz3f9tbocwlv++VK8FgTOB2EHbXq0lHB3suq9v8EMVYNIvCyDSHMzWhLWpEO48OqnSB144oazF8yNoeO1toFvEXBL/6PjzKzNdYLnvYHdfhlIxflRp+W5y8vDEr7fv5JzpurlFCX+jXTBAwf8RxriAY11yrvIdF6l+goxOYRdJYFHb02ZcqxUyOd+mmXT2roCe34z7OhYilAY089KkpXfyHPZ+rRTV2kQv0kH0EmRi5G95CYDcenQugqwp5Dd5N6QKycvL1jPBL1qZlvh2LHqCrq6fQqfb5FKHEhjtXURL017c47WNa`",
+      "latency": 50,
+      "channel": "𝗙𝗥𝗘𝗘 𝗩𝗣𝗡 | SiNAVM",
+      "t_link": "https://t.me/myvpn1404/16714",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1775732770.438698
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AenGpg9Lxj4nKHjis633wXD1//vluc8kYfHgAdgh4ThFoZ6uiil0Nlte3HbTrNzOp2DnnSZULxBVwOfyrZI7MV0pbpwsUtoBOy9R2GqNG35Um/2D0urzUvnFtT/v0N6ftXWG9odLn1lvWRexLFHJ8nP2nVJs5IoT37f9jXQETiwhTGJOhOyFaBgCgftHvd1u46TPX351yxZEBLfD8PZGo3H9MG4cLGbew8V0MxhxjVrnqSdmnOWjUjdwM2p9RP5CDAELxHZ91wpLBsKAA8gWt8vrVSOrY4p3W8uxk41dTvFd64uP4/1gLKOQHLr+9pxARtRviOo1K5XMuFRRCrc7aM4oF8OH6gk8k/uL16SCwMQE6tYgjhcGj6Uda1rC7Dpsm/zN1gXgkQ7+/QDw6m+iqJGHOv1CJtAibJOb6RPfruCHOVnJfggArAPfGEmXRJAi4Q/AD4v2I07npt53LTqY/aLxlDf5EHRiDhPU+p7Hs8Bd2nm4Q751hmw+5vwIyqp/IdmbwBFLh20bWEwsjgYt0nZRsB8igxPK5i2R/QTmSRDOGjX4+akFyxjhtWczL6Kuus4pwShk1N1PZosmJlr9SJqAk+hnTYVPjrhTAg8vW5Qi4wQXfGt9+7Sz7DMHSbMfZgoKvTOMEOdceL7o6altNsAG```",
       "latency": 50,

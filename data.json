@@ -89,29 +89,126 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1775692586.4996836
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://8a30cf48-9fa2-46c5-8815-2822b12852e0@188.114.98.0:443?path=%2F&security=tls&encryption=none&insecure=1&host=xqkxw.ccwu.cc&type=ws&allowInsecure=1&sni=xqkxw.ccwu.cc#%40PlanB_net`",
-      "latency": 3,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/16691",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1775681687.757962
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://3f58cc47-94f6-40d3-8797-1ce66cb0555e@188.114.98.0:2087?encryption=none&type=ws&host=nl4.maxriser.ir&path=/?ed%3D2048&security=tls&fp=chrome&sni=nl4.maxriser.ir&alpn=h2,http/1.1#@proxymelimon``",
-      "latency": 3,
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16689",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1775681638.2565963
     }
   ],
   "proxies": [
+    {
+      "key": "46.225.29.180:443",
+      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16712",
+      "latency": 96,
+      "flag": "🇩🇪",
+      "ts": 1775726368.3522766
+    },
+    {
+      "key": "46.225.29.180:443",
+      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16712",
+      "latency": 99,
+      "flag": "🇩🇪",
+      "ts": 1775726368.3522754
+    },
+    {
+      "key": "178.104.98.160:443",
+      "link": "tg://proxy?server=178.104.98.160&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16712",
+      "latency": 104,
+      "flag": "🇩🇪",
+      "ts": 1775726368.352274
+    },
+    {
+      "key": "116.203.134.165:443",
+      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16712",
+      "latency": 95,
+      "flag": "🇩🇪",
+      "ts": 1775726368.352273
+    },
+    {
+      "key": "116.203.134.165:443",
+      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16712",
+      "latency": 96,
+      "flag": "🇩🇪",
+      "ts": 1775726368.3522716
+    },
+    {
+      "key": "178.104.98.160:443",
+      "link": "tg://proxy?server=178.104.98.160&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/16712",
+      "latency": 96,
+      "flag": "🇩🇪",
+      "ts": 1775726368.3522692
+    },
+    {
+      "key": "proxytop.space:443",
+      "link": "tg://proxy?server=proxytop.space&port=443&secret=7d793037a0760186574b0282f2f435e7)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16711",
+      "latency": 245,
+      "flag": "🇷🇺",
+      "ts": 1775726267.785111
+    },
+    {
+      "key": "78.47.67.183:8443",
+      "link": "tg://proxy?server=78.47.67.183&port=8443&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16711",
+      "latency": 97,
+      "flag": "🇩🇪",
+      "ts": 1775726267.785106
+    },
+    {
+      "key": "proxium.rest:443",
+      "link": "tg://proxy?server=proxium.rest&port=443&secret=a665a45920422f9d417e4867efdc4fb8)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16711",
+      "latency": 2194,
+      "flag": "🇷🇺",
+      "ts": 1775726267.7851048
+    },
+    {
+      "key": "5.75.218.189:8443",
+      "link": "tg://proxy?server=5.75.218.189&port=8443&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16711",
+      "latency": 97,
+      "flag": "🇩🇪",
+      "ts": 1775726267.7851036
+    },
+    {
+      "key": "78.47.67.183:8443",
+      "link": "tg://proxy?server=78.47.67.183&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16711",
+      "latency": 99,
+      "flag": "🇩🇪",
+      "ts": 1775726267.7851024
+    },
+    {
+      "key": "5.75.218.189:8443",
+      "link": "tg://proxy?server=5.75.218.189&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16711",
+      "latency": 102,
+      "flag": "🇩🇪",
+      "ts": 1775726267.785101
+    },
+    {
+      "key": "proxium.rest:443",
+      "link": "tg://proxy?server=proxium.rest&port=443&secret=a665a45920422f9d417e4867efdc4fb8",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/16711",
+      "latency": 209,
+      "flag": "🇳🇱",
+      "ts": 1775726267.7850988
+    },
     {
       "key": "65.21.58.190:443",
       "link": "tg://proxy?server=65.21.58.190&port=443&secret=dd104462821249bd7ac519130220c25d09",
@@ -210,15 +307,6 @@
       "latency": 34,
       "flag": "🇺🇸",
       "ts": 1775691909.8502593
-    },
-    {
-      "key": "proxium.rest:443",
-      "link": "tg://proxy?server=proxium.rest&port=443&secret=a665a45920422f9d417e4867efdc4fb8",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/16690",
-      "latency": 225,
-      "flag": "🇷🇺",
-      "ts": 1775681638.5613635
     }
   ],
   "files": [
@@ -242,34 +330,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/20126",
       "ts": 1775691909.5623496
-    },
-    {
-      "name": "@Acccrd ².npvt",
-      "ext": "NPVT",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/25300",
-      "ts": 1775682433.7988753
-    },
-    {
-      "name": "@Merlin_ViP محدود.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/46344",
-      "ts": 1775682337.9309447
-    },
-    {
-      "name": "⚡️🚀8 April.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/46350",
-      "ts": 1775682337.6223311
-    },
-    {
-      "name": "@RegaPlus.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "link": "https://t.me/Proxymelimon/6056",
-      "ts": 1775681637.866902
     }
   ]
 }

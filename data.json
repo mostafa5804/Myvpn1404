@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://ARKqRDMP2vp6w8vjB3ToiiGwor4DlHbXjW9Y8qpjm15zWhU3BD45rneJGKyJcx3CwXI4zg2SpOiDY6UTFR22SLj+iAyI4Us0H/byDMiQq5IUn3MM7nmqp3xRINAFVmNv+vz6QBz0uxm/uiSV/jpmWVNE+OaNbsgESg21tiudLIADbbhKOd1wL7yjQLlU+Cr+B/uLfD3mRuzHrP0Ji2BtENRmrudvqvhylYn0QdAdli/CX9yOiYKM/tFxaqAOxVZQWQx6uT6anyr/vJdGMJTmIk2VnPaFUIcrM+tz0YcI5yBmmItRJWLsgVHWhxrV3AfG7R5zZgdVewqFOXnO4pDyiBzGfCDL2v+3ep95G8FQRcp96/xoYRrvsAjYWUlRIN+KTgdeLU7qxsNhHBZxCyoTDxDkdU4ui4QI4KpeA4mIKzVG8FBawhqayIvyvBe0Tn4VuyvVBV0CVZwCrMgJkk7Be17GMjXO85mrdu1Rd6whE734cljztP5vVnFQyp1HpkdVsOWSVu3SiJ5ELRHUE8iJJYa5taJguhhAo+zx7mOPTxoM+5Vqla2lEKIZQDkfbODQUEX8n9YWwZvoTrea6o+uY7m69rTlAepqs8f4HhcjLPF9vi3ovR9dkA3HSFgYUJ+wyuocvREs1ElNhZ4YIubBBIFSObDdf5v2B8j+7xoqTM4bi7uvTpFY+KfCaqSo0FKuPlQ=```",
+      "latency": 50,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16782",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1775829343.2850685
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://da70bf4e-da1a-487e-9ebe-5d9e02f8cd73@185.143.233.235:80?security=none&encryption=none&host=vixon.portab.org&type=ws#%40HolyToly`",
+      "latency": 105,
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/16781",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1775829329.6856847
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://af4804b7-a3b4-41c0-8143-822b36479aea@185.143.234.122:80?path=%2F&security=&encryption=none&host=o4.avenflow.ir&type=ws#proxymelimon``",
+      "latency": 106,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/16780",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1775829228.5258102
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.36.189.95:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 105,

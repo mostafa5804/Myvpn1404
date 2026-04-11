@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@63.183.254.133:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 92,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/16825",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1775926991.0775626
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://ffa42f42-57e8-4c8b-af3a-6a5565f37c79@ww.iwantmoney.ir:8880?path=%2F&security=none&encryption=none&type=ws#proxymelimon``",
       "latency": 179,
@@ -182,6 +192,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "vavan.online:443",
+      "link": "tg://proxy?server=vavan.online&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/16824",
+      "latency": 159,
+      "flag": "🇫🇮",
+      "ts": 1775926865.153622
+    },
     {
       "key": "75.119.156.174:443",
       "link": "tg://proxy?server=75.119.156.174&port=443&secret=ee16cc42828b2ed0f1dc3d30049de2e328636c6f7564666c6172652e636f6d",

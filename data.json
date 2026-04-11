@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://6276f547-eaf5-45e6-b033-e86c7b428920@ww.boldtest.ir:8880?path=%2F&security=none&encryption=none&type=ws#@ghalagyann",
+      "latency": 498,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/16857",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1775943597.9912653
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://f4736a41-f88d-48ff-8eba-75eae3d3c6e0@varzesh3.com:80?path=%2F&security=none&encryption=none&host=emergency.copy5.ir&type=ws#@ghalagyann",
       "latency": 37,
       "channel": "ghalagyann",
@@ -392,6 +402,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "116.203.0.182:8443",
+      "link": "tg://proxy?server=116.203.0.182&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/16858",
+      "latency": 153,
+      "flag": "🇩🇪",
+      "ts": 1775943720.0518754
+    },
+    {
+      "key": "65.109.16.146:443",
+      "link": "tg://proxy?server=65.109.16.146&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "IP_CF | Channel",
+      "t_link": "https://t.me/myvpn1404/16858",
+      "latency": 155,
+      "flag": "🇫🇮",
+      "ts": 1775943720.051873
+    },
     {
       "key": "FAST.tgsecurity.online:443",
       "link": "tg://proxy?server=FAST.tgsecurity.online&port=443&secret=ee7c5d4e1f2a3b9c8d7e6f5a4b3c2d1e0f766b2e636f6d",

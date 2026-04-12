@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://fc625795-792d-4d9d-9d38-bffe59467d2d@188.114.98.0:2096?encryption=none&security=tls&sni=daluan.eu.org&fp=randomized&type=ws&host=daluan.eu.org&path=%2F#NetAccount",
+      "latency": 10,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16884",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1775999760.2572842
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e44c9ff3-5a05-4ee9-b050-b8fbc7c1af04@104.18.12.149:2053?encryption=none&security=tls&sni=itfgnf-hkjkhfmhghf-hjmngb.infinitecreativehorizons.com&type=xhttp&host=itfgnf-hkjkhfmhghf-hjmngb.infinitecreativehorizons.com&path=%2F&mode=auto&extra=%7B%22scMaxEachPostBytes%22%3A%221000000%22%2C%22scMinPostsIntervalMs%22%3A%2230%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D#NetAccount",
+      "latency": 8,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16883",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1775999759.8551567
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://22367c45-f6c4-4ca8-8d52-d9787d7bbe91@104.18.12.149:2096?security=tls&sni=cm22-bgphhh.pages.dev&type=ws&path=%2Fdl%2Fep%2Fpage%2Fproxyip#NetAccount",
+      "latency": 8,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16882",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1775999759.5850463
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIk5ldEFjY291bnQiLA0KICAiYWRkIjogIjEwNC4xOC4xMi4xNDkiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiNmNjMTAzYTEtM2U0OS00YzhlLWEyYzEtZjcwZDI0YjE5YzY1IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJiYWNrZmFsbC5hemFkaWNvbmZpZy50b3AiLA0KICAicGF0aCI6ICIvc3RvcmUiLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAiYmFja2ZhbGwuYXphZGljb25maWcudG9wIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogImZpcmVmb3giDQp9",
+      "latency": 10,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16881",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1775999759.27969
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://ARJ8u6REyIDn13fp/W+CyLXNlBj1aelp51xGqIfX3U1gtkwyK14VL3paHH3LYQmzF1ro+trC6BK47r4XG0HJlF3f1MvM1l/UbN/z54x+cv2ykXncVZobj1DGytEacToUFy5yGoOm6CwusvtKyWdetFOE+s60O4y7uwY23XQ19srWeRMQgH25BcsvqVdnFJP+C26LiwzEpJWGjYxfGz9FxubrA8AEgrdcdrF+OjiU1TGx5P/NtR+/uX8admtDuh0UDHnNFZqjDgir+6Eqyy0Flk4X9Ejtmq2NdIT5Ccmvgj5xcG8XbScRrXL1+al958BGhF35VSZt73CbZu9v1+KjMV7MSWH/sNAUKceYEXyju4HBL213mk0xMVisLXZYFdS9e1AKUm96x70D4f6ROoaqmXEskd7bnMsBSq6HrxLGIFmqT80Fls3rpqrwqSMjWejGNUSNN038Ryj4x0Er5NfsN+7Y9XOrBG0/RFM+dCOeY6+DjxPEK7kgYNlqRZyCWFrmA/YfCgOuHFlLxiA2qWX/VxzQX+2T74yvfdHW1pgNm88Fhdb8On3yClhPhIZyWbA6TPhT/aGbXFPt0srwSf1M59mUFcKZsMxavl+urEMutuJUbKiXyuK7fD+aIhlWQzz6tcs+FBkl57oYTGlzbjRttjfsDpHWKqtzPPe5s3MGanpMthIqFBacg1AAia/Uy0DZdFpm66rTJlWgcIiXar+rOp4NlFAH2soL9w==```",
       "latency": 50,
@@ -92,6 +132,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "94.130.190.170:443",
+      "link": "tg://proxy?server=94.130.190.170&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/16885",
+      "latency": 150,
+      "flag": "🇩🇪",
+      "ts": 1775999760.5585027
+    },
     {
       "key": "tggo.store:443",
       "link": "tg://proxy?server=tggo.store&port=443&secret=7uzWmAwONp7D1ujd83Bwkr50Z2dvLnN0b3Jl",
@@ -334,15 +383,6 @@
       "latency": 31,
       "flag": "🇺🇸",
       "ts": 1775979520.4660382
-    },
-    {
-      "key": "176.12.69.32:443",
-      "link": "tg://proxy?server=176.12.69.32&port=443&secret=ee79612e72758e84feb907475118033d**",
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/16861",
-      "latency": 124,
-      "flag": "🇷🇺",
-      "ts": 1775951736.573028
     }
   ],
   "files": [

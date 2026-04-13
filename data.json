@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://157cb924-2adc-4f4e-9d54-ba105b6dff30@www.speedtest.net:443?type=ws&amp%3Bpath=/&amp%3Bhost=vip.hackers855.sbs&amp%3Bsecurity=tls&amp%3Bfp=chrome&amp%3Bsni=vip.hackers855.sbs#@ghalagyann",
+      "latency": 127,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/16944",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1776095542.5846207
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://YWVzLTI1Ni1jZmI6TnZTOE40VmY4cUFHUFNDTA==@217.30.10.70:9046#@ghalagyann",
+      "latency": 132,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/16943",
+      "flag": "🇵🇱",
+      "country": "Poland",
+      "ts": 1776095542.1561239
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.39.125.173:2096?allowInsecure=1&encryption=none&host=aier.eu.cc&security=tls&sni=aier.eu.cc&type=ws#@ghalagyann",
+      "latency": 15,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/16942",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1776095541.6312325
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.224.47.47:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 108,
@@ -183,6 +213,96 @@
   ],
   "proxies": [
     {
+      "key": "95.216.178.41:8443",
+      "link": "tg://proxy?server=95.216.178.41&port=8443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16946",
+      "latency": 150,
+      "flag": "🇫🇮",
+      "ts": 1776095670.2492855
+    },
+    {
+      "key": "95.217.28.246:443",
+      "link": "tg://proxy?server=95.217.28.246&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16946",
+      "latency": 146,
+      "flag": "🇫🇮",
+      "ts": 1776095670.2492838
+    },
+    {
+      "key": "89.125.98.143:4514",
+      "link": "tg://proxy?server=89.125.98.143&port=4514&secret=ee0a638f4a7bd9db9e94449c652ea963066e616e6f2e6861707076706e2e6363&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16946",
+      "latency": 116,
+      "flag": "🇳🇱",
+      "ts": 1776095670.2492824
+    },
+    {
+      "key": "65.109.16.146:443",
+      "link": "tg://proxy?server=65.109.16.146&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16946",
+      "latency": 145,
+      "flag": "🇫🇮",
+      "ts": 1776095670.2492807
+    },
+    {
+      "key": "tggo.store:443",
+      "link": "tg://proxy?server=tggo.store&port=443&secret=7uzWmAwONp7D1ujd83Bwkr50Z2dvLnN0b3Jl&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16946",
+      "latency": 144,
+      "flag": "🇳🇱",
+      "ts": 1776095670.2492793
+    },
+    {
+      "key": "av.extravpn.info:443",
+      "link": "tg://proxy?server=av.extravpn.info&port=443&secret=fd29b8a449151cc37f8c27ebcdd0d43d&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16946",
+      "latency": 676,
+      "flag": "🇷🇺",
+      "ts": 1776095670.2492774
+    },
+    {
+      "key": "81.27.110.238:443",
+      "link": "tg://proxy?server=81.27.110.238&port=443&secret=dd2cfe6040c9e219057ccbe198f209f74d&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16946",
+      "latency": 4227,
+      "flag": "🇩🇰",
+      "ts": 1776095670.2492762
+    },
+    {
+      "key": "92.118.234.215:443",
+      "link": "tg://proxy?server=92.118.234.215&port=443&secret=dddb9b51b5ce9a2820ff62d348cb23f1b9&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16946",
+      "latency": 125,
+      "flag": "🇫🇮",
+      "ts": 1776095670.2492747
+    },
+    {
+      "key": "178.104.72.162:443",
+      "link": "tg://proxy?server=178.104.72.162&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16946",
+      "latency": 123,
+      "flag": "🇩🇪",
+      "ts": 1776095670.2492726
+    },
+    {
+      "key": "94.130.190.170:443",
+      "link": "tg://proxy?server=94.130.190.170&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/16946",
+      "latency": 123,
+      "flag": "🇩🇪",
+      "ts": 1776095670.2492697
+    },
+    {
       "key": "peyk.acharbashi.info:4515",
       "link": "tg://proxy?server=peyk.acharbashi.info&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d",
       "channel": "کانفیگ و پروکسی رایگان",
@@ -327,5 +447,20 @@
       "ts": 1776071197.0971527
     }
   ],
-  "files": []
+  "files": [
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام.txt",
+      "ext": "TXT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20238",
+      "ts": 1776095548.151257
+    },
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20241",
+      "ts": 1776095537.6230354
+    }
+  ]
 }

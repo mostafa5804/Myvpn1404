@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@15.236.148.165:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 148,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17126",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1776168209.8857498
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://f07e31fb-7491-450a-921f-b99400d34796@snapp.ir:80?path=%2F%3Fed%3D2080&security=none&encryption=none&host=1.jojo.avenflow.ir&type=ws#NetAccount`",
+      "latency": 496,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/17123",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776168169.8351738
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@104.18.16.56:2053?security=tls&allowInsecure=0&encryption=none&type=ws&host=sni.111000.dynv6.net&sni=sni.111000.dynv6.net&fp=chrome#proxymelimon``",
       "latency": 2,
@@ -433,6 +453,24 @@
   ],
   "proxies": [
     {
+      "key": "116.203.134.165:443",
+      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/17125",
+      "latency": 163,
+      "flag": "🇩🇪",
+      "ts": 1776168199.2199607
+    },
+    {
+      "key": "116.203.134.165:443",
+      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/17125",
+      "latency": 164,
+      "flag": "🇩🇪",
+      "ts": 1776168199.2199578
+    },
+    {
       "key": "65.109.61.31:8443",
       "link": "tg://proxy?server=65.109.61.31&port=8443&secret=dd104462821249bd7ac519130220c25d09",
       "channel": "کانفیگ و پروکسی رایگان",
@@ -443,6 +481,13 @@
     }
   ],
   "files": [
+    {
+      "name": "NetAccount798.npvt",
+      "ext": "NPVT",
+      "channel": "Net Account | نت اكانت",
+      "link": "https://t.me/NetAccount/17102",
+      "ts": 1776168170.142385
+    },
     {
       "name": "NetMeli(3).npvt",
       "ext": "NPVT",
@@ -785,13 +830,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/2368",
       "ts": 1776160489.5057466
-    },
-    {
-      "name": "@planB_net#38.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2369",
-      "ts": 1776160489.202682
     }
   ]
 }

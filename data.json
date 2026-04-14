@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@63.184.25.161:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 162,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17128",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1776190303.496185
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://20bc570b-0d2e-4514-832b-f588d416bdf2@185.143.234.235:80?path=%2F&security=none&encryption=none&host=vixon.portab.org&type=ws#%40Merlin_ViP`",
       "latency": 114,
@@ -389,76 +399,6 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1776147358.9268305
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://ab1cd516-40d4-43a4-abbf-1d6f9887c237@104.18.12.149:80?path=%2Fir&security=&encryption=none&host=pc40.8sm.ir&type=ws#NetAccount`",
-      "latency": 19,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/16976",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1776146751.9326744
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e9c520a1-8988-4577-bc10-825a42c9773f@md5.apizedbdb.pro:8443?mode=auto&path=%2Fapi%2F%3Fref%3Dsupervoid&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A1000000%2C%22scMaxConcurrentPosts%22%3A100%2C%22scMinPostsIntervalMs%22%3A30%2C%22xPaddingBytes%22%3A%22100-1000%22%2C%22noGRPCHeader%22%3Afalse%7D&insecure=0&host=snime01.apizedbdb.pro&fp=chrome&type=xhttp&allowInsecure=0&sni=snime01.apizedbdb.pro#NetAccount`",
-      "latency": 84,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/16975",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1776146751.6410997
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f0ff4425-8c26-4d81-8662-f34593060c8d@188.114.98.0:2082?encryption=none&security=none&type=ws&host=DOFF.mehrsazi.ir&path=%2F#NetAccount`",
-      "latency": 18,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/16973",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1776146750.9884145
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://469cdccd-a1ed-423d-ace5-647b5b673ac3@104.17.71.206:80?encryption=none&security=none&type=xhttp&host=cdnt.brwakhanbarin.ir&path=%2F&mode=auto#NetAccount`",
-      "latency": 18,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/16972",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1776146750.6051755
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://humanity@www.calmlunch.com:443?security=tls&sni=www.calmlunch.com&type=ws&host=www.calmlunch.com&path=%2Fassignment#NetAccount`",
-      "latency": 90,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/16971",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1776146750.2877026
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://06ef598c-1555-4887-b3f9-08214a2f6792@104.17.72.206:443?path=%2F222.167.202.31%3A7443&security=tls&encryption=none&insecure=1&host=2026.hhhhh.eu.org&type=ws&allowInsecure=1&sni=2026.hhhhh.eu.org#Tel",
-      "latency": 18,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/16967",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1776146681.3679657
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://75b4aaf0-ba89-446c-8eb6-de73cfd8821c@104.18.12.149:443?path=%2F&security=tls&encryption=none&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=000113.shop#Tel",
-      "latency": 18,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/16966",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1776146680.9593506
     }
   ],
   "proxies": [

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://20bc570b-0d2e-4514-832b-f588d416bdf2@185.143.234.235:80?path=%2F&security=none&encryption=none&host=vixon.portab.org&type=ws#%40Merlin_ViP`",
+      "latency": 114,
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/17127",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776183211.7171993
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.236.148.165:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 148,

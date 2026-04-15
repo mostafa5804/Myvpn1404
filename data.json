@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://0184768c-bc89-418e-b64b-0d2739b5b547@185.143.234.235:80?security=none&encryption=none&host=vixon.portab.org&type=ws#proxymelimon``",
+      "latency": 139,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/17143",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776246890.5154243
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AagB6OefL+3ohSoXHT3R9Z7xGUkq1DCC7bxP//TXZLfqnBTfK4UMF6xJIfFRnFUvmdwXDJIg5y/6dm9ff3+pQH1G4IMS90DKGUP0rVdgHNoR7zay5hEFURaje7w3IINg2ji6TUAe00E+OMkq4SS6cLbfEITErw1WxQVzMEAX161w8N24oiVcqnzFd+WyFpSYLrriMb9jhHX58xYcMK73t2OqbxClCFQiVwijn1S7Q/OBYYkUh4F1h5AWniTvUI/QSlQilAsdHBstTorS3+yFQ3FBsZOuRnJYUQ84mjwgztparz5CmQ7oICWC/yNB2Gnm+J6pYkUDrdiqDg/eEK385xBGsqfAAuVOvyFpZ7bhELp2bnQ4KNrn3KKf3+SMnixBUuW4J5SnqtDNYH4sZPnt87+VOodZqkXQenVEWnJZqQOHvizJcVP304XOVbdQK+luchQbRnT+fwlcliatFlNvYuT+FqJTTJju`",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/17141",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1776246875.260073
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://ATZFW2GzCazLAF9A2tURjMsaoOC0GRX/GK8aC3Lb7+l8oW23WCc+jPJsg0aXpSXG8QCnvbQGtWeVEMNxXmxAIoMxfmblz/zC1dMEMwuecUhHhBDR85gg0h3LfpUBllgBY4I0OYe35BPZI1vIJP2TOysVulTwdwqNhN2gwJHFU+KwcJsyYN8UMLzb1Pm6Ot36pIpPc8dGX90oTq8c345z3XrXdzAcGeNODAmu9dd5meAfrfCEYvOw02iKBc6cxhVa2ANJHgMGEzisMZXPIOb+ENjX6pMz3bW3MSs14vdjKJyuxDTCpMguspHbwXwIn/OEYt4iUPZP+Z1GlunjoUV9umKlkoWFn229CnqHWSF0zcjD3EarnJ7DEeGXFewn/hCgkttDGQJP/QlWkErDG1yHaFH4GKupVeAnZ47sgVPR2puCaRkhXqNBe/u5FkWGr2v65xwruDLwwpsnWpzYSLdaKUWTHEydQAiXMLz4+es1XJatl+DsY1rY/qj5WU2GPkJ0MQSJVL79FccP/cGsD1/mAlZwyOZb5rLl+smX+ctgEfIq1LKAOWUZus8XO5Cd/b7wEVr4BKI6I2QWz3YTa6n9yo10pyhOsyXKF18Se6wxKHtZ32DsVTsNVPmJv3Z07HcME6fD3n4iQuomXwEqcTl2LW6zrDGb1aFojqBHbIX14C0GRPG7cL7IvQ==`",
       "latency": 50,
@@ -61,8 +81,88 @@
       "ts": 1776203810.7316835
     }
   ],
-  "proxies": [],
+  "proxies": [
+    {
+      "key": "142.54.189.109:443",
+      "link": "tg://proxy?server=142.54.189.109&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/17144",
+      "latency": 35,
+      "flag": "🇺🇸",
+      "ts": 1776247002.723037
+    },
+    {
+      "key": "65.109.61.14:8443",
+      "link": "tg://proxy?server=65.109.61.14&port=8443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/17144",
+      "latency": 161,
+      "flag": "🇫🇮",
+      "ts": 1776247002.7230358
+    },
+    {
+      "key": "furrow.goitrous.inefficacy.kaunas.unaided.pinoyteleseryehd.net:8950",
+      "link": "tg://proxy?server=furrow.goitrous.inefficacy.kaunas.unaided.pinoyteleseryehd.net&port=8950&secret=ee9c5c58f91ce1bb198dcc68037ea465&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/17144",
+      "latency": 227,
+      "flag": "🇫🇮",
+      "ts": 1776247002.7230349
+    },
+    {
+      "key": "vavan.online:443",
+      "link": "tg://proxy?server=vavan.online&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/17144",
+      "latency": 212,
+      "flag": "🇫🇮",
+      "ts": 1776247002.7230332
+    },
+    {
+      "key": "195.201.250.234:443",
+      "link": "tg://proxy?server=195.201.250.234&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/17144",
+      "latency": 147,
+      "flag": "🇩🇪",
+      "ts": 1776247002.7230318
+    },
+    {
+      "key": "65.109.127.34:443",
+      "link": "tg://proxy?server=65.109.127.34&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/17144",
+      "latency": 166,
+      "flag": "🇫🇮",
+      "ts": 1776247002.7230306
+    },
+    {
+      "key": "94.130.190.170:443",
+      "link": "tg://proxy?server=94.130.190.170&port=443&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/17144",
+      "latency": 148,
+      "flag": "🇩🇪",
+      "ts": 1776247002.7230291
+    },
+    {
+      "key": "95.217.29.187:8080",
+      "link": "tg://proxy?server=95.217.29.187&port=8080&secret=dd104462821249bd7ac519130220c25d09&@vpnbaz",
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/17144",
+      "latency": 161,
+      "flag": "🇫🇮",
+      "ts": 1776247002.723027
+    }
+  ],
   "files": [
+    {
+      "name": "FAST2o6o250955.conf",
+      "ext": "CONF",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20309",
+      "ts": 1776246882.7990177
+    },
     {
       "name": "‎⁨اختصاصی رایگان⁩ 77.npvt",
       "ext": "NPVT",

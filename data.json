@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://6a6ad1f3-241d-48ef-832e-a7535dcf27ae@arvancloud.ir:80?path=%40TunizoNET&security=none&encryption=none&host=enzo.amirenzohost.ir&type=ws#@cicdovpn`",
+      "latency": 544,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/17214",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776349125.338106
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.38.163.166:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 131,

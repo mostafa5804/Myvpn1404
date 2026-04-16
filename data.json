@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.38.163.166:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 131,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17213",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1776341057.30661
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://388a6c57-87e7-420b-afe2-b3eb670fd7da@104.18.16.56:80?path=%2F%20%40ProxyVPN11&security=none&encryption=none&host=vip.yaml7.ggff.net&type=ws#@cicdovpn`",
+      "latency": 19,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/17211",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1776340946.122307
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://5bcfacea-d69c-4e38-9007-80871db80567@185.143.233.235:80?security=none&encryption=none&host=vixon.portab.org&type=ws#proxymelimon``",
       "latency": 106,
@@ -42,6 +62,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "95.217.29.187:8080",
+      "link": "tg://proxy?server=95.217.29.187&port=8080&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/17212",
+      "latency": 157,
+      "flag": "🇫🇮",
+      "ts": 1776340946.618095
+    },
     {
       "key": "proxyrknsosatb.site:443",
       "link": "tg://proxy?server=proxyrknsosatb.site&port=443&secret=eed68360458af63073bac1394e8c7a48da70726f7879726b6e736f736174622e73697465)",
@@ -213,13 +242,6 @@
       "channel": "Net Account | نت اكانت",
       "link": "https://t.me/NetAccount/17136",
       "ts": 1776319698.6462836
-    },
-    {
-      "name": "@Cooonfig(20).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7011",
-      "ts": 1776297231.4960256
     }
   ]
 }

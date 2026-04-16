@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@8.6.112.6:443?security=tls&sni=www.calmloud.com&alpn=http%2F1.1&fp=chrome&allowInsecure=1&type=ws&host=www.calmloud.com&path=%2Fassignment#@NetAccount`",
+      "latency": 10,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/17203",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1776334923.9005866
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://d37a75db-76b6-4db8-b213-0d5b044d138d@8.6.112.0:443?allowInsecure=1&encryption=none&host=hio-awx.pages.dev&path=%2F&security=tls&sni=hio-awx.pages.dev&type=ws#@ghalagyann`",
       "latency": 18,
@@ -9,29 +19,82 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1776333229.8181815
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@51.102.234.219:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 112,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/17189",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1776290953.6476796
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@51.44.188.122:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 108,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/17188",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1776290953.1639316
     }
   ],
-  "proxies": [],
+  "proxies": [
+    {
+      "key": "proxyrknsosatb.site:443",
+      "link": "tg://proxy?server=proxyrknsosatb.site&port=443&secret=eed68360458af63073bac1394e8c7a48da70726f7879726b6e736f736174622e73697465)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17202",
+      "latency": 322,
+      "flag": "🇳🇱",
+      "ts": 1776334850.8576727
+    },
+    {
+      "key": "proxystepa.site:443",
+      "link": "tg://proxy?server=proxystepa.site&port=443&secret=eed68360458af63073bac1394e8c7a48da70726f787973746570612e73697465)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17202",
+      "latency": 283,
+      "flag": "🇩🇪",
+      "ts": 1776334850.8576715
+    },
+    {
+      "key": "brookb631-82e07f23.proxytg.ink:443",
+      "link": "tg://proxy?server=brookb631-82e07f23.proxytg.ink&port=443&secret=f6fe059664c24962c99fbcc32553249e)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17202",
+      "latency": 282,
+      "flag": "🇷🇺",
+      "ts": 1776334850.8576703
+    },
+    {
+      "key": "31.220.78.114:443",
+      "link": "tg://proxy?server=31.220.78.114&port=443&secret=ee5babc986c1c577707c073c59fda904a0636c6f7564666c6172652e636f6d)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17202",
+      "latency": 2182,
+      "flag": "🇫🇷",
+      "ts": 1776334850.8576689
+    },
+    {
+      "key": "proxyrknsosatb.site:443",
+      "link": "tg://proxy?server=proxyrknsosatb.site&port=443&secret=eed68360458af63073bac1394e8c7a48da70726f7879726b6e736f736174622e73697465",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17202",
+      "latency": 431,
+      "flag": "🇳🇱",
+      "ts": 1776334850.857668
+    },
+    {
+      "key": "proxystepa.site:443",
+      "link": "tg://proxy?server=proxystepa.site&port=443&secret=eed68360458af63073bac1394e8c7a48da70726f787973746570612e73697465",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17202",
+      "latency": 462,
+      "flag": "🇳🇱",
+      "ts": 1776334850.8576615
+    },
+    {
+      "key": "31.220.78.114:443",
+      "link": "tg://proxy?server=31.220.78.114&port=443&secret=ee5babc986c1c577707c073c59fda904a0636c6f7564666c6172652e636f6d",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17202",
+      "latency": 135,
+      "flag": "🇫🇷",
+      "ts": 1776334850.85766
+    },
+    {
+      "key": "brookb631-82e07f23.proxytg.ink:443",
+      "link": "tg://proxy?server=brookb631-82e07f23.proxytg.ink&port=443&secret=f6fe059664c24962c99fbcc32553249e",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17202",
+      "latency": 333,
+      "flag": "🇷🇺",
+      "ts": 1776334850.8576581
+    }
+  ],
   "files": [
     {
       "name": "@ghalagyannمنطقه ای .npvt",
@@ -109,27 +172,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/20332",
       "ts": 1776293756.3258317
-    },
-    {
-      "name": "2G-@isor1n.npvt",
-      "ext": "NPVT",
-      "channel": "منبع ضد اختلال | SORiN",
-      "link": "https://t.me/isor1n/4316",
-      "ts": 1776290415.8375869
-    },
-    {
-      "name": "@ghalagyannایرانسل  🥀.npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20328",
-      "ts": 1776290399.359505
-    },
-    {
-      "name": "👉@ghalagyann👈..npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20329",
-      "ts": 1776290399.062562
     }
   ]
 }

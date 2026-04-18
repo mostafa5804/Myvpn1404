@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.38.210.223:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 85,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17405",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1776538950.2343922
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AbtdC6L1vRtKJ9vrpgySyn2CtQ3qSGs38h93YJqQ9B3UayklYvdCA0OHszHKQFRW4TCP3L2SVod4qpe3xDn58N73n01TX5VuQzQi9nLogJ1jERQynrJ+0VEYkY8T4IMmtSq7yBfpVR0CMDUWFj5mu28h8JQxugZ3TBy7DFrHdu2CgGjxVePcDb6p8IFJVIS8wHLnsqwS9QlPjmIemfuVT3a7aX30rgVOoh7cYPFzwG4HxXhg3u3e5UHlOeNflTZjyJvAPnkl2rdEk9PxitVIBwiiS3e10b6soG5xjow6Bf1Npmo5YzItYC2eoJaTlKBTnkJcQVQZkYVwkyYtxXD9Tv/L2poq7hjskFcDoVhpjQ2nIt7ip+chDPc/eH/3ju6cgG9JrEfGpOg7FItidK5TiwTKzrIyXPl7bFHYqDBIN/elsPJQm10GhTgoIqLG34Hvu8KZB3n6IpQd67hFmUp+mrE9yPfGCWo5YwIznT/MD5y51zGFuOsQrBjEIpsJwbOw2zArNMnOCIn4Onxuifrsjz4rfYmLvsIA4HQ/FIH4omONoysRLw9s88OShfRlHLESp3lshbLJC4AKNHLbtZq/d9H780N5h/Ka3iGsPqUgdwkOr4vrMn7f5yuWey74PHH7Vw0QHKV5kqaFGrGBVScQvTSR7YiojRkr4GsQbL+YZgIMA2DWw6ve9oe4JqLnq/kOFkgvZ757mkEATx6LZLReFTI78WsBMV4H4D9kQpXx/FYBRED8EQPJRwM8aKV316615xzTnHqY/cX6XDFPlRcqLpb7n3J5M0RW74J+j0VScDeVsx/aycXnQAbX```",
       "latency": 50,
@@ -612,6 +622,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "46.225.29.180:443",
+      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/17404",
+      "latency": 95,
+      "flag": "🇩🇪",
+      "ts": 1776538939.7042935
+    },
+    {
+      "key": "46.225.29.180:443",
+      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/17404",
+      "latency": 94,
+      "flag": "🇩🇪",
+      "ts": 1776538939.7042913
+    },
     {
       "key": "92.118.234.215:443",
       "link": "tg://proxy?server=92.118.234.215&port=443&secret=dddb9b51b5ce9a2820ff62d348cb23f1b9](https://t.me/configraygan2)",

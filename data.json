@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@15.188.200.62:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 84,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17335",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1776518253.8132076
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.37.187.91:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 143,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -79,19 +89,82 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1776496784.855409
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://42026dab-fe60-4155-8edb-a917ee5e7dee@link2x11580.temp.veraspeed.ir:80?path=%2Ffilimo-video%2F177430809054030600%2F1774365690%2Fcb857b0770767a2b38b3ebc9d4c44d7fc5630fdd%2F196328x264new1-1080p.mp4%2Fs-20-v1-a1.ts&security=none&encryption=none&host=byebye.22.avenflow.ir&type=ws#%40filtershekan_channel`",
-      "latency": 701,
-      "channel": "پروکسی | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/17311",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1776470411.2779553
     }
   ],
-  "proxies": [],
+  "proxies": [
+    {
+      "key": "62.3.12.2:8444",
+      "link": "tg://proxy?server=62.3.12.2&port=8444&secret=ee6f7a6f6e2e7275f22c5421fa893965)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17334",
+      "latency": 2188,
+      "flag": "🇹🇷",
+      "ts": 1776518134.0044923
+    },
+    {
+      "key": "proxy2-sosavpn.duckdns.org:8443",
+      "link": "tg://proxy?server=proxy2-sosavpn.duckdns.org&port=8443&secret=bfb77f1c4bf8a5c16eb5a3c83954ce69)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17334",
+      "latency": 4874,
+      "flag": "🇷🇺",
+      "ts": 1776518134.0044913
+    },
+    {
+      "key": "five.proxyprosto.sbs:443",
+      "link": "tg://proxy?server=five.proxyprosto.sbs&port=443&secret=ee5ebd2af5512770fc537a14dc2f40818877622e7275",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17334",
+      "latency": 267,
+      "flag": "🇺🇸",
+      "ts": 1776518134.00449
+    },
+    {
+      "key": "two.proxyprosto.sbs:443",
+      "link": "tg://proxy?server=two.proxyprosto.sbs&port=443&secret=eece64a43e8c286ab95248a3a66429a8f377622e7275",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17334",
+      "latency": 122,
+      "flag": "🇫🇮",
+      "ts": 1776518134.0044887
+    },
+    {
+      "key": "prxflow.live:443",
+      "link": "tg://proxy?server=prxflow.live&port=443&secret=eed68360458af63073bac1394e8c7a48da707278666c6f772e6c697665)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17334",
+      "latency": 198,
+      "flag": "🇬🇧",
+      "ts": 1776518134.004488
+    },
+    {
+      "key": "five.proxyprosto.sbs:443",
+      "link": "tg://proxy?server=five.proxyprosto.sbs&port=443&secret=ee5ebd2af5512770fc537a14dc2f40818877622e7275)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17334",
+      "latency": 1298,
+      "flag": "🇺🇸",
+      "ts": 1776518134.0044866
+    },
+    {
+      "key": "prxflow.live:443",
+      "link": "tg://proxy?server=prxflow.live&port=443&secret=eed68360458af63073bac1394e8c7a48da707278666c6f772e6c697665",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17334",
+      "latency": 247,
+      "flag": "🇩🇪",
+      "ts": 1776518134.0044851
+    },
+    {
+      "key": "two.proxyprosto.sbs:443",
+      "link": "tg://proxy?server=two.proxyprosto.sbs&port=443&secret=eece64a43e8c286ab95248a3a66429a8f377622e7275)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17334",
+      "latency": 186,
+      "flag": "🇫🇮",
+      "ts": 1776518134.0044825
+    }
+  ],
   "files": [
     {
       "name": "@ghalagyannصبور باشید وصل میشه 🟢.npvt",

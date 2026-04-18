@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AQ2JXcwpNS4Rn4/FvnnEKDAtkz0UugV/O7NV/9QFvU8TyCiB5CV8kkFzwgTaspF1R28JcZoLDuKx7DSfsPUrfySmzBWs3rE9vNHRPyzb+2KB5sTBCcXFAVIeY2GK+dBSKetL8vBUqEOKFKnVsXJw294uVNvakRxaObEfs8ck13ZFE1VtWaC44DeRADe4nB+yoxhdSAUr65/I9C9oBQUSgboc0EvBIExpy9TlCFtOzcbgmdbaiYMUFrzFpBEzdAD6MxnjneI7Vh3Jrff357E8+gYnT/dKGh1eNJETjaNi8GyxnsEhYVODOQgUKrYWPfflXOZSN2p/3EEFaaXvQDsBLVO0UAM+NNGeLgHKWxPQj4ItpP9ZQqUh72Na6T8B7euJ22F+z1CvvLAdIwtmuAE5x14q1XaZonosbxUrL/GhiepbVaTamrX+yhurcAzZIHsCEPqnFBk7XVPyXLP8PqnFtiBe5iZlAqpIfHPGqZWI8vt83oWatDeG/nQ0Epe5BAnLyWR8XZ51m5/CcsIMr+9FHd15Ns+e2fBhc/npUDBo9iFCFKtE/lXMMtROuDQ63aebfsuNgL8NidaCNIGAtuLtE/LXZY2NqN37VyfSVqtM2P91AEmwM3cpITpYXj35IsVRwLAq2ULtr5aW+o1/1DI2NUM0BTtG32CBOUTRS0ybr9FY4GOKXJRQo6zoQ97sdMrQ/QmP3wU68Z2SjQ==```",
+      "latency": 50,
+      "channel": "𝖳𝖨𝖱𝖤𝖷𝖭𝖤𝖳",
+      "t_link": "https://t.me/myvpn1404/17407",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1776541808.6563704
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.38.210.223:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 85,
@@ -589,36 +599,6 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1776502747.055489
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://bce6cee2-c3bc-40ea-89b4-fb5de15c5d38@185.143.234.235:80?security=none&encryption=none&host=vixon.portab.org&type=ws#proxymelimon``",
-      "latency": 85,
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/17319",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1776497941.0674863
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@3.65.185.26:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 92,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/17315",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1776496814.6078367
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://xxxxx",
-      "latency": 50,
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/17314",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1776496784.855409
     }
   ],
   "proxies": [
@@ -1174,6 +1154,20 @@
   ],
   "files": [
     {
+      "name": "50 V2ray‌ (@vpnbaz) (19).txt",
+      "ext": "TXT",
+      "channel": "VPN MARKET",
+      "link": "https://t.me/anty_filter/22892",
+      "ts": 1776541876.8458369
+    },
+    {
+      "name": "@ghalagyannمتصل.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20418",
+      "ts": 1776541770.3977702
+    },
+    {
       "name": "@ghalagyannرایتل ⚡️🤍⚡️.npvt",
       "ext": "NPVT",
       "channel": "ghalagyann",
@@ -1319,27 +1313,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/20402",
       "ts": 1776502736.4018195
-    },
-    {
-      "name": "@ghalagyannهمراه ایرانسل رایتل .npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20398",
-      "ts": 1776497934.5268283
-    },
-    {
-      "name": "@ghalagyann👈مخابرات وای‌فای .npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20399",
-      "ts": 1776497934.2456088
-    },
-    {
-      "name": "@ghalagyann 🚀 مخصوص تلگرام.npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20400",
-      "ts": 1776497934.0142345
     }
   ]
 }

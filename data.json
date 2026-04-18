@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.187.91:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 143,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17332",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1776510400.7906263
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://f714a988-a4fd-4d57-8757-c96ac641401a@8.6.112.6:443?encryption=none&type=xhttp&security=tls&sni=de.lezzatzone.ir&fp=chrome&allowInsecure=1#@ghalagyann",
       "latency": 5,
@@ -173,13 +183,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/20397",
       "ts": 1776491720.4680588
-    },
-    {
-      "name": "@TirexNet _ شبانه.npvt",
-      "ext": "NPVT",
-      "channel": "𝖳𝖨𝖱𝖤𝖷𝖭𝖤𝖳",
-      "link": "https://t.me/TirexNet/2668",
-      "ts": 1776466261.3495178
     }
   ]
 }

@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.65.185.26:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 92,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17315",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1776496814.6078367
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://xxxxx",
+      "latency": 50,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/17314",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1776496784.855409
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://42026dab-fe60-4155-8edb-a917ee5e7dee@link2x11580.temp.veraspeed.ir:80?path=%2Ffilimo-video%2F177430809054030600%2F1774365690%2Fcb857b0770767a2b38b3ebc9d4c44d7fc5630fdd%2F196328x264new1-1080p.mp4%2Fs-20-v1-a1.ts&security=none&encryption=none&host=byebye.22.avenflow.ir&type=ws#%40filtershekan_channel`",
       "latency": 701,
@@ -109,46 +129,6 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1776459316.7852707
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@15.236.63.145:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 136,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/17289",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1776453407.25516
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AZYsxBl5u+lv8ey92lB86dNbRRHjpWhTUMYfAiYTuuEKVMM7mYsXHh/C/lDNlQpcgpJOGlVSJB6GPxz6COh82BYL0r0Jj+dlte1Aj/dUekYoaP4zCBfc+NSPfElbq12up0nmNDqX2P1B0G3gzLVsd3Bnubi7EbyPuwZ7+fun6pbnyy1BnKZtEYRiRb9JHvJiuxTu6BvAUn86uegl55/03AJM582M8uCceqf9ORzDLcYuufPJzeUFdGbEtGaNaLxfxxLKog6z1B5kEt2GpAgZ0qeWGdoQs9/zgYb7DpzV/FsBNINJQf9VoIFL5M77rDAkbWI81eDx6eZH1ZQyFnHIbCizEIJeEwk8Yu7FphKftpDnor5Lxqm3v+U3GALjz+yeJ+cKo4B6M2OK+cOCvo1iArv/sIz14Fuxd4t/+8cBfn3oBk4Hdv/ZYhdUmhBIiq2E58SbjCsRSb+JpJI+zqEhebSjTzh0b40=`",
-      "latency": 50,
-      "channel": "پروکسی | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/17288",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1776448695.4257786
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://17c3a2f2-38a8-4d39-84c2-a6af16eefcaf@snapp.ir:8880?path=%2F&security=none&encryption=none&host=dl-io.shomalnojm.ir&type=ws#%40filtershekan_channel‌`",
-      "latency": 333,
-      "channel": "پروکسی | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/17287",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1776448695.1254907
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://d83ab7c4-95f8-4812-8b68-6172a8f747a0@arvancloud.ir:80?path=%40TunizoNET&security=none&encryption=none&host=dom.amirenzohost.ir&type=ws#%40filtershekan_channel",
-      "latency": 428,
-      "channel": "پروکسی | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/17286",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1776448689.408355
     }
   ],
   "proxies": [],

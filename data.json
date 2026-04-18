@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://5377335c-508c-42e9-9e20-1f6c1eebed03@185.143.233.235:80?security=nonespx=@filtershekan_channel----@filtershekan_channel----@filtershekan_channel----@filtershekan_channel----@filtershekan_channel",
+      "latency": 144,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/17423",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776555708.3457758
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AS1HGw7lFKPq3Js4coDGOrFaQJsDvOW22XL53LRonzY3ixT6jYCFUWt+yd1MzqWoh4aIIne1N0Q49mhIhmAPFs5mJxIhg37XfMkGvzFwcmYcjryTx6HpEIhw/qymcMFCGj+gXB7Sy9bHK5HVKsq3r3nRldsz2szXQkyaGfbOFuOBpex0oj+WBdQ2yDoXLO/t2dGeFXveIbY9Q0oTsedfaieFNIJfTBWLQIvTI90NbpPdHP8Imkz64ekXbOHYdDIDgVWLj6RGXhdiwyG2PNhzfGxrXtMKWt7LcSraxhrfqiHZhHna71By+5/neNje+g4STvw4AROCO4KJm3DObyxkjxI7dTH3brK/q6f/VLwn4V3M1boq92vRcL9fEjKpvgsEq2ADCSDdyM2MA5HPqa1iqeRtsYuZezjFzskhc2iA/WsITmlgGUqfpVtgXaq+zbcS3MGwpNM4l6ZGcmeKAoXlqrnOkgucVqskaNmDjY96Ui1+WmYJTy/9pTBdTRsucK4gegQmAJDnDsA=`",
       "latency": 50,
@@ -599,16 +609,6 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1776518253.8132076
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.187.91:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 143,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/17332",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1776510400.7906263
     }
   ],
   "proxies": [
@@ -1164,6 +1164,13 @@
   ],
   "files": [
     {
+      "name": "🍓@ xixv2ray کوه.npvt",
+      "ext": "NPVT",
+      "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
+      "link": "https://t.me/xixv2ray/5940",
+      "ts": 1776555701.8004942
+    },
+    {
       "name": "DNS_Resolvers_10000 (2).txt",
       "ext": "TXT",
       "channel": "VPN MARKET",
@@ -1316,13 +1323,6 @@
       "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
       "link": "https://t.me/xixv2ray/5928",
       "ts": 1776519493.4924917
-    },
-    {
-      "name": "@ghalagyannصبور باشید وصل میشه 🟢.npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20407",
-      "ts": 1776512395.5840006
     }
   ]
 }

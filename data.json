@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AWO/94zNUq8khPQf4UEtHtRL3VI7LquTF0Y0/J38z/0buLnZcuY46qz4F4GfdgTEdGHc/nFPWdkRFN5p6/Jtc8aBgWjDXPBabneFKuPeafCU5CbcJ6f/MAysApyS5aNpePDW3ar6y1JzeuEJHVKdzBkXQdsiNhLHbCF9nRWwERwtWT/ApBb7IRVAIlK4QDML4Djezv/ulljCwAKW/rvlByJ6eY0/7Y09sU/tW0naZaQEIfS+LNz/3EMKTcWKqSdtTLut0YM+QLn15Y46ylKcAaUiYb4RbtgoS75DVOiK1V6On0j/iD4ZstPoZ8WFSL/JD7s2SWra+HIOcHBaEAmzEY1rX0psxnbeMduh7nvJ3SbElG75ddxIe49PrQcv06LS8qlMOQX8fl/Nvd0ANtOQvGL79UPxGevHxPNkYrep1hjNPeK8wataBqJ/aajUNOEQ3IEHVMWBd/VHMGRJYG5fqWzxA8LGEZAz9O1d0UlYZ9z9yO0c8o9okIs4+X6MIDAlKTMaiq27pH9C7PuUdvg38/R9RLRQqvdYJdiHOzTlp92YnZAFFuc9vFuzdj+jB/H/RxfSYjI1H5Ve70velOL3Fxt82rnDpZJNRPvDRc+A68lLUQnhKoe82Kgd46mCtwvF3Lf1MxAphZKLGP/SdlXsjBstTT7o4Hcm05M5d0s=`",
+      "latency": 50,
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/17529",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1776684181.0977361
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.237.148.202:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 85,

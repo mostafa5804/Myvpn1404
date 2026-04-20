@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@18.193.0.159:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 125,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17657",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1776705274.6329377
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://trojan@152.53.45.251:8888?path=%2F&security=tls&host=jflsjlaf.pages.dev&type=ws&sni=jflsjlaf.pages.dev#%5B30900%5D+-+Telegram+%3A+%40configraygan",
       "latency": 136,
       "channel": "کانفیگ رایگان",
@@ -989,16 +999,6 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1776697225.4228153
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@154.197.75.138:2096?path=%2F%3FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2%3D&security=tls&encryption=none&host=sni.111000.indevs.in&type=ws&sni=sni.111000.indevs.in#%F0%9F%87%A9%F0%9F%87%AA8762+%7C+%E2%9A%A1%EF%B8%8FTelegram+%3D+t.me%2Fproxymelimon",
-      "latency": 2,
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/17544",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1776697225.119079
     }
   ],
   "proxies": [
@@ -1400,6 +1400,27 @@
     }
   ],
   "files": [
+    {
+      "name": "NetAccount63.ehi",
+      "ext": "EHI",
+      "channel": "Net Account | نت اكانت",
+      "link": "https://t.me/NetAccount/17201",
+      "ts": 1776705239.0477583
+    },
+    {
+      "name": "NetAccount64.ehi",
+      "ext": "EHI",
+      "channel": "Net Account | نت اكانت",
+      "link": "https://t.me/NetAccount/17202",
+      "ts": 1776705238.758635
+    },
+    {
+      "name": "NetAccount65.ehi",
+      "ext": "EHI",
+      "channel": "Net Account | نت اكانت",
+      "link": "https://t.me/NetAccount/17203",
+      "ts": 1776705238.453894
+    },
     {
       "name": "S-NPV47.npvt",
       "ext": "NPVT",

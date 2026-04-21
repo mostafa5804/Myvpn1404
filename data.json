@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AVv6Y4ONqSXmOwd5T6a2rANOazf2j30DaDEb4cGnHJFcnkd0hUHYlqj8Y0MzsQ1PHyiTcVTMQDkTSToczjb9RmjV9Cyy70wwo8HSyoBQrSQapakTMTdvf8GrRaIAcop2S17Zyvd9yfY5lVryetO3OWaVELpO3/rYg19kh8yy36kaYl4xLmMrH2MgVYtWGVSuoVLYqOAiYdvg4U6eMpMEdSUjIrV7SWUVIQoPjL2FnoeILxUCaCyRI6Zq3z03lFVwW+UQvN7VNMAU6NrfC3WINlQ/qBUlG8H70f2mHdayNkD/ZgOFpKZqciSltiDs6YHsj9IkW7Jvt+t6Q0Ui/NirQZrnd643Z3Wav1KnGF9yP0tettVDalKhDPhfI5t7DzbxUz5BXxIrnyPOn3w6DknTf2aHjs/Gq/PMeZeKS0HChuGNJnuZPKTQIuh9UacnyGkjVI/8YwjZgrz3c9Q4kzqrJl1fXUqjsPUI+11WLZr6FkfvhgnCqikqSYOH0NWWmgv7HwbM3ERlooP1J48gpiU1HDlJRvA57FrJp1TN1Ekm5YX2JAEeeVsfLDLQzWdTenGeQXNI4Gtv29OOkALCpn7mSfVSBVeYEa9IuKQ=`",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/17716",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1776771353.7300637
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@nl-90w-c.southnetworks.cloud:80?encryption=none&security=none&type=ws&path=%2FgetWorkerUpdates#%20`",
       "latency": 155,
@@ -332,6 +342,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "y.vkgosuslugi.ru:443",
+      "link": "tg://proxy?server=y.vkgosuslugi.ru&port=443&secret=eef7f61a772049acbf6712254678726d8477622e7275",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/17719",
+      "latency": 410,
+      "flag": "🇩🇪",
+      "ts": 1776771373.2381322
+    },
     {
       "key": "65.21.184.226:54921",
       "link": "tg://proxy?server=65.21.184.226&port=54921&secret=ee104462821249bd7ac519130220c25d096d61782e7275)",
@@ -677,6 +696,20 @@
   ],
   "files": [
     {
+      "name": "👉@ghalagyann👈کانال تلگرام.ehi",
+      "ext": "EHI",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20499",
+      "ts": 1776771365.3536415
+    },
+    {
+      "name": "5.ehi",
+      "ext": "EHI",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2117",
+      "ts": 1776771358.9672549
+    },
+    {
       "name": "👉@ghalagyann👈کانال تلگرام (1).npvt",
       "ext": "NPVT",
       "channel": "ghalagyann",
@@ -710,20 +743,6 @@
       "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
       "link": "https://t.me/xixv2ray/6042",
       "ts": 1776729120.0016475
-    },
-    {
-      "name": "DNS_Resolvers_300 (3).txt",
-      "ext": "TXT",
-      "channel": "VPN MARKET",
-      "link": "https://t.me/anty_filter/22911",
-      "ts": 1776725710.8025136
-    },
-    {
-      "name": "🍓@ xixv2ray یاسمنگولا.npvt",
-      "ext": "NPVT",
-      "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
-      "link": "https://t.me/xixv2ray/6037",
-      "ts": 1776725580.352243
     }
   ]
 }

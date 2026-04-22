@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@35.181.84.127:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 107,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17802",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1776888662.792691
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@18.185.73.234:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 112,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -152,6 +162,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "142.54.189.106:443",
+      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/17801",
+      "latency": 24,
+      "flag": "🇺🇸",
+      "ts": 1776888552.305311
+    },
+    {
+      "key": "107.150.34.102:443",
+      "link": "tg://proxy?server=107.150.34.102&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/17801",
+      "latency": 25,
+      "flag": "🇺🇸",
+      "ts": 1776888552.3053095
+    },
+    {
+      "key": "107.150.34.99:443",
+      "link": "tg://proxy?server=107.150.34.99&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/17801",
+      "latency": 24,
+      "flag": "🇺🇸",
+      "ts": 1776888552.3053079
+    },
+    {
+      "key": "107.150.34.100:443",
+      "link": "tg://proxy?server=107.150.34.100&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/17801",
+      "latency": 22,
+      "flag": "🇺🇸",
+      "ts": 1776888552.3053052
+    },
     {
       "key": "proxy.proxymtproto.net:443",
       "link": "tg://proxy?server=proxy.proxymtproto.net&port=443&secret=dd97caa3c6888366f26b12f994f02ecf1a",

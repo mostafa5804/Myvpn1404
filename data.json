@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AUdB205fAw5WxqAOPlbVEegSBruX2BINpX7FeTpjGOgmvOXKkO2gCXz6x3m5/v1aBquE6jYYHHBDemdH/0lbwgsvMlKN2tS8QGMLcsoahIiRg6wfkDIyg30BPiMUmf7z6G6sxfAtWzKIRneeCiKRmC5Mo5b8+wO2AIYJ0VHmyBWndVqoBkY3l42EMykHw++T03uPHefU2CV57CpRz2yzlLAYLjc1jgZcKaNXj+YQGSBRyGubO+Ag12G5r3nTrZTuB1qdgDPDuAw/S2ViZyRjdGXkYX1BMiBuwQYztLqVEt5ozzoH8uFKl1pOk7gO3SiEK6Igijr8azcsgqNFB0u22EwWpTFNzCjiJG7FSm5lrT3WZoJUQmSUGRJRJ5hI8NSU8vcvRosOFuDKjYVYresb20E7WDqGPKmTOuOA+e61bCBlAAlm93G1/QPxpYAAfqU/Uw580UPyXIhr7sgIdsNVpNmRJ68KjjWGd7hY1xGbOAJtMyRKmYEJ4z+T/kz72StBdUSZna7IDt9z7WnRtIji5FBUxse5dhRDfqZZoA==`",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/17862",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1776985038.5510201
+    },
+    {
+      "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AZuamXJ3YPYgIAYsvYoZi1R2t7ku+xffHYgf7uGVXjfQZRmWBeUj855GRxc2XdDly71mx3V2AVWrY21Jj/eDGoxYKxMmwL4gs8yWIvhirHEavmcZqOagvKAcd5b74i5shDFN1B3E+OUchsjJ/cvF8h6TNjFt0rX/Q6hpf47LVGYKDu30lPk4VOzmEMIk2SXK+1yl531J5zI/ay55W6HYAagxSxVI3hsNWot2uW2LrgbgMrYgi2BLrYacRs3USkkh5rIablV585rS9BFY5aR5wgOl0MynxrCb56jk7HSlu1XKRZ1FfChUd5SQN38o7EbXPkoLAaJLEuLp1edqF7Qp4B7tESPKOZeCeh8dhBhZeX4x/ThxLqOFSSlES6Ml9913dTiSMBAY6GvWNgUMhbpTbOh5ZRdL11iEmNewEUkRHBNR+RGlU81JieS/mfVKsCqAj2pHlkTPWZFVlyx+Z1cfuMgtqiY+X/uqJm/QUReT+yKgCSY3O9CyKAu5u2/CvSZGBQxRjygDwUEgjGijts+422R8IQ10zhRTcJWZe16CaFkt5+bPRrJABMGXAxfDNVPcZw75tHbN3EBwh3F5EVT30v7+ffdMHhfPuug8oiUVS5EJF3KNUFoe30ta/ZSQOcm4i4T9```",
       "latency": 50,
       "channel": "VPN MARKET",
@@ -263,6 +273,15 @@
   ],
   "proxies": [
     {
+      "key": "185.235.243.5:3389",
+      "link": "tg://proxy?server=185.235.243.5&port=3389&secret=eeaefab844b716f0db81fdfafbd66874f25475726b6979652e676f762e7472",
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17865",
+      "latency": 125,
+      "flag": "🇮🇷",
+      "ts": 1776985048.6386113
+    },
+    {
       "key": "65.109.30.208:4455",
       "link": "tg://proxy?server=65.109.30.208&port=4455&secret=dd104462821249bd7ac519130220c25d09",
       "channel": "کانفیگ و پروکسی رایگان",
@@ -270,27 +289,30 @@
       "latency": 176,
       "flag": "🇫🇮",
       "ts": 1776944168.8432555
-    },
-    {
-      "key": "mirror2.blockdiscord.ru:443",
-      "link": "tg://proxy?server=mirror2.blockdiscord.ru&port=443&secret=ee499ae63085c1db81cccf337fc9507d8a706574726f766963682e7275",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/17816",
-      "latency": 284,
-      "flag": "🇷🇺",
-      "ts": 1776940103.6570873
-    },
-    {
-      "key": "50.7.41.140:443",
-      "link": "tg://proxy?server=50.7.41.140&port=443&secret=ee4171cd13a37543e2eb8ddaecf4531034706574726f766963682e7275)",
-      "channel": "🔱BugFreeNet🔱",
-      "t_link": "https://t.me/myvpn1404/17814",
-      "latency": 4196,
-      "flag": "🇳🇱",
-      "ts": 1776940029.693818
     }
   ],
   "files": [
+    {
+      "name": "@ghalagyann بمب افکن .npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20593",
+      "ts": 1776985048.3417592
+    },
+    {
+      "name": "@ghalagyann ⁵² ☠.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20594",
+      "ts": 1776985047.9244199
+    },
+    {
+      "name": "10.ehi",
+      "ext": "EHI",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2140",
+      "ts": 1776985033.306651
+    },
     {
       "name": "@ghalagyann نامحدود.npvt",
       "ext": "NPVT",
@@ -409,13 +431,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/20565",
       "ts": 1776944160.872208
-    },
-    {
-      "name": "❗.npvt",
-      "ext": "NPVT",
-      "channel": "༼ᴀᴍɪʀᴀʟᴛᴇʀ ᴏғғɪᴄɪᴀʟ༽‌",
-      "link": "https://t.me/Amir_Alternative_Official/940",
-      "ts": 1776940085.8315065
     }
   ]
 }

@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://a2772ce5-647f-4967-835a-135ed9701422@185.143.234.235:80?path=%2F&security=none&encryption=none&host=vixon.portab.org&type=ws#NetAccount`",
+      "latency": 130,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/17825",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776957554.683833
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIk5ldEFjY291bnQiLA0KICAiYWRkIjogIjE4NS4xMS44OS4zOCIsDQogICJwb3J0IjogIjEyODA5IiwNCiAgImlkIjogImFlZGRiYmJkLWFkOTUtNDllOC1lZTMxLTdjYWNjN2VkZTExNyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAidGNwIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIiIsDQogICJ0bHMiOiAiIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiLA0KICAiZnAiOiAiIg0KfQ==`",
+      "latency": null,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/17824",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776957554.2811058
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.224.68.33:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 154,

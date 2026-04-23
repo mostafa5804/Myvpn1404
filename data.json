@@ -1,6 +1,86 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://ARFpNcVvJHW1yH53Z5PCGSqIZ4j9CijsyEwf6sKPvVjUqQAsLjTBkLBxVWYJGu8Qpq0Cp9ajFv1XEq1ZRcRpPsu7GEivCpzQgECcf2f2gDcTmj6JfQE4Ajg8oBr2Lfi3qQdnGcMxqgGiWsXbosVLQxBWzgC8vy3hlq3EIagN3yvH9+lKNGvPtc64orBlof8ulL/xuoE3FyJwzLMrARZFmFu/vLop8yv3DY3ttm1y8+PI801bsqyEGnTFug3FzEC1YgjseSjVTGt2k4PWlythxGnljzsUzU16adv7rlBIbkMkwZ9mpzozVz9T1cfsxRg2y/eXfuu+4Bnwy0uWObALjnt5KpjbKw0Tnp4n9i7p3gWQbQr+X33KTJLh0Fl7d8yg1L4UIkgDkBMZcUAdUrbp4f51Bb35BAIVya5/cZS8YW0XZ2Q/3Z8s95LohJ3akCtJmAS0pENgWJX1G6Uwx8FUjY/3J0RvbaUxQah9lA9B+3urUCW8ZaFTxBFubCdKxmpwair9XxuNg+V21p1maYyWApSWweNCJnVhatpjnjuE1hEgt/YUMutayv/nAlzkVhGkopLqwys0CdvdJik9i0lqzo9qOtojnIiEiMqfPi0HhqtyXdfRQUegkNzgA2G5hv/4oNEuDf4bwWzzi2lFRYUikhf7wwWxpu5FyEGf6iqwDKlXzQyTpnggrov5aHwFA+4mdO4TOQiSTI70w63+AkLC/yLNVl7o+7CE/r2/UtTY`",
+      "latency": 50,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17838",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1776966698.3529847
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://93b405fe-e394-491f-ac78-a0a1b7d7d430@Snapp.ir:80?type=ws&encryption=none&path=%2F&host=ach.mizbangostaran.ir&security=none#@ghalagyann`",
+      "latency": 419,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17835",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776966697.4310555
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://899c3358-75ee-481a-97d8-26fb3a6fa21c@trex.nahidapp.com:443?path=%2Fvless-ws&security=tls&encryption=none&insecure=0&host=trex.nahidapp.com&fp=chrome&type=ws&allowInsecure=0&sni=trex.nahidapp.com#@sogoandfuckyourlove",
+      "latency": 313,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17834",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776966696.6359644
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://b9ffc9c6-aad0-0056-45ee-4f551a0f0b4a@tr.tehranionliine.ir:80?path=%2F&security=none&encryption=none&type=ws&sni=185.226.94.188#@ghalagyann",
+      "latency": 540,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17833",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776966695.8495219
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://5eb2b49f-2657-4d90-ac8a-050a384c5547@185.143.235.253:80?path=%2F&security=none&encryption=none&host=ss.oppobot.ir&type=ws#@ghalagyann",
+      "latency": 61,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17832",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776966694.7937531
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://22109ab6-bfdd-4062-ae1c-054c74353e39@185.143.233.235:80?security=&encryption=none&host=vixon.portab.org&headerType=&type=tcp#@ghalagyann",
+      "latency": 128,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17831",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776966694.3913012
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://c7201267-8439-4ba6-8c41-fc0ecd5472b3@mochi-d1bdb57cd7-kalak.apps.ir-central1.arvancaas.ir:443?path=%2Fvless&security=tls&encryption=none&insecure=0&host=mochi-d1bdb57cd7-kalak.apps.ir-central1.arvancaas.ir&type=ws&allowInsecure=0#@ghalagyann",
+      "latency": 765,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17830",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1776966693.969714
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AQSTCdqKy/hgBqDsbqEA6ILJKdMiYjvTMd6M8wFHk2LfWH1SaxmkYwqFxEOVtu+Gq3c7ArVM88+DiKYWeKBLTuWH3Y78mc/uIlGckvSdywLPKDn57YQVWd9sxRiRvRGpb9p06+HwT9B2GOVWlzwy8Vll5XXc/jx8Rcjidr0L0UNrLT9JJNjgI6FjhiJlRq63nYEnbfouluqiHKEUzql29tgg+NFMutue/6PXlZnBrS3OPjkiniHqPeKOyDgpZ24ORDxiFmeZ41otGoG7Qets/N0liWtVDI/kcrD4Ig1Z2CpV8dY1DH2oM5CyM0P0GwYF52jHvPZGUrcC1xkUYcbjryw11I5zcQO0BqpccZ70/1ffSKCeC8/5oJ6NMJgkWILOEJripiYRKrrdBQxn+wbM60GzQdgJ6LAoAbUo98/DfixHlDwcB6idKwX49+rdWbWID02AKAKyy9tg8GiKeRMNuXyqMHAEIgHO54W1EfXiAKzjXiv07MUvix/3OEd3gdtTjPjb7JQ8KW3Wg+zbUyJQNnGoPldSWe2XcOJ7tgoYS0M7kYd1WjufDMkGx+55s2xCRIEMxuu3Q18SjdqC8iE/x7+QI7bNly9FoIG2j2UuZUBAPQvQj/MpTcPGbvA3CwakhltnuIzJkTm35uX4gcb24meU6BwDKuZlThByWduIuu1PvrC/h/TqunwxonCIp89jInIXasryUydOumHO8/86vPzqltsYlaCIFt5b3gbmYQMQaPk=`",
+      "latency": 50,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17828",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1776966692.487178
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@63.182.246.38:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 92,
@@ -192,6 +272,27 @@
     }
   ],
   "files": [
+    {
+      "name": "@‎⁨تلگرام ما ghalagyann⁩.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20574",
+      "ts": 1776966698.0408719
+    },
+    {
+      "name": "@ghalagyann ⁴² 👑.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20576",
+      "ts": 1776966697.7384698
+    },
+    {
+      "name": "@ghalagyann ⁴³ 👑.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20578",
+      "ts": 1776966692.7870762
+    },
     {
       "name": "👽.npvt",
       "ext": "NPVT",

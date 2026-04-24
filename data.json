@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@15.237.229.47:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 120,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17887",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1777057514.0912046
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@63.181.194.157:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 90,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -178,13 +188,6 @@
       "channel": "پروکسی | proxy | filtershekan",
       "link": "https://t.me/filtershekan_channel/2154",
       "ts": 1777045491.8301685
-    },
-    {
-      "name": "موقتی.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/47056",
-      "ts": 1777011779.4414418
     }
   ]
 }

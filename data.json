@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://10d15584-fe06-4c78-b106-7a96439e731b@185.143.233.235:80?security=none&encryption=none&host=vixon.portab.org&type=ws#%40ghalagyann%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
+      "latency": 82,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17873",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777030682.487037
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://f20de03b-c016-45cd-a6e2-d73713fa1fe0@185.143.234.235:80?security=none&encryption=none&host=d.nsa03.com&type=ws#@ghalagyann`",
+      "latency": 1128,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/17872",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777030682.137159
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.224.33.14:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 120,

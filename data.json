@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://233ac1d2-c00c-4a3f-8b1d-47099f100693@snapp.ir:80?security=none&type=ws&headerType=&path=%2F%3Fed%3D2080&host=1.jojo.avenflow.ir#connected-9",
+      "latency": 307,
+      "channel": "منبع ضد اختلال | SORiN",
+      "t_link": "https://t.me/myvpn1404/17941",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777139079.1439967
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://c334010c-b5eb-4d80-bc93-9d7b52b03e6e@varzesh3.com:8080?security=none&allowInsecure=0&encryption=none&type=ws&host=pt.novatechplus.ir&path=/#@ghalagyann`",
       "latency": 85,
       "channel": "ghalagyann",
@@ -132,6 +142,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "dedicated.love-internet.xyz:4515",
+      "link": "tg://proxy?server=dedicated.love-internet.xyz&port=4515&secret=eee9a4f23b1d768c04a8d7f39120ca5b6e626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/17940",
+      "latency": 216,
+      "flag": "🇳🇱",
+      "ts": 1777139068.2857463
+    },
     {
       "key": "178.104.98.160:443",
       "link": "tg://proxy?server=178.104.98.160&port=443&secret=ee636c6f7564666c6172652e636f6db6",
@@ -269,6 +288,13 @@
     }
   ],
   "files": [
+    {
+      "name": "@ghalagyann ⁶ 👾.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20634",
+      "ts": 1777139059.5472572
+    },
     {
       "name": "isor11111n.npvt",
       "ext": "NPVT",

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@35.181.15.157:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 136,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/17925",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1777123265.8868997
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@172.64.149.54:8443?path=%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&insecure=0&host=sni.111000.dynv6.net&fp=chrome&type=ws&allowInsecure=0&sni=sni.111000.dynv6.net#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
       "latency": 2,
@@ -92,6 +102,51 @@
     }
   ],
   "proxies": [
+    {
+      "key": "win.sosproxy.space:443",
+      "link": "tg://proxy?server=win.sosproxy.space&port=443&secret=ee477ccce74a28c13a2ef6ec9e01510c3164726976652e676f6f676c652e636f6d)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17924",
+      "latency": 344,
+      "flag": "🇳🇱",
+      "ts": 1777123139.9252577
+    },
+    {
+      "key": "proxytg.fit:443",
+      "link": "tg://proxy?server=proxytg.fit&port=443&secret=eec8f164f338f20e2e3c7a0f4e0408a51270726f787974672e666974)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17924",
+      "latency": 348,
+      "flag": "🇷🇺",
+      "ts": 1777123139.9252527
+    },
+    {
+      "key": "168.222.254.235:443",
+      "link": "tg://proxy?server=168.222.254.235&port=443&secret=094873899b09916d9cbf2d97bad72be1)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17924",
+      "latency": 135,
+      "flag": "🇩🇪",
+      "ts": 1777123139.9252517
+    },
+    {
+      "key": "proxytg.fit:443",
+      "link": "tg://proxy?server=proxytg.fit&port=443&secret=eec8f164f338f20e2e3c7a0f4e0408a51270726f787974672e666974",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17924",
+      "latency": 428,
+      "flag": "🇷🇺",
+      "ts": 1777123139.9252503
+    },
+    {
+      "key": "win.sosproxy.space:443",
+      "link": "tg://proxy?server=win.sosproxy.space&port=443&secret=ee477ccce74a28c13a2ef6ec9e01510c3164726976652e676f6f676c652e636f6d",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/17924",
+      "latency": 692,
+      "flag": "🇳🇱",
+      "ts": 1777123139.9252477
+    },
     {
       "key": "116.203.134.165:443",
       "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6",

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://ff6d6f8e-79f2-441e-ac39-bc3406f86e5c@khan10.tarfandgallery.sbs:443?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&fp=chrome&type=ws&sni=khan10.tarfandgallery.sbs#%40filtershekan_channel",
+      "latency": 1628,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/17904",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777102692.8982525
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AZSKFwF578M1+ndq0VDOwiBzvSYqW0AZX+1RTHEQgHOoChC56MZxH1Wjdm7mNA5Vf7tDxCoR+y70NtbWIFywImwE8aU3lQHNGLgSERUfo239gkoIN4j4XJRkyubGw/jzEn0GOqfiPWohuwzAcB0EdjAtxKpRoAMhhBTrpRS0JWC3rbRhv/Qr6CRizkFZ+WwTv4tkzIPGxaNmk5M32k4iqX6gBaf8uqiZwMD0BNIO2NxNCbH+5TtnmHnA3OwtW5T+kshC5yam49cQVU6zcbsc1zAsX9SQhQ8OWRDNUJOzuJGNrS2EMTFyVRf00DQowWIwJg/1a0sX4YRTr8Z8S/k2lEFFVJxfTc1iphlnQp0UEzXuLiUjE+2kKUvLg3+GmMifNZAOyhNkjQ8JKtDMMK9cR2jnDod8vr/eqkL6C8RLCH9baqoyFi0hE5alq/YUJJ/f3cn0mnght+Rfa3FRyCJV0CQqNo35fU8vpQe4QHZ/ToPWIQDdnQItkS19p+HXhAe/XBqBYYHAIitnnr5y5pM4XVfjnLk9CvlcIoKw6Mte4h46mb+7/35kMuW+711B6P2Q1105fuZf9QJG8sR0J87ewEiamTSGq1mYHT07VpP5ydMgxKlNOzkxmUIMK736qzoIMl8418YvuLXudrFs1yvc9MgTB9RcRxM4eks4UEPFvLpb5eUfp+jY71VSS1fzXit1WrEj2YhGxZ0jgkJeJia3dAiALLDyNMVeVXs4J9rB8igAbisseWQ=```",
       "latency": 50,
@@ -89,19 +99,18 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1777064197.2448382
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@15.237.229.47:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 120,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/17887",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1777057514.0912046
     }
   ],
   "proxies": [
+    {
+      "key": "49.12.79.244:443",
+      "link": "tg://proxy?server=49.12.79.244&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/17909",
+      "latency": 114,
+      "flag": "🇩🇪",
+      "ts": 1777102713.6914613
+    },
     {
       "key": "178.104.98.160:443",
       "link": "tg://proxy?server=178.104.98.160&port=443&secret=ee636c6f7564666c6172652e636f6db6",
@@ -149,6 +158,34 @@
     }
   ],
   "files": [
+    {
+      "name": "@ghalagyann ¹³ ☠.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20613",
+      "ts": 1777102707.107014
+    },
+    {
+      "name": "19.ehi",
+      "ext": "EHI",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2165",
+      "ts": 1777102698.6518588
+    },
+    {
+      "name": "20.ehi",
+      "ext": "EHI",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2166",
+      "ts": 1777102698.4283967
+    },
+    {
+      "name": "21.ehi",
+      "ext": "EHI",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2167",
+      "ts": 1777102698.1528277
+    },
     {
       "name": "@ghalagyann 🍑.ehi",
       "ext": "EHI",

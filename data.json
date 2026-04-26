@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://bebd2f87-d823-4916-86d1-4672d781f004@useredge1.noroozmobarak.com:8080?path=%2Fweb-panel2&security=none&encryption=none&host=my.ozvinoo.ir&type=ws#%40filtershekan_channel",
+      "latency": 1333,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/17986",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777211090.9729683
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://eaae7973-cef2-0e01-e597-b7f5392a69f5@meli3.masterdadeh.ir:80?path=%2F&security=none&encryption=none&type=ws&sni=185.226.94.200#%40filtershekan_channel",
+      "latency": 293,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/17985",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777211084.2910323
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.36.179.38:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 105,
@@ -239,6 +259,27 @@
     }
   ],
   "files": [
+    {
+      "name": "‎⁨پخش کن دادا⁩.npvt",
+      "ext": "NPVT",
+      "channel": "منبع ضد اختلال | SORiN",
+      "link": "https://t.me/isor1n/4690",
+      "ts": 1777211132.0722444
+    },
+    {
+      "name": "‎⁨۱۰گیگ تمیز⁩.npvt",
+      "ext": "NPVT",
+      "channel": "منبع ضد اختلال | SORiN",
+      "link": "https://t.me/isor1n/4693",
+      "ts": 1777211131.848329
+    },
+    {
+      "name": "@filtershekan_channel.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2204",
+      "ts": 1777211101.2825327
+    },
     {
       "name": "27.ehi",
       "ext": "EHI",

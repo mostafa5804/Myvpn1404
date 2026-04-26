@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://bc41bd46-48c5-4a67-b4d0-2463ab023592@dl.corashop.ir:80?encryption=none&type=ws&path=%2F&host=dl.corashop.ir#%40isor1n",
+      "latency": 369,
+      "channel": "منبع ضد اختلال | SORiN",
+      "t_link": "https://t.me/myvpn1404/18011",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777236592.9153502
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.39.77.217:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 128,

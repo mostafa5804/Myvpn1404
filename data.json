@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://c59834b1-ec3d-4682-8580-861a400235bd@185.143.234.235:80?security=none&encryption=none&host=d.nsa03.com&type=ws#%40filtershekan_channel",
+      "latency": 86,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18018",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777240731.0646303
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://f38d6075-96d6-4b7e-bab6-5f6144b59a3e@185.208.79.246:5782?type=tcp&encryption=none&security=none#TTT",
       "latency": null,
       "channel": "منبع ضد اختلال | SORiN",
@@ -351,6 +361,13 @@
     }
   ],
   "files": [
+    {
+      "name": "29.ehi",
+      "ext": "EHI",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2211",
+      "ts": 1777240736.3292782
+    },
     {
       "name": "freee.npvt",
       "ext": "NPVT",

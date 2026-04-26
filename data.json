@@ -2,6 +2,36 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://f38d6075-96d6-4b7e-bab6-5f6144b59a3e@185.208.79.246:5782?type=tcp&encryption=none&security=none#TTT",
+      "latency": null,
+      "channel": "منبع ضد اختلال | SORiN",
+      "t_link": "https://t.me/myvpn1404/18016",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777240033.945528
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJmcCI6IiIsImF1dGhvcml0eSI6IiIsImV4dHJhIjoiIiwiaG9zdCI6ImFjaGEzLmJhdHRsZWRucy5pciIsInNlcnZpY2VOYW1lIjoibm9uZSIsImZyYWdtZW50IjoiIiwiYWxwbiI6IiIsImFkZCI6IjE4NS4xNDMuMjMzLjEyMiIsInBhdGgiOiJcLz9lZD0yMDQ4IiwiYWlkIjoiMCIsInYiOiIyIiwidHlwZSI6Im5vbmUiLCJkZXZpY2VJRCI6IiIsImlkIjoiMjJmY2RhMGItNDViZS00NDdlLWI4MjItN2Q0Mzk0MTkyZjdmIiwibmV0Ijoid3MiLCJ0bHMiOiJub25lIiwic2VlZCI6IiIsInBvcnQiOiI4MCIsInNuaSI6IiIsImhlYWRlclR5cGUiOiIiLCJwcyI6IkBpc29yMW4gMkciLCJtb2RlIjoiIn0=",
+      "latency": 126,
+      "channel": "منبع ضد اختلال | SORiN",
+      "t_link": "https://t.me/myvpn1404/18015",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777240028.653973
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://Ac4IqzloDUI+X//LNDGecuh3mB/HvJ1+EeceBvX7Vv2ghOzmg/Vq6mt4g/xJPry3dKQ3ju34v8wmQr2bXCE5Yq73zQhbAbM2IvzboStnuu6HM46GkEr0lNYipyYCGd4oLYUf4aNKXlQi9/XWdFDvwFfF/uHfkFnP3661bW8ocB36uRxOdpii/jMsYGwZ0cc3Q+lGYvHt0MZfUtYDgppx3mcnBGcFuYMHviErj2SfJXzFa9NSkoa92GV5ZV97NLL9mucS7DY4jLJEPqzBFmu7k2VxZQ83AhBZ/PpL1sLgGczvMexsphrsDl+41ehcWTCHoWKWEVFL3AunANZ4y+bx5EyZM2eck5WWYCC4PSmxX4dkV+LQTCeSD1eu7A30lUHFxw3tCZbORnBbIm5BscO70H1uoPNYwMOsvhsWG59yED1dhcd4O5sRPXyt5bvqs6ddoJ8Tp2e7ZoMTNkdOa+YYAtg1Ukx5AiWuB8JyEwVbo6uScM8v8gdIIyVBgnxJ3d9ak73PK/QH5nceU7lwCBHb4A3aRuf2E12wx313b+HnWReG3tG1gRQ8UPTNQHx2k00HdEJc3zPI0iK4qJiYb2CiLOgOTRl3LGqtitk+vE5kyytlLzy6Lvm7xYOABXGIm8o1LCs4yLQqFoDR55NoYmnG9w==`",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18012",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1777240000.1943164
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://bc41bd46-48c5-4a67-b4d0-2463ab023592@dl.corashop.ir:80?encryption=none&type=ws&path=%2F&host=dl.corashop.ir#%40isor1n",
       "latency": 369,
       "channel": "منبع ضد اختلال | SORiN",
@@ -203,6 +233,15 @@
   ],
   "proxies": [
     {
+      "key": "142.54.189.108:443",
+      "link": "tg://proxy?server=142.54.189.108&port=443&secret=7gnbgVptgqMf2nb4ciMMaddwa2didWlsZC5vcmc",
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18014",
+      "latency": 37,
+      "flag": "🇺🇸",
+      "ts": 1777240005.9512103
+    },
+    {
       "key": "173.249.8.245:443",
       "link": "tg://proxy?server=173.249.8.245&port=443&secret=ee99dc82d629d9d7cfd41e690029878522636c6f7564666c6172652e636f6d",
       "channel": "🔱BugFreeNet🔱",
@@ -309,36 +348,23 @@
       "latency": 28,
       "flag": "🇺🇸",
       "ts": 1777200994.1074097
-    },
-    {
-      "key": "116.203.134.165:443",
-      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/17963",
-      "latency": 118,
-      "flag": "🇩🇪",
-      "ts": 1777195803.0965378
-    },
-    {
-      "key": "116.203.134.165:443",
-      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/17963",
-      "latency": 117,
-      "flag": "🇩🇪",
-      "ts": 1777195803.0965362
-    },
-    {
-      "key": "87.106.137.212:21212",
-      "link": "tg://proxy?server=87.106.137.212&port=21212&secret=312b91cf4831abf49809466752b9c364",
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/17962",
-      "latency": 126,
-      "flag": "🇩🇪",
-      "ts": 1777195699.9540493
     }
   ],
   "files": [
+    {
+      "name": "freee.npvt",
+      "ext": "NPVT",
+      "channel": "منبع ضد اختلال | SORiN",
+      "link": "https://t.me/isor1n/4761",
+      "ts": 1777240034.2150853
+    },
+    {
+      "name": "@ghalagyann 💪.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20681",
+      "ts": 1777240005.670359
+    },
     {
       "name": "@Merlin_ViP.npvt",
       "ext": "NPVT",

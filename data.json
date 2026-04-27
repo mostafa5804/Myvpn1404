@@ -289,39 +289,27 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1777240000.1943164
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://bc41bd46-48c5-4a67-b4d0-2463ab023592@dl.corashop.ir:80?encryption=none&type=ws&path=%2F&host=dl.corashop.ir#%40isor1n",
-      "latency": 369,
-      "channel": "منبع ضد اختلال | SORiN",
-      "t_link": "https://t.me/myvpn1404/18011",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1777236592.9153502
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.39.77.217:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 128,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/18010",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1777230394.3284287
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://4085e7cf-989e-4f92-a9c6-891b4b6e8daa@104.20.6.134:8880?type=httpupgrade&encryption=none&path=%2Fjoin-proSSH-join-proSSH-join-proSSH-join-proSSH-join-proSSH-join-proSSH-join-proSSH-join-proSSH-join-proSSH-join-proSSH&host=armenia.chatgpt.com.siasia.ir&security=none#%40proSSH",
-      "latency": 19,
-      "channel": "PRO SSH",
-      "t_link": "https://t.me/myvpn1404/18009",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1777230302.454186
     }
   ],
   "proxies": [
+    {
+      "key": "116.203.134.165:443",
+      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/18048",
+      "latency": 122,
+      "flag": "🇩🇪",
+      "ts": 1777282000.910246
+    },
+    {
+      "key": "116.203.134.165:443",
+      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/18048",
+      "latency": 128,
+      "flag": "🇩🇪",
+      "ts": 1777282000.9102433
+    },
     {
       "key": "62.238.15.255:4455",
       "link": "tg://proxy?server=62.238.15.255&port=4455&secret=dd104462821249bd7ac519130220c25d09",
@@ -376,41 +364,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/20681",
       "ts": 1777240005.670359
-    },
-    {
-      "name": "@Merlin_ViP.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/47151",
-      "ts": 1777230258.2035797
-    },
-    {
-      "name": "‎⁨نت ملی سرعت بمب⚡️🔥⁩.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/47152",
-      "ts": 1777230257.899501
-    },
-    {
-      "name": "موشک🔥🚀.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/47154",
-      "ts": 1777230257.6201367
-    },
-    {
-      "name": "موشک 🚀.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/47155",
-      "ts": 1777230257.3759797
-    },
-    {
-      "name": "‎⁨موشک🚀❤️‍🔥⁩.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/47160",
-      "ts": 1777230257.0502841
     }
   ]
 }

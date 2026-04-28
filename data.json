@@ -9,69 +9,46 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1777320883.5106757
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://c0899a53-cc3b-4066-a3b4-d6d07b4853ee@react.dev:443?mode=packet-up&path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=grand-short-auto-shahriar.vercel.app&fp=chrome&type=xhttp&allowInsecure=0&sni=react.dev#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C```",
-      "latency": 12,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18073",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1777315686.9543684
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f9de46ab-814f-4c36-97b4-023c4f256123@arvancloud.ir:80?path=%40TunizoNET&security=none&encryption=none&host=ri.amirenzohost.ir&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
-      "latency": 98,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18072",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1777315686.6656797
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://0a2e9ef5-dbcd-472f-b0d4-9939d82f5717@abr.superip.ir:8080?path=%2FAPI%2Fsuperip&security=none&encryption=none&host=ne.landing-sours.ir&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
-      "latency": 614,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18071",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1777315686.2897503
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://c59834b1-ec3d-4682-8580-861a400235bd@185.143.234.235:80?security=none&encryption=none&host=d.nsa03.com&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
-      "latency": 87,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18070",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1777315685.3574672
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://65462646-6d80-4463-b47b-3529e531ab65@snapp.ir:80?path=%2F&security=none&encryption=none&host=iranfuture.musicritmic.ir&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
-      "latency": 352,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18069",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1777315684.983076
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://a6fb69b5-c73e-4ba7-94ca-89e107720794@185.143.233.235:80?security=none&encryption=none&host=d.nsa03.com&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
-      "latency": 1109,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18068",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1777315684.351213
     }
   ],
-  "proxies": [],
+  "proxies": [
+    {
+      "key": "46.225.29.180:443",
+      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/18083",
+      "latency": 92,
+      "flag": "🇩🇪",
+      "ts": 1777360417.522724
+    },
+    {
+      "key": "116.203.134.165:443",
+      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/18083",
+      "latency": 90,
+      "flag": "🇩🇪",
+      "ts": 1777360417.522723
+    },
+    {
+      "key": "46.225.29.180:443",
+      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/18083",
+      "latency": 94,
+      "flag": "🇩🇪",
+      "ts": 1777360417.522722
+    },
+    {
+      "key": "116.203.134.165:443",
+      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/18083",
+      "latency": 94,
+      "flag": "🇩🇪",
+      "ts": 1777360417.5227206
+    }
+  ],
   "files": [
     {
       "name": "@ghalagyann نامحدود .npvt",

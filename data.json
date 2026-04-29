@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://84db5209-9d91-4af9-ab12-ffa625fe69b5@trex.nahidapp.com:443?path=%2Fvless-ws&security=tls&encryption=none&insecure=1&host=trex.nahidapp.com&fp=chrome&type=ws&allowInsecure=1&sni=trex.nahidapp.com#@ghalagyann`",
+      "latency": 749,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18101",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777444301.9882252
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://Aa++kL2acaYO7QR06sd3T1nagv4UWW9/arjRFNCiMUKR5vpAQ7mPSOTwUc81wdERwqpdPHm9++kYH06k3VVKUWuHGQnKuIkS8GLPf9gF/FeKsXKOwtnqo3kkQoKCZoxhqCYBteD5YWBrEYC3HWBBCzVYsL2YMae/CREvb57q+Ujr/YatAah8OMrrn4h0zojUgkZqRbKlv7H4r/45p+ipc09K4zBgLAWOSZKboLuZwDZIK91WJ5QXjcshD88br8e7vdE4sPcZnAcQZT33PRtuWasF6/Djg9p8xJpi9EtTAKbbyZcIFvzcF6MtWV/5jhKQtdhtiAWSnTNvmR32W/ztO7jysYKZE8/lSNJLgmqH2hLM0r25hE0JB33QaGt+W9o+rp+b7G3Grvz54shAiHw1kXt+noDN0mDpiMURWCpieNV25SP6kTHv5fyCIaP2TDXTit/tIorLDYrE0zMi7zU6qCqZEgY4wsu6l2g8vvs2IOls0ysCCE88I4caZWnIWG7P7QLcjiDclFJ/ssSMO7ztU7wlpMOFJolZ0+154M/uywjrTAAQriedw1ZSTTLmXQE9NFKrBMxrwHZV1bJf/YH1lcHOvk8S7GhID+QAK7Er5PoJZkSHDKTA9Iy4dmDwaS12XsxeXI2aI4dZjdbx+BjCIR5Q+mICfq3wjaq3dTOPZMyAWw/7Xq64UvUH75C9kuKauWHUeSKxzBleokUal4za3QtnV/F4L2rKJ6CFa4I6bAOv3woi```",
       "latency": 50,
@@ -59,20 +69,17 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1777402756.3202198
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@3.123.242.84:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 153,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/18092",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1777396230.7251604
     }
   ],
   "proxies": [],
   "files": [
+    {
+      "name": "@ghalagyann یارانه.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20737",
+      "ts": 1777444302.2895641
+    },
     {
       "name": "@filtershekan_channel (1).npvt",
       "ext": "NPVT",
@@ -86,20 +93,6 @@
       "channel": "منبع ضد اختلال | SORiN",
       "link": "https://t.me/isor1n/4888",
       "ts": 1777409154.7347534
-    },
-    {
-      "name": "S-NPV53.npvt",
-      "ext": "NPVT",
-      "channel": "VPN MARKET",
-      "link": "https://t.me/anty_filter/22966",
-      "ts": 1777395586.8503144
-    },
-    {
-      "name": "speed.npvt",
-      "ext": "NPVT",
-      "channel": "منبع ضد اختلال | SORiN",
-      "link": "https://t.me/isor1n/4866",
-      "ts": 1777395477.192501
     }
   ]
 }

@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://ARFoiGTzWEPGpBrEvrwsZwxr0BUzkLY4/uf7x2Y8613Td2O5JdeI6Ph6lgXFxzwv4ytUiCQf/1PlBC6AIg6wJfH+FYNIXqgkzD89U8ADZ2SAxowTZvINrp3rD1+QxQKk06MOPtNm1eQtfO07KQOpH4qxAdKBTk9bEgyapBHoJcmh4rIrNCy6/Qy2EXblylBibb3peOGj/nLVWV5R3eqpZDt/9IMNUSjM5OqW2GxJp8MAowRkkd0ZDpFT/cmZXGq3/QtZQfzwMB3TO3d1xx1JdDWQ4jTCoFvqGJ148cm+Fy66euKgQb1iHAVVaMJKwLV59ENqRulAHwVktlbMM3hnEHNVGW1wY6LkkP0EKfUVQvEFlgUyiN+xb7WyigR7Tp6rBF67i7uN1kX2ssCVoDS993xrdfppIDH7/yd+GTFdG96Z1srLVZtaciHzdjvslycZ+aJsjWct1nseNKxRyifDXDZy25pbB/Z3/7MkOQrVxbSIwlNwAnFN5UEEKGmyZRwABTNF9BPlyPdqLTiik06Z5zzOYhfsf87AG8IaMO8m9iouSncBsGhnchBFvj+xsq7gy3A3XFRIiuW1T/ZiOGPwqces6QduR4ZkYwFinfHs2oFSTvzv83iQQALwjAOg+2tQ9uCpcUgLr1M1zGU+7A==`",
+      "latency": 50,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18201",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1777584649.8854432
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AZoLeBVejcqm1ZzpziEBgN+6/pzrG3yKC3TfTL37K1+fDL6C8LRnK1W15fr0OY/sPA8RuGpxDafZj7u/CzzwFDOTGV98Zpfk84cUC79SnZ231B2+ABZZlaV4DQt9ReyfUlIDKE/6qbn9QxYbVc3KYRIRtcq0Xtcc+d1N7vTTXhocu3ps54EQ/3k0qocinoYiwXsycn8fhmPGlPBOM1VwlCVg73Mq0TIqxUOnyGetZ1B57eBBiKZ2/pqtiCEWxNFZQkLnM/i4viwyJFYa/0w3nQjVap0bq/HWMh36XtabFE+HkAEs7ejGoswRLBhFuvATEgx3YGZbCm+r8U/dlQ677E/dZzNmq8UMwkjAzzhjJxWxlZsZQissIFUPO4Knj8YQC2nFMJCsKx/T/YSSTn7V/ea/sqInI5WNM0CfQLSiN24/UV09vAFW4SWflGbEnCDxMjRvrF8UIlDK73q1xxJ2cOr3VE3jLfd2+Ip8WwJZZq7HgwpDhJKW5tZXXMoRCunN1mIHmAWnwz9QZQ/BR4HdrYLLgq09hH8SY1vHC9F1ffL9gzjDE2EwdvS1AyuxjN4ArYC1LpjaNby1MOst1KmzAAdpRq+CgP7pZzyhNpvlhaLPJ0mn`",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18200",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1777584640.4157255
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://telegram-%40dickiriptorbot@react.dev:443?mode=auto&path=%2F%40dickiriptorbot&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=telegram-dickiriptorbot.vercel.app&fp=chrome&type=xhttp&sni=react.dev#%40filtershekan_channel",
+      "latency": 181,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18198",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1777584634.8311145
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://b13d6475-07c5-3cfe-99c3-c0b8230672af@me.ciliko.ir:80?path=%2F&security=none&encryption=none&host=me.ciliko.ir&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
       "latency": 975,
@@ -669,27 +699,30 @@
       "latency": 227,
       "flag": "🇳🇱",
       "ts": 1777541567.9464357
-    },
-    {
-      "key": "46.225.29.180:443",
-      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/18145",
-      "latency": 95,
-      "flag": "🇩🇪",
-      "ts": 1777540945.932645
-    },
-    {
-      "key": "46.225.29.180:443",
-      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/18145",
-      "latency": 96,
-      "flag": "🇩🇪",
-      "ts": 1777540945.9326427
     }
   ],
   "files": [
+    {
+      "name": "40.ehi",
+      "ext": "EHI",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2283",
+      "ts": 1777584640.1260247
+    },
+    {
+      "name": "@filtershekan_channel (7).npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2285",
+      "ts": 1777584634.240971
+    },
+    {
+      "name": "نت ملی💥.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت ملی 🪽",
+      "link": "https://t.me/net_melli1/1833",
+      "ts": 1777584619.6652792
+    },
     {
       "name": "Love U🤍.npvt",
       "ext": "NPVT",
@@ -801,13 +834,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/20782",
       "ts": 1777541551.1418982
-    },
-    {
-      "name": "NetAccount73.ehi",
-      "ext": "EHI",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/17291",
-      "ts": 1777540913.7026377
     }
   ]
 }

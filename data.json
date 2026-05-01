@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@18.196.242.104:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 122,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/18243",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1777655125.5363994
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://1f5358e8-f57c-44b8-9864-9c236672fbc8@185.143.233.235:80?path=%2F&security=none&encryption=none&host=d.nsa03.com&type=ws#@ghalagyann`",
       "latency": 2153,
@@ -277,27 +287,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/20812",
       "ts": 1777621229.2200317
-    },
-    {
-      "name": "iR145.ehi",
-      "ext": "EHI",
-      "channel": "TirexNet",
-      "link": "https://t.me/TirexNet/3232",
-      "ts": 1777610065.901691
-    },
-    {
-      "name": "xixv2ray ترکیبی سایفون.txt",
-      "ext": "TXT",
-      "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
-      "link": "https://t.me/xixv2ray/6252",
-      "ts": 1777610012.7473457
-    },
-    {
-      "name": "🍓@ xixv2ray  قان قان.npvt",
-      "ext": "NPVT",
-      "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
-      "link": "https://t.me/xixv2ray/6253",
-      "ts": 1777610012.4647377
     }
   ]
 }

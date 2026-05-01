@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://ab32f0e5-5b77-4497-98e2-625673a3cb61@snapp.ir:80?encryption=none&type=ws&path=%2F&host=sphrrzv.iranofilm.ir#isor1n-n9vino1v",
+      "latency": 326,
+      "channel": "منبع ضد اختلال | SORiN",
+      "t_link": "https://t.me/myvpn1404/18246",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777660636.8244734
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AbqRfZtRjd+8TyNQpE9PeFYDWv+YW8tKXkTcCBxPhh6lw1AKYUoxGGV9i2RuGqPwgRLj/v2QBUUJ1e1Gorl1fB8TjGT5Sd6VgHP7AVjsvaSiKUWdtvFlxdkaw43yas530MHtYknF2iB1+olCFLMV9I4hX0h6CN2lOaOLH23boQVQ1t5BBh3B+f9O95o+vtRBIjbquw0vhtoB5B2ocD3W+XCUzHyLVMqnX0NLuCxoci3xqW8OYPGM0cdUWbDktqO5kwlfg+oHC34y1Z5tJHNrdPPleolSXZWifo/LpTcKb2Ac3fYZPkQJ9Mi6uXlCbd9tSL9cX7QvlUK1+rxFrO8BvOMHizims2o5fhXjxwpxmHsOm79AeFQy5XBNqYnt+fKBZysVr8Wr1w7goj6W3r8+CuE9ukyaHncBDB1Q/Jlq5A8agyIekKL9gOEDaUpwn/V2fKM8YAg05L0ECYsRkcvGmrodDZJ/IqUhRIvd+VjFAPvx0Y90blWHbs0xTxz9UF/RBiYpOs8PULkfMjNAdywYjS+pX9dokzHBf/qhfuSrBwUnyFiM8VHTLduY0c9pau+/Z1qRlyHNkiKeWXKWBwTtoCK211qc`",
+      "latency": 50,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18245",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1777660623.9184563
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@18.196.242.104:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 122,
@@ -183,6 +203,13 @@
   ],
   "proxies": [],
   "files": [
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20821",
+      "ts": 1777660623.615287
+    },
     {
       "name": "xixv2ray  ترکیبی سایفون.txt",
       "ext": "TXT",

@@ -1,6 +1,76 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://9ca57861-f89f-4cab-bae6-32491c4d1a7a@185.143.233.5:443?encryption=none&type=ws&security=tls&path=%2F%40alaedin%3Fed%3D128&host=alaedin10.8lack.ir&sni=alaedin10.8lack.ir&alpn=h2%2Chttp%2F1.1&fp=firefox&allowInsecure=0#id%20tel%7B%20%40proxymelimon%20%F0%9F%87%AC%F0%9F%87%A7``",
+      "latency": 132,
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/18270",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777722734.1894026
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6bab2b96-c7c9-4f67-8d73-2be702c6f2c2@trex.nahidapp.com:443?path=%2Fvless-ws&security=tls&encryption=none&insecure=1&host=trex.nahidapp.com&fp=chrome&type=ws&allowInsecure=1&sni=trex.nahidapp.com#@ghalagyann",
+      "latency": 1461,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18268",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777722718.2836692
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AWzGNEIXqSuFJPyVi+R34kaiJC6zClGhKddY7byNg+4mZgvOu1tbGVToBc8lr7jWXBfiGeW472jNyeQg43ldH3e0sQLUkdbTL3Yw9Nudiiojbj8vwLFBN1u2VDvkVRwF/lKHlh8v+Loj+WWyvl/EuIkn9/ROAeYQhzdLJ6Xn/9E+idHd820I7jxwYQDx2diug3e3vPIIhY1AvYjdPynIOJ2oKKVOzpCMMOlYex0cvvpdNynSNvejtHP0d4cl0XdIb8wqpKexda5FQ41MnjyznGbBDEWfN/FJUuPD3PpSUMzASZrQWFvtPz3qLE+YqznqWoq3SBJcDJbQD2akgVYeh0m9g/Jh9+3wFWiXImUzODjBncj/EzwCKm9Ph7wdG4CwVivDv94XQ21Js7rtz/Wjhvv6qu+a5+B1qWhI8qIUzpyMa0Gg/6gdwqDRj78xwvqNeWoQ02tcmgMe5cctrJRKg2Za1pcH/ElFwpQzjBAeJGRwpmMNCFrXn/i98NHQbJGpc6isL11xieNFV4efjpEtu24M8MSjFaHD8rRkxz5AX8iLFAouXdlNV+bOy0lYmz88hWpStZ7PVNuQTP/nSZ1Np6q7CI7acUh8gG/zLQ2nraFRNMvqcjLAihahnq/2HRFk+ngDvtJHqUC7NCgnqSQof63P29dny4Dzi+wMJfU4O/xiXkVUD1/PQKVMEnzG`",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18267",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1777722708.3184237
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AYmwhwHe0HQ5ZJKGvvuChb6rbDJ+RRJaD6edl97NUkfyk+yhXHHF/Ffnt1u+00b5bvZqk9LNv9A6/0hvugyCst49ia107bcRLpccf6A1Yc6jtpQYA+jqNrYP7eRove38FTD41/cTrNpIqEAs9AnHIB16g+0gbpWcuxnK0iascfnEBTmck+esboaqrvwDAKUbziBSvQvkiLZ6l64U37qhBK5HWPIDm8Go4OOGcRPVuBWMrQXMYLzei3sDxi37itz9GFlqiMrPthEKej66mn4kq2UOBadYpdvkQPBTQXx62I8j+5imjJ6txgBkq+yg0/co+3J/15TJDLlXzwQfhDVpzRGT1ttXPlBaf6N2y8s4wACytZ11JRJPitvaMCwfXZ10YZPnPNRx/W7MMWMYaSUn+lCzch0j8blAqI76fnla2AbFqK5NQVjquXPXWIM+YPsMWROTcXhysfznQ1zP6vv6qFB6fuCqRKNVfTdAG5O9x2cWFXkqtklSjr9Spp6dufS0YDBES8EW75YfKG2RPYkhVelDUkOx3fbzcV590acwIGagXaBQiElqO4PsyVHjIpxE17bauwkE4MKqzQ+gbjTfjLsocbn/yfZsXIG3vyi0P1LXG4Sm1/M=",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18266",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1777722708.0375867
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://ASoq713jmeQTOw2PVZyCnzjNZsCrwUkgADzs+Exi0VU8ZtANeGdBMR2uSP0C/H6x/bIm6v7cpPD2ArJvpivABDxlkE2t0FjZLc3RHz7wqpaVPPWcdqdwPBdvLC1lGkubremWA2pN3YxEVmQZNUfX2AjHIHK1v2HoPiU74w0FyG7paSq0qbhRhdjvYWTW9hAGcV3k2Lq+S04EUMAY8taQ9a67r9Odu5VcWdWU18NLo2UAHX6pO6VvkwKQwsXYamNYHgK25xxGS9H+gYVaBjqzag66OEBh+VtTFG529/4g8IEGpfuuj4XwX2YywP1YhTpYL9tDBRcoEhUeMrNezeSo0wbI4i94/nD6k+je1oHfSMr2+sQKpCWD+moXufgi8nwcpdlAfG2apaWOhI07c1oUg+z6gfObLhOM85TVhaKUGv0aav3w8UP+mxQ8sMXLcouDn5yGtpsNc8Af/PJFEdtycH7a9KmQBDk0AFDvmMcc0fz+/Obofuctrcb+DfLhDgQDJMEgOY5U8mdgp8EOUStPoi8shWPf2DUktfrK4pJpONhlFp/ah+yjK15DW06aemyLCRCnmEZWU6xmCplrN7M4FatMTFgCBRJhL0zVYk+5b2lxTK/S9NU6vq02BLG43fowrmFDFY7O8TxkVaQNP09pgRx0KstiM9UNNGWcalwzJ2q8ZSIGfa8=",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18265",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1777722707.7299566
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://1f5358e8-f57c-44b8-9864-9c236672fbc8@185.143.233.235:80?path=%2F&security=none&encryption=none&host=d.nsa03.com&type=ws#%40filtershekan_channel`",
+      "latency": 138,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18264",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777722707.4380393
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://06c9fd44-3a53-4c2a-877c-01df0d32e4ee@arvancloud.ir:80?path=%40TunizoNET&security=none&encryption=none&host=ri.amirenzohost.ir&type=ws#%40filtershekan_channel",
+      "latency": 506,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18263",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777722707.0416486
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.36.135.179:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 129,
@@ -41,8 +111,32 @@
       "ts": 1777709116.1672769
     }
   ],
-  "proxies": [],
+  "proxies": [
+    {
+      "key": "77.42.79.76:4455",
+      "link": "tg://proxy?server=77.42.79.76&port=4455&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی رایگان",
+      "t_link": "https://t.me/myvpn1404/18271",
+      "latency": 162,
+      "flag": "🇫🇮",
+      "ts": 1777722734.7240565
+    }
+  ],
   "files": [
+    {
+      "name": "S-NPV55.npvt",
+      "ext": "NPVT",
+      "channel": "VPN MARKET",
+      "link": "https://t.me/anty_filter/22992",
+      "ts": 1777722835.3043175
+    },
+    {
+      "name": "@ghalagyann‎⁨تلگرام ما ⁩.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20847",
+      "ts": 1777722723.5976405
+    },
     {
       "name": "👉@ghalagyann👈کانال تلگرام  (1).npvt",
       "ext": "NPVT",

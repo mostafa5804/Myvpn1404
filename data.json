@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@52.47.190.65:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 136,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/18275",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1777728437.3822515
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AaUj/XkEb/pmPtwSfcaOvpETBWQH4dznOg6h3FEqMA96orXh64WoBX2SM3Lvw2zVKQUV69e0N0lJxYMhUi5ulkOAfxVXS4Q2xbkCHpMjWzIJEDcQhah58Uo+L0bJBHv1tUsWH/bv3HMeD55IqHRkHYDld+fxbdVJYsUUUNwUbxEDKHPE9JisDsmJMKVoNB9cchXOAKCst1Nc/d8R3rpVAM+mHsJDzsvukgJvENy+Lo5IUDK8mC1uxy54q/JHkokXoNBRjJ3Zpev/3LUGR3O7i3z/pqWVzmpqF3rpcVGh/K+pUi5YHIC9DLsWI1oO777hLI4zljIXLJWQYLN5VVCvkqEJEAiYHa+C8qPsL3RR7t4ZA6CfZ9aaYIGUlg8K6+V4cZ4uDgbI8i+mFQ6hxNJm6vpIQ5y9W84rn7gz+4gwWIlm5NuDjIRr2NzUg6NKVS9oc2TXDkCx64D2ZI3VTseuWXaJkrc0tZfMp5JDkDAbC9VneNrd6c+NbZ3mq5bNTSCFLuD/9cRi8KpAiSHJtw+FK4EDdzeBi1JjGbdFtSqM3A9HX/tYRTIUMacQFXNnVWPnCA/vVj8zgrT0gZ50qz/wIzu1fy/xw7F1pGk3mWnTjSzBXZ0kyQ8DmTvDRREOq+WjqwInZQ==`",
       "latency": 50,
@@ -122,6 +132,96 @@
     }
   ],
   "proxies": [
+    {
+      "key": "89.125.113.13:443",
+      "link": "tg://proxy?server=89.125.113.13&port=443&secret=ee565b72a7140d98fd8cc18ab30245b23379616e6465782e7275",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18274",
+      "latency": 178,
+      "flag": "🇩🇪",
+      "ts": 1777728321.1855078
+    },
+    {
+      "key": "150.241.66.252:443",
+      "link": "tg://proxy?server=150.241.66.252&port=443&secret=ee5fd7b266fac67f22b0c4e1ecd3be171a6578616d706c652e636f6d",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18274",
+      "latency": 134,
+      "flag": "🇺🇸",
+      "ts": 1777728321.1855066
+    },
+    {
+      "key": "89.125.113.13:443",
+      "link": "tg://proxy?server=89.125.113.13&port=443&secret=ee565b72a7140d98fd8cc18ab30245b23379616e6465782e7275)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18274",
+      "latency": 161,
+      "flag": "🇩🇪",
+      "ts": 1777728321.1855059
+    },
+    {
+      "key": "89.125.113.8:443",
+      "link": "tg://proxy?server=89.125.113.8&port=443&secret=eeb9e6c48a8244eecdb64a7422108aebeb79616e6465782e7275",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18274",
+      "latency": 170,
+      "flag": "🇩🇪",
+      "ts": 1777728321.1855044
+    },
+    {
+      "key": "89.125.113.14:443",
+      "link": "tg://proxy?server=89.125.113.14&port=443&secret=ee3e7641e0b5826dee9d6b6b265bfe05ed79616e6465782e7275",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18274",
+      "latency": 165,
+      "flag": "🇩🇪",
+      "ts": 1777728321.1855035
+    },
+    {
+      "key": "hit.info.gf:443",
+      "link": "tg://proxy?server=hit.info.gf&port=443&secret=7jQYWyCvqaDiltduuSzJ2upoaXQuaW5mby5nZg)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18274",
+      "latency": 335,
+      "flag": "🇳🇱",
+      "ts": 1777728321.1855025
+    },
+    {
+      "key": "150.241.66.252:443",
+      "link": "tg://proxy?server=150.241.66.252&port=443&secret=ee5fd7b266fac67f22b0c4e1ecd3be171a6578616d706c652e636f6d)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18274",
+      "latency": 136,
+      "flag": "🇺🇸",
+      "ts": 1777728321.1855013
+    },
+    {
+      "key": "89.125.113.14:443",
+      "link": "tg://proxy?server=89.125.113.14&port=443&secret=ee3e7641e0b5826dee9d6b6b265bfe05ed79616e6465782e7275)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18274",
+      "latency": 168,
+      "flag": "🇩🇪",
+      "ts": 1777728321.1854956
+    },
+    {
+      "key": "89.125.113.8:443",
+      "link": "tg://proxy?server=89.125.113.8&port=443&secret=eeb9e6c48a8244eecdb64a7422108aebeb79616e6465782e7275)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18274",
+      "latency": 162,
+      "flag": "🇩🇪",
+      "ts": 1777728321.1854942
+    },
+    {
+      "key": "hit.info.gf:443",
+      "link": "tg://proxy?server=hit.info.gf&port=443&secret=7jQYWyCvqaDiltduuSzJ2upoaXQuaW5mby5nZg",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18274",
+      "latency": 2703,
+      "flag": "🇳🇱",
+      "ts": 1777728321.1854918
+    },
     {
       "key": "77.42.79.76:4455",
       "link": "tg://proxy?server=77.42.79.76&port=4455&secret=dd104462821249bd7ac519130220c25d09",

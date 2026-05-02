@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AbBNqBfi90pqSXGwzblq5T5h1bTl0K8POqPJAuJktoUPfuyhMRHCudfNABYoBSOVnbuciKuVUW0jFLrNQC9mS1UMBzOLZuWwhrlwD7KB1OIaEendeI7iE9z+XgLV/Sf6PKLCyTqXvCfGcSGGUmgrtHoctuByUytCPM8oPuWQt62hFAfd7DYohwi1cA7T3C/mmmXxEPswvHRVF8QZyrpZQfqTQxs3Q65M+todYm8ifQR7bKjFvkQnts3pQiyMZdEsscWnX8j8BC0fGn5YWYTrU48TjyDoKNh0LgxqyowPHj5C2x4eVgnzAbtsknJiGSaNZY3rX3tOaW79VKBQimynI8SPyXszSyfIEf7sOPTjArurD0C/gaVGEsdxLCJzDSPr3qXMRjXHBi+RQdAh1t/CK/Bvj6HpjkMLOMi8LpF3f2QvZpHvn/xNCrAPF6tTZt3cAP/kIzIrtO+TetcmPnKMewRWyrLLbxEWyIJowcHk3tOm+2k5KOVdPinZfgZrqNqbMmRrGM1F2AFsh/gySNm1SpFN/b3hmCd/55cJDP7Z+dIQ6AIxJlMerpL9QB607qX6pVnW/57/Jr2+/tWvluvna07b3txqXzJE7OC4AD7C/KzOZhzsBpC6`",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18254",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1777714644.7443514
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://89960e91-7f08-401d-98b1-60a8ca601c6f@170.168.103.156:8081?security=none&encryption=none&host=www.speedtest.net&headerType=http&type=tcp#%40filtershekan_channel",
+      "latency": 200,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18253",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1777714644.4433372
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@63.184.151.28:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 91,
@@ -9,72 +29,58 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1777709116.1672769
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiJzbmFwcC5pciIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoicnhzLmJyYXZvLXNpeC5pciIsImlkIjoiOGFhYjhmYWItZjFjOS00NmNmLWIxZWEtNTkzOTUzNWVjNDU4IiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI4ODgwIiwicHMiOiJAVGlyZXhOZXQgNiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==```",
-      "latency": 325,
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/18251",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1777669237.247895
     }
   ],
-  "proxies": [
-    {
-      "key": "152.53.247.3:443",
-      "link": "tg://proxy?server=152.53.247.3&port=443&secret=ee143b7981eb4bf546520ba3f29dcf59ca7370656564746573742e72742e7275",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/18250",
-      "latency": 95,
-      "flag": "🇩🇪",
-      "ts": 1777669206.895456
-    },
-    {
-      "key": "77.42.27.171:4455",
-      "link": "tg://proxy?server=77.42.27.171&port=4455&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/18250",
-      "latency": 113,
-      "flag": "🇫🇮",
-      "ts": 1777669206.8954546
-    },
-    {
-      "key": "proxysb.xyz:443",
-      "link": "tg://proxy?server=proxysb.xyz&port=443&secret=eef7ca86268af768135f9ca41f89e9efb670726f787973622e78797a",
-      "channel": "کانفیگ و پروکسی رایگان",
-      "t_link": "https://t.me/myvpn1404/18250",
-      "latency": 300,
-      "flag": "🇨🇭",
-      "ts": 1777669206.8954525
-    },
-    {
-      "key": "142.54.189.106:443",
-      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/18249",
-      "latency": 39,
-      "flag": "🇺🇸",
-      "ts": 1777669200.9577808
-    },
-    {
-      "key": "142.54.189.107:443",
-      "link": "tg://proxy?server=142.54.189.107&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f726",
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/18249",
-      "latency": 39,
-      "flag": "🇺🇸",
-      "ts": 1777669200.957778
-    }
-  ],
+  "proxies": [],
   "files": [
     {
-      "name": "👉@ghalagyann👈یک ترابایت.npvt",
+      "name": "👉@ghalagyann👈کانال تلگرام  (1).npvt",
       "ext": "NPVT",
       "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20823",
-      "ts": 1777669200.657922
+      "link": "https://t.me/ghalagyann/20837",
+      "ts": 1777714653.7818713
+    },
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام¹.ehi",
+      "ext": "EHI",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20838",
+      "ts": 1777714653.4694462
+    },
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام².ehi",
+      "ext": "EHI",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20839",
+      "ts": 1777714653.1778736
+    },
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام³.ehi",
+      "ext": "EHI",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20840",
+      "ts": 1777714652.8891191
+    },
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20841",
+      "ts": 1777714652.6596863
+    },
+    {
+      "name": "43.ehi",
+      "ext": "EHI",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2304",
+      "ts": 1777714645.25548
+    },
+    {
+      "name": "44.ehi",
+      "ext": "EHI",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2305",
+      "ts": 1777714644.9622505
     }
   ]
 }

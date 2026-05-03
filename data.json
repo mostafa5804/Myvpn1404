@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@15.188.112.222:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 127,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/18355",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1777814826.8039565
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://62547f84-56b6-490c-a5b8-403698c9fdf6@gr1.mizbanertebatfarda.ir:8080?path=%2F&security=none&encryption=none&host=gr1.mizbanertebatfarda.ir&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20%20%7C%20%40%F0%9D%90%93%F0%9D%90%84%F0%9D%90%92%F0%9D%90%8B%F0%9D%90%80_%F0%9D%90%82%F0%9D%90%8E%F0%9D%90%8D%F0%9D%90%85%F0%9D%90%88%F0%9D%90%8D%F0%9D%90%86%F0%9D%90%87@cicdovpn",
+      "latency": 4512,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/18354",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777814711.7798102
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://469b6631-f0ab-4ad7-93af-869dd32535e3@president.ir:80?path=%2F&security=none&encryption=none&host=al1.apicallminecrafegame.online&type=ws#proxymelimon`",
       "latency": 475,
@@ -112,6 +132,33 @@
     }
   ],
   "proxies": [
+    {
+      "key": "94.183.177.239:443",
+      "link": "tg://proxy?server=94.183.177.239&port=443&secret=ee1f1e82326bfdd9633604a61d7df8018d7777772e6d6963726f736f66742e7275)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18353",
+      "latency": 3208,
+      "flag": "🇮🇷",
+      "ts": 1777814701.7238498
+    },
+    {
+      "key": "proxytg.fit:443",
+      "link": "tg://proxy?server=proxytg.fit&port=443&secret=eec8f164f338f20e2e3c7a0f4e0408a51270726f787974672e666974",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18353",
+      "latency": 463,
+      "flag": "🇩🇪",
+      "ts": 1777814701.7238483
+    },
+    {
+      "key": "proxytg.fit:443",
+      "link": "tg://proxy?server=proxytg.fit&port=443&secret=eec8f164f338f20e2e3c7a0f4e0408a51270726f787974672e666974)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18353",
+      "latency": 569,
+      "flag": "🇩🇪",
+      "ts": 1777814701.723846
+    },
     {
       "key": "77.42.27.171:4455",
       "link": "tg://proxy?server=77.42.27.171&port=4455&secret=dd104462821249bd7ac519130220c25d09",

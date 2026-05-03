@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@63.184.19.242:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 135,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/18371",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1777828476.26113
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://01ae5f37-991a-4493-94ef-e4ca8d3cb035@Tapsi.ir:8880?path=%2Fcdn&security=&encryption=none&host=vp.movizdl.ir&type=ws#CICDOVPN",
+      "latency": 826,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/18370",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777828366.1767824
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://daf76688-9ac3-4a7b-99d7-a5aa7c83f55d@sahel.kalatkuhestak.com:80?path=%2F&security=none&encryption=none&type=ws#%40planB_net`",
       "latency": 407,

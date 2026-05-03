@@ -34,7 +34,7 @@
                 <h1 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 tracking-tighter">VPN Hub</h1>
                 <div class="flex items-center gap-2 text-[10px] text-slate-400 font-mono">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    2026/05/04 - 02:40
+                    2026/05/04 - 03:27
                 </div>
             </div>
             <a href="https://raw.githubusercontent.com/mostafa5804/Myvpn1404/refs/heads/main/sub.txt" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg shadow-emerald-900/30 transition-all active:scale-95 flex items-center gap-2">
@@ -80,6 +80,240 @@
                 </div>
 
                 <div class="grid grid-cols-2 gap-2 mt-2">
+                    <button data-clipboard="slipnet-enc://ASl+gqJNWMu9AKCE2YQktnOuI633M29stzE1iZpti57vR91N3Twhzc99jpW7DYNbDAGVxUgBs1DSZl+YrMuDH2DXP1O5QD0YPzX2IKZFxuy2qlgLzccrd2rFg0tgheqgJl2I6bRD1Xw1lvEkb6m1nbTM8GPpvFJfoUYKD9LDRSWIWDslZYzd4QtHSN6SczOGpIV10sTAcm9w4/+RjezE2o7Be46nqgQ8u6kr5ljFD8tt2q8kGW0kmpSqvT6Rm7eDMCVw4japFfb0VBn/UDAK4B1TLxAd9jNe4Muix8fFYNYBkNH52Gw00SqBVJHl/7OB1m8+M8XDRdUC0sdskLU8FjkToDYYNAF3El31HBgLJpF9gXiB9Q3D1a9XGlw629FRo23IwYSFbtJdZkKDCeEvITSYvu5eiBR1s+CU0Fqtsg/n9aFZ6271xgQgrqkTaKSOoz1psCRjsNggDrlR3sTDoylU8eenayB8fKENxJOZCgxIGcVyf3WS3KNFi14g1c3P/MvrnAJCgczlkJMRroD24bTES+9aaGBXy5kkvb9IZxVZVKa5/zGVk9lK8rL+XTg+IHiDOZC5Rc1sx+BIT0i1Y8v7nJFf5ypZXEslJp1PItIRJp/tNRZmi8p7JcD3Dc7LgpxRUZ3dSHNgW4PtMQnzR3MeYhGxwPYKIa/v/yLOOg==```" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
+                        <i class="fas fa-copy"></i> <span>کپی</span>
+                    </button>
+                    <button onclick="showQR('slipnet-enc://ASl+gqJNWMu9AKCE2YQktnOuI633M29stzE1iZpti57vR91N3Twhzc99jpW7DYNbDAGVxUgBs1DSZl+YrMuDH2DXP1O5QD0YPzX2IKZFxuy2qlgLzccrd2rFg0tgheqgJl2I6bRD1Xw1lvEkb6m1nbTM8GPpvFJfoUYKD9LDRSWIWDslZYzd4QtHSN6SczOGpIV10sTAcm9w4/+RjezE2o7Be46nqgQ8u6kr5ljFD8tt2q8kGW0kmpSqvT6Rm7eDMCVw4japFfb0VBn/UDAK4B1TLxAd9jNe4Muix8fFYNYBkNH52Gw00SqBVJHl/7OB1m8+M8XDRdUC0sdskLU8FjkToDYYNAF3El31HBgLJpF9gXiB9Q3D1a9XGlw629FRo23IwYSFbtJdZkKDCeEvITSYvu5eiBR1s+CU0Fqtsg/n9aFZ6271xgQgrqkTaKSOoz1psCRjsNggDrlR3sTDoylU8eenayB8fKENxJOZCgxIGcVyf3WS3KNFi14g1c3P/MvrnAJCgczlkJMRroD24bTES+9aaGBXy5kkvb9IZxVZVKa5/zGVk9lK8rL+XTg+IHiDOZC5Rc1sx+BIT0i1Y8v7nJFf5ypZXEslJp1PItIRJp/tNRZmi8p7JcD3Dc7LgpxRUZ3dSHNgW4PtMQnzR3MeYhGxwPYKIa/v/yLOOg==```')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
+                        <i class="fas fa-qrcode"></i> QR
+                    </button>
+                </div>
+            </div>
+            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="slipnet_enc" data-search="slipnet slipnet_enc">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl filter drop-shadow-md">🏴‍☠️</span>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
+                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 2</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
+                        <i class="fas fa-signal text-[10px]"></i> 50ms
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <button data-clipboard="slipnet-enc://AWqfJeKRwGBoZGE2r0AK/ZPc+8mOCn7ltD2UIWhNsSjxBW5XOiNfTRjRTiHc3stsQlsUU/5RnGkif2wFSED3HtiFOGNsprTgFSuqAXZGN0lLRl1lkVc+uNEj61iWueZKexAm6MOewv5RPNqID3Eqr8kD2/y3H7r3lhVAHZP+1Tq+xHum3CnBb7phAysFDgvEkAz37WbT6m01XxecPKYq2s/vUDM7KLTkXin17VtiMjX4PHHravm9o8gpCjBB6JmwLOd7R/HmmeE5+I3jAYsBnENoelJyyOVMq6jNBVdfTrfslcOlr3qY0cvj1IYt3gtkqkJmS6sSnSRA1EjPRSOUfQBzp4C821aV8imDcS317FCqpyTG88HVFpn9nkVk71HhCccdytw8Fg5VkUgT4G78BL4Ir8McwTKl2a1qHEJH2qDOtsP6QzuEY02aSN9O7ylNRcAG/reZxuVCbkUT/iSH9Y+pAN0ei5O+p6RuhjYH+utC/d7FEYO7O/ga1Y7we3HXBYlKckoJ9jvW30aj/pfK1v5ITqONNie+quuNgn3dgtGqlyeg1+54q++lG7+2pIsKpuKAh7M1PBZISK6yw6Wdj2sfdX7cZ2Z/oWAq8kwqYJQqyuA6rzMKllEf19F6dwW2n9OuldClDpPovXFy725IqP5GcB1s0k4YBuY=" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
+                        <i class="fas fa-copy"></i> <span>کپی</span>
+                    </button>
+                    <button onclick="showQR('slipnet-enc://AWqfJeKRwGBoZGE2r0AK/ZPc+8mOCn7ltD2UIWhNsSjxBW5XOiNfTRjRTiHc3stsQlsUU/5RnGkif2wFSED3HtiFOGNsprTgFSuqAXZGN0lLRl1lkVc+uNEj61iWueZKexAm6MOewv5RPNqID3Eqr8kD2/y3H7r3lhVAHZP+1Tq+xHum3CnBb7phAysFDgvEkAz37WbT6m01XxecPKYq2s/vUDM7KLTkXin17VtiMjX4PHHravm9o8gpCjBB6JmwLOd7R/HmmeE5+I3jAYsBnENoelJyyOVMq6jNBVdfTrfslcOlr3qY0cvj1IYt3gtkqkJmS6sSnSRA1EjPRSOUfQBzp4C821aV8imDcS317FCqpyTG88HVFpn9nkVk71HhCccdytw8Fg5VkUgT4G78BL4Ir8McwTKl2a1qHEJH2qDOtsP6QzuEY02aSN9O7ylNRcAG/reZxuVCbkUT/iSH9Y+pAN0ei5O+p6RuhjYH+utC/d7FEYO7O/ga1Y7we3HXBYlKckoJ9jvW30aj/pfK1v5ITqONNie+quuNgn3dgtGqlyeg1+54q++lG7+2pIsKpuKAh7M1PBZISK6yw6Wdj2sfdX7cZ2Z/oWAq8kwqYJQqyuA6rzMKllEf19F6dwW2n9OuldClDpPovXFy725IqP5GcB1s0k4YBuY=')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
+                        <i class="fas fa-qrcode"></i> QR
+                    </button>
+                </div>
+            </div>
+            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="slipnet_enc" data-search="slipnet slipnet_enc">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl filter drop-shadow-md">🏴‍☠️</span>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
+                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 3</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
+                        <i class="fas fa-signal text-[10px]"></i> 50ms
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <button data-clipboard="slipnet-enc://AfZYTi0QaJoOECFqMb542TMjYBmGhBMRWaebZYYzscpn6uXFrLAKHaPgHvjIi9QICb10j8i4UOZJwICnYRjXk9rEwQRs4Llb2ebZkkWjoL0sSBcm2cR2YaFtgR0CYdPHc8TXI92EtljJwaKnz8grNe6TrQHf7kWeLyUakC7sq2ef6AI/WtN0f9ECOC+Jg1Y+Vpyqai7KNp44Wcdq/gAZtC4q6K3/DMpEUehy8Iez8cNwN2eqgrX1MsPYC+GqvpKNCECcR0BBqv9AjJ7Pqwi94BsL/aeVlGAaY4KQPzjFu8aB3Wu9moPReGKJ65QToAPjVZ4XGcgd5dvufeFr3iuD7DAqIvpRO48q6crJxbNp7uczVn6ZcBDXHNtyeM6swijEpugsDyT9xB1oST4zXUmE8b9AVaS4tsvXWVxbYtVdrBa2GsAs3YJDTHZWEyOnr4x7V4A93gmMcN4rZCkRQxCkXkFc58SzE/kSVf3MtvYfqByn3EtEzCxljNJQfQZU26dE69jZodKY3lqn1uktmq7O+kVZEz9Df9OS0DXK+VmTun5FvNlYz+WQBwkk/vqd4fKs9ZNaPz1jm/MFPLKaIdh9tKcWdDvYCmbdZ6fzVTRIFrlyfeWgDgkbV5DAOL1AgsFTQK6Pm/MVI/vQBPAtiBKtsLEajFwqBZ0unQpXWz537onYaiylaZFTS3JLc2iYuYazf/2JuTUKk13M0ZycucJ3ko9H5g==" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
+                        <i class="fas fa-copy"></i> <span>کپی</span>
+                    </button>
+                    <button onclick="showQR('slipnet-enc://AfZYTi0QaJoOECFqMb542TMjYBmGhBMRWaebZYYzscpn6uXFrLAKHaPgHvjIi9QICb10j8i4UOZJwICnYRjXk9rEwQRs4Llb2ebZkkWjoL0sSBcm2cR2YaFtgR0CYdPHc8TXI92EtljJwaKnz8grNe6TrQHf7kWeLyUakC7sq2ef6AI/WtN0f9ECOC+Jg1Y+Vpyqai7KNp44Wcdq/gAZtC4q6K3/DMpEUehy8Iez8cNwN2eqgrX1MsPYC+GqvpKNCECcR0BBqv9AjJ7Pqwi94BsL/aeVlGAaY4KQPzjFu8aB3Wu9moPReGKJ65QToAPjVZ4XGcgd5dvufeFr3iuD7DAqIvpRO48q6crJxbNp7uczVn6ZcBDXHNtyeM6swijEpugsDyT9xB1oST4zXUmE8b9AVaS4tsvXWVxbYtVdrBa2GsAs3YJDTHZWEyOnr4x7V4A93gmMcN4rZCkRQxCkXkFc58SzE/kSVf3MtvYfqByn3EtEzCxljNJQfQZU26dE69jZodKY3lqn1uktmq7O+kVZEz9Df9OS0DXK+VmTun5FvNlYz+WQBwkk/vqd4fKs9ZNaPz1jm/MFPLKaIdh9tKcWdDvYCmbdZ6fzVTRIFrlyfeWgDgkbV5DAOL1AgsFTQK6Pm/MVI/vQBPAtiBKtsLEajFwqBZ0unQpXWz537onYaiylaZFTS3JLc2iYuYazf/2JuTUKk13M0ZycucJ3ko9H5g==')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
+                        <i class="fas fa-qrcode"></i> QR
+                    </button>
+                </div>
+            </div>
+            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="slipnet_enc" data-search="slipnet slipnet_enc">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl filter drop-shadow-md">🏴‍☠️</span>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
+                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 4</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
+                        <i class="fas fa-signal text-[10px]"></i> 50ms
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <button data-clipboard="slipnet-enc://ARVc1omq1QPg/I36hIvaX3Mcry4CzQektyAsMgRO/u6BoRDExC6Ah2yThD3n2H1xxt78W9lPyZhobtQJd5LuuxjiCbpBPeayBzKLQVN4SFNVioQpcGtQbNDgLIVR0uq11Lvsy0Qrzmhc9LBscLYW1ZknQdzZaWjIR+ILkX2bDvP5eXBbQ0MdP7mfF1RXRUej+K4K8kgSoxVOh5HCfv0st1AhO2VkIbp27menZrYmoyDJlj6k6Oju/10rOknYH0xAE3UCxbpmL+seZQZ1J8hCYlldk1O3ZUoxTCU2gqe03HJe4iJzb2xiP2gB/sMgIOYA+NEGsiFGO7XD8+4LT/v/Y5Bum+7WEJ60MmoC/zpirerfP5jtMGL6nzSJkGbgQJRzZh516LGOukQ0hrfRrsQTMdQANOwRZMv7w7Sc7FbOudKSk8taMSR7Mz2WVfzlR8nDHTnIlYYWkmKk7eurLx4qRpQgNctx0/Ge3/7bGAxcHUshuCENOf+7zvdbh1JhCyPjLbEksCY5dBVBxkhwmg7CRh+x+ebht0DcjZ3U/aH1ctljAba8IhXLf60xlvkEpgIHBzG4uHsnlBBEDsBYSooLb43Wj+9dWl92V54j/cwvrv0bd8Bb9I8uLFdqD/GkAoLuGLCYmB04/JAHG5VTTZqXmvA0rsB2xUka7ZXnhiqhJYTdlD91s0GtEQ==" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
+                        <i class="fas fa-copy"></i> <span>کپی</span>
+                    </button>
+                    <button onclick="showQR('slipnet-enc://ARVc1omq1QPg/I36hIvaX3Mcry4CzQektyAsMgRO/u6BoRDExC6Ah2yThD3n2H1xxt78W9lPyZhobtQJd5LuuxjiCbpBPeayBzKLQVN4SFNVioQpcGtQbNDgLIVR0uq11Lvsy0Qrzmhc9LBscLYW1ZknQdzZaWjIR+ILkX2bDvP5eXBbQ0MdP7mfF1RXRUej+K4K8kgSoxVOh5HCfv0st1AhO2VkIbp27menZrYmoyDJlj6k6Oju/10rOknYH0xAE3UCxbpmL+seZQZ1J8hCYlldk1O3ZUoxTCU2gqe03HJe4iJzb2xiP2gB/sMgIOYA+NEGsiFGO7XD8+4LT/v/Y5Bum+7WEJ60MmoC/zpirerfP5jtMGL6nzSJkGbgQJRzZh516LGOukQ0hrfRrsQTMdQANOwRZMv7w7Sc7FbOudKSk8taMSR7Mz2WVfzlR8nDHTnIlYYWkmKk7eurLx4qRpQgNctx0/Ge3/7bGAxcHUshuCENOf+7zvdbh1JhCyPjLbEksCY5dBVBxkhwmg7CRh+x+ebht0DcjZ3U/aH1ctljAba8IhXLf60xlvkEpgIHBzG4uHsnlBBEDsBYSooLb43Wj+9dWl92V54j/cwvrv0bd8Bb9I8uLFdqD/GkAoLuGLCYmB04/JAHG5VTTZqXmvA0rsB2xUka7ZXnhiqhJYTdlD91s0GtEQ==')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
+                        <i class="fas fa-qrcode"></i> QR
+                    </button>
+                </div>
+            </div>
+            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="slipnet_enc" data-search="slipnet slipnet_enc">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl filter drop-shadow-md">🏴‍☠️</span>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
+                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 5</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
+                        <i class="fas fa-signal text-[10px]"></i> 50ms
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <button data-clipboard="slipnet-enc://AS1aFY8ya10iqpTTVEEp9x/3sxs4rDTyMutujMTVrzYajbGNpXnBayJ+9kECRd0i6UGqgohyvlgygU4UehsHfpYeuZXh128R3LRQ08LbodJM1p0zu1ZgjasmCwp+6zsTmebJV8yY7rNOEyfOU8Ynet0xpCPUhcXPccRN4dVRgGatl9fElN19HqfM2/XBF2xMpJjR8y6Gjezg9MSqaLfBgmFY4o9/HyjEk8nGa9J8FjPdPl8rwjxb4nnjcOkPWUbNrioZwOU7HOOD546/o8kO1FDyxn9ibBZrUKbJo2pTbPhMT19LSPl4z6ZcvQJo4yNvuZGLqqC6RkRWch/+KXQEUwHFmkCaNpIrfZkotLSpBqF9QNGlrozDRNuf+A8934QdINBziY6mVw4X+dN68/8Zat4usUR1YmTnfF3oPafyoVlHikT00rrwTJDgJEzaLIhnZllddJB+xEoEh38JpqLOrweEnYdrXNMpAnvxYNGEGzvtaae2ciJ5tBKWeLFCC+P33PJbiKP+H27nRwb9C+2Pe4YJXqVr/BUr90qKWPsHUNz47DB1/n7/H512waGmX2F8CbWHTbJSSSN0zFGspAueAI7mW4jf2UL7nvi4mxkPyGQf+dv6yx3TjU+xn9l+NbTJk0DQx+mo4TSHBSRZAFAS/Ah1bOO0PYrmLXRyQhBOZRcN2Jr/1LjjgvmvxohxGDHaJWfd8rlHs3AY5NcvOyBpgdldpFiN3kMB3orUEli+a5e5xO6OEX0a269YMA==" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
+                        <i class="fas fa-copy"></i> <span>کپی</span>
+                    </button>
+                    <button onclick="showQR('slipnet-enc://AS1aFY8ya10iqpTTVEEp9x/3sxs4rDTyMutujMTVrzYajbGNpXnBayJ+9kECRd0i6UGqgohyvlgygU4UehsHfpYeuZXh128R3LRQ08LbodJM1p0zu1ZgjasmCwp+6zsTmebJV8yY7rNOEyfOU8Ynet0xpCPUhcXPccRN4dVRgGatl9fElN19HqfM2/XBF2xMpJjR8y6Gjezg9MSqaLfBgmFY4o9/HyjEk8nGa9J8FjPdPl8rwjxb4nnjcOkPWUbNrioZwOU7HOOD546/o8kO1FDyxn9ibBZrUKbJo2pTbPhMT19LSPl4z6ZcvQJo4yNvuZGLqqC6RkRWch/+KXQEUwHFmkCaNpIrfZkotLSpBqF9QNGlrozDRNuf+A8934QdINBziY6mVw4X+dN68/8Zat4usUR1YmTnfF3oPafyoVlHikT00rrwTJDgJEzaLIhnZllddJB+xEoEh38JpqLOrweEnYdrXNMpAnvxYNGEGzvtaae2ciJ5tBKWeLFCC+P33PJbiKP+H27nRwb9C+2Pe4YJXqVr/BUr90qKWPsHUNz47DB1/n7/H512waGmX2F8CbWHTbJSSSN0zFGspAueAI7mW4jf2UL7nvi4mxkPyGQf+dv6yx3TjU+xn9l+NbTJk0DQx+mo4TSHBSRZAFAS/Ah1bOO0PYrmLXRyQhBOZRcN2Jr/1LjjgvmvxohxGDHaJWfd8rlHs3AY5NcvOyBpgdldpFiN3kMB3orUEli+a5e5xO6OEX0a269YMA==')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
+                        <i class="fas fa-qrcode"></i> QR
+                    </button>
+                </div>
+            </div>
+            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="slipnet_enc" data-search="slipnet slipnet_enc">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl filter drop-shadow-md">🏴‍☠️</span>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
+                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 6</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
+                        <i class="fas fa-signal text-[10px]"></i> 50ms
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <button data-clipboard="slipnet-enc://AQRsvhOT34gwiX+N9rzBYbrecmsvSoqDFj/JlCi/p+ouZvtf3qdohfpv5wplpffb7RdI8Rd2Ljf9Qg0MoOcBafhqt0MmxLaEPg8SIfGcJsaRv/SFXxoa52n8VMNjwSGJnZ0s9sb2Dp/IgOH5PFdd9qHgg4lXuNbGY8aSoh0FIz10P4YYpyn4Av2vKOQetJwxBwqtNr01vXlDmR50nKMiQui7qGKlERr13zwssZjpnKrnyLUYX/F8wHgjCWd3oJClOWaglqw2ngjNMiQ/+Z1vA1zlU3F6VY+okiV10mAFWVFXu/Pz+26X5u0PSbN1qYS5sihsmZf26jc54rhXLqc98Zmep9kgZowL+ubqzkjnqnmV3rgz3yLJQth8+sQ5U/EEogKJqctZoes+iSxeCo89UpzxMtj+WQNNhkjg0QEtVLTzfCp1I0UFEALIMnOtHM3awT1Q6vsHuSDCS1DhlkP5i9lFjHAxm/Q1CQP7XSXl7UlKN7HX7n2JsY2LKiGXAMgUqfh9X6kQNWOWSThT9V0RBTfYTJQQdeyAMGdWs89fKz1KnLHyL4+fdq4RQs0eKmuTSUxjyUdoU8DyZw==`" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
+                        <i class="fas fa-copy"></i> <span>کپی</span>
+                    </button>
+                    <button onclick="showQR('slipnet-enc://AQRsvhOT34gwiX+N9rzBYbrecmsvSoqDFj/JlCi/p+ouZvtf3qdohfpv5wplpffb7RdI8Rd2Ljf9Qg0MoOcBafhqt0MmxLaEPg8SIfGcJsaRv/SFXxoa52n8VMNjwSGJnZ0s9sb2Dp/IgOH5PFdd9qHgg4lXuNbGY8aSoh0FIz10P4YYpyn4Av2vKOQetJwxBwqtNr01vXlDmR50nKMiQui7qGKlERr13zwssZjpnKrnyLUYX/F8wHgjCWd3oJClOWaglqw2ngjNMiQ/+Z1vA1zlU3F6VY+okiV10mAFWVFXu/Pz+26X5u0PSbN1qYS5sihsmZf26jc54rhXLqc98Zmep9kgZowL+ubqzkjnqnmV3rgz3yLJQth8+sQ5U/EEogKJqctZoes+iSxeCo89UpzxMtj+WQNNhkjg0QEtVLTzfCp1I0UFEALIMnOtHM3awT1Q6vsHuSDCS1DhlkP5i9lFjHAxm/Q1CQP7XSXl7UlKN7HX7n2JsY2LKiGXAMgUqfh9X6kQNWOWSThT9V0RBTfYTJQQdeyAMGdWs89fKz1KnLHyL4+fdq4RQs0eKmuTSUxjyUdoU8DyZw==`')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
+                        <i class="fas fa-qrcode"></i> QR
+                    </button>
+                </div>
+            </div>
+            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="slipnet_enc" data-search="slipnet slipnet_enc">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl filter drop-shadow-md">🏴‍☠️</span>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
+                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 7</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
+                        <i class="fas fa-signal text-[10px]"></i> 50ms
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <button data-clipboard="slipnet-enc://ARofeWIm2P2HKbngb9Mjg9Hh9LkwygU59kq7G01nUWm3Emr+ksyRll1aua/mVu7D7FqYMZlisyjZjx/dtWnamwEoez/DFAHJXAgHjyIE77CwPag3kaQQODGdUMJz10lvGxaJYItZwyqLZcY/1fR7HZiRw2vsVGBNiOJEl0S9c0nfFIrRgr0V+49+Db5BRQkwg5RMVZbge6jyswpvKbfjDokxitpSokZe+k+UJJB1gr3HXbFAyr5ywIclZs+fJd+2Cb2uXjy4FtQmsWXfW+qX2ratsfHPkzsKDBtF+lynQEagDIrj6a+qjvqN6fvc1D1PjA1ANKx+U3mMYPshDySiTeF9Zr9nFB5CtvaJ/fFH17VJ4jWQiGNgEE2za9GQHs1FgipZDijok5Gf9PldwVLLTFaSiXy9x6n/b85sh/I0/A9hWdo2iFxlOOVE61lWTDhEt3FgtPk/zm8rwuFsFpWPInMrn1mg9lC2KclWJ72lVBfGuVDkr7BJM5Y0+7UDDL4MoPijEc5P9w98ddaXKJfjxT6Gr4wMwERTFrVqzxdM52lrV5GZicOraRcdzaYyXUvU8t5XAMpZokV126329TN2+Md4AuASVA==" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
+                        <i class="fas fa-copy"></i> <span>کپی</span>
+                    </button>
+                    <button onclick="showQR('slipnet-enc://ARofeWIm2P2HKbngb9Mjg9Hh9LkwygU59kq7G01nUWm3Emr+ksyRll1aua/mVu7D7FqYMZlisyjZjx/dtWnamwEoez/DFAHJXAgHjyIE77CwPag3kaQQODGdUMJz10lvGxaJYItZwyqLZcY/1fR7HZiRw2vsVGBNiOJEl0S9c0nfFIrRgr0V+49+Db5BRQkwg5RMVZbge6jyswpvKbfjDokxitpSokZe+k+UJJB1gr3HXbFAyr5ywIclZs+fJd+2Cb2uXjy4FtQmsWXfW+qX2ratsfHPkzsKDBtF+lynQEagDIrj6a+qjvqN6fvc1D1PjA1ANKx+U3mMYPshDySiTeF9Zr9nFB5CtvaJ/fFH17VJ4jWQiGNgEE2za9GQHs1FgipZDijok5Gf9PldwVLLTFaSiXy9x6n/b85sh/I0/A9hWdo2iFxlOOVE61lWTDhEt3FgtPk/zm8rwuFsFpWPInMrn1mg9lC2KclWJ72lVBfGuVDkr7BJM5Y0+7UDDL4MoPijEc5P9w98ddaXKJfjxT6Gr4wMwERTFrVqzxdM52lrV5GZicOraRcdzaYyXUvU8t5XAMpZokV126329TN2+Md4AuASVA==')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
+                        <i class="fas fa-qrcode"></i> QR
+                    </button>
+                </div>
+            </div>
+            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="slipnet_enc" data-search="slipnet slipnet_enc">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl filter drop-shadow-md">🏴‍☠️</span>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
+                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 8</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
+                        <i class="fas fa-signal text-[10px]"></i> 50ms
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <button data-clipboard="slipnet-enc://AQP/JLBXdglXXpOwidjbNklCaFx9XN8ThEWUXdiPSZpA7Lh+S3HO2S7zE95wRt6mMPYT1lEiI+23s0fi9ANNJvUkRAiIdRvuCXe3g8ixddWklwGr9JmIir1kBhTj8fDEDDu8hwZQ3/xH5BFnz3MQ2Vzjgca/TYzzhFx97rv4ftGzO6VD5O9q8HQL4wdL5i0cF6j/CmnbSnPYkQcGYTwFUdj97F3MAb1iV04wVh7RKWTGFaN8VoZS4lfdhDKYKQXnLxE8tye3QBUy7K4CHEU1bcGeOpA7U0WuSSLqQDy+vFu1SPGXTeoq0vAmmRRb5tI1XB0f/RVSZrWEFhKtjVXz8EgdWRNhaAXZq4KiOF/rDbQnEPwLHmBf4kM8T7yPR+9lQPsHviEhqa3pAZMyCspDdjel9HU9G4RQ1X4F6WGizpZ/3ur56hXP0mXiglgpDIacFI5HkF7L1wH1ezD7lBkZPctx7KtJiFHkZuXeesvQPuONL/AJbyL8qvC90ni1Tn5KWy9NRHYf8eqG/6ycBlO9AEjNHCbJI8jsJmDArprtDk/6+oJ4o8lBoAuEnb8Ea12KCpBCiOLb19j0r7LO6CQ=" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
+                        <i class="fas fa-copy"></i> <span>کپی</span>
+                    </button>
+                    <button onclick="showQR('slipnet-enc://AQP/JLBXdglXXpOwidjbNklCaFx9XN8ThEWUXdiPSZpA7Lh+S3HO2S7zE95wRt6mMPYT1lEiI+23s0fi9ANNJvUkRAiIdRvuCXe3g8ixddWklwGr9JmIir1kBhTj8fDEDDu8hwZQ3/xH5BFnz3MQ2Vzjgca/TYzzhFx97rv4ftGzO6VD5O9q8HQL4wdL5i0cF6j/CmnbSnPYkQcGYTwFUdj97F3MAb1iV04wVh7RKWTGFaN8VoZS4lfdhDKYKQXnLxE8tye3QBUy7K4CHEU1bcGeOpA7U0WuSSLqQDy+vFu1SPGXTeoq0vAmmRRb5tI1XB0f/RVSZrWEFhKtjVXz8EgdWRNhaAXZq4KiOF/rDbQnEPwLHmBf4kM8T7yPR+9lQPsHviEhqa3pAZMyCspDdjel9HU9G4RQ1X4F6WGizpZ/3ur56hXP0mXiglgpDIacFI5HkF7L1wH1ezD7lBkZPctx7KtJiFHkZuXeesvQPuONL/AJbyL8qvC90ni1Tn5KWy9NRHYf8eqG/6ycBlO9AEjNHCbJI8jsJmDArprtDk/6+oJ4o8lBoAuEnb8Ea12KCpBCiOLb19j0r7LO6CQ=')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
+                        <i class="fas fa-qrcode"></i> QR
+                    </button>
+                </div>
+            </div>
+            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="vless" data-search="iran vless">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl filter drop-shadow-md">🇮🇷</span>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
+                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 9</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
+                        <i class="fas fa-signal text-[10px]"></i> 274ms
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    <button data-clipboard="vless://0c9353bd-2377-4124-86df-c1a51f777954@trex.nahidapp.com:443?path=%2Fvless-ws&amp;security=tls&amp;encryption=none&amp;host=trex.nahidapp.com&amp;fp=chrome&amp;type=ws&amp;sni=trex.nahidapp.com#%40filtershekan_channel" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
+                        <i class="fas fa-copy"></i> <span>کپی</span>
+                    </button>
+                    <button onclick="showQR('vless://0c9353bd-2377-4124-86df-c1a51f777954@trex.nahidapp.com:443?path=%2Fvless-ws&amp;security=tls&amp;encryption=none&amp;host=trex.nahidapp.com&amp;fp=chrome&amp;type=ws&amp;sni=trex.nahidapp.com#%40filtershekan_channel')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
+                        <i class="fas fa-qrcode"></i> QR
+                    </button>
+                </div>
+            </div>
+            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="slipnet_enc" data-search="slipnet slipnet_enc">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl filter drop-shadow-md">🏴‍☠️</span>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
+                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 10</div>
+                        </div>
+                    </div>
+                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
+                        <i class="fas fa-signal text-[10px]"></i> 50ms
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mt-2">
                     <button data-clipboard="slipnet-enc://AXQmAQWkZjW4N0DZLSjqoT91/vIzmOdoHM8a7y1xhXFA+blHIzY7i/XLvC2x34X2P9IibjpyewjdkNmwQrk1kvybjUvhAv0p41smJS+7TFQpNvR8NWV8ZKaRb/d5eKNRa08gUn5e07fPutHkrOFEmRHtxQBm6YsHaqiFZi8uHhKQExDnNBW6cywOUmr0gp5dD1bogasI3eqBY9R6MNy569N9QAq2Wi5SqFLUiaB/RqUWqIdAbl6k3ZBcRG4YKqPmKPC5yRnTkmgGbL0mygOdaK5OXmonfCBgMYOWZa6BKWA9NLF2CmvBZ8oxAolIddaXALyBYD6d/n4PFOjCUoB1I8VZ2PLxnUMVIBBpMUj20LzY3+0X2u2mXKEPBjSRoqkujp85nU9JyJbr+eYkzD1In0gRnl5A+QhI/73yZY2nqQzZfrOhp9spz5rEK8GB7VW9/e/9dm18rdgAW2hmu5lkWG5TXbEo9F6CIMeq4Q0AT6W2zaPfbJhYqRyIb2mSZmBr1aWkaDWs3YsbAfbnRFMfkA3E4pELDw7HpSZdkpO6RBy/8UGFbX6/Iu+HaX8HdEVjdp2BMbRGFsCCQabyctSEyGbvXYPRU6NtvCOYQI2K5Z/Bl9K1eDrGc0yTHDUgPB99gIbRAUUnU+XgTiW31yVg7o2LVGzyan+JGlf412j5BHJuTbaseNzEbqDFdTRhqh8=`" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
                         <i class="fas fa-copy"></i> <span>کپی</span>
                     </button>
@@ -97,7 +331,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 2</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 11</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-rose-400 border-rose-500/30 bg-rose-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -123,7 +357,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">TROJAN</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">France</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 3</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 12</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -149,7 +383,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 4</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 13</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -175,7 +409,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 5</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 14</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -201,7 +435,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 6</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 15</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -227,7 +461,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 7</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 16</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -253,7 +487,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 8</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 17</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-yellow-400 border-yellow-500/30 bg-yellow-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -279,7 +513,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">TROJAN</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Germany</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 9</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 18</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -305,7 +539,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 10</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 19</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-yellow-400 border-yellow-500/30 bg-yellow-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -331,7 +565,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 11</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 20</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -357,7 +591,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 12</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 21</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -383,7 +617,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 13</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 22</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -409,7 +643,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 14</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 23</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -435,7 +669,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 15</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 24</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -461,7 +695,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">TROJAN</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">France</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 16</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 25</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -487,7 +721,7 @@
                                 <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
                                 <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
                             </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 17</div>
+                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 26</div>
                         </div>
                     </div>
                     <div class="text-xs font-mono font-bold text-rose-400 border-rose-500/30 bg-rose-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
@@ -500,136 +734,6 @@
                         <i class="fas fa-copy"></i> <span>کپی</span>
                     </button>
                     <button onclick="showQR('vless://62547f84-56b6-490c-a5b8-403698c9fdf6@gr1.mizbanertebatfarda.ir:8080?path=%2F&amp;security=none&amp;encryption=none&amp;host=gr1.mizbanertebatfarda.ir&amp;type=ws#%F0%9F%87%A9%F0%9F%87%AA%20%20%7C%20%40%F0%9D%90%93%F0%9D%90%84%F0%9D%90%92%F0%9D%90%8B%F0%9D%90%80_%F0%9D%90%82%F0%9D%90%8E%F0%9D%90%8D%F0%9D%90%85%F0%9D%90%88%F0%9D%90%8D%F0%9D%90%86%F0%9D%90%87@cicdovpn')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
-                        <i class="fas fa-qrcode"></i> QR
-                    </button>
-                </div>
-            </div>
-            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="vless" data-search="iran vless">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-3xl filter drop-shadow-md">🇮🇷</span>
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
-                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
-                            </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 18</div>
-                        </div>
-                    </div>
-                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
-                        <i class="fas fa-signal text-[10px]"></i> 475ms
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-2 mt-2">
-                    <button data-clipboard="vless://469b6631-f0ab-4ad7-93af-869dd32535e3@president.ir:80?path=%2F&amp;security=none&amp;encryption=none&amp;host=al1.apicallminecrafegame.online&amp;type=ws#proxymelimon`" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
-                        <i class="fas fa-copy"></i> <span>کپی</span>
-                    </button>
-                    <button onclick="showQR('vless://469b6631-f0ab-4ad7-93af-869dd32535e3@president.ir:80?path=%2F&amp;security=none&amp;encryption=none&amp;host=al1.apicallminecrafegame.online&amp;type=ws#proxymelimon`')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
-                        <i class="fas fa-qrcode"></i> QR
-                    </button>
-                </div>
-            </div>
-            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="vless" data-search="iran vless">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-3xl filter drop-shadow-md">🇮🇷</span>
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="font-bold text-sky-400 text-sm tracking-wide">VLESS</span>
-                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Iran</span>
-                            </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 19</div>
-                        </div>
-                    </div>
-                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
-                        <i class="fas fa-signal text-[10px]"></i> 112ms
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-2 mt-2">
-                    <button data-clipboard="vless://469b6631-f0ab-4ad7-93af-869dd32535e3@185.143.234.235:80?encryption=none&amp;type=ws&amp;path=%2F&amp;host=al1.apicallminecrafegame.online#proxymelimon``" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
-                        <i class="fas fa-copy"></i> <span>کپی</span>
-                    </button>
-                    <button onclick="showQR('vless://469b6631-f0ab-4ad7-93af-869dd32535e3@185.143.234.235:80?encryption=none&amp;type=ws&amp;path=%2F&amp;host=al1.apicallminecrafegame.online#proxymelimon``')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
-                        <i class="fas fa-qrcode"></i> QR
-                    </button>
-                </div>
-            </div>
-            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="slipnet_enc" data-search="slipnet slipnet_enc">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-3xl filter drop-shadow-md">🏴‍☠️</span>
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
-                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
-                            </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 20</div>
-                        </div>
-                    </div>
-                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
-                        <i class="fas fa-signal text-[10px]"></i> 50ms
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-2 mt-2">
-                    <button data-clipboard="slipnet-enc://Aey8rRKuBFif8wkesK4qDYtRErdfZDdV0d2I8vPYko33U7HnG8/CH2PtwcVD5EoTyCVF/qGmp5YFuo/vJjmmQHIH9LmjLHKLrjlz6/v439sc+mXZGcYalYhWrPdO1p8TpOqlJCCdEjK6Wq6ZZ/X+04yNeS5PYH7ihHw4KwtbLI0s43eQVoNyPxrOVazwvRKRba+jpl6v8T8yKzOBsz4bibxPi1+aQbOSkFyfSssSB66THJKMKiB+TrHSmBaf67HNh2/idJklDUATQuFPZ1TLTNwe4LR4RR1G9xVP+TglpOqiaNwXf5C307sTgCt0R+76nKdl/Jd9atAdoeRtRIPkdjBJM7H0oSJaiv9P7WbKXqe5QZqtoQWrcHPNXmnz9fFy9LrHZCz7G/Ts0TuCwYE+swX9lJTxRiddle8ry/s/UPaCsN9ge047WDwxYihXvinGj4tLg5rMBT79RwlSVISBUFukSq/sHNWelq2A8tjftBJSRdyV0eHUUNa/8e3fjRiCSfbzS9TGLIIjoUrvDF9jnV61zDX1Df09o90SmTNsPWHiT+vWiZV8KYJqYdlcEkICfNM23PAhRmSjt64wBtnfSBtISi4iV/U=`" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
-                        <i class="fas fa-copy"></i> <span>کپی</span>
-                    </button>
-                    <button onclick="showQR('slipnet-enc://Aey8rRKuBFif8wkesK4qDYtRErdfZDdV0d2I8vPYko33U7HnG8/CH2PtwcVD5EoTyCVF/qGmp5YFuo/vJjmmQHIH9LmjLHKLrjlz6/v439sc+mXZGcYalYhWrPdO1p8TpOqlJCCdEjK6Wq6ZZ/X+04yNeS5PYH7ihHw4KwtbLI0s43eQVoNyPxrOVazwvRKRba+jpl6v8T8yKzOBsz4bibxPi1+aQbOSkFyfSssSB66THJKMKiB+TrHSmBaf67HNh2/idJklDUATQuFPZ1TLTNwe4LR4RR1G9xVP+TglpOqiaNwXf5C307sTgCt0R+76nKdl/Jd9atAdoeRtRIPkdjBJM7H0oSJaiv9P7WbKXqe5QZqtoQWrcHPNXmnz9fFy9LrHZCz7G/Ts0TuCwYE+swX9lJTxRiddle8ry/s/UPaCsN9ge047WDwxYihXvinGj4tLg5rMBT79RwlSVISBUFukSq/sHNWelq2A8tjftBJSRdyV0eHUUNa/8e3fjRiCSfbzS9TGLIIjoUrvDF9jnV61zDX1Df09o90SmTNsPWHiT+vWiZV8KYJqYdlcEkICfNM23PAhRmSjt64wBtnfSBtISi4iV/U=`')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
-                        <i class="fas fa-qrcode"></i> QR
-                    </button>
-                </div>
-            </div>
-            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="slipnet_enc" data-search="slipnet slipnet_enc">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-3xl filter drop-shadow-md">🏴‍☠️</span>
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="font-bold text-sky-400 text-sm tracking-wide">SLIPNET_ENC</span>
-                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">SlipNet</span>
-                            </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 21</div>
-                        </div>
-                    </div>
-                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
-                        <i class="fas fa-signal text-[10px]"></i> 50ms
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-2 mt-2">
-                    <button data-clipboard="slipnet-enc://AaUKioTCWWo+zRseXxizWik/Ve3w0ORGdOsXYwosMD0tsMT89HZZZCA/vcN3aIzBjAPW0s+FNy4I1eExHUnVgwF66MHijHggoHeOmF8NLp/tbcPp0Scx/3pC5PdLBIuMYrrbaFnXxJwpap7Z3mwPAoFG+NHoRwWNxXwz4+T7FUKf5mPYUfXdqpM2v5jwD/gBqzpotiACdYZ2UNNdrKqORUpt+rXlFC7cdhmx4MfwdUmQ8cPpvhybnjnmoEMRJjuQUkG4dRG5vIu7MXux4ZnmvO9KfiopMAFhXxNh1391LMHeqH5f2ebhJqTunWIOk1T8oU5pj2Nfp5SchSRh+BFXvjZMUQDbuo226D7NYKTBGqvV13O92/YzjnpSYDr89n3SGtzguBpBlmLKOwx1NUZ/yv8UdP6+GrBWToFVRk8C4Gb5qy+1UpgYWng6omLzFxIJOn6hjCi1zeo/c27ZhoDgJub6cFYBi1JzOjOoISVnocP9lgaDUDuPUX4E9GAS8Mbo9VPLv+LojjzLSxS6xGSG3uBTIOBaNJRJVYJRu3x4bEO8GJ67oWPLkTTiVyoiqtzh5HV+L6Mxe4vR/1AoK0IAmg702jgy6iCMKFkRSFKXIB9yWIPRwGHshKKiSEYfJDVrGnY5UHTFi3goIasUzne2ZWOJpcn1nb0bJZIC" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
-                        <i class="fas fa-copy"></i> <span>کپی</span>
-                    </button>
-                    <button onclick="showQR('slipnet-enc://AaUKioTCWWo+zRseXxizWik/Ve3w0ORGdOsXYwosMD0tsMT89HZZZCA/vcN3aIzBjAPW0s+FNy4I1eExHUnVgwF66MHijHggoHeOmF8NLp/tbcPp0Scx/3pC5PdLBIuMYrrbaFnXxJwpap7Z3mwPAoFG+NHoRwWNxXwz4+T7FUKf5mPYUfXdqpM2v5jwD/gBqzpotiACdYZ2UNNdrKqORUpt+rXlFC7cdhmx4MfwdUmQ8cPpvhybnjnmoEMRJjuQUkG4dRG5vIu7MXux4ZnmvO9KfiopMAFhXxNh1391LMHeqH5f2ebhJqTunWIOk1T8oU5pj2Nfp5SchSRh+BFXvjZMUQDbuo226D7NYKTBGqvV13O92/YzjnpSYDr89n3SGtzguBpBlmLKOwx1NUZ/yv8UdP6+GrBWToFVRk8C4Gb5qy+1UpgYWng6omLzFxIJOn6hjCi1zeo/c27ZhoDgJub6cFYBi1JzOjOoISVnocP9lgaDUDuPUX4E9GAS8Mbo9VPLv+LojjzLSxS6xGSG3uBTIOBaNJRJVYJRu3x4bEO8GJ67oWPLkTTiVyoiqtzh5HV+L6Mxe4vR/1AoK0IAmg702jgy6iCMKFkRSFKXIB9yWIPRwGHshKKiSEYfJDVrGnY5UHTFi3goIasUzne2ZWOJpcn1nb0bJZIC')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
-                        <i class="fas fa-qrcode"></i> QR
-                    </button>
-                </div>
-            </div>
-            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="trojan" data-search="france trojan">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-3xl filter drop-shadow-md">🇫🇷</span>
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="font-bold text-sky-400 text-sm tracking-wide">TROJAN</span>
-                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">France</span>
-                            </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 22</div>
-                        </div>
-                    </div>
-                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
-                        <i class="fas fa-signal text-[10px]"></i> 104ms
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-2 mt-2">
-                    <button data-clipboard="trojan://telegram-id-v2rayvpnchannel@35.181.72.23:22223?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#OurChannel" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
-                        <i class="fas fa-copy"></i> <span>کپی</span>
-                    </button>
-                    <button onclick="showQR('trojan://telegram-id-v2rayvpnchannel@35.181.72.23:22223?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#OurChannel')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
                         <i class="fas fa-qrcode"></i> QR
                     </button>
                 </div>

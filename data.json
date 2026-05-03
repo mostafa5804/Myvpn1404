@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://cb05a23a-4cda-4407-e1c4-e0b421a2af8e@mmd.az99x.info:8880?path=%2F&security=&encryption=none&type=ws#@ghalagyann`",
+      "latency": 1024,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18381",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1777841657.8559484
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.39.30.161:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 153,
@@ -203,6 +213,24 @@
   ],
   "proxies": [
     {
+      "key": "95.217.235.33:443",
+      "link": "tg://proxy?server=95.217.235.33&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18382",
+      "latency": 169,
+      "flag": "🇫🇮",
+      "ts": 1777841666.6919012
+    },
+    {
+      "key": "pinklove.top:853",
+      "link": "tg://proxy?server=pinklove.top&port=853&secret=ee54ce330e4690cc297d2b031ff3f288b06d742e616b656e61692e636c69636b",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18382",
+      "latency": 218,
+      "flag": "🇺🇸",
+      "ts": 1777841666.6918986
+    },
+    {
       "key": "62.3.12.2:8444",
       "link": "tg://proxy?server=62.3.12.2&port=8444&secret=ee6f7a6f6e2e7275f22c5421fa893965",
       "channel": "کانفیگ و پروکسی | هوپنوس",
@@ -258,6 +286,13 @@
     }
   ],
   "files": [
+    {
+      "name": "DNS_Resolvers_15000 (6).txt",
+      "ext": "TXT",
+      "channel": "VPN MARKET",
+      "link": "https://t.me/anty_filter/23003",
+      "ts": 1777841776.178211
+    },
     {
       "name": "dns Resolver.txt",
       "ext": "TXT",

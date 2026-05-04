@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AREuVdFFel1VR+EzldEjVDzrGxyyiPJUumfsznznpjCNNBB9aZUDzMSiLKBxMJ/UI4MGRjWfxtBbBXfK6CVmuqBC/FdeqpfYjAxjY0EOimujf0s7hGbe396tHSmLA7Xdmabn4b2G/eh/6JUyPluItqHQZosUE6a1AgbP4nBxO7MINqgX4l67vbZsUVmaBDP3zdoEM2f6LbGhCMF29+zQYtDe1qUt9miKge9IGDdgX2LqF/8ftM1+oUBOefEZ3JoYhCOW5zl9g6BY92CosaWILeN4695mNRJcI1QW7ZbfXqNRq2pznnxRXqctKU67CLnS1troZ6QN/hNMi/La2Yda/qhsmX826nFH/mY+JgBjAcEB3Lmj1s38sFBe3AUHB+gQmNSTpW5QuKtyepuPJv2h3cMqrfclphP+cXvEiYz6FikxGS/4GHF9ij8Haonio308vIokWTmQBFZmxS+Ei7YpJWV856zQBHhl06X0p+I3xo/BGd+oECnjxaUR3GB9rlldB86RZGywtb+7+espDMGmzi4oycCtY2O+WsHDZeUhYAYpN5Cq1umNp6EgW32dtEeDdyPPN6uio0j08WUiijGADJKPf0IKMTDP8bRO623zHDYuGVkQz2wVLyrvqcTXxXh/hDV0gMrGjbiGZ0Gu/xPJz6Er1db0U7FD2a14FuznWh5Sfq2Ku1+8RVnwTgqxgsiHXgN6w8x1t5gUknqyLtuviMKU2HLn35rt1aSmzeMYzI8NQguzszx2guGv+g==`",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18402",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1777887403.864027
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AVSe9/kVr4DEPh3rwj1Ad5uTYUj/JbBNsuc4bP0RpWLLjc1RA3HXyGTcl7+23fX0uAzhB7SwPkisz8KEypjtXSbtS1rm50LGQwEgeE86zs3G9+VTYHmlAz6qDlplCaDMjAwYO05FmM7PNjKJuMphXD9yoHF9RWKvOEX2s4XsefN/jGIDufmx3TFFwPLCYVrAka95+IGXSGrUiqk+JHmI3JgiKKwVyxT/Ap3mj1qTPveMwEWncL3STFnkpp9fHRkTlh5/e72c5xid0C22aSZXgbkhuHpg8tGJS2x4G2nDqcrFssLCCEifcdMiVylJ8PjuEhOIBNdgDjnhahNx1Lmy/UHvAfUbdRVl8DLniHUMNMCn4LmMRuFbjK9kiAD11o/bpg81HMx+xs53lVMl0r7wp3eU3UvaKEq/Wq2praCpDXo2zjqSDpK6JVv+DvWv/lvveozLNyIee5DFZwVJ4LA9AeD5pNojy6/JYBJXvS/tC/hNnIhA3fIjR4rWwMqSzeLBU4U9/DP+DsObeSaIfuTFyfc3Vo9rEXUbceN+3VOVPMZVy4Ald5gnsBYvOnJn15ArpSmFGf7or7wN+jsL8sOM6AnoI8vUulb6eeJh/znTepRVHb/wrTzISUnEfUJHTYnDLJ7SOYiezZx/xN/rzvz657kWb007ukHOmpsV6hCNsA==",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18401",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1777887403.5450888
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://80a47c4e-33c0-49f1-a5d1-618c35fc9c92@svip-jp.xiaobaivpn.icu:28803?security=tls&headerType=none&type=tcp#%40filtershekan_channel`",
+      "latency": 189,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18400",
+      "flag": "🇯🇵",
+      "country": "Japan",
+      "ts": 1777887403.2707806
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://99210efd-1a49-4085-add3-d1d2e4fdd6c2@95.164.44.237:49790?security=reality&encryption=none&pbk=Xj6-HabAfXfu2dIz1orkRH5rAlbGMs0YMc7Zo4aARlU&headerType=none&fp=chrome&type=tcp&sni=yahoo.com&sid=9d90d7ada8#%40filtershekan_channel",
+      "latency": 117,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18399",
+      "flag": "🇺🇦",
+      "country": "Ukraine",
+      "ts": 1777887402.7766075
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://24f6aa71-fa7c-4aa1-91df-68add18c12c9@arvancloud.ir:2095/?type=ws&encryption=none&path=%2Fstream&host=hosting.linuweb.ir&security=none#@ghalagyann`",
       "latency": 389,
@@ -111,8 +151,34 @@
       "ts": 1777845136.0363023
     }
   ],
-  "proxies": [],
+  "proxies": [
+    {
+      "key": "178.104.244.158:8080",
+      "link": "tg://proxy?server=178.104.244.158&port=8080&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18404",
+      "latency": 117,
+      "flag": "🇩🇪",
+      "ts": 1777887421.036011
+    },
+    {
+      "key": "77.42.79.76:4455",
+      "link": "tg://proxy?server=77.42.79.76&port=4455&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18404",
+      "latency": 145,
+      "flag": "🇫🇮",
+      "ts": 1777887421.0360086
+    }
+  ],
   "files": [
+    {
+      "name": "👉@ghalagyann👈 کانال تلگرام.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/20891",
+      "ts": 1777887413.3062441
+    },
     {
       "name": "🍓@ xixv2ray کامیون سواری.npvt",
       "ext": "NPVT",

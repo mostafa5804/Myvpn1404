@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://121e5910-f79a-47a0-a300-87f4e7e55647@snapp.ir:80?type=ws&encryption=none&path=%2F&host=sphrrzv.iranofilm.ir&security=none#%40SorinBot-Test",
+      "latency": 461,
+      "channel": "منبع ضد اختلال | SORiN",
+      "t_link": "https://t.me/myvpn1404/18466",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778007068.0773199
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AQjxSqUgGnmi2Yadu5DUbM1VwkpmX20St9D6VE4CkrZ+35lz3dAAfsVjy3HvAL+Ib8tLd14iICEjKkq5INOD0GUKbl8bOl4nadKbE3SDxXW5gStPuSWqmkUVQNEJZD4QO9aZqGbLEuRc6CNWo/S9VUwBlyFebZArBPyHJ0o3tp/5/7iw8lN1tDYMZb12jBLX5M4fNfQRkFeMkT4FLz9lSdmVGXLMcKw/enThiO2JEqIaPtolMWMKrktPa6dyI0ZzCgahPzy6Ul6YUFN+8LhdF0+Lk7/SrPLp8X9bd3ACE3EuuKbzT3ixQ15tRoVi4DqMOtTABKdnoBOwAkylhIAXUL5lqZx3kuv63QkUgrAKHyExbXthPfjhfOH6P+c/Oau1D4eV1JzKId7t76A2d74c8A0Yb7xQxW53yFHDSN5HlAQE+WmFU0tzNVJ7eO66IxPvXoouWcnSL7BUv/wFth303mMzk8bywuWPTXLsfMuxEmU+kIfvpNzT8CR88hTCIegMerUF+ib/GS10kmTsg3IchOPm3W1WbQgOmFIkqNXvMgUZ0XlS8H80lWwGi6g6T2PWINKnLyy8R4K1nmsy/NPL6+DNN/iXySeETjmaussgDzck5pe8Eiwh+c0PFJQKP4veBmFoSqaPsb53PhlLlrVWFmRlaTry68UyQdeU3HwLSmG4YzyXMIGHosZDdRN3Cg==`",
+      "latency": 50,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18464",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1778007055.8289576
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://66f73678-34a5-4863-bd7b-cba151a2562e@185.143.233.5:2086?path=%2F&security=none&encryption=none&host=cdn.sesrsa.com&type=ws#%40filtershekan_channel`",
       "latency": 155,
       "channel": "پروکسی | proxy | filtershekan",
@@ -99,19 +119,27 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1777978655.8600347
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://6c23f193-b589-4498-bf67-824099e1b6c5@snapp.ir:2086?type=ws&encryption=none&path=&host=jing.eemehaze.lol&security=none#proxymelimon``",
-      "latency": 1968,
-      "channel": "کانفیگ و پروکسی | هوپنوس",
-      "t_link": "https://t.me/myvpn1404/18443",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1777962739.6283956
     }
   ],
   "proxies": [
+    {
+      "key": "142.54.189.107:443",
+      "link": "tg://proxy?server=142.54.189.107&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f726",
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18465",
+      "latency": 22,
+      "flag": "🇺🇸",
+      "ts": 1778007056.0881338
+    },
+    {
+      "key": "142.54.189.106:443",
+      "link": "tg://proxy?server=142.54.189.106&port=443&secret=ee09db815a6d82a31fda76f872230c69d7706b676275696c642e6f7267",
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18465",
+      "latency": 34,
+      "flag": "🇺🇸",
+      "ts": 1778007056.0881321
+    },
     {
       "key": "gg.etherealvpn.uk:443",
       "link": "tg://proxy?server=gg.etherealvpn.uk&port=443&secret=eee2c7176c8fc89b33fef34325dc5b9f01d186d17777772e6d6963726f736f66742e636f6d",
@@ -147,42 +175,6 @@
       "latency": 173,
       "flag": "🇳🇱",
       "ts": 1777985094.1254303
-    },
-    {
-      "key": "116.203.134.165:443",
-      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/18441",
-      "latency": 95,
-      "flag": "🇩🇪",
-      "ts": 1777962315.373624
-    },
-    {
-      "key": "178.104.98.160:443",
-      "link": "tg://proxy?server=178.104.98.160&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/18441",
-      "latency": 90,
-      "flag": "🇩🇪",
-      "ts": 1777962315.3736236
-    },
-    {
-      "key": "178.104.98.160:443",
-      "link": "tg://proxy?server=178.104.98.160&port=443&secret=ee636c6f7564666c6172652e636f6db6",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/18441",
-      "latency": 91,
-      "flag": "🇩🇪",
-      "ts": 1777962315.3736224
-    },
-    {
-      "key": "116.203.134.165:443",
-      "link": "tg://proxy?server=116.203.134.165&port=443&secret=ee636c6f7564666c6172652e636f6db6",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/18441",
-      "latency": 91,
-      "flag": "🇩🇪",
-      "ts": 1777962315.3736207
     }
   ],
   "files": [
@@ -234,20 +226,6 @@
       "channel": "پروکسی | proxy | filtershekan",
       "link": "https://t.me/filtershekan_channel/2370",
       "ts": 1777985078.4689214
-    },
-    {
-      "name": "gold_dns.txt",
-      "ext": "TXT",
-      "channel": "TirexNet",
-      "link": "https://t.me/TirexNet/3457",
-      "ts": 1777962773.6572707
-    },
-    {
-      "name": "👉@ghalagyann👈 کانال تلگرام.ehi",
-      "ext": "EHI",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/20915",
-      "ts": 1777962728.076086
     }
   ]
 }

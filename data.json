@@ -1,6 +1,56 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://3a590334-c12b-44e3-8655-4dc2ef9ec19b@kuorosh.laser-rami.ir:80?path=%2F&security=none&encryption=none&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
+      "latency": 4210,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/18531",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778179988.275518
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://42827133-57f1-4ed9-958d-4fb4cda405a8@snapp.ir:80?path=%2Fgraphql%3Fed%3D2560&security=none&encryption=none&host=ss2.limitless-cloud.ir&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
+      "latency": 1296,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/18530",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778179983.7226164
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://96e5b04f-4592-437e-9aba-0060e69a9c2c@zir.alihapps3.aghanami.ir:80?path=%2F&security=none&encryption=none&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
+      "latency": 811,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/18529",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778179982.117089
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://30316136-6337-4561-a334-396436386131@185.143.234.190:80?path=%2Fl%2Fw%2FaXD2QyDdS6vRQpxs%3Fed%3D2047&security=none&encryption=none&host=t.ufduiudud.site&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
+      "latency": 86,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/18528",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778179981.0131195
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://3d535920-e1c9-45cd-96b9-8015e166da2e@arvancloud.ir:80?path=%2F&security=none&encryption=none&host=t1.tunnellinuweb.ir&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
+      "latency": 726,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/18527",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778179980.6885326
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@52.59.183.236:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 136,
@@ -89,29 +139,18 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1778138690.1945589
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AYvKLeBnbEG3gMPGMGRqwaOH8Pn83U4qUed3dk5JlKG3j9WAY21u1JVCJkYMLsIlZ3UiDbhZk0tYl12PqcbS7cTs49OiBNAA9+NJJOCQFU9Wq/RiFmOm6WxliWC4Ejg9XsAI0T3J/DH6dV/GSvgSjj6FTjtfRqeU6wx+kwohFB5667YwApTeJlg9XqFhrWwdWHr8r78S6iV4HPJCgt5GIarzFgfkAjxTHMO36ypa2oGJhyvrSTDn3uSC5cWsDftOuPe36ZWL3Kzm8a0tWfd3PfIBk2A6LwL/IWKJk3G19AujGkgGBy9c+tFLv3WwPTwYF1XORT2IYsHqavEIO6HdTRu3PFPt39hAkWxAXWQmua9e3i2KvogOw9nC+6KTFknlAH1ZxrbWsIx8U2kYSqg+ntM4DXVuwr1lPmhMc8EOdj5SeUBpj7Qn/JF114W1BPXGjoZof8fyARGsQonD7a/hUxclIjQ3XFsCseBNLcg/bnQ9f/vdDVW91cxH5MFiM0xoBqSB2xqL7AZolVO8BcjSjcLCJkfDe1fQ8Dk8u3pofHizEtT8I6DH+fyNH2Qxb09g20wgREqgh0q00uK0K9WQU3LCJhfpMiQQQ/y0doviGsRhgGqCEwCpxE2kbCKoOU0V0LKM1QqQ4NAugZVstUo5Qp3ASuXEEBf4XedwgoDkVXuSo3jXFoyqUkSs0P079S5NU2YPZZj9oQ1eCa5rRhqcdWMUnFSiQx5siZvOB91CSAVK3ySWRomsu5e8vR2LbHj8CcCg8jmcUeCs5osJyNOs6t8j0gqWL5vbSEx4nUfbPmv90L8=```",
-      "latency": 50,
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/18506",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1778136266.1483712
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AVuGngYK79dS5G1U6nXYP9kcFGNjjh3yJlX5nv9k49V5y/oVTmgNb05Lh94T/FdQFyI3iKDX+Ad1ebLJTL35Sv4+HJN1H+80HlXWLr+A0odYHomfJaztIjTJ/KjjvcCfa3KR16OAaP3iEOC7P7E8467DkOf2tIvNuJ6ynn+NFeN4BGAalWExs261RDHD9Y55G8/0DxBea4jaI26gA1fYclmBbwrng+oAztx/WihSyBisy3gHqeNMeqyvbDR/VIlHQavNXB9X0q6pHGoNagxsIxOPh9QLyPKw+PbZYUEla6vZi95EJ4qpYLS1w0b2puWqlz0QvoXshbrzv6eV6IAmBSXduU8otNqNBImfhYicPwjTSQ/ic92qwnxYCJ8dDNgkddJv0ZYmAihaoEaRrDEpkmDPrpGSJtL39neoIfqnkFU+jefTqSr2TpbgmJmZ5+CLpUvesUdy7KM93S0ZsIUS+ll+C3rhV/2rbR01LiCEkPX4IzdnImVwTaLohGHgur1GL4i5vQlTOm8mGNqvvf9t64PWOeaQYPpZEvJ0/FJno8RIg9wG0bNOwXiLVppThQb5ZVaNYpWbdppPK+tBhP4maLvxZ9GKxCVHeuhNeYPEq7D377xQuGFwFrkx3rzHReDlhlGqIA33hwQh3ISHN+I9YQpwaFy7O1FjksKAwL0FONj9lNr2a7SIAR0R8V1xytxwaBU9J6jWl+fxoPPXcePbZ1C75tjMNcEgS3Wh2SVM+v2DVzCBvwtxzcReZnpyA+zx5rWDingmZBdSx5iHpkFcVia3Mg==```",
-      "latency": 50,
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/18505",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1778136265.8468277
     }
   ],
   "proxies": [
+    {
+      "key": "77.42.27.171:4455",
+      "link": "tg://proxy?server=77.42.27.171&port=4455&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18526",
+      "latency": 115,
+      "flag": "🇫🇮",
+      "ts": 1778179863.8142297
+    },
     {
       "key": "two.turboproxy.pro:8443",
       "link": "tg://proxy?server=two.turboproxy.pro&port=8443&secret=eec8150abdb60a541343858be088e857f66669727374627974652e7275&@vpnbaz",

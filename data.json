@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.123.242.100:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 135,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/18542",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1778227505.3746707
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AYioEMgqtwkjz30LlD9H2HJwfzcnCkqIBWmavznTf3V1UTOuQWDLId/MxocI3bqtrg3L7DJfHf0e1T/FBxJh9vnhqXSBU011huwB8ZzGMS4R/4m5y0Zkc2N3admSoAh7j6jU+im/tkmza4iHBbFHXPC0oWFi4HcAb3o5wbUm7xx18H6UfZYmQWloZ4U76CpiI4SyWg2xPCjJ7krYXX63XLzLLLK58PyX0kxiIvmImno2A4hGtcyiQ6uSCOp5sJf4W7LbiHl6tRIBmkIUxfjL1wsBVEenj7v1EbPRvxetDZOZpqZWdNf04ZkvpVFsZhS1SRlUEej6RL/8XnjYGRvUHubTZn6v+6Z9hAoI/pzk3ZL1QKby8cV8PxzsoXfSbXtK80R2k5dUN9YrWmHlyTjuvF2WqW3UzFlfY9C4TLfTJia2UOoksAhES218Wrey0aVzpgJu2K0+OTsPLT8Xn4OmT5BYPs0Rs+aJOBRy7qPHSlYwCI+YBYQWtsTnlJSj31Z4kxi7QBbwpV6b4jBy7FGf2rKgipzlhwiHkYjyAbBvq6q0UtVBTvAyN8qpyhyM9ff2BWowm40XWYDqiS860W2NXtT4/UXFnDPb4JxJFZwE6N3xniHSSBwpvQERIFa0k6gCF2Y+V0N8u2BWyCDUvid0luQ7cOA=```",
       "latency": 50,
@@ -39,66 +49,6 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1778193306.3681111
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@15.224.87.132:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 142,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/18532",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1778181110.23005
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://3a590334-c12b-44e3-8655-4dc2ef9ec19b@kuorosh.laser-rami.ir:80?path=%2F&security=none&encryption=none&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
-      "latency": 4210,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18531",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1778179988.275518
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://42827133-57f1-4ed9-958d-4fb4cda405a8@snapp.ir:80?path=%2Fgraphql%3Fed%3D2560&security=none&encryption=none&host=ss2.limitless-cloud.ir&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
-      "latency": 1296,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18530",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1778179983.7226164
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://96e5b04f-4592-437e-9aba-0060e69a9c2c@zir.alihapps3.aghanami.ir:80?path=%2F&security=none&encryption=none&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
-      "latency": 811,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18529",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1778179982.117089
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://30316136-6337-4561-a334-396436386131@185.143.234.190:80?path=%2Fl%2Fw%2FaXD2QyDdS6vRQpxs%3Fed%3D2047&security=none&encryption=none&host=t.ufduiudud.site&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
-      "latency": 86,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18528",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1778179981.0131195
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://3d535920-e1c9-45cd-96b9-8015e166da2e@arvancloud.ir:80?path=%2F&security=none&encryption=none&host=t1.tunnellinuweb.ir&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
-      "latency": 726,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/18527",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1778179980.6885326
     }
   ],
   "proxies": [
@@ -110,15 +60,6 @@
       "latency": 118,
       "flag": "🇫🇮",
       "ts": 1778193183.4963226
-    },
-    {
-      "key": "77.42.27.171:4455",
-      "link": "tg://proxy?server=77.42.27.171&port=4455&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ و پروکسی | هوپنوس",
-      "t_link": "https://t.me/myvpn1404/18526",
-      "latency": 115,
-      "flag": "🇫🇮",
-      "ts": 1778179863.8142297
     }
   ],
   "files": [

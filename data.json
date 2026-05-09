@@ -1,6 +1,66 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://12eeb57a-3e54-4b9f-a79f-cd02cab69a79@snapp.ir:80?path=%2FSalamFarmandeh&security=none&encryption=none&host=content.dragonstorevt.info&type=ws#%40filtershekan_channel",
+      "latency": 351,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18599",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778355546.1223834
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://890b411f-c315-462c-bdf0-5f6452de775a@snapp.ir:8880?path=%2F&security=none&encryption=none&host=wt.programming-coding.ir&type=ws#%40filtershekan_channel",
+      "latency": 441,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18598",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778355545.4902303
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://5ebb47d7-ecd1-42a8-b620-38c5bafe1ab6@185.164.73.133:16657?security=none&encryption=none&headerType=none&type=tcp#%40filtershekan_channel",
+      "latency": null,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18597",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778355544.688079
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://c9841f8b-9388-4142-9549-688c98d77d13@red.nahidapp.com:443?path=%2Fred%2F&security=tls&encryption=none&host=red.nahidapp.com&type=ws&sni=red.nahidapp.com#%40filtershekan_channel",
+      "latency": 629,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18596",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778355539.4321642
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiIxODUuMjM2LjM4LjQ0IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImM5ZTQyNTM3LTg2NTItNGE0Yy04NWQzLTBkMzZhYmYzOGY4OCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMTk5NDYiLCJwcyI6IkBmaWx0ZXJzaGVrYW5fY2hhbm5lbCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=`",
+      "latency": null,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18595",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778355538.531905
+    },
+    {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AfErB0uIWW+j6nBhEh6TEDhoWHXGZj48BenoCY1jrAiV0tUzXySEV6enQmQRMm1uKPhOF1j5Lw5ehZXbxpWG+DIUi6dNwiFnzqolAPituOVkvfdqRY/57m8RM+kxm3PLvfl0p3Mp0js+v422XjPJfwJDz6flrlCzX6JLnzDVg7oQ6tqjCuDdxwg7WFE6c+u0WTanvDCHbGXUEDkBEmUPEHCqNncNf4FfbrR7V9rysqatlJ8evq4ZNFnShbfpO1mjzddk1NRZcQfXO0uOGCuxbJ77eVZK7AW5E42nX9LWeWuGA5lXLFE/SUJGzQEtRsGDBMObNE8fBkhu0cjCOrMsDiMRXjj3NpX68fZ74BTmqaaNsJQVL/pPlzlAv4SuVCbOo3YVJJEd7ik5qUm5i0bA9B8uSpSvBbGbI4XYypaOTcKy4TOSaAN/6Y6Rn3AKpQg6w4oZPo6gNMras2aeA+uMeh+8SvEAyHo1FMX9sRSQ3/jZ5A2ROoyMkcDnX+GPS29Hxi1kqgUcJYl6gLwXJN8dmPH4BZZNCj72xtUvbNmoZM50XKMR+410zjKUj4momOGMRm2cj816PkKaWo5WkIV0VLUPsq2utIZFuIN/9VSOg8w5Ri6yBMbg1ToxGgDmzz+nPjL/E5DgI7E9eDowyUd1Q5Y64THM1cS4HzC2xv1yio2uOIh2owDA8w42KbX587U=`",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18594",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1778355533.097755
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.224.89.79:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 85,
@@ -42,6 +102,15 @@
     }
   ],
   "proxies": [
+    {
+      "key": "77.42.27.171:4455",
+      "link": "tg://proxy?server=77.42.27.171&port=4455&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18600",
+      "latency": 159,
+      "flag": "🇫🇮",
+      "ts": 1778355564.788654
+    },
     {
       "key": "2.26.98.239:443",
       "link": "tg://proxy?server=2.26.98.239&port=443&secret=ee2b65f9171b435d2eee91225b93089127d186d1",
@@ -98,6 +167,13 @@
     }
   ],
   "files": [
+    {
+      "name": "@filtershekan_channel (26).npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2459",
+      "ts": 1778355532.6965818
+    },
     {
       "name": "🍓@xixv2ray  آشوب.npvt",
       "ext": "NPVT",

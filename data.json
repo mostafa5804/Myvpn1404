@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://c1ae57c7-8463-4446-bd9b-3c4fc2bc20ad@185.143.233.5:2086?encryption=none&type=ws&host=cdn.sesrsa.com&path=/&security=none#@SiNAVM%20%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%DB%8C`",
+      "latency": 1172,
+      "channel": "𝗙𝗥𝗘𝗘 𝗩𝗣𝗡 | SiNAVM",
+      "t_link": "https://t.me/myvpn1404/18585",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778321610.0911677
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AZpTE4DSV3E3MG1wjC74a26YPo4vnDdVVM8Qqi4XTpTkx3bUaw66GqytWQl9RIjdkU+E6j/V2n47WRAjApPsJFb5c0npCTbe6TpMlwsbng54jl/tht9A2E9dgDaUWcSbWw/+YpaGifGOCfqBDkIdPSJBgp4cP0NqqsTUK1xRLvi4QCj7CDRIMUsNF19FzNI5xFxwisfiA7Oc7uwrIBRd9QC0a1g2mdzwTScDAShvxcrDyfYS070bSF0Kz/JQ21EbBD+qlVG8mwHdWN77CH+3s3FWbg8zZ41ZQ/WqszAvDk/OSgdZXukz0H4OYL9ag7n5t4VwrdwG0hnWl9AQaZiovco3EMHfBA831m6Dwti6wmE4hP6hLOIB5algqnfhcnw/fjvdf2FNzqFphufknZUM1GjokFd6HJ24bflRm4+FyB5cfNf1XfQdflEXVtFKHCENkscffVSGexFbQHV+4HoYW+oAFaAx1DmPH0TFjMYrdY9M+a15BBcVHiux+IVjlc+KL15cp1GBkkeN9QwlxA7j2tYpguz0gJhsZNomQt3JxQkLXADRGKL2Jv1bCCpw6uyOvQuo/8AV5hYSqrSHGpZrEBirA2Rn8gWy9tZFBF9GHbk/aQTZunBwanioSrZgkjfMWm0IrOVImYSCcF3FX1cNwJ9ml779XvQUmohqW4zvpR/0RLvZIeN4dRTB2eelctk=```",
       "latency": 50,
@@ -49,19 +59,63 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1778284940.6107955
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://ARReTE1HVLvHApCTxy8nJF3tJzkueyHuHsQg9NM3Mcple0/lkSKeZ1xD7zpcFQ7BsVAm0ExbS2Vyottv/hgaEccIblNKCDFwwP3rIiEtDuYZpmYfoySUJcIlOPwShdYcfxJk1AcDMvaqj9fhNnBy2Lexk6VBvcXh86Cp6lZpZzzWe1kXW8irfQDIPJG1PnoIfq8V4fh0FNYJgfT3zvE0fVWxjFMIU9WQlBqM6zvs8MiUzDhjLeCBgRvBfeodx5N9YQo8y2yN7up7Wp82szDAV8phutcdnCEe6bwnB1HOOFGg2+LiniG5XbGHaUiBAyfOOxJat9KzDpdpY65dSSBl1IXQX04H7v203rp4QNNw02FxxMqlQkrhyqUJRcWSMpOgoFxyl+8Io2f3+cCxvBgnGJJPeGGM8uTAtN58K59yeA5n+VpBtaWmncWzdVPOLveZZTmIefdmF1+FPxDwA1hKq4m5LzoLL2ndhRB/ZsTVq7Au2AaOFRuo10gx5V9QkfVbYbjQJkg5V7TcdKB8k4B+Awxav63eH6vuzztvh+D0Aa1tG90DPs/VvSF6rk1+1TLkEctuIRUoCfcYlz4/Ht+BMHBfI3F2xci1moAdMj/ijprp4IFAHRBvu3BEV1UFeCpXM0WY2c+co6bpobCiaggk7uNCSe+SL4HVzQ5dhBm9oStVP0H8ilMIx6KrlHa1/FrEoFsP8e2joTAYcJXo74+l6KRR21mdaz9ceGq4CIjmjq+vnxBCe0ZmjeX+OwDD42mXcL7YRZiYWPD07WuroZHPlKIIgWV9tM79boP/cpCJGg91TtuLg3O8k+5xe45pIQXmNlJnzCn5LLsUUN1Hr6c7dUXD+vGOttyW3hw1M6SqIY4z6wsF2TPZsLBEZ0dzzXvR8Vaejltk`",
-      "latency": 50,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/18572",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1778275959.1158466
     }
   ],
   "proxies": [
+    {
+      "key": "2.26.98.239:443",
+      "link": "tg://proxy?server=2.26.98.239&port=443&secret=ee2b65f9171b435d2eee91225b93089127d186d1",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18584",
+      "latency": 159,
+      "flag": "🇩🇪",
+      "ts": 1778321551.230191
+    },
+    {
+      "key": "proxy.yard-tg-bot.ru:443",
+      "link": "tg://proxy?server=proxy.yard-tg-bot.ru&port=443&secret=ee1cfe2c07741ef6c9d9dde94a7f14a3db79616e6465782e7275)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18584",
+      "latency": 426,
+      "flag": "🇩🇪",
+      "ts": 1778321551.2301903
+    },
+    {
+      "key": "proxy.yard-tg-bot.ru:443",
+      "link": "tg://proxy?server=proxy.yard-tg-bot.ru&port=443&secret=ee1cfe2c07741ef6c9d9dde94a7f14a3db79616e6465782e7275",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18584",
+      "latency": 520,
+      "flag": "🇩🇪",
+      "ts": 1778321551.2301893
+    },
+    {
+      "key": "172.234.115.238:443",
+      "link": "tg://proxy?server=172.234.115.238&port=443&secret=3a3365be03d6bc13518d65e70a3146c2)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18584",
+      "latency": 163,
+      "flag": "🇸🇪",
+      "ts": 1778321551.230175
+    },
+    {
+      "key": "2.26.98.239:443",
+      "link": "tg://proxy?server=2.26.98.239&port=443&secret=ee2b65f9171b435d2eee91225b93089127d186d1)",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18584",
+      "latency": 152,
+      "flag": "🇩🇪",
+      "ts": 1778321551.230174
+    },
+    {
+      "key": "172.234.115.238:443",
+      "link": "tg://proxy?server=172.234.115.238&port=443&secret=3a3365be03d6bc13518d65e70a3146c2",
+      "channel": "🔱BugFreeNet🔱",
+      "t_link": "https://t.me/myvpn1404/18584",
+      "latency": 164,
+      "flag": "🇸🇪",
+      "ts": 1778321551.230172
+    },
     {
       "key": "62.3.12.2:8444",
       "link": "tg://proxy?server=62.3.12.2&port=8444&secret=ee6f7a6f6e2e7275f22c5421fa893965**",
@@ -110,6 +164,13 @@
   ],
   "files": [
     {
+      "name": "☬SHΞN™🚥TELETUN.JSON",
+      "ext": "JSON",
+      "channel": "i SHARΞ WIN™",
+      "link": "https://t.me/isharewin/26234",
+      "ts": 1778321640.1643453
+    },
+    {
       "name": "@TirexNet 22.ehi",
       "ext": "EHI",
       "channel": "TirexNet",
@@ -129,27 +190,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/20985",
       "ts": 1778316336.489095
-    },
-    {
-      "name": "DNS_Resolvers_700 (8).txt",
-      "ext": "TXT",
-      "channel": "VPN MARKET",
-      "link": "https://t.me/anty_filter/23042",
-      "ts": 1778276079.83445
-    },
-    {
-      "name": "@filtershekan_channel (25).npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | proxy | filtershekan",
-      "link": "https://t.me/filtershekan_channel/2452",
-      "ts": 1778275949.6640038
-    },
-    {
-      "name": "xixv2ray  ترکیبی سایفون.txt",
-      "ext": "TXT",
-      "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
-      "link": "https://t.me/xixv2ray/6379",
-      "ts": 1778275940.2389526
     }
   ]
 }

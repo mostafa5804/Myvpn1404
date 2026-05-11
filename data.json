@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AQfRWUEmdqd8fvroWxwkrgSzVn37N09ttCPoSOMttrciUnUn8e3a3xXWv00CQL7iK5cogH1inmzhv+MmtYo3LEsyoLCae+IRt6U2fNGgtH55ys/QLutGCHEO/7+jlbVmPEyiD8Qfvs2eFrdr7du81HyfB5WqTs7CI1ObVLd4MqCjkQLrypuXWod8wrg+o5tgCV3zKEeuVcEM+V2K4P6GpyTelTVy/WpYfyK914thQ4UNHuVaurHGuEpNq6cjel0FiDtz+kx4QghMBE9x6JHUxxQhkxdjRFR2TnVEqIyNj9MuROspyHkgXjmT5nctfeFX6X6lSzw1lwEM/qoV3DqigjzjlE5n1zJWUb5uiaA5+xP7u82ZEhv38EkiL/2PfvVbXmbVVFMhl4yYO/KO/folFXQmWEEOl/JUKmhd5f7mKzb6lNtmBYW15NRfa2U3p8Y7iuQxPHnW4l3ViwDzaYz1VJwe1/JdGn1QKdjpNwYkZvN5U3LJDBewYR/vk25trRiHXPjw6nENITVHE1Zz1nmcEQZZlkomI1KZu251EoVYY8V7+0xlpCfpcXX1AsphJzMKBX2CTUuemNtxZTfFXLJjy9yxw/iFJyqbUk6d3fp8MmrnL/5LXsBQ5WKQDFJvTXgR+bSeVI2gqTkYCAxQhlngQwA4/ausvFhDxLyX3e4iK+t2PCbHOdMA7n+1v1JehRJW5xG3ERpGjE/iPB24dQlX6hQm9L+jmmztdt0B5GV8PuMG1lChjhkwLG8M6inc2KFveeBitM4EYsBseTtLViUDPFamMqOmeqv4zef8xzTWsl3P0+p4/2b2+/i/7yk/lN2bJi9z6b4Eic4Hn5dPb3sDwWXZ`",
+      "latency": 50,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18655",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1778536034.531923
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://acd7d454-c55b-4568-a720-6b6b65c61ce6@s2.tehranionliine.ir:80?path=%2F&security=none&encryption=none&type=ws#%40filtershekan_channel`",
+      "latency": 4117,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18654",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778536027.0816648
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://58f8f6fa-27dd-4859-8c63-021e32547fc0@gift.nazincup.ir:80?path=%2Fapi&security=none&encryption=none&host=gift.nazincup.ir&type=ws#%40filtershekan_channel",
+      "latency": 745,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18653",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778536022.6277423
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.38.154.94:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 85,
@@ -52,6 +82,51 @@
     }
   ],
   "proxies": [
+    {
+      "key": "65.108.50.120:443",
+      "link": "tg://proxy?server=65.108.50.120&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18656",
+      "latency": 137,
+      "flag": "🇫🇮",
+      "ts": 1778536044.8826933
+    },
+    {
+      "key": "95.217.235.33:443",
+      "link": "tg://proxy?server=95.217.235.33&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18656",
+      "latency": 142,
+      "flag": "🇫🇮",
+      "ts": 1778536044.8826926
+    },
+    {
+      "key": "88.99.27.186:443",
+      "link": "tg://proxy?server=88.99.27.186&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18656",
+      "latency": 130,
+      "flag": "🇩🇪",
+      "ts": 1778536044.882692
+    },
+    {
+      "key": "77.42.27.171:4455",
+      "link": "tg://proxy?server=77.42.27.171&port=4455&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18656",
+      "latency": 143,
+      "flag": "🇫🇮",
+      "ts": 1778536044.8826911
+    },
+    {
+      "key": "194.120.230.199:25565",
+      "link": "tg://proxy?server=194.120.230.199&port=25565&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18656",
+      "latency": 113,
+      "flag": "🇳🇱",
+      "ts": 1778536044.8826892
+    },
     {
       "key": "46.225.29.180:443",
       "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6)",

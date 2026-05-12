@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AYebiRTPaEystMYmbA0mBtY1OzBR875bO0Z8bQCHmoFkDspMZfpWzmC44TOha54KpjUbFxqD4dK0+iUPssdz6iWwbbB79fitq3j9fk71aqfnQ2DnWmb6bcMVk3wbAZWVqNPDJ+ei0a+bTtnTyDqd7qrJoLNOtth8NaD8eGFmxM8Kf9/4e+z97xmBJJhMIFANsmoHwlHUkpzx7ICmEC78BzZFJQuKpPcdfE4S8jH89EIGDfl8MZe0B11iljTZA8ruzWH4iKj/HMGLHlmS1742cZMZGePSBbeu66ygAcZTxsW0jPMAjoLGzWRrKr7FgbavfN8zUp/X2e1dcokARWQwM9JMgE0ev4JzEeDgGj/U2kzqk2OJy+x/W3XdCMbyt4HSJ1+PEEODzamk1cOap/xti1O5s/8lmkAbwZV933LsJvgUeVTk99Fw62ygGxwSDxtek5onK2ZtCoBVuuSZI36mfOVq759njmhCzcSNG77xqkqKY+hCgn/7CQ3Hc/wCMv/o9Qnefy6VCnZ1TiSqUIifeA3V1XAt9j0KnFyu3WxmGUzdt7SGPqycBCAKnGM1JXWBdQkaeqy0t4h6RTWdn5QLqQb91UFDW1t33o+3lTHpb1Pk6IFyCjIS4LGwXIUiDYjWj4GuikyCodYnV9KwNk/08KVeRz6B4V6cxp+b8zqUtcYaH9em0dYhXcYGRhZXSD/5JNiBjcpft5oWjicTW43YdvfPQjBxd9cfSipDUUv8xvARSaqKts+xm8iuy0ux8SI0hBU=`",
+      "latency": 50,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18664",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1778572043.550875
+    },
+    {
+      "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://Ad5onvBUBC89ZQtzZjM4BPIoQqjozjppgXYjOy/oyYSVJLLFjBFi/u0IJdfNn9Up8mxy9Pug7Tue5gypW4BNTmscOgRijONEOn45Nj8pe+QQbcETFH+huvYzydbfq7oZygeNJBg65YXivFNsefsscjg/u0UsUv32/gC8AzcyY8N81ZBQ5NklpSIIfzbXup7SL3YTyYSPQ+uMxBcrV8gnQrAi61TRhO0oiYPpgheluH7i6Q3hFfBon44sQv+iQJnrbmBPK7Wq8d+926vf/j0lGjO4QD2a4ompVwFDTon71A+35EnXoFi2brbvt4HCFVkZzU1oJFYxkRSqj+ygPblXC1QhWJUO5sSiLKPijtmnkBlx89/fjhMyKUA2iIwmfrID3GLwTiOmJcVpYCY/MDEGf1F2CLYhHQNR2X8w0Qhy54yeP8LPUSHa7PQWGvMKZmKzfKQwK5g3NSrX+5qP2lRvbhcEozx0zphIt9gSUTinhKzEYjUcFmNSwOLEpfJkEzRrNMTzcrXixdosuZTLwaHg1N9nQwniq99F+5Hto78ljdNx7d5aarENsW09U3cQ42ASHx7zym2jkL6+cuiApEj8dDncVK3wolu+LsNSjYJycD2BcbderFMur0FcZnlfZvbXmHlQWsUY91JZJATLKue5WYjUYcrmtEhPMv9tVMcpA+OYhV4qX2ztzH6mHqGBRJ8Vfq9VLMdJcl49oY1pjsTT4EVIn/yTuc8Dyazb+VDFvNhyvXFENbilvGO7H0xDAr/JpsZrfvyIGHnP6A==```",
       "latency": 50,
       "channel": "VPN MARKET",
@@ -79,16 +89,6 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1778536022.6277423
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.38.154.94:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 85,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/18651",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1778526173.1366699
     }
   ],
   "proxies": [
@@ -136,24 +136,6 @@
       "latency": 113,
       "flag": "🇳🇱",
       "ts": 1778536044.8826892
-    },
-    {
-      "key": "46.225.29.180:443",
-      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/18650",
-      "latency": 163,
-      "flag": "🇩🇪",
-      "ts": 1778523313.6830745
-    },
-    {
-      "key": "46.225.29.180:443",
-      "link": "tg://proxy?server=46.225.29.180&port=443&secret=ee636c6f7564666c6172652e636f6db6",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/18650",
-      "latency": 165,
-      "flag": "🇩🇪",
-      "ts": 1778523313.6830726
     }
   ],
   "files": [

@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://132d729e-c50b-4324-94f6-b663615c1788@arvancloud.ir:80?path=%2F&security=&encryption=none&host=t1.tunnellinuweb.ir&type=ws#@ghalagyann`",
+      "latency": 345,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18666",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778582700.173466
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@8.6.112.0:443?path=%2Fassignment&security=tls&host=www.multiplydose.com&type=ws&sni=www.multiplydose.com#@ghalagyann",
+      "latency": 6,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18665",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1778582699.5541613
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://AYebiRTPaEystMYmbA0mBtY1OzBR875bO0Z8bQCHmoFkDspMZfpWzmC44TOha54KpjUbFxqD4dK0+iUPssdz6iWwbbB79fitq3j9fk71aqfnQ2DnWmb6bcMVk3wbAZWVqNPDJ+ei0a+bTtnTyDqd7qrJoLNOtth8NaD8eGFmxM8Kf9/4e+z97xmBJJhMIFANsmoHwlHUkpzx7ICmEC78BzZFJQuKpPcdfE4S8jH89EIGDfl8MZe0B11iljTZA8ruzWH4iKj/HMGLHlmS1742cZMZGePSBbeu66ygAcZTxsW0jPMAjoLGzWRrKr7FgbavfN8zUp/X2e1dcokARWQwM9JMgE0ev4JzEeDgGj/U2kzqk2OJy+x/W3XdCMbyt4HSJ1+PEEODzamk1cOap/xti1O5s/8lmkAbwZV933LsJvgUeVTk99Fw62ygGxwSDxtek5onK2ZtCoBVuuSZI36mfOVq759njmhCzcSNG77xqkqKY+hCgn/7CQ3Hc/wCMv/o9Qnefy6VCnZ1TiSqUIifeA3V1XAt9j0KnFyu3WxmGUzdt7SGPqycBCAKnGM1JXWBdQkaeqy0t4h6RTWdn5QLqQb91UFDW1t33o+3lTHpb1Pk6IFyCjIS4LGwXIUiDYjWj4GuikyCodYnV9KwNk/08KVeRz6B4V6cxp+b8zqUtcYaH9em0dYhXcYGRhZXSD/5JNiBjcpft5oWjicTW43YdvfPQjBxd9cfSipDUUv8xvARSaqKts+xm8iuy0ux8SI0hBU=`",
       "latency": 50,

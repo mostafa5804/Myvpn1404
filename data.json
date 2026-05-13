@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://086ea932-23ce-402d-969c-8ac02325ce42@185.143.233.5:2083/?type=ws&encryption=none&flow=&host=p1.sesrsa.com&path=%2F&security=tls&sni=sub.sesrsa.com&fp=firefox#@ghalagyann`",
+      "latency": 3158,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18702",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778687201.3535259
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6a2405d9-61e2-4c74-a638-b2e2899e1995@snapp.ir:80/?type=ws&encryption=none&flow=&host=pa1.ghostantaniehh.ir&path=%2F#@ghalagyann",
+      "latency": 295,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18701",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778687197.8393419
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.37.117.168:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 121,
@@ -132,6 +152,33 @@
     }
   ],
   "proxies": [
+    {
+      "key": "88.198.203.112:8080",
+      "link": "tg://proxy?server=88.198.203.112&port=8080&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18703",
+      "latency": 95,
+      "flag": "🇩🇪",
+      "ts": 1778687209.0787501
+    },
+    {
+      "key": "65.109.0.17:8080",
+      "link": "tg://proxy?server=65.109.0.17&port=8080&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18703",
+      "latency": 119,
+      "flag": "🇫🇮",
+      "ts": 1778687209.0787492
+    },
+    {
+      "key": "178.105.113.91:8080",
+      "link": "tg://proxy?server=178.105.113.91&port=8080&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18703",
+      "latency": 102,
+      "flag": "🇩🇪",
+      "ts": 1778687209.078747
+    },
     {
       "key": "89.167.104.111:443",
       "link": "tg://proxy?server=89.167.104.111&port=443&secret=b3f0c7f6af7dc2dc2e9c80d0d80e8162&@vpnbaz",
@@ -314,6 +361,20 @@
     }
   ],
   "files": [
+    {
+      "name": "👉@ghalagyann👈کانال ما در تلگرام.npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/21076",
+      "ts": 1778687197.2411318
+    },
+    {
+      "name": "👉@ghalagyann👈کانال ما در تلگرام².npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/21077",
+      "ts": 1778687196.9360662
+    },
     {
       "name": "5000-Resolver.txt",
       "ext": "TXT",

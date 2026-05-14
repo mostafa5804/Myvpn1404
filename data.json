@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@35.180.235.87:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 156,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/18726",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1778764404.1667209
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://5cd8ad8a-5aa9-4d3d-81a2-4816ca667441@snapp.ir:80?path=%2Fh&security=&encryption=none&host=s.22c.ir&type=ws#%40isorinBot",
       "latency": 275,

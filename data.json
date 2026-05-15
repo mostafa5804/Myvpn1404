@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AUMtRWwdcc5EDZB9LcTh3wViO4KjVB2ruPkMt0jrc04TRCxvhewGWyJFwyJylM1rFVZWwYsk9IznegdAmqv+d4dZUIHDQfl5bTDewUH1GmqR90BY+szhnfTQs5DW8CPmTHOkjMoUkKQiOyBxIf36Ay1/dF/uHDWHun46pC3q57UP7Gci4mvG7sjskU36W5NmEfBXrmK2O3yjQaFRPsPpGkAthZyP5UD/6Pfj4TtC7C+BOFDh0gJ9itPPVN7dKENYyA+KNWJakAQGSWa0BNU7iT0cYn2AOZxXHAWpeWHZpZb9+ReN9Os1WVTNIRwe2ZJYiG3llSXqtZw+Ve3SiXidwroiOPhsHu9AyCUdy2QopnalXxBrVDp/Fem39XNiE5VYkceb3iXaKoaaiTPOVC/M5BYlzIJcFC/0/7LQeQGjWj3c7I1o8tlarJhaRB8TLEbq8panzMPWbyIx5ijhTHfSJ5zbxJh4BQiiWtVKZXzoK2co3Vs/A0s/Pzq3KuLdOGekaM6AskxpvPFpsub1LGqRC2p2pv8WW7jOg5MDYRv++TUApKcvP4gk8J1nFbuWm5iyvQ/43UJyhcT7wBStw3ELX9cOxqRj3dreZKfDNYbxyIb0u6EHS484oPRnuSKqKh7CUqfeQbg/kWwSZel+bv0hRaO6yiGLt6QBMaZmwkZiwx2sINANbPKwoVa558Vm",
+      "latency": 50,
+      "channel": "پروکسی | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/18743",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1778830290.8188472
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.39.94.180:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 181,
@@ -11,36 +21,50 @@
       "ts": 1778789611.1824005
     }
   ],
-  "proxies": [
-    {
-      "key": "62.238.0.202:4455",
-      "link": "tg://proxy?server=62.238.0.202&port=4455&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ و پروکسی | هوپنوس",
-      "t_link": "https://t.me/myvpn1404/18734",
-      "latency": 170,
-      "flag": "🇳🇱",
-      "ts": 1778781588.250749
-    },
-    {
-      "key": "157.90.230.82:443",
-      "link": "tg://proxy?server=157.90.230.82&port=443&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ و پروکسی | هوپنوس",
-      "t_link": "https://t.me/myvpn1404/18734",
-      "latency": 145,
-      "flag": "🇩🇪",
-      "ts": 1778781588.2507477
-    },
-    {
-      "key": "178.105.113.91:8080",
-      "link": "tg://proxy?server=178.105.113.91&port=8080&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ و پروکسی | هوپنوس",
-      "t_link": "https://t.me/myvpn1404/18734",
-      "latency": 146,
-      "flag": "🇩🇪",
-      "ts": 1778781588.250745
-    }
-  ],
+  "proxies": [],
   "files": [
+    {
+      "name": "psiphon-helper-force-fastly-1.json",
+      "ext": "JSON",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/3819",
+      "ts": 1778830339.100446
+    },
+    {
+      "name": "psiphon-helper-force-fastly-2.json",
+      "ext": "JSON",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/3820",
+      "ts": 1778830338.809746
+    },
+    {
+      "name": "psiphon-helper-force-fastly-3.json",
+      "ext": "JSON",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/3821",
+      "ts": 1778830338.49801
+    },
+    {
+      "name": "psiphon-helper-force-fastly-4.json",
+      "ext": "JSON",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/3822",
+      "ts": 1778830338.195491
+    },
+    {
+      "name": "psiphon-helper-force-fastly-5.json",
+      "ext": "JSON",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/3823",
+      "ts": 1778830337.8947358
+    },
+    {
+      "name": "🍓@ xixv2ray وال.npvt",
+      "ext": "NPVT",
+      "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
+      "link": "https://t.me/xixv2ray/6491",
+      "ts": 1778830282.418992
+    },
     {
       "name": "akamai-AS20940.json",
       "ext": "JSON",
@@ -75,13 +99,6 @@
       "channel": "پروکسی | proxy | filtershekan",
       "link": "https://t.me/filtershekan_channel/2514",
       "ts": 1778788723.0882633
-    },
-    {
-      "name": "Best IP 300.txt",
-      "ext": "TXT",
-      "channel": "VPN MARKET",
-      "link": "https://t.me/anty_filter/23085",
-      "ts": 1778781678.8665705
     }
   ]
 }

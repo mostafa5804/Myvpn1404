@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://1e626a22-fbce-43fe-b8e9-d16e979a386f@snapp.ir:2052?path=%2F&security=none&encryption=none&host=s.softtiger.ir&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
+      "latency": 341,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/18759",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778874531.2457805
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://36326231-3138-4166-b834-303439306131@185.143.234.96:80?path=%2Fl%2Fw%2FaXD2QyDdS6vRQpxs%3Fed%3D2047&security=none&encryption=none&host=dl.tgmovie.bond&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
+      "latency": 1084,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/18758",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778874530.6382751
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://017998c6-da9e-4edf-a5d1-0d7dc68f5097@snapp.ir:80?path=%2F&security=none&encryption=none&host=iranfuture.musicritmic.ir&type=ws#%40vpnbaz%20%7C%20%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C",
+      "latency": 315,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/18757",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1778874529.3010416
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.38.241.41:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 86,
@@ -9,16 +39,6 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1778850816.1269999
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AUMtRWwdcc5EDZB9LcTh3wViO4KjVB2ruPkMt0jrc04TRCxvhewGWyJFwyJylM1rFVZWwYsk9IznegdAmqv+d4dZUIHDQfl5bTDewUH1GmqR90BY+szhnfTQs5DW8CPmTHOkjMoUkKQiOyBxIf36Ay1/dF/uHDWHun46pC3q57UP7Gci4mvG7sjskU36W5NmEfBXrmK2O3yjQaFRPsPpGkAthZyP5UD/6Pfj4TtC7C+BOFDh0gJ9itPPVN7dKENYyA+KNWJakAQGSWa0BNU7iT0cYn2AOZxXHAWpeWHZpZb9+ReN9Os1WVTNIRwe2ZJYiG3llSXqtZw+Ve3SiXidwroiOPhsHu9AyCUdy2QopnalXxBrVDp/Fem39XNiE5VYkceb3iXaKoaaiTPOVC/M5BYlzIJcFC/0/7LQeQGjWj3c7I1o8tlarJhaRB8TLEbq8panzMPWbyIx5ijhTHfSJ5zbxJh4BQiiWtVKZXzoK2co3Vs/A0s/Pzq3KuLdOGekaM6AskxpvPFpsub1LGqRC2p2pv8WW7jOg5MDYRv++TUApKcvP4gk8J1nFbuWm5iyvQ/43UJyhcT7wBStw3ELX9cOxqRj3dreZKfDNYbxyIb0u6EHS484oPRnuSKqKh7CUqfeQbg/kWwSZel+bv0hRaO6yiGLt6QBMaZmwkZiwx2sINANbPKwoVa558Vm",
-      "latency": 50,
-      "channel": "پروکسی | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/18743",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1778830290.8188472
     }
   ],
   "proxies": [
@@ -92,48 +112,6 @@
       "channel": "VPN MARKET",
       "link": "https://t.me/anty_filter/23093",
       "ts": 1778859370.1500747
-    },
-    {
-      "name": "psiphon-helper-force-fastly-1.json",
-      "ext": "JSON",
-      "channel": "TirexNet",
-      "link": "https://t.me/TirexNet/3819",
-      "ts": 1778830339.100446
-    },
-    {
-      "name": "psiphon-helper-force-fastly-2.json",
-      "ext": "JSON",
-      "channel": "TirexNet",
-      "link": "https://t.me/TirexNet/3820",
-      "ts": 1778830338.809746
-    },
-    {
-      "name": "psiphon-helper-force-fastly-3.json",
-      "ext": "JSON",
-      "channel": "TirexNet",
-      "link": "https://t.me/TirexNet/3821",
-      "ts": 1778830338.49801
-    },
-    {
-      "name": "psiphon-helper-force-fastly-4.json",
-      "ext": "JSON",
-      "channel": "TirexNet",
-      "link": "https://t.me/TirexNet/3822",
-      "ts": 1778830338.195491
-    },
-    {
-      "name": "psiphon-helper-force-fastly-5.json",
-      "ext": "JSON",
-      "channel": "TirexNet",
-      "link": "https://t.me/TirexNet/3823",
-      "ts": 1778830337.8947358
-    },
-    {
-      "name": "🍓@ xixv2ray وال.npvt",
-      "ext": "NPVT",
-      "channel": "🍓 XIX v2ray Proxy DNS DNSTT AM TUNNEL Netmod",
-      "link": "https://t.me/xixv2ray/6491",
-      "ts": 1778830282.418992
     }
   ]
 }

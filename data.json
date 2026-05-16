@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.74.67.75:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 149,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/18782",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1778951212.8865705
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.188.181.239:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 146,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -163,24 +173,6 @@
       "latency": 1183,
       "flag": "🇺🇸",
       "ts": 1778926855.56754
-    },
-    {
-      "key": "157.180.69.178:8080",
-      "link": "tg://proxy?server=157.180.69.178&port=8080&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ و پروکسی | هوپنوس",
-      "t_link": "https://t.me/myvpn1404/18766",
-      "latency": 117,
-      "flag": "🇫🇮",
-      "ts": 1778902877.3344595
-    },
-    {
-      "key": "167.235.249.231:443",
-      "link": "tg://proxy?server=167.235.249.231&port=443&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ و پروکسی | هوپنوس",
-      "t_link": "https://t.me/myvpn1404/18766",
-      "latency": 95,
-      "flag": "🇩🇪",
-      "ts": 1778902877.3344574
     }
   ],
   "files": [

@@ -49,49 +49,27 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1779479823.3963976
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://32bef899-6c34-4a8d-8eab-550a3443df5a@varzesh3.com:8443?encryption=none&fp=firefox&host=p1.sesrsa.com&path=%2F&security=tls&sni=sub.sesrsa.com&type=ws#@ghalagyann",
-      "latency": 181,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/18870",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1779438923.5503728
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://2641d904-84cb-4bc5-97ff-674ccf46a449@Snapp.ir:2086?type=ws&encryption=none&path=%2F&host=f.mroza.ir&security=none#@ghalagyann",
-      "latency": 348,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/18869",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1779438923.0621476
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f9aeba2c-4c68-11f1-8d30-2ddfba49052f@185.143.234.235:8880?path=%2F%3Fed%3D2560&security=none&encryption=none&host=sv-1.jservices.ir&type=ws#@ghalagyann",
-      "latency": 86,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/18868",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1779438922.3287134
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e3d486fb-d9bf-47b6-817d-e67211f30d00@185.143.234.115:443?encryption=none&security=tls&type=ws&sni=rest.parhamm2.ir&host=rest.parhamm2.ir#@ghalagyann",
-      "latency": 1093,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/18867",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1779438921.9743216
     }
   ],
   "proxies": [
+    {
+      "key": "77.42.79.76:4455",
+      "link": "tg://proxy?server=77.42.79.76&port=4455&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18878",
+      "latency": 113,
+      "flag": "🇫🇮",
+      "ts": 1779483194.123659
+    },
+    {
+      "key": "95.216.163.206:443",
+      "link": "tg://proxy?server=95.216.163.206&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/18878",
+      "latency": 114,
+      "flag": "🇫🇮",
+      "ts": 1779483194.1236565
+    },
     {
       "key": "135.181.31.175:443",
       "link": "tg://proxy?server=135.181.31.175&port=443&secret=dd104462821249bd7ac519130220c25d09",

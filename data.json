@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://32bef899-6c34-4a8d-8eab-550a3443df5a@varzesh3.com:8443?encryption=none&fp=firefox&host=p1.sesrsa.com&path=%2F&security=tls&sni=sub.sesrsa.com&type=ws#@ghalagyann",
+      "latency": 181,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18870",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1779438923.5503728
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://2641d904-84cb-4bc5-97ff-674ccf46a449@Snapp.ir:2086?type=ws&encryption=none&path=%2F&host=f.mroza.ir&security=none#@ghalagyann",
+      "latency": 348,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18869",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1779438923.0621476
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://f9aeba2c-4c68-11f1-8d30-2ddfba49052f@185.143.234.235:8880?path=%2F%3Fed%3D2560&security=none&encryption=none&host=sv-1.jservices.ir&type=ws#@ghalagyann",
+      "latency": 86,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18868",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1779438922.3287134
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e3d486fb-d9bf-47b6-817d-e67211f30d00@185.143.234.115:443?encryption=none&security=tls&type=ws&sni=rest.parhamm2.ir&host=rest.parhamm2.ir#@ghalagyann",
+      "latency": 1093,
+      "channel": "ghalagyann",
+      "t_link": "https://t.me/myvpn1404/18867",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1779438921.9743216
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://ATwHzImnOLurXFZCjKrjxFbN1ZR/sCSwlm4/SDjeTrfrCc+m5H1Tnii7dLfr0ROLvWBfXMMkwe04U7ibcuzC03vWAbXtUm8Tf8YTzrkkHleC7bY++cxpDDDAEbtNF+xdTfPixQL4MANDm/SI/5ur6M25uJgzVPHpUsvyF/ieDAlk+cKuS+T6ajxxUiokgCTxycMovb/r3qxUXHXdPcEGbTyJCFHXErYs1NUAULyWNFxhppwNZvivCQqwWTH+SN00D+Ht2DA7/7ihFf6tYTLdQLjSFHgic2W4E7EJHxYy6x9FFC+x7ocogjtXMYQneuMPmW+38KT0SyucbbT7Mr9Zra2+gyPwqWB5liQEZDyr9J4nC8HvicYOFOS8S7/rx6FpnaD0xwVLT/w0B4Pxu9eY2TWbyAFp4jdJ+rhqcee0/9cdVsbm+rwBFFhAXCnfQmaf5WN0/RtFhpLa1ZpvkAvRPNx7b6lwS8Rs3KwHzeM67UKmKepTDTr04qN0r9Ix5ep2qKd6d5/gkVzNi2x6pDya1xD20dG3jhGYuK1HLOCoHzYOz240IJdTmv73TRf9cmU7OolL1YoZgS0Jk0GvMkBP4OkalIz5/TTalp84OV4orVhPHTUGhT/wgB3ixVcGG7lbVUbs/m1d+/1E4w9Vb+2GJefXrNQP3aySxZTJAKr6SOnbSL53Aw3e5TE1lF9aUvoJkuBbYyXhDzl4/IguUf/AZ1l/EKw4hpPeaIThG6EPQfl3dkZtuoTX1+aOeZA8ZQ==```",
       "latency": 50,

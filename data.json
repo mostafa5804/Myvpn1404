@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@141.193.213.11:443?allowInsecure=1&alpn=http%2F1.1&path=%2Fassignment&sni=www.calmloud.com&type=ws#NetAccount`",
+      "latency": 14,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/18922",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1779739627.4339366
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.17.72.206:443?allowInsecure=1&alpn=http%2F1.1&path=%2Fassignment&sni=www.calmloud.com&type=ws#NetAccount`",
+      "latency": 14,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/18921",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1779739627.0413954
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://c76f1cba-ae4a-4373-a9af-d58efeca672d@anten.ir:443?path=%2Fgraphql%3Fed%3D2560&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&host=g15.derakcloud.org&fp=chrome&type=ws&allowInsecure=0&sni=g15.derakcloud.org#@planB_net`",
       "latency": 450,

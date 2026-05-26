@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://4a5ee365-2414-47e8-9285-9d57ff7cf66e@185.143.233.5:443?path=%2F&security=tls&encryption=none&insecure=1&host=apolodiscount.johnmorgan.ir&fp=chrome&type=ws&allowInsecure=1&sni=apolodiscount.johnmorgan.ir#NetAccount`",
+      "latency": 124,
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/18931",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1779754386.9504611
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://ASrJ814YCC0IIpb/MdrDIiocxKjN+ZTe/bqEYUSEwNne31DyJNRxz2qh5eRBBBRu/zP9Bsyc75WOyF0D/6mxGHFe0OdxzGEuYLq4Pt5arlO4Q7bbhYLhKL5ONDOcsYRPXKJF5ih3/fJVAzHW2QRQEBdG7jNbttLE6V6CWu5ClE0V198XDp/13nJCtUdHO9h4uJLpjcmzMR/9tAIQWrqQqyMLQMcM5wa2Gok2PIo0yPYLtArmie/X8m2D2c+pqXRFB16pgLwFQLefrkCygfUNVPdc/FbYxNmx0gCjw/YfIYnWkoWXnKtsIhvzzxRNnchlQlDPtXM8RtglYb7wP8EwRJQN3+0iXxvsYlSg59XurDUkwlsLbsNpoFzFNGompevRYaXzcRPijw8OLxbW75qjWpm4SuF8Cv2BpZbbIKSgQety1JIKsLnwxdbsCAg0XO8gTRS6F9TG+DLf6O6prlc0DMiQ+lo3zEMOY3u8RrjaYnqPDnCMi41xmpoFT8gVNRTqePvnicFRBtiGBimCQGh9ygffPZHsK/db8n6cP9gOppw0jVoslesN7l7tEZe4wCTfgyFdXsCMiV4NJqi7hQXvro37sv+a+CUWJS9vBj+bjBQ1B8Lh3OYOLRP4W/qy57b9taPswJ4ZAJ3cLkMyNTi4JD8GyUbUg2g4x9752p6qPHQmgN+nvDvjgv9BBqIxTVsz58o5lTl6U4KfqJU+tKlJtcJYIUGMdBpLbKPp2m+nkGc5k9fkCUgr47740QtBLHXdNfzEUQido1z8FTEjMejehK0=```",
       "latency": 50,

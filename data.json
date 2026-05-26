@@ -2,6 +2,46 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://900ca7c5-6c69-4536-b0f8-efa4e3976016@51.79.89.68:443?security=none&encryption=none&headerType=none&type=tcp#%40Merlin_ViP",
+      "latency": 51,
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19046",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1779829681.8919635
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://aaaaaabb-4ddd-4eee-9fff-ffffffffffff@208.103.161.11:443?path=%2F139.45.214.126%3A443&security=tls&encryption=none&host=afrcloud2.c01.kr&type=ws&sni=afrcloud2.c01.kr#%40Merlin_ViP",
+      "latency": 18,
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19045",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1779829681.403703
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://8r%3C%5B9%27l6hAO%238ZQi@172.64.149.54:2096?path=%2Ftr&security=tls&host=Koma-YT.PAGeS.Dev&type=ws&sni=Koma-YT.PAGeS.Dev#%40Merlin_ViP",
+      "latency": 18,
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19044",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1779829681.002441
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://05e09c8a-a3a9-4bd5-acf9-2c3c87bab827@145.239.173.163:443?security=none&encryption=none&headerType=none&type=tcp#%40Merlin_ViP",
+      "latency": 135,
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19043",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1779829680.5018463
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@104.16.63.25:443?path=%2F%3FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540WangCai2%3D&security=tls&encryption=none&host=sni.111000.v6.navy&type=ws&sni=sni.111000.v6.navy#cicdovpn",
       "latency": 2,
       "channel": "VPN | CICDO کانفینگ ملی شکن",
@@ -689,19 +729,45 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1779790116.035347
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://YWVzLTI1Ni1nY206cXcyQndlcXdlM1A2OTdHMmVy@185.60.137.65:16541#%40TirexNet```",
-      "latency": null,
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/18933",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1779785254.243078
     }
   ],
   "proxies": [
+    {
+      "key": "178.105.241.184:443",
+      "link": "tg://proxy?server=178.105.241.184&port=443&secret=99902e5742bd34a3f26434fadf88cde3",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19050",
+      "latency": 137,
+      "flag": "🇩🇪",
+      "ts": 1779829806.7165358
+    },
+    {
+      "key": "178.105.241.184:443",
+      "link": "tg://proxy?server=178.105.241.184&port=443&secret=99902e5742bd34a3f26434fadf88cde3)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19050",
+      "latency": 135,
+      "flag": "🇩🇪",
+      "ts": 1779829806.7165332
+    },
+    {
+      "key": "176.65.131.45:25565",
+      "link": "tg://proxy?server=176.65.131.45&port=25565&secret=79e344818749bd7ac519130220c25d09)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19048",
+      "latency": 124,
+      "flag": "🇳🇱",
+      "ts": 1779829791.4426174
+    },
+    {
+      "key": "176.65.131.45:25565",
+      "link": "tg://proxy?server=176.65.131.45&port=25565&secret=79e344818749bd7ac519130220c25d09",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19048",
+      "latency": 129,
+      "flag": "🇳🇱",
+      "ts": 1779829791.442615
+    },
     {
       "key": "87.248.129.205:25565",
       "link": "tg://proxy?server=87.248.129.205&port=25565&secret=79e344818749bd7ac519130220c25d09",
@@ -956,6 +1022,20 @@
     }
   ],
   "files": [
+    {
+      "name": "darkproxy@.npvt",
+      "ext": "NPVT",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "link": "https://t.me/darkproxy/15968",
+      "ts": 1779829806.4188874
+    },
+    {
+      "name": "full Nice.npvt",
+      "ext": "NPVT",
+      "channel": "Iranian Minds",
+      "link": "https://t.me/IranianMinds/20840",
+      "ts": 1779829765.1966538
+    },
     {
       "name": "‎⁨پرسرعت جدید عالی 🔥❤️⁩.npvt",
       "ext": "NPVT",

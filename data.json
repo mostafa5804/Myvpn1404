@@ -1,6 +1,96 @@
 {
   "configs": [
     {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiIxMzQuMTk1LjE5Ni4yMTEiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxODAwMCIsInBzIjoiQGZpbHRlcnNoZWthbl9jaGFubmVsIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
+      "latency": 21,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/19162",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1779922460.6921577
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://406d8436-0eb9-4eb2-84fb-960e076ffba6@14.102.228.76:2083?mode=stream-one&path=%2Fde&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=1&host=de.lezzatzone.ir&fp=chrome&type=xhttp&allowInsecure=1&sni=de.lezzatzone.ir#%40filtershekan_channel",
+      "latency": 2,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/19161",
+      "flag": "🇨🇿",
+      "country": "Czechia",
+      "ts": 1779922460.3840292
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://06b65903-406d-4a41-8463-6fd5c0ee7798@43.169.18.179:443?path=%2Fproxyip&security=tls&encryption=none&insecure=0&host=sni.skylee4.cloudns.ch&fp=chrome&type=ws&allowInsecure=0&sni=sni.skylee4.cloudns.ch#%40filtershekan_channel",
+      "latency": 2,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/19160",
+      "flag": "🇨🇳",
+      "country": "China",
+      "ts": 1779922459.8722746
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://41f37ced-2021-4111-93a8-82d57ff2eb5b@fx3033.game2lizard.com:2083?encryption=none&security=tls&sni=mzaxmc0.lizard2shop.com&fp=360&type=ws&path=%2F%3Fed%3D2560#%5B%F0%9F%87%A8%F0%9F%87%A6%5D%F0%9F%8D%93%40xixv2ray```",
+      "latency": 86,
+      "channel": "🍓 XIX",
+      "t_link": "https://t.me/myvpn1404/19158",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1779922451.9897387
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://768ed570-f3b0-485c-b72d-322ba9f9b940@188.114.98.0:8443?encryption=none&security=tls&sni=erfbaz.ultimateman.ir&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1&type=ws&host=erfbaz.ultimateman.ir&path=%2F#%5B%F0%9F%87%A8%F0%9F%87%A6%5D%F0%9F%8D%93%40xixv2ray",
+      "latency": 2,
+      "channel": "🍓 XIX",
+      "t_link": "https://t.me/myvpn1404/19157",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1779922451.589924
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://95faa698-2165-40c5-902c-0cda6de58596@hes.purplrose.ir:8443?encryption=none&security=tls&sni=meh.purplrose.ir&alpn=h2%2Chttp%2F1.1&fp=chrome&type=xhttp&host=meh.purplrose.ir&path=%2F&mode=auto&extra=%7B%22mode%22%3A%22auto%22%2C%22scMaxEachPostBytes%22%3A%221000000%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D#%5B%F0%9F%87%A8%F0%9F%87%A6%5D%F0%9F%8D%93%40xixv2ray",
+      "latency": 105,
+      "channel": "🍓 XIX",
+      "t_link": "https://t.me/myvpn1404/19156",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1779922451.28831
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6fc86f51-51e8-4f51-8ccb-31c6abe02d88@18.185.184.13:443?encryption=none&security=none&type=tcp&headerType=none#%5B%F0%9F%87%A9%F0%9F%87%AA%5D%F0%9F%8D%93%40xixv2ray",
+      "latency": 90,
+      "channel": "🍓 XIX",
+      "t_link": "https://t.me/myvpn1404/19155",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1779922450.8888092
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://1af937a0-89db-4048-853e-527b4b18cc8e@snappfood.ir:443?encryption=none&security=tls&sni=srv.tooorkshop.ir&alpn=h2%2Chttp%2F1.1&fp=chrome&type=ws&path=%2Fbspath#%5B%F0%9F%87%AE%F0%9F%87%B7%5D%F0%9F%8D%93%40xixv2ray",
+      "latency": 346,
+      "channel": "🍓 XIX",
+      "t_link": "https://t.me/myvpn1404/19154",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1779922445.4470954
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVZmF3YnA2eksxVGQwM0lVTDljYXY3X3I2QmJ1MkZvVQ%3D%3D@vip.tekcloud.site:20900#%5B%F0%9F%87%AE%F0%9F%87%B7%5D%F0%9F%8D%93%40xixv2ray",
+      "latency": 235,
+      "channel": "🍓 XIX",
+      "t_link": "https://t.me/myvpn1404/19153",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1779922444.824248
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://ae0dd58e-e222-40bf-84ae-365a97532737@45.130.125.160:443?path=%2Fquestion%2Favatar%2Fhot&security=tls&encryption=none&host=pagescm.freen34.cc.cd&type=ws&sni=pagescm.freen34.cc.cd#%40Merlin_ViP`",
       "latency": 2,
@@ -69,116 +159,6 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1779879750.242438
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5cf821af-8c2e-50cc-927a-5d41668a9192@nl-1.rknzaebalyzhe.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=nl-1.rknzaebalyzhe.com&fp=qq&pbk=mk-fkkWvUHz2ubIOkr8kfDeglXowdCI3Z4OssjWIIwg&sid=2b145d99dc39e2cc&type=tcp&headerType=none#NetAccount`",
-      "latency": 189,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/19114",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "ts": 1779876436.7289653
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://1db64ac8-1d00-4d92-beed-9c3498c4ed7c@a1.maxilium.ir:443?encryption=none&security=tls&sni=a1.maxilium.ir&type=xhttp&host=a1.maxilium.ir&path=%2F&mode=auto#NetAccount`",
-      "latency": 710,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/19113",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1779876436.1205025
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://397f9b46-641c-48bb-898e-9bce215b2bf7@104.254.140.238:2096?encryption=none&security=none&type=tcp&headerType=http&host=sni.jpmj.dev#NetAccount`",
-      "latency": 1,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/19112",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1779876435.0301526
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://cb34a215-2071-464d-9ccf-4651da62d9a0@varzesh3.com:443?encryption=none&security=tls&sni=internet.server21.org&alpn=h2%2Chttp%2F1.1&fp=chrome&type=ws&host=internet.server21.org&path=%2F26250#NetAccount`",
-      "latency": 157,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/19111",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1779876434.726536
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f@fr-tx.sbrf-cdn342.ru:443?encryption=none&flow=xtls-rprx-vision-udp443&security=tls&sni=sub.sbrf-cdn342.ru&type=tcp&headerType=none#NetAccount`",
-      "latency": 495,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/19110",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1779876434.2428615
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://b4a7d8d8-ba8c-4e79-8998-33ced9568740@snapp.ir:80?encryption=none&type=ws&path=%2F&host=hoosh.sabasarmaye.ir#Cicdovpn",
-      "latency": 499,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19107",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1779876360.9275506
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://ae0dd58e-e222-40bf-84ae-365a97532737@162.159.152.120:443?path=%2Fcode%2Fdl&security=tls&encryption=none&insecure=0&host=pagescm.freen29.cc.cd&fp=chrome&type=ws&allowInsecure=0&sni=pagescm.freen29.cc.cd#CICDOVPN",
-      "latency": 1,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19106",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1779876359.985425
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://8475ccf8-2464-4e1f-bf1e-656d2fc77ff7@45.67.215.2:443?encryption=none&security=tls&sni=netv.amirshee9090.workers.dev&allowInsecure=1&type=ws&host=netv.amirshee9090.workers.dev&path=%2Fws#CICDOVPN",
-      "latency": 2,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19105",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1779876359.474966
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://41f37ced-2021-4111-93a8-82d57ff2eb5b@63.141.128.5:2083?encryption=none&security=tls&sni=mzaxmc.lizardshop.org&fp=chrome&type=ws&path=%2F%3Fed#CICDOVPN",
-      "latency": 2,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19104",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1779876359.1067705
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://8fb031ca-e004-4b92-bcfe-cd3d3a585327@45.67.215.4:2083?encryption=none&security=tls&sni=sd.hercule.sbs&alpn=http%2F1.1&fp=chrome&allowInsecure=1&type=ws&host=sd.hercule.sbs&path=%2Fchat#CICDOVPN",
-      "latency": 2,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19103",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1779876358.7215931
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://ae0dd58e-e222-40bf-84ae-365a97532737@165.215.250.14:443?encryption=none&security=tls&sni=pagescm.freen3.cc.cd&type=ws&host=pagescm.freen3.cc.cd&path=%2Fpdf%2Fservicesfp%3Dchrome%3Fed%3D2048#CICDOVPN",
-      "latency": 2,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19102",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1779876358.2708094
     }
   ],
   "proxies": [
@@ -334,90 +314,72 @@
       "latency": 3276,
       "flag": "🇳🇱",
       "ts": 1779879758.980949
-    },
-    {
-      "key": "188.245.149.164:8443",
-      "link": "tg://proxy?server=188.245.149.164&port=8443&secret=e293ecdb4723b9781be193226900a918)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19115",
-      "latency": 156,
-      "flag": "🇩🇪",
-      "ts": 1779876480.7993214
-    },
-    {
-      "key": "138.68.90.236:25565",
-      "link": "tg://proxy?server=138.68.90.236&port=25565&secret=dda02098632361ed83035198044a004b2b",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19115",
-      "latency": 159,
-      "flag": "🇩🇪",
-      "ts": 1779876480.79932
-    },
-    {
-      "key": "178.105.241.184:443",
-      "link": "tg://proxy?server=178.105.241.184&port=443&secret=99902e5742bd34a3f26434fadf88cde3",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19115",
-      "latency": 160,
-      "flag": "🇩🇪",
-      "ts": 1779876480.7993188
-    },
-    {
-      "key": "138.68.90.236:25565",
-      "link": "tg://proxy?server=138.68.90.236&port=25565&secret=dda02098632361ed83035198044a004b2b)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19115",
-      "latency": 156,
-      "flag": "🇩🇪",
-      "ts": 1779876480.7993176
-    },
-    {
-      "key": "188.245.149.164:8443",
-      "link": "tg://proxy?server=188.245.149.164&port=8443&secret=e293ecdb4723b9781be193226900a918",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19115",
-      "latency": 149,
-      "flag": "🇩🇪",
-      "ts": 1779876480.7993155
-    },
-    {
-      "key": "178.105.241.184:443",
-      "link": "tg://proxy?server=178.105.241.184&port=443&secret=99902e5742bd34a3f26434fadf88cde3)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19115",
-      "latency": 160,
-      "flag": "🇩🇪",
-      "ts": 1779876480.7993124
-    },
-    {
-      "key": "176.65.131.45:25565",
-      "link": "tg://proxy?server=176.65.131.45&port=25565&secret=79e344818749bd7ac519130220c25d09",
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19108",
-      "latency": 146,
-      "flag": "🇳🇱",
-      "ts": 1779876362.2752082
-    },
-    {
-      "key": "mt.corph.ru:443",
-      "link": "tg://proxy?server=mt.corph.ru&port=443&secret=dd2ed7517b077ef414e24b106e0729335d",
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19108",
-      "latency": 423,
-      "flag": "🇷🇺",
-      "ts": 1779876362.2752073
-    },
-    {
-      "key": "65.109.209.96:300",
-      "link": "tg://proxy?server=65.109.209.96&port=300&secret=eeNEgYdJvXrFGRMCIMJdCWFydmFuY2xvdWQuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19108",
-      "latency": 176,
-      "flag": "🇫🇮",
-      "ts": 1779876362.2752047
     }
   ],
   "files": [
+    {
+      "name": "-ViP♥️.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد",
+      "link": "https://t.me/mitivpn/16948",
+      "ts": 1779922542.9294627
+    },
+    {
+      "name": "NTG 5.npvt",
+      "ext": "NPVT",
+      "channel": "NTGreen | اینترنت سبز 👽",
+      "link": "https://t.me/Free_Nettm/12202",
+      "ts": 1779922533.5544755
+    },
+    {
+      "name": "@planb_net #69.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2708",
+      "ts": 1779922524.14033
+    },
+    {
+      "name": "@planb_net #70.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2709",
+      "ts": 1779922523.8600779
+    },
+    {
+      "name": "@planb_net#71.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2710",
+      "ts": 1779922523.6352036
+    },
+    {
+      "name": "@TirexNet (13).npvt",
+      "ext": "NPVT",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/4369",
+      "ts": 1779922508.0772004
+    },
+    {
+      "name": "@TirexNet (14).npvt",
+      "ext": "NPVT",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/4370",
+      "ts": 1779922507.8594038
+    },
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام .npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/21369",
+      "ts": 1779922468.0262277
+    },
+    {
+      "name": "@Filtershekan_channel (3).npvt",
+      "ext": "NPVT",
+      "channel": "Vpn | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2726",
+      "ts": 1779922459.4886498
+    },
     {
       "name": "‎⁨تمام اینترنت ها⁩.npvt",
       "ext": "NPVT",
@@ -599,20 +561,6 @@
       "channel": "Merlin ViP",
       "link": "https://t.me/Merlin_ViP/47848",
       "ts": 1779879733.355196
-    },
-    {
-      "name": "Dl V2_irancell wifi.npvt",
-      "ext": "NPVT",
-      "channel": "𓆩𝐕𝐏𝐍[👑]𝐈𝐑𝐀𝐍𓆪",
-      "link": "https://t.me/vpn_proxy_custom/4490",
-      "ts": 1779876394.404895
-    },
-    {
-      "name": "گروهی22تا27🚀.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/47847",
-      "ts": 1779876345.253935
     }
   ]
 }

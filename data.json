@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://ae0dd58e-e222-40bf-84ae-365a97532737@104.16.79.73:443?security=tls&allowInsecure=0&encryption=none&type=ws&host=pagescm.freen32.cc.cd&path=/play/settings&sni=pagescm.freen32.cc.cd&fp=chrome#@planb_net`",
+      "latency": 5,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/19126",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1779892304.8023434
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://771af8c7-ee89-48b8-abe6-fb0a7a97e37c@84.201.181.153:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=ads.x5.ru&pbk=xiBnF5t8koXllU1GwzSRmU0Vcbs21DEHCg399WUg1EM&sid=8341ca869ed81124#%40filembad",
       "latency": 156,
       "channel": "VPN | CICDO کانفینگ ملی شکن",
@@ -159,59 +169,99 @@
       "flag": "🇹🇷",
       "country": "Türkiye",
       "ts": 1779864263.8894777
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://06b65903-406d-4a41-8463-6fd5c0ee7798@3.1.116.161:8443?encryption=none&security=tls&sni=sni.skylee4.cloudns.ch&allowInsecure=1&type=ws&host=sni.skylee4.cloudns.ch&path=%2F#%E2%9C%85%F0%9F%87%B8%F0%9F%87%AC%20Singapore%20%F0%9F%8D%93%20%40xixv2ray",
-      "latency": 177,
-      "channel": "🍓 XIX",
-      "t_link": "https://t.me/myvpn1404/19084",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "ts": 1779845492.1444795
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://09a601b8-ac43-4934-95e3-21e732ebfaf3@ir20.novalynxhub.online:51847?encryption=none&security=none&type=tcp&headerType=none#%E2%9C%85%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%F0%9F%8D%93%20%40xixv2ray",
-      "latency": 187,
-      "channel": "🍓 XIX",
-      "t_link": "https://t.me/myvpn1404/19083",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1779845491.643331
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://c42b435d-e1d2-45ba-85bc-2f3c080ce826@13.239.112.139:42376?encryption=none&flow=xtls-rprx-vision&security=reality&sni=yahoo.com&fp=firefox&pbk=5x6nErZvJp6uFYQ4VkOZSrnz4FWNRvYJqTfimjuBOCw&sid=be125600cea6&spx=%2F&type=tcp&headerType=none#%F0%9F%8D%93%40xixv2ray%20",
-      "latency": 149,
-      "channel": "🍓 XIX",
-      "t_link": "https://t.me/myvpn1404/19082",
-      "flag": "🇦🇺",
-      "country": "Australia",
-      "ts": 1779845491.0729177
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://a12b0d31-f599-498e-b76e-8558a14b766b@47.79.144.103:25242?encryption=none&security=none&type=ws&path=%2Fa12b0d31#%F0%9F%8D%93%40xixv2ray%20",
-      "latency": 110,
-      "channel": "🍓 XIX",
-      "t_link": "https://t.me/myvpn1404/19081",
-      "flag": "🇯🇵",
-      "country": "Japan",
-      "ts": 1779845490.587011
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f8c2be46-9d75-45e6-87da-df0f73dab3c1@snapp.ir:8080?encryption=none&security=none&type=ws&host=api.hegsh32.ir&path=%2Fweb2314#%F0%9F%8D%93%40xixv2ray%20",
-      "latency": 496,
-      "channel": "🍓 XIX",
-      "t_link": "https://t.me/myvpn1404/19080",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1779845490.1270978
     }
   ],
   "proxies": [
+    {
+      "key": "87.248.129.200:25565",
+      "link": "tg://proxy?server=87.248.129.200&port=25565&secret=79e344818749bd7ac519130220c25d09)",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19121",
+      "latency": 92,
+      "flag": "🇦🇪",
+      "ts": 1779892228.0380347
+    },
+    {
+      "key": "87.248.129.200:25565",
+      "link": "tg://proxy?server=87.248.129.200&port=25565&secret=79e344818749bd7ac519130220c25d09",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19121",
+      "latency": 92,
+      "flag": "🇦🇪",
+      "ts": 1779892228.0380337
+    },
+    {
+      "key": "free-mtproto.flexiblenet.org:443",
+      "link": "tg://proxy?server=free-mtproto.flexiblenet.org&port=443&secret=4da47f00c2291d55696fa3ae954ffd78",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19121",
+      "latency": 270,
+      "flag": "🇳🇱",
+      "ts": 1779892228.0380325
+    },
+    {
+      "key": "176.65.131.45:25565",
+      "link": "tg://proxy?server=176.65.131.45&port=25565&secret=79e344818749bd7ac519130220c25d09)",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19121",
+      "latency": 96,
+      "flag": "🇳🇱",
+      "ts": 1779892228.0380316
+    },
+    {
+      "key": "73727671370.ir.fulle7.info:8443",
+      "link": "tg://proxy?server=73727671370.ir.fulle7.info&port=8443&secret=EERighJJvXrFGRMCIMJdCQ%3D%3D",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19121",
+      "latency": 140,
+      "flag": "🇫🇮",
+      "ts": 1779892228.0380306
+    },
+    {
+      "key": "73727671370.ir.fulle7.info:8443",
+      "link": "tg://proxy?server=73727671370.ir.fulle7.info&port=8443&secret=EERighJJvXrFGRMCIMJdCQ%3D%3D)",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19121",
+      "latency": 309,
+      "flag": "🇫🇮",
+      "ts": 1779892228.038029
+    },
+    {
+      "key": "178.104.221.250:8443",
+      "link": "tg://proxy?server=178.104.221.250&port=8443&secret=7gggggggggggggggggggggh0cmFuc2xhdGUuZ29v",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19121",
+      "latency": 94,
+      "flag": "🇩🇪",
+      "ts": 1779892228.038028
+    },
+    {
+      "key": "65.109.215.115:8443",
+      "link": "tg://proxy?server=65.109.215.115&port=8443&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19121",
+      "latency": 118,
+      "flag": "🇫🇮",
+      "ts": 1779892228.038027
+    },
+    {
+      "key": "178.104.221.250:8443",
+      "link": "tg://proxy?server=178.104.221.250&port=8443&secret=7gggggggggggggggggggggh0cmFuc2xhdGUuZ29v)",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19121",
+      "latency": 93,
+      "flag": "🇩🇪",
+      "ts": 1779892228.0380254
+    },
+    {
+      "key": "free-mtproto.flexiblenet.org:443",
+      "link": "tg://proxy?server=free-mtproto.flexiblenet.org&port=443&secret=4da47f00c2291d55696fa3ae954ffd78)",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19121",
+      "latency": 276,
+      "flag": "🇳🇱",
+      "ts": 1779892228.0380232
+    },
     {
       "key": "ams1.tlgfast.com:443",
       "link": "tg://proxy?server=ams1.tlgfast.com&port=443&secret=083fe0c452e2407d835537872f097c54",
@@ -332,6 +382,48 @@
   ],
   "files": [
     {
+      "name": "Best🔥.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد",
+      "link": "https://t.me/mitivpn/16920",
+      "ts": 1779892321.5369997
+    },
+    {
+      "name": "@planb_net#55.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2688",
+      "ts": 1779892305.0192735
+    },
+    {
+      "name": "@planb_net#56.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2691",
+      "ts": 1779892304.4164882
+    },
+    {
+      "name": "@planb_net#57.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2692",
+      "ts": 1779892304.1131065
+    },
+    {
+      "name": "@planb_net#58.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2693",
+      "ts": 1779892303.8155284
+    },
+    {
+      "name": "👉@ghalagyann👈کانال تلگرام (1).npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/21354",
+      "ts": 1779892251.6956584
+    },
+    {
       "name": "‎⁨سرعت موشکک🔥❤️‍🔥⁩.npvt",
       "ext": "NPVT",
       "channel": "Merlin ViP",
@@ -428,48 +520,6 @@
       "channel": "Merlin ViP",
       "link": "https://t.me/Merlin_ViP/47834",
       "ts": 1779859303.9468465
-    },
-    {
-      "name": "👉@ghalagyann👈کانال تلگرام .npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/21342",
-      "ts": 1779845509.0517867
-    },
-    {
-      "name": "👉@ghalagyann👈کانال تلگرام.npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/21343",
-      "ts": 1779845508.747444
-    },
-    {
-      "name": "full oper.npvt",
-      "ext": "NPVT",
-      "channel": "Iranian Minds",
-      "link": "https://t.me/IranianMinds/20850",
-      "ts": 1779840912.6623783
-    },
-    {
-      "name": "‎⁨گاد اسپید⁩.npvt",
-      "ext": "NPVT",
-      "channel": "Iranian Minds",
-      "link": "https://t.me/IranianMinds/20851",
-      "ts": 1779840912.3605466
-    },
-    {
-      "name": "Javid Shah.npvt",
-      "ext": "NPVT",
-      "channel": "𓆩𝐕𝐏𝐍[👑]𝐈𝐑𝐀𝐍𓆪",
-      "link": "https://t.me/vpn_proxy_custom/4487",
-      "ts": 1779840877.5792348
-    },
-    {
-      "name": "Mci همراه اول ✅.npvt",
-      "ext": "NPVT",
-      "channel": "𓆩𝐕𝐏𝐍[👑]𝐈𝐑𝐀𝐍𓆪",
-      "link": "https://t.me/vpn_proxy_custom/4488",
-      "ts": 1779840877.29295
     }
   ]
 }

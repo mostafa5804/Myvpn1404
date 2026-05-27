@@ -129,39 +129,27 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1779892304.8023434
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://771af8c7-ee89-48b8-abe6-fb0a7a97e37c@84.201.181.153:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=ads.x5.ru&pbk=xiBnF5t8koXllU1GwzSRmU0Vcbs21DEHCg399WUg1EM&sid=8341ca869ed81124#%40filembad",
-      "latency": 156,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19119",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1779879751.1897087
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://ae0dd58e-e222-40bf-84ae-365a97532737@104.19.56.154:443?path=%2Fresource%2Flinksfp%3Dchrome&security=tls&encryption=none&insecure=0&host=pagescm.freen8.cc.cd&type=ws&allowInsecure=0&sni=pagescm.freen8.cc.cd#%40filembad",
-      "latency": 18,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19118",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1779879750.6440241
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://4d70a474-aa93-457b-a2fb-98b05272ce25@104.16.80.73:443?security=tls&allowInsecure=0&encryption=none&type=ws&host=finland.blackkwolff.com&path=/cf&sni=finland.blackkwolff.com&fp=chrome&alpn=h2,h3,http/1.1#%40filembad",
-      "latency": 18,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19117",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1779879750.242438
     }
   ],
   "proxies": [
+    {
+      "key": "ams1.tlgfast.com:443",
+      "link": "tg://proxy?server=ams1.tlgfast.com&port=443&secret=083fe0c452e2407d835537872f097c54",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/19175",
+      "latency": 244,
+      "flag": "🇳🇱",
+      "ts": 1779924173.984528
+    },
+    {
+      "key": "5.75.248.201:8443",
+      "link": "tg://proxy?server=5.75.248.201&port=8443&secret=EERighJJvXrFGRMCIMJdCQ==",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/19175",
+      "latency": 151,
+      "flag": "🇩🇪",
+      "ts": 1779924173.984526
+    },
     {
       "key": "mimecraft4ir.homes:25565",
       "link": "tg://proxy?server=mimecraft4ir.homes&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
@@ -287,36 +275,37 @@
       "latency": 276,
       "flag": "🇳🇱",
       "ts": 1779892228.0380232
-    },
-    {
-      "key": "ams1.tlgfast.com:443",
-      "link": "tg://proxy?server=ams1.tlgfast.com&port=443&secret=083fe0c452e2407d835537872f097c54",
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19120",
-      "latency": 3350,
-      "flag": "🇳🇱",
-      "ts": 1779879758.980952
-    },
-    {
-      "key": "49.13.35.164:8443",
-      "link": "tg://proxy?server=49.13.35.164&port=8443&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19120",
-      "latency": 155,
-      "flag": "🇩🇪",
-      "ts": 1779879758.980951
-    },
-    {
-      "key": "45.82.65.142:443",
-      "link": "tg://proxy?server=45.82.65.142&port=443&secret=a7c17e9a495ef47028c1c57f4c4a9d5e",
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19120",
-      "latency": 3276,
-      "flag": "🇳🇱",
-      "ts": 1779879758.980949
     }
   ],
   "files": [
+    {
+      "name": "‎⁨فوق العاده همه نتا⁩.npvt",
+      "ext": "NPVT",
+      "channel": "Iranian Minds",
+      "link": "https://t.me/IranianMinds/20905",
+      "ts": 1779924166.0487294
+    },
+    {
+      "name": "full ip.npvt",
+      "ext": "NPVT",
+      "channel": "Iranian Minds",
+      "link": "https://t.me/IranianMinds/20906",
+      "ts": 1779924165.7971468
+    },
+    {
+      "name": "Qavii.npvt",
+      "ext": "NPVT",
+      "channel": "Iranian Minds",
+      "link": "https://t.me/IranianMinds/20907",
+      "ts": 1779924165.508302
+    },
+    {
+      "name": "Nice Speed.npvt",
+      "ext": "NPVT",
+      "channel": "Iranian Minds",
+      "link": "https://t.me/IranianMinds/20914",
+      "ts": 1779924165.1981735
+    },
     {
       "name": "-ViP♥️.npvt",
       "ext": "NPVT",
@@ -554,13 +543,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/21354",
       "ts": 1779892251.6956584
-    },
-    {
-      "name": "‎⁨سرعت موشکک🔥❤️‍🔥⁩.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/47848",
-      "ts": 1779879733.355196
     }
   ]
 }

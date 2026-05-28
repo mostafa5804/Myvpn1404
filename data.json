@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e258977b-e413-4718-a3af-02d75492c349@45.130.125.69:2096?path=%2FChannel----%40VPNCUSTOMIZE&security=tls&encryption=none&insecure=0&host=jp.aniua.qzz.io&type=ws&allowInsecure=0&sni=jp.aniua.qzz.io#%40Filtershekan_channel%20%7C2`",
+      "latency": 2,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/19261",
+      "flag": "🇸🇨",
+      "country": "Seychelles",
+      "ts": 1780008628.8036852
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e258977b-e413-4718-a3af-02d75492c349@216.24.57.6:443?path=%2F&security=tls&encryption=none&insecure=0&host=jp.aniua.qzz.io&type=ws&allowInsecure=0&sni=jp.aniua.qzz.io#%40vpnbaz%20%F0%9F%8E%88",
       "latency": 9,
       "channel": "VPN MARKET",
@@ -129,39 +139,18 @@
       "flag": "🇮🇹",
       "country": "Italy",
       "ts": 1779971698.8431156
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f@nl-tx.sbrf-cdn342.ru:443?security=tls&alpn=http%2F1.1&encryption=none&insecure=0&headerType=none&fp=qq&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=sub.sbrf-cdn342.ru#%40TirexNet```",
-      "latency": 1364,
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/19197",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "ts": 1779964618.2979548
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://cfe0ff1d-fbdf-4d1f-a4b3-1dfa4481a103@snapp.ir:80?path=%2F%3Fed%3D2080&security=&encryption=none&host=na.avenflow.ir&type=ws#lilsorin",
-      "latency": 293,
-      "channel": "منبع ضد اختلال | SORiN GAME",
-      "t_link": "https://t.me/myvpn1404/19196",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1779964596.1707454
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://c575c0fd-4833-4cba-937d-2342fd32544b@104.17.121.71:443?encryption=none&type=xhttp&security=tls&path=%2Findex.html&host=de.vpncustomize.cc.cd&mode=stream-one&sni=de.vpncustomize.cc.cd&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=0#lilsorin",
-      "latency": 6,
-      "channel": "منبع ضد اختلال | SORiN GAME",
-      "t_link": "https://t.me/myvpn1404/19195",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1779964595.526231
     }
   ],
   "proxies": [
+    {
+      "key": "lte.opsna.ru:8443",
+      "link": "tg://proxy?server=lte.opsna.ru&port=8443&secret=dd68050e7062d628eb2beaf6dadf7837ed",
+      "channel": "منبع ضد اختلال | SORiN GAME",
+      "t_link": "https://t.me/myvpn1404/19262",
+      "latency": 2326,
+      "flag": "🇷🇺",
+      "ts": 1780008655.137418
+    },
     {
       "key": "37.27.6.238:155",
       "link": "tg://proxy?server=37.27.6.238&port=155&secret=eeNEgYdJvXrFGRMCIMJdCQ",
@@ -353,6 +342,41 @@
     }
   ],
   "files": [
+    {
+      "name": "@Cooonfig❤️‍🔥👸(همه نتا).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7462",
+      "ts": 1780008738.8801796
+    },
+    {
+      "name": "-NetMeli 🌍.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد",
+      "link": "https://t.me/mitivpn/16969",
+      "ts": 1780008705.5538232
+    },
+    {
+      "name": "همراه اول موقت.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد",
+      "link": "https://t.me/mitivpn/16971",
+      "ts": 1780008705.2503886
+    },
+    {
+      "name": "@planb_net#98.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2737",
+      "ts": 1780008686.5553923
+    },
+    {
+      "name": "@Filtershekan_channel (6).npvt",
+      "ext": "NPVT",
+      "channel": "Vpn | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2740",
+      "ts": 1780008628.3474588
+    },
     {
       "name": "همراه اول (1).npvt",
       "ext": "NPVT",
@@ -639,48 +663,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/21379",
       "ts": 1779971698.0597043
-    },
-    {
-      "name": "@Cooonfig💜👸(همه نتا).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7451",
-      "ts": 1779964687.644743
-    },
-    {
-      "name": "@Cooonfig💛(همه نتا).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7452",
-      "ts": 1779964687.4253402
-    },
-    {
-      "name": "@Cooonfig💚👸(جت شخصی).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7453",
-      "ts": 1779964687.1388035
-    },
-    {
-      "name": "@planb_net#79 (1).npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2718",
-      "ts": 1779964634.152317
-    },
-    {
-      "name": "@TirexNet (1).npvt",
-      "ext": "NPVT",
-      "channel": "TirexNet",
-      "link": "https://t.me/TirexNet/4377",
-      "ts": 1779964618.5987463
-    },
-    {
-      "name": "👉@ghalagyann👈 کانال تلگرام ما (1).npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/21373",
-      "ts": 1779964582.8671634
     }
   ]
 }

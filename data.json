@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://fad00171-5df8-442e-a208-54dea7f474f2@104.18.32.47:2096?mode=gun&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&fp=chrome&type=grpc&serviceName=donya-e-eqtesad.com.tasnimnews.com.alef.ir.en.mehrnews.com.entekhab.ir.tasnimnews.com.tehrantimes.com&allowInsecure=0&sni=Humble-FigUREFnHk81kxjx.CarboNblaCkBmw.iR#%40isor1n",
+      "latency": 10,
+      "channel": "منبع ضد اختلال | SORiN GAME",
+      "t_link": "https://t.me/myvpn1404/19182",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1779958097.6200228
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://b92244ff-821c-4dc2-9498-8567b506b351@172.67.68.237:2052?path=%2F&security=none&encryption=none&host=dd.zoverv.com&type=ws#%40proxymelimon``",
       "latency": 2,
       "channel": "کانفیگ و پروکسی | هوپنوس",
@@ -143,6 +153,69 @@
   ],
   "proxies": [
     {
+      "key": "185.226.95.132:5048",
+      "link": "tg://proxy?server=185.226.95.132&port=5048&secret=eef799ecb2c34c06cbd00dd4326b9613d77777772e636c6f7564666c6172652e636f6d",
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/19184",
+      "latency": null,
+      "flag": "🇮🇷",
+      "ts": 1779958129.4119308
+    },
+    {
+      "key": "95.182.83.131:443",
+      "link": "tg://proxy?server=95.182.83.131&port=443&secret=eee2970b9a0d34e958110ee25e8bc8378d6d61696c2e7275",
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/19184",
+      "latency": 121,
+      "flag": "🇷🇺",
+      "ts": 1779958129.4119298
+    },
+    {
+      "key": "95.182.83.109:443",
+      "link": "tg://proxy?server=95.182.83.109&port=443&secret=eee2970b9a0d34e958110ee25e8bc8378d6d61696c2e7275",
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/19184",
+      "latency": 120,
+      "flag": "🇷🇺",
+      "ts": 1779958129.4119282
+    },
+    {
+      "key": "stmt.x5retail.org:443",
+      "link": "tg://proxy?server=stmt.x5retail.org&port=443&secret=eee67e7cc2d997b34bc1cd2a4b8f3fc07e6c6b2e78352e7275",
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/19184",
+      "latency": 390,
+      "flag": "🇷🇺",
+      "ts": 1779958129.4119265
+    },
+    {
+      "key": "1772673667246371.ir.fulle7.info:8443",
+      "link": "tg://proxy?server=1772673667246371.ir.fulle7.info&port=8443&secret=104462821249bd7ac519130220c25d09",
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/19184",
+      "latency": 1388,
+      "flag": "🇫🇮",
+      "ts": 1779958129.4119253
+    },
+    {
+      "key": "178.187.111.101:7997",
+      "link": "tg://proxy?server=178.187.111.101&port=7997&secret=eef8ceedada37935dbe4db815b0424a846626979736b32322e7275",
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/19184",
+      "latency": 203,
+      "flag": "🇷🇺",
+      "ts": 1779958129.4119234
+    },
+    {
+      "key": "91.232.225.43:443",
+      "link": "tg://proxy?server=91.232.225.43&port=443&secret=ee1caa37ae90774ecf9247bd53f8cd2c4a636861742e6574657266756e642e7275",
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/19184",
+      "latency": 158,
+      "flag": "🇷🇺",
+      "ts": 1779958129.4119208
+    },
+    {
       "key": "ams1.tlgfast.com:443",
       "link": "tg://proxy?server=ams1.tlgfast.com&port=443&secret=083fe0c452e2407d835537872f097c54",
       "channel": "Net Account | نت اكانت",
@@ -177,27 +250,79 @@
       "latency": 65,
       "flag": "🇨🇦",
       "ts": 1779915963.0619247
-    },
-    {
-      "key": "87.248.129.210:4455",
-      "link": "tg://proxy?server=87.248.129.210&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19130",
-      "latency": 158,
-      "flag": "🇦🇪",
-      "ts": 1779905232.5208535
-    },
-    {
-      "key": "87.248.129.210:4455",
-      "link": "tg://proxy?server=87.248.129.210&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19130",
-      "latency": 150,
-      "flag": "🇦🇪",
-      "ts": 1779905232.5208514
     }
   ],
   "files": [
+    {
+      "name": "@Cooonfig🇩🇪👸(همه نتا موشکی).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7449",
+      "ts": 1779958194.4009407
+    },
+    {
+      "name": "@planb_net #74.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2713",
+      "ts": 1779958142.9888368
+    },
+    {
+      "name": "@planb_net#75.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2714",
+      "ts": 1779958142.6760213
+    },
+    {
+      "name": "@planb_net #76.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2715",
+      "ts": 1779958142.3742566
+    },
+    {
+      "name": "@planb_net#77.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2716",
+      "ts": 1779958142.0929365
+    },
+    {
+      "name": "@NpvTunnel_vip 8⚡.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1333",
+      "ts": 1779958136.6688807
+    },
+    {
+      "name": "کانفیگ دارک🚀🇸🇪.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1334",
+      "ts": 1779958136.3911016
+    },
+    {
+      "name": "دارک همراه4🚀🇫🇮.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1335",
+      "ts": 1779958136.1194813
+    },
+    {
+      "name": "دارک ایرانسل4🚀🇫🇮.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1336",
+      "ts": 1779958135.8352118
+    },
+    {
+      "name": "@TirexNet.npvt",
+      "ext": "NPVT",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/4375",
+      "ts": 1779958129.1045125
+    },
     {
       "name": "NetAccount808.npvt",
       "ext": "NPVT",
@@ -407,48 +532,6 @@
       "channel": "🔱BugFreeNet🔱",
       "link": "https://t.me/BugFreeNet/29226",
       "ts": 1779915872.7099316
-    },
-    {
-      "name": "Rightel - Irancell ♥️.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/16936",
-      "ts": 1779913966.4516108
-    },
-    {
-      "name": "@planb_net#66.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2703",
-      "ts": 1779913949.9565604
-    },
-    {
-      "name": "@planb_net #67.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2705",
-      "ts": 1779913949.5915523
-    },
-    {
-      "name": "@TirexNet (9).npvt",
-      "ext": "NPVT",
-      "channel": "TirexNet",
-      "link": "https://t.me/TirexNet/4355",
-      "ts": 1779913933.057768
-    },
-    {
-      "name": "👉@ghalagyann👈 کانال تلگرام ما (1).npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/21366",
-      "ts": 1779913897.2278578
-    },
-    {
-      "name": "NetAccount807.npvt",
-      "ext": "NPVT",
-      "channel": "Net Account | نت اكانت",
-      "link": "https://t.me/NetAccount/17611",
-      "ts": 1779905212.325637
     }
   ]
 }

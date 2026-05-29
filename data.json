@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://da8784da-602d-424d-a31d-d5d1dc015591@89.22.229.214:8443?security=reality&encryption=none&pbk=I6-tKuFkUcilEzCS07a64UGBGZCB8691tqCFrGajJCQ&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=vc.ru&sid=d7aecb26d96876cc#SWE",
+      "latency": 131,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19291",
+      "flag": "🇸🇪",
+      "country": "Sweden",
+      "ts": 1780057320.8648193
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://a184bab0-4005-4807-b76e-58c37b9d16a5@185.143.235.200:2095?path=%2Firbert&security=none&encryption=none&host=irbert.skycmd.org&type=ws#@cicdovpn",
+      "latency": 118,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19288",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1780057248.3792646
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://70703b2f-a472-4183-a440-3c6fe231dae4@fr.gameirani.com:100?security=none&encryption=none&headerType=none&type=tcp#%40Merlin_ViP",
       "latency": 196,
       "channel": "Merlin ViP",
@@ -89,39 +109,72 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1780044367.5072484
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://7f07d06b-3eda-4f2c-b0e6-df6e9f82456e@209.250.245.206:37385?security=none=-@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann&",
-      "latency": 88,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/19268",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "ts": 1780011547.4959073
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://684eefab-a712-4a65-83fd-535112228a6a@95.179.140.164:19857?security=none=-@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann---@ghalagyann&",
-      "latency": 88,
-      "channel": "ghalagyann",
-      "t_link": "https://t.me/myvpn1404/19267",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "ts": 1780011547.0916023
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e258977b-e413-4718-a3af-02d75492c349@45.130.125.69:2096?path=%2FChannel----%40VPNCUSTOMIZE&security=tls&encryption=none&insecure=0&host=jp.aniua.qzz.io&type=ws&allowInsecure=0&sni=jp.aniua.qzz.io#%40Filtershekan_channel%20%7C2`",
-      "latency": 2,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/19261",
-      "flag": "🇸🇨",
-      "country": "Seychelles",
-      "ts": 1780008628.8036852
     }
   ],
   "proxies": [
+    {
+      "key": "parest.opt-meli.info:155",
+      "link": "tg://proxy?server=parest.opt-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19293",
+      "latency": 277,
+      "flag": "🇫🇮",
+      "ts": 1780057344.929459
+    },
+    {
+      "key": "rah.time-meli.info:155",
+      "link": "tg://proxy?server=rah.time-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09)|",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19293",
+      "latency": 276,
+      "flag": "🇫🇮",
+      "ts": 1780057344.929458
+    },
+    {
+      "key": "parest.opt-meli.info:155",
+      "link": "tg://proxy?server=parest.opt-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19293",
+      "latency": 584,
+      "flag": "🇫🇮",
+      "ts": 1780057344.9294565
+    },
+    {
+      "key": "rah.time-meli.info:155",
+      "link": "tg://proxy?server=rah.time-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19293",
+      "latency": 619,
+      "flag": "🇫🇮",
+      "ts": 1780057344.9294546
+    },
+    {
+      "key": "miinecrafto.com:25565",
+      "link": "tg://proxy?server=miinecrafto.com&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19292",
+      "latency": 41,
+      "flag": "🇨🇦",
+      "ts": 1780057329.4733016
+    },
+    {
+      "key": "miinecrafto.com:25565",
+      "link": "tg://proxy?server=miinecrafto.com&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19292",
+      "latency": 76,
+      "flag": "🇨🇦",
+      "ts": 1780057329.4733
+    },
+    {
+      "key": "tg.capycore.ru:443",
+      "link": "tg://proxy?server=tg.capycore.ru&port=443&secret=27ebe852539fb8ec5f327c73262bb721",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19290",
+      "latency": 327,
+      "flag": "🇱🇹",
+      "ts": 1780057249.668351
+    },
     {
       "key": "bomberoo.shop:25565",
       "link": "tg://proxy?server=bomberoo.shop&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
@@ -202,18 +255,16 @@
       "latency": 279,
       "flag": "🇩🇪",
       "ts": 1780050472.8697925
-    },
-    {
-      "key": "lte.opsna.ru:8443",
-      "link": "tg://proxy?server=lte.opsna.ru&port=8443&secret=dd68050e7062d628eb2beaf6dadf7837ed",
-      "channel": "منبع ضد اختلال | SORiN GAME",
-      "t_link": "https://t.me/myvpn1404/19262",
-      "latency": 2326,
-      "flag": "🇷🇺",
-      "ts": 1780008655.137418
     }
   ],
   "files": [
+    {
+      "name": "iran azad.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "link": "https://t.me/cicdoVPN/3930",
+      "ts": 1780057249.3985443
+    },
     {
       "name": "این همه کانفیگ  کجا دیدی ها؟.npvt",
       "ext": "NPVT",
@@ -269,41 +320,6 @@
       "channel": "TirexNet",
       "link": "https://t.me/TirexNet/4392",
       "ts": 1780033822.3070931
-    },
-    {
-      "name": "@Cooonfig❤️‍🔥👸(همه نتا).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7462",
-      "ts": 1780008738.8801796
-    },
-    {
-      "name": "-NetMeli 🌍.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/16969",
-      "ts": 1780008705.5538232
-    },
-    {
-      "name": "همراه اول موقت.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/16971",
-      "ts": 1780008705.2503886
-    },
-    {
-      "name": "@planb_net#98.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2737",
-      "ts": 1780008686.5553923
-    },
-    {
-      "name": "@Filtershekan_channel (6).npvt",
-      "ext": "NPVT",
-      "channel": "Vpn | proxy | filtershekan",
-      "link": "https://t.me/filtershekan_channel/2740",
-      "ts": 1780008628.3474588
     }
   ]
 }

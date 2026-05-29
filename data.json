@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://70703b2f-a472-4183-a440-3c6fe231dae4@fr.gameirani.com:100?security=none&encryption=none&headerType=none&type=tcp#%40Merlin_ViP",
+      "latency": 196,
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19283",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1780050448.3374887
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSmpWSXZITnFickFtVzNI@4.168.201.153:443#%40Merlin_ViP",
+      "latency": 293,
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19282",
+      "flag": "🇿🇦",
+      "country": "South Africa",
+      "ts": 1780050447.8158338
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://InternetAzadRobot@fastly.com:80?mode=auto&path=%2Ftofan&security=none&encryption=none&host=sv6tignal.global.ssl.fastly.net&type=xhttp#%40Merlin_ViP",
+      "latency": 113,
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19281",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1780050447.158026
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://fad00171-5df8-442e-a208-54dea7f474f2@104.17.121.71:2096?mode=gun&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&fp=chrome&type=grpc&serviceName=donya-e-eqtesad.com.tasnimnews.com.alef.ir.en.mehrnews.com.entekhab.ir.tasnimnews.com.tehrantimes.com&sni=Humble-FigUREFnHk81kxjx.CarboNblaCkBmw.iR#%40Merlin_ViP",
+      "latency": 2,
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19280",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1780050446.647911
+    },
+    {
       "protocol": "SS",
       "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1Uk91RXFzTDhJVU1NVmI0d0R3bkdV@57.129.121.230:10443#%40planB_net`",
       "latency": 165,
@@ -79,59 +119,90 @@
       "flag": "🇸🇨",
       "country": "Seychelles",
       "ts": 1780008628.8036852
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e258977b-e413-4718-a3af-02d75492c349@216.24.57.6:443?path=%2F&security=tls&encryption=none&insecure=0&host=jp.aniua.qzz.io&type=ws&allowInsecure=0&sni=jp.aniua.qzz.io#%40vpnbaz%20%F0%9F%8E%88",
-      "latency": 9,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/19259",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1780005747.9406495
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://de989f46-ce7c-4d94-9c58-5ccd80e8d7a1@104.17.150.76:2086?path=%2F&security=none&encryption=none&host=war2.unlimiteddev-service2881.ir&type=ws#%40vpnbaz%20%F0%9F%8D%81",
-      "latency": 9,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/19258",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1780005747.5464866
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://28154b7e-afc2-449b-8a78-bf1eba31bd05@a.darafiq.ir:8880?path=%2F&security=none&encryption=none&type=ws#%40vpnbaz%20%F0%9F%8C%B5",
-      "latency": 613,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/19257",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1780005747.2015347
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMMW1kWEZRcTN1NjExWklC@20.87.107.99:443#%40vpnbaz%20%F0%9F%8D%AD",
-      "latency": 268,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/19256",
-      "flag": "🇿🇦",
-      "country": "South Africa",
-      "ts": 1780005746.1807315
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e258977b-e413-4718-a3af-02d75492c349@50.62.198.124:443?security=tls&allowInsecure=0&encryption=none&type=ws&host=jp.aniua.qzz.io&path=/&sni=jp.aniua.qzz.io&fp=chrome#🇩🇪1-@isor1n`",
-      "latency": 9,
-      "channel": "منبع ضد اختلال | SORiN GAME",
-      "t_link": "https://t.me/myvpn1404/19244",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1780005643.1231678
     }
   ],
   "proxies": [
+    {
+      "key": "bomberoo.shop:25565",
+      "link": "tg://proxy?server=bomberoo.shop&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19287",
+      "latency": 4,
+      "flag": "🇨🇦",
+      "ts": 1780050555.2562633
+    },
+    {
+      "key": "iranroad.shop:25565",
+      "link": "tg://proxy?server=iranroad.shop&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19287",
+      "latency": 15,
+      "flag": "🇨🇦",
+      "ts": 1780050555.2562623
+    },
+    {
+      "key": "mimecraft4ir.homes:25565",
+      "link": "tg://proxy?server=mimecraft4ir.homes&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19287",
+      "latency": 7,
+      "flag": "🇨🇦",
+      "ts": 1780050555.2562613
+    },
+    {
+      "key": "bomberoo.shop:25565",
+      "link": "tg://proxy?server=bomberoo.shop&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19287",
+      "latency": 19,
+      "flag": "🇨🇦",
+      "ts": 1780050555.2562604
+    },
+    {
+      "key": "iranroad.shop:25565",
+      "link": "tg://proxy?server=iranroad.shop&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19287",
+      "latency": 10,
+      "flag": "🇨🇦",
+      "ts": 1780050555.2562587
+    },
+    {
+      "key": "mimecraft4ir.homes:25565",
+      "link": "tg://proxy?server=mimecraft4ir.homes&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19287",
+      "latency": 306,
+      "flag": "🇨🇦",
+      "ts": 1780050555.256257
+    },
+    {
+      "key": "109.172.94.163:80",
+      "link": "tg://proxy?server=109.172.94.163&port=80&secret=eefc56fb73c972a2309c4787bc1364c2207777772e636c6f7564666c6172652e636f6d",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19286",
+      "latency": 150,
+      "flag": "🇳🇱",
+      "ts": 1780050472.8697958
+    },
+    {
+      "key": "connect.tproxy.store:8443",
+      "link": "tg://proxy?server=connect.tproxy.store&port=8443&secret=dd79e7010200010007f0030386e24c3add",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19286",
+      "latency": 601,
+      "flag": "🇫🇷",
+      "ts": 1780050472.8697946
+    },
+    {
+      "key": "Mmdof.fulldf.info:8443",
+      "link": "tg://proxy?server=Mmdof.fulldf.info&port=8443&secret=EERighJJvXrFGRMCIMJdCQ==",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19286",
+      "latency": 279,
+      "flag": "🇩🇪",
+      "ts": 1780050472.8697925
+    },
     {
       "key": "lte.opsna.ru:8443",
       "link": "tg://proxy?server=lte.opsna.ru&port=8443&secret=dd68050e7062d628eb2beaf6dadf7837ed",
@@ -143,6 +214,20 @@
     }
   ],
   "files": [
+    {
+      "name": "این همه کانفیگ  کجا دیدی ها؟.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "link": "https://t.me/cicdoVPN/3923",
+      "ts": 1780050466.4355545
+    },
+    {
+      "name": "1ترابایت_یکم_صبر_کن_خاستی_بیا_چنل_تلگرامون.npvt",
+      "ext": "NPVT",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "link": "https://t.me/cicdoVPN/3927",
+      "ts": 1780050466.1120608
+    },
     {
       "name": "@planb_net#101.npvt",
       "ext": "NPVT",
@@ -219,90 +304,6 @@
       "channel": "Vpn | proxy | filtershekan",
       "link": "https://t.me/filtershekan_channel/2740",
       "ts": 1780008628.3474588
-    },
-    {
-      "name": "همراه اول (1).npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/16969",
-      "ts": 1780005700.6114106
-    },
-    {
-      "name": "@planb_net #94.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2733",
-      "ts": 1780005685.00746
-    },
-    {
-      "name": "@planb_net#95.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2734",
-      "ts": 1780005684.7096233
-    },
-    {
-      "name": "@planb_net#96.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2735",
-      "ts": 1780005684.408173
-    },
-    {
-      "name": "@planb_net#97.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2736",
-      "ts": 1780005684.1045725
-    },
-    {
-      "name": "@NpvTunnel_vip 10⚡.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/1360",
-      "ts": 1780005674.6225
-    },
-    {
-      "name": "دارک همراه7🇫🇮.dark",
-      "ext": "DARK",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/1361",
-      "ts": 1780005674.3210573
-    },
-    {
-      "name": "دارک ایرانسل7🇺🇸.dark",
-      "ext": "DARK",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/1362",
-      "ts": 1780005674.0144446
-    },
-    {
-      "name": "دارک همراه8🇺🇸.dark",
-      "ext": "DARK",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/1363",
-      "ts": 1780005673.711448
-    },
-    {
-      "name": "@NpvTunnel_vip تست🚀.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/1365",
-      "ts": 1780005673.4140766
-    },
-    {
-      "name": "@TirexNet (7).npvt",
-      "ext": "NPVT",
-      "channel": "TirexNet",
-      "link": "https://t.me/TirexNet/4391",
-      "ts": 1780005664.936253
-    },
-    {
-      "name": "🍓@xixv2ray_ـ_500کانفیگ_کیلویی_لوکیشن_مختلف.txt",
-      "ext": "TXT",
-      "channel": "🍓 XIX",
-      "link": "https://t.me/xixv2ray/6731",
-      "ts": 1780005606.0839384
     }
   ]
 }

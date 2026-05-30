@@ -19,59 +19,63 @@
       "flag": "🇷🇺",
       "country": "Russia",
       "ts": 1780123987.584046
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.149:8080#@IP_CF`",
-      "latency": 93,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/19345",
-      "flag": "🇳🇱",
-      "country": "The Netherlands",
-      "ts": 1780094944.082846
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f@uae.sbrf-cdn342.ru:443?security=tls&encryption=none&insecure=0&headerType=none&fp=random&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=sub.sbrf-cdn342.ru#@IP_CF",
-      "latency": 455,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/19344",
-      "flag": "🇦🇪",
-      "country": "United Arab Emirates",
-      "ts": 1780094943.675315
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://d3d962b1-7fc4-4f34-8292-b57e75cd0316@198.41.223.184:2096?path=%2F&security=tls&encryption=none&insecure=0&host=purple-water-9854.ipcfchannel.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=purple-water-9854.ipcfchannel.workers.dev#IP_CF`",
-      "latency": 2,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/19343",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1780094942.8994462
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://d3d962b1-7fc4-4f34-8292-b57e75cd0316@172.64.144.251:2087?path=%2F&security=tls&encryption=none&insecure=0&host=purple-water-9854.ipcfchannel.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=purple-water-9854.ipcfchannel.workers.dev#IP_CF`",
-      "latency": 2,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/19342",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1780094942.3982646
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://d3d962b1-7fc4-4f34-8292-b57e75cd0316@162.159.153.79:2083?path=%2F&security=tls&encryption=none&insecure=0&host=purple-water-9854.ipcfchannel.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=purple-water-9854.ipcfchannel.workers.dev#IP_CF`",
-      "latency": 2,
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/19341",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1780094942.0979214
     }
   ],
   "proxies": [
+    {
+      "key": "rah.time-meli.info:155",
+      "link": "tg://proxy?server=rah.time-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19356",
+      "latency": 214,
+      "flag": "🇫🇮",
+      "ts": 1780140479.460873
+    },
+    {
+      "key": "parest.opt-meli.info:155",
+      "link": "tg://proxy?server=parest.opt-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19356",
+      "latency": 300,
+      "flag": "🇫🇮",
+      "ts": 1780140479.460872
+    },
+    {
+      "key": "rad.time-meli.info:8443",
+      "link": "tg://proxy?server=rad.time-meli.info&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19356",
+      "latency": 294,
+      "flag": "🇫🇮",
+      "ts": 1780140479.4608707
+    },
+    {
+      "key": "rad.time-meli.info:8443",
+      "link": "tg://proxy?server=rad.time-meli.info&port=8443&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19356",
+      "latency": 765,
+      "flag": "🇫🇮",
+      "ts": 1780140479.4608696
+    },
+    {
+      "key": "rah.time-meli.info:155",
+      "link": "tg://proxy?server=rah.time-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09)|",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19356",
+      "latency": 568,
+      "flag": "🇫🇮",
+      "ts": 1780140479.4608684
+    },
+    {
+      "key": "parest.opt-meli.info:155",
+      "link": "tg://proxy?server=parest.opt-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19356",
+      "latency": 667,
+      "flag": "🇫🇮",
+      "ts": 1780140479.4608655
+    },
     {
       "key": "87.248.129.132:16",
       "link": "tg://proxy?server=87.248.129.132&port=16&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d",
@@ -209,13 +213,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/2759",
       "ts": 1780124025.7624917
-    },
-    {
-      "name": "@Cooonfig💥💥(همه نتا).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7475",
-      "ts": 1780094950.4494994
     }
   ]
 }

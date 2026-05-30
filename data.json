@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.39.177.190:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 153,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19397",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1780175323.0570748
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@63.184.244.52:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 119,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -132,6 +142,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "87.248.129.225:16",
+      "link": "tg://proxy?server=87.248.129.225&port=16&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19396",
+      "latency": 93,
+      "flag": "🇦🇪",
+      "ts": 1780175299.968641
+    },
+    {
+      "key": "87.248.129.225:16",
+      "link": "tg://proxy?server=87.248.129.225&port=16&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19396",
+      "latency": 94,
+      "flag": "🇦🇪",
+      "ts": 1780175299.9686382
+    },
+    {
+      "key": "204.168.175.123:8443",
+      "link": "tg://proxy?server=204.168.175.123&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19395",
+      "latency": 113,
+      "flag": "🇫🇮",
+      "ts": 1780175202.70373
+    },
+    {
+      "key": "16.60.113.203:80",
+      "link": "tg://proxy?server=16.60.113.203&port=80&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19395",
+      "latency": 115,
+      "flag": "🇬🇧",
+      "ts": 1780175202.7037277
+    },
     {
       "key": "13.40.147.78:80",
       "link": "tg://proxy?server=13.40.147.78&port=80&secret=dd104462821249bd7ac519130220c25d09",
@@ -696,20 +742,6 @@
       "channel": "TirexNet",
       "link": "https://t.me/TirexNet/4465",
       "ts": 1780141815.0536575
-    },
-    {
-      "name": "@Cooonfig👸🤍🔥(همه نتا)لجند) (1).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7481",
-      "ts": 1780128123.364958
-    },
-    {
-      "name": "@Cooonfig 🩷🌱(همه نتا).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7482",
-      "ts": 1780128123.1595263
     }
   ]
 }

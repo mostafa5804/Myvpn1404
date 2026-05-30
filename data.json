@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://AS4zmNXMX+zbfL7H2ifxMguRI6BMPdDi8z0RF+PpnpVIJ8rWwOW0aVz1XO8C2UzP1KJ9ZmJGR7rVQA7V/zyESbtPgvhHbE+KY6oUBxrRzbkFJ5Sd2hwzatO8VTwhiCo0ozMA6IW0nXKMEkjfduX6Qb90egY/yMqKHUY1TJ+PhFqQrMCrUmR93iHjQn0v0jWCcpJ09FKKpCF6Z9uKTH1aW9QMXck85ns6yZhe+iQII4hNX3IjXLpEhJtGN+jvCVW69yII1LkdIzCjreA4tliokzAQTsmasG4wcbK8euHZBG8zoaqsfqpuvYurVlkLV+En40oj73RPC8l6cHSB6Ushqh4H5XGvFp0aM3DAPo4F2GmOlg+K6x4NXu1ALoXwDkid0UnFYKHIRislcvKvOhra4AsiVfENGHYb1HSgTywnynC6QNa1Ohg3RMB/7H/k9PG2p8wy+e2VqvRlM8zfL17FcOlSMckYhWkcc9JZgPYZn5ZPI7uoDsni6Mfq+bXZQfZSo3CsQDu0e7L7HSVn/ITy8wmul1De5jO97d4ZfV4chFC78hnkV55IdPY=```",
+      "latency": 50,
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/19359",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1780141815.3416097
+    },
+    {
+      "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://Acyy4SYiAuea3OGahzWK5Ci2m8IYAC26ZQFLjYHaOic+sSeqc9liy3PGZdJuTXv8YoEK4Be/zM3qs5/3/wJ17CWaV/vOuJXd6DkXC/yEDqJkTY4n5FBF9ewPzXtbMMCrXlbSWlyasLywflAk+CJywPTxaVEXXkLFzOoYhFB1bdnWQ6Re6Ot5hzd/JtnocuDwDo6kTErpRZ9HkgpLaKOClWi8Ic9wiO14JOWc3HSHkL8MKnX5gie67XnQbkKGe0c2vK/9EYgZiChrGvwmSxvNj3DvxM/jMGXMY2/4aSyh0K6BLcvSQ7Mpa+gjzMqKW4M8BXYnJAq4qT3Gj2AF8WpbOe5fuZN03Kb4BnmJysLut7ObN2rOlHMq0znrqU5xdZGpstVSOw9CUS2G3GutpQClPr1h+eZndmBZNf/x9RZcpcSewwIT9tFuJ7ULfVXss+X+a+761uBfjWZnSTeVylIbd9R4sLORdIyx5qhHf4MDpd/5ZgFf53ZK6BkramBBPDgjdIZI+D0KLhR4/erlfncwEvSzy+sGBip9SlV+w7PL1EoqtLL79LQWNk1/+w3sDgoKqGzbIPjL1xY=```",
       "latency": 50,
       "channel": "TirexNet",
@@ -22,6 +32,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "86.110.212.174:80",
+      "link": "tg://proxy?server=86.110.212.174&port=80&secret=eefc56fb73c972a2309c4787bc1364c2207777772e636c6f7564666c6172652e636f6d",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19357",
+      "latency": 125,
+      "flag": "🇷🇺",
+      "ts": 1780141755.9612284
+    },
+    {
+      "key": "193.233.129.38:80",
+      "link": "tg://proxy?server=193.233.129.38&port=80&secret=eefc56fb73c972a2309c4787bc1364c2207777772e636c6f7564666c6172652e636f6d",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19357",
+      "latency": 100,
+      "flag": "🇦🇹",
+      "ts": 1780141755.961227
+    },
+    {
+      "key": "79.133.183.225:80",
+      "link": "tg://proxy?server=79.133.183.225&port=80&secret=eefc56fb73c972a2309c4787bc1364c2207777772e636c6f7564666c6172652e636f6d",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19357",
+      "latency": 126,
+      "flag": "🇷🇺",
+      "ts": 1780141755.9612162
+    },
+    {
+      "key": "193.233.174.149:80",
+      "link": "tg://proxy?server=193.233.174.149&port=80&secret=eefc56fb73c972a2309c4787bc1364c2207777772e636c6f7564666c6172652e636f6d",
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19357",
+      "latency": 101,
+      "flag": "🇳🇱",
+      "ts": 1780141755.9612143
+    },
     {
       "key": "rah.time-meli.info:155",
       "link": "tg://proxy?server=rah.time-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09",
@@ -186,6 +232,34 @@
     }
   ],
   "files": [
+    {
+      "name": "@planb_net#121.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2762",
+      "ts": 1780141836.4822698
+    },
+    {
+      "name": "@planb_net#122.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2763",
+      "ts": 1780141836.183998
+    },
+    {
+      "name": "@planb_net#123.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2764",
+      "ts": 1780141835.8847723
+    },
+    {
+      "name": "AMNEZIA@TIREXNET.conf",
+      "ext": "CONF",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/4465",
+      "ts": 1780141815.0536575
+    },
     {
       "name": "@Cooonfig👸🤍🔥(همه نتا)لجند) (1).npvt",
       "ext": "NPVT",

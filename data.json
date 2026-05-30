@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "SLIPNET_ENC",
+      "config": "slipnet-enc://Acyy4SYiAuea3OGahzWK5Ci2m8IYAC26ZQFLjYHaOic+sSeqc9liy3PGZdJuTXv8YoEK4Be/zM3qs5/3/wJ17CWaV/vOuJXd6DkXC/yEDqJkTY4n5FBF9ewPzXtbMMCrXlbSWlyasLywflAk+CJywPTxaVEXXkLFzOoYhFB1bdnWQ6Re6Ot5hzd/JtnocuDwDo6kTErpRZ9HkgpLaKOClWi8Ic9wiO14JOWc3HSHkL8MKnX5gie67XnQbkKGe0c2vK/9EYgZiChrGvwmSxvNj3DvxM/jMGXMY2/4aSyh0K6BLcvSQ7Mpa+gjzMqKW4M8BXYnJAq4qT3Gj2AF8WpbOe5fuZN03Kb4BnmJysLut7ObN2rOlHMq0znrqU5xdZGpstVSOw9CUS2G3GutpQClPr1h+eZndmBZNf/x9RZcpcSewwIT9tFuJ7ULfVXss+X+a+761uBfjWZnSTeVylIbd9R4sLORdIyx5qhHf4MDpd/5ZgFf53ZK6BkramBBPDgjdIZI+D0KLhR4/erlfncwEvSzy+sGBip9SlV+w7PL1EoqtLL79LQWNk1/+w3sDgoKqGzbIPjL1xY=```",
+      "latency": 50,
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/19348",
+      "flag": "🏴‍☠️",
+      "country": "SlipNet",
+      "ts": 1780124015.3014843
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://31fb98b7-e7a1-4b56-8c6a-3f060f06393c@freetg.strettenvpn.com:443?security=reality&encryption=none&pbk=yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28&host=%40ProxyVPN11&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=eh.vk.com&sid=8248954896#proxymelimon``",
+      "latency": 179,
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/19347",
+      "flag": "🇷🇺",
+      "country": "Russia",
+      "ts": 1780123987.584046
+    },
+    {
       "protocol": "SS",
       "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.149:8080#@IP_CF`",
       "latency": 93,
@@ -176,54 +196,23 @@
       "latency": 108,
       "flag": "🇦🇪",
       "ts": 1780091832.0065475
-    },
-    {
-      "key": "98.86.171.7:80",
-      "link": "tg://proxy?server=98.86.171.7&port=80&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/19317",
-      "latency": 54,
-      "flag": "🇺🇸",
-      "ts": 1780076887.5421255
-    },
-    {
-      "key": "1772673667246371.ir.fulle7.info:8443",
-      "link": "tg://proxy?server=1772673667246371.ir.fulle7.info&port=8443&secret=104462821249bd7ac519130220c25d09",
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/19317",
-      "latency": 1245,
-      "flag": "🇫🇮",
-      "ts": 1780076887.5421238
-    },
-    {
-      "key": "937632736368677.ir.fulle7.info:8443",
-      "link": "tg://proxy?server=937632736368677.ir.fulle7.info&port=8443&secret=EERighJJvXrFGRMCIMJdCQ%3D%3D",
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/19317",
-      "latency": 322,
-      "flag": "🇫🇮",
-      "ts": 1780076887.5421226
-    },
-    {
-      "key": "185.83.210.141:8569",
-      "link": "tg://proxy?server=185.83.210.141&port=8569&secret=767cf6f14f461cdd166b54eddb53e1b0",
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/19317",
-      "latency": null,
-      "flag": "🇮🇷",
-      "ts": 1780076887.542121
-    },
-    {
-      "key": "5.75.222.133:8443",
-      "link": "tg://proxy?server=5.75.222.133&port=8443&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/19317",
-      "latency": 147,
-      "flag": "🇩🇪",
-      "ts": 1780076887.542119
     }
   ],
   "files": [
+    {
+      "name": "@Cooonfig👸🇩🇪👸(همه نتا موشک+ی).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7480",
+      "ts": 1780124075.7096443
+    },
+    {
+      "name": "@planb_net#119.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2759",
+      "ts": 1780124025.7624917
+    },
     {
       "name": "@Cooonfig💥💥(همه نتا).npvt",
       "ext": "NPVT",
@@ -307,34 +296,6 @@
       "channel": "🍓 XIX",
       "link": "https://t.me/xixv2ray/6756",
       "ts": 1780083281.279071
-    },
-    {
-      "name": "-NetMeli🚀.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/16983",
-      "ts": 1780076916.2713144
-    },
-    {
-      "name": "همراه اول ❤️⚡.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/16984",
-      "ts": 1780076915.9717033
-    },
-    {
-      "name": "@planb_net#113.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2753",
-      "ts": 1780076901.1889904
-    },
-    {
-      "name": "Net_Melli1.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت ملی 🕊",
-      "link": "https://t.me/net_melli1/1981",
-      "ts": 1780076812.860145
     }
   ]
 }

@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://af85935c-e753-4efa-9356-5fcb26ec68bb@pro.snappmarket.online:443?alpn=h2%2Chttp%2F1.1&encryption=none&fp=chrome&host=pro.nimbaha.info&path=%2F&security=tls&sni=PrO.nImBaHa.InFo&type=ws#@cicdovpn",
+      "latency": 570,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19449",
+      "flag": "🇦🇲",
+      "country": "Armenia",
+      "ts": 1780236942.6133063
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://cc752a3e-1537-4e86-bb50-1b897bf7b33c@202.37.33.80:443?path=%2Fsg-melbi&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=cyylr.eu.cc&fp=chrome&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=cyylr.eu.cc#%40filtershekan_channel%20%7C6`",
       "latency": 8,
       "channel": "Vpn | proxy | filtershekan",
@@ -132,6 +142,96 @@
     }
   ],
   "proxies": [
+    {
+      "key": "87.248.129.210:4455",
+      "link": "tg://proxy?server=87.248.129.210&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19450",
+      "latency": 88,
+      "flag": "🇦🇪",
+      "ts": 1780237027.5220163
+    },
+    {
+      "key": "87.248.129.220:2053",
+      "link": "tg://proxy?server=87.248.129.220&port=2053&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19450",
+      "latency": 89,
+      "flag": "🇦🇪",
+      "ts": 1780237027.5220156
+    },
+    {
+      "key": "87.248.129.200:4455",
+      "link": "tg://proxy?server=87.248.129.200&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19450",
+      "latency": 88,
+      "flag": "🇦🇪",
+      "ts": 1780237027.5220144
+    },
+    {
+      "key": "noron2.iranroad.casa:25565",
+      "link": "tg://proxy?server=noron2.iranroad.casa&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19450",
+      "latency": 17,
+      "flag": "🇨🇦",
+      "ts": 1780237027.5220134
+    },
+    {
+      "key": "noron.parsdict.casa:25565",
+      "link": "tg://proxy?server=noron.parsdict.casa&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19450",
+      "latency": 83,
+      "flag": "🇨🇦",
+      "ts": 1780237027.5220122
+    },
+    {
+      "key": "noron.parsdict.casa:25565",
+      "link": "tg://proxy?server=noron.parsdict.casa&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19450",
+      "latency": 25,
+      "flag": "🇨🇦",
+      "ts": 1780237027.522011
+    },
+    {
+      "key": "87.248.129.220:2053",
+      "link": "tg://proxy?server=87.248.129.220&port=2053&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19450",
+      "latency": 95,
+      "flag": "🇦🇪",
+      "ts": 1780237027.52201
+    },
+    {
+      "key": "noron2.iranroad.casa:25565",
+      "link": "tg://proxy?server=noron2.iranroad.casa&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19450",
+      "latency": 317,
+      "flag": "🇨🇦",
+      "ts": 1780237027.522009
+    },
+    {
+      "key": "87.248.129.200:4455",
+      "link": "tg://proxy?server=87.248.129.200&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19450",
+      "latency": 88,
+      "flag": "🇦🇪",
+      "ts": 1780237027.5220072
+    },
+    {
+      "key": "87.248.129.210:4455",
+      "link": "tg://proxy?server=87.248.129.210&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19450",
+      "latency": 94,
+      "flag": "🇦🇪",
+      "ts": 1780237027.5220044
+    },
     {
       "key": "a.artishchev.org:8443",
       "link": "tg://proxy?server=a.artishchev.org&port=8443&secret=963a7fd525b04c4533ce776c9bd70f34",

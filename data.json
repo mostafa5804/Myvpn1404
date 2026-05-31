@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://d55a56b0-3130-45f3-828c-c602cf6a6b6f@Tamland.ir:80?path=%2F&security=&encryption=none&host=cc.lithiumhost.ir&type=ws#@cicdovpn",
+      "latency": 797,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19472",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1780255529.6547225
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://038a0cfe-d210-4b67-baa6-e3ba15046693@germany3.samanidempire.org:443?path=%2FSDFDSerTeddgwete&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=1&host=germany3.samanidempire.org&fp=chrome&type=ws&allowInsecure=1#more%20%3A%20%40Qara_atayi%20%7C%20data%20%3A%20100G",
+      "latency": 302,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19471",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1780255528.5239723
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://b831381d-6324-4d53-ad4f-8cda48b30811@67.102.180.16:443?security=reality&encryption=none&pbk=3j9h81MFAlsEOQ4K1ey1XD0tz1aEVNaMGMoMjQwif1w&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.microsoft.com&sid=16#%40filtershekan_channel%20%7C2`",
       "latency": 58,
       "channel": "Vpn | proxy | filtershekan",
@@ -252,6 +272,69 @@
     }
   ],
   "proxies": [
+    {
+      "key": "bminecraft.info:25565",
+      "link": "tg://proxy?server=bminecraft.info&port=25565&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19474",
+      "latency": 169,
+      "flag": "🇨🇦",
+      "ts": 1780255619.5069752
+    },
+    {
+      "key": "bminecraft.info:25565",
+      "link": "tg://proxy?server=bminecraft.info&port=25565&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19474",
+      "latency": 190,
+      "flag": "🇨🇦",
+      "ts": 1780255619.5069737
+    },
+    {
+      "key": "87.248.129.224:4455",
+      "link": "tg://proxy?server=87.248.129.224&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19474",
+      "latency": 107,
+      "flag": "🇦🇪",
+      "ts": 1780255619.5069711
+    },
+    {
+      "key": "87.248.129.224:4455",
+      "link": "tg://proxy?server=87.248.129.224&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19473",
+      "latency": 107,
+      "flag": "🇦🇪",
+      "ts": 1780255529.9345067
+    },
+    {
+      "key": "1788168686678762767777.ir.fulldf.info:8443",
+      "link": "tg://proxy?server=1788168686678762767777.ir.fulldf.info&port=8443&secret=EERighJJvXrFGRMCIMJdCQ==",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19473",
+      "latency": 324,
+      "flag": "🇩🇪",
+      "ts": 1780255529.9345057
+    },
+    {
+      "key": "87.248.129.50:15",
+      "link": "tg://proxy?server=87.248.129.50&port=15&secret=7hYDAQIAAQAB_AMDhuJMOt1iaXNjb3R0aS55ZWt0YW5ldC5jb20",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19473",
+      "latency": 145,
+      "flag": "🇦🇪",
+      "ts": 1780255529.9345043
+    },
+    {
+      "key": "miinecrafto.com:25565",
+      "link": "tg://proxy?server=miinecrafto.com&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19473",
+      "latency": 125,
+      "flag": "🇨🇦",
+      "ts": 1780255529.934502
+    },
     {
       "key": "iro1.bminecraft.info.:25565",
       "link": "tg://proxy?server=iro1.bminecraft.info.&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
@@ -724,48 +807,6 @@
       "channel": "TirexNet",
       "link": "https://t.me/TirexNet/4492",
       "ts": 1780221635.270026
-    },
-    {
-      "name": "@Cooonfig🏝.npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7491",
-      "ts": 1780209617.0160356
-    },
-    {
-      "name": "Fast2.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/17002",
-      "ts": 1780209575.1523466
-    },
-    {
-      "name": "@planb_net#136.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2784",
-      "ts": 1780209558.6347277
-    },
-    {
-      "name": "@planb_net#137.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2785",
-      "ts": 1780209558.1974866
-    },
-    {
-      "name": "@planb_net#138.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2786",
-      "ts": 1780209557.877468
-    },
-    {
-      "name": "Net_Melli1 (1).npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت ملی 🕊",
-      "link": "https://t.me/net_melli1/1997",
-      "ts": 1780209479.0778747
     }
   ]
 }

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@35.181.84.6:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 194,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19482",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1780261758.9256756
+    },
+    {
       "protocol": "SLIPNET_ENC",
       "config": "slipnet-enc://ASjJzQ3DoSaTf9GVaytuL6w6aGPbKTYPf0w25MjyXz+/mjN6SY68Peb0GalmTohlrjDtMq5fgYa7ObShyKhge5GjHD9tgaUqzaVTnPFzMXpKeYECXwu+LyRbJzYW4VninnuUYtxs6Ke17QTRWAAAPo5p1k3JLBUfUiJwTzZTJfeuiYVUwMFBQY6vetPli7c93yVlOuZpxNi//8Q8wOH2x00Hf/tnTWXGo67ZDoSFVhfbqfJ17Kr/7VWB5XQ+AfpsfW5IhuVU7qRiQbJOAyGA2NRRO3gHDr9mo2hAXYpP7rjoI2lyxHWUdPWjfn9dKyElE50QXsSmemM5ccHflyZynKKWz72c2FAWuPTF/6n+d0a5lpGScyKXC2MEVeBP+nZHGrakjqiDo/7oOtwuS8OCftCpq78PR5Qcgiw/1oMXy6klQbaqeDoaHtIOLmJAmZOwRIlvg0t7kPIcu7VImYFQ63Gq54AZpmEeQja4uMC+gDtPZ/f8gbjISCVsU1pTrntNH8c1DwKgdA0uPjk5srcror27sAvewtM3t/H/7Q==```",
       "latency": 50,
@@ -269,26 +279,6 @@
       "flag": "🇸🇨",
       "country": "Seychelles",
       "ts": 1780221573.3143501
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@3.125.174.245:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 162,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/19419",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1780215606.3576443
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://1f9d104e-ca0e-4202-ba4b-a0afb969c747@45.130.125.76:443?security=tls&allowInsecure=0&encryption=none&type=xhttp&path=/assignment&sni=www.multiplydose.cc.cd&fp=chrome&mode=stream-one&alpn=h2,http/1.1#@cicdovpn",
-      "latency": 19,
-      "channel": "VPN | CICDO کانفینگ ملی شکن",
-      "t_link": "https://t.me/myvpn1404/19418",
-      "flag": "🇸🇨",
-      "country": "Seychelles",
-      "ts": 1780215506.551687
     }
   ],
   "proxies": [

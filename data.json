@@ -1,5 +1,16 @@
 {
-  "configs": [],
+  "configs": [
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.66.185.190:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 211,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19525",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1780391748.489443
+    }
+  ],
   "proxies": [
     {
       "key": "87.248.129.225:4455",
@@ -81,15 +92,6 @@
       "latency": 232,
       "flag": "🇨🇦",
       "ts": 1780352436.5342886
-    },
-    {
-      "key": "87.248.129.223:4455",
-      "link": "tg://proxy?server=87.248.129.223&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19513",
-      "latency": 120,
-      "flag": "🇦🇪",
-      "ts": 1780340714.2734067
     }
   ],
   "files": [
@@ -141,20 +143,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/21428",
       "ts": 1780357705.4895945
-    },
-    {
-      "name": "Edge.npvt",
-      "ext": "NPVT",
-      "channel": "VPN MARKET",
-      "link": "https://t.me/anty_filter/23256",
-      "ts": 1780347677.9319935
-    },
-    {
-      "name": "@planb_net#173.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2824",
-      "ts": 1780347615.277875
     }
   ]
 }

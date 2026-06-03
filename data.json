@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "SS",
+      "config": "ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206ZHlMK0txWDhoSU1uK1V5QUR3U0pPUG03MkEwQTgzVHNET0ZYQm42STJtQT0@49.13.3.249:23997#proxymelimon`",
+      "latency": 98,
+      "channel": "کانفیگ و پروکسی | هوپنوس",
+      "t_link": "https://t.me/myvpn1404/19575",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1780512652.9409738
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.25:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#%40vpnbaz%20%F0%9F%8E%B2",
       "latency": 101,
@@ -59,19 +69,63 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1780481800.1556938
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://8ad2869d-1571-45cc-8d02-10aea6d600ac@45.130.125.76:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&path=%2Fae-bo&security=tls&encryption=none&host=partner.catchplay.com.cyylr.eu.cc&allowinsecure=0&type=ws&sni=partner.catchplay.com.cyylr.eu.cc#Proxymelimon``",
-      "latency": 2,
-      "channel": "کانفیگ و پروکسی | هوپنوس",
-      "t_link": "https://t.me/myvpn1404/19555",
-      "flag": "🇸🇨",
-      "country": "Seychelles",
-      "ts": 1780462287.0916958
     }
   ],
   "proxies": [
+    {
+      "key": "116.203.2.157:4455",
+      "link": "tg://proxy?server=116.203.2.157&port=4455&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/19576",
+      "latency": 106,
+      "flag": "🇩🇪",
+      "ts": 1780512686.5509984
+    },
+    {
+      "key": "199.247.2.204:8443",
+      "link": "tg://proxy?server=199.247.2.204&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/19576",
+      "latency": 106,
+      "flag": "🇩🇪",
+      "ts": 1780512686.5509844
+    },
+    {
+      "key": "199.247.2.204:8443",
+      "link": "tg://proxy?server=199.247.2.204&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/19576",
+      "latency": 143,
+      "flag": "🇩🇪",
+      "ts": 1780512686.5509834
+    },
+    {
+      "key": "91.217.166.11:16",
+      "link": "tg://proxy?server=91.217.166.11&port=16&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/19576",
+      "latency": 84,
+      "flag": "🇮🇷",
+      "ts": 1780512686.5509825
+    },
+    {
+      "key": "116.203.2.157:4455",
+      "link": "tg://proxy?server=116.203.2.157&port=4455&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/19576",
+      "latency": 110,
+      "flag": "🇩🇪",
+      "ts": 1780512686.550981
+    },
+    {
+      "key": "91.217.166.11:16",
+      "link": "tg://proxy?server=91.217.166.11&port=16&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d)",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/19576",
+      "latency": 85,
+      "flag": "🇮🇷",
+      "ts": 1780512686.550979
+    },
     {
       "key": "87.248.129.246:8443",
       "link": "tg://proxy?server=87.248.129.246&port=8443&secret=dd79e344818749bd7ac519130220c25d09",
@@ -237,6 +291,20 @@
   ],
   "files": [
     {
+      "name": "@planb_net #201.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2855",
+      "ts": 1780512693.2390466
+    },
+    {
+      "name": "@planb_net #202.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2856",
+      "ts": 1780512692.9400017
+    },
+    {
       "name": "@planb_net #199.npvt",
       "ext": "NPVT",
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -298,13 +366,6 @@
       "channel": "🍓 XIX",
       "link": "https://t.me/xixv2ray/6790",
       "ts": 1780480706.3015163
-    },
-    {
-      "name": "👉@ghalagyann👈 کانال تلگرام.npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/21436",
-      "ts": 1780462278.4723957
     }
   ]
 }

@@ -69,16 +69,6 @@
       "flag": "🇳🇱",
       "country": "The Netherlands",
       "ts": 1780498532.5544145
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@63.185.188.232:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 132,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/19567",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1780481800.1556938
     }
   ],
   "proxies": [
@@ -153,126 +143,58 @@
       "latency": 93,
       "flag": "🇦🇪",
       "ts": 1780499514.3663478
-    },
-    {
-      "key": "rah.time-meli.info:155",
-      "link": "tg://proxy?server=rah.time-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19566",
-      "latency": 302,
-      "flag": "🇫🇮",
-      "ts": 1780481793.3740048
-    },
-    {
-      "key": "95.216.149.83:155",
-      "link": "tg://proxy?server=95.216.149.83&port=155&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19566",
-      "latency": 158,
-      "flag": "🇫🇮",
-      "ts": 1780481793.374004
-    },
-    {
-      "key": "rah.time-meli.info:155",
-      "link": "tg://proxy?server=rah.time-meli.info&port=155&secret=dd104462821249bd7ac519130220c25d09)|",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19566",
-      "latency": 722,
-      "flag": "🇫🇮",
-      "ts": 1780481793.3740027
-    },
-    {
-      "key": "95.216.149.83:155",
-      "link": "tg://proxy?server=95.216.149.83&port=155&secret=FgMBAgABAAH8AxOG4kw63Q)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19566",
-      "latency": 153,
-      "flag": "🇫🇮",
-      "ts": 1780481793.3740003
-    },
-    {
-      "key": "87.248.129.223:4455",
-      "link": "tg://proxy?server=87.248.129.223&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19565",
-      "latency": 136,
-      "flag": "🇦🇪",
-      "ts": 1780481777.2111874
-    },
-    {
-      "key": "87.248.129.224:4455",
-      "link": "tg://proxy?server=87.248.129.224&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19565",
-      "latency": 128,
-      "flag": "🇦🇪",
-      "ts": 1780481777.2111864
-    },
-    {
-      "key": "87.248.129.225:4455",
-      "link": "tg://proxy?server=87.248.129.225&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19565",
-      "latency": 127,
-      "flag": "🇦🇪",
-      "ts": 1780481777.2111857
-    },
-    {
-      "key": "87.248.129.248:15",
-      "link": "tg://proxy?server=87.248.129.248&port=15&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19565",
-      "latency": 134,
-      "flag": "🇳🇱",
-      "ts": 1780481777.2111847
-    },
-    {
-      "key": "87.248.129.225:4455",
-      "link": "tg://proxy?server=87.248.129.225&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19565",
-      "latency": 134,
-      "flag": "🇦🇪",
-      "ts": 1780481777.2111833
-    },
-    {
-      "key": "87.248.129.248:15",
-      "link": "tg://proxy?server=87.248.129.248&port=15&secret=ee1603010200010001fc030386e24c3add63646e2e79656b74616e65742e636f6d",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19565",
-      "latency": 126,
-      "flag": "🇳🇱",
-      "ts": 1780481777.2111824
-    },
-    {
-      "key": "87.248.129.223:4455",
-      "link": "tg://proxy?server=87.248.129.223&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19565",
-      "latency": 129,
-      "flag": "🇦🇪",
-      "ts": 1780481777.2111814
-    },
-    {
-      "key": "87.248.129.224:4455",
-      "link": "tg://proxy?server=87.248.129.224&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19565",
-      "latency": 128,
-      "flag": "🇦🇪",
-      "ts": 1780481777.21118
-    },
-    {
-      "key": "87.248.129.210:4455",
-      "link": "tg://proxy?server=87.248.129.210&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19565",
-      "latency": 127,
-      "flag": "🇦🇪",
-      "ts": 1780481777.211177
     }
   ],
   "files": [
+    {
+      "name": "@NpvTunnel_vip 21⚡.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1510",
+      "ts": 1780530662.328487
+    },
+    {
+      "name": "کانفیگ دارک23🇫🇷.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1511",
+      "ts": 1780530662.0225153
+    },
+    {
+      "name": "کانفیگ دارک24🇫🇮.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1512",
+      "ts": 1780530661.7036748
+    },
+    {
+      "name": "کانفیگ دارک25🇫🇷.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1513",
+      "ts": 1780530661.3934927
+    },
+    {
+      "name": "کانفیگ دارک26🇺🇸.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1514",
+      "ts": 1780530661.116117
+    },
+    {
+      "name": "کانفیگ دارک27🇫🇮.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1515",
+      "ts": 1780530660.8435035
+    },
+    {
+      "name": "دارک همراه28🇫🇮.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1516",
+      "ts": 1780530660.5610926
+    },
     {
       "name": "4_5839049936317979672.npvt",
       "ext": "NPVT",

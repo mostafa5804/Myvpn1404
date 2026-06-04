@@ -1,5 +1,56 @@
 {
-  "configs": [],
+  "configs": [
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@63.176.37.226:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 149,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19606",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1780564141.0561016
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://cff2c9e5-8403-436e-a60a-48e558453ab8@104.19.229.2:443?encryption=none&type=ws&security=tls&path=%2F&host=de1.nagona.top&sni=de1.nagona.top&fp=chrome&allowInsecure=1#@cicdovpn",
+      "latency": 2,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19605",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1780564030.1736238
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e8136ea7-feb9-4f94-9443-79e429608806@snapp.ir:80?encryption=none&type=ws&path=%2F&host=sv3.alligatocloud.site#@@cicdovpn",
+      "latency": 416,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19604",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1780564029.8110783
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://6d3c8903-86c1-46e7-a5dc-b45823dec9a7@fmmgkzjac48e.dxdx5.com:9023?encryption=none&type=grpc&mode=gun#@cicdovpn",
+      "latency": 239,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19603",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1780564028.88642
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://58341346-98dd-4094-a26c-c378e86261e1@104.16.75.127:443?encryption=none&type=ws&security=tls&path=%2Fin-pdr&host=support.zoom.us.cyylr.eu.cc&sni=support.zoom.us.cyylr.eu.cc&allowInsecure=0#@cicdovpn",
+      "latency": 3,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19602",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1780564028.272622
+    }
+  ],
   "proxies": [
     {
       "key": "195.254.165.2:8443",

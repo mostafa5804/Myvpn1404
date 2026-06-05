@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@35.181.79.217:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 109,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19656",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1780668419.7783973
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://3f88bde3-effd-4a49-bfa2-19fa4d0e1cc5@151.101.108.223:443?encryption=none&type=ws&security=tls&path=%2F&host=fancii.global.ssl.fastly.net&sni=default.ssl.fastly.net&allowInsecure=1#@cicdovpn",
+      "latency": 2,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19655",
+      "flag": "🇯🇵",
+      "country": "Japan",
+      "ts": 1780668309.4184058
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://b1766da2-40c0-4a41-817e-e60850f85ab5@190.93.247.250:8443?security=tls&type=ws&headerType=&path=%2F%40shopcar%3Fed%3D2048&host=mers.dorebaba.ir&sni=mers2.dorebaba.ir&fp=#%F0%9F%9A%80%20All%20operator%20%28Free1%29%20```",
       "latency": 1,

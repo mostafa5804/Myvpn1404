@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://0c61d46d-4c4d-421b-b0fb-d211415da368@52.14.47.44:443?security=none&encryption=none&headerType=none&type=tcp#UnNurmal%20%C2%B9%E2%81%B7%C2%B3`",
+      "latency": 34,
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/19658",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1780677892.044863
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@35.181.79.217:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 109,

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@52.47.107.29:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 101,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19661",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1780686315.6214151
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://0c61d46d-4c4d-421b-b0fb-d211415da368@52.14.47.44:443?security=none&encryption=none&headerType=none&type=tcp#UnNurmal%20%C2%B9%E2%81%B7%C2%B3`",
       "latency": 34,
@@ -29,49 +39,72 @@
       "flag": "🇯🇵",
       "country": "Japan",
       "ts": 1780668309.4184058
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://b1766da2-40c0-4a41-817e-e60850f85ab5@190.93.247.250:8443?security=tls&type=ws&headerType=&path=%2F%40shopcar%3Fed%3D2048&host=mers.dorebaba.ir&sni=mers2.dorebaba.ir&fp=#%F0%9F%9A%80%20All%20operator%20%28Free1%29%20```",
-      "latency": 1,
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/19646",
-      "flag": "🇨🇷",
-      "country": "Costa Rica",
-      "ts": 1780642000.9125123
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://b1766da2-40c0-4a41-817e-e60850f85ab5@103.31.4.131:8443?security=tls&type=ws&headerType=&path=%2F%40shopcar%3Fed%3D2048&host=mers.dorebaba.ir&sni=mers.dorebaba.ir&fp=#%F0%9F%9A%80%20All%20operator%20%28Free1%29%20",
-      "latency": 54,
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/19645",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1780642000.5980544
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://b1766da2-40c0-4a41-817e-e60850f85ab5@5.10.214.61:8443?security=tls&type=ws&headerType=&path=%2F%40shopcar%3Fed%3D2048&host=mers.dorebaba.ir&sni=mers2.dorebaba.ir&fp=#%F0%9F%9A%80%20All%20operator%20%28Free1%29%20",
-      "latency": 1,
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/19644",
-      "flag": "🇦🇲",
-      "country": "Armenia",
-      "ts": 1780642000.1028824
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://b1766da2-40c0-4a41-817e-e60850f85ab5@173.245.49.189:8443?security=tls&type=ws&headerType=&path=%2F%40shopcar%3Fed%3D2048&host=mers.dorebaba.ir&sni=mers2.dorebaba.ir&fp=#%F0%9F%9A%80%20All%20operator%20%28Free1%29%20",
-      "latency": 2,
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/19643",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1780641999.6907997
     }
   ],
   "proxies": [
+    {
+      "key": "87.248.129.241:8443",
+      "link": "tg://proxy?server=87.248.129.241&port=8443&secret=ee1603010200010001fc030386e24c3add646565707365656B2E636F6D",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19660",
+      "latency": 88,
+      "flag": "🇦🇪",
+      "ts": 1780686289.821849
+    },
+    {
+      "key": "87.248.129.242:8443",
+      "link": "tg://proxy?server=87.248.129.242&port=8443&secret=ee1603010200010001fc030386e24c3add646565707365656B2E636F6D)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19660",
+      "latency": 87,
+      "flag": "🇦🇪",
+      "ts": 1780686289.8218484
+    },
+    {
+      "key": "87.248.129.241:8443",
+      "link": "tg://proxy?server=87.248.129.241&port=8443&secret=ee1603010200010001fc030386e24c3add646565707365656B2E636F6D)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19660",
+      "latency": 87,
+      "flag": "🇦🇪",
+      "ts": 1780686289.821847
+    },
+    {
+      "key": "87.248.129.242:8443",
+      "link": "tg://proxy?server=87.248.129.242&port=8443&secret=ee1603010200010001fc030386e24c3add646565707365656B2E636F6D",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19660",
+      "latency": 87,
+      "flag": "🇦🇪",
+      "ts": 1780686289.8218455
+    },
+    {
+      "key": "46.62.175.99:4455",
+      "link": "tg://proxy?server=46.62.175.99&port=4455&secret=ee1603010200010001fc030386e24c3add7765622e79656b74616e65742e636f6d",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19659",
+      "latency": 113,
+      "flag": "🇫🇮",
+      "ts": 1780686210.5473607
+    },
+    {
+      "key": "api.my-miner.info.:8443",
+      "link": "tg://proxy?server=api.my-miner.info.&port=8443&secret=7gggggggggggggggggggggh0cmFuc2xhdGUuZ29v",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19659",
+      "latency": 281,
+      "flag": "🇩🇪",
+      "ts": 1780686210.5473597
+    },
+    {
+      "key": "213.133.102.106:443",
+      "link": "tg://proxy?server=213.133.102.106&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19659",
+      "latency": 1110,
+      "flag": "🇩🇪",
+      "ts": 1780686210.5473568
+    },
     {
       "key": "195.254.165.201:8443",
       "link": "tg://proxy?server=195.254.165.201&port=8443&secret=dd79e344818749bd7ac519130220c25d09)",

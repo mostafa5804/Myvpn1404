@@ -1,6 +1,66 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://2cc9f9ae-657b-43fc-916f-049690c4e07a@ltr.moktana.app:443?security=reality&encryption=none&pbk=C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4&fp=chrome&type=grpc&serviceName=moktana.net.v1.StreamService&sni=ltr.moktana.app&sid=3f8e2d1c9b4a7e6f#%E2%98%ACSH%CE%9EN%E2%84%A2```",
+      "latency": 227,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19673",
+      "flag": "🇷🇺",
+      "country": "Russia",
+      "ts": 1780709289.2635586
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://2cfb47db-5b73-43cf-be67-6e28d73df7d4@nl.moktana.app:443?security=reality&encryption=none&pbk=C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4&fp=chrome&type=grpc&serviceName=moktana.net.v1.StreamService&sni=nl.moktana.app&sid=a1b2c3d4e5f6a7b8#%E2%98%ACSH%CE%9EN%E2%84%A2",
+      "latency": 214,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19672",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1780709288.6759593
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://8ecccb71-95ec-4a12-cbc5-ffc32c4d5ded@3.71.187.131:443?security=&encryption=none&headerType=&type=tcp#%E2%98%ACSH%CE%9EN%E2%84%A2",
+      "latency": 151,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19671",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1780709288.1142495
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://2cc9f9ae-657b-43fc-916f-049690c4e07a@ru.moktana.app:443?security=reality&encryption=none&pbk=JZppw-ux1-GsHY6eN1B-sFcVjXNVvb1D6-qKBKCrxAo&headerType=&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ru.moktana.app&sid=a458c807f0a93778#%E2%98%ACSH%CE%9EN%E2%84%A2",
+      "latency": 194,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19670",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1780709287.6642776
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://7b1ede55-3331-4507-ada8-cd5ba4a2ab38@31.57.62.179:13280?security=&encryption=none&headerType=&type=tcp#%E2%98%ACSH%CE%9EN%E2%84%A2",
+      "latency": 122,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19669",
+      "flag": "🇫🇮",
+      "country": "Finland",
+      "ts": 1780709287.1602635
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://2cfb47db-5b73-43cf-be67-6e28d73df7d4@85.192.49.172:443?security=reality&encryption=none&pbk=zz1etKRzRA4fwe0Te0p6jAlHorNJs4mmcljA3oL520E&fp=chrome&type=grpc&serviceName=xyz&sni=fi.moktana.app&sid=93d9bca8c5a45a49#%E2%98%ACSH%CE%9EN%E2%84%A2",
+      "latency": 112,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19668",
+      "flag": "🇫🇮",
+      "country": "Finland",
+      "ts": 1780709286.7229855
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@52.47.107.29:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 101,
@@ -122,204 +182,6 @@
       "latency": 140,
       "flag": "🇫🇷",
       "ts": 1780675534.848069
-    },
-    {
-      "key": "rah.time-meli.info:8443",
-      "link": "tg://proxy?server=rah.time-meli.info&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)|",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 182,
-      "flag": "🇳🇱",
-      "ts": 1780661709.9494514
-    },
-    {
-      "key": "116.202.35.160:25565",
-      "link": "tg://proxy?server=116.202.35.160&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 95,
-      "flag": "🇩🇪",
-      "ts": 1780661709.9494505
-    },
-    {
-      "key": "172.65.132.110:25565",
-      "link": "tg://proxy?server=172.65.132.110&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 2,
-      "flag": "🇨🇦",
-      "ts": 1780661709.9494495
-    },
-    {
-      "key": "135.181.233.224:8443",
-      "link": "tg://proxy?server=135.181.233.224&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 119,
-      "flag": "🇫🇮",
-      "ts": 1780661709.9494486
-    },
-    {
-      "key": "135.181.233.224:8443",
-      "link": "tg://proxy?server=135.181.233.224&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 122,
-      "flag": "🇫🇮",
-      "ts": 1780661709.9494474
-    },
-    {
-      "key": "95.216.230.229:8443",
-      "link": "tg://proxy?server=95.216.230.229&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 120,
-      "flag": "🇫🇮",
-      "ts": 1780661709.9494464
-    },
-    {
-      "key": "176.65.136.20:8443",
-      "link": "tg://proxy?server=176.65.136.20&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 93,
-      "flag": "🇳🇱",
-      "ts": 1780661709.9494455
-    },
-    {
-      "key": "176.65.136.20:8443",
-      "link": "tg://proxy?server=176.65.136.20&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 89,
-      "flag": "🇳🇱",
-      "ts": 1780661709.9494443
-    },
-    {
-      "key": "rah.time-meli.info:8443",
-      "link": "tg://proxy?server=rah.time-meli.info&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 329,
-      "flag": "🇳🇱",
-      "ts": 1780661709.9494433
-    },
-    {
-      "key": "95.216.230.229:8443",
-      "link": "tg://proxy?server=95.216.230.229&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 115,
-      "flag": "🇫🇮",
-      "ts": 1780661709.9494421
-    },
-    {
-      "key": "116.202.35.160:25565",
-      "link": "tg://proxy?server=116.202.35.160&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 97,
-      "flag": "🇩🇪",
-      "ts": 1780661709.9494407
-    },
-    {
-      "key": "172.65.132.110:25565",
-      "link": "tg://proxy?server=172.65.132.110&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19654",
-      "latency": 2,
-      "flag": "🇨🇦",
-      "ts": 1780661709.9494379
-    },
-    {
-      "key": "87.248.129.245:4455",
-      "link": "tg://proxy?server=87.248.129.245&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/19653",
-      "latency": 93,
-      "flag": "🇦🇪",
-      "ts": 1780661596.1940136
-    },
-    {
-      "key": "87.248.129.244:4455",
-      "link": "tg://proxy?server=87.248.129.244&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/19653",
-      "latency": 93,
-      "flag": "🇦🇪",
-      "ts": 1780661596.1940126
-    },
-    {
-      "key": "87.248.129.223:4455",
-      "link": "tg://proxy?server=87.248.129.223&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/19653",
-      "latency": 95,
-      "flag": "🇦🇪",
-      "ts": 1780661596.1940114
-    },
-    {
-      "key": "87.248.129.223:4455",
-      "link": "tg://proxy?server=87.248.129.223&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/19653",
-      "latency": 95,
-      "flag": "🇦🇪",
-      "ts": 1780661596.1940103
-    },
-    {
-      "key": "87.248.129.244:4455",
-      "link": "tg://proxy?server=87.248.129.244&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/19653",
-      "latency": 89,
-      "flag": "🇦🇪",
-      "ts": 1780661596.1940093
-    },
-    {
-      "key": "87.248.129.224:4455",
-      "link": "tg://proxy?server=87.248.129.224&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/19653",
-      "latency": 93,
-      "flag": "🇦🇪",
-      "ts": 1780661596.1940079
-    },
-    {
-      "key": "87.248.129.245:4455",
-      "link": "tg://proxy?server=87.248.129.245&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/19653",
-      "latency": 93,
-      "flag": "🇦🇪",
-      "ts": 1780661596.1940022
-    },
-    {
-      "key": "87.248.129.243:4455",
-      "link": "tg://proxy?server=87.248.129.243&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/19653",
-      "latency": 93,
-      "flag": "🇦🇪",
-      "ts": 1780661596.1940012
-    },
-    {
-      "key": "87.248.129.224:4455",
-      "link": "tg://proxy?server=87.248.129.224&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/19653",
-      "latency": 93,
-      "flag": "🇦🇪",
-      "ts": 1780661596.1939998
-    },
-    {
-      "key": "87.248.129.243:4455",
-      "link": "tg://proxy?server=87.248.129.243&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "Merlin ViP",
-      "t_link": "https://t.me/myvpn1404/19653",
-      "latency": 88,
-      "flag": "🇦🇪",
-      "ts": 1780661596.1939974
     }
   ],
   "files": [

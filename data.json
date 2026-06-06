@@ -139,69 +139,45 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1780733192.6267915
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://2cc9f9ae-657b-43fc-916f-049690c4e07a@ltr.moktana.app:443?security=reality&encryption=none&pbk=C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4&fp=chrome&type=grpc&serviceName=moktana.net.v1.StreamService&sni=ltr.moktana.app&sid=3f8e2d1c9b4a7e6f#%E2%98%ACSH%CE%9EN%E2%84%A2```",
-      "latency": 227,
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/19673",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1780709289.2635586
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://2cfb47db-5b73-43cf-be67-6e28d73df7d4@nl.moktana.app:443?security=reality&encryption=none&pbk=C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4&fp=chrome&type=grpc&serviceName=moktana.net.v1.StreamService&sni=nl.moktana.app&sid=a1b2c3d4e5f6a7b8#%E2%98%ACSH%CE%9EN%E2%84%A2",
-      "latency": 214,
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/19672",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1780709288.6759593
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://8ecccb71-95ec-4a12-cbc5-ffc32c4d5ded@3.71.187.131:443?security=&encryption=none&headerType=&type=tcp#%E2%98%ACSH%CE%9EN%E2%84%A2",
-      "latency": 151,
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/19671",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1780709288.1142495
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://2cc9f9ae-657b-43fc-916f-049690c4e07a@ru.moktana.app:443?security=reality&encryption=none&pbk=JZppw-ux1-GsHY6eN1B-sFcVjXNVvb1D6-qKBKCrxAo&headerType=&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ru.moktana.app&sid=a458c807f0a93778#%E2%98%ACSH%CE%9EN%E2%84%A2",
-      "latency": 194,
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/19670",
-      "flag": "🇳🇱",
-      "country": "The Netherlands",
-      "ts": 1780709287.6642776
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://7b1ede55-3331-4507-ada8-cd5ba4a2ab38@31.57.62.179:13280?security=&encryption=none&headerType=&type=tcp#%E2%98%ACSH%CE%9EN%E2%84%A2",
-      "latency": 122,
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/19669",
-      "flag": "🇫🇮",
-      "country": "Finland",
-      "ts": 1780709287.1602635
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://2cfb47db-5b73-43cf-be67-6e28d73df7d4@85.192.49.172:443?security=reality&encryption=none&pbk=zz1etKRzRA4fwe0Te0p6jAlHorNJs4mmcljA3oL520E&fp=chrome&type=grpc&serviceName=xyz&sni=fi.moktana.app&sid=93d9bca8c5a45a49#%E2%98%ACSH%CE%9EN%E2%84%A2",
-      "latency": 112,
-      "channel": "i SHARΞ WIN™",
-      "t_link": "https://t.me/myvpn1404/19668",
-      "flag": "🇫🇮",
-      "country": "Finland",
-      "ts": 1780709286.7229855
     }
   ],
   "proxies": [
+    {
+      "key": "95.216.230.229:8443",
+      "link": "tg://proxy?server=95.216.230.229&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19702",
+      "latency": 117,
+      "flag": "🇫🇮",
+      "ts": 1780755363.9692302
+    },
+    {
+      "key": "95.216.230.229:8443",
+      "link": "tg://proxy?server=95.216.230.229&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19702",
+      "latency": 118,
+      "flag": "🇫🇮",
+      "ts": 1780755363.969229
+    },
+    {
+      "key": "135.181.233.224:8443",
+      "link": "tg://proxy?server=135.181.233.224&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19702",
+      "latency": 118,
+      "flag": "🇫🇮",
+      "ts": 1780755363.9692278
+    },
+    {
+      "key": "135.181.233.224:8443",
+      "link": "tg://proxy?server=135.181.233.224&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19702",
+      "latency": 118,
+      "flag": "🇫🇮",
+      "ts": 1780755363.969226
+    },
     {
       "key": "87.248.129.244:4455",
       "link": "tg://proxy?server=87.248.129.244&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
@@ -411,6 +387,13 @@
     }
   ],
   "files": [
+    {
+      "name": "RIGHTEL_SAMANTEL.txt",
+      "ext": "TXT",
+      "channel": "i SHARΞ WIN™",
+      "link": "https://t.me/isharewin/30237",
+      "ts": 1780755341.810122
+    },
     {
       "name": "husi_backup_2026-06-06_15-35-23.json",
       "ext": "JSON",

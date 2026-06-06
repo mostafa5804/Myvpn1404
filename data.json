@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.36.204.243:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 99,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19746",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1780783826.698203
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@77.74.123.169:8443?security=tls&encryption=none&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=cdn3-87.vk-cdnvideo.com#%40vpnbaz%20%F0%9F%8E%B2```",
       "latency": 125,
@@ -232,6 +242,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "141.95.135.243:443",
+      "link": "tg://proxy?server=141.95.135.243&port=443&secret=ddfb2ebf06b1c708b06f46137a4faed9be",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/19745",
+      "latency": 87,
+      "flag": "🇫🇷",
+      "ts": 1780783785.6538155
+    },
+    {
+      "key": "94.130.191.164:8443",
+      "link": "tg://proxy?server=94.130.191.164&port=8443&secret=13ffffff1003cc3005aa5007ee7009dc",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/19745",
+      "latency": 95,
+      "flag": "🇩🇪",
+      "ts": 1780783785.6538148
+    },
+    {
+      "key": "78.47.129.193:8443",
+      "link": "tg://proxy?server=78.47.129.193&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/19745",
+      "latency": 97,
+      "flag": "🇩🇪",
+      "ts": 1780783785.6538095
+    },
+    {
+      "key": "213.133.102.101:443",
+      "link": "tg://proxy?server=213.133.102.101&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/19745",
+      "latency": 1137,
+      "flag": "🇩🇪",
+      "ts": 1780783785.653807
+    },
     {
       "key": "176.65.136.20:8443",
       "link": "tg://proxy?server=176.65.136.20&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",

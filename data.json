@@ -79,56 +79,6 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1780769650.5998876
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://d8d05386-e381-40a4-bb63-715c208b3ed3@109.120.132.142:40617?encryption=none&security=none&type=tcp#%F0%9F%87%B8%F0%9F%87%AA%20%7C%20@vpnbaz%20%C2%B3`",
-      "latency": 115,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/19711",
-      "flag": "🇸🇪",
-      "country": "Sweden",
-      "ts": 1780757355.9362366
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://de86d13b-b419-4587-b643-c41ba6ea51ed@193.25.216.201:36019?encryption=none&fp=chrome&pbk=Rkx8a8DBAW6H2H2XXN2JFdBYe24VcJPpr51ehcvMV3w&security=reality&sid=90&sni=www.icloud.com&type=tcp#%F0%9F%87%B8%F0%9F%87%AA%20%7C%20@vpnbaz%20%C2%B2",
-      "latency": 113,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/19710",
-      "flag": "🇸🇪",
-      "country": "Sweden",
-      "ts": 1780757355.5273237
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://de3104b0-0c51-49df-8350-da4bbe654820@89.22.230.82:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=-RAcfPpW-nLcYpGpGUhTaS2UqddjRVuvxmwjvaafMhY&security=reality&sid=830f1634ecfd57b8&sni=ya.ru&type=tcp#%F0%9F%87%B8%F0%9F%87%AA%20%7C%20@vpnbaz%20%C2%B9",
-      "latency": 127,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/19709",
-      "flag": "🇸🇪",
-      "country": "Sweden",
-      "ts": 1780757355.110442
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://90cf25cc-4180-49bf-96f4-a423d6282b72@151.101.108.223:443?encryption=none&type=ws&serviceName=---Telegram@V2rayNGcloud------Telegram@V2rayNGcloud-----Telegram@V2rayNGcloud-----Telegram@V2rayNGcloud-----Telegram@V2rayNGcloud-----Telegram@V2rayNGcloud-----Telegram@V2rayNGcloud-----Telegram@V2rayNGcloud&security=tls&path=%2F&host=pan1.global.ssl.fastly.net&sni=default.ssl.fastly.net&allowInsecure=1#@v2rayNGcloud",
-      "latency": 1,
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/19703",
-      "flag": "🇯🇵",
-      "country": "Japan",
-      "ts": 1780757215.0018167
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.36.253.90:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 162,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/19700",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1780747904.3750198
     }
   ],
   "proxies": [
@@ -257,60 +207,6 @@
       "latency": 88,
       "flag": "🇫🇷",
       "ts": 1780767622.935889
-    },
-    {
-      "key": "195.254.165.207:443",
-      "link": "tg://proxy?server=195.254.165.207&port=443&secret=FgMBAgABAAH8AwOG4kw63QFgMBAgABAAH8AwOG4kw63Q",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19714",
-      "latency": 88,
-      "flag": "🇫🇷",
-      "ts": 1780762391.6504197
-    },
-    {
-      "key": "195.254.165.207:443",
-      "link": "tg://proxy?server=195.254.165.207&port=443&secret=FgMBAgABAAH8AwOG4kw63QFgMBAgABAAH8AwOG4kw63Q)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19714",
-      "latency": 87,
-      "flag": "🇫🇷",
-      "ts": 1780762391.6504173
-    },
-    {
-      "key": "95.216.230.229:8443",
-      "link": "tg://proxy?server=95.216.230.229&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19702",
-      "latency": 117,
-      "flag": "🇫🇮",
-      "ts": 1780755363.9692302
-    },
-    {
-      "key": "95.216.230.229:8443",
-      "link": "tg://proxy?server=95.216.230.229&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19702",
-      "latency": 118,
-      "flag": "🇫🇮",
-      "ts": 1780755363.969229
-    },
-    {
-      "key": "135.181.233.224:8443",
-      "link": "tg://proxy?server=135.181.233.224&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19702",
-      "latency": 118,
-      "flag": "🇫🇮",
-      "ts": 1780755363.9692278
-    },
-    {
-      "key": "135.181.233.224:8443",
-      "link": "tg://proxy?server=135.181.233.224&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/19702",
-      "latency": 118,
-      "flag": "🇫🇮",
-      "ts": 1780755363.969226
     }
   ],
   "files": [
@@ -467,69 +363,6 @@
       "channel": "🍓 XIX",
       "link": "https://t.me/xixv2ray/6805",
       "ts": 1780767504.7474263
-    },
-    {
-      "name": "Jun 6.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/48030",
-      "ts": 1780762294.8375745
-    },
-    {
-      "name": "‎⁨پرسرعت متصل⚡️🔥⁩.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/48031",
-      "ts": 1780762294.5340052
-    },
-    {
-      "name": "@Cooonfig(پیره زن) (1).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7627",
-      "ts": 1780757344.4683878
-    },
-    {
-      "name": "@Cooonfig(👸🚀).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7628",
-      "ts": 1780757344.1987681
-    },
-    {
-      "name": "NTG 10 (1).npvt",
-      "ext": "NPVT",
-      "channel": "NTGreen | اینترنت سبز 👽",
-      "link": "https://t.me/Free_Nettm/12218",
-      "ts": 1780757298.1261973
-    },
-    {
-      "name": "@planb_net #228.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2888",
-      "ts": 1780757287.7601182
-    },
-    {
-      "name": "miu.npvt",
-      "ext": "NPVT",
-      "channel": "Vpn | proxy | filtershekan",
-      "link": "https://t.me/filtershekan_channel/2812",
-      "ts": 1780757231.5146928
-    },
-    {
-      "name": "RIGHTEL_SAMANTEL.txt",
-      "ext": "TXT",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/30237",
-      "ts": 1780755341.810122
-    },
-    {
-      "name": "husi_backup_2026-06-06_15-35-23.json",
-      "ext": "JSON",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/30210",
-      "ts": 1780747876.2997785
     }
   ]
 }

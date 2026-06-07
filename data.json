@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.36.26.144:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 117,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19777",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1780863559.667494
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://ed45d6ff-0388-4cf3-a333-e0e01b0b9feb@104.20.24.155:443?security=tls&allowInsecure=0&encryption=none&type=httpupgrade&sni=OPen.bLueBlACk.FUn&fp=chrome&alpn=http/1.1#@cicdovpn",
+      "latency": 14,
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19773",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1780863455.4877706
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@3.69.206.28:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 90,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -92,6 +112,87 @@
     }
   ],
   "proxies": [
+    {
+      "key": "135.181.233.225:8443",
+      "link": "tg://proxy?server=135.181.233.225&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19776",
+      "latency": 145,
+      "flag": "🇫🇮",
+      "ts": 1780863551.9589112
+    },
+    {
+      "key": "135.181.233.225:8443",
+      "link": "tg://proxy?server=135.181.233.225&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19776",
+      "latency": 145,
+      "flag": "🇫🇮",
+      "ts": 1780863551.95891
+    },
+    {
+      "key": "135.181.233.226:8443",
+      "link": "tg://proxy?server=135.181.233.226&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19776",
+      "latency": 1140,
+      "flag": "🇫🇮",
+      "ts": 1780863551.9589086
+    },
+    {
+      "key": "135.181.233.226:8443",
+      "link": "tg://proxy?server=135.181.233.226&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/19776",
+      "latency": 139,
+      "flag": "🇫🇮",
+      "ts": 1780863551.958907
+    },
+    {
+      "key": "87.248.129.237:4455",
+      "link": "tg://proxy?server=87.248.129.237&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19775",
+      "latency": 118,
+      "flag": "🇦🇪",
+      "ts": 1780863533.6244743
+    },
+    {
+      "key": "87.248.129.237:4455",
+      "link": "tg://proxy?server=87.248.129.237&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19775",
+      "latency": 114,
+      "flag": "🇦🇪",
+      "ts": 1780863533.6244726
+    },
+    {
+      "key": "iran.proxytime.info:25565",
+      "link": "tg://proxy?server=iran.proxytime.info&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/19774",
+      "latency": 315,
+      "flag": "🇩🇪",
+      "ts": 1780863518.063832
+    },
+    {
+      "key": "norm.quickdl.info:25565",
+      "link": "tg://proxy?server=norm.quickdl.info&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/19774",
+      "latency": 84,
+      "flag": "🇨🇦",
+      "ts": 1780863518.0638309
+    },
+    {
+      "key": "213.133.102.106:443",
+      "link": "tg://proxy?server=213.133.102.106&port=443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/19774",
+      "latency": 114,
+      "flag": "🇩🇪",
+      "ts": 1780863518.063829
+    },
     {
       "key": "87.248.129.235:4455",
       "link": "tg://proxy?server=87.248.129.235&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
@@ -328,6 +429,13 @@
     }
   ],
   "files": [
+    {
+      "name": "Jun 7 ⚡️.npvt",
+      "ext": "NPVT",
+      "channel": "Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/48070",
+      "ts": 1780863436.5843039
+    },
     {
       "name": "@ghalagyann👈کانال تلگرام.npvt",
       "ext": "NPVT",

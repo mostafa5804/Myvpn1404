@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://7f187d70-8757-4ffb-bcd5-71dc868ed625@anten.ir:2082?path=%2Fue34tf&security=none&encryption=none&host=pars.modirankhodran.ir&type=ws#HMZ",
+      "latency": 368,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19786",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1780870304.8541615
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://a50547f4-cff7-4032-9bf9-7c11d03c9f36@i.segarox.ir:46720?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=e_9DtavIBI7e_MXnqVnpmHF3NXs4aCxlIwmfTRbyjTM&security=reality&sid=e90b628b62ec&sni=www.calstatela.edu&type=#SEGARO```",
+      "latency": 333,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19785",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1780870304.1456466
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@13.36.26.144:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 117,
@@ -99,19 +119,27 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1780831207.6644204
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@18.193.146.88:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 193,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/19754",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1780824436.631027
     }
   ],
   "proxies": [
+    {
+      "key": "65.109.18.57:4455",
+      "link": "tg://proxy?server=65.109.18.57&port=4455&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19784",
+      "latency": 151,
+      "flag": "🇫🇮",
+      "ts": 1780870223.6149762
+    },
+    {
+      "key": "157.90.70.229:8443",
+      "link": "tg://proxy?server=157.90.70.229&port=8443&secret=963a7fd525b04c4533ce776c9bd70f34",
+      "channel": "VPN | CICDO کانفینگ ملی شکن",
+      "t_link": "https://t.me/myvpn1404/19784",
+      "latency": 123,
+      "flag": "🇩🇪",
+      "ts": 1780870223.6149738
+    },
     {
       "key": "188.40.191.139:8443",
       "link": "tg://proxy?server=188.40.191.139&port=8443&secret=dd104462821249bd7ac519130220c25d09",
@@ -435,81 +463,23 @@
       "latency": 6,
       "flag": "🇨🇦",
       "ts": 1780831202.0603564
-    },
-    {
-      "key": "food.pitzamamad5.ir:443",
-      "link": "tg://proxy?server=food.pitzamamad5.ir&port=443&secret=FgMBAgABAAH8AwOG4kw63QFgMBAgABAAH8AwOG4kw63Q",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19753",
-      "latency": 314,
-      "flag": "🇦🇪",
-      "ts": 1780824411.5545568
-    },
-    {
-      "key": "food.pitzamamad5.ir:443",
-      "link": "tg://proxy?server=food.pitzamamad5.ir&port=443&secret=FgMBAgABAAH8AwOG4kw63QFgMBAgABAAH8AwOG4kw63Q)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19753",
-      "latency": 650,
-      "flag": "🇦🇪",
-      "ts": 1780824411.5545557
-    },
-    {
-      "key": "87.248.129.244:4455",
-      "link": "tg://proxy?server=87.248.129.244&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19753",
-      "latency": 149,
-      "flag": "🇦🇪",
-      "ts": 1780824411.5545542
-    },
-    {
-      "key": "87.248.129.224:4455",
-      "link": "tg://proxy?server=87.248.129.224&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19753",
-      "latency": 148,
-      "flag": "🇦🇪",
-      "ts": 1780824411.5545526
-    },
-    {
-      "key": "87.248.129.223:4455",
-      "link": "tg://proxy?server=87.248.129.223&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19753",
-      "latency": 147,
-      "flag": "🇦🇪",
-      "ts": 1780824411.5545514
-    },
-    {
-      "key": "87.248.129.223:4455",
-      "link": "tg://proxy?server=87.248.129.223&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19753",
-      "latency": 151,
-      "flag": "🇦🇪",
-      "ts": 1780824411.55455
-    },
-    {
-      "key": "87.248.129.224:4455",
-      "link": "tg://proxy?server=87.248.129.224&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19753",
-      "latency": 148,
-      "flag": "🇦🇪",
-      "ts": 1780824411.5545487
-    },
-    {
-      "key": "87.248.129.244:4455",
-      "link": "tg://proxy?server=87.248.129.244&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/19753",
-      "latency": 149,
-      "flag": "🇦🇪",
-      "ts": 1780824411.554546
     }
   ],
   "files": [
+    {
+      "name": "فول متصل.npvt",
+      "ext": "NPVT",
+      "channel": "Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/48087",
+      "ts": 1780870210.5754128
+    },
+    {
+      "name": "NetMeli🚀⚡️سیو کنید.npvt",
+      "ext": "NPVT",
+      "channel": "Merlin ViP",
+      "link": "https://t.me/Merlin_ViP/48088",
+      "ts": 1780870210.2833378
+    },
     {
       "name": "NTG 12.npvt",
       "ext": "NPVT",
@@ -579,13 +549,6 @@
       "channel": "کانفیگ ملی | config meli",
       "link": "https://t.me/Npvtunnel_vip/1591",
       "ts": 1780833249.992071
-    },
-    {
-      "name": "Jun 7.npvt",
-      "ext": "NPVT",
-      "channel": "Merlin ViP",
-      "link": "https://t.me/Merlin_ViP/48046",
-      "ts": 1780824282.4453046
     }
   ]
 }

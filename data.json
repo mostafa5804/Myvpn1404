@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.69.206.28:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 90,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19770",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1780855907.7437203
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.124.101.196:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 128,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19769",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1780855907.3468642
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://78defd88-d333-67a5-9c34-d3bcef5816eb@www.speedtest.net:443?path=%2F%40TirexNet&security=tls&encryption=none&pbk=enabled&insecure=0&host=tirex.sugarbreaker1.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=tirex.sugarbreaker1.workers.dev#V-Core-%5Bwww.speedtest.net%5D-TIREXNET",
       "latency": 64,
@@ -72,6 +92,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "87.248.129.235:4455",
+      "link": "tg://proxy?server=87.248.129.235&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19768",
+      "latency": 94,
+      "flag": "🇦🇪",
+      "ts": 1780855888.56041
+    },
+    {
+      "key": "87.248.129.235:4455",
+      "link": "tg://proxy?server=87.248.129.235&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19768",
+      "latency": 96,
+      "flag": "🇦🇪",
+      "ts": 1780855888.5604093
+    },
+    {
+      "key": "top.pitzamamad7.ir:443",
+      "link": "tg://proxy?server=top.pitzamamad7.ir&port=443&secret=FgMBAgABAAH8AwOG4kw63QFgMBAgABAAH8AwOG4kw63Q",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19768",
+      "latency": 249,
+      "flag": "🇦🇪",
+      "ts": 1780855888.5604076
+    },
+    {
+      "key": "top.pitzamamad7.ir:443",
+      "link": "tg://proxy?server=top.pitzamamad7.ir&port=443&secret=FgMBAgABAAH8AwOG4kw63QFgMBAgABAAH8AwOG4kw63Q)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19768",
+      "latency": 296,
+      "flag": "🇦🇪",
+      "ts": 1780855888.560405
+    },
     {
       "key": "87.248.129.243:4455",
       "link": "tg://proxy?server=87.248.129.243&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",

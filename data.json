@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.4.238:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 152,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19760",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1780841355.7684357
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.237.161.26:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 162,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -22,6 +32,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "87.248.129.243:4455",
+      "link": "tg://proxy?server=87.248.129.243&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19759",
+      "latency": 108,
+      "flag": "🇦🇪",
+      "ts": 1780841328.912917
+    },
+    {
+      "key": "87.248.129.243:4455",
+      "link": "tg://proxy?server=87.248.129.243&port=4455&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/19759",
+      "latency": 108,
+      "flag": "🇦🇪",
+      "ts": 1780841328.9129152
+    },
     {
       "key": "135.181.233.224:8443",
       "link": "tg://proxy?server=135.181.233.224&port=8443&secret=FgMBAgABAAH8AxOG4kw63Q)",

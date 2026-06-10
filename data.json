@@ -1,6 +1,73 @@
 {
-  "configs": [],
+  "configs": [
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.76.90.234:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 91,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/19907",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1781082271.1179314
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://28007472-a4e9-4881-984a-2bf6b3d35917@80.66.72.179:2053?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=Yed352UFUwRyZWPyVYM_0OvLkxvCjOB7160DdAxKsWE&security=reality&sid=bc5e336f8fdb&sni=teamdocs.su&type=#%E2%98%ACSH%CE%9EN%E2%84%A2%F0%9F%AA%BD",
+      "latency": 95,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19906",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1781082240.282262
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@146.70.61.37:8080#%E2%98%ACSH%CE%9EN%E2%84%A2%F0%9F%AA%BD",
+      "latency": 75,
+      "channel": "i SHARΞ WIN™",
+      "t_link": "https://t.me/myvpn1404/19905",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1781082239.8885314
+    }
+  ],
   "proxies": [
+    {
+      "key": "agfgfproxyjdjsn.devopsninja.ir:8443",
+      "link": "tg://proxy?server=agfgfproxyjdjsn.devopsninja.ir&port=8443&secret=ee32b613e4a23d163e27ed311e132a8888636c6f7564666c6172652e636f6d",
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19904",
+      "latency": 428,
+      "flag": "🇩🇪",
+      "ts": 1781082152.9530098
+    },
+    {
+      "key": "135.181.69.129:8443",
+      "link": "tg://proxy?server=135.181.69.129&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19904",
+      "latency": 118,
+      "flag": "🇫🇮",
+      "ts": 1781082152.9530087
+    },
+    {
+      "key": "185.43.33.20:1010",
+      "link": "tg://proxy?server=185.43.33.20&port=1010&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19904",
+      "latency": 88,
+      "flag": "🇮🇷",
+      "ts": 1781082152.9530067
+    },
+    {
+      "key": "135.181.69.131:8443",
+      "link": "tg://proxy?server=135.181.69.131&port=8443&secret=dD104462821249bd7Ac519130220c25D09",
+      "channel": "Merlin ViP",
+      "t_link": "https://t.me/myvpn1404/19904",
+      "latency": 114,
+      "flag": "🇫🇮",
+      "ts": 1781082152.9530044
+    },
     {
       "key": "87.248.129.97:443",
       "link": "tg://proxy?server=87.248.129.97&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",

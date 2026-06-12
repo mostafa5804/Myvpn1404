@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@35.181.198.31:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 85,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20009",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1781291577.6838233
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@3.121.6.227:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 90,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -119,26 +129,6 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1781255138.887592
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://97bf06ad-c9a8-4ea4-afb5-9092cc092214@45.195.137.72:8443?security=reality&encryption=none&pbk=IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY&host=%40ProxyVPN11&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=storage.yandex.net&sid=cf9d145ad8f1ea55#proxymelimon``",
-      "latency": 270,
-      "channel": "کانفیگ و پروکسی | هوپنوس",
-      "t_link": "https://t.me/myvpn1404/19983",
-      "flag": "🇹🇷",
-      "country": "Türkiye",
-      "ts": 1781247568.3460622
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://43488128-319e-f480-64ea-0acdc712e2a8@51.255.71.16:443?security=reality&encryption=none&pbk=ZnlCl_Jc2dV5-KK_ymmMcEDoe5lPyZ-5z_LGMRoiNTU&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.booking.com&sid=b87063a35aaa942e#proxymelimon``",
-      "latency": 152,
-      "channel": "کانفیگ و پروکسی | هوپنوس",
-      "t_link": "https://t.me/myvpn1404/19982",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1781247567.726833
     }
   ],
   "proxies": [

@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@15.188.7.92:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 84,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20025",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1781349726.9786608
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://mitivpn@188.114.97.6:443?type=ws&security=tls&path=%2Fed%3Dmitivpn&host=eee.we.wwww.swsl.glowbal.diwgi.mwy.mitivpn.xyz&sni=www.ssl.global.digi.my.mitivpn.xyz&alpn=http%2F1.1&fp=chrome&insecure=0&allowInsecure=0#@cicdovpn",
       "latency": 3,
       "channel": "VPN | CICDO کانفینگ اخبار جنگ",
@@ -9,69 +19,45 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1781345427.430274
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://c61ec320-29f1-4e00-9272-8b676e6957b4@89.169.39.55:443?security=reality&encryption=none&pbk=Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=28a059440d3d5ba1#%40vpnbaz%20%F0%9F%8D%AD```",
-      "latency": 145,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/20018",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1781304894.9954655
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://fc965ad9-bdd7-4815-ad71-b39ec5972dc1@141.193.213.10:443?path=%2Ftsghdws&security=tls&encryption=none&insecure=0&host=octopusss4.com&type=ws&allowInsecure=0&sni=octopusss4.com#%40vpnbaz%20%F0%9F%8C%B4",
-      "latency": 3,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/20017",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1781304894.4922097
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://749a5df1-2d12-45cf-80f3-f85ea6b2e405@2.26.88.109:443?security=reality&encryption=none&pbk=Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8&headerType=none&fp=random&type=tcp&flow=xtls-rprx-vision&sni=google.com#%40vpnbaz%20%F0%9F%8E%A9",
-      "latency": 133,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/20016",
-      "flag": "🇱🇻",
-      "country": "Latvia",
-      "ts": 1781304894.0875921
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://humanity@45.130.125.96:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.calmloud.com&fp=chrome&type=ws&allowInsecure=0&sni=www.calmloud.com#%40v2raybaaz%20%F0%9F%AA%BC",
-      "latency": 3,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/20015",
-      "flag": "🇸🇨",
-      "country": "Seychelles",
-      "ts": 1781304893.6149535
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://cabbfe13-038b-4dbb-9c45-5079c829abfa@speedtest.net:80?path=%2F&security=none&encryption=none&host=max-gb1.global.ssl.fastly.net&type=ws#%40vpnbaz%20%E2%9B%A9%EF%B8%8F",
-      "latency": 69,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/20014",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1781304893.285925
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@series-a1.samanehha.co:443#%40vpnbaz%20%F0%9F%95%8A%EF%B8%8F",
-      "latency": 272,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/20013",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1781304892.8817642
     }
   ],
   "proxies": [
+    {
+      "key": "sub.time-meli.info:1010",
+      "link": "tg://proxy?server=sub.time-meli.info&port=1010&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20024",
+      "latency": 262,
+      "flag": "🇮🇷",
+      "ts": 1781349720.53851
+    },
+    {
+      "key": "ramin.time-meli.info:1010",
+      "link": "tg://proxy?server=ramin.time-meli.info&port=1010&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20024",
+      "latency": 94,
+      "flag": "🇮🇷",
+      "ts": 1781349720.5385056
+    },
+    {
+      "key": "sub.time-meli.info:1010",
+      "link": "tg://proxy?server=sub.time-meli.info&port=1010&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20024",
+      "latency": 366,
+      "flag": "🇮🇷",
+      "ts": 1781349720.5385044
+    },
+    {
+      "key": "ramin.time-meli.info:1010",
+      "link": "tg://proxy?server=ramin.time-meli.info&port=1010&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20024",
+      "latency": 470,
+      "flag": "🇮🇷",
+      "ts": 1781349720.5385022
+    },
     {
       "key": "91.206.28.102:1010",
       "link": "tg://proxy?server=91.206.28.102&port=1010&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",

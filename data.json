@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.65.236.16:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 107,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20051",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1781420685.7948787
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://5ad1c7b6-9c6d-4b30-97d1-2675feb6d4d1@162.19.181.56:8443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=tEVdXRIm8PEge42nXXzHAsd1-_AoUflc_MzMZHWWa10&security=reality&sid=e193ba67&sni=www.cloudflare.com&spx=%2FRVYoo1DsGnydt2i&type=tcp#isor1n-40.00GB%F0%9F%93%8A",
       "latency": 115,
@@ -12,6 +22,78 @@
     }
   ],
   "proxies": [
+    {
+      "key": "194.213.118.87:155",
+      "link": "tg://proxy?server=194.213.118.87&port=155&secret=YyEEgYdJXfrFmgMCIMJdjjRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20050",
+      "latency": 99,
+      "flag": "🇮🇷",
+      "ts": 1781420677.2221186
+    },
+    {
+      "key": "136.243.247.62:65535",
+      "link": "tg://proxy?server=136.243.247.62&port=65535&secret=dd79e344818749bd7ac519130220c25d09)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20050",
+      "latency": 114,
+      "flag": "🇩🇪",
+      "ts": 1781420677.222118
+    },
+    {
+      "key": "194.213.118.87:155",
+      "link": "tg://proxy?server=194.213.118.87&port=155&secret=YyEEgYdJXfrFmgMCIMJdjjRueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20050",
+      "latency": 106,
+      "flag": "🇮🇷",
+      "ts": 1781420677.2221172
+    },
+    {
+      "key": "91.206.28.11:1010",
+      "link": "tg://proxy?server=91.206.28.11&port=1010&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20050",
+      "latency": 104,
+      "flag": "🇮🇷",
+      "ts": 1781420677.2221165
+    },
+    {
+      "key": "136.243.247.62:65535",
+      "link": "tg://proxy?server=136.243.247.62&port=65535&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20050",
+      "latency": 110,
+      "flag": "🇩🇪",
+      "ts": 1781420677.2221155
+    },
+    {
+      "key": "91.206.28.3:1010",
+      "link": "tg://proxy?server=91.206.28.3&port=1010&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20050",
+      "latency": 101,
+      "flag": "🇮🇷",
+      "ts": 1781420677.2221148
+    },
+    {
+      "key": "91.206.28.11:1010",
+      "link": "tg://proxy?server=91.206.28.11&port=1010&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20050",
+      "latency": 100,
+      "flag": "🇮🇷",
+      "ts": 1781420677.2221138
+    },
+    {
+      "key": "91.206.28.3:1010",
+      "link": "tg://proxy?server=91.206.28.3&port=1010&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20050",
+      "latency": 100,
+      "flag": "🇮🇷",
+      "ts": 1781420677.2221122
+    },
     {
       "key": "87.248.129.198:443",
       "link": "tg://proxy?server=87.248.129.198&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
@@ -257,34 +339,6 @@
       "channel": "Vpn | proxy | filtershekan",
       "link": "https://t.me/filtershekan_channel/2870",
       "ts": 1781383457.5751722
-    },
-    {
-      "name": "@Cooonfig(🍕).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7770",
-      "ts": 1781376725.1572113
-    },
-    {
-      "name": "پخت پز جدید 🇩🇪🚀.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/17263",
-      "ts": 1781376682.0800524
-    },
-    {
-      "name": "@planb_net#285.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2959",
-      "ts": 1781376667.4487689
-    },
-    {
-      "name": "@planb_net#286.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2960",
-      "ts": 1781376667.174911
     }
   ]
 }

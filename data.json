@@ -1,6 +1,66 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://ccdce320-7eef-4815-8edb-c599987c2279@5.254.14.169:443?security=reality&encryption=none&pbk=CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=cdn9-40.yahoo.com&sid=0dc0ced5bf4f756c#%40vpnbaz%20%F0%9F%8D%AD```",
+      "latency": 129,
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/20080",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1781462948.0026314
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://ad356e93-cc14-417d-9f4e-32376d03f5b7@newyorkcity.instasup.ir:1005?security=reality&encryption=none&pbk=aEyXUqZ4doy7Qse745h5IKGo31Jc2YEK3QOVaOuPPns&headerType=none&fp=firefox&type=tcp&sni=yahoo.com&sid=4f2087146c1f587a#%40vpnbaz%20%F0%9F%8E%B2",
+      "latency": 362,
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/20079",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1781462947.4485188
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://44f50a31-adc6-4b22-a57f-6ad71b099791@dojes.helsinki2upload.shop:443?security=reality&encryption=none&pbk=H31-ZOmrmgdlPwXBr7K-NuEW5Ro3qAnXwS-W0gxsjxQ&headerType=none&fp=chrome&spx=%2FUqSUrd6kyv7EDw4&type=tcp&sni=www.aparat.com&sid=a88fb4c2#%40vpnbaz%20%F0%9F%95%8A%EF%B8%8F",
+      "latency": 1278,
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/20078",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1781462946.6072054
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@45.130.125.96:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.calmloud.com&fp=chrome&type=ws&allowInsecure=0&sni=www.calmloud.com#%40vpnbaz%20%F0%9F%AA%BC",
+      "latency": 18,
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/20077",
+      "flag": "🇸🇨",
+      "country": "Seychelles",
+      "ts": 1781462944.9677415
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#%40vpnbaz%20%F0%9F%8C%B5",
+      "latency": 143,
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/20076",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1781462944.209606
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#%40vpnbaz%20%F0%9F%9B%B8",
+      "latency": 147,
+      "channel": "اینترنت ملی 🕊",
+      "t_link": "https://t.me/myvpn1404/20075",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1781462943.6785226
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@3.69.162.50:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 148,
@@ -509,63 +569,100 @@
       "latency": 100,
       "flag": "🇮🇷",
       "ts": 1781420677.2221122
-    },
-    {
-      "key": "87.248.129.198:443",
-      "link": "tg://proxy?server=87.248.129.198&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/20047",
-      "latency": 88,
-      "flag": "🇳🇱",
-      "ts": 1781416547.21148
-    },
-    {
-      "key": "87.248.129.197:443",
-      "link": "tg://proxy?server=87.248.129.197&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/20047",
-      "latency": 89,
-      "flag": "🇳🇱",
-      "ts": 1781416547.2114785
-    },
-    {
-      "key": "87.248.129.213:443",
-      "link": "tg://proxy?server=87.248.129.213&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/20047",
-      "latency": 89,
-      "flag": "🇳🇱",
-      "ts": 1781416547.211473
-    },
-    {
-      "key": "87.248.129.213:443",
-      "link": "tg://proxy?server=87.248.129.213&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/20047",
-      "latency": 89,
-      "flag": "🇳🇱",
-      "ts": 1781416547.2114716
-    },
-    {
-      "key": "87.248.129.198:443",
-      "link": "tg://proxy?server=87.248.129.198&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/20047",
-      "latency": 89,
-      "flag": "🇳🇱",
-      "ts": 1781416547.2114704
-    },
-    {
-      "key": "87.248.129.197:443",
-      "link": "tg://proxy?server=87.248.129.197&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "اینترنت ملی 🕊",
-      "t_link": "https://t.me/myvpn1404/20047",
-      "latency": 88,
-      "flag": "🇳🇱",
-      "ts": 1781416547.2114677
     }
   ],
   "files": [
+    {
+      "name": "@Cooonfig(سیرم)🤣.npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7795",
+      "ts": 1781463079.3505723
+    },
+    {
+      "name": "@Cooonfig(پیره مرد).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7796",
+      "ts": 1781463079.0449247
+    },
+    {
+      "name": "@Cooonfig(چیپس) (1).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7797",
+      "ts": 1781463078.7627664
+    },
+    {
+      "name": "@Cooonfig(دوغ نعنا).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7798",
+      "ts": 1781463078.501017
+    },
+    {
+      "name": "@Cooonfig(ژیک👸⚡️).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7799",
+      "ts": 1781463078.2048714
+    },
+    {
+      "name": "@Cooonfig(موز بستنی) (1).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7800",
+      "ts": 1781463077.9109743
+    },
+    {
+      "name": "@Cooonfig(دارک) (1).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7802",
+      "ts": 1781463077.5881603
+    },
+    {
+      "name": "@Cooonfig(دپ).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7803",
+      "ts": 1781463077.2881167
+    },
+    {
+      "name": "🇩🇪⚡⚡.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد",
+      "link": "https://t.me/mitivpn/17286",
+      "ts": 1781463042.0564651
+    },
+    {
+      "name": "@planb_net#294.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/2968",
+      "ts": 1781463027.4768472
+    },
+    {
+      "name": "AZ-TIREXNET.conf",
+      "ext": "CONF",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/4708",
+      "ts": 1781463011.2120757
+    },
+    {
+      "name": "AZ2-TIREXNET.conf",
+      "ext": "CONF",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/4709",
+      "ts": 1781463010.8875659
+    },
+    {
+      "name": "AZ3-TIREXNET.conf",
+      "ext": "CONF",
+      "channel": "TirexNet",
+      "link": "https://t.me/TirexNet/4710",
+      "ts": 1781463010.5660474
+    },
     {
       "name": "@Cooonfig(معجون) (1).npvt",
       "ext": "NPVT",
@@ -663,20 +760,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/21484",
       "ts": 1781430555.371169
-    },
-    {
-      "name": "NTG 18.npvt",
-      "ext": "NPVT",
-      "channel": "NTGreen | اینترنت سبز 👽",
-      "link": "https://t.me/Free_Nettm/12232",
-      "ts": 1781416628.971554
-    },
-    {
-      "name": "@planb_net#287.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2962",
-      "ts": 1781416622.6123183
     }
   ]
 }

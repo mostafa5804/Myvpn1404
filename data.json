@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.38.149.57:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 108,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20137",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1781558075.7747474
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.188.213.133:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 107,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -293,33 +303,6 @@
       "latency": 107,
       "flag": "🇳🇱",
       "ts": 1781526682.70508
-    },
-    {
-      "key": "norm.quickdl.info:25565",
-      "link": "tg://proxy?server=norm.quickdl.info&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/20122",
-      "latency": 37,
-      "flag": "🇨🇦",
-      "ts": 1781509416.355827
-    },
-    {
-      "key": "form.quickdl.info:22",
-      "link": "tg://proxy?server=form.quickdl.info&port=22&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/20122",
-      "latency": 212,
-      "flag": "🇨🇦",
-      "ts": 1781509416.3558261
-    },
-    {
-      "key": "135.181.105.245:4455",
-      "link": "tg://proxy?server=135.181.105.245&port=4455&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/20122",
-      "latency": 120,
-      "flag": "🇫🇮",
-      "ts": 1781509416.3558242
     }
   ],
   "files": [
@@ -350,27 +333,6 @@
       "channel": "اینترنت ملی 🕊",
       "link": "https://t.me/net_melli1/2231",
       "ts": 1781534475.467936
-    },
-    {
-      "name": "@Cooonfig(حس هیچی نیس).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7808",
-      "ts": 1781509483.376935
-    },
-    {
-      "name": "AllNet ViP🇩🇪.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/17302",
-      "ts": 1781509442.5537474
-    },
-    {
-      "name": "@planb_net#300.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2974",
-      "ts": 1781509427.1083846
     }
   ]
 }

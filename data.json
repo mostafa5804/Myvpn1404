@@ -9,69 +9,81 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1781609096.4644184
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.190:8080#%40Filtershekan_channel%20%7C6`",
-      "latency": 160,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/20152",
-      "flag": "🇳🇱",
-      "country": "The Netherlands",
-      "ts": 1781588480.649414
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxa1ZyMEtBVElKSTdtd09G@admin.c1.havij.co:443#%40Filtershekan_channel%20%7C5",
-      "latency": 151,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/20151",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1781588480.056534
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://037b730a-ea28-5191-ad7c-3424be5efe2e@46.246.97.218:2052?path=%2Fvless&security=none&encryption=none&type=ws#%40Filtershekan_channel%20%7C4",
-      "latency": 157,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/20150",
-      "flag": "🇸🇪",
-      "country": "Sweden",
-      "ts": 1781588479.5475736
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@cdn9-33.vk-cdnvideo.com:8443?security=tls&encryption=none&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=cdn9-33.vk-cdnvideo.com#%40Filtershekan_channel%20%7C3",
-      "latency": 193,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/20149",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1781588478.9424748
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@77.74.123.163:8443?security=tls&encryption=none&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=cdn3-87.vk-cdnvideo.com#%40Filtershekan_channel%20%7C2",
-      "latency": 145,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/20148",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1781588478.3399112
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@162.249.126.74:8443?security=tls&encryption=none&insecure=0&headerType=none&fp=edge&type=tcp&allowInsecure=0&sni=cdn7-39.vk-cdnvideo.com#%40Filtershekan_channel%20%7C1",
-      "latency": 156,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/20147",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1781588477.8266497
     }
   ],
   "proxies": [
+    {
+      "key": "194.213.118.80:25565",
+      "link": "tg://proxy?server=194.213.118.80&port=25565&secret=ddec742282124f04d318551341ead76457",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20164",
+      "latency": 104,
+      "flag": "🇮🇷",
+      "ts": 1781641472.4480896
+    },
+    {
+      "key": "194.213.118.80:25565",
+      "link": "tg://proxy?server=194.213.118.80&port=25565&secret=ddec742282124f04d318551341ead76457)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20164",
+      "latency": 105,
+      "flag": "🇮🇷",
+      "ts": 1781641472.4480886
+    },
+    {
+      "key": "194.213.118.82:25565",
+      "link": "tg://proxy?server=194.213.118.82&port=25565&secret=ddec742282124f04d318551341ead76457)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20164",
+      "latency": 101,
+      "flag": "🇮🇷",
+      "ts": 1781641472.448087
+    },
+    {
+      "key": "194.213.118.82:25565",
+      "link": "tg://proxy?server=194.213.118.82&port=25565&secret=ddec742282124f04d318551341ead76457",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20164",
+      "latency": 100,
+      "flag": "🇮🇷",
+      "ts": 1781641472.4480846
+    },
+    {
+      "key": "noron.jamejanhani1.co.uk:443",
+      "link": "tg://proxy?server=noron.jamejanhani1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/20163",
+      "latency": 301,
+      "flag": "🇳🇱",
+      "ts": 1781641455.418776
+    },
+    {
+      "key": "noron.jamejanhani1.co.uk:443",
+      "link": "tg://proxy?server=noron.jamejanhani1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/20163",
+      "latency": 325,
+      "flag": "🇳🇱",
+      "ts": 1781641455.4187753
+    },
+    {
+      "key": "top.jamejanhani2.co.uk:443",
+      "link": "tg://proxy?server=top.jamejanhani2.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/20163",
+      "latency": 300,
+      "flag": "🇳🇱",
+      "ts": 1781641455.4187737
+    },
+    {
+      "key": "top.jamejanhani2.co.uk:443",
+      "link": "tg://proxy?server=top.jamejanhani2.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/20163",
+      "latency": 318,
+      "flag": "🇳🇱",
+      "ts": 1781641455.4187708
+    },
     {
       "key": "vip1.shahrnetfarangsarashatelcenter.co.uk:155",
       "link": "tg://proxy?server=vip1.shahrnetfarangsarashatelcenter.co.uk&port=155&secret=3XnnAQIAAQAH8AMDhuJMOt0",

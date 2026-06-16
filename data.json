@@ -1,17 +1,24 @@
 {
-  "configs": [
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@35.181.74.227:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 84,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/20155",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1781609096.4644184
-    }
-  ],
+  "configs": [],
   "proxies": [
+    {
+      "key": "room.coworcker.co.uk:443",
+      "link": "tg://proxy?server=room.coworcker.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/20165",
+      "latency": 156,
+      "flag": "🇳🇱",
+      "ts": 1781652535.9127922
+    },
+    {
+      "key": "room.coworcker.co.uk:443",
+      "link": "tg://proxy?server=room.coworcker.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/20165",
+      "latency": 316,
+      "flag": "🇳🇱",
+      "ts": 1781652535.91279
+    },
     {
       "key": "194.213.118.80:25565",
       "link": "tg://proxy?server=194.213.118.80&port=25565&secret=ddec742282124f04d318551341ead76457",
@@ -101,60 +108,6 @@
       "latency": 195,
       "flag": "🇩🇪",
       "ts": 1781629728.2440326
-    },
-    {
-      "key": "172.65.147.58:25565",
-      "link": "tg://proxy?server=172.65.147.58&port=25565&secret=dd6321048187495dfac59a030220c25d8e)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20154",
-      "latency": 6,
-      "flag": "🇨🇦",
-      "ts": 1781609090.947395
-    },
-    {
-      "key": "172.65.147.58:25565",
-      "link": "tg://proxy?server=172.65.147.58&port=25565&secret=dd6321048187495dfac59a030220c25d8e",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20154",
-      "latency": 6,
-      "flag": "🇨🇦",
-      "ts": 1781609090.947394
-    },
-    {
-      "key": "vip11.opt-meli.info:155",
-      "link": "tg://proxy?server=vip11.opt-meli.info&port=155&secret=3XnnAQIAAQAH8AMDhuJMOt0)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20154",
-      "latency": 293,
-      "flag": "🇫🇮",
-      "ts": 1781609090.9473922
-    },
-    {
-      "key": "vip11.opt-meli.info:155",
-      "link": "tg://proxy?server=vip11.opt-meli.info&port=155&secret=3XnnAQIAAQAH8AMDhuJMOt0",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20154",
-      "latency": 176,
-      "flag": "🇫🇮",
-      "ts": 1781609090.9473894
-    },
-    {
-      "key": "room.coworcker.co.uk:443",
-      "link": "tg://proxy?server=room.coworcker.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/20153",
-      "latency": 110,
-      "flag": "🇳🇱",
-      "ts": 1781609077.8649247
-    },
-    {
-      "key": "room.coworcker.co.uk:443",
-      "link": "tg://proxy?server=room.coworcker.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/20153",
-      "latency": 131,
-      "flag": "🇳🇱",
-      "ts": 1781609077.864922
     }
   ],
   "files": [

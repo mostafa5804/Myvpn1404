@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.39.232.152:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 84,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20206",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1781817933.7875285
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@18.195.157.51:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 139,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -12,6 +22,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "194.213.118.70:155",
+      "link": "tg://proxy?server=194.213.118.70&port=155&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20205",
+      "latency": 88,
+      "flag": "🇮🇷",
+      "ts": 1781817927.281478
+    },
+    {
+      "key": "194.213.118.71:155",
+      "link": "tg://proxy?server=194.213.118.71&port=155&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20205",
+      "latency": 94,
+      "flag": "🇮🇷",
+      "ts": 1781817927.2814765
+    },
+    {
+      "key": "194.213.118.71:155",
+      "link": "tg://proxy?server=194.213.118.71&port=155&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20205",
+      "latency": 89,
+      "flag": "🇮🇷",
+      "ts": 1781817927.2814748
+    },
+    {
+      "key": "194.213.118.70:155",
+      "link": "tg://proxy?server=194.213.118.70&port=155&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20205",
+      "latency": 94,
+      "flag": "🇮🇷",
+      "ts": 1781817927.2814658
+    },
     {
       "key": "194.213.118.82:25565",
       "link": "tg://proxy?server=194.213.118.82&port=25565&secret=ddec742282124f04d318551341ead76457)",

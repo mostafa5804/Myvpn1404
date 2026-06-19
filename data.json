@@ -1,6 +1,56 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@188.114.97.6:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9```",
+      "latency": 1,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20237",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1781884216.224312
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://21c25bef-eb3b-44a8-9b26-fa7f674e5bfc@51.195.116.82:443?security=reality&encryption=none&pbk=RWE5ORdQ2SzuFWX8DlaRP415wbhee9ynJkqC7yFPgQw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=speedtest.net&sid=d13ddfca12760d03#%40vpnbaz%20%F0%9F%8D%81",
+      "latency": 172,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20236",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1781884215.828759
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@95.133.245.170:8443?security=tls&encryption=none&insecure=0&headerType=none&fp=qq&type=tcp&allowInsecure=0&sni=cdn3-87.vk-cdnvideo.com#%40vpnbaz%20%F0%9F%9B%B8",
+      "latency": 160,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20235",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1781884215.289772
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.18.152.97:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%40vpnbaz%20%F0%9F%8D%AD",
+      "latency": 2,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20234",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1781884214.6894355
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#%40vpnbaz%20%F0%9F%8E%B2",
+      "latency": 165,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20233",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1781884214.281999
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://71d9f8e8-261a-4b4f-a700-739e6a256656@81.30.108.121:443?security=tls&type=xhttp&headerType=&path=&host=cdn.gapfilm.org&mode=auto&extra=%7B%22scMaxEachPostBytes%22%3A+1000000%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&sni=cdn.gapfilm.org&fp=chrome&pcs=610792abc1380f3fe53381ed3ba0c1a6a71a893755106d729b9d80e5930ae8be&allowInsecure=1#%F0%9F%87%B3%F0%9F%87%B1%20%D9%87%D9%84%D9%86%D8%AF`",
       "latency": 269,
@@ -82,6 +132,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "b8rta.co.uk.:443",
+      "link": "tg://proxy?server=b8rta.co.uk.&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b)",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/20230",
+      "latency": 314,
+      "flag": "🇩🇪",
+      "ts": 1781884144.459423
+    },
+    {
+      "key": "135.181.74.189:443",
+      "link": "tg://proxy?server=135.181.74.189&port=443&secret=3XnnAQIAAQAH8AMDhuJMOt0)",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/20230",
+      "latency": 180,
+      "flag": "🇫🇮",
+      "ts": 1781884144.4594219
+    },
+    {
+      "key": "b8rta.co.uk.:443",
+      "link": "tg://proxy?server=b8rta.co.uk.&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/20230",
+      "latency": 202,
+      "flag": "🇩🇪",
+      "ts": 1781884144.459421
+    },
+    {
+      "key": "135.181.74.189:443",
+      "link": "tg://proxy?server=135.181.74.189&port=443&secret=3XnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/20230",
+      "latency": 180,
+      "flag": "🇫🇮",
+      "ts": 1781884144.4594185
+    },
     {
       "key": "vip.opt-meli.info:155",
       "link": "tg://proxy?server=vip.opt-meli.info&port=155&secret=dd1603010200010001fc030386e24c3add)",
@@ -408,6 +494,41 @@
     }
   ],
   "files": [
+    {
+      "name": "@planb_net #327.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/3002",
+      "ts": 1781884151.2148805
+    },
+    {
+      "name": "@planb_net #328.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/3003",
+      "ts": 1781884150.9331613
+    },
+    {
+      "name": "@NpvTunnel_vip 43⚡.npvt",
+      "ext": "NPVT",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1856",
+      "ts": 1781884144.1580286
+    },
+    {
+      "name": "کانفیگ دارک94🇩🇪.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1857",
+      "ts": 1781884143.8690965
+    },
+    {
+      "name": "کانفیگ دارک95🇫🇷.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/1858",
+      "ts": 1781884143.595039
+    },
     {
       "name": "@planb_net#326.npvt",
       "ext": "NPVT",

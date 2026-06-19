@@ -1,55 +1,273 @@
 {
   "configs": [
     {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@13.39.232.152:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 84,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/20206",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1781817933.7875285
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.190:8080#%40Filtershekan_channel%20%7C9`",
+      "latency": 144,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20219",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1781862575.4180012
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.11:8080#%40Filtershekan_channel%20%7C8",
+      "latency": 1180,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20218",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1781862574.9349442
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://7dfdbb4b-5bf7-4503-b2c0-4ef05922dcb9@psf-1.zdshop.ir:80?security=none&encryption=none&host=khodroshop.ir&type=ws#%40Filtershekan_channel%20%7C7",
+      "latency": 840,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20217",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1781862573.4268162
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://21e22226-0b96-4b4e-9a91-5c7f9e3f1760@ara.public.lat:58748?security=none&encryption=none&host=e1roj9ul.divarcdn.com%2C%20e1roj9ul.alibaba.ir%2C%20e1roj9ul.splus.ir%2C%20e1roj9ul.cafebazaar.ir%2C%20e1roj9ul.yjc.ir&headerType=http&type=tcp#%40Filtershekan_channel%20%7C6",
+      "latency": 316,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20216",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1781862572.222988
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@sca34.mysilipdir.com:8880?mode=gun&security=none&encryption=none&type=grpc#%40Filtershekan_channel%20%7C5",
+      "latency": 245,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20215",
+      "flag": "🇮🇹",
+      "country": "Italy",
+      "ts": 1781862571.5190244
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://fa937ff5-89cc-49a4-9bf9-da2b7285070d@104.18.152.231:2053?mode=auto&path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=bulghari.appleseraj.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=bulghari.appleseraj.ir#%40Filtershekan_channel%20%7C3",
+      "latency": 18,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20214",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1781862570.7747946
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@151.115.164.131:8880?mode=gun&security=none&encryption=none&type=grpc#%40Filtershekan_channel%20%7C1",
+      "latency": 143,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20213",
+      "flag": "🇮🇹",
+      "country": "Italy",
+      "ts": 1781862570.2117393
     }
   ],
   "proxies": [
     {
-      "key": "194.213.118.70:155",
-      "link": "tg://proxy?server=194.213.118.70&port=155&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20205",
-      "latency": 88,
-      "flag": "🇮🇷",
-      "ts": 1781817927.281478
+      "key": "167.233.148.123:8443",
+      "link": "tg://proxy?server=167.233.148.123&port=8443&secret=dd79e344818749bd7ac519130220c25d09",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/20222",
+      "latency": 140,
+      "flag": "🇩🇪",
+      "ts": 1781862632.3440354
     },
     {
-      "key": "194.213.118.71:155",
-      "link": "tg://proxy?server=194.213.118.71&port=155&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20205",
-      "latency": 94,
-      "flag": "🇮🇷",
-      "ts": 1781817927.2814765
+      "key": "mine.airplan1.ir:25565",
+      "link": "tg://proxy?server=mine.airplan1.ir&port=25565&secret=1603010200010001fc031386e24c3add",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/20222",
+      "latency": 373,
+      "flag": "🇩🇪",
+      "ts": 1781862632.3440342
     },
     {
-      "key": "194.213.118.71:155",
-      "link": "tg://proxy?server=194.213.118.71&port=155&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20205",
-      "latency": 89,
-      "flag": "🇮🇷",
-      "ts": 1781817927.2814748
+      "key": "167.233.48.222:443",
+      "link": "tg://proxy?server=167.233.48.222&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/20222",
+      "latency": 141,
+      "flag": "🇩🇪",
+      "ts": 1781862632.3440325
     },
     {
-      "key": "194.213.118.70:155",
-      "link": "tg://proxy?server=194.213.118.70&port=155&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20205",
-      "latency": 94,
-      "flag": "🇮🇷",
-      "ts": 1781817927.2814658
+      "key": "mine.airplan1.ir:25565",
+      "link": "tg://proxy?server=mine.airplan1.ir&port=25565&secret=1603010200010001fc031386e24c3add)",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/20222",
+      "latency": 370,
+      "flag": "🇩🇪",
+      "ts": 1781862632.3440316
+    },
+    {
+      "key": "167.233.148.123:8443",
+      "link": "tg://proxy?server=167.233.148.123&port=8443&secret=dd79e344818749bd7ac519130220c25d09)",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/20222",
+      "latency": 140,
+      "flag": "🇩🇪",
+      "ts": 1781862632.3440304
+    },
+    {
+      "key": "167.233.48.222:443",
+      "link": "tg://proxy?server=167.233.48.222&port=443&secret=ddf0eeb0bd9adc4fd4a93994ee3b2a216b)",
+      "channel": "کانفیگ ملی | config meli",
+      "t_link": "https://t.me/myvpn1404/20222",
+      "latency": 141,
+      "flag": "🇩🇪",
+      "ts": 1781862632.344028
+    },
+    {
+      "key": "67777899.ir.meli-n13.info:8443",
+      "link": "tg://proxy?server=67777899.ir.meli-n13.info&port=8443&secret=104462821249bd7ac519130220c25d09)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 209,
+      "flag": "🇫🇮",
+      "ts": 1781862579.1005554
+    },
+    {
+      "key": "a.similemat.com:12341",
+      "link": "tg://proxy?server=a.similemat.com&port=12341&secret=4170ef4862902c504d0e3e8c38d5fa24",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 288,
+      "flag": "🇳🇱",
+      "ts": 1781862579.1005547
+    },
+    {
+      "key": "65.109.196.127:300",
+      "link": "tg://proxy?server=65.109.196.127&port=300&secret=eeNEgYdJvXrFGRMCIMJdCWFydmFuY2xvdWQuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 151,
+      "flag": "🇫🇮",
+      "ts": 1781862579.1005504
+    },
+    {
+      "key": "football.world-pro.co.uk:25565",
+      "link": "tg://proxy?server=football.world-pro.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 176,
+      "flag": "🇫🇮",
+      "ts": 1781862579.1005485
+    },
+    {
+      "key": "87.229.56.182:443",
+      "link": "tg://proxy?server=87.229.56.182&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 133,
+      "flag": "🇳🇱",
+      "ts": 1781862579.1005476
+    },
+    {
+      "key": "65.109.196.127:300",
+      "link": "tg://proxy?server=65.109.196.127&port=300&secret=eeNEgYdJvXrFGRMCIMJdCWFydmFuY2xvdWQuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 155,
+      "flag": "🇫🇮",
+      "ts": 1781862579.1005464
+    },
+    {
+      "key": "67777899.ir.meli-n13.info:8443",
+      "link": "tg://proxy?server=67777899.ir.meli-n13.info&port=8443&secret=104462821249bd7ac519130220c25d09",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 260,
+      "flag": "🇫🇮",
+      "ts": 1781862579.100545
+    },
+    {
+      "key": "football.world-pro.co.uk:25565",
+      "link": "tg://proxy?server=football.world-pro.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 355,
+      "flag": "🇫🇮",
+      "ts": 1781862579.1005437
+    },
+    {
+      "key": "a.similemat.com:12341",
+      "link": "tg://proxy?server=a.similemat.com&port=12341&secret=4170ef4862902c504d0e3e8c38d5fa24)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 295,
+      "flag": "🇳🇱",
+      "ts": 1781862579.1005423
+    },
+    {
+      "key": "86877790.ir.meli-n13.info:8443",
+      "link": "tg://proxy?server=86877790.ir.meli-n13.info&port=8443&secret=104462821249bd7ac519130220c25d09)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 207,
+      "flag": "🇫🇮",
+      "ts": 1781862579.1005404
+    },
+    {
+      "key": "86877790.ir.meli-n13.info:8443",
+      "link": "tg://proxy?server=86877790.ir.meli-n13.info&port=8443&secret=104462821249bd7ac519130220c25d09",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 351,
+      "flag": "🇫🇮",
+      "ts": 1781862579.1005392
+    },
+    {
+      "key": "87.229.56.180:443",
+      "link": "tg://proxy?server=87.229.56.180&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 132,
+      "flag": "🇳🇱",
+      "ts": 1781862579.1005375
+    },
+    {
+      "key": "87.229.56.180:443",
+      "link": "tg://proxy?server=87.229.56.180&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 132,
+      "flag": "🇳🇱",
+      "ts": 1781862579.100536
+    },
+    {
+      "key": "87.229.56.182:443",
+      "link": "tg://proxy?server=87.229.56.182&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20220",
+      "latency": 133,
+      "flag": "🇳🇱",
+      "ts": 1781862579.1005335
     }
   ],
   "files": [
+    {
+      "name": "@ghalagyann👈 کانال تلگرام .npvt",
+      "ext": "NPVT",
+      "channel": "ghalagyann",
+      "link": "https://t.me/ghalagyann/21496",
+      "ts": 1781862588.5412445
+    },
+    {
+      "name": "npvfile11.npvt",
+      "ext": "NPVT",
+      "channel": "Vpn | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2911",
+      "ts": 1781862569.7150707
+    },
     {
       "name": "@Cooonfig(چای ماسالا).npvt",
       "ext": "NPVT",
@@ -84,41 +302,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/2999",
       "ts": 1781854533.9820716
-    },
-    {
-      "name": "@Cooonfig(گشنمه).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7862",
-      "ts": 1781815428.1028302
-    },
-    {
-      "name": "@Cooonfig(موز) (1).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7863",
-      "ts": 1781815427.8534775
-    },
-    {
-      "name": "@Cooonfig(شیرخرما)اختصاصی.npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7864",
-      "ts": 1781815427.5987408
-    },
-    {
-      "name": "@Cooonfig(ژیک💝).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7865",
-      "ts": 1781815427.298946
-    },
-    {
-      "name": "@planb_net#321.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2996",
-      "ts": 1781815364.227242
     }
   ]
 }

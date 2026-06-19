@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.38.144.131:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 87,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20244",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1781899960.2543526
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@15.224.75.26:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 84,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -152,6 +162,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "46.62.196.202:155",
+      "link": "tg://proxy?server=46.62.196.202&port=155&secret=dd82ce1f84af4033cc7e7b021069be3d5b)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20243",
+      "latency": 119,
+      "flag": "🇫🇮",
+      "ts": 1781899953.5579634
+    },
+    {
+      "key": "46.62.196.202:155",
+      "link": "tg://proxy?server=46.62.196.202&port=155&secret=dd82ce1f84af4033cc7e7b021069be3d5b",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20243",
+      "latency": 118,
+      "flag": "🇫🇮",
+      "ts": 1781899953.557961
+    },
     {
       "key": "sabr.opt-meli.info:155",
       "link": "tg://proxy?server=sabr.opt-meli.info&port=155&secret=dd1603010200010001fc030386e24c3add",
@@ -612,41 +640,6 @@
       "channel": "Vpn | proxy | filtershekan",
       "link": "https://t.me/filtershekan_channel/2911",
       "ts": 1781862569.7150707
-    },
-    {
-      "name": "@Cooonfig(چای ماسالا).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/7868",
-      "ts": 1781854592.7827263
-    },
-    {
-      "name": "-𝗩𝗶𝗣 - 🔥 🇩🇪🔥.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/17338",
-      "ts": 1781854550.0368762
-    },
-    {
-      "name": "@planb_net#322.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2997",
-      "ts": 1781854534.499232
-    },
-    {
-      "name": "@planb_net#323.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2998",
-      "ts": 1781854534.2810743
-    },
-    {
-      "name": "@planb_net#324.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/2999",
-      "ts": 1781854533.9820716
     }
   ]
 }

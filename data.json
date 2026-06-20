@@ -1,5 +1,36 @@
 {
-  "configs": [],
+  "configs": [
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.38.243.193:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 155,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20268",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1781979572.1933832
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@52.58.146.145:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 163,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20267",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1781979571.6097708
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.126.148.235:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 163,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20266",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1781979571.1145213
+    }
+  ],
   "proxies": [
     {
       "key": "46.62.197.12:155",

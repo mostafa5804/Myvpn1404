@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.90.19:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 128,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20415",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1782163318.3762538
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://d8d40356-b8db-4203-9e6c-3a74b0256238@swed.monopoli.shop:56432?security=reality&pbk=LeUM8rH4Y0ntr5t_21HN4nBJLqfP8e3BOg8y1_CF4R8&encryption=none&sid=59bf49cfdeffc4f8&headerType=none&sni=refersion.com&fp=firefox&type=tcp#%F0%9F%87%B8%F0%9F%87%AA%20SE%20%7C%20Reality%20%7C%2004",
       "latency": 191,
@@ -192,6 +202,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "vip.3ven.sbs:155",
+      "link": "tg://proxy?server=vip.3ven.sbs&port=155&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20414",
+      "latency": 188,
+      "flag": "🇩🇪",
+      "ts": 1782163308.7681918
+    },
+    {
+      "key": "vip.3ven.sbs:155",
+      "link": "tg://proxy?server=vip.3ven.sbs&port=155&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20414",
+      "latency": 196,
+      "flag": "🇩🇪",
+      "ts": 1782163308.7681897
+    },
     {
       "key": "vip.link-a2.ir:155",
       "link": "tg://proxy?server=vip.link-a2.ir&port=155&secret=dd1603010200010001fc030386e24c3add",

@@ -1,5 +1,66 @@
 {
-  "configs": [],
+  "configs": [
+    {
+      "protocol": "VLESS",
+      "config": "vless://8ca5cbd3-ec16-4728-bedc-2bc0d82f0922@lv.faygo.bot:443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=enterprisekitten.com&sid=6ba85179e30d4fc2#%40vpnbaz%20%E2%98%82%EF%B8%8F```",
+      "latency": 187,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20398",
+      "flag": "🇱🇻",
+      "country": "Latvia",
+      "ts": 1782150307.261985
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@cdn9-33.vk-cdnvideo.com:8443?security=tls&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9",
+      "latency": 181,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20397",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1782150306.663749
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://931729a8-3c20-4841-89a1-f18dc9ce0a6f@46.229.243.148:8443?security=tls&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=cdn9-33.vk-cdnvideo.com#%40vpnbaz%20%F0%9F%9B%B8",
+      "latency": 144,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20396",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1782150306.1058078
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://8dc7722c-2767-4eea-a28b-2f8daacc07e3@sca21.myfymain.com:8880?mode=gun&security=none&encryption=none&type=grpc#%40vpnbaz%20%F0%9F%95%8A%EF%B8%8F",
+      "latency": 212,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20395",
+      "flag": "🇮🇹",
+      "country": "Italy",
+      "ts": 1782150305.5992243
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@45.80.111.7:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.calmlunch.com#%40vpnbaz%20%F0%9F%8D%AD",
+      "latency": 2,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20394",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1782150304.9920306
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#%40vpnbaz%20%F0%9F%90%8D",
+      "latency": 167,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/20393",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1782150304.5948935
+    }
+  ],
   "proxies": [
     {
       "key": "vip.link-a2.ir:155",
@@ -174,6 +235,13 @@
     }
   ],
   "files": [
+    {
+      "name": "@Cooonfig(ماس موسیر چکیده).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/7966",
+      "ts": 1782150296.727982
+    },
     {
       "name": "@Cooonfig(صبح بخیر).npvt",
       "ext": "NPVT",

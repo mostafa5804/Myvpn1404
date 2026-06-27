@@ -1,6 +1,89 @@
 {
-  "configs": [],
+  "configs": [
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@3.127.10.163:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 136,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20653",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1782545191.2577257
+    }
+  ],
   "proxies": [
+    {
+      "key": "116.202.55.31:25565",
+      "link": "tg://proxy?server=116.202.55.31&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20652",
+      "latency": 150,
+      "flag": "🇩🇪",
+      "ts": 1782545183.5393322
+    },
+    {
+      "key": "194.213.118.193:443",
+      "link": "tg://proxy?server=194.213.118.193&port=443&secret=FgMBAgABAAH8AwOG4kw63Q==",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20652",
+      "latency": 141,
+      "flag": "🇮🇷",
+      "ts": 1782545183.539331
+    },
+    {
+      "key": "116.202.55.31:25565",
+      "link": "tg://proxy?server=116.202.55.31&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20652",
+      "latency": 145,
+      "flag": "🇩🇪",
+      "ts": 1782545183.53933
+    },
+    {
+      "key": "mine.navar1.ir:25565",
+      "link": "tg://proxy?server=mine.navar1.ir&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20652",
+      "latency": 328,
+      "flag": "🇫🇮",
+      "ts": 1782545183.5393286
+    },
+    {
+      "key": "194.213.118.193:443",
+      "link": "tg://proxy?server=194.213.118.193&port=443&secret=FgMBAgABAAH8AwOG4kw63Q==)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20652",
+      "latency": 139,
+      "flag": "🇮🇷",
+      "ts": 1782545183.5393279
+    },
+    {
+      "key": "mine.navar1.ir:25565",
+      "link": "tg://proxy?server=mine.navar1.ir&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20652",
+      "latency": 328,
+      "flag": "🇫🇮",
+      "ts": 1782545183.5393264
+    },
+    {
+      "key": "194.213.118.192:443",
+      "link": "tg://proxy?server=194.213.118.192&port=443&secret=FgMBAgABAAH8AwOG4kw63Q==",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20652",
+      "latency": 147,
+      "flag": "🇮🇷",
+      "ts": 1782545183.539325
+    },
+    {
+      "key": "194.213.118.192:443",
+      "link": "tg://proxy?server=194.213.118.192&port=443&secret=FgMBAgABAAH8AwOG4kw63Q==)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20652",
+      "latency": 135,
+      "flag": "🇮🇷",
+      "ts": 1782545183.5393229
+    },
     {
       "key": "87.248.129.180:443",
       "link": "tg://proxy?server=87.248.129.180&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
@@ -440,34 +523,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/3043",
       "ts": 1782503997.3868985
-    },
-    {
-      "name": "@Cooonfig(شام) ².npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8061",
-      "ts": 1782496662.4490933
-    },
-    {
-      "name": "@Cooonfig(لازانیا) ³.npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8064",
-      "ts": 1782496662.129787
-    },
-    {
-      "name": "@Cooonfig(دسر)  ².npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8065",
-      "ts": 1782496661.8114212
-    },
-    {
-      "name": "@planb_net#423.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/3042",
-      "ts": 1782496607.1080208
     }
   ]
 }

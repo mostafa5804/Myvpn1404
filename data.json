@@ -2,6 +2,36 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://humanity@104.18.152.155:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%40Filtershekan_channel%20%7C3`",
+      "latency": 3,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20697",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1782647437.8064404
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.18.152.143:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%40Filtershekan_channel%20%7C2",
+      "latency": 1,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20696",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1782647437.4262543
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.18.152.175:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%40Filtershekan_channel%20%7C1",
+      "latency": 2,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20695",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1782647437.0050867
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@35.158.199.152:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 129,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -12,6 +42,186 @@
     }
   ],
   "proxies": [
+    {
+      "key": "87.248.129.180:443",
+      "link": "tg://proxy?server=87.248.129.180&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 87,
+      "flag": "🇳🇱",
+      "ts": 1782647440.453826
+    },
+    {
+      "key": "nick.talebi.co.uk:443",
+      "link": "tg://proxy?server=nick.talebi.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 100,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538252
+    },
+    {
+      "key": "87.248.129.176:443",
+      "link": "tg://proxy?server=87.248.129.176&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 88,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538245
+    },
+    {
+      "key": "moon.talebi.co.uk:443",
+      "link": "tg://proxy?server=moon.talebi.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 101,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538238
+    },
+    {
+      "key": "87.248.129.178:2096",
+      "link": "tg://proxy?server=87.248.129.178&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 88,
+      "flag": "🇳🇱",
+      "ts": 1782647440.453823
+    },
+    {
+      "key": "book.malavanann.co.uk:2096",
+      "link": "tg://proxy?server=book.malavanann.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 95,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538221
+    },
+    {
+      "key": "mine.talebi.co.uk:443",
+      "link": "tg://proxy?server=mine.talebi.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 98,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538214
+    },
+    {
+      "key": "87.248.129.179:443",
+      "link": "tg://proxy?server=87.248.129.179&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 88,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538205
+    },
+    {
+      "key": "mine.talebi.co.uk:443",
+      "link": "tg://proxy?server=mine.talebi.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 96,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538198
+    },
+    {
+      "key": "nick.talebi.co.uk:443",
+      "link": "tg://proxy?server=nick.talebi.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 101,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538186
+    },
+    {
+      "key": "87.248.129.174:2053",
+      "link": "tg://proxy?server=87.248.129.174&port=2053&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 94,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538178
+    },
+    {
+      "key": "87.248.129.178:2096",
+      "link": "tg://proxy?server=87.248.129.178&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 87,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538171
+    },
+    {
+      "key": "room.talebi.co.uk:443",
+      "link": "tg://proxy?server=room.talebi.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 104,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538164
+    },
+    {
+      "key": "room.talebi.co.uk:443",
+      "link": "tg://proxy?server=room.talebi.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 208,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538152
+    },
+    {
+      "key": "87.248.129.174:2053",
+      "link": "tg://proxy?server=87.248.129.174&port=2053&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 87,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538143
+    },
+    {
+      "key": "book.malavanann.co.uk:2096",
+      "link": "tg://proxy?server=book.malavanann.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 97,
+      "flag": "🇳🇱",
+      "ts": 1782647440.453813
+    },
+    {
+      "key": "87.248.129.180:443",
+      "link": "tg://proxy?server=87.248.129.180&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 88,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538116
+    },
+    {
+      "key": "moon.talebi.co.uk:443",
+      "link": "tg://proxy?server=moon.talebi.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 311,
+      "flag": "🇳🇱",
+      "ts": 1782647440.453811
+    },
+    {
+      "key": "87.248.129.179:443",
+      "link": "tg://proxy?server=87.248.129.179&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 88,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538095
+    },
+    {
+      "key": "87.248.129.176:443",
+      "link": "tg://proxy?server=87.248.129.176&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20698",
+      "latency": 88,
+      "flag": "🇳🇱",
+      "ts": 1782647440.4538074
+    },
     {
       "key": "mine.navar1.ir:25565",
       "link": "tg://proxy?server=mine.navar1.ir&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==",
@@ -60,25 +270,32 @@
   ],
   "files": [
     {
+      "name": "🚀.npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/8095",
+      "ts": 1782647563.2020578
+    },
+    {
+      "name": "@planb_net #432.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/3051",
+      "ts": 1782647508.801604
+    },
+    {
+      "name": "npvfile26.npvt",
+      "ext": "NPVT",
+      "channel": "Vpn | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/2958",
+      "ts": 1782647436.7091627
+    },
+    {
       "name": "@planb_net#430.npvt",
       "ext": "NPVT",
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/3049",
       "ts": 1782628891.0125015
-    },
-    {
-      "name": "Nox.npvt",
-      "ext": "NPVT",
-      "channel": "VPN MARKET",
-      "link": "https://t.me/anty_filter/23474",
-      "ts": 1782599792.4767232
-    },
-    {
-      "name": "اخصاصی ژیک جدید.npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8088",
-      "ts": 1782599782.9711332
     }
   ]
 }

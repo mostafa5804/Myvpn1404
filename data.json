@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@13.37.37.145:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 142,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20725",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1782731670.31346
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@52.28.54.27:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 148,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -12,6 +22,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "159.223.143.213:1010",
+      "link": "tg://proxy?server=159.223.143.213&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20724",
+      "latency": 79,
+      "flag": "🇺🇸",
+      "ts": 1782731663.565119
+    },
+    {
+      "key": "68.183.32.192:1010",
+      "link": "tg://proxy?server=68.183.32.192&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20724",
+      "latency": 139,
+      "flag": "🇬🇧",
+      "ts": 1782731663.565113
+    },
+    {
+      "key": "68.183.32.192:1010",
+      "link": "tg://proxy?server=68.183.32.192&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20724",
+      "latency": 139,
+      "flag": "🇬🇧",
+      "ts": 1782731663.5651119
+    },
+    {
+      "key": "159.223.143.213:1010",
+      "link": "tg://proxy?server=159.223.143.213&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20724",
+      "latency": 72,
+      "flag": "🇺🇸",
+      "ts": 1782731663.5651095
+    },
     {
       "key": "95.217.69.50:25565",
       "link": "tg://proxy?server=95.217.69.50&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==",

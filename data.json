@@ -69,19 +69,27 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1782731670.31346
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@52.28.54.27:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 148,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/20723",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1782727481.3913398
     }
   ],
   "proxies": [
+    {
+      "key": "87.248.129.176:2053",
+      "link": "tg://proxy?server=87.248.129.176&port=2053&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/20742",
+      "latency": 87,
+      "flag": "🇳🇱",
+      "ts": 1782771291.5995657
+    },
+    {
+      "key": "87.248.129.176:2053",
+      "link": "tg://proxy?server=87.248.129.176&port=2053&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/20742",
+      "latency": 88,
+      "flag": "🇳🇱",
+      "ts": 1782771291.5995638
+    },
     {
       "key": "book.malavanann.co.uk:2096",
       "link": "tg://proxy?server=book.malavanann.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
@@ -423,33 +431,6 @@
       "latency": 72,
       "flag": "🇺🇸",
       "ts": 1782731663.5651095
-    },
-    {
-      "key": "95.217.69.50:25565",
-      "link": "tg://proxy?server=95.217.69.50&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20722",
-      "latency": 173,
-      "flag": "🇫🇮",
-      "ts": 1782727473.6599784
-    },
-    {
-      "key": "95.217.69.50:25565",
-      "link": "tg://proxy?server=95.217.69.50&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20722",
-      "latency": 173,
-      "flag": "🇫🇮",
-      "ts": 1782727473.6599774
-    },
-    {
-      "key": "95.217.69.50:25565",
-      "link": "tg://proxy?server=95.217.69.50&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==)|",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20722",
-      "latency": 173,
-      "flag": "🇫🇮",
-      "ts": 1782727473.6599748
     }
   ],
   "files": [

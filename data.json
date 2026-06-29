@@ -2,16 +2,43 @@
   "configs": [
     {
       "protocol": "TROJAN",
-      "config": "trojan://telegram-id-v2rayvpnchannel@35.181.126.167:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
-      "latency": 82,
+      "config": "trojan://telegram-id-v2rayvpnchannel@52.28.54.27:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 148,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/20712",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1782677958.4956045
+      "t_link": "https://t.me/myvpn1404/20723",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1782727481.3913398
     }
   ],
   "proxies": [
+    {
+      "key": "95.217.69.50:25565",
+      "link": "tg://proxy?server=95.217.69.50&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20722",
+      "latency": 173,
+      "flag": "🇫🇮",
+      "ts": 1782727473.6599784
+    },
+    {
+      "key": "95.217.69.50:25565",
+      "link": "tg://proxy?server=95.217.69.50&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20722",
+      "latency": 173,
+      "flag": "🇫🇮",
+      "ts": 1782727473.6599774
+    },
+    {
+      "key": "95.217.69.50:25565",
+      "link": "tg://proxy?server=95.217.69.50&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==)|",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20722",
+      "latency": 173,
+      "flag": "🇫🇮",
+      "ts": 1782727473.6599748
+    },
     {
       "key": "moon.talebi.co.uk:443",
       "link": "tg://proxy?server=moon.talebi.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
@@ -191,33 +218,6 @@
       "latency": 149,
       "flag": "🇳🇱",
       "ts": 1782692110.4135094
-    },
-    {
-      "key": "95.217.69.50:25565",
-      "link": "tg://proxy?server=95.217.69.50&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20710",
-      "latency": 113,
-      "flag": "🇫🇮",
-      "ts": 1782670248.6685388
-    },
-    {
-      "key": "95.217.69.50:25565",
-      "link": "tg://proxy?server=95.217.69.50&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==)|",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20710",
-      "latency": 114,
-      "flag": "🇫🇮",
-      "ts": 1782670248.6685376
-    },
-    {
-      "key": "95.217.69.50:25565",
-      "link": "tg://proxy?server=95.217.69.50&port=25565&secret=FgICAwABAAL8AxOG4Uw63Q==",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/20710",
-      "latency": 114,
-      "flag": "🇫🇮",
-      "ts": 1782670248.668535
     }
   ],
   "files": [
@@ -241,48 +241,6 @@
       "channel": "Cooonfig",
       "link": "https://t.me/cooonfig/8110",
       "ts": 1782689853.6076772
-    },
-    {
-      "name": "کانفیگ دارک115🇺🇸.dark",
-      "ext": "DARK",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/2001",
-      "ts": 1782682543.6028514
-    },
-    {
-      "name": "کانفیگ دارک116🇬🇧.dark",
-      "ext": "DARK",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/2002",
-      "ts": 1782682543.3751469
-    },
-    {
-      "name": "کانفیگ دارک117🇩🇪.dark",
-      "ext": "DARK",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/2003",
-      "ts": 1782682543.0725174
-    },
-    {
-      "name": "@ghalagyann👈 کانال تلگرام .npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/21511",
-      "ts": 1782682499.1267078
-    },
-    {
-      "name": "npvfile27.npvt",
-      "ext": "NPVT",
-      "channel": "Vpn | proxy | filtershekan",
-      "link": "https://t.me/filtershekan_channel/2963",
-      "ts": 1782682492.767753
-    },
-    {
-      "name": "@planb_net#435.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/3054",
-      "ts": 1782676326.9956279
     }
   ]
 }

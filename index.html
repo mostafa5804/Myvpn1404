@@ -5,226 +5,481 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>VPN Hub Premium</title>
     <meta name="theme-color" content="#0f172a">
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2099/2099192.png">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Vazirmatn', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    
     <style>
-        body { font-family: 'Vazirmatn', sans-serif; background-color: #0f172a; color: #f1f5f9; -webkit-tap-highlight-color: transparent; }
+        body { font-family: 'Vazirmatn', sans-serif; background-color: #020617; color: #f8fafc; -webkit-tap-highlight-color: transparent; }
         .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
-        
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 4px; height: 4px; }
-        ::-webkit-scrollbar-track { background: #1e293b; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-        
-        /* Animation */
-        .card-enter { animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-        @keyframes slideUp { from { opacity: 0; transform: translateY(20px) scale(0.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
-        
-        .filter-btn.active { background-color: #38bdf8; color: #0f172a; border-color: #38bdf8; font-weight: 700; }
+        ::-webkit-scrollbar { width: 5px; height: 5px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        .filter-btn.active { background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #020617; font-weight: 800; border-color: #38bdf8; box-shadow: 0 0 15px rgba(56,189,248,0.4); }
+        .sort-btn.active { background-color: #1e293b; color: #38bdf8; border-color: #38bdf8/50; }
+        @keyframes pulse-glow { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; transform: scale(1.05); } }
+        .live-dot { animation: pulse-glow 2s infinite; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col pb-24">
+<body class="min-h-screen flex flex-col pb-24 selection:bg-sky-500/30 selection:text-sky-200">
     
-    <header class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-lg border-b border-slate-700/50 z-40 transition-all duration-300" id="header">
+    <header class="fixed top-0 w-full bg-slate-950/75 backdrop-blur-xl border-b border-slate-800/60 z-40 transition-all duration-300">
         <div class="max-w-xl mx-auto px-4 h-16 flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 tracking-tighter">VPN Hub</h1>
-                <div class="flex items-center gap-2 text-[10px] text-slate-400 font-mono">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    2026/07/03 - 14:38
+            <div class="flex flex-col">
+                <h1 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-400 to-emerald-400 tracking-tight">VPN Hub <span class="text-xs font-bold bg-sky-500/10 text-sky-400 px-2 py-0.5 rounded-full border border-sky-500/20">PRO</span></h1>
+                <div class="flex items-center gap-1.5 text-[10px] text-slate-400 font-mono mt-0.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 live-dot"></span>
+                    <span id="updateTime">در حال بروزرسانی...</span>
                 </div>
             </div>
-            <a href="https://raw.githubusercontent.com/mostafa5804/Myvpn1404/refs/heads/main/sub.txt" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg shadow-emerald-900/30 transition-all active:scale-95 flex items-center gap-2">
-                <i class="fas fa-rss"></i> اشتراک
-            </a>
+            <div class="flex gap-2">
+                <button onclick="showSubQR()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 w-9 h-9 rounded-full flex items-center justify-center border border-slate-700 transition-all active:scale-95" title="کد QR اشتراک">
+                    <i class="fas fa-qrcode text-sm"></i>
+                </button>
+                <a href="https://raw.githubusercontent.com/mostafa5804/Myvpn1404/refs/heads/main/sub.txt" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg shadow-emerald-950/40 transition-all active:scale-95 flex items-center gap-2 border border-emerald-500/20">
+                    <i class="fas fa-rss animate-pulse"></i> لینک اشتراک
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-xl mx-auto w-full pt-24 px-4 flex-grow">
+    <main class="max-w-xl mx-auto w-full pt-20 px-4 flex-grow">
         
-        <div class="sticky top-16 bg-slate-900/90 backdrop-blur-md z-30 py-4 -mx-4 px-4 border-b border-slate-800/50 mb-4 space-y-3">
-            <div class="relative">
-                <i class="fas fa-search absolute right-3 top-1/2 -translate-y-1/2 text-slate-500"></i>
-                <input type="text" id="searchInput" placeholder="جستجو (کشور، پروتکل...)" class="w-full bg-slate-800 text-white text-sm rounded-xl pl-4 pr-10 py-3 border border-slate-700 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 outline-none transition-all placeholder-slate-500">
+        <div class="sticky top-16 bg-slate-950/90 backdrop-blur-md z-30 py-4 -mx-4 px-4 border-b border-slate-900 mb-4 space-y-3.5">
+            <div class="relative group">
+                <i class="fas fa-search absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-sky-400 transition-colors"></i>
+                <input type="text" id="searchInput" oninput="filterGrid()" placeholder="جستجو بر اساس کشور، پروتکل یا کانال..." class="w-full bg-slate-900 text-white text-sm rounded-xl pl-4 pr-11 py-3.5 border border-slate-800 focus:border-sky-500/50 focus:ring-2 focus:ring-sky-950 outline-none transition-all placeholder-slate-500 shadow-inner">
             </div>
             
-            <div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
-                <button onclick="filterItems('all', this)" class="filter-btn active flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">همه</button>
-                <button onclick="filterItems('vless', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">VLESS</button>
-                <button onclick="filterItems('vmess', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">VMess</button>
-                <button onclick="filterItems('mtproxy', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">MTProxy</button>
-                <button onclick="filterItems('slipnet_enc', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">SlipNet</button>
+            <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+                <button onclick="filterType('all', this)" class="filter-btn active flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">همه سرورها</button>
+                <button onclick="filterType('VLESS', this)" class="filter-btn flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">VLESS</button>
+                <button onclick="filterType('VMESS', this)" class="filter-btn flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">VMess</button>
+                <button onclick="filterType('TROJAN', this)" class="filter-btn flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">Trojan</button>
+                <button onclick="filterType('MTPROXY', this)" class="filter-btn flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">MTProxy</button>
+                <button onclick="filterType('FILES', this)" class="filter-btn flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">فایل‌ها (NPVT)</button>
+            </div>
+
+            <div class="flex items-center justify-between pt-1 gap-4">
+                <div class="flex gap-1.5 bg-slate-900/60 p-0.5 rounded-lg border border-slate-800/80">
+                    <button onclick="changeSort('date', this)" class="sort-btn active px-3 py-1.5 rounded-md text-[11px] font-medium text-slate-400 border border-transparent transition-all">
+                        <i class="fas fa-clock pl-1"></i>جدیدترین
+                    </button>
+                    <button onclick="changeSort('ping', this)" class="sort-btn px-3 py-1.5 rounded-md text-[11px] font-medium text-slate-400 border border-transparent transition-all">
+                        <i class="fas fa-bolt pl-1"></i>کمترین پینگ
+                    </button>
+                </div>
+                
+                <button onclick="copyAllVisible()" id="copyAllBtn" class="bg-sky-950/40 hover:bg-sky-900/60 text-sky-400 border border-sky-900/50 px-3 py-1.5 rounded-lg text-[11px] font-bold transition-all flex items-center gap-1.5 shadow-sm">
+                    <i class="fas fa-copy"></i> کپی همه فیلتر شده‌ها
+                </button>
             </div>
         </div>
 
-        <div id="grid" class="grid gap-4 card-enter">
-            
-            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="trojan" data-search="germany trojan">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-3xl filter drop-shadow-md">🇩🇪</span>
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="font-bold text-sky-400 text-sm tracking-wide">TROJAN</span>
-                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">Germany</span>
-                            </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server 1</div>
-                        </div>
-                    </div>
-                    <div class="text-xs font-mono font-bold text-emerald-400 border-emerald-500/30 bg-emerald-500/10 border px-2 py-1 rounded-lg flex items-center gap-1">
-                        <i class="fas fa-signal text-[10px]"></i> 107ms
-                    </div>
+        <div id="grid" class="grid gap-4">
+            <div class="skeleton-card bg-slate-900/40 border border-slate-900 rounded-2xl p-4 space-y-4 animate-pulse">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-3"><div class="w-10 h-10 bg-slate-800 rounded-xl"></div><div class="space-y-2"><div class="w-20 h-4 bg-slate-800 rounded"></div><div class="w-12 h-3 bg-slate-800 rounded"></div></div></div>
+                    <div class="w-16 h-6 bg-slate-800 rounded-lg"></div>
                 </div>
-
-                <div class="grid grid-cols-2 gap-2 mt-2">
-                    <button data-clipboard="trojan://telegram-id-v2rayvpnchannel@18.158.177.160:22223?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#OurChannel" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
-                        <i class="fas fa-copy"></i> <span>کپی</span>
-                    </button>
-                    <button onclick="showQR('trojan://telegram-id-v2rayvpnchannel@18.158.177.160:22223?security=tls&amp;alpn=http/1.1&amp;headerType=none&amp;type=tcp&amp;sni=trojan.burgerip.co.uk#OurChannel')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
-                        <i class="fas fa-qrcode"></i> QR
-                    </button>
+                <div class="grid grid-cols-2 gap-2"><div class="h-10 bg-slate-800 rounded-xl"></div><div class="h-10 bg-slate-800 rounded-xl"></div></div>
+            </div>
+            <div class="skeleton-card bg-slate-900/40 border border-slate-900 rounded-2xl p-4 space-y-4 animate-pulse">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-3"><div class="w-10 h-10 bg-slate-800 rounded-xl"></div><div class="space-y-2"><div class="w-24 h-4 bg-slate-800 rounded"></div><div class="w-16 h-3 bg-slate-800 rounded"></div></div></div>
+                    <div class="w-16 h-6 bg-slate-800 rounded-lg"></div>
                 </div>
+                <div class="grid grid-cols-2 gap-2"><div class="h-10 bg-slate-800 rounded-xl"></div><div class="h-10 bg-slate-800 rounded-xl"></div></div>
             </div>
         </div>
         
-        <div id="emptyState" class="hidden flex-col items-center justify-center py-12 text-slate-500">
-            <i class="fas fa-ghost text-4xl mb-3 opacity-50"></i>
-            <p class="text-sm">موردی یافت نشد</p>
+        <div id="emptyState" class="hidden flex-col items-center justify-center py-20 text-slate-500 text-center animate-fade-in">
+            <div class="relative mb-4">
+                <div class="absolute inset-0 bg-sky-500/10 blur-2xl rounded-full"></div>
+                <i class="fas fa-ghost text-5xl relative z-10 text-slate-600 drop-shadow-md"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-300 mb-1">سروری یافت نشد!</h3>
+            <p class="text-xs text-slate-500 max-w-xs mb-5 leading-relaxed">کانفیگی با فیلتر یا عبارت مورد نظر شما در دیتابیس ۱۲ ساعت گذشته پیدا نشد.</p>
+            <button onclick="resetFilters()" class="bg-slate-900 hover:bg-slate-800 text-sky-400 px-5 py-2 rounded-xl text-xs font-semibold border border-slate-800 transition-all active:scale-95 flex items-center gap-1.5">
+                <i class="fas fa-arrow-rotate-left text-[10px]"></i> ریست کردن فیلترها
+            </button>
         </div>
     </main>
 
-    <nav class="fixed bottom-0 w-full bg-slate-900/80 backdrop-blur-xl border-t border-slate-700/50 pb-safe z-50">
+    <nav class="fixed bottom-0 w-full bg-slate-950/80 backdrop-blur-xl border-t border-slate-900 pb-safe z-50">
         <div class="max-w-xl mx-auto grid grid-cols-3 h-16 relative">
-            <div class="absolute -top-12 right-4">
-                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-slate-700/50 hover:bg-sky-500 text-white w-10 h-10 rounded-full backdrop-blur flex items-center justify-center shadow-lg transition-all">
-                    <i class="fas fa-arrow-up"></i>
+            <div class="absolute -top-14 left-4">
+                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-slate-900/60 hover:bg-sky-600 border border-slate-800 text-white w-10 h-10 rounded-full backdrop-blur flex items-center justify-center shadow-xl transition-all active:scale-90">
+                    <i class="fas fa-arrow-up text-xs"></i>
                  </button>
             </div>
             
-            <button onclick="location.reload()" class="group flex flex-col items-center justify-center text-slate-400 hover:text-sky-400 transition-colors">
-                <i class="fas fa-sync text-xl mb-1 group-active:rotate-180 transition-transform duration-500"></i>
-                <span class="text-[10px] font-medium">بروزرسانی</span>
+            <button onclick="fetchData()" class="group flex flex-col items-center justify-center text-slate-400 hover:text-sky-400 transition-colors">
+                <i class="fas fa-arrows-rotate text-lg mb-1 group-active:rotate-180 transition-transform duration-500"></i>
+                <span class="text-[10px] font-medium">بروزرسانی لایو</span>
             </button>
             
-            <a href="https://t.me/myvpn1404" class="flex flex-col items-center justify-center text-slate-400 hover:text-sky-400 transition-colors">
-                <div class="bg-sky-500/10 p-2 rounded-xl mb-0.5">
-                     <i class="fab fa-telegram text-xl text-sky-500"></i>
+            <a href="https://t.me/myvpn1404" target="_blank" class="flex flex-col items-center justify-center text-slate-400 hover:text-sky-400 transition-colors">
+                <div class="bg-sky-500/10 p-2.5 rounded-xl mb-0.5 shadow-inner">
+                     <i class="fab fa-telegram text-lg text-sky-400"></i>
                 </div>
             </a>
 
-           <a href="https://github.com/mostafa5804" class="flex flex-col items-center justify-center text-slate-400 hover:text-white transition-colors">
-               <i class="fab fa-github text-xl mb-1"></i>
-                    <span class="text-[10px] font-medium">گیتهاب</span>
+           <a href="https://github.com/mostafa5804" target="_blank" class="flex flex-col items-center justify-center text-slate-400 hover:text-white transition-colors">
+               <i class="fab fa-github text-lg mb-1"></i>
+               <span class="text-[10px] font-medium">مخزن گیت‌هاب</span>
           </a>
         </div>
     </nav>
 
-    <div id="qrModal" class="fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
-        <div class="bg-slate-800 p-6 rounded-2xl max-w-xs w-full mx-4 transform scale-95 transition-transform duration-300 shadow-2xl border border-slate-700">
+    <div id="qrModal" class="fixed inset-0 z-[60] bg-black/80 backdrop-blur-md hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <div class="bg-slate-900 p-6 rounded-2xl max-w-xs w-full mx-4 transform scale-95 transition-transform duration-300 shadow-2xl border border-slate-800">
             <div class="flex justify-between items-center mb-4">
-                <h3 class="text-white font-bold">اسکن کد QR</h3>
-                <button onclick="closeQR()" class="text-slate-400 hover:text-white"><i class="fas fa-times text-xl"></i></button>
+                <h3 class="text-white font-bold text-sm" id="qrModalTitle">اسکن کد QR</h3>
+                <button onclick="closeQR()" class="text-slate-400 hover:text-white w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center transition-colors"><i class="fas fa-times text-xs"></i></button>
             </div>
-            <div id="qrcode" class="bg-white p-3 rounded-xl flex justify-center overflow-hidden"></div>
-            <p class="text-center text-slate-400 text-xs mt-4">برای اتصال در برنامه اسکن کنید</p>
+            <div class="bg-white p-3 rounded-xl flex justify-center overflow-hidden shadow-inner">
+                <div id="qrcode"></div>
+            </div>
+            <p class="text-center text-slate-400 text-[11px] mt-4 leading-relaxed" id="qrModalDesc">برای اتصال سریع، بارکد فوق را داخل نرم‌افزار اسکن کنید.</p>
         </div>
     </div>
 
-    <div id="toast" class="fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-slate-800 border border-slate-700 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 translate-y-10 opacity-0 transition-all duration-300 z-[60]">
-        <div class="bg-emerald-500/20 text-emerald-400 rounded-full p-1"><i class="fas fa-check-circle"></i></div>
-        <span class="text-sm font-medium">کپی شد!</span>
+    <div id="toast" class="fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-slate-900 border border-slate-800 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 translate-y-10 opacity-0 transition-all duration-300 z-[60]">
+        <div class="bg-emerald-500/20 text-emerald-400 rounded-full w-6 h-6 flex items-center justify-center text-xs"><i class="fas fa-check"></i></div>
+        <span class="text-xs font-semibold" id="toastText">با موفقیت کپی شد!</span>
     </div>
 
     <script>
-        // Copy Logic
-        document.querySelectorAll('.copy-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const text = this.getAttribute('data-clipboard');
-                navigator.clipboard.writeText(text).then(() => showToast());
-                
-                // Visual Feedback
-                const originalContent = this.innerHTML;
-                this.classList.replace('bg-sky-600/90', 'bg-emerald-600');
-                this.innerHTML = '<i class="fas fa-check"></i> <span>OK</span>';
-                setTimeout(() => {
-                    this.classList.replace('bg-emerald-600', 'bg-sky-600/90');
-                    this.innerHTML = originalContent;
-                }, 1500);
-            });
+        let rawDatabase = { configs: [], proxies: [], files: [] };
+        let activeFilterType = 'all';
+        let activeSortType = 'date';
+        const subscriptionLink = "https://raw.githubusercontent.com/mostafa5804/Myvpn1404/refs/heads/main/sub.txt";
+
+        // Initial Initialization Lifecycle
+        document.addEventListener("DOMContentLoaded", () => {
+            fetchData();
         });
 
-        function showToast() {
-            const t = document.getElementById('toast');
-            t.classList.remove('translate-y-10', 'opacity-0');
-            setTimeout(() => t.classList.add('translate-y-10', 'opacity-0'), 2000);
-        }
-
-        // Filter Logic
-        function filterItems(type, btn) {
-            // Active Button State
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            filterGrid();
-        }
-
-        // Search Logic
-        const searchInput = document.getElementById('searchInput');
-        searchInput.addEventListener('input', filterGrid);
-
-        function filterGrid() {
-            const type = document.querySelector('.filter-btn.active').getAttribute('onclick').match(/'([^']+)'/)[1];
-            const term = searchInput.value.toLowerCase();
-            const cards = document.querySelectorAll('.card');
-            let hasVisible = false;
-
-            cards.forEach(card => {
-                const cardType = card.getAttribute('data-type');
-                const cardSearch = card.getAttribute('data-search');
+        // Async Live API Fetch Data Implementation
+        async function fetchData() {
+            showSkeletons();
+            try {
+                // Prevent aggressive browser caching using timestamp queries
+                const res = await fetch(`./data.json?t=${new Date().getTime()}`);
+                if (!res.ok) throw new Error("Network status invalid");
+                rawDatabase = await res.json();
                 
-                const typeMatch = type === 'all' || cardType.includes(type);
-                const searchMatch = cardSearch.includes(term);
-
-                if (typeMatch && searchMatch) {
-                    card.style.display = 'block';
-                    // Re-trigger animation
-                    card.style.animation = 'none';
-                    card.offsetHeight; /* trigger reflow */
-                    card.style.animation = null; 
-                    hasVisible = true;
+                // Parse timestamp header config safely
+                if (rawDatabase.configs && rawDatabase.configs.length > 0) {
+                    const sampleTs = rawDatabase.configs[0].ts * 1000;
+                    const dateObj = new Date(sampleTs);
+                    document.getElementById('updateTime').innerText = dateObj.toLocaleTimeString('fa-IR', { hour: '2-digit', minute: '2-digit' }) + " - " + dateObj.toLocaleDateString('fa-IR');
                 } else {
-                    card.style.display = 'none';
+                    document.getElementById('updateTime').innerText = "بروزرسانی زنده فعال";
                 }
-            });
-            
-            document.getElementById('emptyState').classList.toggle('hidden', !hasVisible);
+                
+                renderGrid();
+            } catch (err) {
+                console.error("Critical fetching issue:", err);
+                document.getElementById('grid').innerHTML = `<p class="text-center text-rose-400 py-6 text-xs font-bold"><i class="fas fa-triangle-exclamation pl-1"></i>خطا در بارگذاری پایگاه داده زنده</p>`;
+            }
         }
 
-        // QR Code Logic
+        function showSkeletons() {
+            const grid = document.getElementById('grid');
+            document.getElementById('emptyState').classList.add('hidden');
+            grid.innerHTML = Array(3).fill(`
+                <div class="bg-slate-900/40 border border-slate-900 rounded-2xl p-4 space-y-4 animate-pulse">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-slate-800 rounded-xl"></div><div class="space-y-2"><div class="w-24 h-4 bg-slate-800 rounded"></div><div class="w-16 h-3 bg-slate-800 rounded"></div></div></div>
+                        <div class="w-16 h-6 bg-slate-800 rounded-lg"></div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2"><div class="h-10 bg-slate-800 rounded-xl"></div><div class="h-10 bg-slate-800 rounded-xl"></div></div>
+                </div>
+            `).join('');
+        }
+
+        // Filter Action Mutation Mutator
+        function filterType(type, element) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+            activeFilterType = type;
+            renderGrid();
+        }
+
+        // Sort Action Mutation Mutator
+        function changeSort(method, element) {
+            document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+            activeSortType = method;
+            renderGrid();
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            filterType('all', document.querySelector('.filter-btn'));
+        }
+
+        // Advanced Signal Strength Calculation Utility
+        function generateSignalBars(latency) {
+            let colorClass = "bg-rose-500";
+            let activeBars = 1;
+            
+            if (latency < 180) {
+                colorClass = "bg-emerald-400";
+                activeBars = 3;
+            } else if (latency < 450) {
+                colorClass = "bg-yellow-400";
+                activeBars = 2;
+            }
+            
+            return `
+                <div class="flex items-end gap-[2px] h-3.5 pb-0.5" title="پینگ: ${latency}ms">
+                    <div class="w-1 h-1.5 ${activeBars >= 1 ? colorClass : 'bg-slate-700'} rounded-sm"></div>
+                    <div class="w-1 h-2.5 ${activeBars >= 2 ? colorClass : 'bg-slate-700'} rounded-sm"></div>
+                    <div class="w-1 h-3.5 ${activeBars >= 3 ? colorClass : 'bg-slate-700'} rounded-sm"></div>
+                </div>
+            `;
+        }
+
+        // Grid Compiler Rendering Pipeline Engine
+        function renderGrid() {
+            const grid = document.getElementById('grid');
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            let compiledItems = [];
+
+            // Compile unified structure from split data architecture
+            if (activeFilterType === 'all' || ['VLESS', 'VMESS', 'TROJAN'].includes(activeFilterType)) {
+                let confs = (rawDatabase.configs || []).map(item => ({ ...item, masterType: 'config' }));
+                if (activeFilterType !== 'all') {
+                    confs = confs.filter(c => c.protocol.toUpperCase() === activeFilterType);
+                }
+                compiledItems = compiledItems.concat(confs);
+            }
+
+            if (activeFilterType === 'all' || activeFilterType === 'MTPROXY') {
+                let proxies = (rawDatabase.proxies || []).map(item => ({ ...item, masterType: 'proxy', protocol: 'MTPROXY' }));
+                compiledItems = compiledItems.concat(proxies);
+            }
+
+            if (activeFilterType === 'FILES') {
+                let files = (rawDatabase.files || []).map(item => ({ ...item, masterType: 'file', protocol: item.ext }));
+                compiledItems = compiledItems.concat(files);
+            }
+
+            // Text search algorithmic evaluation filter
+            if (searchTerm) {
+                compiledItems = compiledItems.filter(item => {
+                    const country = (item.country || '').toLowerCase();
+                    const protocol = (item.protocol || '').toLowerCase();
+                    const channel = (item.channel || '').toLowerCase();
+                    const name = (item.name || '').toLowerCase();
+                    return country.includes(searchTerm) || protocol.includes(searchTerm) || channel.includes(searchTerm) || name.includes(searchTerm);
+                });
+            }
+
+            // Advanced Sort engine integration
+            if (activeSortType === 'date') {
+                compiledItems.sort((a, b) => b.ts - a.ts);
+            } else if (activeSortType === 'ping') {
+                compiledItems.sort((a, b) => {
+                    const pA = a.masterType === 'file' ? 9999 : parseInt(a.latency || 9999);
+                    const pB = b.masterType === 'file' ? 9999 : parseInt(b.latency || 9999);
+                    return pA - pB;
+                });
+            }
+
+            if (compiledItems.length === 0) {
+                grid.innerHTML = '';
+                document.getElementById('emptyState').classList.remove('hidden');
+                return;
+            }
+            document.getElementById('emptyState').classList.add('hidden');
+
+            // Virtual mapping execution loop inside UI DOM
+            grid.innerHTML = compiledItems.map((item, index) => {
+                if (item.masterType === 'config') {
+                    const lat = parseInt(item.latency || 999);
+                    const pingColor = lat < 180 ? "text-emerald-400 bg-emerald-500/5 border-emerald-500/20" : lat < 450 ? "text-yellow-400 bg-yellow-500/5 border-yellow-500/20" : "text-rose-400 bg-rose-500/5 border-rose-500/20";
+                    
+                    return `
+                        <div class="card group relative bg-gradient-to-b from-slate-900/90 to-slate-950/90 backdrop-blur-md rounded-2xl p-4 border border-slate-800/80 hover:border-sky-500/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_-6px_rgba(56,189,248,0.15)] overflow-hidden">
+                            <div class="flex justify-between items-start mb-3.5">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-3xl filter drop-shadow-md select-none">${item.flag || '🏳️'}</span>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="font-extrabold text-sky-400 text-xs tracking-wider">${item.protocol.toUpperCase()}</span>
+                                            <span class="text-[9px] text-slate-400 border border-slate-800 rounded bg-slate-900 px-1 py-0.5 font-medium">${item.country || 'Global'}</span>
+                                        </div>
+                                        <div class="text-[10px] text-slate-500 mt-1 truncate max-w-[150px] font-medium"><i class="far fa-paper-plane pl-1 text-[9px]"></i>${item.channel}</div>
+                                    </div>
+                                </div>
+                                <div class="text-[11px] font-mono font-bold ${pingColor} border px-2 py-1 rounded-lg flex items-center gap-1.5 shadow-inner">
+                                    ${generateSignalBars(lat)}
+                                    <span>${lat}ms</span>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="copyToClipboard('${escapeHtml(item.config)}')" class="col-span-1 bg-sky-600/90 hover:bg-sky-500 text-slate-950 py-2.5 rounded-xl text-xs font-bold transition-all flex justify-center items-center gap-1.5 shadow-md shadow-sky-950/20">
+                                    <i class="fas fa-copy"></i> کپی کانفیگ
+                                </button>
+                                <button onclick="showIndividualQR('${escapeHtml(item.config)}', '${item.protocol}')" class="col-span-1 bg-slate-900 hover:bg-slate-850 text-slate-300 py-2.5 rounded-xl text-xs font-semibold transition-all flex justify-center items-center gap-1.5 border border-slate-800">
+                                    <i class="fas fa-qrcode text-slate-400"></i> بارکد QR
+                                </button>
+                            </div>
+                        </div>`;
+                } else if (item.masterType === 'proxy') {
+                    const lat = parseInt(item.latency || 999);
+                    const pingColor = lat < 180 ? "text-emerald-400 bg-emerald-500/5 border-emerald-500/20" : lat < 450 ? "text-yellow-400 bg-yellow-500/5 border-yellow-500/20" : "text-rose-400 bg-rose-500/5 border-rose-500/20";
+                    
+                    return `
+                        <div class="card group relative bg-gradient-to-b from-slate-900/90 to-slate-950/90 backdrop-blur-md rounded-2xl p-4 border border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_-6px_rgba(52,211,153,0.15)] overflow-hidden">
+                            <div class="flex justify-between items-start mb-3.5">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-3xl filter drop-shadow-md select-none">${item.flag || '🏳️'}</span>
+                                    <div>
+                                        <div class="flex items-center gap-1.5">
+                                            <span class="font-extrabold text-emerald-400 text-xs tracking-wider bg-emerald-950/30 border border-emerald-900/40 px-1.5 py-0.5 rounded">MTProxy</span>
+                                        </div>
+                                        <div class="text-[10px] text-slate-500 mt-1 truncate max-w-[150px] font-medium"><i class="far fa-paper-plane pl-1 text-[9px]"></i>${item.channel}</div>
+                                    </div>
+                                </div>
+                                <div class="text-[11px] font-mono font-bold ${pingColor} border px-2 py-1 rounded-lg flex items-center gap-1.5 shadow-inner">
+                                    ${generateSignalBars(lat)}
+                                    <span>${lat}ms</span>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1">
+                                <a href="${item.link}" class="w-full bg-emerald-600/90 hover:bg-emerald-500 text-slate-950 py-2.5 rounded-xl text-xs font-bold transition-all flex justify-center items-center gap-1.5 shadow-md shadow-emerald-950/20">
+                                    <i class="fas fa-paper-plane"></i> اتصال مستقیم به پروکسی تلگرام
+                                </a>
+                            </div>
+                        </div>`;
+                } else if (item.masterType === 'file') {
+                    return `
+                        <div class="card group relative bg-gradient-to-b from-slate-900/90 to-slate-950/90 backdrop-blur-md rounded-2xl p-4 border border-slate-800/80 hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_-6px_rgba(129,140,248,0.15)] overflow-hidden">
+                            <div class="flex justify-between items-start mb-3.5">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-indigo-950/40 border border-indigo-900/40 flex items-center justify-center text-indigo-400 text-lg shadow-inner"><i class="fas fa-file-code"></i></div>
+                                    <div>
+                                        <h4 class="text-xs font-bold text-slate-200 line-clamp-1 max-w-[180px]">${item.name}</h4>
+                                        <div class="text-[10px] text-slate-500 mt-1 truncate max-w-[150px] font-medium"><i class="far fa-paper-plane pl-1 text-[9px]"></i>${item.channel}</div>
+                                    </div>
+                                </div>
+                                <span class="text-[9px] font-extrabold text-indigo-400 border border-indigo-900/40 bg-indigo-950/30 px-2 py-0.5 rounded">${item.protocol}</span>
+                            </div>
+                            <div class="grid grid-cols-1">
+                                <a href="${item.link}" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2.5 rounded-xl text-xs font-bold transition-all flex justify-center items-center gap-1.5 shadow-md shadow-indigo-950/20">
+                                    <i class="fas fa-download"></i> دانلود فایل از منبع اصلی تلگرام
+                                </a>
+                            </div>
+                        </div>`;
+                }
+            }).join('');
+        }
+
+        // Global Copy Clipboard Engine
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast("کانفیگ با موفقیت کپی شد.");
+            }).catch(err => {
+                console.error("Copy failed", err);
+            });
+        }
+
+        // Advanced Copy All Visible Strategy Filter Logic
+        function copyAllVisible() {
+            const cards = document.querySelectorAll('#grid .card');
+            let accumulatedConfigs = [];
+            
+            // Re-filtering visible components inside dynamic DOM
+            const searchInput = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            let filtered = (rawDatabase.configs || []);
+            if (activeFilterType !== 'all' && ['VLESS', 'VMESS', 'TROJAN'].includes(activeFilterType)) {
+                filtered = filtered.filter(c => c.protocol.toUpperCase() === activeFilterType);
+            } else if (['MTPROXY', 'FILES'].includes(activeFilterType)) {
+                filtered = []; // Omit non-v2ray configs from subscription list
+            }
+
+            if (searchInput) {
+                filtered = filtered.filter(item => {
+                    return (item.country || '').toLowerCase().includes(searchInput) || 
+                           (item.protocol || '').toLowerCase().includes(searchInput) || 
+                           (item.channel || '').toLowerCase().includes(searchInput);
+                });
+            }
+
+            if (filtered.length === 0) {
+                showToast("کانفیگ معتبری برای کپی یافت نشد", true);
+                return;
+            }
+
+            const payload = filtered.map(c => c.config).join('\n');
+            navigator.clipboard.writeText(payload).then(() => {
+                showToast(`${filtered.length} کانفیگ کپی شدند.`);
+            });
+        }
+
+        // Toast Orchestration System
+        function showToast(text, isWarning = false) {
+            const t = document.getElementById('toast');
+            const textEl = document.getElementById('toastText');
+            textEl.innerText = text;
+            
+            t.classList.remove('translate-y-10', 'opacity-0');
+            setTimeout(() => t.classList.add('translate-y-10', 'opacity-0'), 2500);
+        }
+
+        // Dedicated QR Modal Management
         const modal = document.getElementById('qrModal');
         const modalContent = modal.querySelector('div');
         
-        function showQR(text) {
+        function openModalCore(title, desc, textToQr) {
+            document.getElementById('qrModalTitle').innerText = title;
+            document.getElementById('qrModalDesc').innerText = desc;
             document.getElementById('qrcode').innerHTML = "";
+            
             new QRCode(document.getElementById("qrcode"), {
-                text: text,
+                text: textToQr,
                 width: 200,
                 height: 200,
-                colorDark : "#000000",
+                colorDark : "#020617",
                 colorLight : "#ffffff",
                 correctLevel : QRCode.CorrectLevel.M
             });
             
             modal.classList.remove('hidden');
-            // Small delay for transition
             setTimeout(() => {
                 modal.classList.remove('opacity-0');
                 modalContent.classList.remove('scale-95');
                 modalContent.classList.add('scale-100');
-            }, 10);
+            }, 20);
+        }
+
+        function showIndividualQR(configStr, protocol) {
+            openModalCore(`بارکد اتصال ${protocol}`, "برای اتصال مستقیم گوشی، بارکد فوق را داخل کلاینت خود اسکن کنید.", configStr);
+        }
+
+        function showSubQR() {
+            openModalCore("بارکد کل لینک اشتراک", "آدرس سابسکریپشن کامل شما؛ بارکد فوق را اسکن کنید تا کل پایگاه داده به نرم‌افزار ایمپورت شود.", subscriptionLink);
         }
 
         function closeQR() {
@@ -234,10 +489,11 @@
             setTimeout(() => modal.classList.add('hidden'), 300);
         }
         
-        // Close modal on outside click
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeQR();
-        });
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeQR(); });
+
+        function escapeHtml(str) {
+            return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
     </script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" class="dark">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>VPN Hub Premium</title>
-    <meta name="theme-color" content="#0f172a">
+    <title>VPN Hub Premium 2026</title>
+    <meta name="theme-color" content="#f0f9ff">
     
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2099/2099192.png">
@@ -18,150 +18,264 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Vazirmatn', 'sans-serif'] }
+                    fontFamily: { sans: ['Vazirmatn', 'sans-serif'] },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        secondary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    }
                 }
             }
         }
     </script>
     
     <style>
-        body { font-family: 'Vazirmatn', sans-serif; background-color: #020617; color: #f8fafc; -webkit-tap-highlight-color: transparent; }
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
         .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
-        ::-webkit-scrollbar { width: 5px; height: 5px; }
-        ::-webkit-scrollbar-track { background: #0f172a; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
-        .filter-btn.active { background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #020617; font-weight: 800; border-color: #38bdf8; box-shadow: 0 0 15px rgba(56,189,248,0.4); }
-        .sort-btn.active { background-color: #1e293b; color: #38bdf8; border-color: #38bdf8/50; }
-        @keyframes pulse-glow { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; transform: scale(1.05); } }
-        .live-dot { animation: pulse-glow 2s infinite; }
+        
+        ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        
+        .filter-btn.active {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            font-weight: 800;
+            border-color: #3b82f6;
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+        }
+        
+        .sort-btn.active {
+            background-color: #e2e8f0;
+            color: #3b82f6;
+            border-color: #3b82f6;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+        
+        .live-dot {
+            animation: pulse-glow 2s infinite;
+        }
+        
+        .card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px -8px rgba(59, 130, 246, 0.2);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
-<body class="min-h-screen flex flex-col pb-24 selection:bg-sky-500/30 selection:text-sky-200">
+
+<body class="min-h-screen flex flex-col pb-24 selection:bg-primary-500/30 selection:text-primary-700">
     
-    <header class="fixed top-0 w-full bg-slate-950/75 backdrop-blur-xl border-b border-slate-800/60 z-40 transition-all duration-300">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/80 backdrop-blur-xl border-b border-gray-200 z-40 transition-all duration-300">
         <div class="max-w-xl mx-auto px-4 h-16 flex justify-between items-center">
             <div class="flex flex-col">
-                <h1 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-400 to-emerald-400 tracking-tight">VPN Hub <span class="text-xs font-bold bg-sky-500/10 text-sky-400 px-2 py-0.5 rounded-full border border-sky-500/20">PRO</span></h1>
-                <div class="flex items-center gap-1.5 text-[10px] text-slate-400 font-mono mt-0.5">
+                <h1 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 tracking-tight">
+                    VPN Hub <span class="text-xs font-bold bg-primary-50 text-primary-600 px-2 py-0.5 rounded-full border border-primary-200">PRO 2026</span>
+                </h1>
+                <div class="flex items-center gap-1.5 text-[10px] text-slate-500 font-mono mt-0.5">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 live-dot"></span>
                     <span id="updateTime">در حال بروزرسانی...</span>
                 </div>
             </div>
             <div class="flex gap-2">
-                <button onclick="showSubQR()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 w-9 h-9 rounded-full flex items-center justify-center border border-slate-700 transition-all active:scale-95" title="کد QR اشتراک">
+                <button onclick="showSubQR()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 w-9 h-9 rounded-full flex items-center justify-center border border-slate-200 transition-all active:scale-95" title="کد QR اشتراک">
                     <i class="fas fa-qrcode text-sm"></i>
                 </button>
-                <a href="https://raw.githubusercontent.com/mostafa5804/Myvpn1404/refs/heads/main/sub.txt" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg shadow-emerald-950/40 transition-all active:scale-95 flex items-center gap-2 border border-emerald-500/20">
+                <a href="https://raw.githubusercontent.com/mostafa5804/Myvpn1404/refs/heads/main/sub.txt" class="bg-gradient-to-r from-secondary-600 to-emerald-600 hover:from-secondary-500 hover:to-emerald-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg shadow-secondary-500/20 transition-all active:scale-95 flex items-center gap-2 border border-secondary-200">
                     <i class="fas fa-rss animate-pulse"></i> لینک اشتراک
                 </a>
             </div>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main class="max-w-xl mx-auto w-full pt-20 px-4 flex-grow">
         
-        <div class="sticky top-16 bg-slate-950/90 backdrop-blur-md z-30 py-4 -mx-4 px-4 border-b border-slate-900 mb-4 space-y-3.5">
+        <!-- Search & Filter Section -->
+        <div class="sticky top-16 bg-white/80 backdrop-blur-md z-30 py-4 -mx-4 px-4 border-b border-gray-200 mb-4 space-y-3.5">
             <div class="relative group">
-                <i class="fas fa-search absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-sky-400 transition-colors"></i>
-                <input type="text" id="searchInput" oninput="filterGrid()" placeholder="جستجو بر اساس کشور، پروتکل یا کانال..." class="w-full bg-slate-900 text-white text-sm rounded-xl pl-4 pr-11 py-3.5 border border-slate-800 focus:border-sky-500/50 focus:ring-2 focus:ring-sky-950 outline-none transition-all placeholder-slate-500 shadow-inner">
+                <i class="fas fa-search absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-primary-500 transition-colors"></i>
+                <input type="text" id="searchInput" oninput="filterGrid()" placeholder="جستجو بر اساس کشور، پروتکل یا کانال..." class="w-full bg-slate-50 text-slate-800 text-sm rounded-xl pl-4 pr-11 py-3.5 border border-slate-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-50/20 outline-none transition-all placeholder-slate-400 shadow-sm">
             </div>
             
             <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-                <button onclick="filterType('all', this)" class="filter-btn active flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">همه سرورها</button>
-                <button onclick="filterType('VLESS', this)" class="filter-btn flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">VLESS</button>
-                <button onclick="filterType('VMESS', this)" class="filter-btn flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">VMess</button>
-                <button onclick="filterType('TROJAN', this)" class="filter-btn flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">Trojan</button>
-                <button onclick="filterType('MTPROXY', this)" class="filter-btn flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">MTProxy</button>
-                <button onclick="filterType('FILES', this)" class="filter-btn flex-shrink-0 bg-slate-900 text-slate-400 px-5 py-2 rounded-full text-xs border border-slate-800 transition-all">فایل‌ها (NPVT)</button>
+                <button onclick="filterType('all', this)" class="filter-btn active flex-shrink-0 bg-slate-50 text-slate-600 px-5 py-2 rounded-full text-xs border border-slate-200 transition-all">همه سرورها</button>
+                <button onclick="filterType('VLESS', this)" class="filter-btn flex-shrink-0 bg-slate-50 text-slate-600 px-5 py-2 rounded-full text-xs border border-slate-200 transition-all">VLESS</button>
+                <button onclick="filterType('VMESS', this)" class="filter-btn flex-shrink-0 bg-slate-50 text-slate-600 px-5 py-2 rounded-full text-xs border border-slate-200 transition-all">VMess</button>
+                <button onclick="filterType('TROJAN', this)" class="filter-btn flex-shrink-0 bg-slate-50 text-slate-600 px-5 py-2 rounded-full text-xs border border-slate-200 transition-all">Trojan</button>
+                <button onclick="filterType('MTPROXY', this)" class="filter-btn flex-shrink-0 bg-slate-50 text-slate-600 px-5 py-2 rounded-full text-xs border border-slate-200 transition-all">MTProxy</button>
+                <button onclick="filterType('FILES', this)" class="filter-btn flex-shrink-0 bg-slate-50 text-slate-600 px-5 py-2 rounded-full text-xs border border-slate-200 transition-all">فایل‌ها (NPVT)</button>
             </div>
 
             <div class="flex items-center justify-between pt-1 gap-4">
-                <div class="flex gap-1.5 bg-slate-900/60 p-0.5 rounded-lg border border-slate-800/80">
-                    <button onclick="changeSort('date', this)" class="sort-btn active px-3 py-1.5 rounded-md text-[11px] font-medium text-slate-400 border border-transparent transition-all">
+                <div class="flex gap-1.5 bg-slate-50/60 p-0.5 rounded-lg border border-slate-200">
+                    <button onclick="changeSort('date', this)" class="sort-btn active px-3 py-1.5 rounded-md text-[11px] font-medium text-slate-600 border border-transparent transition-all">
                         <i class="fas fa-clock pl-1"></i>جدیدترین
                     </button>
-                    <button onclick="changeSort('ping', this)" class="sort-btn px-3 py-1.5 rounded-md text-[11px] font-medium text-slate-400 border border-transparent transition-all">
+                    <button onclick="changeSort('ping', this)" class="sort-btn px-3 py-1.5 rounded-md text-[11px] font-medium text-slate-600 border border-transparent transition-all">
                         <i class="fas fa-bolt pl-1"></i>کمترین پینگ
                     </button>
                 </div>
                 
-                <button onclick="copyAllVisible()" id="copyAllBtn" class="bg-sky-950/40 hover:bg-sky-900/60 text-sky-400 border border-sky-900/50 px-3 py-1.5 rounded-lg text-[11px] font-bold transition-all flex items-center gap-1.5 shadow-sm">
+                <button onclick="copyAllVisible()" id="copyAllBtn" class="bg-primary-50 hover:bg-primary-100 text-primary-700 border border-primary-200 px-3 py-1.5 rounded-lg text-[11px] font-bold transition-all flex items-center gap-1.5 shadow-sm">
                     <i class="fas fa-copy"></i> کپی همه فیلتر شده‌ها
                 </button>
             </div>
         </div>
 
+        <!-- Grid Section -->
         <div id="grid" class="grid gap-4">
-            <div class="skeleton-card bg-slate-900/40 border border-slate-900 rounded-2xl p-4 space-y-4 animate-pulse">
+            <!-- Skeleton Loaders -->
+            <div class="skeleton-card bg-slate-50 border border-slate-200 rounded-2xl p-4 space-y-4 animate-pulse">
                 <div class="flex justify-between items-center">
-                    <div class="flex items-center gap-3"><div class="w-10 h-10 bg-slate-800 rounded-xl"></div><div class="space-y-2"><div class="w-20 h-4 bg-slate-800 rounded"></div><div class="w-12 h-3 bg-slate-800 rounded"></div></div></div>
-                    <div class="w-16 h-6 bg-slate-800 rounded-lg"></div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-slate-200 rounded-xl"></div>
+                        <div class="space-y-2">
+                            <div class="w-20 h-4 bg-slate-200 rounded"></div>
+                            <div class="w-12 h-3 bg-slate-200 rounded"></div>
+                        </div>
+                    </div>
+                    <div class="w-16 h-6 bg-slate-200 rounded-lg"></div>
                 </div>
-                <div class="grid grid-cols-2 gap-2"><div class="h-10 bg-slate-800 rounded-xl"></div><div class="h-10 bg-slate-800 rounded-xl"></div></div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="h-10 bg-slate-200 rounded-xl"></div>
+                    <div class="h-10 bg-slate-200 rounded-xl"></div>
+                </div>
             </div>
-            <div class="skeleton-card bg-slate-900/40 border border-slate-900 rounded-2xl p-4 space-y-4 animate-pulse">
+            <div class="skeleton-card bg-slate-50 border border-slate-200 rounded-2xl p-4 space-y-4 animate-pulse">
                 <div class="flex justify-between items-center">
-                    <div class="flex items-center gap-3"><div class="w-10 h-10 bg-slate-800 rounded-xl"></div><div class="space-y-2"><div class="w-24 h-4 bg-slate-800 rounded"></div><div class="w-16 h-3 bg-slate-800 rounded"></div></div></div>
-                    <div class="w-16 h-6 bg-slate-800 rounded-lg"></div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-slate-200 rounded-xl"></div>
+                        <div class="space-y-2">
+                            <div class="w-24 h-4 bg-slate-200 rounded"></div>
+                            <div class="w-16 h-3 bg-slate-200 rounded"></div>
+                        </div>
+                    </div>
+                    <div class="w-16 h-6 bg-slate-200 rounded-lg"></div>
                 </div>
-                <div class="grid grid-cols-2 gap-2"><div class="h-10 bg-slate-800 rounded-xl"></div><div class="h-10 bg-slate-800 rounded-xl"></div></div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="h-10 bg-slate-200 rounded-xl"></div>
+                    <div class="h-10 bg-slate-200 rounded-xl"></div>
+                </div>
             </div>
         </div>
         
+        <!-- Empty State -->
         <div id="emptyState" class="hidden flex-col items-center justify-center py-20 text-slate-500 text-center animate-fade-in">
             <div class="relative mb-4">
-                <div class="absolute inset-0 bg-sky-500/10 blur-2xl rounded-full"></div>
-                <i class="fas fa-ghost text-5xl relative z-10 text-slate-600 drop-shadow-md"></i>
+                <div class="absolute inset-0 bg-primary-500/10 blur-2xl rounded-full"></div>
+                <i class="fas fa-ghost text-5xl relative z-10 text-slate-400 drop-shadow-md"></i>
             </div>
-            <h3 class="text-base font-bold text-slate-300 mb-1">سروری یافت نشد!</h3>
+            <h3 class="text-base font-bold text-slate-700 mb-1">سروری یافت نشد!</h3>
             <p class="text-xs text-slate-500 max-w-xs mb-5 leading-relaxed">کانفیگی با فیلتر یا عبارت مورد نظر شما در دیتابیس ۱۲ ساعت گذشته پیدا نشد.</p>
-            <button onclick="resetFilters()" class="bg-slate-900 hover:bg-slate-800 text-sky-400 px-5 py-2 rounded-xl text-xs font-semibold border border-slate-800 transition-all active:scale-95 flex items-center gap-1.5">
+            <button onclick="resetFilters()" class="bg-slate-100 hover:bg-slate-200 text-primary-600 px-5 py-2 rounded-xl text-xs font-semibold border border-slate-200 transition-all active:scale-95 flex items-center gap-1.5">
                 <i class="fas fa-arrow-rotate-left text-[10px]"></i> ریست کردن فیلترها
             </button>
         </div>
     </main>
 
-    <nav class="fixed bottom-0 w-full bg-slate-950/80 backdrop-blur-xl border-t border-slate-900 pb-safe z-50">
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 w-full bg-white/80 backdrop-blur-xl border-t border-gray-200 pb-safe z-50">
         <div class="max-w-xl mx-auto grid grid-cols-3 h-16 relative">
             <div class="absolute -top-14 left-4">
-                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-slate-900/60 hover:bg-sky-600 border border-slate-800 text-white w-10 h-10 rounded-full backdrop-blur flex items-center justify-center shadow-xl transition-all active:scale-90">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-slate-50/60 hover:bg-primary-500 border border-slate-200 text-slate-700 hover:text-white w-10 h-10 rounded-full backdrop-blur flex items-center justify-center shadow-xl transition-all active:scale-90">
                     <i class="fas fa-arrow-up text-xs"></i>
-                 </button>
+                </button>
             </div>
             
-            <button onclick="fetchData()" class="group flex flex-col items-center justify-center text-slate-400 hover:text-sky-400 transition-colors">
+            <button onclick="fetchData()" class="group flex flex-col items-center justify-center text-slate-500 hover:text-primary-600 transition-colors">
                 <i class="fas fa-arrows-rotate text-lg mb-1 group-active:rotate-180 transition-transform duration-500"></i>
                 <span class="text-[10px] font-medium">بروزرسانی لایو</span>
             </button>
             
-            <a href="https://t.me/myvpn1404" target="_blank" class="flex flex-col items-center justify-center text-slate-400 hover:text-sky-400 transition-colors">
-                <div class="bg-sky-500/10 p-2.5 rounded-xl mb-0.5 shadow-inner">
-                     <i class="fab fa-telegram text-lg text-sky-400"></i>
+            <a href="https://t.me/myvpn1404" target="_blank" class="flex flex-col items-center justify-center text-slate-500 hover:text-primary-600 transition-colors">
+                <div class="bg-primary-50 p-2.5 rounded-xl mb-0.5 shadow-inner">
+                    <i class="fab fa-telegram text-lg text-primary-600"></i>
                 </div>
             </a>
 
-           <a href="https://github.com/mostafa5804" target="_blank" class="flex flex-col items-center justify-center text-slate-400 hover:text-white transition-colors">
-               <i class="fab fa-github text-lg mb-1"></i>
-               <span class="text-[10px] font-medium">مخزن گیت‌هاب</span>
-          </a>
+            <a href="https://github.com/mostafa5804" target="_blank" class="flex flex-col items-center justify-center text-slate-500 hover:text-slate-900 transition-colors">
+                <i class="fab fa-github text-lg mb-1"></i>
+                <span class="text-[10px] font-medium">مخزن گیت‌هاب</span>
+            </a>
         </div>
     </nav>
 
-    <div id="qrModal" class="fixed inset-0 z-[60] bg-black/80 backdrop-blur-md hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
-        <div class="bg-slate-900 p-6 rounded-2xl max-w-xs w-full mx-4 transform scale-95 transition-transform duration-300 shadow-2xl border border-slate-800">
+    <!-- QR Modal -->
+    <div id="qrModal" class="fixed inset-0 z-[60] bg-black/50 backdrop-blur-md hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <div class="bg-white p-6 rounded-2xl max-w-xs w-full mx-4 transform scale-95 transition-transform duration-300 shadow-2xl border border-slate-200">
             <div class="flex justify-between items-center mb-4">
-                <h3 class="text-white font-bold text-sm" id="qrModalTitle">اسکن کد QR</h3>
-                <button onclick="closeQR()" class="text-slate-400 hover:text-white w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center transition-colors"><i class="fas fa-times text-xs"></i></button>
+                <h3 class="text-slate-800 font-bold text-sm" id="qrModalTitle">اسکن کد QR</h3>
+                <button onclick="closeQR()" class="text-slate-500 hover:text-slate-800 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center transition-colors">
+                    <i class="fas fa-times text-xs"></i>
+                </button>
             </div>
-            <div class="bg-white p-3 rounded-xl flex justify-center overflow-hidden shadow-inner">
+            <div class="bg-white p-3 rounded-xl flex justify-center overflow-hidden shadow-inner border border-slate-200">
                 <div id="qrcode"></div>
             </div>
-            <p class="text-center text-slate-400 text-[11px] mt-4 leading-relaxed" id="qrModalDesc">برای اتصال سریع، بارکد فوق را داخل نرم‌افزار اسکن کنید.</p>
+            <p class="text-center text-slate-500 text-[11px] mt-4 leading-relaxed" id="qrModalDesc">برای اتصال سریع، بارکد فوق را داخل نرم‌افزار اسکن کنید.</p>
         </div>
     </div>
 
-    <div id="toast" class="fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-slate-900 border border-slate-800 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 translate-y-10 opacity-0 transition-all duration-300 z-[60]">
-        <div class="bg-emerald-500/20 text-emerald-400 rounded-full w-6 h-6 flex items-center justify-center text-xs"><i class="fas fa-check"></i></div>
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-slate-800 border border-slate-700 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 translate-y-10 opacity-0 transition-all duration-300 z-[60]">
+        <div class="bg-emerald-500/20 text-emerald-400 rounded-full w-6 h-6 flex items-center justify-center text-xs">
+            <i class="fas fa-check"></i>
+        </div>
         <span class="text-xs font-semibold" id="toastText">با موفقیت کپی شد!</span>
     </div>
 
@@ -180,12 +294,10 @@
         async function fetchData() {
             showSkeletons();
             try {
-                // Prevent aggressive browser caching using timestamp queries
                 const res = await fetch(`./data.json?t=${new Date().getTime()}`);
                 if (!res.ok) throw new Error("Network status invalid");
                 rawDatabase = await res.json();
                 
-                // Parse timestamp header config safely
                 if (rawDatabase.configs && rawDatabase.configs.length > 0) {
                     const sampleTs = rawDatabase.configs[0].ts * 1000;
                     const dateObj = new Date(sampleTs);
@@ -197,7 +309,7 @@
                 renderGrid();
             } catch (err) {
                 console.error("Critical fetching issue:", err);
-                document.getElementById('grid').innerHTML = `<p class="text-center text-rose-400 py-6 text-xs font-bold"><i class="fas fa-triangle-exclamation pl-1"></i>خطا در بارگذاری پایگاه داده زنده</p>`;
+                document.getElementById('grid').innerHTML = `<p class="text-center text-rose-500 py-6 text-xs font-bold"><i class="fas fa-triangle-exclamation pl-1"></i>خطا در بارگذاری پایگاه داده زنده</p>`;
             }
         }
 
@@ -205,12 +317,21 @@
             const grid = document.getElementById('grid');
             document.getElementById('emptyState').classList.add('hidden');
             grid.innerHTML = Array(3).fill(`
-                <div class="bg-slate-900/40 border border-slate-900 rounded-2xl p-4 space-y-4 animate-pulse">
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 space-y-4 animate-pulse">
                     <div class="flex justify-between items-center">
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-slate-800 rounded-xl"></div><div class="space-y-2"><div class="w-24 h-4 bg-slate-800 rounded"></div><div class="w-16 h-3 bg-slate-800 rounded"></div></div></div>
-                        <div class="w-16 h-6 bg-slate-800 rounded-lg"></div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-slate-200 rounded-xl"></div>
+                            <div class="space-y-2">
+                                <div class="w-24 h-4 bg-slate-200 rounded"></div>
+                                <div class="w-16 h-3 bg-slate-200 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="w-16 h-6 bg-slate-200 rounded-lg"></div>
                     </div>
-                    <div class="grid grid-cols-2 gap-2"><div class="h-10 bg-slate-800 rounded-xl"></div><div class="h-10 bg-slate-800 rounded-xl"></div></div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="h-10 bg-slate-200 rounded-xl"></div>
+                        <div class="h-10 bg-slate-200 rounded-xl"></div>
+                    </div>
                 </div>
             `).join('');
         }
@@ -242,18 +363,18 @@
             let activeBars = 1;
             
             if (latency < 180) {
-                colorClass = "bg-emerald-400";
+                colorClass = "bg-emerald-500";
                 activeBars = 3;
             } else if (latency < 450) {
-                colorClass = "bg-yellow-400";
+                colorClass = "bg-yellow-500";
                 activeBars = 2;
             }
             
             return `
                 <div class="flex items-end gap-[2px] h-3.5 pb-0.5" title="پینگ: ${latency}ms">
-                    <div class="w-1 h-1.5 ${activeBars >= 1 ? colorClass : 'bg-slate-700'} rounded-sm"></div>
-                    <div class="w-1 h-2.5 ${activeBars >= 2 ? colorClass : 'bg-slate-700'} rounded-sm"></div>
-                    <div class="w-1 h-3.5 ${activeBars >= 3 ? colorClass : 'bg-slate-700'} rounded-sm"></div>
+                    <div class="w-1 h-1.5 ${activeBars >= 1 ? colorClass : 'bg-slate-300'} rounded-sm"></div>
+                    <div class="w-1 h-2.5 ${activeBars >= 2 ? colorClass : 'bg-slate-300'} rounded-sm"></div>
+                    <div class="w-1 h-3.5 ${activeBars >= 3 ? colorClass : 'bg-slate-300'} rounded-sm"></div>
                 </div>
             `;
         }
@@ -316,77 +437,79 @@
             grid.innerHTML = compiledItems.map((item, index) => {
                 if (item.masterType === 'config') {
                     const lat = parseInt(item.latency || 999);
-                    const pingColor = lat < 180 ? "text-emerald-400 bg-emerald-500/5 border-emerald-500/20" : lat < 450 ? "text-yellow-400 bg-yellow-500/5 border-yellow-500/20" : "text-rose-400 bg-rose-500/5 border-rose-500/20";
+                    const pingColor = lat < 180 ? "text-emerald-600 bg-emerald-50 border-emerald-200" : lat < 450 ? "text-yellow-600 bg-yellow-50 border-yellow-200" : "text-rose-600 bg-rose-50 border-rose-200";
                     
                     return `
-                        <div class="card group relative bg-gradient-to-b from-slate-900/90 to-slate-950/90 backdrop-blur-md rounded-2xl p-4 border border-slate-800/80 hover:border-sky-500/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_-6px_rgba(56,189,248,0.15)] overflow-hidden">
+                        <div class="card group relative bg-white rounded-2xl p-4 border border-slate-200 hover:border-primary-300 transition-all duration-300 hover:shadow-lg overflow-hidden">
                             <div class="flex justify-between items-start mb-3.5">
                                 <div class="flex items-center gap-3">
                                     <span class="text-3xl filter drop-shadow-md select-none">${item.flag || '🏳️'}</span>
                                     <div>
                                         <div class="flex items-center gap-2">
-                                            <span class="font-extrabold text-sky-400 text-xs tracking-wider">${item.protocol.toUpperCase()}</span>
-                                            <span class="text-[9px] text-slate-400 border border-slate-800 rounded bg-slate-900 px-1 py-0.5 font-medium">${item.country || 'Global'}</span>
+                                            <span class="font-extrabold text-primary-600 text-xs tracking-wider">${item.protocol.toUpperCase()}</span>
+                                            <span class="text-[9px] text-slate-500 border border-slate-200 rounded bg-slate-50 px-1 py-0.5 font-medium">${item.country || 'Global'}</span>
                                         </div>
                                         <div class="text-[10px] text-slate-500 mt-1 truncate max-w-[150px] font-medium"><i class="far fa-paper-plane pl-1 text-[9px]"></i>${item.channel}</div>
                                     </div>
                                 </div>
-                                <div class="text-[11px] font-mono font-bold ${pingColor} border px-2 py-1 rounded-lg flex items-center gap-1.5 shadow-inner">
+                                <div class="text-[11px] font-mono font-bold ${pingColor} border px-2 py-1 rounded-lg flex items-center gap-1.5 shadow-sm">
                                     ${generateSignalBars(lat)}
                                     <span>${lat}ms</span>
                                 </div>
                             </div>
                             <div class="grid grid-cols-2 gap-2">
-                                <button onclick="copyToClipboard('${escapeHtml(item.config)}')" class="col-span-1 bg-sky-600/90 hover:bg-sky-500 text-slate-950 py-2.5 rounded-xl text-xs font-bold transition-all flex justify-center items-center gap-1.5 shadow-md shadow-sky-950/20">
+                                <button onclick="copyToClipboard('${escapeHtml(item.config)}')" class="col-span-1 bg-primary-600 hover:bg-primary-700 text-white py-2.5 rounded-xl text-xs font-bold transition-all flex justify-center items-center gap-1.5 shadow-md shadow-primary-500/20">
                                     <i class="fas fa-copy"></i> کپی کانفیگ
                                 </button>
-                                <button onclick="showIndividualQR('${escapeHtml(item.config)}', '${item.protocol}')" class="col-span-1 bg-slate-900 hover:bg-slate-850 text-slate-300 py-2.5 rounded-xl text-xs font-semibold transition-all flex justify-center items-center gap-1.5 border border-slate-800">
-                                    <i class="fas fa-qrcode text-slate-400"></i> بارکد QR
+                                <button onclick="showIndividualQR('${escapeHtml(item.config)}', '${item.protocol}')" class="col-span-1 bg-slate-50 hover:bg-slate-100 text-slate-700 py-2.5 rounded-xl text-xs font-semibold transition-all flex justify-center items-center gap-1.5 border border-slate-200">
+                                    <i class="fas fa-qrcode text-slate-500"></i> بارکد QR
                                 </button>
                             </div>
                         </div>`;
                 } else if (item.masterType === 'proxy') {
                     const lat = parseInt(item.latency || 999);
-                    const pingColor = lat < 180 ? "text-emerald-400 bg-emerald-500/5 border-emerald-500/20" : lat < 450 ? "text-yellow-400 bg-yellow-500/5 border-yellow-500/20" : "text-rose-400 bg-rose-500/5 border-rose-500/20";
+                    const pingColor = lat < 180 ? "text-emerald-600 bg-emerald-50 border-emerald-200" : lat < 450 ? "text-yellow-600 bg-yellow-50 border-yellow-200" : "text-rose-600 bg-rose-50 border-rose-200";
                     
                     return `
-                        <div class="card group relative bg-gradient-to-b from-slate-900/90 to-slate-950/90 backdrop-blur-md rounded-2xl p-4 border border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_-6px_rgba(52,211,153,0.15)] overflow-hidden">
+                        <div class="card group relative bg-white rounded-2xl p-4 border border-slate-200 hover:border-secondary-300 transition-all duration-300 hover:shadow-lg overflow-hidden">
                             <div class="flex justify-between items-start mb-3.5">
                                 <div class="flex items-center gap-3">
                                     <span class="text-3xl filter drop-shadow-md select-none">${item.flag || '🏳️'}</span>
                                     <div>
                                         <div class="flex items-center gap-1.5">
-                                            <span class="font-extrabold text-emerald-400 text-xs tracking-wider bg-emerald-950/30 border border-emerald-900/40 px-1.5 py-0.5 rounded">MTProxy</span>
+                                            <span class="font-extrabold text-secondary-600 text-xs tracking-wider bg-secondary-50 border border-secondary-200 px-1.5 py-0.5 rounded">MTProxy</span>
                                         </div>
                                         <div class="text-[10px] text-slate-500 mt-1 truncate max-w-[150px] font-medium"><i class="far fa-paper-plane pl-1 text-[9px]"></i>${item.channel}</div>
                                     </div>
                                 </div>
-                                <div class="text-[11px] font-mono font-bold ${pingColor} border px-2 py-1 rounded-lg flex items-center gap-1.5 shadow-inner">
+                                <div class="text-[11px] font-mono font-bold ${pingColor} border px-2 py-1 rounded-lg flex items-center gap-1.5 shadow-sm">
                                     ${generateSignalBars(lat)}
                                     <span>${lat}ms</span>
                                 </div>
                             </div>
                             <div class="grid grid-cols-1">
-                                <a href="${item.link}" class="w-full bg-emerald-600/90 hover:bg-emerald-500 text-slate-950 py-2.5 rounded-xl text-xs font-bold transition-all flex justify-center items-center gap-1.5 shadow-md shadow-emerald-950/20">
+                                <a href="${item.link}" class="w-full bg-secondary-600 hover:bg-secondary-700 text-white py-2.5 rounded-xl text-xs font-bold transition-all flex justify-center items-center gap-1.5 shadow-md shadow-secondary-500/20">
                                     <i class="fas fa-paper-plane"></i> اتصال مستقیم به پروکسی تلگرام
                                 </a>
                             </div>
                         </div>`;
                 } else if (item.masterType === 'file') {
                     return `
-                        <div class="card group relative bg-gradient-to-b from-slate-900/90 to-slate-950/90 backdrop-blur-md rounded-2xl p-4 border border-slate-800/80 hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_-6px_rgba(129,140,248,0.15)] overflow-hidden">
+                        <div class="card group relative bg-white rounded-2xl p-4 border border-slate-200 hover:border-indigo-300 transition-all duration-300 hover:shadow-lg overflow-hidden">
                             <div class="flex justify-between items-start mb-3.5">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-xl bg-indigo-950/40 border border-indigo-900/40 flex items-center justify-center text-indigo-400 text-lg shadow-inner"><i class="fas fa-file-code"></i></div>
+                                    <div class="w-10 h-10 rounded-xl bg-indigo-50 border border-indigo-200 flex items-center justify-center text-indigo-600 text-lg shadow-sm">
+                                        <i class="fas fa-file-code"></i>
+                                    </div>
                                     <div>
-                                        <h4 class="text-xs font-bold text-slate-200 line-clamp-1 max-w-[180px]">${item.name}</h4>
+                                        <h4 class="text-xs font-bold text-slate-800 line-clamp-1 max-w-[180px]">${item.name}</h4>
                                         <div class="text-[10px] text-slate-500 mt-1 truncate max-w-[150px] font-medium"><i class="far fa-paper-plane pl-1 text-[9px]"></i>${item.channel}</div>
                                     </div>
                                 </div>
-                                <span class="text-[9px] font-extrabold text-indigo-400 border border-indigo-900/40 bg-indigo-950/30 px-2 py-0.5 rounded">${item.protocol}</span>
+                                <span class="text-[9px] font-extrabold text-indigo-600 border border-indigo-200 bg-indigo-50 px-2 py-0.5 rounded">${item.protocol}</span>
                             </div>
                             <div class="grid grid-cols-1">
-                                <a href="${item.link}" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white py-2.5 rounded-xl text-xs font-bold transition-all flex justify-center items-center gap-1.5 shadow-md shadow-indigo-950/20">
+                                <a href="${item.link}" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2.5 rounded-xl text-xs font-bold transition-all flex justify-center items-center gap-1.5 shadow-md shadow-indigo-500/20">
                                     <i class="fas fa-download"></i> دانلود فایل از منبع اصلی تلگرام
                                 </a>
                             </div>
@@ -409,14 +532,13 @@
             const cards = document.querySelectorAll('#grid .card');
             let accumulatedConfigs = [];
             
-            // Re-filtering visible components inside dynamic DOM
             const searchInput = document.getElementById('searchInput').value.toLowerCase().trim();
             
             let filtered = (rawDatabase.configs || []);
             if (activeFilterType !== 'all' && ['VLESS', 'VMESS', 'TROJAN'].includes(activeFilterType)) {
                 filtered = filtered.filter(c => c.protocol.toUpperCase() === activeFilterType);
             } else if (['MTPROXY', 'FILES'].includes(activeFilterType)) {
-                filtered = []; // Omit non-v2ray configs from subscription list
+                filtered = [];
             }
 
             if (searchInput) {
@@ -461,7 +583,7 @@
                 text: textToQr,
                 width: 200,
                 height: 200,
-                colorDark : "#020617",
+                colorDark : "#0f172a",
                 colorLight : "#ffffff",
                 correctLevel : QRCode.CorrectLevel.M
             });

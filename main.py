@@ -447,93 +447,9 @@ async def main():
             f.write("self.addEventListener('install',e=>e.waitUntil(caches.open('vpn-v1').then(c=>c.addAll(['index.html','manifest.json']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));")
 
         now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
-        html_cards = ""
+        
 
-        # 1. Config Cards Generator
-        for idx, cfg in enumerate(all_configs, 1):
-            lat = cfg.get('latency', 999)
-            try:
-                lat = int(lat)
-            except:
-                lat = 999
-
-            flag = cfg.get('flag', '🏳️')
-            country = html.escape(cfg.get('country', 'Unknown'))
-
-            raw_conf = cfg['config']
-            safe_conf = html.escape(raw_conf)
-
-            protocol = cfg['protocol'].upper()
-
-            if lat < 500:
-                ping_color = "text-emerald-400 border-emerald-500/30 bg-emerald-500/10"
-            elif lat < 1000:
-                ping_color = "text-yellow-400 border-yellow-500/30 bg-yellow-500/10"
-            else:
-                ping_color = "text-rose-400 border-rose-500/30 bg-rose-500/10"
-
-            html_cards += f"""
-            <div class="card group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-sky-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/10" data-type="{protocol.lower()}" data-search="{country.lower()} {protocol.lower()}">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-3xl filter drop-shadow-md">{flag}</span>
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="font-bold text-sky-400 text-sm tracking-wide">{protocol}</span>
-                                <span class="text-[10px] text-slate-500 border border-slate-700 rounded px-1">{country}</span>
-                            </div>
-                            <div class="text-xs text-slate-400 mt-1 truncate max-w-[120px]">Server {idx}</div>
-                        </div>
-                    </div>
-                    <div class="text-xs font-mono font-bold {ping_color} border px-2 py-1 rounded-lg flex items-center gap-1">
-                        <i class="fas fa-signal text-[10px]"></i> {lat}ms
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-2 mt-2">
-                    <button data-clipboard="{safe_conf}" class="copy-btn col-span-1 bg-sky-600/90 hover:bg-sky-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-sky-900/20">
-                        <i class="fas fa-copy"></i> <span>کپی</span>
-                    </button>
-                    <button onclick="showQR('{safe_conf}')" class="col-span-1 bg-slate-700/80 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-sm font-medium transition-all active:scale-95 flex justify-center items-center gap-2 border border-slate-600/50">
-                        <i class="fas fa-qrcode"></i> QR
-                    </button>
-                </div>
-            </div>"""        
-            
-        # 2. Proxy Cards Generator
-        for idx, prox in enumerate(all_proxies, 1):
-            lat = prox.get('latency', 999)
-            try: lat = int(lat)
-            except: lat = 999
-            
-            flag = prox.get('flag', '🏳️')
-            safe_link = html.escape(prox['link'])
-            
-            if lat < 500: ping_color = "text-emerald-400 border-emerald-500/30 bg-emerald-500/10"
-            elif lat < 1000: ping_color = "text-yellow-400 border-yellow-500/30 bg-yellow-500/10"
-            else: ping_color = "text-rose-400 border-rose-500/30 bg-rose-500/10"
-            
-            html_cards += f"""
-            <div class="card group bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-300" data-type="mtproxy" data-search="mtproxy telegram">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-3xl filter drop-shadow-md">{flag}</span>
-                        <div>
-                            <span class="font-bold text-emerald-400 text-sm tracking-wide bg-emerald-900/20 px-2 py-0.5 rounded">MTProxy</span>
-                            <div class="text-xs text-slate-400 mt-1">Telegram Proxy</div>
-                        </div>
-                    </div>
-                    <div class="text-xs font-mono font-bold {ping_color} border px-2 py-1 rounded-lg flex items-center gap-1">
-                        <i class="fas fa-bolt text-[10px]"></i> {lat}ms
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-1 gap-2 mt-2">
-                    <a href="{safe_link}" class="bg-emerald-600/90 hover:bg-emerald-500 text-white py-2.5 rounded-xl text-sm font-semibold transition-all active:scale-95 flex justify-center items-center gap-2 shadow-lg shadow-emerald-900/20">
-                        <i class="fas fa-paper-plane"></i> <span>اتصال سریع</span>
-                    </a>
-                </div>
-            </div>"""
+        
 
         full_html = f"""<!DOCTYPE html>
 <html lang="fa" dir="rtl" class="dark">

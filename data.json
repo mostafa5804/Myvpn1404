@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@15.224.23.116:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 148,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20923",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1783458169.0522053
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@18.198.191.30:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 112,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -82,6 +92,33 @@
     }
   ],
   "proxies": [
+    {
+      "key": "vip.3pita.com:1010",
+      "link": "tg://proxy?server=vip.3pita.com&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0)|",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20922",
+      "latency": 168,
+      "flag": "🇬🇧",
+      "ts": 1783458160.3427474
+    },
+    {
+      "key": "vip.3pita.com:1010",
+      "link": "tg://proxy?server=vip.3pita.com&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20922",
+      "latency": 221,
+      "flag": "🇬🇧",
+      "ts": 1783458160.3427463
+    },
+    {
+      "key": "vip.3pita.com:1010",
+      "link": "tg://proxy?server=vip.3pita.com&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/20922",
+      "latency": 192,
+      "flag": "🇬🇧",
+      "ts": 1783458160.3427439
+    },
     {
       "key": "78.154.116.5:1010",
       "link": "tg://proxy?server=78.154.116.5&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0)|",
@@ -733,13 +770,6 @@
       "channel": "Cooonfig",
       "link": "https://t.me/cooonfig/8201",
       "ts": 1783377889.583085
-    },
-    {
-      "name": "𝑪𝒐𝒏𝒇𝒊𝒈 𝑴𝒊𝑻𝒊.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/17533",
-      "ts": 1783371545.469048
     }
   ]
 }

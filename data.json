@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.18.152.246:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%40Filtershekan_channel%20%7C3`",
+      "latency": 7,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20937",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1783515401.2394896
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.19.229.21:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%40Filtershekan_channel%20%7C1",
+      "latency": 6,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/20936",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1783515400.8062625
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://5aa708a4-0134-4f24-ba6f-d775651bd21e@77.83.245.253:59492?security=reality&encryption=none&pbk=jPWzhxlyYrRZTKbUO-Wb_OjWgD_7RrG3CFkttX7mKVY&host=v2rayNplus--v2rayNplus--v2rayNplus&headerType=none&fp=chrome&type=tcp&sni=www.google.com:443&sid=0b1eccc239d0#%40NetAccount-TR`",
       "latency": 190,
@@ -464,6 +484,13 @@
     }
   ],
   "files": [
+    {
+      "name": "npvfile45.npvt",
+      "ext": "NPVT",
+      "channel": "Vpn | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/3016",
+      "ts": 1783515400.4364653
+    },
     {
       "name": "@Cooonfig(شیر موز  دوغ).npvt",
       "ext": "NPVT",

@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "TROJAN",
+      "config": "trojan://telegram-id-v2rayvpnchannel@15.237.66.35:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
+      "latency": 145,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/20965",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1783605807.729124
+    },
+    {
+      "protocol": "TROJAN",
       "config": "trojan://telegram-id-v2rayvpnchannel@35.181.217.107:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#OurChannel",
       "latency": 149,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -19,66 +29,6 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1783553651.4631817
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://humanity@104.18.152.246:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%40Filtershekan_channel%20%7C3`",
-      "latency": 7,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/20937",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1783515401.2394896
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://humanity@104.19.229.21:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%40Filtershekan_channel%20%7C1",
-      "latency": 6,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/20936",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1783515400.8062625
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5aa708a4-0134-4f24-ba6f-d775651bd21e@77.83.245.253:59492?security=reality&encryption=none&pbk=jPWzhxlyYrRZTKbUO-Wb_OjWgD_7RrG3CFkttX7mKVY&host=v2rayNplus--v2rayNplus--v2rayNplus&headerType=none&fp=chrome&type=tcp&sni=www.google.com:443&sid=0b1eccc239d0#%40NetAccount-TR`",
-      "latency": 190,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/20934",
-      "flag": "🇹🇷",
-      "country": "Türkiye",
-      "ts": 1783513573.3390212
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://8ca5cbd3-ec16-4728-bedc-2bc0d82f0922@94.242.55.42:443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=enterprisekitten.com&sid=6ba85179e30d4fc2#%40NetAccount-RU`",
-      "latency": 174,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/20933",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1783513572.6999238
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://05caca6c-9e97-4c0f-8edf-7b88a6e572c5@mypanel.unixzone.us:12068?encryption=none&path=%2F&security=none&type=ws#%40NetAccount-NL`",
-      "latency": 203,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/20932",
-      "flag": "🇳🇱",
-      "country": "The Netherlands",
-      "ts": 1783513572.1110082
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://36644091-0cec-47fe-9955-97c3f424baf7@51.89.227.151:443?encryption=none&security=reality&sni=play.google.com&fp=chrome&pbk=YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M&sid=98fa0b00d09419f7&type=tcp&headerType=none#%40NetAccount-GB`",
-      "latency": 144,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/20931",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1783513571.4735548
     }
   ],
   "proxies": [
@@ -657,13 +607,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/3128",
       "ts": 1783525217.089227
-    },
-    {
-      "name": "npvfile45.npvt",
-      "ext": "NPVT",
-      "channel": "Vpn | proxy | filtershekan",
-      "link": "https://t.me/filtershekan_channel/3016",
-      "ts": 1783515400.4364653
     }
   ]
 }

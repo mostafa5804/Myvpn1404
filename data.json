@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.38.232.222:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 149,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21025",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1783797652.2368398
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://c50b50c9-6868-4231-859a-691da85a2e60@TakeHost-Ger.ShaKhle.ir:22000?security=reality&encryption=none&pbk=xLCgdUiKeBpYK3YsT96d81yuhFuVgUeANbVeiQACRWw&headerType=none&fp=firefox&type=tcp&sni=www.yahoo.com#%40vpnbaz%20%E2%98%82%EF%B8%8F",
       "latency": 363,
       "channel": "VPN MARKET",
@@ -702,48 +712,6 @@
       "channel": "Merlin ViP",
       "link": "https://t.me/Merlin_ViP/48771",
       "ts": 1783765155.8744226
-    },
-    {
-      "name": "@Cooonfig(اسپانیا_بلژیک).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8224",
-      "ts": 1783709768.0631294
-    },
-    {
-      "name": "@planB_net #500.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/3139",
-      "ts": 1783709714.2721906
-    },
-    {
-      "name": "@NpvTunnel_vip 56⚡.npvt",
-      "ext": "NPVT",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/2105",
-      "ts": 1783709706.6760306
-    },
-    {
-      "name": "کانفیگ دارک135🇳🇱.dark",
-      "ext": "DARK",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/2106",
-      "ts": 1783709706.3459818
-    },
-    {
-      "name": "کانفیگ دارک136🇵🇱.dark",
-      "ext": "DARK",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/2107",
-      "ts": 1783709706.0458567
-    },
-    {
-      "name": "کانفیگ دارک137🇬🇧.dark",
-      "ext": "DARK",
-      "channel": "کانفیگ ملی | config meli",
-      "link": "https://t.me/Npvtunnel_vip/2108",
-      "ts": 1783709705.7111871
     }
   ]
 }

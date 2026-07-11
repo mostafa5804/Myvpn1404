@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.121.132.146:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 150,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21017",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1783787108.8140984
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://c35050ce-01ab-45a9-91b8-54cec637d0a8@octopusss5.info:443?path=%2Fudfyfws&security=tls&encryption=none&insecure=0&host=octopusss5.info&fp=chrome&type=ws&allowInsecure=0&sni=octopusss5.info#%40Filtershekan_channel%20%7C1%F0%9F%87%A9%F0%9F%87%AA`",
       "latency": 60,
       "channel": "Vpn | proxy | filtershekan",

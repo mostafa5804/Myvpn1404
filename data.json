@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiJ0Zy5ocm1wLmtkbnMuZnIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiaW9zIiwiaG9zdCI6InRnLmhybXAua2Rucy5mciIsImlkIjoiYWYxY2NkODktYjY2Yi00NGU4LTk5YjgtMGQ5NDUwNzhjMDRiIiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiL3RpcmV4dm1lc3MiLCJwY3MiOiIiLCJwb3J0IjoiODQ0MyIsInBzIjoiVGlyZXhOZXQtVk1lc3MiLCJzY3kiOiJhdXRvIiwic25pIjoidGcuaHJtcC5rZG5zLmZyIiwidGxzIjoidGxzIiwidHlwZSI6Ii0tLSIsInYiOiIyIiwidmNuIjoiIn0=```",
+      "latency": 78,
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/21114",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1784119728.7372482
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://3dc9f16e-a3c2-494a-9e06-b77ceb488a2c@xh.hrmp.kdns.fr:8443?mode=auto&path=%2Ftirexxhttp&security=tls&encryption=none&insecure=0&host=xh.hrmp.kdns.fr&fp=ios&type=xhttp&allowInsecure=0&sni=xh.hrmp.kdns.fr#TirexNet-XHTTP```",
+      "latency": 78,
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/21113",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1784119728.2303264
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://72f3310b-7df2-4885-8cb0-6973593bc5e9@vps2.tirexnet.kdns.fr:8443?mode=multi&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&fp=ios&type=grpc&serviceName=tirexgrpc&allowInsecure=0&sni=vps2.tirexnet.kdns.fr#TirexNet-gRPC%20multy```",
+      "latency": 32,
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/21112",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1784119727.7519171
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://895b71ff-3957-4c27-af2a-1f1706c64beb@vps.tirexnet.kdns.fr:8443?path=%2Ftirexpath&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&host=vps.tirexnet.kdns.fr&fp=ios&type=ws&allowInsecure=0&sni=vps.tirexnet.kdns.fr#TirexNet```",
+      "latency": 244,
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/21111",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1784119727.4294431
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.44.143.26:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 105,
@@ -291,78 +331,6 @@
       "latency": 234,
       "flag": "🇮🇷",
       "ts": 1784046238.1894372
-    },
-    {
-      "key": "45.134.38.140:443",
-      "link": "tg://proxy?server=45.134.38.140&port=443&secret=eebc5d6507a0d6a03acbefd1798adc14af7777772e6170617261742e636f6d",
-      "channel": "کانفیگ ملی | config meli",
-      "t_link": "https://t.me/myvpn1404/21102",
-      "latency": 105,
-      "flag": "🇫🇷",
-      "ts": 1784033115.2658472
-    },
-    {
-      "key": "messi.nisti.co.uk:8880",
-      "link": "tg://proxy?server=messi.nisti.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "کانفیگ ملی | config meli",
-      "t_link": "https://t.me/myvpn1404/21102",
-      "latency": 111,
-      "flag": "🇮🇷",
-      "ts": 1784033115.265846
-    },
-    {
-      "key": "45.134.38.140:443",
-      "link": "tg://proxy?server=45.134.38.140&port=443&secret=eebc5d6507a0d6a03acbefd1798adc14af7777772e6170617261742e636f6d)",
-      "channel": "کانفیگ ملی | config meli",
-      "t_link": "https://t.me/myvpn1404/21102",
-      "latency": 106,
-      "flag": "🇫🇷",
-      "ts": 1784033115.265844
-    },
-    {
-      "key": "soheil.goooalir.co.uk:8443",
-      "link": "tg://proxy?server=soheil.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09)",
-      "channel": "کانفیگ ملی | config meli",
-      "t_link": "https://t.me/myvpn1404/21102",
-      "latency": 133,
-      "flag": "🇩🇪",
-      "ts": 1784033115.2658427
-    },
-    {
-      "key": "soheil.goooalir.co.uk:8443",
-      "link": "tg://proxy?server=soheil.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ ملی | config meli",
-      "t_link": "https://t.me/myvpn1404/21102",
-      "latency": 155,
-      "flag": "🇩🇪",
-      "ts": 1784033115.265841
-    },
-    {
-      "key": "messi.nisti.co.uk:8880",
-      "link": "tg://proxy?server=messi.nisti.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "کانفیگ ملی | config meli",
-      "t_link": "https://t.me/myvpn1404/21102",
-      "latency": 131,
-      "flag": "🇮🇷",
-      "ts": 1784033115.2658384
-    },
-    {
-      "key": "kala.golgoli1.co.uk:443",
-      "link": "tg://proxy?server=kala.golgoli1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/21101",
-      "latency": 110,
-      "flag": "🇳🇱",
-      "ts": 1784033053.2235332
-    },
-    {
-      "key": "kala.golgoli1.co.uk:443",
-      "link": "tg://proxy?server=kala.golgoli1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/21101",
-      "latency": 131,
-      "flag": "🇳🇱",
-      "ts": 1784033053.2235303
     }
   ],
   "files": [
@@ -379,55 +347,6 @@
       "channel": "𝗙𝗥𝗘𝗘 𝗩𝗣𝗡 | SiNAVM",
       "link": "https://t.me/sinavm/5054",
       "ts": 1784052552.6409326
-    },
-    {
-      "name": "npvfile55.npvt",
-      "ext": "NPVT",
-      "channel": "Vpn | proxy | filtershekan",
-      "link": "https://t.me/filtershekan_channel/3047",
-      "ts": 1784033052.6231248
-    },
-    {
-      "name": "DarkTunnel🇦🇪.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29468",
-      "ts": 1784031520.90964
-    },
-    {
-      "name": "DarkTunnel🇵🇭.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29469",
-      "ts": 1784031520.6001747
-    },
-    {
-      "name": "DarkTunnel🇩🇪.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29470",
-      "ts": 1784031520.308173
-    },
-    {
-      "name": "DarkTunnel🇬🇧.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29471",
-      "ts": 1784031520.0075345
-    },
-    {
-      "name": "DarkTunnel🇵🇱.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29472",
-      "ts": 1784031519.661249
-    },
-    {
-      "name": "DarkTunnel🇺🇲.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29473",
-      "ts": 1784031518.8951695
     }
   ]
 }

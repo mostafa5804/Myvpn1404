@@ -1,6 +1,26 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.194.133.160:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 119,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21121",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1784136280.1680377
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.58.135.206:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 124,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21120",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1784136279.6562917
+    },
+    {
       "protocol": "VMESS",
       "config": "vmess://eyJhZGQiOiJ0Zy5ocm1wLmtkbnMuZnIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiaW9zIiwiaG9zdCI6InRnLmhybXAua2Rucy5mciIsImlkIjoiYWYxY2NkODktYjY2Yi00NGU4LTk5YjgtMGQ5NDUwNzhjMDRiIiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiL3RpcmV4dm1lc3MiLCJwY3MiOiIiLCJwb3J0IjoiODQ0MyIsInBzIjoiVGlyZXhOZXQtVk1lc3MiLCJzY3kiOiJhdXRvIiwic25pIjoidGcuaHJtcC5rZG5zLmZyIiwidGxzIjoidGxzIiwidHlwZSI6Ii0tLSIsInYiOiIyIiwidmNuIjoiIn0=```",
       "latency": 78,
@@ -52,6 +72,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "gallery.talebi.co.uk:2096",
+      "link": "tg://proxy?server=gallery.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21119",
+      "latency": 142,
+      "flag": "🇮🇷",
+      "ts": 1784136257.6796908
+    },
+    {
+      "key": "new.vafadari.co.uk:2096",
+      "link": "tg://proxy?server=new.vafadari.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21119",
+      "latency": 301,
+      "flag": "🇮🇷",
+      "ts": 1784136257.67969
+    },
+    {
+      "key": "new.vafadari.co.uk:2096",
+      "link": "tg://proxy?server=new.vafadari.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21119",
+      "latency": 147,
+      "flag": "🇮🇷",
+      "ts": 1784136257.679689
+    },
+    {
+      "key": "gallery.talebi.co.uk:2096",
+      "link": "tg://proxy?server=gallery.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21119",
+      "latency": 331,
+      "flag": "🇮🇷",
+      "ts": 1784136257.6796737
+    },
     {
       "key": "kala.golgoli1.co.uk:443",
       "link": "tg://proxy?server=kala.golgoli1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",

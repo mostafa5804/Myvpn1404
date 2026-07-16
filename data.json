@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.39.152.119:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 133,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21169",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1784232433.295932
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.194.165.203:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 91,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -152,6 +162,51 @@
     }
   ],
   "proxies": [
+    {
+      "key": "goat.nisti.co.uk:8880",
+      "link": "tg://proxy?server=goat.nisti.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/21168",
+      "latency": 300,
+      "flag": "🇮🇷",
+      "ts": 1784232390.961124
+    },
+    {
+      "key": "always.for.you.ir.mausjakaqd.info.:88",
+      "link": "tg://proxy?server=always.for.you.ir.mausjakaqd.info.&port=88&secret=ee0000f00f0f775555fffffff5006e2e6963646e2e79656b74616e65742e636f6d",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/21168",
+      "latency": 190,
+      "flag": "🇩🇪",
+      "ts": 1784232390.9611223
+    },
+    {
+      "key": "167.233.145.149:8443",
+      "link": "tg://proxy?server=167.233.145.149&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/21168",
+      "latency": 148,
+      "flag": "🇩🇪",
+      "ts": 1784232390.9611213
+    },
+    {
+      "key": "rudomain.info.:443",
+      "link": "tg://proxy?server=rudomain.info.&port=443&secret=7vDusL2a3E_UqTmU7jsqIWtjZG4ueWVrdGFuZXQuY29t",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/21168",
+      "latency": 444,
+      "flag": "🇫🇮",
+      "ts": 1784232390.9611197
+    },
+    {
+      "key": "88.99.175.27:8443",
+      "link": "tg://proxy?server=88.99.175.27&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "Net Account | نت اكانت",
+      "t_link": "https://t.me/myvpn1404/21168",
+      "latency": 151,
+      "flag": "🇩🇪",
+      "ts": 1784232390.9611177
+    },
     {
       "key": "new.vafadari.co.uk:2096",
       "link": "tg://proxy?server=new.vafadari.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",

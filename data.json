@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.183.189.222:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 155,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21172",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1784282762.146417
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.122.121.39:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 154,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -129,19 +139,27 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1784210924.1997132
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.29.73.217:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 145,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/21146",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1784193645.5165668
     }
   ],
   "proxies": [
+    {
+      "key": "silver.ciaude.co.uk:2096",
+      "link": "tg://proxy?server=silver.ciaude.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21171",
+      "latency": 172,
+      "flag": "🇮🇷",
+      "ts": 1784282736.9697452
+    },
+    {
+      "key": "silver.ciaude.co.uk:2096",
+      "link": "tg://proxy?server=silver.ciaude.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21171",
+      "latency": 349,
+      "flag": "🇮🇷",
+      "ts": 1784282736.9697425
+    },
     {
       "key": "goat.nisti.co.uk:8880",
       "link": "tg://proxy?server=goat.nisti.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
@@ -504,62 +522,6 @@
       "channel": "کانفیگ ملی | config meli",
       "link": "https://t.me/Npvtunnel_vip/2158",
       "ts": 1784202331.5245266
-    },
-    {
-      "name": "@planB_net #523.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/3167",
-      "ts": 1784194469.141715
-    },
-    {
-      "name": "@ghalagyann👈 کانال تلگرام.npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/21530",
-      "ts": 1784194417.0035653
-    },
-    {
-      "name": "DarkTunnel🇫🇮.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29476",
-      "ts": 1784193538.956047
-    },
-    {
-      "name": "DarkTunnel🇮🇹.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29477",
-      "ts": 1784193538.5970654
-    },
-    {
-      "name": "DarkTunnel🇰🇿.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29478",
-      "ts": 1784193538.3145666
-    },
-    {
-      "name": "DarkTunnel🇲🇫.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29479",
-      "ts": 1784193538.0145264
-    },
-    {
-      "name": "DarkTunnel🇳🇱.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29480",
-      "ts": 1784193537.725847
-    },
-    {
-      "name": "DarkTunnel🇿🇦.dark",
-      "ext": "DARK",
-      "channel": "🔱BugFreeNet🔱",
-      "link": "https://t.me/BugFreeNet/29481",
-      "ts": 1784193537.4148276
     }
   ]
 }

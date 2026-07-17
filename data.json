@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.124.199.242:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 152,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21185",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1784311923.3210347
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.124.219.212:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 90,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -59,89 +69,27 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1784225557.6200378
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://859a537b-09cf-4bce-8da4-ecbb72950e3a@159.195.27.99:443?security=reality&encryption=none&pbk=EuExqpNB141gtIjbCmU0yyurbBqiLtGjDg-n95JIuig&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=1.oncloudnineservicestreang.com&sid=28415a7918168947#%40vpnbaz%20%F0%9F%8C%8A```",
-      "latency": 158,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/21165",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1784223992.5314243
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://8ca5cbd3-ec16-4728-bedc-2bc0d82f0922@94.242.55.42:443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=enterprisekitten.com&sid=6ba85179e30d4fc2#%40vpnbaz%20%E2%AD%90",
-      "latency": 185,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/21164",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1784223992.0193093
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://eeb6823c-b926-4ea2-866a-5542edd26e59@104.18.42.54:443?path=%2F&security=tls&encryption=none&insecure=0&host=t1s1.rittbo.kdns.fr&type=ws&allowInsecure=0&sni=t1s1.rittbo.kdns.fr#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9",
-      "latency": 5,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/21163",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1784223991.4287248
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://eeb6823c-b926-4ea2-866a-5542edd26e59@162.159.38.119:8443?path=%2F&security=tls&encryption=none&insecure=0&host=t1s1.rittbo.kdns.fr&fp=chrome&type=ws&allowInsecure=0&sni=t1s1.rittbo.kdns.fr#%40vpnbaz%20%E2%98%82%EF%B8%8F",
-      "latency": 5,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/21162",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1784223991.0264513
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AfAgsmL+1IpdntkGP7S7Jcg1FJQujP9GajGTCAL5G0ZecJ1apTPsW5tflc3FkMy+YVJMOxg6/ylb8XmOSTDdYGLgyvUh38Yd7UYUcQwPHmT6z4NEQeSdKSwLCJfSWFrJKH9tD6x+R6UjovOSRq9n4/0s4UHwhRcJsdc8QNQrifHecWeYrP+MyGaR/gFzW7aaVkK5yxtau8eK05szT145LjVsQ0vCvgtMBwtdU2a6mKyy4DXM8HKg24WrZvWZu5tOLQ1WUYIx7d0NqfwOJE9WKWkd50Ugyq8hyox73dPK42TQCPf2rd46zu6C8H61dTNn7mu7F9lT3c3S61RhILSLmvGF8QX8yJXMHTVOrgEx+7xs6ZI4qwBYdhwMmJqA7Efn0DYI1MnAzG3wmW657+i/e1UjEjfOrL9zbwivwY7O0D5i5PnKs89G0KZ61slfHtsl3Z9lOcM3VL78qxqKwSKw+6fYWoFMOor93UrPKsk8EnFxt9xYV3KdYzL14ASrsxrgSVI+meIvLMt9Yfw8Qji2+QQ=`",
-      "latency": 50,
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/21161",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1784223908.0871649
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AdQfnyOl0+HRmZ7uksKTKGiNS8XkonbakDAtOfNJkqEGXP7/PDeq7rC/9HfOd1hBjFxhzJ33vsvQTg6nJmO8W3sP9Fdfl9t7ASSrv0ncxlcCGVcnqYHyBfAHjrLEYZS+KyhxCopviQOeOF04cxbKTPTGnMjihCNRvCQcLDVIQKrCVthjKsbveMjQ3I4R2PT4ZoyXCSLF5QM7MvR5ZzxCf9FPKmreq45q52PC6cQzjxSPTPdTx6XkljSeEIDaSPy1d5k3WsHuZ5NM3dfn+kgdh8A+n9NZrSPYhs2LBpRyA+RhtAvfVaskmMN4MPT+P8oWJyW034TjxEhDWV7jhXaoKa79wdKSAOBSTQ3gu5lvjD9uxqrm+Zk5XewZvj1Syy5uFLmoq0TBWik1clhFZXtvyKQQm/KMaPVV/+CofN9ThU2D5ZGO1j7F26+voWZCczpmT32qXArqneInJFBkoMWS9Pfvt24Yvw/7RZEK/G6pFBPhSRyjDdfjfkZB/X0makh5lXymNfFn2BRP+O5vvkpKbGQV8TRyS5Ctc0A++wH/+m1GIhEeOX7IA1fBx22MJcwQM7Vr+MpdKEPnliBUUmSmusdrEZnS5ByPR7AkBSvxDjFhZQ==``",
-      "latency": 50,
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/21160",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1784223907.69359
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AfOFDp7E6bF6E/t+bzctZDn3vNVZB3/wXmmSzMwQFvxcURoXsS7VrWaS/XSmiKT2+e0CO1CF9sYehxhhD+rofXgtqv0oyBw7WDfCqvEgYpDmN5F/VBvbcPb6qeqcvLjNIkc58uvKQEDqkhCYyzZoFqEu5tq5mQU84FES03kl/g1CG/WKvAI92kzDK7/4yo7amtvqm2QtJCh5LdD3uMsOReeqhvSWfuESOATspbPHZB/muMRwf8INSa4G7NGIr+Fn/ioAKzaW/5XcPz+CQsAavkjuGht+uXPrmuYWJMIQlC+EAJtndZn7TFgi520ieugNSP6TCwQW8365jZd77a9WWF8nDzVreMiLEhejHoqgH7sSksI05Bvyr0/vO0y0fbKOqqgYqoEh/CjL7wVmSkPeBKUfzz8KNA6z5prVbDE00lQQu5x+bpvZMbCAuIMQDKDYFt0j6jhSL5iLH4SkRo1bqedh0sv7/c/6h7QgEUDphSIVG1fvAwElpGh3Jpz5HvhreA==",
-      "latency": 50,
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/21159",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1784223907.3467302
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://AfeU5a/siLIm+sBxYZhCux0WKDYuxt60cZ1Vqw4FYVyJxqcMVZcbBgp2eJRJXo5XuJ/kgK/4faX3fJw+LjmB6zkQaQyAOkhuUP3/NUGhjnQYLpY47NjecbDJ/R8ud1sSpiAQ0+eK4o3ibi30gUoH+8ojLHQRrSZ+E9v9AhEMXwVuhptcmLxkHPRnAq+qVCizS9g60MyO1xq91xevWHSPcjah3wEE5EEPkjwygRDnXFY8UTZU6wd9KRJcaqc0PnC49MhoE8DGOX3i2yQoDmkJau9WXWvTQUWN9x0GC3Wb1yWrxdXdC+JZ+s4jI01ovoptJ4g/wMMlAN7Ztf1cNZwWEoG0xztac7TfUafO8RnWse3kHlhlgD6zn/VqxAvGIeKb6eM1sNVe/FPSXBnCZE8MYrkcXTsrm62rLWvgXNcPLynJkr4doildGb2VsPGnmf3v9kzh5sSk/1Q4YTc8gxLdiLZT3OAvhazxobhIfu2F83kv7ToeuCI0D69nSHgj50wHix6s1Pnx+Cs=",
-      "latency": 50,
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/21158",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1784223906.9544911
     }
   ],
   "proxies": [
+    {
+      "key": "kala.golgoli1.co.uk:443",
+      "link": "tg://proxy?server=kala.golgoli1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21184",
+      "latency": 303,
+      "flag": "🇳🇱",
+      "ts": 1784311898.666173
+    },
+    {
+      "key": "kala.golgoli1.co.uk:443",
+      "link": "tg://proxy?server=kala.golgoli1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21184",
+      "latency": 312,
+      "flag": "🇳🇱",
+      "ts": 1784311898.6661708
+    },
     {
       "key": "gold.lavazemi4.co.uk:2096",
       "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",

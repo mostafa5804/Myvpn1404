@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.124.219.212:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 90,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21183",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1784305280.659189
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.47.176.9:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 85,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -129,19 +139,27 @@
       "flag": "🏴‍☠️",
       "country": "SlipNet",
       "ts": 1784223906.9544911
-    },
-    {
-      "protocol": "SLIPNET_ENC",
-      "config": "slipnet-enc://ASngQLcCYFp2zBWzG87MKf1j7NsOiGx3pFFiXuME3o4JuanhfbHKq+ZGk9J/SlBu5OUxudNRE5ppNKoQyrpAwyifXc5DpS0F4qaI2YHCfsz2bgEHgAv8b2PAwOuHW0auO8MkOcrMd+dOQaox8Y0PJlDOoNXhTs2BJjyaT8aE9sx6lwb7sPoXyM/P07mJAKljoFSz4DqtHEylTrr8fjEr2lJUjBOi14WICJcuNYKdivA6NY/k1quKAis/0NA5iJO8gkFQ5AU4vpYoVy4TxSAPQFr2Rnf9hn6LV+5Wc+N/YTUnTsc7oCnPJCf9Kr5T5zMr/f7zn6bBtdwiBXNODrL2qte0GjjBI+kKbIUZ8Q20092JsT8UeRqL16sozU9SJxfyxpCCkXXnTqmY44FFU0r97eR7TGm9M77teTZu5bfOOFf8IWL7XFGX8q/BYbx86EmXs9WLX2OFX5lS3QKTBMzxTsxMtV47zyH+ocXkFfWM6VUcLPsjSdE5DHtz3HRiluFWVOZqVRLjKr+UpU0+C6iPaFCNnGqZITQx4g==`",
-      "latency": 50,
-      "channel": "TirexNet",
-      "t_link": "https://t.me/myvpn1404/21156",
-      "flag": "🏴‍☠️",
-      "country": "SlipNet",
-      "ts": 1784217381.7015169
     }
   ],
   "proxies": [
+    {
+      "key": "gold.lavazemi4.co.uk:2096",
+      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21182",
+      "latency": 312,
+      "flag": "🇮🇷",
+      "ts": 1784305254.3227713
+    },
+    {
+      "key": "gold.lavazemi4.co.uk:2096",
+      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21182",
+      "latency": 133,
+      "flag": "🇮🇷",
+      "ts": 1784305254.322769
+    },
     {
       "key": "vip.qavi-13.co.uk:1010",
       "link": "tg://proxy?server=vip.qavi-13.co.uk&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0)",

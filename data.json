@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@35.180.184.27:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 146,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21212",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1784402410.351021
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://ecad47b0-249e-0014-adff-e3c8f02b1897@185.93.33.7:443?security=reality&encryption=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=auto.quattro-tech.ru&sid=43dcff53849b81e6#%40vpnbaz%20%F0%9F%8D%AC```",
       "latency": 170,
       "channel": "VPN MARKET",
@@ -132,6 +142,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "star.talebi.co.uk:2096",
+      "link": "tg://proxy?server=star.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21211",
+      "latency": 163,
+      "flag": "🇮🇷",
+      "ts": 1784402388.562048
+    },
+    {
+      "key": "kala.golgoli1.co.uk:443",
+      "link": "tg://proxy?server=kala.golgoli1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21211",
+      "latency": 157,
+      "flag": "🇳🇱",
+      "ts": 1784402388.562047
+    },
+    {
+      "key": "kala.golgoli1.co.uk:443",
+      "link": "tg://proxy?server=kala.golgoli1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21211",
+      "latency": 160,
+      "flag": "🇳🇱",
+      "ts": 1784402388.5620458
+    },
+    {
+      "key": "star.talebi.co.uk:2096",
+      "link": "tg://proxy?server=star.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21211",
+      "latency": 194,
+      "flag": "🇮🇷",
+      "ts": 1784402388.5620437
+    },
     {
       "key": "gold.lavazemi4.co.uk:2096",
       "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",

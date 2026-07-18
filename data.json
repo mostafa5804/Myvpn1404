@@ -69,19 +69,27 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1784311923.3210347
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.124.219.212:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 90,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/21183",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1784305280.659189
     }
   ],
   "proxies": [
+    {
+      "key": "gold.lavazemi4.co.uk:2096",
+      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21201",
+      "latency": 300,
+      "flag": "🇮🇷",
+      "ts": 1784391964.8686
+    },
+    {
+      "key": "gold.lavazemi4.co.uk:2096",
+      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21201",
+      "latency": 314,
+      "flag": "🇮🇷",
+      "ts": 1784391964.8685975
+    },
     {
       "key": "vip.qavi-13.co.uk:1010",
       "link": "tg://proxy?server=vip.qavi-13.co.uk&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0)",
@@ -333,24 +341,6 @@
       "latency": 312,
       "flag": "🇳🇱",
       "ts": 1784311898.6661708
-    },
-    {
-      "key": "gold.lavazemi4.co.uk:2096",
-      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/21182",
-      "latency": 312,
-      "flag": "🇮🇷",
-      "ts": 1784305254.3227713
-    },
-    {
-      "key": "gold.lavazemi4.co.uk:2096",
-      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "iRo Proxy | پروکسی",
-      "t_link": "https://t.me/myvpn1404/21182",
-      "latency": 133,
-      "flag": "🇮🇷",
-      "ts": 1784305254.322769
     }
   ],
   "files": [

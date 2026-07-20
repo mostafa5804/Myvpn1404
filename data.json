@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.188.114.69:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 148,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21273",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1784574800.0957954
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://eeb6823c-b926-4ea2-866a-5542edd26e59@172.64.147.104:443?path=%2F&security=tls&encryption=none&insecure=0&host=t1s1.rittbo.kdns.fr&fp=chrome&type=ws&allowInsecure=0&sni=t1s1.rittbo.kdns.fr#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 7,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -202,6 +212,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "vip.qavi-13.co.uk:1010",
+      "link": "tg://proxy?server=vip.qavi-13.co.uk&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/21272",
+      "latency": 159,
+      "flag": "🇬🇧",
+      "ts": 1784574789.379215
+    },
+    {
+      "key": "vip.qavi-13.co.uk:1010",
+      "link": "tg://proxy?server=vip.qavi-13.co.uk&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/21272",
+      "latency": 317,
+      "flag": "🇬🇧",
+      "ts": 1784574789.3792129
+    },
     {
       "key": "new.vafadari.co.uk:2096",
       "link": "tg://proxy?server=new.vafadari.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",

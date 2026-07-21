@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.18.152.229:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%40Filtershekan_channel%20%7C3`",
+      "latency": 3,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21289",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1784619336.5406795
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.18.152.225:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%40Filtershekan_channel%20%7C2",
+      "latency": 3,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21288",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1784619336.1548815
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.19.229.21:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%40Filtershekan_channel%20%7C1",
+      "latency": 5,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21287",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1784619335.8336527
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://85fd43b9-0906-451d-a78e-ae47086a5538@31.77.236.73:443?security=reality&encryption=none&pbk=Hr-1WENbZqjmq6WSlm9aJShW3z_UcV5Xb8coI1ZpR10&headerType=&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=download.docker.com&sid=72d4b5a2f4c4e310#bugFreenet`",
       "latency": 144,
@@ -212,6 +242,141 @@
     }
   ],
   "proxies": [
+    {
+      "key": "192.248.187.97:8443",
+      "link": "tg://proxy?server=192.248.187.97&port=8443&secret=90c5a8ea91a77509595f49af04a239c6",
+      "channel": "TirexNet",
+      "t_link": "https://t.me/myvpn1404/21291",
+      "latency": 103,
+      "flag": "🇩🇪",
+      "ts": 1784619434.045652
+    },
+    {
+      "key": "ocean.babysharkollah.co.uk:8443",
+      "link": "tg://proxy?server=ocean.babysharkollah.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 123,
+      "flag": "🇱🇹",
+      "ts": 1784619388.5652444
+    },
+    {
+      "key": "dark.basicscotch.co.uk:22",
+      "link": "tg://proxy?server=dark.basicscotch.co.uk&port=22&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 2,
+      "flag": "🇨🇦",
+      "ts": 1784619388.5652435
+    },
+    {
+      "key": "b.sub-ploter.co.uk:22",
+      "link": "tg://proxy?server=b.sub-ploter.co.uk&port=22&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 4,
+      "flag": "🇨🇦",
+      "ts": 1784619388.5652425
+    },
+    {
+      "key": "b.sub-ploter.co.uk:22",
+      "link": "tg://proxy?server=b.sub-ploter.co.uk&port=22&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 23,
+      "flag": "🇨🇦",
+      "ts": 1784619388.5652413
+    },
+    {
+      "key": "super.sub-ploter.co.uk:25565",
+      "link": "tg://proxy?server=super.sub-ploter.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 4,
+      "flag": "🇨🇦",
+      "ts": 1784619388.5652401
+    },
+    {
+      "key": "beer.crona-extra.co.uk:8443",
+      "link": "tg://proxy?server=beer.crona-extra.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 129,
+      "flag": "🇫🇮",
+      "ts": 1784619388.5652387
+    },
+    {
+      "key": "super.sub-ploter.co.uk:25565",
+      "link": "tg://proxy?server=super.sub-ploter.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 16,
+      "flag": "🇨🇦",
+      "ts": 1784619388.5652375
+    },
+    {
+      "key": "cloud.click-master.co.uk:8443",
+      "link": "tg://proxy?server=cloud.click-master.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 141,
+      "flag": "🇫🇮",
+      "ts": 1784619388.5652363
+    },
+    {
+      "key": "blond.basicscotch.co.uk:25565",
+      "link": "tg://proxy?server=blond.basicscotch.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 4,
+      "flag": "🇨🇦",
+      "ts": 1784619388.5652344
+    },
+    {
+      "key": "cloud.click-master.co.uk:8443",
+      "link": "tg://proxy?server=cloud.click-master.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 160,
+      "flag": "🇫🇮",
+      "ts": 1784619388.565233
+    },
+    {
+      "key": "blond.basicscotch.co.uk:25565",
+      "link": "tg://proxy?server=blond.basicscotch.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 199,
+      "flag": "🇨🇦",
+      "ts": 1784619388.5652316
+    },
+    {
+      "key": "ocean.babysharkollah.co.uk:8443",
+      "link": "tg://proxy?server=ocean.babysharkollah.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 128,
+      "flag": "🇱🇹",
+      "ts": 1784619388.5652301
+    },
+    {
+      "key": "beer.crona-extra.co.uk:8443",
+      "link": "tg://proxy?server=beer.crona-extra.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 320,
+      "flag": "🇫🇮",
+      "ts": 1784619388.5652287
+    },
+    {
+      "key": "dark.basicscotch.co.uk:22",
+      "link": "tg://proxy?server=dark.basicscotch.co.uk&port=22&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/21290",
+      "latency": 53,
+      "flag": "🇨🇦",
+      "ts": 1784619388.5652263
+    },
     {
       "key": "noron.talebi.co.uk:2096",
       "link": "tg://proxy?server=noron.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
@@ -502,6 +667,20 @@
     }
   ],
   "files": [
+    {
+      "name": "@planB_net #542.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/3192",
+      "ts": 1784619450.6996164
+    },
+    {
+      "name": "npvfile66.npvt",
+      "ext": "NPVT",
+      "channel": "Vpn | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/3085",
+      "ts": 1784619335.4783661
+    },
     {
       "name": "🇳🇱³-¹@BugFreeNet.dark",
       "ext": "DARK",

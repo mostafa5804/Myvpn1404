@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.237.89.209:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 86,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21328",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1784668711.1398325
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://bbae962a-b6e9-46e6-990c-6abf13e6b075@de.edge-9d7c.com:443?security=reality&encryption=none&pbk=qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM&headerType=none&fp=safari&type=tcp&flow=xtls-rprx-vision&sni=de.edge-9d7c.com&sid=9d84de9d9f7b85e9#%40vpnbaz%20%E2%98%82%EF%B8%8F",
       "latency": 243,
       "channel": "VPN MARKET",
@@ -252,6 +262,177 @@
     }
   ],
   "proxies": [
+    {
+      "key": "vip.qavi-13.co.uk:1010",
+      "link": "tg://proxy?server=vip.qavi-13.co.uk&port=1010&secret=3XnnAQIAAQAH8AMDhuJMOt0",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/21327",
+      "latency": 390,
+      "flag": "🇬🇧",
+      "ts": 1784668703.6007566
+    },
+    {
+      "key": "gold.lavazemi4.co.uk:2096",
+      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 295,
+      "flag": "🇮🇷",
+      "ts": 1784668678.2609468
+    },
+    {
+      "key": "box.lavazemi5.co.uk:2053",
+      "link": "tg://proxy?server=box.lavazemi5.co.uk&port=2053&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 301,
+      "flag": "🇳🇱",
+      "ts": 1784668678.260943
+    },
+    {
+      "key": "gold.lavazemi4.co.uk:2096",
+      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 290,
+      "flag": "🇮🇷",
+      "ts": 1784668678.2609415
+    },
+    {
+      "key": "hadaf.golgoli2.co.uk:2053",
+      "link": "tg://proxy?server=hadaf.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 97,
+      "flag": "🇮🇷",
+      "ts": 1784668678.2609403
+    },
+    {
+      "key": "book.malavanann.co.uk:2096",
+      "link": "tg://proxy?server=book.malavanann.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 109,
+      "flag": "🇳🇱",
+      "ts": 1784668678.2609396
+    },
+    {
+      "key": "book.malavanann.co.uk:2096",
+      "link": "tg://proxy?server=book.malavanann.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 102,
+      "flag": "🇳🇱",
+      "ts": 1784668678.2609384
+    },
+    {
+      "key": "permiiium.lavazemi2.co.uk:2096",
+      "link": "tg://proxy?server=permiiium.lavazemi2.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 96,
+      "flag": "🇳🇱",
+      "ts": 1784668678.260937
+    },
+    {
+      "key": "lux.lavazemi1.co.uk:2096",
+      "link": "tg://proxy?server=lux.lavazemi1.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 97,
+      "flag": "🇳🇱",
+      "ts": 1784668678.260936
+    },
+    {
+      "key": "blue.golgoli2.co.uk:2096",
+      "link": "tg://proxy?server=blue.golgoli2.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 101,
+      "flag": "🇳🇱",
+      "ts": 1784668678.2609346
+    },
+    {
+      "key": "permiiium.lavazemi2.co.uk:2096",
+      "link": "tg://proxy?server=permiiium.lavazemi2.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 96,
+      "flag": "🇳🇱",
+      "ts": 1784668678.2609334
+    },
+    {
+      "key": "win.golgoli1.co.uk:2053",
+      "link": "tg://proxy?server=win.golgoli1.co.uk&port=2053&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 303,
+      "flag": "🇳🇱",
+      "ts": 1784668678.2609322
+    },
+    {
+      "key": "hadaf.golgoli2.co.uk:2053",
+      "link": "tg://proxy?server=hadaf.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 294,
+      "flag": "🇮🇷",
+      "ts": 1784668678.2609308
+    },
+    {
+      "key": "blue.golgoli2.co.uk:2096",
+      "link": "tg://proxy?server=blue.golgoli2.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 325,
+      "flag": "🇳🇱",
+      "ts": 1784668678.2609298
+    },
+    {
+      "key": "mashtibash.vafadari.co.uk:2096",
+      "link": "tg://proxy?server=mashtibash.vafadari.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 92,
+      "flag": "🇮🇷",
+      "ts": 1784668678.260928
+    },
+    {
+      "key": "win.golgoli1.co.uk:2053",
+      "link": "tg://proxy?server=win.golgoli1.co.uk&port=2053&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 98,
+      "flag": "🇳🇱",
+      "ts": 1784668678.2609267
+    },
+    {
+      "key": "box.lavazemi5.co.uk:2053",
+      "link": "tg://proxy?server=box.lavazemi5.co.uk&port=2053&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 311,
+      "flag": "🇳🇱",
+      "ts": 1784668678.2609117
+    },
+    {
+      "key": "lux.lavazemi1.co.uk:2096",
+      "link": "tg://proxy?server=lux.lavazemi1.co.uk&port=2096&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 297,
+      "flag": "🇳🇱",
+      "ts": 1784668678.26091
+    },
+    {
+      "key": "mashtibash.vafadari.co.uk:2096",
+      "link": "tg://proxy?server=mashtibash.vafadari.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21326",
+      "latency": 98,
+      "flag": "🇮🇷",
+      "ts": 1784668678.2609074
+    },
     {
       "key": "gallery.talebi.co.uk:2096",
       "link": "tg://proxy?server=gallery.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",

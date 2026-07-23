@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.131.242:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 132,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21386",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1784834926.6631398
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://9ccf51b3-b602-b2b8-d761-632d4abedc95@69.46.46.87:443?path=%2Fws%2F9ccf51b3-b602-b2b8-d761-632d4abedc95&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=x4g-production-0727.up.railway.app&fp=chrome&type=ws&allowInsecure=0&sni=x4g-production-0727.up.railway.app#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 28,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -112,6 +122,24 @@
     }
   ],
   "proxies": [
+    {
+      "key": "116.202.35.160:25565",
+      "link": "tg://proxy?server=116.202.35.160&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/21385",
+      "latency": 141,
+      "flag": "🇩🇪",
+      "ts": 1784834915.961886
+    },
+    {
+      "key": "116.202.35.160:25565",
+      "link": "tg://proxy?server=116.202.35.160&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/21385",
+      "latency": 146,
+      "flag": "🇩🇪",
+      "ts": 1784834915.961884
+    },
     {
       "key": "kala.golgoli1.co.uk:443",
       "link": "tg://proxy?server=kala.golgoli1.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add7777772e7961686f6f2e636f6d",
@@ -330,6 +358,13 @@
     }
   ],
   "files": [
+    {
+      "name": "SHΞN -V2ray.json",
+      "ext": "JSON",
+      "channel": "i SHARΞ WIN™",
+      "link": "https://t.me/isharewin/40757",
+      "ts": 1784834890.807408
+    },
     {
       "name": "@Cooonfig(استیک).npvt",
       "ext": "NPVT",

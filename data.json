@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.37.22.60:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 152,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21392",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1784841140.3446395
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://0c6b632a-cd96-4b74-9b51-151e3b5697db@using.neobo-tooth.ru:2083?mode=gun&security=tls&encryption=none&insecure=0&type=grpc&serviceName=grpc&allowInsecure=0#%40vpnbaz%20%F0%9F%8C%BD```",
       "latency": 225,
       "channel": "VPN MARKET",
@@ -162,6 +172,60 @@
     }
   ],
   "proxies": [
+    {
+      "key": "silver.ciaude.co.uk:2096",
+      "link": "tg://proxy?server=silver.ciaude.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21391",
+      "latency": 157,
+      "flag": "🇮🇷",
+      "ts": 1784841120.232198
+    },
+    {
+      "key": "silver.ciaude.co.uk:2096",
+      "link": "tg://proxy?server=silver.ciaude.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21391",
+      "latency": 177,
+      "flag": "🇮🇷",
+      "ts": 1784841120.2321968
+    },
+    {
+      "key": "gallery.talebi.co.uk:2096",
+      "link": "tg://proxy?server=gallery.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21391",
+      "latency": 153,
+      "flag": "🇮🇷",
+      "ts": 1784841120.2321837
+    },
+    {
+      "key": "new.vafadari.co.uk:2096",
+      "link": "tg://proxy?server=new.vafadari.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21391",
+      "latency": 158,
+      "flag": "🇮🇷",
+      "ts": 1784841120.232183
+    },
+    {
+      "key": "new.vafadari.co.uk:2096",
+      "link": "tg://proxy?server=new.vafadari.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21391",
+      "latency": 163,
+      "flag": "🇮🇷",
+      "ts": 1784841120.2321818
+    },
+    {
+      "key": "gallery.talebi.co.uk:2096",
+      "link": "tg://proxy?server=gallery.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/21391",
+      "latency": 184,
+      "flag": "🇮🇷",
+      "ts": 1784841120.232179
+    },
     {
       "key": "116.202.35.160:25565",
       "link": "tg://proxy?server=116.202.35.160&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q)",
@@ -432,20 +496,6 @@
       "channel": "Cooonfig",
       "link": "https://t.me/cooonfig/8324",
       "ts": 1784759564.9864426
-    },
-    {
-      "name": "𝘗𝘳𝘦𝘮𝘪𝘶𝘮🔥.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت آزاد",
-      "link": "https://t.me/mitivpn/17828",
-      "ts": 1784752585.9445655
-    },
-    {
-      "name": "@planB_net #548.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/3203",
-      "ts": 1784752568.4573586
     }
   ]
 }

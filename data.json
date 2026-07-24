@@ -2,6 +2,56 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e996abc7-cff3-4d9f-a9dc-0d717048a345@s.avrilon.us:443?security=reality&encryption=mlkem768x25519plus.native.0rtt.acjHXqKWEZtVE-QeN5i1dfX8rrQHE0eGw8wctrJNMVo&pbk=pak_xgMOqICE2oAimyRphnruNEP7HptVJVI5p1HjGmA&headerType=none&fp=chrome&spx=%2F0d4729593b0c130&type=tcp&flow=xtls-rprx-vision&sni=cdn.samsung.com&sid=0bad329e858e70da#%40vpnbaz%20%F0%9F%8C%8A```",
+      "latency": 195,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/21476",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "ts": 1784921997.8933997
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://bbae962a-b6e9-46e6-990c-6abf13e6b075@de.edge-9d7c.com:443?security=reality&encryption=none&pbk=qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=de.edge-9d7c.com&sid=9d84de9d9f7b85e9#%40vpnbaz%20%E2%98%82%EF%B8%8F",
+      "latency": 191,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/21475",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1784921997.3570135
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://7968c546-02dc-4f8c-b791-934591a94cb2@cf.levikogjgfdd.ir:443?path=%2Fcbasur&security=tls&encryption=none&insecure=0&host=hhvl.hhapp.kdns.fr&type=ws&allowInsecure=0&sni=hhvl.hhapp.kdns.fr#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9",
+      "latency": 221,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/21474",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1784921996.826454
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://eeb6823c-b926-4ea2-866a-5542edd26e59@173.245.58.70:2053?path=%2F&security=tls&encryption=none&insecure=0&host=t1s1.rittbo.kdns.fr&fp=chrome&type=ws&allowInsecure=0&sni=t1s1.rittbo.kdns.fr#%40vpnbaz%20%F0%9F%9B%B8",
+      "latency": 5,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/21473",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1784921996.2219474
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://7e544a9d-7667-413b-bbb0-b3bb1aac6d77@162.159.38.119:443?path=%2Frsedgws&security=tls&encryption=none&insecure=0&host=shegeftihaaa.net&fp=chrome&type=ws&allowInsecure=0&sni=shegeftihaaa.net#%40vpnbaz%20%E2%AD%90",
+      "latency": 5,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/21472",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1784921995.8469698
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://ed984f53-b003-4940-b6b2-db22362801e7@151.101.193.54:80?security=none&encryption=none&host=BankMelat.glObal.ssl.faStly.nEt.&type=ws#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
       "latency": 14,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -649,16 +699,6 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1784838964.3751993
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.131.242:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 132,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/21386",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1784834926.6631398
     }
   ],
   "proxies": [
@@ -985,24 +1025,6 @@
       "latency": 184,
       "flag": "🇮🇷",
       "ts": 1784841120.232179
-    },
-    {
-      "key": "116.202.35.160:25565",
-      "link": "tg://proxy?server=116.202.35.160&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/21385",
-      "latency": 141,
-      "flag": "🇩🇪",
-      "ts": 1784834915.961886
-    },
-    {
-      "key": "116.202.35.160:25565",
-      "link": "tg://proxy?server=116.202.35.160&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/21385",
-      "latency": 146,
-      "flag": "🇩🇪",
-      "ts": 1784834915.961884
     }
   ],
   "files": [
@@ -1117,13 +1139,6 @@
       "channel": "ghalagyann",
       "link": "https://t.me/ghalagyann/21542",
       "ts": 1784854472.7215538
-    },
-    {
-      "name": "SHΞN -V2ray.json",
-      "ext": "JSON",
-      "channel": "i SHARΞ WIN™",
-      "link": "https://t.me/isharewin/40757",
-      "ts": 1784834890.807408
     }
   ]
 }

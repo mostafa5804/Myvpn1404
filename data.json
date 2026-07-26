@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.181.207.25:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 109,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21594",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1785082070.2885923
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.188.160.141:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 143,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -839,27 +849,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/3221",
       "ts": 1785008456.1394613
-    },
-    {
-      "name": "@Cooonfig(شیر نارگیل).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8359",
-      "ts": 1784993788.129623
-    },
-    {
-      "name": "@Cooonfig(گشنمه باز).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8360",
-      "ts": 1784993787.8922386
-    },
-    {
-      "name": "@planB_net #554.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/3219",
-      "ts": 1784993733.585829
     }
   ]
 }

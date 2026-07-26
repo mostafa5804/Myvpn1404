@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.188.160.141:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 143,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21591",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1785074841.7016606
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://eeb6823c-b926-4ea2-866a-5542edd26e59@www.cnae.top:443?path=%2F&security=tls&encryption=none&insecure=0&host=t1s1.rittbo.kdns.fr&type=ws&allowInsecure=0&sni=t1s1.rittbo.kdns.fr#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 241,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -633,6 +643,24 @@
   ],
   "proxies": [
     {
+      "key": "116.202.55.31:25565",
+      "link": "tg://proxy?server=116.202.55.31&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/21590",
+      "latency": 150,
+      "flag": "🇩🇪",
+      "ts": 1785074835.9862711
+    },
+    {
+      "key": "116.202.55.31:25565",
+      "link": "tg://proxy?server=116.202.55.31&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/21590",
+      "latency": 153,
+      "flag": "🇩🇪",
+      "ts": 1785074835.986269
+    },
+    {
       "key": "116.202.35.160:25565",
       "link": "tg://proxy?server=116.202.35.160&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q)",
       "channel": "دارک پروکسی | Proxy mtproto",
@@ -919,24 +947,6 @@
       "latency": 175,
       "flag": "🇮🇷",
       "ts": 1784988540.570054
-    },
-    {
-      "key": "116.202.55.31:25565",
-      "link": "tg://proxy?server=116.202.55.31&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/21508",
-      "latency": 97,
-      "flag": "🇩🇪",
-      "ts": 1784981718.7328005
-    },
-    {
-      "key": "116.202.55.31:25565",
-      "link": "tg://proxy?server=116.202.55.31&port=25565&secret=FgMBAgABAAH8AxOG4kw63Q)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/21508",
-      "latency": 97,
-      "flag": "🇩🇪",
-      "ts": 1784981718.732798
     }
   ],
   "files": [

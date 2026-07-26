@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.17.132:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 130,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21611",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1785096954.2957053
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.236.213.86:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 127,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/21610",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1785096953.8265216
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://ea3e24c1-6bc1-4a7a-9711-88f937f08bbb@namasha.broute.online:2053?security=reality&encryption=none&pbk=h6tCZV3ayNpiX72wvOSJhk-ggk8jqqcfQtVy04OBAE8&headerType=none&fp=chrome&spx=%2F0ccc410eea68aeb&type=tcp&sni=ap-author.led.samsung.com&sid=73#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9```",
       "latency": 115,
       "channel": "VPN MARKET",
@@ -709,56 +729,6 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1785013193.1566606
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.39.65.159:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 145,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/21519",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1785007112.2705514
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://0370b162-baff-4757-86cc-cce4bf07f6f1@45.88.172.154:11594?security=none&encryption=none&headerType=none&type=tcp#%40NetAccount-NL`",
-      "latency": 148,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/21518",
-      "flag": "🇳🇱",
-      "country": "The Netherlands",
-      "ts": 1785007071.7255697
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://ab51054f-de76-4a0f-9f3a-b44c8df86a6c@62.60.159.137:50443?encryption=none&flow=xtls-rprx-vision&fp=chrome&headerType=none&pbk=hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ&security=reality&sni=www.icloud.com&type=tcp#%40NetAccount-SE`",
-      "latency": 166,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/21517",
-      "flag": "🇸🇪",
-      "country": "Sweden",
-      "ts": 1785007071.179248
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://eeb6823c-b926-4ea2-866a-5542edd26e59@162.159.38.119:8443?path=/?ed=2560&security=tls&encryption=none&insecure=0&host=t1s1.rittbo.kdns.fr&fp=chrome&type=ws&allowInsecure=0&sni=t1s1.rittbo.kdns.fr#%40NetAccount-US`",
-      "latency": 5,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/21516",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1785007070.6303322
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f05645e7-b789-48b9-a98f-434fa8035d5c@31.57.46.165:2053?alpn=h2,http/1.1&encryption=none&fp=chrome&host=&path=/ws&security=tls&sni=&type=ws#%40NetAccount-US`",
-      "latency": 921,
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/21515",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1785007070.2382908
     }
   ],
   "proxies": [
@@ -1139,41 +1109,6 @@
       "channel": "اینترنت آزاد",
       "link": "https://t.me/mitivpn/17867",
       "ts": 1785013230.2736676
-    },
-    {
-      "name": "@Cooonfig( ژیک لجند).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8363",
-      "ts": 1785008517.4618309
-    },
-    {
-      "name": "@Cooonfig(ژیک)لازانیا.npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8364",
-      "ts": 1785008517.1526618
-    },
-    {
-      "name": "@Cooonfig(آب دوغ خیار).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8367",
-      "ts": 1785008516.8624778
-    },
-    {
-      "name": "@Cooonfig(ژیک)تشنمه.npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8368",
-      "ts": 1785008516.5333817
-    },
-    {
-      "name": "@planB_net #555.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/3221",
-      "ts": 1785008456.1394613
     }
   ]
 }

@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://1ee6dbe4-b7bd-47bd-b6e5-23deb076f95b@gr5.levikogjgfdd.ir:443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=sellflow.org#%40vpnbaz%20%F0%9F%8C%8A",
+      "latency": 259,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/21917",
+      "flag": "🇷🇺",
+      "country": "Russia",
+      "ts": 1785613490.1694648
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpyWWZpNGNRM3o3enRzN0JPNC1ZOV9B@188.41.249.20:1080#%40vpnbaz%20%E2%AD%90",
+      "latency": 1162,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/21916",
+      "flag": "🇹🇷",
+      "country": "Turkey",
+      "ts": 1785613489.299059
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.118.170:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 142,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -1310,6 +1330,13 @@
     }
   ],
   "files": [
+    {
+      "name": "Türkiye 🇹🇷.npvt",
+      "ext": "NPVT",
+      "channel": "منبع ضد اختلال | SORiN VPN",
+      "link": "https://t.me/isor1n/7303",
+      "ts": 1785613391.3219242
+    },
     {
       "name": "@Cooonfig(سوشی).npvt",
       "ext": "NPVT",

@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.44.50.247:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 109,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/22351",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1786216071.3336256
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://c28ee61d-0d43-4e69-8e6a-6397ed0ffc03@31.43.191.39:443?security=reality&encryption=none&pbk=SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=luminous-vortex.cdn.cachefleet.com#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
       "latency": 109,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -702,6 +712,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "irogallery.golgoli1.co.uk:2096",
+      "link": "tg://proxy?server=irogallery.golgoli1.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/22350",
+      "latency": 142,
+      "flag": "🇮🇷",
+      "ts": 1786216046.4718072
+    },
+    {
+      "key": "flux.lavazemi5.co.uk:2096",
+      "link": "tg://proxy?server=flux.lavazemi5.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/22350",
+      "latency": 144,
+      "flag": "🇮🇷",
+      "ts": 1786216046.471804
+    },
+    {
+      "key": "flux.lavazemi5.co.uk:2096",
+      "link": "tg://proxy?server=flux.lavazemi5.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/22350",
+      "latency": 162,
+      "flag": "🇮🇷",
+      "ts": 1786216046.471802
+    },
+    {
+      "key": "irogallery.golgoli1.co.uk:2096",
+      "link": "tg://proxy?server=irogallery.golgoli1.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/22350",
+      "latency": 329,
+      "flag": "🇮🇷",
+      "ts": 1786216046.4718
+    },
     {
       "key": "star.talebi.co.uk:2096",
       "link": "tg://proxy?server=star.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
@@ -1565,42 +1611,6 @@
       "latency": 163,
       "flag": "🇩🇪",
       "ts": 1786139194.9926682
-    },
-    {
-      "key": "new7.mizanmizanesgh.co.uk:4455",
-      "link": "tg://proxy?server=new7.mizanmizanesgh.co.uk&port=4455&secret=dd104462821249bd7ac519130220c25d09",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/22284",
-      "latency": 187,
-      "flag": "🇫🇮",
-      "ts": 1786139194.9926639
-    },
-    {
-      "key": "api.server2-5mk.info:443",
-      "link": "tg://proxy?server=api.server2-5mk.info&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/22284",
-      "latency": 160,
-      "flag": "🇬🇧",
-      "ts": 1786139194.9926624
-    },
-    {
-      "key": "messi2.nisti.co.uk:8880",
-      "link": "tg://proxy?server=messi2.nisti.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/22284",
-      "latency": 301,
-      "flag": "🇮🇷",
-      "ts": 1786139194.9926612
-    },
-    {
-      "key": "cdn.ma-rd.co.uk:443",
-      "link": "tg://proxy?server=cdn.ma-rd.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
-      "channel": "کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/22284",
-      "latency": 159,
-      "flag": "🇮🇷",
-      "ts": 1786139194.99266
     }
   ],
   "files": [

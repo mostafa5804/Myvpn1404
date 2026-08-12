@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.186.181:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 108,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/22594",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1786541020.9568312
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@104.18.37.228:443?path=%2Ffp&security=tls&encryption=none&insecure=0&host=hhlfy.twiladaphne.ndjp.net&type=ws&allowInsecure=0&sni=hhlfy.twiladaphne.ndjp.net#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
       "latency": 6,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -309,19 +319,18 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1786465473.3586223
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.37.184.30:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 149,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/22536",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1786454408.3597093
     }
   ],
   "proxies": [
+    {
+      "key": "gold.lavazemi4.co.uk:2096",
+      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/22593",
+      "latency": 340,
+      "flag": "🇮🇷",
+      "ts": 1786541001.0603845
+    },
     {
       "key": "172.65.113.134:22",
       "link": "tg://proxy?server=172.65.113.134&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D",
@@ -1050,42 +1059,6 @@
       "latency": 283,
       "flag": "🇮🇷",
       "ts": 1786465455.3369186
-    },
-    {
-      "key": "bad.nisti.co.uk:8880",
-      "link": "tg://proxy?server=bad.nisti.co.uk&port=8880&secret=EERighJJvXrFGRMCIMJdCQ",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/22535",
-      "latency": 315,
-      "flag": "🇮🇷",
-      "ts": 1786454361.8006558
-    },
-    {
-      "key": "gold.lavazemi4.co.uk:2096",
-      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/22535",
-      "latency": 316,
-      "flag": "🇮🇷",
-      "ts": 1786454361.800655
-    },
-    {
-      "key": "benz.cras.co.im:144",
-      "link": "tg://proxy?server=benz.cras.co.im&port=144&secret=ee1603010200010001fc030386e24c3add626973636F7474692E79656B74616E65742E636F6D",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/22535",
-      "latency": 321,
-      "flag": "🇫🇮",
-      "ts": 1786454361.800654
-    },
-    {
-      "key": "Transfero.becbord.co.uk:7070",
-      "link": "tg://proxy?server=Transfero.becbord.co.uk&port=7070&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "Net Account | نت اكانت",
-      "t_link": "https://t.me/myvpn1404/22535",
-      "latency": 165,
-      "flag": "🇫🇷",
-      "ts": 1786454361.8006516
     }
   ],
   "files": [

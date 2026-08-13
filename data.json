@@ -1,6 +1,46 @@
 {
   "configs": [
     {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiI4Mi4xOTguMjQ2LjI1MCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiYWRzLng1LnJ1IiwiaWQiOiJkMTNmYzJmNS0zZTA1LTQ3OTUtODFlYi00NDE0M2EwOWU1NTIiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsInBjcyI6IiIsInBvcnQiOiIxODAiLCJwcyI6IkB2cG5iYXog8J+NrSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwidmNuIjoiIn0=```",
+      "latency": 8,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/22673",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1786654336.9604306
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e99ba96d-dec8-42eb-be53-19e71eef7cab@5.253.42.164:40443?security=reality&encryption=none&pbk=g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=deepl.com&sid=68a8#%40vpnbaz%20%F0%9F%8C%8A",
+      "latency": 235,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/22672",
+      "flag": "🇮🇳",
+      "country": "India",
+      "ts": 1786654336.4542809
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.16.174.121:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%40vpnbaz%20%E2%98%82%EF%B8%8F",
+      "latency": 1,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/22671",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1786654335.8549874
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU@51.255.13.232:8388#%40vpnbaz%20%E2%AD%90",
+      "latency": 152,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/22670",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1786654335.4287727
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.38.209.231:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 88,
@@ -342,6 +382,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "king.mitivpn.lifestyle:25565",
+      "link": "tg://proxy?server=king.mitivpn.lifestyle&port=25565&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "اینترنت آزاد",
+      "t_link": "https://t.me/myvpn1404/22669",
+      "latency": 24,
+      "flag": "🇨🇦",
+      "ts": 1786654295.7726107
+    },
+    {
+      "key": "king.mitivpn.co.uk:25565",
+      "link": "tg://proxy?server=king.mitivpn.co.uk&port=25565&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "اینترنت آزاد",
+      "t_link": "https://t.me/myvpn1404/22669",
+      "latency": 154,
+      "flag": "🇨🇦",
+      "ts": 1786654295.7726095
+    },
+    {
+      "key": "king.mitivpn.co.uk:25565",
+      "link": "tg://proxy?server=king.mitivpn.co.uk&port=25565&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "اینترنت آزاد",
+      "t_link": "https://t.me/myvpn1404/22669",
+      "latency": 154,
+      "flag": "🇨🇦",
+      "ts": 1786654295.7726085
+    },
+    {
+      "key": "king.mitivpn.lifestyle:25565",
+      "link": "tg://proxy?server=king.mitivpn.lifestyle&port=25565&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "اینترنت آزاد",
+      "t_link": "https://t.me/myvpn1404/22669",
+      "latency": 92,
+      "flag": "🇨🇦",
+      "ts": 1786654295.7726061
+    },
     {
       "key": "dark.canmycheshm.co.uk.:25565",
       "link": "tg://proxy?server=dark.canmycheshm.co.uk.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d",
@@ -1205,45 +1281,16 @@
       "latency": 120,
       "flag": "🇱🇹",
       "ts": 1786603979.7478535
-    },
-    {
-      "key": "f1.car-race.co.uk:443",
-      "link": "tg://proxy?server=f1.car-race.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22622",
-      "latency": 290,
-      "flag": "🇱🇹",
-      "ts": 1786603979.7478528
-    },
-    {
-      "key": "jadid.zhigool.co.uk:25565",
-      "link": "tg://proxy?server=jadid.zhigool.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22622",
-      "latency": 199,
-      "flag": "🇨🇦",
-      "ts": 1786603979.7478518
-    },
-    {
-      "key": "iran.click-master.co.uk:443",
-      "link": "tg://proxy?server=iran.click-master.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22622",
-      "latency": 121,
-      "flag": "🇱🇹",
-      "ts": 1786603979.7478507
-    },
-    {
-      "key": "cloud.click-master.co.uk:8443",
-      "link": "tg://proxy?server=cloud.click-master.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22622",
-      "latency": 117,
-      "flag": "🇱🇹",
-      "ts": 1786603979.7478495
     }
   ],
   "files": [
+    {
+      "name": "آیپی ثابت ⚡ پرسرعت♥️.npvt",
+      "ext": "NPVT",
+      "channel": "اینترنت آزاد",
+      "link": "https://t.me/mitivpn/18216",
+      "ts": 1786654295.4817688
+    },
     {
       "name": "@Cooonfig(گشنمهههه).npvt",
       "ext": "NPVT",
@@ -1299,13 +1346,6 @@
       "channel": "Cooonfig",
       "link": "https://t.me/cooonfig/8759",
       "ts": 1786568046.9752629
-    },
-    {
-      "name": "@Cooonfig(تشنمه).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8757",
-      "ts": 1786563332.3388746
     }
   ]
 }

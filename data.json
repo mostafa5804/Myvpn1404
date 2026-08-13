@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.124.250.68:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 135,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/22666",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1786640579.860621
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.178.114.204:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 142,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/22665",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1786640579.3341618
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.185.250.13:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 90,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -382,6 +402,51 @@
     }
   ],
   "proxies": [
+    {
+      "key": "dark.canmycheshm.co.uk.:25565",
+      "link": "tg://proxy?server=dark.canmycheshm.co.uk.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22664",
+      "latency": 12,
+      "flag": "🇨🇦",
+      "ts": 1786640569.6370256
+    },
+    {
+      "key": "dark.canmycheshm.co.uk.:25565",
+      "link": "tg://proxy?server=dark.canmycheshm.co.uk.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22664",
+      "latency": 187,
+      "flag": "🇨🇦",
+      "ts": 1786640569.637025
+    },
+    {
+      "key": "172.65.122.51:25565",
+      "link": "tg://proxy?server=172.65.122.51&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22664",
+      "latency": 12,
+      "flag": "🇨🇦",
+      "ts": 1786640569.6370223
+    },
+    {
+      "key": "new.canmycheshm.co.uk.:22",
+      "link": "tg://proxy?server=new.canmycheshm.co.uk.&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22664",
+      "latency": 10,
+      "flag": "🇨🇦",
+      "ts": 1786640569.6370213
+    },
+    {
+      "key": "new.canmycheshm.co.uk.:22",
+      "link": "tg://proxy?server=new.canmycheshm.co.uk.&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22664",
+      "latency": 205,
+      "flag": "🇨🇦",
+      "ts": 1786640569.6370196
+    },
     {
       "key": "172.65.111.25:22",
       "link": "tg://proxy?server=172.65.111.25&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D",
@@ -1236,51 +1301,6 @@
       "latency": 117,
       "flag": "🇱🇹",
       "ts": 1786603979.7478495
-    },
-    {
-      "key": "cloud.click-master.co.uk:8443",
-      "link": "tg://proxy?server=cloud.click-master.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22622",
-      "latency": 117,
-      "flag": "🇱🇹",
-      "ts": 1786603979.7478485
-    },
-    {
-      "key": "qadim.zhigool.co.uk:22",
-      "link": "tg://proxy?server=qadim.zhigool.co.uk&port=22&secret=EERighJJvXrFGRMCIMJdCQ",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22622",
-      "latency": 195,
-      "flag": "🇨🇦",
-      "ts": 1786603979.7478468
-    },
-    {
-      "key": "beer.crona-extra.co.uk:8443",
-      "link": "tg://proxy?server=beer.crona-extra.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22622",
-      "latency": 299,
-      "flag": "🇱🇹",
-      "ts": 1786603979.747846
-    },
-    {
-      "key": "server.nl-arvancloud.co.uk:443",
-      "link": "tg://proxy?server=server.nl-arvancloud.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22622",
-      "latency": 125,
-      "flag": "🇱🇹",
-      "ts": 1786603979.7478447
-    },
-    {
-      "key": "iran.click-master.co.uk:443",
-      "link": "tg://proxy?server=iran.click-master.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22622",
-      "latency": 301,
-      "flag": "🇱🇹",
-      "ts": 1786603979.747843
     }
   ],
   "files": [

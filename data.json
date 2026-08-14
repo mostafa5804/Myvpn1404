@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.237.222.37:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 86,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/22705",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1786713598.230533
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://421ff04b-57c7-7e6b-a44b-f88e8d585e6f@69.46.46.10:443?path=%2Fws%2F421ff04b-57c7-7e6b-a44b-f88e8d585e6f&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=rvg-production-faa0.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=rvg-production-faa0.up.railway.app#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 6,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -282,6 +292,78 @@
     }
   ],
   "proxies": [
+    {
+      "key": "172.65.105.80:25565",
+      "link": "tg://proxy?server=172.65.105.80&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22704",
+      "latency": 1,
+      "flag": "🇨🇦",
+      "ts": 1786713588.4603996
+    },
+    {
+      "key": "can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.:25565",
+      "link": "tg://proxy?server=can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22704",
+      "latency": 2,
+      "flag": "🇨🇦",
+      "ts": 1786713588.460399
+    },
+    {
+      "key": "172.65.105.80:25565",
+      "link": "tg://proxy?server=172.65.105.80&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22704",
+      "latency": 2,
+      "flag": "🇨🇦",
+      "ts": 1786713588.4603977
+    },
+    {
+      "key": "172.65.113.134:22",
+      "link": "tg://proxy?server=172.65.113.134&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22704",
+      "latency": 1,
+      "flag": "🇨🇦",
+      "ts": 1786713588.4603968
+    },
+    {
+      "key": "close.your.mouth.and.eyse.kiroftopmine.site.:22",
+      "link": "tg://proxy?server=close.your.mouth.and.eyse.kiroftopmine.site.&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22704",
+      "latency": 2,
+      "flag": "🇨🇦",
+      "ts": 1786713588.460396
+    },
+    {
+      "key": "172.65.113.134:22",
+      "link": "tg://proxy?server=172.65.113.134&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22704",
+      "latency": 1,
+      "flag": "🇨🇦",
+      "ts": 1786713588.460395
+    },
+    {
+      "key": "close.your.mouth.and.eyse.kiroftopmine.site.:22",
+      "link": "tg://proxy?server=close.your.mouth.and.eyse.kiroftopmine.site.&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22704",
+      "latency": 61,
+      "flag": "🇨🇦",
+      "ts": 1786713588.460394
+    },
+    {
+      "key": "can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.:25565",
+      "link": "tg://proxy?server=can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22704",
+      "latency": 73,
+      "flag": "🇨🇦",
+      "ts": 1786713588.4603918
+    },
     {
       "key": "noone.lavazemi1.co.uk:2083",
       "link": "tg://proxy?server=noone.lavazemi1.co.uk&port=2083&secret=eeNEgYdJvXrFGRMCIMJdCQ",
@@ -839,78 +921,6 @@
       "latency": 121,
       "flag": "🇩🇪",
       "ts": 1786629299.4894042
-    },
-    {
-      "key": "172.65.113.134:22",
-      "link": "tg://proxy?server=172.65.113.134&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/22656",
-      "latency": 2,
-      "flag": "🇨🇦",
-      "ts": 1786622811.7598891
-    },
-    {
-      "key": "close.your.mouth.and.eyse.kiroftopmine.site.:22",
-      "link": "tg://proxy?server=close.your.mouth.and.eyse.kiroftopmine.site.&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/22656",
-      "latency": 2,
-      "flag": "🇨🇦",
-      "ts": 1786622811.7598882
-    },
-    {
-      "key": "can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.:25565",
-      "link": "tg://proxy?server=can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/22656",
-      "latency": 2,
-      "flag": "🇨🇦",
-      "ts": 1786622811.7598872
-    },
-    {
-      "key": "172.65.113.134:22",
-      "link": "tg://proxy?server=172.65.113.134&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/22656",
-      "latency": 2,
-      "flag": "🇨🇦",
-      "ts": 1786622811.7598855
-    },
-    {
-      "key": "can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.:25565",
-      "link": "tg://proxy?server=can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/22656",
-      "latency": 60,
-      "flag": "🇨🇦",
-      "ts": 1786622811.759884
-    },
-    {
-      "key": "172.65.105.80:25565",
-      "link": "tg://proxy?server=172.65.105.80&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d)",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/22656",
-      "latency": 1,
-      "flag": "🇨🇦",
-      "ts": 1786622811.759883
-    },
-    {
-      "key": "172.65.105.80:25565",
-      "link": "tg://proxy?server=172.65.105.80&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/22656",
-      "latency": 2,
-      "flag": "🇨🇦",
-      "ts": 1786622811.759882
-    },
-    {
-      "key": "close.your.mouth.and.eyse.kiroftopmine.site.:22",
-      "link": "tg://proxy?server=close.your.mouth.and.eyse.kiroftopmine.site.&port=22&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D",
-      "channel": "دارک پروکسی | Proxy mtproto",
-      "t_link": "https://t.me/myvpn1404/22656",
-      "latency": 83,
-      "flag": "🇨🇦",
-      "ts": 1786622811.7598796
     }
   ],
   "files": [

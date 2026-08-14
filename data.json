@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://bd33c069-8f8c-4da3-9d14-9f539597ab66@176.109.88.216:443?security=reality&encryption=none&pbk=oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=api-maps.yandex.ru&sid=a9c4f17e3b62d8#2",
+      "latency": 186,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22708",
+      "flag": "🇷🇺",
+      "country": "Russia",
+      "ts": 1786715405.4357164
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.193.240.71:22222?security=none&encryption=none&headerType=none&type=tcp#1",
+      "latency": 148,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22707",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1786715404.8545148
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.237.222.37:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 86,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -279,19 +299,207 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1786638316.1942515
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.189.189:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 127,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/22657",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1786627542.3964744
     }
   ],
   "proxies": [
+    {
+      "key": "bastani.mikham.co.uk:8443",
+      "link": "tg://proxy?server=bastani.mikham.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 286,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546947
+    },
+    {
+      "key": "jadid.zhigool.co.uk:25565",
+      "link": "tg://proxy?server=jadid.zhigool.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 8,
+      "flag": "🇨🇦",
+      "ts": 1786715409.754694
+    },
+    {
+      "key": "server.nl-arvancloud.co.uk:443",
+      "link": "tg://proxy?server=server.nl-arvancloud.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 158,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546928
+    },
+    {
+      "key": "iran.click-master.co.uk:443",
+      "link": "tg://proxy?server=iran.click-master.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 168,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546918
+    },
+    {
+      "key": "cloud.click-master.co.uk:8443",
+      "link": "tg://proxy?server=cloud.click-master.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 157,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546911
+    },
+    {
+      "key": "cloud.click-master.co.uk:8443",
+      "link": "tg://proxy?server=cloud.click-master.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 297,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546897
+    },
+    {
+      "key": "beer.crona-extra.co.uk:8443",
+      "link": "tg://proxy?server=beer.crona-extra.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 145,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546887
+    },
+    {
+      "key": "chai.mikham.co.uk:8443",
+      "link": "tg://proxy?server=chai.mikham.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 155,
+      "flag": "🇱🇹",
+      "ts": 1786715409.754688
+    },
+    {
+      "key": "f1.car-race.co.uk:443",
+      "link": "tg://proxy?server=f1.car-race.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 155,
+      "flag": "🇱🇹",
+      "ts": 1786715409.754687
+    },
+    {
+      "key": "beer.crona-extra.co.uk:8443",
+      "link": "tg://proxy?server=beer.crona-extra.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 151,
+      "flag": "🇱🇹",
+      "ts": 1786715409.754686
+    },
+    {
+      "key": "ma.hastim.co.uk:443",
+      "link": "tg://proxy?server=ma.hastim.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 296,
+      "flag": "🇱🇹",
+      "ts": 1786715409.754685
+    },
+    {
+      "key": "ma.hastim.co.uk:443",
+      "link": "tg://proxy?server=ma.hastim.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 149,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546837
+    },
+    {
+      "key": "bastani.mikham.co.uk:8443",
+      "link": "tg://proxy?server=bastani.mikham.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 151,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546825
+    },
+    {
+      "key": "f1.car-race.co.uk:443",
+      "link": "tg://proxy?server=f1.car-race.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 158,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546816
+    },
+    {
+      "key": "bala.hastim.co.uk:443",
+      "link": "tg://proxy?server=bala.hastim.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 152,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546806
+    },
+    {
+      "key": "iran.click-master.co.uk:443",
+      "link": "tg://proxy?server=iran.click-master.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 154,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546792
+    },
+    {
+      "key": "server.nl-arvancloud.co.uk:443",
+      "link": "tg://proxy?server=server.nl-arvancloud.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 160,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546782
+    },
+    {
+      "key": "jadid.zhigool.co.uk:25565",
+      "link": "tg://proxy?server=jadid.zhigool.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 10,
+      "flag": "🇨🇦",
+      "ts": 1786715409.754677
+    },
+    {
+      "key": "chai.mikham.co.uk:8443",
+      "link": "tg://proxy?server=chai.mikham.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 164,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546756
+    },
+    {
+      "key": "bala.hastim.co.uk:443",
+      "link": "tg://proxy?server=bala.hastim.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 486,
+      "flag": "🇱🇹",
+      "ts": 1786715409.7546744
+    },
+    {
+      "key": "qadim.zhigool.co.uk:22",
+      "link": "tg://proxy?server=qadim.zhigool.co.uk&port=22&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 8,
+      "flag": "🇨🇦",
+      "ts": 1786715409.7546725
+    },
+    {
+      "key": "qadim.zhigool.co.uk:22",
+      "link": "tg://proxy?server=qadim.zhigool.co.uk&port=22&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/22709",
+      "latency": 25,
+      "flag": "🇨🇦",
+      "ts": 1786715409.7546706
+    },
     {
       "key": "172.65.105.80:25565",
       "link": "tg://proxy?server=172.65.105.80&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d)",
@@ -924,6 +1132,20 @@
     }
   ],
   "files": [
+    {
+      "name": "@ZhilaVPN(ژیک)🔥.npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/8784",
+      "ts": 1786715534.082584
+    },
+    {
+      "name": "npvfile104.npvt",
+      "ext": "NPVT",
+      "channel": "Vpn | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/3179",
+      "ts": 1786715404.2267442
+    },
     {
       "name": "‎⁨مولتی لوکیشن خفن🚀⚡️🔥⁩.npvt",
       "ext": "NPVT",

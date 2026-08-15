@@ -329,29 +329,27 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1786727033.1660306
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://bd33c069-8f8c-4da3-9d14-9f539597ab66@176.109.88.216:443?security=reality&encryption=none&pbk=oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=api-maps.yandex.ru&sid=a9c4f17e3b62d8#2",
-      "latency": 186,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22708",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1786715405.4357164
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.193.240.71:22222?security=none&encryption=none&headerType=none&type=tcp#1",
-      "latency": 148,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22707",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1786715404.8545148
     }
   ],
   "proxies": [
+    {
+      "key": "172.65.105.80:25565",
+      "link": "tg://proxy?server=172.65.105.80&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22765",
+      "latency": 5,
+      "flag": "🇨🇦",
+      "ts": 1786804229.771579
+    },
+    {
+      "key": "can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.:25565",
+      "link": "tg://proxy?server=can.you.tell.me.how.can.i.bokhoramet.kiroftopmine.site.&port=25565&secret=ee104462821249bd7ac519130220c25d0963646e2e79656b74616e65742e636f6d",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/22765",
+      "latency": 50,
+      "flag": "🇨🇦",
+      "ts": 1786804229.771577
+    },
     {
       "key": "king.mitivpn.lifestyle:25565",
       "link": "tg://proxy?server=king.mitivpn.lifestyle&port=25565&secret=dd104462821249bd7ac519130220c25d09",
@@ -1197,60 +1195,6 @@
       "latency": 5,
       "flag": "🇨🇦",
       "ts": 1786727023.4341419
-    },
-    {
-      "key": "bastani.mikham.co.uk:8443",
-      "link": "tg://proxy?server=bastani.mikham.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22709",
-      "latency": 286,
-      "flag": "🇱🇹",
-      "ts": 1786715409.7546947
-    },
-    {
-      "key": "jadid.zhigool.co.uk:25565",
-      "link": "tg://proxy?server=jadid.zhigool.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22709",
-      "latency": 8,
-      "flag": "🇨🇦",
-      "ts": 1786715409.754694
-    },
-    {
-      "key": "server.nl-arvancloud.co.uk:443",
-      "link": "tg://proxy?server=server.nl-arvancloud.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22709",
-      "latency": 158,
-      "flag": "🇱🇹",
-      "ts": 1786715409.7546928
-    },
-    {
-      "key": "iran.click-master.co.uk:443",
-      "link": "tg://proxy?server=iran.click-master.co.uk&port=443&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d)",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22709",
-      "latency": 168,
-      "flag": "🇱🇹",
-      "ts": 1786715409.7546918
-    },
-    {
-      "key": "cloud.click-master.co.uk:8443",
-      "link": "tg://proxy?server=cloud.click-master.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22709",
-      "latency": 157,
-      "flag": "🇱🇹",
-      "ts": 1786715409.7546911
-    },
-    {
-      "key": "cloud.click-master.co.uk:8443",
-      "link": "tg://proxy?server=cloud.click-master.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)",
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/22709",
-      "latency": 297,
-      "flag": "🇱🇹",
-      "ts": 1786715409.7546897
     }
   ],
   "files": [
@@ -1344,20 +1288,6 @@
       "channel": "Cooonfig",
       "link": "https://t.me/cooonfig/8785",
       "ts": 1786723219.8704646
-    },
-    {
-      "name": "@ZhilaVPN(ژیک)🔥.npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8784",
-      "ts": 1786715534.082584
-    },
-    {
-      "name": "npvfile104.npvt",
-      "ext": "NPVT",
-      "channel": "Vpn | proxy | filtershekan",
-      "link": "https://t.me/filtershekan_channel/3179",
-      "ts": 1786715404.2267442
     }
   ]
 }

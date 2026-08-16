@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.157.224.206:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 115,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/22811",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1786864120.6296456
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://b47a1c70-d033-4c31-b24f-6058d6cd04bf@2.144.26.237:9443?path=%2Fnova-geo-psiphon-be&security=tls&encryption=none&insecure=0&host=vip.polnejat.ir&type=ws&allowInsecure=0&sni=vip.polnejat.ir#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
       "latency": 161,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -539,16 +549,6 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "ts": 1786789785.156577
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.153.151.72:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 88,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/22731",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1786777563.781096
     }
   ],
   "proxies": [

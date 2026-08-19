@@ -2,6 +2,36 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://f798a2c4-c51b-409d-b349-ca8455b36796@188.114.97.4:8443?path=%2Fdownload.php&security=tls&encryption=none&insecure=0&host=chopin.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=chopin.adaspoloandco.com#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9",
+      "latency": 4,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/23119",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1787167967.6264758
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://a18f7c2d-9e45-4b8a-af3c-1d5e7f9c8b2a@tg.riotvpn.eu:443?security=reality&encryption=none&pbk=8h8t5eBWL9oERK7xWHQLFJE5j6ZdgNDQAs3EGnNbho&headerType=none&fp=chrome&type=tcp&sni=ads.x5.ru&sid=2f49bccf11150ef2#%40vpnbaz%20%F0%9F%8C%8A",
+      "latency": 349,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/23118",
+      "flag": "🇵🇱",
+      "country": "Poland",
+      "ts": 1787167967.2462451
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@15.204.247.124:2375#%40vpnbaz%20%E2%AD%90",
+      "latency": 21,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/23117",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1787167966.0520568
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@104.18.37.228:443?path=%2F%3FTELEGRAM-MARAMBASHI_MARAMBASHI%3Fed%3D512&security=tls&encryption=none&insecure=0&host=josni.hoyes.cloudns.ch&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=josni.hoyes.cloudns.ch#configraygan_9",
       "latency": 6,
       "channel": "کانفیگ رایگان",
@@ -1674,6 +1704,13 @@
     }
   ],
   "files": [
+    {
+      "name": "@Cooonfig(فسنجان).npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/8858",
+      "ts": 1787167959.4582634
+    },
     {
       "name": "@Cooonfig(توت فرنگی).npvt",
       "ext": "NPVT",

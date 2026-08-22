@@ -2,6 +2,36 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e5cc16a6-ea42-46b2-82ae-ad2157e1641b@104.18.37.228:443?path=%3Fed%3D512&security=tls&encryption=none&insecure=0&host=hhlfy.twiladaphne.ndjp.net&ech=encryptedsni.com%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=hhlfy.twiladaphne.ndjp.net#4`",
+      "latency": 4,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/23368",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1787409841.035065
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.16.174.12:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#2",
+      "latency": 2,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/23367",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1787409840.736476
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.19.229.21:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#1",
+      "latency": 2,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/23366",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1787409840.446975
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.80.12:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 125,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -1294,6 +1324,13 @@
     }
   ],
   "files": [
+    {
+      "name": "npvfile115.npvt",
+      "ext": "NPVT",
+      "channel": "Vpn | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/3206",
+      "ts": 1787409840.147089
+    },
     {
       "name": "@Cooonfig(ژیک💝).npvt",
       "ext": "NPVT",

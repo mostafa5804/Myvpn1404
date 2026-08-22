@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.80.12:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 125,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/23364",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1787404105.5026057
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://c7e9c591-2764-423a-afca-efbd010fd396@31.133.0.133:2053?path=%2F&security=tls&encryption=none&insecure=0&host=forfreeuse.rtqa.ru&type=ws&allowInsecure=0&sni=forfreeuse.rtqa.ru#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
       "latency": 132,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -569,56 +579,6 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1787318736.204326
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://1b1088fc-d595-481c-a82b-b410e0b0b7a8@178.236.254.40:443?security=none&encryption=none&headerType=none&type=tcp#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 184,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23283",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1787317155.125551
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://302c2e89-6f2d-4500-90ce-26d075c7e84f@66.78.40.202:443?security=reality&encryption=none&pbk=8zJkTehTmhmgKWUIj-CyJP4gtMjNxLgBxPjHC1wwW3A&headerType=none&fp=chrome&spx=%2Fb46a29a208a37d1&type=tcp&flow=xtls-rprx-vision&sni=www.samsung.com&sid=61#4`",
-      "latency": 31,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/23282",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1787317088.6194205
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://bb05f9d7-a3d1-4b81-a790-f6dba0301907@209.50.241.126:443?security=reality&encryption=none&pbk=i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=us.servers.gracevpnbuy.com&sid=b91a73752053b039#3",
-      "latency": 107,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/23281",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1787317088.2042315
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://humanity@104.16.174.12:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#2",
-      "latency": 6,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/23280",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1787317087.7036848
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://humanity@104.19.229.21:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#1",
-      "latency": 5,
-      "channel": "Vpn | proxy | filtershekan",
-      "t_link": "https://t.me/myvpn1404/23279",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1787317087.3328166
     }
   ],
   "proxies": [
@@ -1606,20 +1566,6 @@
       "channel": "i SHARΞ WIN™",
       "link": "https://t.me/isharewin/45851",
       "ts": 1787318703.048683
-    },
-    {
-      "name": "@Cooonfig(گردو).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/8874",
-      "ts": 1787317210.2805922
-    },
-    {
-      "name": "npvfile114.npvt",
-      "ext": "NPVT",
-      "channel": "Vpn | proxy | filtershekan",
-      "link": "https://t.me/filtershekan_channel/3202",
-      "ts": 1787317086.9111614
     }
   ]
 }

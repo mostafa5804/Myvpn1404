@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.141.94:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 83,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/23346",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1787398036.3240116
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@63.184.211.42:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 151,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -542,6 +552,42 @@
     }
   ],
   "proxies": [
+    {
+      "key": "iro.varfootball2.co.uk:2053",
+      "link": "tg://proxy?server=iro.varfootball2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/23345",
+      "latency": 294,
+      "flag": "🇮🇷",
+      "ts": 1787398014.5543375
+    },
+    {
+      "key": "iro.varfootball2.co.uk:2053",
+      "link": "tg://proxy?server=iro.varfootball2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/23345",
+      "latency": 314,
+      "flag": "🇮🇷",
+      "ts": 1787398014.5543334
+    },
+    {
+      "key": "silnet.varfootball.co.uk:2053",
+      "link": "tg://proxy?server=silnet.varfootball.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/23345",
+      "latency": 292,
+      "flag": "🇮🇷",
+      "ts": 1787398014.5543325
+    },
+    {
+      "key": "silnet.varfootball.co.uk:2053",
+      "link": "tg://proxy?server=silnet.varfootball.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/23345",
+      "latency": 302,
+      "flag": "🇮🇷",
+      "ts": 1787398014.5543308
+    },
     {
       "key": "eshq-chishi.pc-ostad.ir:8443",
       "link": "tg://proxy?server=eshq-chishi.pc-ostad.ir&port=8443&secret=AAAAAAAAAAAAAAAAAAAAAA%3D%3D",

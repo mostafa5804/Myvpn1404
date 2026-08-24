@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.35.132:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 108,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/23527",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1787598566.4615073
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://a408ce18-01c1-9b6f-4ccc-d5ce3068a593@69.46.46.31:443?path=%2Fws%2Fa408ce18-01c1-9b6f-4ccc-d5ce3068a593&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=tajrob-production.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=tajrob-production.up.railway.app#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 8,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -559,19 +569,63 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1787513275.5699267
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://d171491a-9995-46ce-8719-f64463ca3a45@172.67.74.10:443?path=%2Fdownload.php%23TELEGRAM-TOOTFFARANGI%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=sertraline.adaspoloandco.com&fp=chrome&type=ws&allowInsecure=0&sni=sertraline.adaspoloandco.com#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
-      "latency": 2,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23455",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1787511292.8361683
     }
   ],
   "proxies": [
+    {
+      "key": "rain.lavazemi2.co.uk:2053",
+      "link": "tg://proxy?server=rain.lavazemi2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/23526",
+      "latency": 304,
+      "flag": "🇮🇷",
+      "ts": 1787598543.4682515
+    },
+    {
+      "key": "silver.ciaude.co.uk:2096",
+      "link": "tg://proxy?server=silver.ciaude.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/23526",
+      "latency": 306,
+      "flag": "🇮🇷",
+      "ts": 1787598543.46825
+    },
+    {
+      "key": "gallery.talebi.co.uk:2096",
+      "link": "tg://proxy?server=gallery.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/23526",
+      "latency": 329,
+      "flag": "🇮🇷",
+      "ts": 1787598543.4682488
+    },
+    {
+      "key": "ai.golgoli1.co.uk:2096",
+      "link": "tg://proxy?server=ai.golgoli1.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/23526",
+      "latency": 132,
+      "flag": "🇮🇷",
+      "ts": 1787598543.4682477
+    },
+    {
+      "key": "flux.lavazemi5.co.uk:2096",
+      "link": "tg://proxy?server=flux.lavazemi5.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/23526",
+      "latency": 308,
+      "flag": "🇮🇷",
+      "ts": 1787598543.4682457
+    },
+    {
+      "key": "gold.lavazemi4.co.uk:2096",
+      "link": "tg://proxy?server=gold.lavazemi4.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/23526",
+      "latency": 316,
+      "flag": "🇮🇷",
+      "ts": 1787598543.468243
+    },
     {
       "key": "silnet.varfootball.co.uk:2053",
       "link": "tg://proxy?server=silnet.varfootball.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",

@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjVEFPYndnNE9XV1hrWkpRczBaZGdD@31.76.82.131:34260#4`",
+      "latency": 150,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/23481",
+      "flag": "🇵🇱",
+      "country": "Poland",
+      "ts": 1787556851.492429
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpyS0U1T2NoSHFUcmthbXp4@94.245.92.85:443#3",
+      "latency": 133,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/23480",
+      "flag": "🇮🇪",
+      "country": "Ireland",
+      "ts": 1787556850.987885
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://humanity@104.16.174.121:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#1",
+      "latency": 17,
+      "channel": "Vpn | proxy | filtershekan",
+      "t_link": "https://t.me/myvpn1404/23479",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1787556850.485805
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.195.83.74:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 146,
@@ -389,16 +419,6 @@
       "flag": "🇨🇭",
       "country": "Switzerland",
       "ts": 1787485376.3807187
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.72.202.163:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 108,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/23420",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1787469008.9856188
     }
   ],
   "proxies": [
@@ -1304,6 +1324,13 @@
     }
   ],
   "files": [
+    {
+      "name": "npvfile117.npvt",
+      "ext": "NPVT",
+      "channel": "Vpn | proxy | filtershekan",
+      "link": "https://t.me/filtershekan_channel/3212",
+      "ts": 1787556850.0852191
+    },
     {
       "name": "@Cooonfig(تشنمه)'''.npvt",
       "ext": "NPVT",

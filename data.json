@@ -549,19 +549,27 @@
       "flag": "🇸🇪",
       "country": "Sweden",
       "ts": 1787571311.800874
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.29.36.98:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 151,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/23485",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1787562724.7958176
     }
   ],
   "proxies": [
+    {
+      "key": "one.horizon555.co.uk:8443",
+      "link": "tg://proxy?server=one.horizon555.co.uk&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/23556",
+      "latency": 323,
+      "flag": "🇩🇪",
+      "ts": 1787650910.8321712
+    },
+    {
+      "key": "VIP.Mohearn.co.uk.:443",
+      "link": "tg://proxy?server=VIP.Mohearn.co.uk.&port=443&secret=7t3_BeZaaaan_RoooooSH_93ZWIuYmFsZS5haQ%3D%3D",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/23556",
+      "latency": 149,
+      "flag": "🇩🇪",
+      "ts": 1787650910.832169
+    },
     {
       "key": "silnet.varfootball.co.uk:2053",
       "link": "tg://proxy?server=silnet.varfootball.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",
@@ -1443,24 +1451,6 @@
       "latency": 63,
       "flag": "🇺🇸",
       "ts": 1787603915.659308
-    },
-    {
-      "key": "94.184.32.108:2020",
-      "link": "tg://proxy?server=94.184.32.108&port=2020&secret=dd00000000000000000000000000000000)17.[PROXY](tg://proxy?server=172.65.118.185&port=22&secret=dd104462821249bd7ac519130220c25d09)18.[PROXY](tg://proxy?server=khob.nisti.co.uk&port=8880&secret=79e344818749bd7ac519130220c25d09)",
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/23530",
-      "latency": 107,
-      "flag": "🇮🇷",
-      "ts": 1787603915.659307
-    },
-    {
-      "key": "194.60.228.11:2053",
-      "link": "tg://proxy?server=194.60.228.11&port=2053&secret=dd79e344818749bd7ac519130220c25d09",
-      "channel": "IP_CF | Channel",
-      "t_link": "https://t.me/myvpn1404/23530",
-      "latency": 116,
-      "flag": "🇮🇷",
-      "ts": 1787603915.659306
     }
   ],
   "files": [

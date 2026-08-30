@@ -172,7 +172,7 @@ def create_footer(source_title, source_username):
         f"🗓 {date_str} • 🕐 {time_str}\n"
         f"📡 source: [{safe_title}](https://t.me/{clean_username})\n"
         f"💬 {destination_channel}\n"
-        f"🤖 Bot: [@Feechecker_bot](https://t.me/Feechecker_bot)" 
+        
     )
 
 # --- تابع جدید: استخراج رمز از متن کپشن ---

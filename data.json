@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiI4Mi4xOTguMjQ2Ljk3IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJvbmUuY2YuY2RuLmh5bGkueHl6IiwiaWQiOiJkMTNmYzJmNS0zZTA1LTQ3OTUtODFlYi00NDE0M2EwOWU1NTIiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsInBjcyI6IiIsInBvcnQiOiIxODAiLCJwcyI6IkB2cG5iYXog8J+MiiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwidmNuIjoiIn0=```",
+      "latency": 16,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/23855",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1788468729.2023618
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://b81b4d1b-7f20-48f1-82dc-d24bef898cab@161.97.160.224:443?security=reality&encryption=none&pbk=33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=passport.yandex.ru&sid=e6#%40vpnbaz%20%E2%98%82%EF%B8%8F",
+      "latency": 246,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/23854",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1788468728.6573193
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@185.226.172.8:8008#%40vpnbaz%20%E2%AD%90",
+      "latency": 150,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/23853",
+      "flag": "🇮🇷",
+      "country": "Iran",
+      "ts": 1788468722.9424174
+    },
+    {
       "protocol": "VLESS",
       "config": "vless://894fe9f0-b998-49c0-8003-a5007de921e1@189.74.97.47:2087?path=%2F755276b33b6f&security=&encryption=none&type=ws#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
       "latency": 1267,
@@ -229,46 +259,6 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1788382480.0649889
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://83973343-90db-423d-a5f7-2e3b56aeb8f4@43.202.46.25:28482?security=reality&encryption=none&pbk=8fsYG_Pg35aeg1E5Gc3HUaXou2OUQee4ukxVk99iR0s&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.intel.com&sid=fa1e592603c283#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9```",
-      "latency": 170,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/23823",
-      "flag": "🇰🇷",
-      "country": "South Korea",
-      "ts": 1788379019.1456726
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://f1904bfb-3903-4949-814a-e1053a918e34@46.28.65.153:443?security=reality&encryption=none&pbk=45xYuYgCIILK5XYvV_D13LJWvCKuoipdKzDfaEBZuW8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com&sid=1df5faea50efd4fc#%40vpnbaz%20%E2%98%82%EF%B8%8F",
-      "latency": 133,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/23822",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1788379018.4539068
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://fe8e2ffb-8796-408c-af5b-0d4774215e00@89.34.90.68:8443?mode=gun&security=reality&encryption=none&pbk=dTdncizxtVTqDZDkQoYdRTkf2Mn6XuKtkzg8vZhrkzA&fp=chrome&type=grpc&serviceName=grpc&sni=360.yandex.ru&sid=6ba85179e30d4fc2#%40vpnbaz%20%F0%9F%9B%B8",
-      "latency": 146,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/23821",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1788379017.9783297
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://511c1563-2cb6-4064-abc6-a59ee49818a8@5.253.30.99:40443?security=reality&encryption=none&pbk=cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=deepl.com&sid=88b6#%40vpnbaz%20%F0%9F%8D%AD",
-      "latency": 231,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/23820",
-      "flag": "🇮🇳",
-      "country": "India",
-      "ts": 1788379017.4754987
     }
   ],
   "proxies": [
@@ -905,6 +895,13 @@
   ],
   "files": [
     {
+      "name": "@planB_net #590.npvt",
+      "ext": "NPVT",
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "link": "https://t.me/planB_net/3414",
+      "ts": 1788468654.6451628
+    },
+    {
       "name": "@ghalagyann👈 کانال تلگرام.npvt",
       "ext": "NPVT",
       "channel": "ghalagyann",
@@ -924,13 +921,6 @@
       "channel": "VPN MARKET",
       "link": "https://t.me/anty_filter/23958",
       "ts": 1788389113.8143148
-    },
-    {
-      "name": "@planB_net #589.npvt",
-      "ext": "NPVT",
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "link": "https://t.me/planB_net/3409",
-      "ts": 1788378955.5022297
     }
   ]
 }

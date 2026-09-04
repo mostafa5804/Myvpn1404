@@ -1,6 +1,36 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://a0ba4d1e-60e7-4362-8f82-33da87da8e88@167.233.227.12:35443?security=reality&encryption=none&pbk=fu6E7KRYZT4vs4EoWdDiyH3tL8n4eD8M4TveOvpvNmE&headerType=none&fp=firefox&spx=%2F26efcddfd88f6bc&type=tcp&sni=amp-api-edge.apps.apple.com&sid=bd2e4421#%40vpnbaz%20%E2%98%82%EF%B8%8F```",
+      "latency": 103,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/23877",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1788554360.5970614
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.206:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#%40vpnbaz%20%F0%9F%8D%AD",
+      "latency": 71,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/23876",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1788554360.066014
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.195:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#%40vpnbaz%20%F0%9F%8C%8A",
+      "latency": 68,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/23875",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1788554359.6675386
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://humanity@188.114.97.7:443?path=%2Fassignment&security=tls&insecure=0&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
       "latency": 8,
@@ -149,126 +179,6 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1788468722.9424174
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://894fe9f0-b998-49c0-8003-a5007de921e1@189.74.97.47:2087?path=%2F755276b33b6f&security=&encryption=none&type=ws#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 1267,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23851",
-      "flag": "🇺🇿",
-      "country": "Uzbekistan",
-      "ts": 1788457536.2650125
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://38dd06a1-e1cb-492b-bb87-218ce05d0d67@185.143.233.5:80?path=%2F&security=&encryption=none&host=fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir&type=ws#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 147,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23850",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1788457534.6595817
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumeroot.com&fp=chrome&type=ws&allowInsecure=0&sni=www.volumeroot.com#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 2,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23849",
-      "flag": "🇳🇱",
-      "country": "The Netherlands",
-      "ts": 1788457534.1627128
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://08ffff12-93bb-42eb-8c83-6489644a1d04@k2.cloud--vpn.site:443?path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=c12.com&fp=firefox&type=ws&allowInsecure=0&sni=ssl.fastly.com#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 79,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23848",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1788457533.701185
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://0c78b433-e644-4249-9e56-86ab4c5106e2@144.31.213.199:443?security=tls&encryption=none&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=vip.check-ghost.space#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 181,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23847",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1788457532.850039
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e6d369db-22be-4f30-8685-455c717aaa8c@157.22.133.130:2087?path=%2F5021201ef53f&security=&encryption=none&type=ws#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 227,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23846",
-      "flag": "🇺🇿",
-      "country": "Uzbekistan",
-      "ts": 1788457532.2519333
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e60265c7-8b28-4b93-9a6e-c502c497cac3@199.232.78.159:443?path=%2F&security=tls&encryption=none&insecure=0&host=7wwwspeedtestnet.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 1,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23845",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1788457531.6932201
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e60265c7-8b28-4b93-9a6e-c502c497cac3@199.232.78.159:80?path=%2F&security=&encryption=none&host=7wwwspeedtestnet.global.ssl.fastly.net&type=ws#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 2,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23844",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1788457531.266052
-    },
-    {
-      "protocol": "TROJAN",
-      "config": "trojan://50414e45-4c5f-5a45-5553-87e305887235@104.21.64.113:443?path=%2Fstream%2FPANEL_ZEUS%2F87e305887235%2Floc-0&security=tls&insecure=0&host=ez-4e9ea0.ahmohmadaminah.workers.dev&type=ws&allowInsecure=0&sni=ez-4e9ea0.ahmohmadaminah.workers.dev#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 72,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23843",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1788457530.8700726
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiIxODUuMjA0LjE3MC4xMzAiLCJhaWQiOiIwIiwiYWxwbiI6ImgyLGh0dHAvMS4xIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiMTg1LjIwNC4xNzAuMTMwIiwiaWQiOiJiODEzNmU1Zi04ZWNlLTRhMDYtOTlhZi01YTIwN2M3NDliYzQiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJodHRwdXBncmFkZSIsInBhdGgiOiIvIiwicGNzIjoiIiwicG9ydCI6IjQ0MyIsInBzIjoi8J2XnfCdl7zwnZe28J2Xu+KeoEBQbGFuQl9uZXQiLCJzY3kiOiJhdXRvIiwic25pIjoiMTg1LjIwNC4xNzAuMTMwIiwidGxzIjoidGxzIiwidHlwZSI6Ii0tLSIsInYiOiIyIiwidmNuIjoiIn0=",
-      "latency": 151,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23842",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1788457530.4651983
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://d7430ae7-320c-4658-808b-3006d0627d82@185.246.191.243:443?security=reality&encryption=none&pbk=n_-rh8EC8zmzkuu2AmCnKoh09omlYONdgS_F7CStITk&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=endeavouros.ubuntuhosting.host&sid=3fa234ea9feaa048#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 169,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23841",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1788457529.968324
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e87a9033-53f9-4f76-8f8f-f0385d2b02a9@104.194.148.61:8880?mode=auto&path=%2F&security=reality&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%221000000%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&pbk=e9fKLt7mWl5lEqMzTyzQ6oXLJ2F-M84m2FaITRT3ByY&fp=chrome&spx=%2FpKmZh3yxHNWOHo4&type=xhttp&sni=amp-api-edge.apps.apple.com&sid=2273#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 140,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23840",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1788457529.4942636
     }
   ],
   "proxies": [
@@ -702,13 +612,6 @@
       "channel": "پروکسی | کانفیگ | 🅱️plan",
       "link": "https://t.me/planB_net/3414",
       "ts": 1788468654.6451628
-    },
-    {
-      "name": "@ghalagyann👈 کانال تلگرام.npvt",
-      "ext": "NPVT",
-      "channel": "ghalagyann",
-      "link": "https://t.me/ghalagyann/21592",
-      "ts": 1788457472.5192225
     }
   ]
 }

@@ -1,6 +1,16 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://%40awlix_ir@213.163.207.91:443?type=tcp&encryption=none&path=%2F&headerType=http&security=none#%40awlix_ir-bogszwn8`",
+      "latency": 168,
+      "channel": "Awlix کانفیگ | ملی شکن 🛜",
+      "t_link": "https://t.me/myvpn1404/24005",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "ts": 1788963528.2130132
+    },
+    {
       "protocol": "TROJAN",
       "config": "trojan://humanity@130.250.137.171:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 11,
@@ -169,16 +179,6 @@
       "flag": "🇬🇧",
       "country": "United Kingdom",
       "ts": 1788887619.6627185
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://2edbad06-49de-4f75-bfc9-993a12cfe3f1@204.11.2.120:16565?mode=gun&security=reality&encryption=none&pbk=CuCszXg3N1y8X2klMaK70LeoRbF3vasPI0DG92Dyymo&fp=chrome&type=grpc&sni=cdn.diba4movie.xyz&sid=e3151e5761d8971b#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 151,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/23974",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1788871683.9639647
     }
   ],
   "proxies": [

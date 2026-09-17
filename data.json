@@ -89,19 +89,81 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1789589932.8204985
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.133.115.28:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 96,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/24181",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1789578719.440865
     }
   ],
   "proxies": [
+    {
+      "key": "torobchesho.co.uk:443",
+      "link": "tg://proxy?server=torobchesho.co.uk&port=443&secret=ee5f7ce28a2c4816c6c923dfd4d5630e01746f726f6263686573686f2e636f2e756b)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/24194",
+      "latency": 199,
+      "flag": "🇫🇮",
+      "ts": 1789669467.8119357
+    },
+    {
+      "key": "torobchesho.co.uk:443",
+      "link": "tg://proxy?server=torobchesho.co.uk&port=443&secret=ee5f7ce28a2c4816c6c923dfd4d5630e01746f726f6263686573686f2e636f2e756b",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/24194",
+      "latency": 323,
+      "flag": "🇫🇮",
+      "ts": 1789669467.8119345
+    },
+    {
+      "key": "at.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=at.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "VPN | CICDO اخبار",
+      "t_link": "https://t.me/myvpn1404/24193",
+      "latency": 151,
+      "flag": "🇮🇷",
+      "ts": 1789669375.6596618
+    },
+    {
+      "key": "AZADI.goooalir.co.uk:8443",
+      "link": "tg://proxy?server=AZADI.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09",
+      "channel": "VPN | CICDO اخبار",
+      "t_link": "https://t.me/myvpn1404/24193",
+      "latency": 321,
+      "flag": "🇩🇪",
+      "ts": 1789669375.6596608
+    },
+    {
+      "key": "bale.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=bale.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "VPN | CICDO اخبار",
+      "t_link": "https://t.me/myvpn1404/24193",
+      "latency": 160,
+      "flag": "🇮🇷",
+      "ts": 1789669375.6596599
+    },
+    {
+      "key": "bale.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=bale.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "VPN | CICDO اخبار",
+      "t_link": "https://t.me/myvpn1404/24193",
+      "latency": 178,
+      "flag": "🇮🇷",
+      "ts": 1789669375.659659
+    },
+    {
+      "key": "AZADI.goooalir.co.uk:8443",
+      "link": "tg://proxy?server=AZADI.goooalir.co.uk&port=8443&secret=dd104462821249bd7ac519130220c25d09)",
+      "channel": "VPN | CICDO اخبار",
+      "t_link": "https://t.me/myvpn1404/24193",
+      "latency": 1348,
+      "flag": "🇩🇪",
+      "ts": 1789669375.659658
+    },
+    {
+      "key": "at.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=at.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "VPN | CICDO اخبار",
+      "t_link": "https://t.me/myvpn1404/24193",
+      "latency": 322,
+      "flag": "🇮🇷",
+      "ts": 1789669375.6596563
+    },
     {
       "key": "good.cipservice.co.uk:2083",
       "link": "tg://proxy?server=good.cipservice.co.uk&port=2083&secret=eeNEgYdJvXrFGRMCIMJdCQ",

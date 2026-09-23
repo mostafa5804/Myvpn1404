@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://44eae030-290b-4083-8102-6f8bab05701b@104.16.10.233:443?&security=tls&fp=unsafe&sni=cfvvv-ev1.pages.dev&type=ws&headerType=none&host=cfvvv-ev1.pages.dev&path=/#%5A%69%6B%6B%4F%56%70%6E%42%6F%74%20%7C%20%D8%AE%D9%88%D8%B4%E2%80%8C%D9%82%DB%8C%D9%85%D8%AA%20%D9%88%20%D8%A8%D8%A7%DA%A9%DB%8C%D9%81%DB%8C%D8%AA",
+      "latency": 2,
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24315",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1790181328.3487244
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@89.35.14.33:443?mode=gun&security=reality&encryption=none&authority=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&pbk=TZVMqglhHzteJ6t34mtku75LKzXNq0CB6glKYMAH6zg&fp=chrome&type=grpc&serviceName=hub.v1.ApiService&sni=md4.univesalsrv.com&sid=8e07337954f9823f#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 183,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -329,94 +339,9 @@
       "flag": "🇵🇱",
       "country": "Poland",
       "ts": 1790102504.9413571
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5YjEwYzlhNjVmMGI0ZTc3YmUzOTk4YzRhNTkxY2YyNQ@3.121.219.170:443#%F0%9F%87%A9%F0%9F%87%AA%20%7C%20Germany%20%40NTGreen`",
-      "latency": 125,
-      "channel": "NTGreen | اینترنت سبز 👽",
-      "t_link": "https://t.me/myvpn1404/24274",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1790087726.746623
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5YjEwYzlhNjVmMGI0ZTc3YmUzOTk4YzRhNTkxY2YyNQ@3.121.219.170:489#%F0%9F%87%B9%F0%9F%87%B7%20%7C%20Turkey%20%40NTGreen`",
-      "latency": 123,
-      "channel": "NTGreen | اینترنت سبز 👽",
-      "t_link": "https://t.me/myvpn1404/24273",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1790087726.3149447
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5YjEwYzlhNjVmMGI0ZTc3YmUzOTk4YzRhNTkxY2YyNQ@3.121.219.170:487#%F0%9F%87%A8%F0%9F%87%AD%20%7C%20Switzerland%20%40NTGreen`",
-      "latency": 123,
-      "channel": "NTGreen | اینترنت سبز 👽",
-      "t_link": "https://t.me/myvpn1404/24272",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1790087725.8143635
     }
   ],
-  "proxies": [
-    {
-      "key": "idiot.foltmeingop.co.uk:8880",
-      "link": "tg://proxy?server=idiot.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24271",
-      "latency": 274,
-      "flag": "🇮🇷",
-      "ts": 1790087668.150944
-    },
-    {
-      "key": "me.foltmeingop.co.uk:8880",
-      "link": "tg://proxy?server=me.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24271",
-      "latency": 144,
-      "flag": "🇮🇷",
-      "ts": 1790087668.150943
-    },
-    {
-      "key": "me.foltmeingop.co.uk:8880",
-      "link": "tg://proxy?server=me.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24271",
-      "latency": 137,
-      "flag": "🇮🇷",
-      "ts": 1790087668.1509418
-    },
-    {
-      "key": "at.foltmeingop.co.uk:8880",
-      "link": "tg://proxy?server=at.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24271",
-      "latency": 294,
-      "flag": "🇮🇷",
-      "ts": 1790087668.1509407
-    },
-    {
-      "key": "at.foltmeingop.co.uk:8880",
-      "link": "tg://proxy?server=at.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24271",
-      "latency": 149,
-      "flag": "🇮🇷",
-      "ts": 1790087668.1509397
-    },
-    {
-      "key": "idiot.foltmeingop.co.uk:8880",
-      "link": "tg://proxy?server=idiot.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24271",
-      "latency": 170,
-      "flag": "🇮🇷",
-      "ts": 1790087668.1509373
-    }
-  ],
+  "proxies": [],
   "files": [
     {
       "name": "@Cooonfig(قرمه سبزی).npvt",
@@ -459,20 +384,6 @@
       "channel": "Cooonfig",
       "link": "https://t.me/cooonfig/9240",
       "ts": 1790114236.6053648
-    },
-    {
-      "name": "@Cooonfig(ژیک💝).npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/9238",
-      "ts": 1790087771.218142
-    },
-    {
-      "name": "𝐌𝐚𝐱 ⚡ مخصوص اختلال.npvt",
-      "ext": "NPVT",
-      "channel": "اینترنت ملی 🕊",
-      "link": "https://t.me/net_melli1/2447",
-      "ts": 1790087635.9117413
     }
   ]
 }

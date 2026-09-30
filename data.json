@@ -2,6 +2,16 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.44.118.124:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 87,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/24410",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1790794988.40267
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@chat.openai.com:8880?path=%2F%3Fed%23Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=none&encryption=none&host=vms.lifetime29.workers.dev&type=ws#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 59,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -69,16 +79,6 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1790749902.8880682
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@35.177.125.38:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 79,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/24398",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1790697767.8549306
     }
   ],
   "proxies": [
@@ -187,13 +187,6 @@
       "channel": "Cooonfig",
       "link": "https://t.me/cooonfig/9281",
       "ts": 1790715458.288448
-    },
-    {
-      "name": "@ZhilaVPN(Zhik)'.npvt",
-      "ext": "NPVT",
-      "channel": "Cooonfig",
-      "link": "https://t.me/cooonfig/9280",
-      "ts": 1790696266.798193
     }
   ]
 }

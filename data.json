@@ -159,59 +159,81 @@
       "flag": "🇨🇦",
       "country": "Canada",
       "ts": 1790859178.3571613
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@md2.univesalsrv.com:443?mode=gun&security=reality&encryption=none&pbk=JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o&fp=firefox&type=grpc&serviceName=hub.v1.SyncService&sni=md2.univesalsrv.com&sid=d36a38659ce106cb#%40vpnbaz%20%F0%9F%9B%B8```",
-      "latency": 162,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/24415",
-      "flag": "🇲🇩",
-      "country": "Moldova",
-      "ts": 1790796820.3732429
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.75:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9",
-      "latency": 1031,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/24414",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1790796819.8685935
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.223:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%40vpnbaz%20%F0%9F%8D%AD",
-      "latency": 8,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/24413",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1790796818.3747716
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://YWVzLTI1Ni1nY206ZXZlYWFUT2I4amk4eW50dzJaOXlXVUcwZDZJcjhMZDhtM3ltSDhUSGRDNWVnaVRIMW1YQ2lCYzBTa3I3RmliSA@185.156.47.97:9443#%40vpnbaz%20%E2%AD%90",
-      "latency": 29,
-      "channel": "VPN MARKET",
-      "t_link": "https://t.me/myvpn1404/24412",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1790796817.8608816
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.44.118.124:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 87,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/24410",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1790794988.40267
     }
   ],
   "proxies": [
+    {
+      "key": "bale.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=bale.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24434",
+      "latency": 154,
+      "flag": "🇮🇷",
+      "ts": 1790883563.1989865
+    },
+    {
+      "key": "me.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=me.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24434",
+      "latency": 167,
+      "flag": "🇮🇷",
+      "ts": 1790883563.1989806
+    },
+    {
+      "key": "bale.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=bale.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24434",
+      "latency": 154,
+      "flag": "🇮🇷",
+      "ts": 1790883563.1989794
+    },
+    {
+      "key": "me.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=me.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24434",
+      "latency": 169,
+      "flag": "🇮🇷",
+      "ts": 1790883563.1989777
+    },
+    {
+      "key": "mashti.just-money.co.uk:8880",
+      "link": "tg://proxy?server=mashti.just-money.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24434",
+      "latency": 308,
+      "flag": "🇮🇷",
+      "ts": 1790883563.1989765
+    },
+    {
+      "key": "mashti.just-money.co.uk:8880",
+      "link": "tg://proxy?server=mashti.just-money.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24434",
+      "latency": 163,
+      "flag": "🇮🇷",
+      "ts": 1790883563.1989753
+    },
+    {
+      "key": "idiot.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=idiot.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24434",
+      "latency": 306,
+      "flag": "🇮🇷",
+      "ts": 1790883563.1989737
+    },
+    {
+      "key": "idiot.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=idiot.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24434",
+      "latency": 215,
+      "flag": "🇮🇷",
+      "ts": 1790883563.1989708
+    },
     {
       "key": "exiscos.co.uk.:8443",
       "link": "tg://proxy?server=exiscos.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
@@ -247,42 +269,6 @@
       "latency": 153,
       "flag": "🇩🇪",
       "ts": 1790859131.6134043
-    },
-    {
-      "key": "you.foltmeingop.co.uk:8880",
-      "link": "tg://proxy?server=you.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24411",
-      "latency": 104,
-      "flag": "🇮🇷",
-      "ts": 1790796701.4057918
-    },
-    {
-      "key": "are.ajjab.co.uk:8880",
-      "link": "tg://proxy?server=are.ajjab.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24411",
-      "latency": 99,
-      "flag": "🇮🇷",
-      "ts": 1790796701.4057908
-    },
-    {
-      "key": "you.foltmeingop.co.uk:8880",
-      "link": "tg://proxy?server=you.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24411",
-      "latency": 110,
-      "flag": "🇮🇷",
-      "ts": 1790796701.4057894
-    },
-    {
-      "key": "are.ajjab.co.uk:8880",
-      "link": "tg://proxy?server=are.ajjab.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24411",
-      "latency": 112,
-      "flag": "🇮🇷",
-      "ts": 1790796701.4057872
     }
   ],
   "files": [

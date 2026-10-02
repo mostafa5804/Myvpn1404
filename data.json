@@ -2,6 +2,26 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.75:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&host=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
+      "latency": 63,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/24443",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1790945758.767918
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@82.39.171.12:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&host=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
+      "latency": 145,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/24442",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1790945758.263615
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://1cc6bd10-e414-4171-9220-09aaba23a6fa@az.masterpgd.com:6004?mode=stream-up&path=%2Fassets&security=none&encryption=mlkem768x25519plus.random.0rtt.hCfsgvqvEb4OOed_tAveVHQ5ADZ3Gbs-QA3jv4KXTic&host=cafebazaar.ir&type=xhttp#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 398,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -129,79 +149,63 @@
       "flag": "🇮🇷",
       "country": "Iran",
       "ts": 1790880406.6461196
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://50d10e6c-37e1-4512-b35a-2d4e0adfd079@167.233.140.137:8080?path=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=&encryption=none&host=play.google.com&type=ws#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
-      "latency": 159,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/24424",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "ts": 1790859186.2307544
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://284dde63-5d87-4df2-a6bb-438f48765b1d@199.232.78.159:443?path=%3Fed%23Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&encryption=none&insecure=0&host=pokerrr.global.ssl.fastly.net&type=ws&allowInsecure=0&sni=ssl.fastly.com#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 1,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/24423",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1790859185.7302907
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.249.189:9881?mode=gun&security=reality&encryption=none&pbk=ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU&fp=random&type=grpc&serviceName=grpc-tunnel&sni=dl.google.com&sid=aabb#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 181,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/24422",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1790859185.3255644
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://%40V2XNET-%40V2XNET-%40V2XNET@199.232.78.105:443?mode=auto&path=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&alpn=h2&encryption=none&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&insecure=0&host=imcreeprddde43e.global.ssl.fastly.net&fp=chrome&type=xhttp&allowInsecure=0&sni=ssl.fastly.com#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 1,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/24421",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1790859184.722793
-    },
-    {
-      "protocol": "SS",
-      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnSmU3dW1TdEljazVNaWVn@20.166.59.119:443#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 130,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/24420",
-      "flag": "🇮🇪",
-      "country": "Ireland",
-      "ts": 1790859184.3209267
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://9e3132b8-b595-444a-833a-2de44789f9d7@188.114.97.6:443?path=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&alpn=http%2F1.1&encryption=none&fm=%7B%22tcp%22%3A%5B%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%220%22%2C%22104%22%5D%7D%7D%5D%7D&insecure=0&host=shephe.dpdns.org&type=ws&allowInsecure=0&sni=shephe.dpdns.org#%40planB_net%20%F0%9F%91%88%20%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF%20%D9%87%D8%A7%DB%8C%20%D8%A8%DB%8C%D8%B4%D8%AA%D8%B1",
-      "latency": 2,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/24419",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1790859178.7550042
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://fdc48be3-a615-41ac-8bd1-ed844c931048@104.21.201.219:443?path=%3Fed%23Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&encryption=none&fm=%7B%22tcp%22%3A%5B%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%22tlshello%22%2C%22lengths%22%3A%5B%220%22%2C%22104%22%2C%221%22%5D%2C%22delays%22%3A%5B%220%22%5D%2C%22maxSplit%22%3A%220%22%7D%7D%2C%7B%22type%22%3A%22fragment%22%2C%22settings%22%3A%7B%22packets%22%3A%221-1%22%2C%22lengths%22%3A%5B%22114%22%2C%221%22%5D%2C%22delays%22%3A%5B%221%22%5D%2C%22maxSplit%22%3A%2211%22%7D%7D%5D%7D&insecure=0&host=edgetunnel-4uw.pages.dev&type=ws&allowInsecure=0&sni=edgetunnel-4uw.pages.dev#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net",
-      "latency": 2,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/24418",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "ts": 1790859178.3571613
     }
   ],
   "proxies": [
+    {
+      "key": "mio.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=mio.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24441",
+      "latency": 209,
+      "flag": "🇮🇷",
+      "ts": 1790945711.7621732
+    },
+    {
+      "key": "at.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=at.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24441",
+      "latency": 146,
+      "flag": "🇮🇷",
+      "ts": 1790945711.7621722
+    },
+    {
+      "key": "look.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=look.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24441",
+      "latency": 150,
+      "flag": "🇮🇷",
+      "ts": 1790945711.7621715
+    },
+    {
+      "key": "look.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=look.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24441",
+      "latency": 167,
+      "flag": "🇮🇷",
+      "ts": 1790945711.7621706
+    },
+    {
+      "key": "mio.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=mio.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24441",
+      "latency": 148,
+      "flag": "🇮🇷",
+      "ts": 1790945711.7621694
+    },
+    {
+      "key": "at.foltmeingop.co.uk:8880",
+      "link": "tg://proxy?server=at.foltmeingop.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
+      "t_link": "https://t.me/myvpn1404/24441",
+      "latency": 287,
+      "flag": "🇮🇷",
+      "ts": 1790945711.762167
+    },
     {
       "key": "silnet.varfootball.co.uk:2053",
       "link": "tg://proxy?server=silnet.varfootball.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
@@ -579,42 +583,6 @@
       "latency": 215,
       "flag": "🇮🇷",
       "ts": 1790883563.1989708
-    },
-    {
-      "key": "exiscos.co.uk.:8443",
-      "link": "tg://proxy?server=exiscos.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24417",
-      "latency": 189,
-      "flag": "🇩🇪",
-      "ts": 1790859131.613409
-    },
-    {
-      "key": "91.107.141.165:443",
-      "link": "tg://proxy?server=91.107.141.165&port=443&secret=YyEEgYdJXfrFmgMCIMJdjjRueWVrdGFuZXQA)",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24417",
-      "latency": 161,
-      "flag": "🇩🇪",
-      "ts": 1790859131.613408
-    },
-    {
-      "key": "exiscos.co.uk.:8443",
-      "link": "tg://proxy?server=exiscos.co.uk.&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24417",
-      "latency": 326,
-      "flag": "🇩🇪",
-      "ts": 1790859131.6134064
-    },
-    {
-      "key": "91.107.141.165:443",
-      "link": "tg://proxy?server=91.107.141.165&port=443&secret=YyEEgYdJXfrFmgMCIMJdjjRueWVrdGFuZXQA",
-      "channel": "پروکسی و کانفیگ رایگان - هوپنوس",
-      "t_link": "https://t.me/myvpn1404/24417",
-      "latency": 153,
-      "flag": "🇩🇪",
-      "ts": 1790859131.6134043
     }
   ],
   "files": [

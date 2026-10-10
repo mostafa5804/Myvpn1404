@@ -1,6 +1,104 @@
 {
-  "configs": [],
+  "configs": [
+    {
+      "protocol": "VLESS",
+      "config": "vless://87ae0a9d-c6f5-4bf6-b8de-3d93fe8ad0f7@31.56.196.106:8443?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#%F0%9F%87%B1%F0%9F%87%BB%20%7C%40cicdovpn```",
+      "latency": 141,
+      "channel": "VPN | CICDO",
+      "t_link": "https://t.me/myvpn1404/24538",
+      "flag": "🇱🇻",
+      "country": "Latvia",
+      "ts": 1791644980.2749808
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://87ae0a9d-c6f5-4bf6-b8de-3d93fe8ad0f7@fr.vfzq.ir:2087?security=none&encryption=none&headerType=http&type=tcp#%F0%9F%87%AB%F0%9F%87%B7%20%20%7C%20%40cicdovpn",
+      "latency": 262,
+      "channel": "VPN | CICDO",
+      "t_link": "https://t.me/myvpn1404/24537",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1791644979.7976496
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://87ae0a9d-c6f5-4bf6-b8de-3d93fe8ad0f7@180.149.44.237:2096?security=none&encryption=mlkem768x25519plus.native.0rtt.bdysqGiCERAT23xr3Mjg2TjgeUUJyYCXS9ff5qxvoHQ&host=nasa.gov&headerType=http&type=tcp#%F0%9F%87%A6%F0%9F%87%BF%20%7C%20%40cicdovpn",
+      "latency": 194,
+      "channel": "VPN | CICDO",
+      "t_link": "https://t.me/myvpn1404/24536",
+      "flag": "🇦🇿",
+      "country": "Azerbaijan",
+      "ts": 1791644979.1777072
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://87ae0a9d-c6f5-4bf6-b8de-3d93fe8ad0f7@tr.vfzq.ir:8443?security=none&encryption=none&host=nasa.gov&headerType=http&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20%7C%20%40cicdovpn",
+      "latency": 352,
+      "channel": "VPN | CICDO",
+      "t_link": "https://t.me/myvpn1404/24535",
+      "flag": "🇹🇷",
+      "country": "Turkey",
+      "ts": 1791644978.4831283
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://87ae0a9d-c6f5-4bf6-b8de-3d93fe8ad0f7@ne.vfzq.ir:8443?security=none&encryption=none&host=nasa.gov&headerType=http&type=tcp#%F0%9F%87%B3%F0%9F%87%B1%20%7C%20%40cicdovpn",
+      "latency": 427,
+      "channel": "VPN | CICDO",
+      "t_link": "https://t.me/myvpn1404/24534",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1791644977.403214
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://87ae0a9d-c6f5-4bf6-b8de-3d93fe8ad0f7@de.vfzq.ir:8080?mode=gun&security=reality&encryption=none&pbk=0qvmRtNP46Lxa4VNRDiBtZpPXxIyzMzDpju7wvSreQg&fp=firefox&type=grpc&sni=play.google.com&sid=eee4b95d3c557317#%F0%9F%87%A9%F0%9F%87%AA%20%7C%40cicdovpn",
+      "latency": 371,
+      "channel": "VPN | CICDO",
+      "t_link": "https://t.me/myvpn1404/24533",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "ts": 1791644976.5855856
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://87ae0a9d-c6f5-4bf6-b8de-3d93fe8ad0f7@usa.vfzq.ir:8443?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%40cicdovpn",
+      "latency": 230,
+      "channel": "VPN | CICDO",
+      "t_link": "https://t.me/myvpn1404/24532",
+      "flag": "🇹🇷",
+      "country": "Türkiye",
+      "ts": 1791644975.710783
+    }
+  ],
   "proxies": [
+    {
+      "key": "188.245.46.16:443",
+      "link": "tg://proxy?server=188.245.46.16&port=443&secret=eeDarKDarKDarKDarKDarK",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/24539",
+      "latency": 120,
+      "flag": "🇩🇪",
+      "ts": 1791645076.2715633
+    },
+    {
+      "key": "46.224.27.205:443",
+      "link": "tg://proxy?server=46.224.27.205&port=443&secret=eeDarKDarKDarKDarKDarK",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/24539",
+      "latency": 126,
+      "flag": "🇩🇪",
+      "ts": 1791645076.271562
+    },
+    {
+      "key": "188.245.46.16:443",
+      "link": "tg://proxy?server=188.245.46.16&port=443&secret=eeDarKDarKDarKDarKDarK)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/24539",
+      "latency": 118,
+      "flag": "🇩🇪",
+      "ts": 1791645076.2715597
+    },
     {
       "key": "46.224.27.205:443",
       "link": "tg://proxy?server=46.224.27.205&port=443&secret=eeDarKDarKDarKDarKDarK)|",

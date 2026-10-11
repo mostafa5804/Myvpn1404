@@ -86,32 +86,9 @@ def get_ip_info(host):
     return "🏳️", "Unknown"
 
 def extract_unique_key(config_str):
-    try:
-        if config_str.startswith('vmess://'):
-            b64 = config_str.replace('vmess://', '')
-            try:
-                padded = b64 + '=' * (-len(b64) % 4)
-                decoded = base64.b64decode(padded).decode('utf-8')
-                data = json.loads(decoded)
-                return f"{data.get('add')}:{data.get('port')}"
-            except:
-                return config_str
-        
-        # هندل کردن SlipNet (چون محتوایش رمزنگاری شده است، خود متن به عنوان کلید استفاده می‌شود)
-        elif config_str.startswith('slipnet-enc://'):
-            return config_str[:50] # 50 کاراکتر اول برای یکتایی کافی است
-
-        match = re.search(r'://.*?@([^:/]+):(\d+)', config_str)
-        if match:
-            return f"{match.group(1)}:{match.group(2)}"
-        
-        match_simple = re.search(r'://([^:/]+):(\d+)', config_str)
-        if match_simple:
-            return f"{match_simple.group(1)}:{match.group(2)}"
-
-        return config_str
-    except:
-        return config_str
+    # Deduplicate only identical full config text. Host/port alone collides
+    # for valid configs with different credentials or parameters.
+    return str(config_str)
 
 def get_host_port(link, type='config'):
     try:
@@ -161,6 +138,27 @@ def get_batch_info():
     else:
         return ALL_CHANNELS[20:], "Second Batch", target_session
 
+def telegram_text_units(text):
+    """Telegram counts UTF-16 code units, not Python Unicode code points."""
+    return len(str(text).encode('utf-16-le')) // 2
+
+
+def split_text_lossless(text, max_units=3300):
+    """Split plain text on character boundaries; joining chunks restores it exactly."""
+    text = str(text or "")
+    chunks, current, units = [], [], 0
+    for char in text:
+        char_units = 2 if ord(char) > 0xFFFF else 1
+        if current and units + char_units > max_units:
+            chunks.append(''.join(current))
+            current, units = [], 0
+        current.append(char)
+        units += char_units
+    if current or not chunks:
+        chunks.append(''.join(current))
+    return chunks
+
+
 def create_footer(source_title, source_username):
     now = datetime.now(iran_tz)
     date_str = now.strftime('%Y/%m/%d')
@@ -170,50 +168,10 @@ def create_footer(source_title, source_username):
     return (
         f"\n━━━━━━━━━━━━━━━━\n"
         f"🗓 {date_str} • 🕐 {time_str}\n"
-        f"📡 source: [{safe_title}](https://t.me/{clean_username})\n"
+        f"📡 source: {safe_title} https://t.me/{clean_username}\n"
         f"💬 {destination_channel}\n"
         
     )
-
-# --- تابع جدید: استخراج رمز از متن کپشن ---
-# --- تابع جدید و هوشمند استخراج رمز از متن کپشن ---
-def extract_password_from_text(text):
-    if not text:
-        return ""
-    
-    text = str(text)
-    keywords = ['رمز', 'پسورد', 'password', 'pass']
-    
-    # جدا کردن خطوط و حذف فاصله‌های خالی
-    lines = [line.strip() for line in text.split('\n')]
-    
-    for i, line in enumerate(lines):
-        line_lower = line.lower()
-        # اگر کلمه کلیدی در این خط بود
-        if any(kw in line_lower for kw in keywords):
-            
-            # بررسی اینکه آیا رمز در همین خط است یا خط بعدی؟
-            clean_line = line_lower
-            for kw in keywords:
-                clean_line = clean_line.replace(kw, '')
-            # حذف کاراکترهای اضافی مثل دو نقطه یا فاصله
-            clean_line = clean_line.replace(':', '').replace('=', '').replace('-', '').strip()
-            
-            if clean_line:
-                # رمز در همین خط نوشته شده (مثلاً: پسورد: 1234)
-                return f"\n🔑 {line}"
-            else:
-                # جلوی کلمه پسورد خالی است. باید خطوط بعدی را بگردیم
-                for j in range(i + 1, len(lines)):
-                    if lines[j]: # اولین خطی که خالی نیست را پیدا کن
-                        return f"\n🔑 {line} {lines[j]}"
-    
-    # اگر کلمه کلیدی نبود، اما یک آیدی تلگرام بود (مثل @lizard_vpn)
-    match = re.search(r'@\w+', text)
-    if match and len(text) < 150:
-        return f"\n🔑 آیدی/رمز احتمالی: {match.group(0)}"
-        
-    return ""
 
 async def check_connection(host, port):
     if host == 'slipnet':
@@ -280,7 +238,7 @@ async def main():
         
         sent_hashes = set()
         for p in hist['proxies']: sent_hashes.add(p['link'])
-        for f in hist['files']: sent_hashes.add(f['name'])
+        for f in hist['files']: sent_hashes.add(f.get('link', f.get('name')))
 
         new_conf, new_prox, new_file = [], [], []
         cutoff_time = datetime.now(timezone.utc) - timedelta(minutes=MAX_MESSAGE_AGE_MINUTES)
@@ -310,26 +268,34 @@ async def main():
                             if u_key not in unique_fingerprints:
                                 stat, lat, flag, country = await process_item(c, 'config')
                                 if stat:
-                                    # برای slipnet چون - دارد اسپلیت اولش فرق میکنه
                                     prot = c.split('://')[0].upper().replace('-', '_')
-                                    clean_c = c.replace('`', '')
-                                    caption = (
-                                        f"{flag} **{prot}** | {country}\n"
-                                        f"📶 Ping: {lat}ms\n\n"
-                                        f"```{clean_c}```\n"
-                                        f"{create_footer(title, channel_str)}"
-                                    )
+                                    # Split only when necessary; concatenating part bodies reproduces c exactly.
+                                    chunks = split_text_lossless(c)
+                                    first_sent = None
                                     try:
-                                        sent = await client.send_message(destination_channel, caption, link_preview=False)
-                                        t_link = f"https://t.me/{destination_channel[1:]}/{sent.id}"
+                                        for part_index, chunk in enumerate(chunks, 1):
+                                            part_label = f" • بخش {part_index}/{len(chunks)}" if len(chunks) > 1 else ""
+                                            message = (
+                                                f"{flag} {prot} | {country}{part_label}\n"
+                                                f"📶 اتصال TCP: {lat}ms\n"
+                                                f"منبع: {link}\n\n{chunk}"
+                                            )
+                                            sent = await client.send_message(
+                                                destination_channel, message,
+                                                link_preview=False, parse_mode=None
+                                            )
+                                            if first_sent is None:
+                                                first_sent = sent
+                                        t_link = f"https://t.me/{destination_channel[1:]}/{first_sent.id}"
                                         new_conf.append({
-                                            'protocol': prot, 'config': c, 'latency': lat, 
-                                            'channel': title, 't_link': t_link, 
+                                            'protocol': prot, 'config': c, 'latency': lat,
+                                            'channel': title, 't_link': t_link,
                                             'flag': flag, 'country': country,
                                             'ts': time.time()
                                         })
                                         unique_fingerprints.add(u_key)
-                                    except: pass
+                                    except Exception as e:
+                                        print(f"❌ Error sending full config: {e}")
 
                         # 1.2 Proxies
                         found_proxies = set()
@@ -357,31 +323,52 @@ async def main():
                                     })
                                     sent_hashes.add(p)
 
-                    # --- Section 2: File Processing (با استخراج رمز) ---
+                    # --- Section 2: File Processing (preserve original file and caption) ---
                     if m.file and m.file.name:
                         file_ext = "." + m.file.name.split('.')[-1].lower() if '.' in m.file.name else ""
                         
                         if any(m.file.name.lower().endswith(ext) for ext in ALLOWED_EXTENSIONS):
-                            if m.file.name not in sent_hashes:
+                            if link not in sent_hashes:
                                 try:
                                     print(f"📂 Found File: {m.file.name}")
                                     
-                                    # ساخت کپشن فایل
-                                    file_caption = f"📂 **{m.file.name}**"
-                                    
-                                    # استخراج رمز احتمالی از کپشن پیام اصلی
-                                    pwd_text = extract_password_from_text(m.text)
-                                    if pwd_text:
-                                        file_caption += f"\n{pwd_text}"
-                                        
-                                    file_caption += f"\n{create_footer(title, channel_str)}"
-
-                                    await client.send_file(destination_channel, m.media, caption=file_caption)
+                                    # Keep the original file binary, name and caption intact.
+                                    original_caption = m.message or ""
+                                    source_line = f"منبع اصلی: {link}"
+                                    if telegram_text_units(original_caption) <= 650:
+                                        preserved_caption = (
+                                            original_caption
+                                            + ("\n\n" if original_caption else "")
+                                            + source_line
+                                            + create_footer(title, channel_str)
+                                        )
+                                    else:
+                                        preserved_caption = (
+                                            f"📂 {m.file.name}\n{source_line}\n"
+                                            "کپشن کامل مبدأ در پیام‌های بلافاصله بعد آمده است."
+                                        )
+                                    sent_file = await client.send_file(
+                                        destination_channel, m.media,
+                                        caption=preserved_caption, parse_mode=None
+                                    )
+                                    if telegram_text_units(original_caption) > 650:
+                                        caption_parts = split_text_lossless(original_caption)
+                                        for part_index, chunk in enumerate(caption_parts, 1):
+                                            await client.send_message(
+                                                destination_channel,
+                                                f"📎 کپشن اصلی {m.file.name} • بخش {part_index}/{len(caption_parts)}\n\n{chunk}",
+                                                link_preview=False, parse_mode=None
+                                            )
                                     new_file.append({
-                                        'name': m.file.name, 'ext': file_ext.replace('.', '').upper(), 
-                                        'channel': title, 'link': link, 'ts': time.time()
+                                        'name': m.file.name,
+                                        'ext': file_ext.replace('.', '').upper(),
+                                        'channel': title,
+                                        'link': link,
+                                        't_link': f"https://t.me/{destination_channel[1:]}/{sent_file.id}",
+                                        'original_caption': original_caption,
+                                        'ts': time.time()
                                     })
-                                    sent_hashes.add(m.file.name)
+                                    sent_hashes.add(link)
                                 except Exception as e:
                                     print(f"❌ Error sending file {m.file.name}: {e}")
 
@@ -431,247 +418,20 @@ async def main():
         with open(SUB_FILE, 'w', encoding='utf-8') as f:
             f.write(base64.b64encode(sub_content.encode('utf-8')).decode('utf-8'))
 
-        # PWA Generation
-        with open('manifest.json', 'w') as f:
+        # index.html is a static frontend and is no longer regenerated by the scraper.
+        with open('manifest.json', 'w', encoding='utf-8') as f:
             json.dump({
-                "name": "VPN Hub Premium",
+                "name": "VPN Hub",
                 "short_name": "VPN Hub",
                 "start_url": "./index.html",
                 "display": "standalone",
-                "background_color": "#0f172a",
-                "theme_color": "#0f172a",
-                "icons": [{"src": "https://cdn-icons-png.flaticon.com/512/2099/2099192.png", "sizes": "192x192", "type": "image/png"}]
-            }, f)
+                "background_color": "#f5f7fa",
+                "theme_color": "#087e8b"
+            }, f, ensure_ascii=False, indent=2)
 
-        with open('sw.js', 'w') as f:
-            f.write("self.addEventListener('install',e=>e.waitUntil(caches.open('vpn-v1').then(c=>c.addAll(['index.html','manifest.json']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));")
+        with open('sw.js', 'w', encoding='utf-8') as f:
+            f.write("self.addEventListener('install',e=>e.waitUntil(caches.open('vpn-v2').then(c=>c.addAll(['./','./index.html','./src/style.css','./src/main.js','./manifest.json']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));")
 
-        now_str = datetime.now(iran_tz).strftime('%Y/%m/%d - %H:%M')
-        
-
-        
-
-        full_html = f"""<!DOCTYPE html>
-<html lang="fa" dir="rtl" class="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>VPN Hub Premium</title>
-    <meta name="theme-color" content="#0f172a">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    
-    <style>
-        body {{ font-family: 'Vazirmatn', sans-serif; background-color: #0f172a; color: #f1f5f9; -webkit-tap-highlight-color: transparent; }}
-        .pb-safe {{ padding-bottom: env(safe-area-inset-bottom); }}
-        
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {{ width: 4px; height: 4px; }}
-        ::-webkit-scrollbar-track {{ background: #1e293b; }}
-        ::-webkit-scrollbar-thumb {{ background: #334155; border-radius: 4px; }}
-        
-        /* Animation */
-        .card-enter {{ animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1); }}
-        @keyframes slideUp {{ from {{ opacity: 0; transform: translateY(20px) scale(0.96); }} to {{ opacity: 1; transform: translateY(0) scale(1); }} }}
-        
-        .filter-btn.active {{ background-color: #38bdf8; color: #0f172a; border-color: #38bdf8; font-weight: 700; }}
-    </style>
-</head>
-<body class="min-h-screen flex flex-col pb-24">
-    
-    <header class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-lg border-b border-slate-700/50 z-40 transition-all duration-300" id="header">
-        <div class="max-w-xl mx-auto px-4 h-16 flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-purple-400 to-emerald-400 tracking-tighter">VPN Hub</h1>
-                <div class="flex items-center gap-2 text-[10px] text-slate-400 font-mono">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    {now_str}
-                </div>
-            </div>
-            <a href="{SUB_LINK_URL}" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg shadow-emerald-900/30 transition-all active:scale-95 flex items-center gap-2">
-                <i class="fas fa-rss"></i> اشتراک
-            </a>
-        </div>
-    </header>
-
-    <main class="max-w-xl mx-auto w-full pt-24 px-4 flex-grow">
-        
-        <div class="sticky top-16 bg-slate-900/90 backdrop-blur-md z-30 py-4 -mx-4 px-4 border-b border-slate-800/50 mb-4 space-y-3">
-            <div class="relative">
-                <i class="fas fa-search absolute right-3 top-1/2 -translate-y-1/2 text-slate-500"></i>
-                <input type="text" id="searchInput" placeholder="جستجو (کشور، پروتکل...)" class="w-full bg-slate-800 text-white text-sm rounded-xl pl-4 pr-10 py-3 border border-slate-700 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 outline-none transition-all placeholder-slate-500">
-            </div>
-            
-            <div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
-                <button onclick="filterItems('all', this)" class="filter-btn active flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">همه</button>
-                <button onclick="filterItems('vless', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">VLESS</button>
-                <button onclick="filterItems('vmess', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">VMess</button>
-                <button onclick="filterItems('mtproxy', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">MTProxy</button>
-                <button onclick="filterItems('slipnet_enc', this)" class="filter-btn flex-shrink-0 bg-slate-800 text-slate-400 px-5 py-2 rounded-full text-sm border border-slate-700 transition-all">SlipNet</button>
-            </div>
-        </div>
-
-        <div id="grid" class="grid gap-4 card-enter">
-            {html_cards}
-        </div>
-        
-        <div id="emptyState" class="hidden flex-col items-center justify-center py-12 text-slate-500">
-            <i class="fas fa-ghost text-4xl mb-3 opacity-50"></i>
-            <p class="text-sm">موردی یافت نشد</p>
-        </div>
-    </main>
-
-    <nav class="fixed bottom-0 w-full bg-slate-900/80 backdrop-blur-xl border-t border-slate-700/50 pb-safe z-50">
-        <div class="max-w-xl mx-auto grid grid-cols-3 h-16 relative">
-            <div class="absolute -top-12 right-4">
-                 <button onclick="window.scrollTo({{top: 0, behavior: 'smooth'}})" class="bg-slate-700/50 hover:bg-sky-500 text-white w-10 h-10 rounded-full backdrop-blur flex items-center justify-center shadow-lg transition-all">
-                    <i class="fas fa-arrow-up"></i>
-                 </button>
-            </div>
-            
-            <button onclick="location.reload()" class="group flex flex-col items-center justify-center text-slate-400 hover:text-sky-400 transition-colors">
-                <i class="fas fa-sync text-xl mb-1 group-active:rotate-180 transition-transform duration-500"></i>
-                <span class="text-[10px] font-medium">بروزرسانی</span>
-            </button>
-            
-            <a href="{destination_channel.replace('@', 'https://t.me/')}" class="flex flex-col items-center justify-center text-slate-400 hover:text-sky-400 transition-colors">
-                <div class="bg-sky-500/10 p-2 rounded-xl mb-0.5">
-                     <i class="fab fa-telegram text-xl text-sky-500"></i>
-                </div>
-            </a>
-
-           <a href="https://github.com/mostafa5804" class="flex flex-col items-center justify-center text-slate-400 hover:text-white transition-colors">
-               <i class="fab fa-github text-xl mb-1"></i>
-                    <span class="text-[10px] font-medium">گیتهاب</span>
-          </a>
-        </div>
-    </nav>
-
-    <div id="qrModal" class="fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
-        <div class="bg-slate-800 p-6 rounded-2xl max-w-xs w-full mx-4 transform scale-95 transition-transform duration-300 shadow-2xl border border-slate-700">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-white font-bold">اسکن کد QR</h3>
-                <button onclick="closeQR()" class="text-slate-400 hover:text-white"><i class="fas fa-times text-xl"></i></button>
-            </div>
-            <div id="qrcode" class="bg-white p-3 rounded-xl flex justify-center overflow-hidden"></div>
-            <p class="text-center text-slate-400 text-xs mt-4">برای اتصال در برنامه اسکن کنید</p>
-        </div>
-    </div>
-
-    <div id="toast" class="fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-slate-800 border border-slate-700 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 translate-y-10 opacity-0 transition-all duration-300 z-[60]">
-        <div class="bg-emerald-500/20 text-emerald-400 rounded-full p-1"><i class="fas fa-check-circle"></i></div>
-        <span class="text-sm font-medium">کپی شد!</span>
-    </div>
-
-    <script>
-        // Copy Logic
-        document.querySelectorAll('.copy-btn').forEach(btn => {{
-            btn.addEventListener('click', function() {{
-                const text = this.getAttribute('data-clipboard');
-                navigator.clipboard.writeText(text).then(() => showToast());
-                
-                // Visual Feedback
-                const originalContent = this.innerHTML;
-                this.classList.replace('bg-sky-600/90', 'bg-emerald-600');
-                this.innerHTML = '<i class="fas fa-check"></i> <span>OK</span>';
-                setTimeout(() => {{
-                    this.classList.replace('bg-emerald-600', 'bg-sky-600/90');
-                    this.innerHTML = originalContent;
-                }}, 1500);
-            }});
-        }});
-
-        function showToast() {{
-            const t = document.getElementById('toast');
-            t.classList.remove('translate-y-10', 'opacity-0');
-            setTimeout(() => t.classList.add('translate-y-10', 'opacity-0'), 2000);
-        }}
-
-        // Filter Logic
-        function filterItems(type, btn) {{
-            // Active Button State
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            filterGrid();
-        }}
-
-        // Search Logic
-        const searchInput = document.getElementById('searchInput');
-        searchInput.addEventListener('input', filterGrid);
-
-        function filterGrid() {{
-            const type = document.querySelector('.filter-btn.active').getAttribute('onclick').match(/'([^']+)'/)[1];
-            const term = searchInput.value.toLowerCase();
-            const cards = document.querySelectorAll('.card');
-            let hasVisible = false;
-
-            cards.forEach(card => {{
-                const cardType = card.getAttribute('data-type');
-                const cardSearch = card.getAttribute('data-search');
-                
-                const typeMatch = type === 'all' || cardType.includes(type);
-                const searchMatch = cardSearch.includes(term);
-
-                if (typeMatch && searchMatch) {{
-                    card.style.display = 'block';
-                    // Re-trigger animation
-                    card.style.animation = 'none';
-                    card.offsetHeight; /* trigger reflow */
-                    card.style.animation = null; 
-                    hasVisible = true;
-                }} else {{
-                    card.style.display = 'none';
-                }}
-            }});
-            
-            document.getElementById('emptyState').classList.toggle('hidden', !hasVisible);
-        }}
-
-        // QR Code Logic
-        const modal = document.getElementById('qrModal');
-        const modalContent = modal.querySelector('div');
-        
-        function showQR(text) {{
-            document.getElementById('qrcode').innerHTML = "";
-            new QRCode(document.getElementById("qrcode"), {{
-                text: text,
-                width: 200,
-                height: 200,
-                colorDark : "#000000",
-                colorLight : "#ffffff",
-                correctLevel : QRCode.CorrectLevel.M
-            }});
-            
-            modal.classList.remove('hidden');
-            // Small delay for transition
-            setTimeout(() => {{
-                modal.classList.remove('opacity-0');
-                modalContent.classList.remove('scale-95');
-                modalContent.classList.add('scale-100');
-            }}, 10);
-        }}
-
-        function closeQR() {{
-            modal.classList.add('opacity-0');
-            modalContent.classList.remove('scale-100');
-            modalContent.classList.add('scale-95');
-            setTimeout(() => modal.classList.add('hidden'), 300);
-        }}
-        
-        // Close modal on outside click
-        modal.addEventListener('click', (e) => {{
-            if (e.target === modal) closeQR();
-        }});
-    </script>
-</body>
-</html>"""
-    
-
-        with open('index.html', 'w', encoding='utf-8') as f:
-            f.write(full_html)
     except Exception as e:
         print(f"❌ Critical Error: {e}")
         import traceback

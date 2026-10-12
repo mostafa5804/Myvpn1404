@@ -9,12 +9,13 @@ tree = ast.parse(source)
 helpers = [
     node for node in tree.body
     if isinstance(node, ast.FunctionDef)
-    and node.name in {"telegram_text_units", "split_text_lossless"}
+    and node.name in {"telegram_text_units", "split_text_lossless", "extract_unique_key"}
 ]
 namespace = {}
 exec(compile(ast.Module(body=helpers, type_ignores=[]), "main.py", "exec"), namespace)
 telegram_text_units = namespace["telegram_text_units"]
 split_text_lossless = namespace["split_text_lossless"]
+extract_unique_key = namespace["extract_unique_key"]
 
 samples = [
     "",
@@ -27,4 +28,9 @@ for original in samples:
     assert "".join(chunks) == original
     assert all(telegram_text_units(chunk) <= 3300 for chunk in chunks)
 
-print(f"PASS: exact round-trip for {len(samples)} ASCII, Persian, and Unicode samples")
+first = "vless://one@example.test:443?type=ws&security=tls#one"
+second = "vless://two@example.test:443?type=grpc&security=tls#two"
+assert extract_unique_key(first) != extract_unique_key(second)
+assert extract_unique_key(first) == extract_unique_key(first)
+
+print(f"PASS: exact round-trip for {len(samples)} ASCII, Persian, and Unicode samples; variants on one host remain distinct")

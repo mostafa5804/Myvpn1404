@@ -275,14 +275,20 @@ async def main():
                                     try:
                                         for part_index, chunk in enumerate(chunks, 1):
                                             part_label = f" • بخش {part_index}/{len(chunks)}" if len(chunks) > 1 else ""
+                                            now = datetime.now(iran_tz)
                                             message = (
-                                                f"{flag} {prot} | {country}{part_label}\n"
-                                                f"📶 اتصال TCP: {lat}ms\n"
-                                                f"منبع: {link}\n\n{chunk}"
+                                                f"🔮 <b>{html.escape(prot)}</b> · {html.escape(country)}{part_label}\n\n"
+                                                f"<pre><code>{html.escape(chunk)}</code></pre>\n"
+                                                f"📊 <b>اتصال TCP</b> · {lat} ms\n"
+                                                f"#{prot.lower()} #vpn\n"
+                                                f"━━━━━━━━━━━━━━\n"
+                                                f"🗓 {now.strftime('%Y/%m/%d')} · 🕐 {now.strftime('%H:%M')}\n"
+                                                f"📡 منبع: <a href=\"{html.escape(link, quote=True)}\">{html.escape(title)}</a>\n"
+                                                f"🔗 <a href=\"https://t.me/{destination_channel[1:]}\">{html.escape(destination_channel)}</a>"
                                             )
                                             sent = await client.send_message(
                                                 destination_channel, message,
-                                                link_preview=False, parse_mode=None
+                                                link_preview=False, parse_mode='html'
                                             )
                                             if first_sent is None:
                                                 first_sent = sent
@@ -290,6 +296,7 @@ async def main():
                                         new_conf.append({
                                             'protocol': prot, 'config': c, 'latency': lat,
                                             'channel': title, 't_link': t_link,
+                                            'source_link': link,
                                             'flag': flag, 'country': country,
                                             'ts': time.time()
                                         })
@@ -319,7 +326,8 @@ async def main():
                                     m_search = re.search(r"server=([\w\.-]+)&port=(\d+)", p)
                                     key_p = f"{m_search.group(1)}:{m_search.group(2)}" if m_search else str(time.time())
                                     channel_proxies.append({
-                                        'link': p, 'flag': flag, 'stat': stat, 'lat': lat, 'key': key_p
+                                        'link': p, 'flag': flag, 'stat': stat, 'lat': lat,
+                                        'key': key_p, 'source_link': link
                                     })
                                     sent_hashes.add(p)
 
@@ -372,25 +380,37 @@ async def main():
                                 except Exception as e:
                                     print(f"❌ Error sending file {m.file.name}: {e}")
 
-                # --- Send Batch Proxies ---
-                if channel_proxies:
-                    proxy_msg = "🔵 MTProxy‌های جدید\n\n"
-                    for idx, p_data in enumerate(channel_proxies, 1):
-                        proxy_msg += f"{idx}. {p_data['flag']} - [اتصال]({p_data['link']}) • {p_data['stat']} {p_data['lat']}ms\n"
-                    
-                    proxy_msg += "\n💡 برای اتصال روی لینک کلیک کنید"
-                    proxy_msg += create_footer(title, channel_str)
-
+                # Publish one linked, copyable post per proxy so the site preview
+                # corresponds to the actual channel message.
+                for p_data in channel_proxies:
                     try:
-                        sent = await client.send_message(destination_channel, proxy_msg, link_preview=False)
-                        for p_data in channel_proxies:
-                            new_prox.append({
-                                'key': p_data['key'], 'link': p_data['link'], 'channel': title, 
-                                't_link': f"https://t.me/{destination_channel[1:]}/{sent.id}", 
-                                'latency': p_data['lat'], 'flag': p_data['flag'], 
-                                'ts': time.time()
-                            })
-                    except: pass
+                        now = datetime.now(iran_tz)
+                        link = p_data['link']
+                        source_link = p_data['source_link']
+                        message = (
+                            f"🔵 <b>MTProxy</b> · {html.escape(p_data['flag'])} {html.escape(title)}\n\n"
+                            f"<pre><code>{html.escape(link)}</code></pre>\n"
+                            f"📊 <b>اتصال TCP</b> · {p_data['lat']} ms\n"
+                            f"🔗 <a href=\"{html.escape(link, quote=True)}\">اتصال سریع</a>\n"
+                            f"━━━━━━━━━━━━━━\n"
+                            f"🗓 {now.strftime('%Y/%m/%d')} · 🕐 {now.strftime('%H:%M')}\n"
+                            f"📡 منبع: <a href=\"{html.escape(source_link, quote=True)}\">{html.escape(title)}</a>\n"
+                            f"🔗 <a href=\"https://t.me/{destination_channel[1:]}\">{html.escape(destination_channel)}</a>"
+                        )
+                        sent = await client.send_message(
+                            destination_channel, message,
+                            link_preview=False, parse_mode='html'
+                        )
+                        new_prox.append({
+                            'key': p_data['key'], 'link': p_data['link'],
+                            'channel': title,
+                            't_link': f"https://t.me/{destination_channel[1:]}/{sent.id}",
+                            'source_link': source_link,
+                            'latency': p_data['lat'], 'flag': p_data['flag'],
+                            'ts': time.time()
+                        })
+                    except Exception as e:
+                        print(f"❌ Error sending MTProxy post: {e}")
 
             except Exception as e: print(f"Error Loop: {e}")
 

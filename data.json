@@ -2,6 +2,17 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.42.156.175:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 79,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/24657",
+      "source_link": "https://t.me/v2rayvpnchannel/6753",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1791962594.9182944
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.45.44.241:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 143,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -123,6 +134,26 @@
     }
   ],
   "proxies": [
+    {
+      "key": "torobchesho.co.uk.:443",
+      "link": "tg://proxy?server=torobchesho.co.uk.&port=443&secret=7l984oosSBbGySPf1NVjDgF0b3JvYmNoZXNoby5jby51aw",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/24656",
+      "source_link": "https://t.me/darkproxy/17003",
+      "latency": 119,
+      "flag": "🇫🇮",
+      "ts": 1791962587.4722633
+    },
+    {
+      "key": "torobchesho.co.uk.:443",
+      "link": "tg://proxy?server=torobchesho.co.uk.&port=443&secret=7l984oosSBbGySPf1NVjDgF0b3JvYmNoZXNoby5jby51aw)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/24655",
+      "source_link": "https://t.me/darkproxy/17003",
+      "latency": 124,
+      "flag": "🇫🇮",
+      "ts": 1791962587.1800675
+    },
     {
       "key": "46.224.27.205:443",
       "link": "tg://proxy?server=46.224.27.205&port=443&secret=eeDarKDarKDarKDarKDarK)|",

@@ -2,6 +2,17 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.134.220.172:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 134,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/24761",
+      "source_link": "https://t.me/v2rayvpnchannel/6779",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1792135448.4457636
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://XpnTeam-9@199.232.78.170:443?pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&path=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&encryption=none&insecure=0&host=Appxdn.global.ssl.fastly.net&type=ws&allowInsecure=0&sni=play.google.com#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 2,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -186,20 +197,39 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1792064895.4687216
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.24.101.15:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 130,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/24703",
-      "source_link": "https://t.me/v2rayvpnchannel/6766",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1792048504.95592
     }
   ],
   "proxies": [
+    {
+      "key": "petros-es.co.uk.:443",
+      "link": "tg://proxy?server=petros-es.co.uk.&port=443&secret=ee79e344818749bd7ac519130220c25d09706574726f732d65732e636f2e756b)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/24760",
+      "source_link": "https://t.me/darkproxy/17018",
+      "latency": 192,
+      "flag": "🇩🇪",
+      "ts": 1792135441.7563014
+    },
+    {
+      "key": "petros-es.co.uk.:443",
+      "link": "tg://proxy?server=petros-es.co.uk.&port=443&secret=ee79e344818749bd7ac519130220c25d09706574726f732d65732e636f2e756b",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/24759",
+      "source_link": "https://t.me/darkproxy/17018",
+      "latency": 172,
+      "flag": "🇩🇪",
+      "ts": 1792135441.325334
+    },
+    {
+      "key": "petros-es.co.uk.:443",
+      "link": "tg://proxy?server=petros-es.co.uk.&port=443&secret=ee79e344818749bd7ac519130220c25d09706574726f732d65732e636f2e756b)|",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/24758",
+      "source_link": "https://t.me/darkproxy/17018",
+      "latency": 199,
+      "flag": "🇩🇪",
+      "ts": 1792135441.0247135
+    },
     {
       "key": "star.talebi.co.uk:2096",
       "link": "tg://proxy?server=star.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",

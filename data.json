@@ -2,6 +2,17 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.45.54.244:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 108,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/25066",
+      "source_link": "https://t.me/v2rayvpnchannel/6803",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1792355416.8558123
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@md2.univesalsrv.com:443?mode=gun&security=reality&encryption=none&pbk=JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o&fp=firefox&type=grpc&serviceName=hub.v1.SyncService&sni=md2.univesalsrv.com&sid=d36a38659ce106cb#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9```",
       "latency": 162,
       "channel": "VPN MARKET",
@@ -266,6 +277,56 @@
     }
   ],
   "proxies": [
+    {
+      "key": "petros-es.co.uk.:443",
+      "link": "tg://proxy?server=petros-es.co.uk.&port=443&secret=ee79e344818749bd7ac519130220c25d09706574726f732d65732e636f2e756b)|",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/25065",
+      "source_link": "https://t.me/darkproxy/17043",
+      "latency": 138,
+      "flag": "🇫🇮",
+      "ts": 1792355406.2569044
+    },
+    {
+      "key": "petros-es.co.uk.:443",
+      "link": "tg://proxy?server=petros-es.co.uk.&port=443&secret=ee79e344818749bd7ac519130220c25d09706574726f732d65732e636f2e756b)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/25064",
+      "source_link": "https://t.me/darkproxy/17043",
+      "latency": 151,
+      "flag": "🇩🇪",
+      "ts": 1792355405.9695258
+    },
+    {
+      "key": "irogallery.golgoli1.co.uk:2096",
+      "link": "tg://proxy?server=irogallery.golgoli1.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25063",
+      "source_link": "https://t.me/iroproxy/58052",
+      "latency": 131,
+      "flag": "🇮🇷",
+      "ts": 1792355388.064033
+    },
+    {
+      "key": "mangoseason8.co.uk:2096",
+      "link": "tg://proxy?server=mangoseason8.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25062",
+      "source_link": "https://t.me/iroproxy/58052",
+      "latency": 1145,
+      "flag": "🇮🇷",
+      "ts": 1792355387.7611487
+    },
+    {
+      "key": "web.mangoseason7.co.uk:2096",
+      "link": "tg://proxy?server=web.mangoseason7.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25061",
+      "source_link": "https://t.me/iroproxy/58052",
+      "latency": 158,
+      "flag": "🇮🇷",
+      "ts": 1792355387.4636333
+    },
     {
       "key": "digi.golgoli2.co.uk:2096",
       "link": "tg://proxy?server=digi.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",

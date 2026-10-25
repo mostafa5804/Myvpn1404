@@ -2,6 +2,17 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.83.199:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 85,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/25459",
+      "source_link": "https://t.me/v2rayvpnchannel/6864",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1792926400.982674
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://54f22246-cc9c-4315-907a-6c94c901d20f@82.202.178.142:443?mode=gun&security=reality&encryption=none&authority=Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&pbk=1A9loATtqTbKfErpj24clMebWdbmBRDgUIADwtlvtAw&fp=firefox&type=grpc&serviceName=google.storage.v2.Storage&sni=h9.smart-life.agency&sid=70c20a2f5a7d542e#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%E2%9E%A0%40PlanB_net`",
       "latency": 187,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -153,17 +164,6 @@
       "flag": "🇫🇷",
       "country": "France",
       "ts": 1792840924.4212625
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@51.24.99.223:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 125,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/25405",
-      "source_link": "https://t.me/v2rayvpnchannel/6852",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1792825575.9247708
     }
   ],
   "proxies": [

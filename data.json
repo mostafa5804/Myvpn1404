@@ -2,6 +2,39 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.43.199.59:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 103,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/25600",
+      "source_link": "https://t.me/v2rayvpnchannel/6879",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1793034940.5186853
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.130.214.225:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 102,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/25599",
+      "source_link": "https://t.me/v2rayvpnchannel/6880",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1793034940.019472
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@3.11.16.186:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 109,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/25598",
+      "source_link": "https://t.me/v2rayvpnchannel/6881",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1793034939.4370494
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://dc23cc43-ded8-47d1-b39e-778a6bd7b42f@193.223.104.106:8443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=apple.com#%5A%69%6B%6B%4F%56%70%6E%42%6F%74%20%7C%20%D9%86%D8%A7%D9%85%D8%AD%D8%AF%D9%88%D8%AF%20%D9%85%D8%A7%D9%87%DB%8C%20%DB%B2%DB%B0%DB%B0%D8%AA",
       "latency": 119,
       "channel": "پروکسی و کانفیگ رایگان",
@@ -769,130 +802,290 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1792954260.6400492
-    },
-    {
-      "protocol": "VMESS",
-      "config": "vmess://eyJhZGQiOiJpci55emNxLmlyIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImFlMDkzZmMxLTBlODctNGExNS04NTkzLTY1MThkNzRkY2U5MyIsImluc2VjdXJlIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwY3MiOiIiLCJwb3J0IjoiMjA1MCIsInBzIjoiQFRoZUNsb25hemVwYW0iLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9",
-      "latency": 346,
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25469",
-      "source_link": "https://t.me/Proxymelimon/21358",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1792943624.155936
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad@199.232.78.159:443?encryption=none&type=ws&security=tls&host=%63%6F%70%79%5F%61%7A%5F%63%68%61%6E%6E%65%6C%5F%4E%55%46%69%4C%54%45%52%5F8i.global.ssl.fastly.net.&sni=%66%69%72%65%66%6F%78.com&pinSHA256=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&path=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#Telegram%40planB_net%20%20%E2%80%A2%2010`",
-      "latency": 1,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/25468",
-      "source_link": "https://t.me/planB_net/3651",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1792929099.3699794
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad@146.75.59.186:443?encryption=none&type=ws&security=tls&host=%63%6F%70%79%5F%61%7A%5F%63%68%61%6E%6E%65%6C%5F%4E%55%46%69%4C%54%45%52%5F6i.global.ssl.fastly.net.&sni=cdn.akamai.steamstatic.com&pinSHA256=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&path=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#Telegram%40planB_net%20%20%E2%80%A2%2009",
-      "latency": 2,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/25467",
-      "source_link": "https://t.me/planB_net/3651",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1792929099.0391254
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad@wwww.qarvian.ir:443?encryption=none&type=ws&security=tls&host=%63%6F%70%79%5F%61%7A%5F%63%68%61%6E%6E%65%6C%5F%4E%55%46%69%4C%54%45%52%5F7i.global.ssl.fastly.net.&sni=cdn.akamai.steamstatic.com&pinSHA256=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&path=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#Telegram%40planB_net%20%20%E2%80%A2%2008",
-      "latency": 96,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/25466",
-      "source_link": "https://t.me/planB_net/3651",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1792929098.7659798
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://cd07ae0d-f31d-4209-a0a4-d9d9cfcca1ad@199.232.78.160:443?encryption=none&type=ws&security=tls&host=%63%6F%70%79%5F%61%7A%5F%63%68%61%6E%6E%65%6C%5F%4E%55%46%69%4C%54%45%52%5F10i.global.ssl.fastly.net.&sni=%66%69%72%65%66%6F%78.com&pinSHA256=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&path=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#Telegram%40planB_net%20%20%E2%80%A2%2007",
-      "latency": 1,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/25465",
-      "source_link": "https://t.me/planB_net/3651",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1792929098.2997723
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://7c4e57be-ff6f-4ef7-ba17-f839351d9af9@p2tun0.greewebservices.ir:28820?security=reality&encryption=none&pbk=xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=ios&type=tcp&sni=play.google.com&sid=e3085d4fc679ba12#Telegram%40planB_net%20%20%E2%80%A2%2005",
-      "latency": 529,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/25464",
-      "source_link": "https://t.me/planB_net/3651",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1792929098.0008402
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://57c87188-1056-4bd5-92f8-c7ca1fd19147@193.160.140.117:8443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=apple.com#Telegram%40planB_net%20%20%E2%80%A2%2004",
-      "latency": 85,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/25463",
-      "source_link": "https://t.me/planB_net/3651",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1792929097.183755
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://d24e0961-dd20-4528-8796-2a974e79348e@193.160.141.2:8443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=apple.com#Telegram%40planB_net%20%20%E2%80%A2%2003",
-      "latency": 85,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/25462",
-      "source_link": "https://t.me/planB_net/3651",
-      "flag": "🇷🇺",
-      "country": "Russia",
-      "ts": 1792929096.7827787
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://42a64b9a-ab79-4094-8656-30366a7c2ea3@pl.peregrine-sub.net:1443?security=reality&encryption=none&pbk=PUj1la__ltNjv_ASE5n4HJY7GiRs--N-0aYhkcAApCI&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=pl.peregrine-sub.net&sid=7b6803a79bba5c52#Telegram%40planB_net%20%20%E2%80%A2%2002",
-      "latency": 158,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/25461",
-      "source_link": "https://t.me/planB_net/3651",
-      "flag": "🇵🇱",
-      "country": "Poland",
-      "ts": 1792929096.3815
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://6845a59f-970b-4e1e-8e26-06a34ee663d6@185.98.63.6:8443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=apple.com#Telegram%40planB_net%20%20%E2%80%A2%2001",
-      "latency": 85,
-      "channel": "پروکسی | کانفیگ | 🅱️plan",
-      "t_link": "https://t.me/myvpn1404/25460",
-      "source_link": "https://t.me/planB_net/3651",
-      "flag": "🇮🇷",
-      "country": "Iran",
-      "ts": 1792929095.9046638
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.36.83.199:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 85,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/25459",
-      "source_link": "https://t.me/v2rayvpnchannel/6864",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1792926400.982674
     }
   ],
-  "proxies": [],
+  "proxies": [
+    {
+      "key": "craft.malavanann.co.uk:2083",
+      "link": "tg://proxy?server=craft.malavanann.co.uk&port=2083&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25597",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 1176,
+      "flag": "🇮🇷",
+      "ts": 1793034919.3545563
+    },
+    {
+      "key": "silver.ciaude.co.uk:2096",
+      "link": "tg://proxy?server=silver.ciaude.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25596",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 147,
+      "flag": "🇮🇷",
+      "ts": 1793034919.0512402
+    },
+    {
+      "key": "run.golgoli2.co.uk:2053",
+      "link": "tg://proxy?server=run.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25595",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 144,
+      "flag": "🇮🇷",
+      "ts": 1793034918.7608178
+    },
+    {
+      "key": "craft.malavanann.co.uk:2083",
+      "link": "tg://proxy?server=craft.malavanann.co.uk&port=2083&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25594",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 136,
+      "flag": "🇮🇷",
+      "ts": 1793034918.4475942
+    },
+    {
+      "key": "silnet.varfootball.co.uk:2053",
+      "link": "tg://proxy?server=silnet.varfootball.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25593",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 121,
+      "flag": "🇮🇷",
+      "ts": 1793034918.1499422
+    },
+    {
+      "key": "great.cipservice.co.uk:2096",
+      "link": "tg://proxy?server=great.cipservice.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25592",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 149,
+      "flag": "🇮🇷",
+      "ts": 1793034917.848026
+    },
+    {
+      "key": "great.cipservice.co.uk:2096",
+      "link": "tg://proxy?server=great.cipservice.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25591",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 266,
+      "flag": "🇮🇷",
+      "ts": 1793034917.5450466
+    },
+    {
+      "key": "silnet.varfootball.co.uk:2053",
+      "link": "tg://proxy?server=silnet.varfootball.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25590",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 301,
+      "flag": "🇮🇷",
+      "ts": 1793034917.2482963
+    },
+    {
+      "key": "irogallery.golgoli1.co.uk:2096",
+      "link": "tg://proxy?server=irogallery.golgoli1.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25589",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 142,
+      "flag": "🇮🇷",
+      "ts": 1793034916.947483
+    },
+    {
+      "key": "shoes.golgoli2.co.uk:2096",
+      "link": "tg://proxy?server=shoes.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25588",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 144,
+      "flag": "🇮🇷",
+      "ts": 1793034916.6422393
+    },
+    {
+      "key": "name.golgoli2.co.uk:2096",
+      "link": "tg://proxy?server=name.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25587",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 128,
+      "flag": "🇮🇷",
+      "ts": 1793034916.3518858
+    },
+    {
+      "key": "api.mangoseason5.co.uk:2053",
+      "link": "tg://proxy?server=api.mangoseason5.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25586",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 141,
+      "flag": "🇮🇷",
+      "ts": 1793034916.0512204
+    },
+    {
+      "key": "run.golgoli2.co.uk:2053",
+      "link": "tg://proxy?server=run.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25585",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 119,
+      "flag": "🇮🇷",
+      "ts": 1793034915.7382379
+    },
+    {
+      "key": "digi.golgoli2.co.uk:2096",
+      "link": "tg://proxy?server=digi.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25584",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 133,
+      "flag": "🇮🇷",
+      "ts": 1793034915.438855
+    },
+    {
+      "key": "star.talebi.co.uk:2096",
+      "link": "tg://proxy?server=star.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25583",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 138,
+      "flag": "🇮🇷",
+      "ts": 1793034915.1397548
+    },
+    {
+      "key": "name.golgoli2.co.uk:2096",
+      "link": "tg://proxy?server=name.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25582",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 143,
+      "flag": "🇮🇷",
+      "ts": 1793034914.8496249
+    },
+    {
+      "key": "api.mangoseason5.co.uk:2053",
+      "link": "tg://proxy?server=api.mangoseason5.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25581",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 158,
+      "flag": "🇮🇷",
+      "ts": 1793034914.538036
+    },
+    {
+      "key": "shoes.golgoli2.co.uk:2096",
+      "link": "tg://proxy?server=shoes.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25580",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 145,
+      "flag": "🇮🇷",
+      "ts": 1793034914.2347062
+    },
+    {
+      "key": "hadaf.golgoli2.co.uk:2053",
+      "link": "tg://proxy?server=hadaf.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25579",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 144,
+      "flag": "🇮🇷",
+      "ts": 1793034913.9473653
+    },
+    {
+      "key": "silver.ciaude.co.uk:2096",
+      "link": "tg://proxy?server=silver.ciaude.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25578",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 146,
+      "flag": "🇮🇷",
+      "ts": 1793034913.6872504
+    },
+    {
+      "key": "irogallery.golgoli1.co.uk:2096",
+      "link": "tg://proxy?server=irogallery.golgoli1.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25577",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 306,
+      "flag": "🇮🇷",
+      "ts": 1793034913.3422096
+    },
+    {
+      "key": "star.talebi.co.uk:2096",
+      "link": "tg://proxy?server=star.talebi.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25576",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 138,
+      "flag": "🇮🇷",
+      "ts": 1793034913.0425935
+    },
+    {
+      "key": "fruit.golgoli2.co.uk:2096",
+      "link": "tg://proxy?server=fruit.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25575",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 1271,
+      "flag": "🇮🇷",
+      "ts": 1793034912.7272642
+    },
+    {
+      "key": "hadaf.golgoli2.co.uk:2053",
+      "link": "tg://proxy?server=hadaf.golgoli2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25574",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 150,
+      "flag": "🇮🇷",
+      "ts": 1793034912.4286942
+    },
+    {
+      "key": "iro.varfootball2.co.uk:2053",
+      "link": "tg://proxy?server=iro.varfootball2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25573",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 139,
+      "flag": "🇮🇷",
+      "ts": 1793034912.127835
+    },
+    {
+      "key": "fruit.golgoli2.co.uk:2096",
+      "link": "tg://proxy?server=fruit.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25572",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 147,
+      "flag": "🇮🇷",
+      "ts": 1793034911.8262117
+    },
+    {
+      "key": "iro.varfootball2.co.uk:2053",
+      "link": "tg://proxy?server=iro.varfootball2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25571",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 298,
+      "flag": "🇮🇷",
+      "ts": 1793034911.5111413
+    },
+    {
+      "key": "digi.golgoli2.co.uk:2096",
+      "link": "tg://proxy?server=digi.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "iRo Proxy | پروکسی",
+      "t_link": "https://t.me/myvpn1404/25570",
+      "source_link": "https://t.me/iroproxy/58123",
+      "latency": 151,
+      "flag": "🇮🇷",
+      "ts": 1793034911.220394
+    }
+  ],
   "files": [
     {
       "name": "ژیک💛.npvt",

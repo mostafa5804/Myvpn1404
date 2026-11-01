@@ -2,6 +2,72 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@45.9.156.24:443?mode=gun&security=reality&encryption=none&pbk=0f0dh_FUju5cHgQcIwUjHvxQb9aIZ00p0kZRHeE7Ey4&fp=chrome&type=grpc&serviceName=api.v2.PushService&sni=bg2.univesalsrv.com&sid=501ab3325b77e1ca#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9```",
+      "latency": 196,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/26001",
+      "source_link": "https://t.me/anty_filter/24425",
+      "flag": "🇧🇬",
+      "country": "Bulgaria",
+      "ts": 1793565713.6401052
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@md2.univesalsrv.com:443?mode=gun&security=reality&encryption=none&pbk=JXFsWHYjhAcR-7yz9tuCTMdcfuiyC9a-C9ewA55Z63o&fp=firefox&type=grpc&serviceName=hub.v1.SyncService&sni=md2.univesalsrv.com&sid=d36a38659ce106cb#%40vpnbaz%20%F0%9F%8D%AD",
+      "latency": 247,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/26000",
+      "source_link": "https://t.me/anty_filter/24425",
+      "flag": "🇲🇩",
+      "country": "Moldova",
+      "ts": 1793565713.0865958
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://f04cc810-aaf2-4a7b-8cad-356cdd30d394@tg1.cdnphotos.org:443?mode=auto&path=%2Fapi%2Fv1%2F%3Fed%23&security=tls&encryption=none&insecure=0&fp=random&type=xhttp&allowInsecure=0&sni=tg1.cdnphotos.org#%40vpnbaz%20%F0%9F%8C%8A",
+      "latency": 351,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/25999",
+      "source_link": "https://t.me/anty_filter/24425",
+      "flag": "🇷🇺",
+      "country": "Russia",
+      "ts": 1793565712.3464537
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e8a432c8-5d84-49a5-b822-67ed761a58f9@54.37.136.194:2053?security=reality&encryption=none&pbk=Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A&headerType=none&type=tcp&sni=www.cloudflare.com&sid=50ba05992b05c1c3#%40vpnbaz%20%F0%9F%9B%B8",
+      "latency": 278,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/25998",
+      "source_link": "https://t.me/anty_filter/24425",
+      "flag": "🇵🇱",
+      "country": "Poland",
+      "ts": 1793565711.6324954
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@202.50.253.81:19999#%40vpnbaz%20%E2%98%82%EF%B8%8F",
+      "latency": 157,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/25997",
+      "source_link": "https://t.me/anty_filter/24425",
+      "flag": "🇮🇹",
+      "country": "Italy",
+      "ts": 1793565710.9381025
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@202.50.253.45:19999#%40vpnbaz%20%E2%AD%90",
+      "latency": 158,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/25996",
+      "source_link": "https://t.me/anty_filter/24425",
+      "flag": "🇮🇹",
+      "country": "Italy",
+      "ts": 1793565710.438346
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.41.130.65:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 138,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -142,20 +208,109 @@
       "flag": "🇬🇧",
       "country": "United Kingdom",
       "ts": 1793525307.7459412
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.42.143:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 115,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/25919",
-      "source_link": "https://t.me/v2rayvpnchannel/6946",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1793474754.3063629
     }
   ],
   "proxies": [
+    {
+      "key": "yek.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/25995",
+      "source_link": "https://t.me/Proxymelimon/21520",
+      "latency": 151,
+      "flag": "🇮🇷",
+      "ts": 1793565600.0840466
+    },
+    {
+      "key": "hash.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/25994",
+      "source_link": "https://t.me/Proxymelimon/21520",
+      "latency": 295,
+      "flag": "🇮🇷",
+      "ts": 1793565599.7804885
+    },
+    {
+      "key": "hash.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/25993",
+      "source_link": "https://t.me/Proxymelimon/21520",
+      "latency": 180,
+      "flag": "🇮🇷",
+      "ts": 1793565599.3774774
+    },
+    {
+      "key": "pnj.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/25992",
+      "source_link": "https://t.me/Proxymelimon/21520",
+      "latency": 155,
+      "flag": "🇮🇷",
+      "ts": 1793565598.885229
+    },
+    {
+      "key": "haf.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/25991",
+      "source_link": "https://t.me/Proxymelimon/21520",
+      "latency": 160,
+      "flag": "🇮🇷",
+      "ts": 1793565598.3611348
+    },
+    {
+      "key": "pnj.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/25990",
+      "source_link": "https://t.me/Proxymelimon/21520",
+      "latency": 158,
+      "flag": "🇮🇷",
+      "ts": 1793565596.846713
+    },
+    {
+      "key": "yek.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/25989",
+      "source_link": "https://t.me/Proxymelimon/21520",
+      "latency": 161,
+      "flag": "🇮🇷",
+      "ts": 1793565596.2609046
+    },
+    {
+      "key": "new.nakoskoskesh.co.uk:8080",
+      "link": "tg://proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ",
+      "channel": "پروکسی و کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/25988",
+      "source_link": "https://t.me/Proxymelimon/21520",
+      "latency": 185,
+      "flag": "🇩🇪",
+      "ts": 1793565595.642086
+    },
+    {
+      "key": "haf.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/25987",
+      "source_link": "https://t.me/Proxymelimon/21520",
+      "latency": 163,
+      "flag": "🇮🇷",
+      "ts": 1793565595.111716
+    },
+    {
+      "key": "new.nakoskoskesh.co.uk:8080",
+      "link": "tg://proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "channel": "پروکسی و کانفیگ رایگان",
+      "t_link": "https://t.me/myvpn1404/25986",
+      "source_link": "https://t.me/Proxymelimon/21520",
+      "latency": 165,
+      "flag": "🇩🇪",
+      "ts": 1793565594.8188424
+    },
     {
       "key": "petros-es.co.uk.:443",
       "link": "tg://proxy?server=petros-es.co.uk.&port=443&secret=ee79e344818749bd7ac519130220c25d09706574726f732d65732e636f2e756b",
@@ -555,137 +710,7 @@
       "latency": 126,
       "flag": "🇩🇪",
       "ts": 1793499829.0110419
-    },
-    {
-      "key": "haf.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25931",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 128,
-      "flag": "🇮🇷",
-      "ts": 1793476242.4025095
-    },
-    {
-      "key": "yek.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25930",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 125,
-      "flag": "🇮🇷",
-      "ts": 1793476242.0836787
-    },
-    {
-      "key": "org.mediaad.co.uk:8880",
-      "link": "tg://proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25929",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 147,
-      "flag": "🇮🇷",
-      "ts": 1793476241.7744288
-    },
-    {
-      "key": "ir.mediaad.co.uk:8880",
-      "link": "tg://proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25928",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 137,
-      "flag": "🇮🇷",
-      "ts": 1793476241.4980068
-    },
-    {
-      "key": "new.nakoskoskesh.co.uk:8080",
-      "link": "tg://proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25927",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 157,
-      "flag": "🇩🇪",
-      "ts": 1793476241.1753469
-    },
-    {
-      "key": "yek.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25926",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 139,
-      "flag": "🇮🇷",
-      "ts": 1793476240.8621843
-    },
-    {
-      "key": "haf.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25925",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 128,
-      "flag": "🇮🇷",
-      "ts": 1793476240.5661118
-    },
-    {
-      "key": "ir.mediaad.co.uk:8880",
-      "link": "tg://proxy?server=ir.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25924",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 159,
-      "flag": "🇮🇷",
-      "ts": 1793476240.2573118
-    },
-    {
-      "key": "char.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25923",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 145,
-      "flag": "🇮🇷",
-      "ts": 1793476239.9671125
-    },
-    {
-      "key": "org.mediaad.co.uk:8880",
-      "link": "tg://proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25922",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 153,
-      "flag": "🇮🇷",
-      "ts": 1793476239.6687148
-    },
-    {
-      "key": "char.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25921",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 1162,
-      "flag": "🇮🇷",
-      "ts": 1793476239.3642814
-    },
-    {
-      "key": "new.nakoskoskesh.co.uk:8080",
-      "link": "tg://proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25920",
-      "source_link": "https://t.me/Proxymelimon/21477",
-      "latency": 180,
-      "flag": "🇩🇪",
-      "ts": 1793476239.0821197
     }
   ],
-  "files": [
-    {
-      "name": "NekoboxPlus(1.4.2.80)_backup_27July2026 (1).json",
-      "ext": "JSON",
-      "channel": "IP_CF | Channel",
-      "link": "https://t.me/iP_CF/11537",
-      "t_link": "https://t.me/myvpn1404/25932",
-      "original_caption": "",
-      "ts": 1793476325.911332
-    }
-  ]
+  "files": []
 }

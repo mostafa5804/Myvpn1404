@@ -1,6 +1,72 @@
 {
   "configs": [
     {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiI2Ny4yMjAuOTUuMyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjE4MDAwIiwicHMiOiJAdnBuYmF6IPCfja0iLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9```",
+      "latency": 3,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/26032",
+      "source_link": "https://t.me/anty_filter/24433",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1793652232.6763752
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@150.40.126.22:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=firefox&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#%40vpnbaz%20%F0%9F%8D%8B%E2%80%8D%F0%9F%9F%A9",
+      "latency": 116,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/26031",
+      "source_link": "https://t.me/anty_filter/24433",
+      "flag": "🇷🇸",
+      "country": "Serbia",
+      "ts": 1793652232.3760865
+    },
+    {
+      "protocol": "TROJAN",
+      "config": "trojan://dba20dcb635e430fa4d3bfc303a149d2@blog.findlocaljobnetworkandbuildcommunityconnections.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=blog.findlocaljobnetworkandbuildcommunityconnections.com#%40vpnbaz%20%F0%9F%8C%8A",
+      "latency": 108,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/26030",
+      "source_link": "https://t.me/anty_filter/24433",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1793652231.8464773
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://405b964e-a2d2-454f-aaaa-711cc218897c@hydra.yokkastars.com:40443?security=reality&encryption=none&pbk=cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0&headerType=none&fp=qq&type=tcp&flow=xtls-rprx-vision&sni=deepl.com&sid=88b6#%40vpnbaz%20%F0%9F%9B%B8",
+      "latency": 370,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/26029",
+      "source_link": "https://t.me/anty_filter/24433",
+      "flag": "🇮🇳",
+      "country": "India",
+      "ts": 1793652231.4337242
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e8a432c8-5d84-49a5-b822-67ed761a58f9@54.37.136.194:2053?security=reality&encryption=none&pbk=Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A&headerType=none&type=tcp&sni=www.cloudflare.com&sid=50ba05992b05c1c3#%40vpnbaz%20%E2%98%82%EF%B8%8F",
+      "latency": 165,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/26028",
+      "source_link": "https://t.me/anty_filter/24433",
+      "flag": "🇵🇱",
+      "country": "Poland",
+      "ts": 1793652230.6237187
+    },
+    {
+      "protocol": "SS",
+      "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@202.50.253.18:19999#%40vpnbaz%20%E2%AD%90",
+      "latency": 104,
+      "channel": "VPN MARKET",
+      "t_link": "https://t.me/myvpn1404/26027",
+      "source_link": "https://t.me/anty_filter/24433",
+      "flag": "🇮🇹",
+      "country": "Italy",
+      "ts": 1793652230.0556226
+    },
+    {
       "protocol": "SS",
       "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.28:8080#Telegram%20%F0%9F%91%89%F0%9F%8F%BC%20%40planB_net%20%20%E2%80%A2%2013`",
       "latency": 146,
@@ -212,107 +278,96 @@
   ],
   "proxies": [
     {
-      "key": "yek.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "key": "org.mediaad.co.uk:8880",
+      "link": "tg://proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
       "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25995",
-      "source_link": "https://t.me/Proxymelimon/21520",
-      "latency": 151,
+      "t_link": "https://t.me/myvpn1404/26025",
+      "source_link": "https://t.me/Proxymelimon/21578",
+      "latency": 103,
       "flag": "🇮🇷",
-      "ts": 1793565600.0840466
-    },
-    {
-      "key": "hash.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25994",
-      "source_link": "https://t.me/Proxymelimon/21520",
-      "latency": 295,
-      "flag": "🇮🇷",
-      "ts": 1793565599.7804885
+      "ts": 1793652119.3200366
     },
     {
       "key": "hash.anotelinopalk.co.uk:8880",
       "link": "tg://proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
       "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25993",
-      "source_link": "https://t.me/Proxymelimon/21520",
-      "latency": 180,
+      "t_link": "https://t.me/myvpn1404/26024",
+      "source_link": "https://t.me/Proxymelimon/21578",
+      "latency": 110,
       "flag": "🇮🇷",
-      "ts": 1793565599.3774774
+      "ts": 1793652119.0290215
     },
     {
-      "key": "pnj.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
+      "key": "org.mediaad.co.uk:8880",
+      "link": "tg://proxy?server=org.mediaad.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
       "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25992",
-      "source_link": "https://t.me/Proxymelimon/21520",
-      "latency": 155,
+      "t_link": "https://t.me/myvpn1404/26023",
+      "source_link": "https://t.me/Proxymelimon/21578",
+      "latency": 117,
       "flag": "🇮🇷",
-      "ts": 1793565598.885229
+      "ts": 1793652118.7301233
     },
     {
-      "key": "haf.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "key": "char.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
       "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25991",
-      "source_link": "https://t.me/Proxymelimon/21520",
-      "latency": 160,
+      "t_link": "https://t.me/myvpn1404/26022",
+      "source_link": "https://t.me/Proxymelimon/21578",
+      "latency": 107,
       "flag": "🇮🇷",
-      "ts": 1793565598.3611348
+      "ts": 1793652118.442281
     },
     {
-      "key": "pnj.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=pnj.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "key": "do.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
       "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25990",
-      "source_link": "https://t.me/Proxymelimon/21520",
-      "latency": 158,
+      "t_link": "https://t.me/myvpn1404/26021",
+      "source_link": "https://t.me/Proxymelimon/21578",
+      "latency": 102,
       "flag": "🇮🇷",
-      "ts": 1793565596.846713
+      "ts": 1793652118.0556934
     },
     {
-      "key": "yek.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=yek.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
+      "key": "char.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=char.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
       "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25989",
-      "source_link": "https://t.me/Proxymelimon/21520",
-      "latency": 161,
+      "t_link": "https://t.me/myvpn1404/26020",
+      "source_link": "https://t.me/Proxymelimon/21578",
+      "latency": 94,
       "flag": "🇮🇷",
-      "ts": 1793565596.2609046
+      "ts": 1793652117.7402134
     },
     {
-      "key": "new.nakoskoskesh.co.uk:8080",
-      "link": "tg://proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ",
+      "key": "hash.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=hash.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ",
       "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25988",
-      "source_link": "https://t.me/Proxymelimon/21520",
-      "latency": 185,
-      "flag": "🇩🇪",
-      "ts": 1793565595.642086
-    },
-    {
-      "key": "haf.anotelinopalk.co.uk:8880",
-      "link": "tg://proxy?server=haf.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25987",
-      "source_link": "https://t.me/Proxymelimon/21520",
-      "latency": 163,
+      "t_link": "https://t.me/myvpn1404/26019",
+      "source_link": "https://t.me/Proxymelimon/21578",
+      "latency": 96,
       "flag": "🇮🇷",
-      "ts": 1793565595.111716
+      "ts": 1793652117.4363976
     },
     {
-      "key": "new.nakoskoskesh.co.uk:8080",
-      "link": "tg://proxy?server=new.nakoskoskesh.co.uk&port=8080&secret=EERighJJvXrFGRMCIMJdCQ)",
+      "key": "do.anotelinopalk.co.uk:8880",
+      "link": "tg://proxy?server=do.anotelinopalk.co.uk&port=8880&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
       "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/25986",
-      "source_link": "https://t.me/Proxymelimon/21520",
-      "latency": 165,
-      "flag": "🇩🇪",
-      "ts": 1793565594.8188424
+      "t_link": "https://t.me/myvpn1404/26018",
+      "source_link": "https://t.me/Proxymelimon/21578",
+      "latency": 114,
+      "flag": "🇮🇷",
+      "ts": 1793652117.1512008
     }
   ],
   "files": [
+    {
+      "name": "Savia.npvt",
+      "ext": "NPVT",
+      "channel": "VPN MARKET",
+      "link": "https://t.me/anty_filter/24437",
+      "t_link": "https://t.me/myvpn1404/26026",
+      "original_caption": "🟢 کانفیگ NPV Tunnel (نپسترنت)\n\n☑️ تست شده و متصل \n\n\nبرنامه مورد نیاز :\n\nدانلود NPV Tunnel از گوگل پلی (اندروید)\n\nدانلود NPV Tunnel به صورت فایل (اندروید)\n\nدانلود NPV Tunnel از اپ استور (آیفون)\n\n\n@vpnbaz",
+      "ts": 1793652229.5976312
+    },
     {
       "name": "@Cooonfig🩷.npvt",
       "ext": "NPVT",

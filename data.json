@@ -1,6 +1,94 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@ww13.levikogjgfdd.ir:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#Telegram%20%F0%9F%91%89%F0%9F%8F%BC%20%40planB_net%20%20%E2%80%A2%2009`",
+      "latency": 170,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/26086",
+      "source_link": "https://t.me/planB_net/3694",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1793771200.2753422
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.29:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#Telegram%20%F0%9F%91%89%F0%9F%8F%BC%20%40planB_net%20%20%E2%80%A2%2008",
+      "latency": 97,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/26085",
+      "source_link": "https://t.me/planB_net/3694",
+      "flag": "🇳🇱",
+      "country": "The Netherlands",
+      "ts": 1793771199.7672088
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiIxNDkuODguMjMuMjA3IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIvP1RlbGVncmFtLS0tUExBTkJfTkVULS0tUExBTkJfTkVULS0tUExBTkJfTkVULS0tUExBTkJfTkVUIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjE4MDAwIiwicHMiOiJUZWxlZ3JhbSDwn5GJ8J+PvCBAcGxhbkJfbmV0ICDigKIgMDciLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoibm9uZSIsInR5cGUiOiJub25lIiwidiI6IjIiLCJ2Y24iOiIifQ==",
+      "latency": 212,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/26084",
+      "source_link": "https://t.me/planB_net/3694",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "ts": 1793771199.3733387
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiJ3dzExLmxldmlrb2dqZ2ZkZC5pciIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiLz9UZWxlZ3JhbS0tLVBMQU5CX05FVC0tLVBMQU5CX05FVC0tLVBMQU5CX05FVC0tLVBMQU5CX05FVCIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBjcyI6IiIsInBvcnQiOiIxODAwMCIsInBzIjoiVGVsZWdyYW0g8J+RifCfj7wgQHBsYW5CX25ldCAg4oCiIDA2Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIiLCJ2Y24iOiIifQ==",
+      "latency": 328,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/26083",
+      "source_link": "https://t.me/planB_net/3694",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "ts": 1793771198.93725
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiI0My4xMzAuMzUuNTMiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Ii8/VGVsZWdyYW0tLS1QTEFOQl9ORVQtLS1QTEFOQl9ORVQtLS1QTEFOQl9ORVQtLS1QTEFOQl9ORVQiLCJpZCI6IjhlOTNiMDA5LWYxYWYtNDQ4YS1iOGVmLWIxMTA4NDlhMzVmMCIsImluc2VjdXJlIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicGNzIjoiIiwicG9ydCI6IjEwMDg3IiwicHMiOiJUZWxlZ3JhbSDwn5GJ8J+PvCBAcGxhbkJfbmV0ICDigKIgMDUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoibm9uZSIsInR5cGUiOiIiLCJ2IjoiMiIsInZjbiI6IiJ9",
+      "latency": 51,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/26082",
+      "source_link": "https://t.me/planB_net/3694",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1793771198.3281407
+    },
+    {
+      "protocol": "VMESS",
+      "config": "vmess://eyJhZGQiOiIxMzQuMTk1LjE5Ni4yMTEiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Ii8/VGVsZWdyYW0tLS1QTEFOQl9ORVQtLS1QTEFOQl9ORVQtLS1QTEFOQl9ORVQtLS1QTEFOQl9ORVQiLCJpZCI6ImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsImluc2VjdXJlIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwY3MiOiIiLCJwb3J0IjoiMTgwMDAiLCJwcyI6IlRlbGVncmFtIPCfkYnwn4+8IEBwbGFuQl9uZXQgIOKAoiAwNCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwidmNuIjoiIn0=",
+      "latency": 31,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/26081",
+      "source_link": "https://t.me/planB_net/3694",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1793771197.9200506
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.216:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#Telegram%20%F0%9F%91%89%F0%9F%8F%BC%20%40planB_net%20%20%E2%80%A2%2002",
+      "latency": 68,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/26080",
+      "source_link": "https://t.me/planB_net/3694",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "ts": 1793771197.5314908
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://dc620cd6-a9d8-4a0f-8f18-006b895db77e@66.70.179.198:2053?security=reality&encryption=none&pbk=k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU&headerType=none&fp=random&type=tcp&sni=www.cloudflare.com&sid=83f8317a948bb769&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#Telegram%20%F0%9F%91%89%F0%9F%8F%BC%20%40planB_net%20%20%E2%80%A2%2001",
+      "latency": 28,
+      "channel": "پروکسی | کانفیگ | 🅱️plan",
+      "t_link": "https://t.me/myvpn1404/26079",
+      "source_link": "https://t.me/planB_net/3694",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "ts": 1793771197.1894288
+    },
+    {
       "protocol": "SS",
       "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.28:8080#Telegram%20%F0%9F%91%89%F0%9F%8F%BC%20%40planB_net%20%20%E2%80%A2%2012`",
       "latency": 154,
@@ -467,6 +555,15 @@
     }
   ],
   "files": [
+    {
+      "name": "🚀@Cooonfig 🚀.npvt",
+      "ext": "NPVT",
+      "channel": "Cooonfig",
+      "link": "https://t.me/cooonfig/9394",
+      "t_link": "https://t.me/myvpn1404/26087",
+      "original_caption": "@Cooonfig",
+      "ts": 1793771254.1016886
+    },
     {
       "name": "Finu.npvt",
       "ext": "NPVT",

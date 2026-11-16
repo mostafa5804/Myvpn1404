@@ -2,6 +2,28 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@35.181.110.213:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 130,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/26620",
+      "source_link": "https://t.me/v2rayvpnchannel/7097",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1794859950.853118
+    },
+    {
+      "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.39.135.255:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 130,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/26619",
+      "source_link": "https://t.me/v2rayvpnchannel/7098",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1794859950.40874
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@52.56.40.10:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 94,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -230,39 +252,6 @@
       "flag": "🇺🇸",
       "country": "United States",
       "ts": 1794778610.7198775
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.135.211.214:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 109,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/26540",
-      "source_link": "https://t.me/v2rayvpnchannel/7083",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1794763181.1560166
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.41.71.188:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 112,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/26539",
-      "source_link": "https://t.me/v2rayvpnchannel/7084",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1794763180.6267347
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://685b5831-59a3-4d14-9afe-199880ae43a0@199.232.78.159:443?pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&path=%2F&security=tls&alpn=h2&encryption=none&insecure=0&host=pumkin.global.ssl.fastly.net.&type=ws&allowInsecure=0&sni=cdn.akamai.steamstatic.com#%DA%86%D9%86%D9%84%20%40JOFAVPN",
-      "latency": 1,
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26538",
-      "source_link": "https://t.me/Proxymelimon/21916",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "ts": 1794761635.1325688
     }
   ],
   "proxies": [

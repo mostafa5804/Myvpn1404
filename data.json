@@ -98,28 +98,6 @@
       "flag": "🇳🇱",
       "country": "The Netherlands",
       "ts": 1794920362.8442903
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@35.181.110.213:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 130,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/26620",
-      "source_link": "https://t.me/v2rayvpnchannel/7097",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1794859950.853118
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.39.135.255:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 130,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/26619",
-      "source_link": "https://t.me/v2rayvpnchannel/7098",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1794859950.40874
     }
   ],
   "proxies": [
@@ -242,107 +220,26 @@
       "latency": 97,
       "flag": "🇩🇪",
       "ts": 1794888165.9513724
-    },
-    {
-      "key": "surge.proxylite.tech:443",
-      "link": "tg://proxy?server=surge.proxylite.tech&port=443&secret=7qIJcFetgp2gApkkN8oFR-JzdXJnZS5wcm94eWxpdGUudGVjaA)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26630",
-      "source_link": "https://t.me/Proxymelimon/21945",
-      "latency": 171,
-      "flag": "🇫🇮",
-      "ts": 1794861337.0656855
-    },
-    {
-      "key": "ssd-hdd-nvme.sillakhor.info:8443",
-      "link": "tg://proxy?server=ssd-hdd-nvme.sillakhor.info&port=8443&secret=1603010200010001fc030386e24c3add",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26629",
-      "source_link": "https://t.me/Proxymelimon/21945",
-      "latency": 177,
-      "flag": "🇩🇪",
-      "ts": 1794861336.6516082
-    },
-    {
-      "key": "ssd-hdd-nvme.sillakhor.info:8443",
-      "link": "tg://proxy?server=ssd-hdd-nvme.sillakhor.info&port=8443&secret=1603010200010001fc030386e24c3add)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26628",
-      "source_link": "https://t.me/Proxymelimon/21945",
-      "latency": 292,
-      "flag": "🇩🇪",
-      "ts": 1794861336.3601894
-    },
-    {
-      "key": "danmarki.tokhmemorgh.info.:7799",
-      "link": "tg://proxy?server=danmarki.tokhmemorgh.info.&port=7799&secret=dd10400103324995b07c030386e886e7f1)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26627",
-      "source_link": "https://t.me/Proxymelimon/21945",
-      "latency": 177,
-      "flag": "🇫🇮",
-      "ts": 1794861336.0589767
-    },
-    {
-      "key": "bastani.mikhay.co.uk:8443",
-      "link": "tg://proxy?server=bastani.mikhay.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26626",
-      "source_link": "https://t.me/Proxymelimon/21945",
-      "latency": 175,
-      "flag": "🇫🇮",
-      "ts": 1794861335.7507033
-    },
-    {
-      "key": "white.graduat.co.uk:8443",
-      "link": "tg://proxy?server=white.graduat.co.uk&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26625",
-      "source_link": "https://t.me/Proxymelimon/21945",
-      "latency": 178,
-      "flag": "🇩🇪",
-      "ts": 1794861335.3559005
-    },
-    {
-      "key": "surge.proxylite.tech:443",
-      "link": "tg://proxy?server=surge.proxylite.tech&port=443&secret=7qIJcFetgp2gApkkN8oFR-JzdXJnZS5wcm94eWxpdGUudGVjaA",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26624",
-      "source_link": "https://t.me/Proxymelimon/21945",
-      "latency": 402,
-      "flag": "🇫🇮",
-      "ts": 1794861335.059867
-    },
-    {
-      "key": "bastani.mikhay.co.uk:8443",
-      "link": "tg://proxy?server=bastani.mikhay.co.uk&port=8443&secret=EERighJJvXrFGRMCIMJdCQ",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26623",
-      "source_link": "https://t.me/Proxymelimon/21945",
-      "latency": 214,
-      "flag": "🇫🇮",
-      "ts": 1794861334.751137
-    },
-    {
-      "key": "danmarki.tokhmemorgh.info.:7799",
-      "link": "tg://proxy?server=danmarki.tokhmemorgh.info.&port=7799&secret=dd10400103324995b07c030386e886e7f1",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26622",
-      "source_link": "https://t.me/Proxymelimon/21945",
-      "latency": 302,
-      "flag": "🇩🇪",
-      "ts": 1794861334.3428586
-    },
-    {
-      "key": "white.graduat.co.uk:8443",
-      "link": "tg://proxy?server=white.graduat.co.uk&port=8443&secret=eeNEgYdJvXrFGRMCIMJdCQ)",
-      "channel": "پروکسی و کانفیگ رایگان",
-      "t_link": "https://t.me/myvpn1404/26621",
-      "source_link": "https://t.me/Proxymelimon/21945",
-      "latency": 221,
-      "flag": "🇩🇪",
-      "ts": 1794861334.0639162
     }
   ],
-  "files": []
+  "files": [
+    {
+      "name": "کانفیگ دارک201.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/2442",
+      "t_link": "https://t.me/myvpn1404/26653",
+      "original_caption": "",
+      "ts": 1794951710.9338427
+    },
+    {
+      "name": "کانفیگ دارک202.dark",
+      "ext": "DARK",
+      "channel": "کانفیگ ملی | config meli",
+      "link": "https://t.me/Npvtunnel_vip/2443",
+      "t_link": "https://t.me/myvpn1404/26652",
+      "original_caption": "🔥 #کانفیگ_dark_tunnel جدید⚡️\nمناسب برای 👇👇👇👇\n﴿واتساپ ، تلگرام ، یوتیوب ، اینستا﴾\n\nتست شده روی همراه و ایرانسل✅\n\nبرنامه\nاموزش وارد کردن کانفینگ\nدانلود برنامه از سایت داخلی\n\nبرای دور زدن نت ملی به چنل ما بپیوندید. ⭕️\n@NpvTunnel_vip✅",
+      "ts": 1794951710.6519916
+    }
+  ]
 }

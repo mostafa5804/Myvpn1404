@@ -1,6 +1,17 @@
 {
   "configs": [
     {
+      "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.43.146.80:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 129,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/26830",
+      "source_link": "https://t.me/v2rayvpnchannel/7148",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1795253443.4276106
+    },
+    {
       "protocol": "SS",
       "config": "ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@136.148.77.250:8388#configraygan-15",
       "latency": 8,
@@ -365,6 +376,26 @@
     }
   ],
   "proxies": [
+    {
+      "key": "torobchesho.co.uk.:443",
+      "link": "tg://proxy?server=torobchesho.co.uk.&port=443&secret=ee5f7ce28a2c4816c6c923dfd4d5630e01746f726f6263686573686f2e636f2e756b",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/26829",
+      "source_link": "https://t.me/darkproxy/17278",
+      "latency": 168,
+      "flag": "🇩🇪",
+      "ts": 1795253435.713072
+    },
+    {
+      "key": "torobchesho.co.uk.:443",
+      "link": "tg://proxy?server=torobchesho.co.uk.&port=443&secret=ee5f7ce28a2c4816c6c923dfd4d5630e01746f726f6263686573686f2e636f2e756b)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/26828",
+      "source_link": "https://t.me/darkproxy/17278",
+      "latency": 199,
+      "flag": "🇩🇪",
+      "ts": 1795253435.40657
+    },
     {
       "key": "iro.varfootball2.co.uk:2053",
       "link": "tg://proxy?server=iro.varfootball2.co.uk&port=2053&secret=eeNEgYdJvXrFGRMCIMJdCQ",

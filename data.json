@@ -2,6 +2,17 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.135.123.21:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 94,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/26831",
+      "source_link": "https://t.me/v2rayvpnchannel/7152",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "ts": 1795277913.7895095
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.43.146.80:22223?encryption=none&security=none&type=tcp#OurChannel",
       "latency": 129,
       "channel": "کانفیگ فیلترشکن v2ray vpn",
@@ -351,28 +362,6 @@
       "flag": "🇦🇹",
       "country": "Austria",
       "ts": 1795200071.0591488
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@15.224.62.190:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 106,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/26762",
-      "source_link": "https://t.me/v2rayvpnchannel/7138",
-      "flag": "🇫🇷",
-      "country": "France",
-      "ts": 1795173187.3283472
-    },
-    {
-      "protocol": "VLESS",
-      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.135.183.154:22223?encryption=none&security=none&type=tcp#OurChannel",
-      "latency": 119,
-      "channel": "کانفیگ فیلترشکن v2ray vpn",
-      "t_link": "https://t.me/myvpn1404/26761",
-      "source_link": "https://t.me/v2rayvpnchannel/7137",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
-      "ts": 1795169839.074898
     }
   ],
   "proxies": [

@@ -2,6 +2,17 @@
   "configs": [
     {
       "protocol": "VLESS",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@35.181.29.80:22223?encryption=none&security=none&type=tcp#OurChannel",
+      "latency": 95,
+      "channel": "کانفیگ فیلترشکن v2ray vpn",
+      "t_link": "https://t.me/myvpn1404/26900",
+      "source_link": "https://t.me/v2rayvpnchannel/7166",
+      "flag": "🇫🇷",
+      "country": "France",
+      "ts": 1795375234.8466687
+    },
+    {
+      "protocol": "VLESS",
       "config": "vless://9a597d68-6688-4046-bf24-a5a541e115e0@135.136.33.134:8443?security=reality&encryption=none&pbk=6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.apple.com&sid=f8d0271b4b5f9efc#Telegram%20%F0%9F%91%89%F0%9F%8F%BC%20%40planB_net%20%20%E2%80%A2%2013`",
       "latency": 160,
       "channel": "پروکسی | کانفیگ | 🅱️plan",
@@ -123,6 +134,26 @@
     }
   ],
   "proxies": [
+    {
+      "key": "torobchesho.co.uk.:443",
+      "link": "tg://proxy?server=torobchesho.co.uk.&port=443&secret=ee5f7ce28a2c4816c6c923dfd4d5630e01746f726f6263686573686f2e636f2e756b)",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/26899",
+      "source_link": "https://t.me/darkproxy/17293",
+      "latency": 129,
+      "flag": "🇩🇪",
+      "ts": 1795375226.3514464
+    },
+    {
+      "key": "torobchesho.co.uk.:443",
+      "link": "tg://proxy?server=torobchesho.co.uk.&port=443&secret=ee5f7ce28a2c4816c6c923dfd4d5630e01746f726f6263686573686f2e636f2e756b",
+      "channel": "دارک پروکسی | Proxy mtproto",
+      "t_link": "https://t.me/myvpn1404/26898",
+      "source_link": "https://t.me/darkproxy/17293",
+      "latency": 126,
+      "flag": "🇩🇪",
+      "ts": 1795375226.054532
+    },
     {
       "key": "name.golgoli2.co.uk:2096",
       "link": "tg://proxy?server=name.golgoli2.co.uk&port=2096&secret=eeNEgYdJvXrFGRMCIMJdCQ",
